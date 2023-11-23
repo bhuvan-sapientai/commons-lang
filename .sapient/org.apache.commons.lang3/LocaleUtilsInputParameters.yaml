@@ -1,0 +1,3094 @@
+---
+modelFingerprint: "37718178FBEA9030360E552859F02EFC"
+methods:
+- method:
+    name: "availableLocaleList"
+    returnType: "java.util.List"
+    signature: "availableLocaleList() : java.util.List<java.util.Locale>"
+    instructionFingerprint: "0E501D997BCB017F4A2096BD11768422"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "availableLocaleListTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "87F996668C3EBC90C827D72DF407FC11"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6415EBF84F4B4EF07139442B399F80B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "availableLocaleList_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9fec795d-c055-311f-b4be-5bf2afe6dad3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "availableLocaleSet"
+    returnType: "java.util.Set"
+    signature: "availableLocaleSet() : java.util.Set<java.util.Locale>"
+    instructionFingerprint: "2410A49D51DB58D346E5381626BC8E59"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "availableLocaleSetTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A98F74ADB75DC6F8856400D9F3B476C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "37CBCA09BB3393623A4430BCAD383D14"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Set"
+        genericValueType: "java.util.Locale"
+        uuid: "availableLocaleSet_set1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c7846bf-0213-3bf0-8c8b-6197475c33f6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "countriesByLanguage"
+    returnType: "java.util.List"
+    signature: "countriesByLanguage(java.lang.String) : java.util.List<java.util.Locale>"
+    instructionFingerprint: "285F2A3BDB9E6ECB873872824C398EC0"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "countriesByLanguageWhenLanguageCodeIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9CED8E355AA5F23FA36784D878DF2E3B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "languageCode"
+      modelFingerprint: "3E12FA5954B1AEE75583C639D11A154F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "countriesByLanguage_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "06B5893DFBD32BFE6F764714615C2BE8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "countriesByLanguage_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8084ac30-4dac-3925-9e93-7ce325e1f69a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "countriesByLanguageWhenLanguageCodeIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A78EC796DB2CC0B841BEF8D5D230B0AD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "languageCode"
+      modelFingerprint: "7FECD782B51FEEEA03AFE146971AF496"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "en"
+        suggestedContent: !<regular>
+          value: "en"
+        valueType: "java.lang.String"
+        uuid: "countriesByLanguage_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6415EBF84F4B4EF07139442B399F80B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "countriesByLanguage_list1"
+        fixed: false
+        collectionUuid: "<clinit>_concurrentHashMap2"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7721f878-15f0-3c7f-a21e-e99e9da726f8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAvailableLocale"
+    returnType: "boolean"
+    signature: "isAvailableLocale(java.util.Locale) : boolean"
+    instructionFingerprint: "65D564BE4BCDE5470A203438B0EC939D"
+    parametersTypes:
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isAvailableLocaleWhenAvailableLocaleSetContainsLocale"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8462EB2A664AC2B8C64471CAA1B7ED54"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "isAvailableLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "isAvailableLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "isAvailableLocale_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7153138E93283A9BCEC4D09F0F5CF1C3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        suggestedContent: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isAvailableLocale_boolean1"
+        fixed: true
+        collectionUuid: "availableLocaleSet_set1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ee295de4-53a7-39ee-a2d4-77f2b94e7590"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isAvailableLocaleWhenAvailableLocaleSetNotContainsLocale"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B6F551D553F0844A8DC5125F03F58F7F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "isAvailableLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "isAvailableLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "isAvailableLocale_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4372D606E42017F615E0087C598EFD72"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        suggestedContent: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isAvailableLocale_boolean1"
+        fixed: true
+        collectionUuid: "availableLocaleSet_set1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c114a500-1ab3-35f8-9dcf-1ca4f0b89642"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isLanguageUndetermined"
+    returnType: "boolean"
+    signature: "isLanguageUndetermined(java.util.Locale) : boolean"
+    instructionFingerprint: "CB61C1912E6C1886125CC3C65DE95664"
+    parametersTypes:
+    - "java.util.Locale"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isLanguageUndeterminedWhenLocaleIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5F91D71DB28B2C1A357CB4926306F286"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "eeee6999-bfc6-3c61-b806-ebf9f49e64d7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isLanguageUndeterminedWhenUNDETERMINEDEqualsLocaleToLanguageTag"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0CC81C88992676AE62FAB423934F3EB8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "isLanguageUndetermined_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "isLanguageUndetermined_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "isLanguageUndetermined_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "772b0494-6b5e-3579-8734-b2d178e7f62a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isLanguageUndeterminedWhenUNDETERMINEDNotEqualsLocaleToLanguageTag"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8E2523B792B458CD731C22B953A03F39"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "isLanguageUndetermined_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "isLanguageUndetermined_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "isLanguageUndetermined_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "50c63eea-cae7-35dc-8ca3-a85dfdebcc54"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "languagesByCountry"
+    returnType: "java.util.List"
+    signature: "languagesByCountry(java.lang.String) : java.util.List<java.util.Locale>"
+    instructionFingerprint: "BDFCDFFA0DF53B9F1D13DEF02266DF5F"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "languagesByCountryWhenCountryCodeIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9EE091815F587C2C3FEEDB023E54EEF2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "countryCode"
+      modelFingerprint: "EA82EE4375628DD5971ECCF7875DB38A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "languagesByCountry_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "06B5893DFBD32BFE6F764714615C2BE8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "languagesByCountry_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e5528298-ef83-3733-a4e8-b53bab01879d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "languagesByCountryWhenCountryCodeIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E3979C3D0946E54571F238DC5482F57F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "countryCode"
+      modelFingerprint: "68595364FDE8B6E8ECCE3F745C4DEFC7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "US"
+        suggestedContent: !<regular>
+          value: "US"
+        valueType: "java.lang.String"
+        uuid: "languagesByCountry_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6415EBF84F4B4EF07139442B399F80B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "languagesByCountry_list1"
+        fixed: false
+        collectionUuid: "<clinit>_concurrentHashMap1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "925d053d-d622-3977-87f0-00e47fb96fa9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "localeLookupList"
+    returnType: "java.util.List"
+    signature: "localeLookupList(java.util.Locale) : java.util.List<java.util.Locale>"
+    instructionFingerprint: "039BF603BCA1912BBC8B0AFDCBAAF8D6"
+    parametersTypes:
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "localeLookupListTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AC5233161F8A0B3CBD2AAF4210006414"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "localeLookupList_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LocaleUtils"
+      modelFingerprint: "807F46C74250FC962D5E87DA55ECEBE0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.LocaleUtils"
+        uuid: "org.apache.commons.lang3.LocaleUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.LocaleUtils"
+        name: "localeLookupList"
+        parameters:
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "localeLookupList_locale1-language"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "localeLookupList_locale1-language"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Locale"
+            uuid: "localeLookupList_locale1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultLocale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "localeLookupList_locale1-language"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "localeLookupList_locale1-language"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Locale"
+            uuid: "localeLookupList_locale1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "localeLookupList(Locale,Locale): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.util.Locale"
+          uuid: "localeLookupList_list1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6415EBF84F4B4EF07139442B399F80B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "localeLookupList_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "22440a23-eacc-3771-b874-9464c602f213"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "localeLookupList"
+    returnType: "java.util.List"
+    signature: "localeLookupList(java.util.Locale,java.util.Locale) : java.util.List<java.util.Locale>"
+    instructionFingerprint: "21CD23A8E5AC31F132D5FBA1C2AED012"
+    parametersTypes:
+    - "java.util.Locale"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "localeLookupList1WhenLocaleIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E39AE95E78352DE6093068F9B739270C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f0fb1ba3-bca0-390a-8b17-d58853eacce4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "localeLookupList1WhenListNotContainsDefaultLocale"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "151645BF4DAADF243D1CAEBB04CFF22D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "localeLookupList_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultLocale"
+      modelFingerprint: "83F03385AEA4931B0472B74188251855"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale2-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "localeLookupList_locale2-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "localeLookupList_locale2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6415EBF84F4B4EF07139442B399F80B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.util.Locale"
+        uuid: "localeLookupList_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d8f2ec0d-74bf-32d7-bb86-b1fcd8c395da"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toLocale"
+    returnType: "java.util.Locale"
+    signature: "toLocale(java.util.Locale) : java.util.Locale"
+    instructionFingerprint: "143F95D56BD96BC081B27B2E779C695B"
+    parametersTypes:
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toLocaleWhenLocaleIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A29B41F636AD7E5B33182FE61A113456"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "59CAB35805795EED4C8B77C330EF66CD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "toLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8BB720F8DB4C33927EAAC707C82BB6F4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "toLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3ff16ae7-13a3-3940-b558-770364f2c5bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toLocaleWhenLocaleIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3F8DF39EA053F631D011F99FA97FF9CA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "E20A8E0FB429247F720B72E8B5117685"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6EE73D47AD89913F2A490AB61EE15240"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Locale"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Locale"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8415a1a9-cb09-3ece-ba3c-2ce63985637a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toLocale"
+    returnType: "java.util.Locale"
+    signature: "toLocale(java.lang.String) : java.util.Locale"
+    instructionFingerprint: "DF747B193A0FF46C89BA4C4A9B1A0AC5"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toLocale1WhenStrIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8CD8E59E759E101D197558E41C5C7D18"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "B8CFE96C1E6A3C52D9BBB343E6B046DF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D6399542C4D00253E3FC15496CF85D8D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bcec9542-8160-35c6-b267-bdecfcc6224d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toLocale1WhenStrIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "333DD592B3568A2622E9823D0C34F13D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: ""
+        suggestedContent: !<regular>
+          value: ""
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "576419DB4D7BE7A03959DD0E8D6BD7D1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5a12780c-ea1a-387f-8568-4ec4f6b47876"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "toLocale1WhenStrContains_ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "54B2CD0DCF5B74157480DFA2056BA04C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "7462A90EECD7FAA7B4903EF3EBE112AC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "#"
+        suggestedContent: !<regular>
+          value: "#"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F94F9B2237C8F5D51FBAE38EF3065AC6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: #"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: #"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: #"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "176d66b8-de5a-3614-9459-0886fc3bd9e1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "toLocale1WhenLenLessThan2ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2A761BF98A2CFC76EF5117A5CF136829"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "3A58796E6CF67E9299BA217ADAFC0F1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "027721B9E6EAB5B7D2DF51E20183DC0D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: A"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: A"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: A"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f7da130b-d34e-3e38-bdf7-8a8336f164ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path25"
+    pathIdForUser: "path5"
+    testPathName: "toLocale1WhenLenLessThan3ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F43B67A7646496E9908DB50D38F2391"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b7d9d626-4d31-3053-92bf-85bf4ccf05be"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path6"
+    testPathName: "toLocale1WhenCh0EqualsDASHAndLenLessThan3ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "742D7573E791AFD2ED211F0C14E99B22"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "667E0DA9373914505AD3E465F2139B81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "-B"
+        suggestedContent: !<regular>
+          value: "-B"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "31A1D06E1D319D6EC927475F5ECE365F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: -B"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -B"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -B"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3eee3cb8-71c6-388c-a803-28a78b328c0e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path26"
+    pathIdForUser: "path7"
+    testPathName: "toLocale1WhenLenEquals3"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "707DF24F21C4725C93C5943A523ECC1B"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6ac88b05-7609-38f0-8eb0-549ff2da951b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path8"
+    testPathName: "toLocale1WhenCharacterNotIsUpperCaseCh2ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1BC782056FF38D587D9832D71B1DEA05"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6F4E421083EF3778FEA1644A8BA9751"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "s1"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "12c1331a-ea0f-3554-aa2d-594b1a092f58"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path27"
+    pathIdForUser: "path9"
+    testPathName: "toLocale1WhenLenLessThan5ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "504A330D7C016FD9F2222009AAE11F4B"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3dd1935a-fbf2-3b71-b22c-2c6bb7e3ab84"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path10"
+    testPathName: "toLocale1WhenCharacterIsUpperCaseCh2AndLenEquals3"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E6B8DF430CC31CFF3ADD4308BAB13515"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "483DEDEE73834E2C34DE9A302844DBBF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "-BC"
+        suggestedContent: !<regular>
+          value: "-BC"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7DBF67C2B51D031204B8FCFB7529B182"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "BC"
+              suggestedContent: !<regular>
+                value: "BC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "BC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c2353c38-2018-30e3-9c56-9f72d9c1c15a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path11"
+    testPathName: "toLocale1WhenIsISO639LanguageCodeStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2BD17C6DB805CEC7D4934A951AFE7E7D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1E50EFDCCC983534DB1748377D6B8FE7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "str1"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "parseLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "067be623-cc94-3ab8-bf73-d5593aa24470"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path28"
+    pathIdForUser: "path12"
+    testPathName: "toLocale1WhenStrCharAt3NotEqualsCh0ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "56AB13C35CCE3225A12E04527473AF49"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d7e12ead-6427-31a7-a14b-1cbe6f6c0c23"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path29"
+    pathIdForUser: "path13"
+    testPathName: "toLocale1WhenStrCharAt3EqualsCh0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "12D97E5EC06AC18A1DF536B06B53665A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "1ffa74ba-d2d7-3c9c-90ab-6769e1cb4ee8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path14"
+    testPathName: "toLocale1WhenLenNotEquals3AndLenLessThan5ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D035D13CB4E2641C0707884E0916D78E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "97A247E705069EE901FF59B5E06EBF8C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "-BCD"
+        suggestedContent: !<regular>
+          value: "-BCD"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "84213D28ECBC264DBF88409F9F4248AC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: -BCD"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -BCD"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -BCD"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a3b13a81-bb32-3c98-97f5-f6af3adec015"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path24"
+    pathIdForUser: "path15"
+    testPathName: "toLocale1WhenSegmentsLengthNotEquals3ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "066B9D5687111A7C9F26F087B81F5A0D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "5DBBF42CB078246D29D3BDFD826D216F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "BC"
+        suggestedContent: !<regular>
+          value: "BC"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "10A1ACF63BEC580F10814F4B89FC8302"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: BC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: BC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: BC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "parseLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c64ba1a5-6ce4-3158-acca-2623a2518375"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path16"
+    testPathName: "toLocale1WhenLenNotLessThan5AndStrCharAt3NotEqualsCh0ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DFF217B989DACC405F27BBAC7C832BDA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "F609E9FE100C3147B363C9FFF7610FDF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "-BCDEF"
+        suggestedContent: !<regular>
+          value: "-BCDEF"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "48C0AEAC1ABAB77616B8E125747CEABD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Invalid locale format: -BCDEF"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -BCDEF"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Invalid locale format: -BCDEF"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "46b8a1b5-1277-372e-84e4-1704c05498ed"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path17"
+    testPathName: "toLocale1WhenLenNotLessThan5AndStrCharAt3EqualsCh0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5A2C880178E0A41D0EBCCB9375EA0079"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "B42FED032FD89C645249B626A90CAC77"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "-BC-DE"
+        suggestedContent: !<regular>
+          value: "-BC-DE"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "29A57FFA8707ACD352E60485CB8BCE08"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "BC"
+              suggestedContent: !<regular>
+                value: "BC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "variant"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "DE"
+              suggestedContent: !<regular>
+                value: "DE"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: ""
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "BC"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "variant"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "DE"
+              valueType: "java.lang.String"
+              uuid: "toLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "toLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6db887d0-568a-3a37-a6ae-8bcd6ff7ee21"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path23"
+    pathIdForUser: "path18"
+    testPathName: "toLocale1WhenSegmentsLengthNotEquals2AndSegmentsLengthNotEquals3ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7F491BC974E86407278902D8B59798E0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "9e3895cf-29c7-3516-b191-96b6c68aa4e2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path22"
+    pathIdForUser: "path19"
+    testPathName: "toLocale1WhenIsISO639LanguageCodeNotLanguageThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "A4CD611A0C44CA7DB70DF65D4B8BC858"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6F4E421083EF3778FEA1644A8BA9751"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "s1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "parseLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bbf50b95-af01-3d5d-870f-342a799d6c1e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path20"
+    testPathName: "toLocale1WhenIsNumericAreaCodeNotCountryThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "7BF82DBD56A9CBC5CDC6A8080E16DED1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6F4E421083EF3778FEA1644A8BA9751"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "s1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "parseLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0e7a154-91ef-3c5e-bace-febbbc682df9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path21"
+    testPathName: "toLocale1WhenIsISO3166CountryCodeCountry"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FD62017D829AC7AC2FBE1D37A1F2C463"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "108BA75C669BDEF7F93515E75A1C5448"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "country1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "parseLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d0c862a2-8d69-38a3-adea-40790f5d6edb"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path20"
+    pathIdForUser: "path22"
+    testPathName: "toLocale1WhenVariantNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "93BD80199FBA1FF627411DC2D00A871E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "66f60745-0c6b-3b48-8d24-0a197b564ccb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path21"
+    pathIdForUser: "path23"
+    testPathName: "toLocale1WhenVariantIsEmptyThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "1B4CEC6CCE7B5C304B0B9800FC4EE439"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "21168a00-b2fc-3668-a455-dda730668d7d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path13"
+    pathIdForUser: "path24"
+    testPathName: "toLocale1WhenIsNumericAreaCodeCountry"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "ECB706DA77C5081790C9360AD41DD8B1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "108BA75C669BDEF7F93515E75A1C5448"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "country1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "parseLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "beaf9e6b-ea9b-3ec0-b5a1-1e08c372ce13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path25"
+    testPathName: "toLocale1WhenStrLengthNotEquals3AndIsNumericAreaCodeNotCountryThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "4D30D0646EB78204522D394C9FE560DE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "63df145f-5b5b-3a52-bd67-1e4c06eb8677"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path16"
+    pathIdForUser: "path26"
+    testPathName: "toLocale1WhenIsISO3166CountryCodeCountryAndVariantNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "199CAD83FBD523FDFA1EC9A853BE17BF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5717E62F2C682735BE8C11B413151CBC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "country1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "variant"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "variant1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "country"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "variant"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.Locale"
+        uuid: "parseLocale_locale1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e1bb8691-ef5e-3dc4-9531-d9d18d82c12d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path17"
+    pathIdForUser: "path27"
+    testPathName: "toLocale1WhenIsISO3166CountryCodeCountryAndVariantIsEmptyThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "A7E55CC89DB1B172186AF159E7340F90"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2cf36df6-c5bf-3f59-b7be-dd74dcdedc1b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path19"
+    pathIdForUser: "path28"
+    testPathName: "toLocale1WhenStringUtilsIsNumericStrAndStrLengthNotEquals3AndIsNumericAreaCodeNotCountryThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B146C484AEEC076DE8BCBA270CD17CC5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6F4E421083EF3778FEA1644A8BA9751"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "s1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "parseLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3fe336d9-720e-3a2e-8592-66d201f958c2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path18"
+    pathIdForUser: "path29"
+    testPathName: "toLocale1WhenIsNumericAreaCodeCountryAndVariantIsEmptyThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "729C0876575D283844D5F8DC021828D2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "str1"
+        valueType: "java.lang.String"
+        uuid: "toLocale_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B6F4E421083EF3778FEA1644A8BA9751"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "s1"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "parseLocale_string5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "parseLocale_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2aaff69-76f4-3896-80c4-dc3d2e54c210"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

@@ -1,0 +1,1966 @@
+---
+modelFingerprint: "A81F4259010BF95BF9E04D580E88AF26"
+methods:
+- method:
+    name: "invokeConstructor"
+    returnType: "java.lang.Object"
+    signature: "invokeConstructor(java.lang.Class<java.lang.Object>,java.lang.Object[])\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "java.lang.NoSuchMethodException"
+    - "java.lang.IllegalAccessException"
+    - "java.lang.reflect.InvocationTargetException"
+    - "java.lang.InstantiationException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "F34828E5594F7978D9CA24CE689D23A0"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Object[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "invokeConstructorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3E925A43D9FDFC1A1E5D60EFEDF27AE6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "A3E18618B9E8BDF64F74107ED7CD21A2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "invokeConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "invokeConstructor_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeConstructor_class[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "invokeConstructor(Class,Object[],Class[]): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "invokeConstructor_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "invokeConstructor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd2ba208-8289-3689-b840-c09f40f0410b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "invokeConstructor"
+    returnType: "java.lang.Object"
+    signature: "invokeConstructor(java.lang.Class<java.lang.Object>,java.lang.Object[],java.lang.Class<?>[])\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "java.lang.NoSuchMethodException"
+    - "java.lang.IllegalAccessException"
+    - "java.lang.reflect.InvocationTargetException"
+    - "java.lang.InstantiationException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "C73607D75514DCD6C8CB818DF9305072"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Object[]"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "invokeConstructor1WhenCtorIsNullThrowsNoSuchMethodException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A147ED5A704787224998C8929587E0BE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "4935F58DF0993221BFF53E86DBEEDE6E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "invokeConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "8583B409517C275D19E33D3BA94B5E50"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getMatchingAccessibleConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeConstructor_class[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getMatchingAccessibleConstructor(Class,Class[]): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.reflect.Constructor"
+          genericValueType: "java.lang.Object"
+          uuid: "invokeConstructor_constructor1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2808924180F19BE89DAFB340B0569C36"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NoSuchMethodException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              suggestedContent: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              valueType: "java.lang.String"
+              uuid: "invokeConstructor_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.NoSuchMethodException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              valueType: "java.lang.String"
+              uuid: "invokeConstructor_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.NoSuchMethodException"
+        uuid: "invokeConstructor_noSuchMethodException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8afff94e-64c6-3419-a8ca-93acdc6ee101"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "invokeConstructor1WhenCtorIsVarArgs"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BFE0140BFCB72D98673AA7007F2669A3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "invokeConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "6815A298F5616B24FF443DFE79AD200F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getMatchingAccessibleConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeConstructor_class[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getMatchingAccessibleConstructor(Class,Class[]): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          genericValueType: "java.lang.Object"
+          uuid: "invokeConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "invokeConstructor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "186140c6-ae3f-3ef9-be8a-3307ffcbda4d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "invokeExactConstructor"
+    returnType: "java.lang.Object"
+    signature: "invokeExactConstructor(java.lang.Class<java.lang.Object>,java.lang.Object[])\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "java.lang.NoSuchMethodException"
+    - "java.lang.IllegalAccessException"
+    - "java.lang.reflect.InvocationTargetException"
+    - "java.lang.InstantiationException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "A1F71B1A996AE5C6D9B9D0A98B411DA7"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Object[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "invokeExactConstructorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "34E3C5CD145E86751AB3ECCD8BEBA5FF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeExactConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeExactConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "68E00E5A89D45A2920C4DD6073DEDCF4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "invokeExactConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeExactConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "invokeExactConstructor_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeExactConstructor_class[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "invokeExactConstructor(Class,Object[],Class[]): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "invokeExactConstructor_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "invokeExactConstructor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c5ece11-cb96-3b60-a212-0bf96ce6963d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "invokeExactConstructor"
+    returnType: "java.lang.Object"
+    signature: "invokeExactConstructor(java.lang.Class<java.lang.Object>,java.lang.Object[],java.lang.Class<?>[])\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "java.lang.NoSuchMethodException"
+    - "java.lang.IllegalAccessException"
+    - "java.lang.reflect.InvocationTargetException"
+    - "java.lang.InstantiationException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "DD451E8E641000CF85A838CF2EF5944D"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Object[]"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "invokeExactConstructor1WhenCtorIsNullThrowsNoSuchMethodException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E03CE61803AAEB3CA0AF7F01FBED0D22"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "4935F58DF0993221BFF53E86DBEEDE6E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeExactConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeExactConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "invokeExactConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "C465325DE9E90344E944971F4276B957"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getAccessibleConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeExactConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeExactConstructor_class[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAccessibleConstructor(Class,Class[]): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.reflect.Constructor"
+          genericValueType: "java.lang.Object"
+          uuid: "invokeExactConstructor_constructor1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2808924180F19BE89DAFB340B0569C36"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NoSuchMethodException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              suggestedContent: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              valueType: "java.lang.String"
+              uuid: "invokeExactConstructor_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.NoSuchMethodException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "No such accessible constructor on object: java.lang.Object"
+              valueType: "java.lang.String"
+              uuid: "invokeExactConstructor_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.NoSuchMethodException"
+        uuid: "invokeExactConstructor_noSuchMethodException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "82417b93-c861-3e52-9c40-b7a7b10b2836"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "invokeExactConstructor1WhenCtorIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "937A42FF4FEE19675F668F221548F113"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "invokeExactConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "args"
+      modelFingerprint: "0702C7954529FE4CD91B452677BF950E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "invokeExactConstructor_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "invokeExactConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "6A14FE61169B3195B6A39ABA77B69660"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getAccessibleConstructor"
+        parameters:
+        - name: "cls"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "invokeExactConstructor_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "invokeExactConstructor_class[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAccessibleConstructor(Class,Class[]): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          genericValueType: "java.lang.Object"
+          uuid: "invokeExactConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "invokeExactConstructor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e9923f7-0cd2-30d3-bd78-aacf5f307f78"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAccessibleConstructor"
+    returnType: "java.lang.reflect.Constructor"
+    signature: "getAccessibleConstructor(java.lang.Class<java.lang.Object>,java.lang.Class<?>[])\
+      \ : java.lang.reflect.Constructor<java.lang.Object>"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "46C7C8E3BDB92DA323C484B0EBEADA69"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAccessibleConstructorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FDFA2DA0EAB40D372407AE59ACBB7075"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "getAccessibleConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "B7A4F227853BE4E689EEB3A6538D7C62"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getAccessibleConstructor"
+        parameters:
+        - name: "ctor"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "getAccessibleConstructor_constructor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAccessibleConstructor(Constructor): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getAccessibleConstructor_constructor2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DE97137AAAA540E52F965514ADFB303F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getAccessibleConstructor_constructor2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a65f0c6f-37a7-3e2d-be5c-0fe8a60ee93b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getAccessibleConstructorWhenCaughtNoSuchMethodException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DEE036887C50A679C27049C1BFCC370A"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "getAccessibleConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cls"
+      modelFingerprint: "3BFDFB33DAA5996461B71E9E6DFC040B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cls"
+        name: "getConstructor"
+        parameters:
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "getAccessibleConstructor_class[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.NoSuchMethodException"
+        - "java.lang.SecurityException"
+        signature: "getConstructor(Class[]): Constructor throws java.lang.NoSuchMethodException,java.lang.SecurityException"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getAccessibleConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "1AD2499BED7E63621693CD7E1F1CC6D0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getAccessibleConstructor"
+        parameters:
+        - name: "ctor"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "getAccessibleConstructor_constructor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAccessibleConstructor(Constructor): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getAccessibleConstructor_constructor2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0C182D5A94A5EA1D34DE7CC3F00C443D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getAccessibleConstructor_constructor3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e66befc5-7e44-3f4e-b6e2-159f44006c44"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAccessibleConstructor"
+    returnType: "java.lang.reflect.Constructor"
+    signature: "getAccessibleConstructor(java.lang.reflect.Constructor<java.lang.Object>)\
+      \ : java.lang.reflect.Constructor<java.lang.Object>"
+    instructionFingerprint: "BF5F0A070E09478A46FCE1C63E8D1E58"
+    parametersTypes:
+    - "java.lang.reflect.Constructor"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "getAccessibleConstructor1WhenMemberUtilsNotIsAccessibleCtor"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FB7AA28D826812DD26F98670030459DC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "46c39c17-9e13-38c4-8670-e978f391ee40"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "getAccessibleConstructor1WhenIsAccessibleCtorGetDeclaringClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9ADB3B33A42B378CEF1ACABE13A3F9DA"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4f6183d2-fed2-31a0-a6c4-7e1f110bd1d5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "getAccessibleConstructor1WhenIsAccessibleNotCtorGetDeclaringClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B0B91E6F16CC44BE59ECEC6620412F97"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ctor"
+      modelFingerprint: "86F64C068BF1487C8D25AD04CB43898F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0C182D5A94A5EA1D34DE7CC3F00C443D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getAccessibleConstructor_constructor3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "49aed4de-d5fd-3a74-a370-e49fb3b67fe1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "getAccessibleConstructor1WhenClassUtilsIsPublicClsAndIsAccessibleCtorGetDeclaringClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B00B9739C793A5F5A6549F1B21A8209B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ctor"
+      modelFingerprint: "343A2DC5CA1B9F1E560C3822A6B7EA3F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B660F3DC9B3859F145D03038F0D9586A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "java.lang.Object"
+        uuid: "getAccessibleConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "58055e83-f579-3ac7-8c0a-5f6031f09932"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getMatchingAccessibleConstructor"
+    returnType: "java.lang.reflect.Constructor"
+    signature: "getMatchingAccessibleConstructor(java.lang.Class<java.lang.Object>,java.lang.Class<?>[])\
+      \ : java.lang.reflect.Constructor<java.lang.Object>"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    instructionFingerprint: "C4602487E5650D941EAA35628823B28D"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMatchingAccessibleConstructorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2B1393FD247742DC093B713C24EB8177"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getMatchingAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "getMatchingAccessibleConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DE97137AAAA540E52F965514ADFB303F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "getMatchingAccessibleConstructor_constructor2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0935a1ed-1d06-3abf-a39e-45c697b6657f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "getMatchingAccessibleConstructorWhenCtorsIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "66C1929836AAE34A64B2493D0E56EF34"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    truncated: true
+    inputParameters: []
+    uuid: "22b17c52-cfe7-372f-b5ce-5bf3d077d761"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "getMatchingAccessibleConstructorWhenMemberUtilsNotIsMatchingConstructorCtorParameterTypes"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF6AADA1AACAABFEF102BB050B4972ED"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    truncated: true
+    inputParameters: []
+    uuid: "c9c8edb0-0793-3026-afdb-797e54b73c42"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "getMatchingAccessibleConstructorWhenCtorIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "314C0176A05DF6A3EC27EE421C01CFB5"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    truncated: true
+    inputParameters: []
+    uuid: "2876c5d5-9420-3c64-bfd6-fe739ebaba7b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path5"
+    testPathName: "getMatchingAccessibleConstructorWhenResultIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0496EE9F4B586101B40D4351F17E765F"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "cls"
+      modelFingerprint: "83005B425FBC46BBC7FE5DCD42A90E5D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getMatchingAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "getMatchingAccessibleConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cls"
+      modelFingerprint: "3BFDFB33DAA5996461B71E9E6DFC040B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getMatchingAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cls"
+        name: "getConstructor"
+        parameters:
+        - name: "parameterTypes"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Class[]"
+            genericValueType: "?"
+            uuid: "getMatchingAccessibleConstructor_class[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.NoSuchMethodException"
+        - "java.lang.SecurityException"
+        signature: "getConstructor(Class[]): Constructor throws java.lang.NoSuchMethodException,java.lang.SecurityException"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          uuid: "getMatchingAccessibleConstructor_constructor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "cls"
+      modelFingerprint: "D9BF61B0A470DA80951DD698E205D658"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "getMatchingAccessibleConstructor_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "cls"
+        name: "getConstructors"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getConstructors(): Constructor[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                genericValueType: "?"
+                uuid: "getMatchingAccessibleConstructor_constructor3"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                genericValueType: "?"
+                uuid: "getMatchingAccessibleConstructor_constructor3"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Constructor[]"
+          genericValueType: "?"
+          uuid: "getMatchingAccessibleConstructor_constructor[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConstructorUtils"
+      modelFingerprint: "FF0D1722722541F575C4FAFF9719FF61"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        uuid: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.ConstructorUtils"
+        name: "getAccessibleConstructor"
+        parameters:
+        - name: "ctor"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            genericValueType: "?"
+            uuid: "getMatchingAccessibleConstructor_constructor3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getAccessibleConstructor(Constructor): Constructor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Constructor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Constructor"
+          genericValueType: "?"
+          uuid: "getMatchingAccessibleConstructor_constructor4"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "138C723D55087AE4B539C991177B8650"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "getMatchingAccessibleConstructor_constructor4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2ecaa14b-7d11-3f2a-8e6b-dba4671f0a0a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

@@ -1,0 +1,107 @@
+---
+modelFingerprint: "A894D868DDB295E8D80867675900A89D"
+methods:
+- method:
+    name: "getProcessor"
+    returnType: "org.apache.commons.lang3.arch.Processor"
+    signature: "getProcessor() : org.apache.commons.lang3.arch.Processor"
+    instructionFingerprint: "D3265F1EA01418096F2DC58E800B6C35"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProcessorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "41DEE45BED8794224F72B5BD12DA9FC4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "86C9B19F1EDD1B214D39F81AF5B467FA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "getProcessor_processor1"
+        fixed: false
+        collectionUuid: "<clinit>_hashMap1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fc3a5b69-8072-3954-8710-49bcffc6dc18"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getProcessor"
+    returnType: "org.apache.commons.lang3.arch.Processor"
+    signature: "getProcessor(java.lang.String) : org.apache.commons.lang3.arch.Processor"
+    instructionFingerprint: "7C1FF007DA5ED64F27D65A65741A3235"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProcessor1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "34FB409CBFADDE8C5EB56CC04E2D5CBB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "59F3EE129C00EEA0DC11B961606D25E5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "x86"
+        suggestedContent: !<regular>
+          value: "x86"
+        valueType: "java.lang.String"
+        uuid: "getProcessor_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "86C9B19F1EDD1B214D39F81AF5B467FA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "getProcessor_processor1"
+        fixed: false
+        collectionUuid: "<clinit>_hashMap1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c339edf7-68b9-37e3-ab2f-a6fbbdfabc82"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

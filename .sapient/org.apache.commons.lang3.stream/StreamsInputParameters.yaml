@@ -1,0 +1,2294 @@
+---
+modelFingerprint: "398CABF0D4BA96BDA549198A39293847"
+methods:
+- method:
+    name: "failableStream"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    signature: "failableStream(java.util.Collection<java.lang.Object>) : org.apache.commons.lang3.stream.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "8B50664CE1EE496E081673FB53AA3AD4"
+    parametersTypes:
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "failableStreamTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4505CB209EE54F413501C52B14946A6C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "999C908C18174EF524DB7D489E785A79"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "failableStream_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "501E162463D5C658EB1745E7B03632F1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "collection"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.Object"
+            uuid: "failableStream_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Collection): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "failableStream_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "F8FB1CE9CAE1338E329038DB7AD3716E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "failableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "failableStream_stream1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "failableStream(Stream): Streams$FailableStream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "failableStream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "failableStream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          uuid: "failableStream_streams.FailableStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6274C2A9359D328A04EAE323E239334E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "failableStream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "failableStream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        uuid: "failableStream_streams.FailableStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c1c32264-8060-357c-bead-9a6ec4de0bd3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "failableStream"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    signature: "failableStream(java.util.stream.Stream<java.lang.Object>) : org.apache.commons.lang3.stream.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "59403A62A8B761A72172358EC717800C"
+    parametersTypes:
+    - "java.util.stream.Stream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "failableStream1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A48FF36B6D72415C5A30CF04C7D509CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "15CC3233B81224CAD79D029DBF20A962"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "failableStream_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "FD8F9E11B9AD3467409602BE541B05C1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "failableStream_stream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "failableStream_stream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        uuid: "failableStream_streams.FailableStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ce703536-6717-33cc-9aa3-09e418c856ad"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "failableStream"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    signature: "failableStream(java.lang.Object[]) : org.apache.commons.lang3.stream.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "222A5C728F44B06787FCC812221D4B2D"
+    parametersTypes:
+    - "java.lang.Object[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "failableStream2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C619054D716153FBA8E4D3BF3358774"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "E6155E33D2A36BD2CB301FE33032781E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "failableStream_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "FE19EE6124780D1DB5C8F5835EBBD11F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "values"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "failableStream_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Object[]): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "failableStream_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "F8FB1CE9CAE1338E329038DB7AD3716E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "failableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "failableStream_stream1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "failableStream(Stream): Streams$FailableStream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "failableStream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "failableStream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          uuid: "failableStream_streams.FailableStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6274C2A9359D328A04EAE323E239334E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "failableStream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "failableStream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        uuid: "failableStream_streams.FailableStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b118b63e-e535-3fe8-9341-9b5d426b6ea7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "instancesOf"
+    returnType: "java.util.stream.Stream"
+    signature: "instancesOf(java.lang.Class<? super java.lang.Object>,java.util.Collection<?\
+      \ super java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "AA9EC2477AA971D87743FC5AEE9A3CEF"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "instancesOfWhenStreamIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F9D8BFCD819F857AC38C8A1CADAB8B4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "B10E498C59B377B8FED53504DD8AB4FB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? super java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "? super java.lang.Object"
+        uuid: "instancesOf_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "692DDE21EEE2135235420303F735DADC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "? super java.lang.Object"
+        uuid: "instancesOf_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "5E6C07E35DF2C1AEEAABF8699718767E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "collection"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "? super java.lang.Object"
+            uuid: "instancesOf_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Collection): Stream"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "instancesOf_stream1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6247382C23928F97333BBD071B11B5C9"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "instancesOf_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0da33769-3758-3dca-84d8-f1a4872221c7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "instancesOfWhenStreamIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EE43CBA8ED03224CE2589D616E9FF0D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "B10E498C59B377B8FED53504DD8AB4FB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? super java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "? super java.lang.Object"
+        uuid: "instancesOf_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "692DDE21EEE2135235420303F735DADC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "? super java.lang.Object"
+        uuid: "instancesOf_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "982A8D96CE506CDEF9AEFA5453AC136D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "collection"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "? super java.lang.Object"
+            uuid: "instancesOf_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Collection): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "instancesOf_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "instancesOf_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e5c58b51-3141-30e9-aee2-549dcc1f54a5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "nonNull"
+    returnType: "java.util.stream.Stream"
+    signature: "nonNull(java.util.Collection<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "43BDA9A9FFC9EC2890F21952963AFCC9"
+    parametersTypes:
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "nonNullTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5282C391CE5F677FC5AC5FB5E2BF9332"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "105826501DA904277379B6D2440C74CB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "nonNull_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "89A4040DA351BD131002A719AD47B6BF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "collection"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.Object"
+            uuid: "nonNull_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Collection): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "nonNull_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "nonNull_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bf05414e-6356-30ad-9452-1e9803087359"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "nonNull"
+    returnType: "java.util.stream.Stream"
+    signature: "nonNull(java.lang.Object[]) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "22A59103CE81C85C58A6FEF30B700A1A"
+    parametersTypes:
+    - "java.lang.Object[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "nonNull1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "789022E15CC86045CFC0229AB4A40F3C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      modelFingerprint: "5192BF1ED187A1F7E79BD46FA945A380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "nonNull_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "60EE348D7924EBA098274FA0F48F760C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "of"
+        parameters:
+        - name: "values"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "nonNull_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Object[]): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          genericValueType: "java.lang.Object"
+          uuid: "nonNull_stream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "48C10BFAB906B75660E2F59212B84F19"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "nonNull"
+        parameters:
+        - name: "array"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "nonNull_stream1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "nonNull(Stream): Stream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.stream.Stream"
+            method: "empty"
+            methodParameters: []
+          valueType: "java.util.stream.Stream"
+          uuid: "nonNull_stream2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "nonNull_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ca3d0857-d04b-39c7-91b7-838de19166a3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "nonNull"
+    returnType: "java.util.stream.Stream"
+    signature: "nonNull(java.util.stream.Stream<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "9BA8F4C22D371BC506ACD3DF35423BCC"
+    parametersTypes:
+    - "java.util.stream.Stream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "nonNull2WhenStreamIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B973B3EB29F59D9D6C152925BE099E6D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "E6C45E8EED72AA4CD40AEF0D38563E7E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "nonNull_stream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6247382C23928F97333BBD071B11B5C9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "nonNull_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a2e6d23a-6da8-3cd1-92c9-dfe8f3f1b755"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "nonNull2WhenStreamIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B63DB31191D83D1FBF836656FEA8F63B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "15CC3233B81224CAD79D029DBF20A962"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "nonNull_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "nonNull_stream2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "913f96f3-6af5-3bcf-af58-181b34a77af7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "java.util.stream.Stream"
+    signature: "of(java.util.Collection<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "1B17D9C09B5C64D86C86BBC992948B41"
+    parametersTypes:
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "ofWhenCollectionIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "501306E502BEA5E09927AFBA1B371391"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "4EE10F5DE81D25BB70304CB804BBAE11"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "of_collection1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "55A01CB25DE5017DDC35EE6DBB9B0DDA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ccfa1d1c-a1b4-3c6c-a9aa-0face184b296"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "ofWhenCollectionIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5A0C1C897FB11CAFB651ECE638C3A9B2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "3788DC7B962E3505EA508601629A76FF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "of_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2FBE5E20F01A1E8A68FBF7BCDB2A41CF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "of_stream1"
+        fixed: false
+        collectionUuid: "of_collection1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f69ffa89-94b6-3fd7-80ec-e360dc8f5494"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "java.util.stream.Stream"
+    signature: "of(java.util.Enumeration<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "0D98F9F523E66087DD0D5C616A9741C0"
+    parametersTypes:
+    - "java.util.Enumeration"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "18416070142D38D85818C3AAF8752D45"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumeration"
+      modelFingerprint: "6AF5FBD029B901FCA214F0042904D48E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.Enumeration"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.Enumeration"
+        genericValueType: "java.lang.Object"
+        uuid: "of_enumeration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2d9e451b-59ca-3da9-a6c7-f80da9bfa12e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "java.util.stream.Stream"
+    signature: "of(java.lang.Iterable<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "1B4A7E2ADE2D8D91FBE01FABFA3112A2"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of2WhenIterableIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "71E76A3DAF05AA4DBA89935B7DD717E4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      modelFingerprint: "11D0D4A725456B9DD4F546BA7EBCEEA9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Iterable"
+        genericValueType: "java.lang.Object"
+        uuid: "of_iterable1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "55A01CB25DE5017DDC35EE6DBB9B0DDA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f648a8e7-6ca3-3a39-87be-daba6fa527de"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of2WhenIterableIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "435D02AB4ECB35CE0EA0E96DA0A03226"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      modelFingerprint: "BC5B4559B33E7762A91E102068FFA4F0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        genericValueType: "java.lang.Object"
+        uuid: "of_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0fc234c3-c203-324e-a4f7-824425b56f59"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "java.util.stream.Stream"
+    signature: "of(java.util.Iterator<java.lang.Object>) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "2A97AC7978883945B6D1BCB7BFBFB219"
+    parametersTypes:
+    - "java.util.Iterator"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of3WhenIteratorIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "890D5C479CC12C5420E59762C9CB0487"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterator"
+      modelFingerprint: "B3DB9C0968493232B353B6CE525D0630"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Iterator"
+        genericValueType: "java.lang.Object"
+        uuid: "of_iterator1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "55A01CB25DE5017DDC35EE6DBB9B0DDA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f786c25c-0989-39f4-ad29-3c1fd5411892"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of3WhenIteratorIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B413FD7A3822DFF25CEDB6BD8699E0A1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterator"
+      modelFingerprint: "E4719A911403337D0C5D620989409ABE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "java.lang.Object"
+        uuid: "of_iterator1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C753BC527FB9F94CD92387C5F4B57BA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad416a12-4fbe-3231-8480-2a85c6a219d6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "java.util.stream.Stream"
+    signature: "of(java.lang.Object[]) : java.util.stream.Stream<java.lang.Object>"
+    instructionFingerprint: "96B87D3108F345414310936007C73A1B"
+    parametersTypes:
+    - "java.lang.Object[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of5WhenValuesIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "68D18AAEAB7C15C0E8C97137D484CB24"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "E98A21BF7FB0D6AEED96BBB22447F9F6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object[]"
+        uuid: "of_object[]1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "55A01CB25DE5017DDC35EE6DBB9B0DDA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c6253f2d-e4a2-30c4-acdf-b900d5bea54f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of5WhenValuesIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8CBF9F9AF4A1BB54EC7345498A2FB9FF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "E6155E33D2A36BD2CB301FE33032781E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "of_object[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "830C0AA2EC65AE903238C2D7F25351CD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "of_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "029c9283-4f70-3bd2-94ab-ce9804456848"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "stream"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    signature: "stream(java.util.Collection<java.lang.Object>) : org.apache.commons.lang3.stream.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "C0FC222616B89F632922A4CFB23C15EE"
+    parametersTypes:
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "streamTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F9B28D637218DC285A4CF21D6F14BE3A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "3788DC7B962E3505EA508601629A76FF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "stream_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "8DA2376322DABD6B83162EB939B7C26D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "failableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.Collection"
+            genericValueType: "java.lang.Object"
+            uuid: "stream_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "failableStream(Collection): Streams$FailableStream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "stream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "stream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          uuid: "stream_streams.FailableStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6274C2A9359D328A04EAE323E239334E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "stream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "stream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        uuid: "stream_streams.FailableStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b4af2388-e781-3800-820a-b8ede09bd914"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "stream"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    signature: "stream(java.util.stream.Stream<java.lang.Object>) : org.apache.commons.lang3.stream.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "AEED27F7DFF3D01EAD2BA4A932002CCD"
+    parametersTypes:
+    - "java.util.stream.Stream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "stream1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8BFEF83C68A5D938D24F771FC9193814"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "15CC3233B81224CAD79D029DBF20A962"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "stream_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Streams"
+      modelFingerprint: "F8FB1CE9CAE1338E329038DB7AD3716E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.stream.Streams"
+        uuid: "org.apache.commons.lang3.stream.Streams"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.stream.Streams"
+        name: "failableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "stream_stream1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "failableStream(Stream): Streams$FailableStream"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "stream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+            parameters:
+            - name: "stream"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<static_method_return>
+                  target: "java.util.stream.Stream"
+                  method: "empty"
+                  methodParameters: []
+                valueType: "java.util.stream.Stream"
+                uuid: "stream_streams.FailableStream1-stream"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          uuid: "stream_streams.FailableStream1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6274C2A9359D328A04EAE323E239334E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "stream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              uuid: "stream_streams.FailableStream1-stream"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        uuid: "stream_streams.FailableStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3b200cb7-448d-34b5-bf0d-0c7d7dec4137"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toArray"
+    returnType: "java.util.stream.Collector"
+    signature: "toArray(java.lang.Class<java.lang.Object>) : java.util.stream.Collector<java.lang.Object,?,java.lang.Object[]>"
+    instructionFingerprint: "1DB2A07D3D21F6D508AA794628D71381"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toArrayTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F499AE8DA80E921496B7059C63C849B3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pElementType"
+      modelFingerprint: "2FEB72AE690C6D35FCC081B20C2B1CA3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "toArray_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CD065ED8AA7D7BC6A33429F4E0668355"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$ArrayCollector"
+          parameters:
+          - name: "elementType"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "toArray_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.stream.Streams$ArrayCollector"
+          parameters:
+          - name: "elementType"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "toArray_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.stream.Streams$ArrayCollector"
+        uuid: "toArray_streams.ArrayCollector1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d237bbaf-b248-312d-8608-292b0411608c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

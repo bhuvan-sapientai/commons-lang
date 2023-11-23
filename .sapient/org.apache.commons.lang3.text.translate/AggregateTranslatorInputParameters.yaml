@@ -1,0 +1,304 @@
+---
+modelFingerprint: "085374BB37AB3F37211EB75BF4CE054B"
+methods:
+- method:
+    name: "translate"
+    returnType: "int"
+    signature: "translate(java.lang.CharSequence,int,java.io.Writer) : int"
+    throwsExceptions:
+    - "java.io.IOException"
+    instructionFingerprint: "6568EE2A77106029CE8D3B0078C32D24"
+    parametersTypes:
+    - "java.lang.CharSequence"
+    - "int"
+    - "java.io.Writer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "translateWhenConsumedNotEquals0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.text.translate.CharSequenceTranslator[])\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4A48BBE4E0DADC68AB412E642DD0D2C4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A3F4D5EB28305D93B50B8C4CB1720F16"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+          parameters:
+          - name: "translators"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.apache.commons.lang3.text.translate.CharSequenceTranslator[]"
+              uuid: "<init>_charSequenceTranslator[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+          parameters:
+          - name: "translators"
+            value:
+              sapientType: "ARRAY"
+              valueType: "org.apache.commons.lang3.text.translate.CharSequenceTranslator[]"
+              uuid: "<init>_charSequenceTranslator[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "BF19D054F28E26F8F709D34B84F889B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "translate_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "759806ea-e470-3b06-add2-be351f3cf8a9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "translateWhenConsumedEquals0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.text.translate.CharSequenceTranslator[])\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CE5DEF98775D070362DE3FB992AADA64"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A3F4D5EB28305D93B50B8C4CB1720F16"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+          parameters:
+          - name: "translators"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "org.apache.commons.lang3.text.translate.CharSequenceTranslator[]"
+              uuid: "<init>_charSequenceTranslator[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+          parameters:
+          - name: "translators"
+            value:
+              sapientType: "ARRAY"
+              valueType: "org.apache.commons.lang3.text.translate.CharSequenceTranslator[]"
+              uuid: "<init>_charSequenceTranslator[]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.AggregateTranslator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "BF19D054F28E26F8F709D34B84F889B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bacdd31c-ee87-3386-8dde-c8ad22fc92bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

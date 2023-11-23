@@ -1,0 +1,465 @@
+---
+modelFingerprint: "443F39697C562A2C383288BD3E22CCAF"
+methods:
+- method:
+    name: "getSystemURLs"
+    returnType: "java.net.URL[]"
+    signature: "getSystemURLs() : java.net.URL[]"
+    instructionFingerprint: "95C57F33FF4E68CD8A82614096D73F0E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSystemURLsWhenClNotInstanceOfURLClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AAEE4484B41ED58E9FAA42CF3119FC95"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E04F9592587386D5D75BFE03BED81641"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.net.URL[]"
+        uuid: "<clinit>_uRL[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d4f7ebc8-7006-38ba-b941-4b8261bd48bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getThreadURLs"
+    returnType: "java.net.URL[]"
+    signature: "getThreadURLs() : java.net.URL[]"
+    instructionFingerprint: "56D2FEF4798112E084F2D7C55A02904A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getThreadURLsWhenClNotInstanceOfURLClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "787C4D1FED2494B70632EFDA81B967CB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E04F9592587386D5D75BFE03BED81641"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.net.URL[]"
+        uuid: "<clinit>_uRL[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3398e974-4899-393d-8baf-e3221a5c067d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(java.lang.ClassLoader) : java.lang.String"
+    instructionFingerprint: "04FC39BC8B1A8A6663D4A66E6FC04E73"
+    parametersTypes:
+    - "java.lang.ClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringWhenClassLoaderInstanceOfURLClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "89BADCDE2ED8E2AD1D72B6A35BC55A7C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "A7DC7420A0DB6FE1BE2556F386F1DE87"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.net.URLClassLoader"
+          parameters:
+          - name: "urls"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.net.URL[]"
+              uuid: "toString_classLoader1-urls"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.net.URLClassLoader"
+          parameters:
+          - name: "urls"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.net.URL[]"
+              uuid: "toString_classLoader1-urls"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.net.URLClassLoader"
+        uuid: "toString_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "java.lang.ClassLoader"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassLoaderUtils"
+      modelFingerprint: "49A68D13C29BD4ED0B55F56632ADD9F1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ClassLoaderUtils"
+        uuid: "org.apache.commons.lang3.ClassLoaderUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ClassLoaderUtils"
+        name: "toString"
+        parameters:
+        - name: "classLoader"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.net.URLClassLoader"
+              parameters:
+              - name: "urls"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "java.net.URL[]"
+                  uuid: "toString_classLoader1-urls"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.net.URLClassLoader"
+              parameters:
+              - name: "urls"
+                value:
+                  sapientType: "ARRAY"
+                  content: !<array>
+                    values: {}
+                  suggestedContent: !<array>
+                    values: {}
+                  valueType: "java.net.URL[]"
+                  uuid: "toString_classLoader1-urls"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.net.URLClassLoader"
+            uuid: "toString_classLoader1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+            explicitCastForOverloadedMethods: "java.lang.ClassLoader"
+        signature: "toString(URLClassLoader): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_toString1"
+          valueType: "java.lang.String"
+          uuid: "toString_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_toString1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "86cfe8cb-c82d-3cee-a2a5-98c4c5e72dd0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toStringWhenClassLoaderNotInstanceOfURLClassLoader"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "125EF631480983BB7595EA64B0E5A6E5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "27E496872E683B3897FEB169C742F504"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.lang.ClassLoader"
+          method: "getPlatformClassLoader"
+          methodParameters: []
+        valueType: "java.lang.ClassLoader"
+        uuid: "toString_classLoader1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5CC82B1810ADD14511F12A4ACB714EBF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "null"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7399f82c-a3da-356f-88f5-411b7e4c3a62"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(java.net.URLClassLoader) : java.lang.String"
+    instructionFingerprint: "FD3B9C5F280532506F52D0F3DCFD4768"
+    parametersTypes:
+    - "java.net.URLClassLoader"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toString1WhenClassLoaderIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0777E910BAAC3D5EC8A7A927D68A1013"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "3DFCFB80A972CA7F13DEE316BA22E937"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.net.URLClassLoader"
+          parameters:
+          - name: "urls"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.net.URL[]"
+              uuid: "toString_uRLClassLoader1-urls"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.net.URLClassLoader"
+          parameters:
+          - name: "urls"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.net.URL[]"
+              uuid: "toString_uRLClassLoader1-urls"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.net.URLClassLoader"
+        uuid: "toString_uRLClassLoader1"
+        fixed: false
+        nameForMock: "toString_uRLClassLoader1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EDC9F9B8E00D9C8549BC906C7FD9875D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "toString_uRLClassLoader1A"
+        suggestedContent: !<regular>
+          value: "toString_uRLClassLoader1A"
+        valueType: "java.lang.String"
+        uuid: "toString_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "929c8f2a-e749-3df0-a058-68ed46eb995d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toString1WhenClassLoaderIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B36A0951B19AEE1F3ECB166331ACEC2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      modelFingerprint: "4FC0BD68D55BDF4AAEED08ABDB3D4D71"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.net.URLClassLoader"
+        uuid: "toString_uRLClassLoader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F75DD9C141394A1E325A89A3C6AC6B18"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "null"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "83637e61-9547-346c-a20d-16a3aa0b3518"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

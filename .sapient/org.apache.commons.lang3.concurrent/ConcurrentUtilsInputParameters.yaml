@@ -1,0 +1,3502 @@
+---
+modelFingerprint: "C5521BF06087427D625353D46B561402"
+methods:
+- method:
+    name: "extractCause"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+    signature: "extractCause(java.util.concurrent.ExecutionException) : org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "4E039691FC3F65AE8E7211247CC5A7CF"
+    parametersTypes:
+    - "java.util.concurrent.ExecutionException"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "extractCauseWhenExIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0500736413B2B93914B0A587B7C0ABB2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "27eecdfb-a4df-33d7-810b-3580a6b563dc"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "extractCauseWhenExGetCauseIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4E0C0E00442C9B94879C5170938CE032"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "C062DD058A0B1BCADEE8FC45752A73D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCause_executionException1-message"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCause_executionException1-message"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "extractCause_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "94921AA55754D8CCC578C86CDA8D0C3E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        uuid: "extractCause_concurrentException1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0b77918f-1b35-3836-b2bc-7a5d0817ce09"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "extractCauseWhenExGetCauseIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED1EBF40392B426E7B8FFFEE62F70BAB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "4CB03EF71F82414CD787653C5DAF6C59"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCause_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "extractCause_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "extractCause_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2A1C4CCABED0AD044C915249B4131F53"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCause_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "extractCause_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCause_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        uuid: "extractCause_concurrentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ab58021f-b2c2-36ab-b3a5-45b533144e05"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "extractCauseUnchecked"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+    signature: "extractCauseUnchecked(java.util.concurrent.ExecutionException) : org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+    instructionFingerprint: "C1792A06B082BA5CB9970CF534DBC74A"
+    parametersTypes:
+    - "java.util.concurrent.ExecutionException"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "extractCauseUncheckedWhenExIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0544DACCAD6D147F3A7A622664618C46"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "950ca208-3135-3e63-8f87-38e64006fa40"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "extractCauseUncheckedWhenExGetCauseIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FBBD20B3F0666B1525E6DBC4861924B3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "C062DD058A0B1BCADEE8FC45752A73D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_executionException1-message"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_executionException1-message"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "extractCauseUnchecked_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A6B1905B9EE27865F8A263CF283D8CA2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        uuid: "extractCauseUnchecked_concurrentRuntimeException1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e0c5898-5e8c-39ba-a29e-c4e7473aaf10"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "extractCauseUncheckedWhenExGetCauseIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "84C34E60DC62539DD917AF5F59DC343C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "4CB03EF71F82414CD787653C5DAF6C59"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "extractCauseUnchecked_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "684C62A9051F5FAF4A24A458D5F3D0DF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "extractCauseUnchecked_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "extractCauseUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        uuid: "extractCauseUnchecked_concurrentRuntimeException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2c38be5f-36a5-3d77-9e33-95a2211a92a9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "handleCause"
+    returnType: "void"
+    signature: "handleCause(java.util.concurrent.ExecutionException) : void"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "B8931A80D08C8A485473AA5B36968CF2"
+    parametersTypes:
+    - "java.util.concurrent.ExecutionException"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "handleCauseWhenCauseIsNotNullThrowsConcurrentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "13AB16F16CDA02D4FBCA39E10EC9F6D8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "EF4A3C591D9FEB2149AF1E3338E98413"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "handleCause_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "5D727B1E23DDCC13C6B9A29B4F2FACF5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "extractCause"
+        parameters:
+        - name: "ex"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCause_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCause_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.concurrent.ExecutionException"
+            uuid: "handleCause_executionException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "extractCause(ExecutionException): ConcurrentException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+            parameters:
+            - name: "cause"
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Throwable"
+                uuid: "handleCause_concurrentException1-cause"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+            parameters:
+            - name: "cause"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Throwable"
+                uuid: "handleCause_concurrentException1-cause"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          uuid: "handleCause_concurrentException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9200625373A7BEB54B922F4E52EFD1D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_concurrentException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_concurrentException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        uuid: "handleCause_concurrentException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3de92266-2624-33b7-954b-26ce85d1b23e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "handleCauseWhenCauseIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "56EDCE0DE56499A07E8A404A493FB61B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "EF4A3C591D9FEB2149AF1E3338E98413"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCause_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "handleCause_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "B14B7E691BE3E07D9D6809E119D7338B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "extractCause"
+        parameters:
+        - name: "ex"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCause_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCause_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.concurrent.ExecutionException"
+            uuid: "handleCause_executionException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "extractCause(ExecutionException): ConcurrentException"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          uuid: "handleCause_concurrentException1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "afa68603-a57d-3e97-8003-7cb116a3482a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "handleCauseUnchecked"
+    returnType: "void"
+    signature: "handleCauseUnchecked(java.util.concurrent.ExecutionException) : void"
+    instructionFingerprint: "2507EE628165FC8C73522839836C0C8C"
+    parametersTypes:
+    - "java.util.concurrent.ExecutionException"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "handleCauseUncheckedWhenCauseIsNotNullThrowsConcurrentRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7EBB0F45DDB38F3A692D46DB44F9DEA7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "EF4A3C591D9FEB2149AF1E3338E98413"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "handleCauseUnchecked_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "4F75E7D225377D3781C1351A18853352"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "extractCauseUnchecked"
+        parameters:
+        - name: "ex"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCauseUnchecked_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCauseUnchecked_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.concurrent.ExecutionException"
+            uuid: "handleCauseUnchecked_executionException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "extractCauseUnchecked(ExecutionException): ConcurrentRuntimeException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+            parameters:
+            - name: "cause"
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Throwable"
+                uuid: "handleCauseUnchecked_concurrentRuntimeException1-cause"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+            parameters:
+            - name: "cause"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<new>
+                  target: "java.lang.Throwable"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Throwable"
+                uuid: "handleCauseUnchecked_concurrentRuntimeException1-cause"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          uuid: "handleCauseUnchecked_concurrentRuntimeException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AD128801E13B280EDD9CFD0DB18B3517"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_concurrentRuntimeException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_concurrentRuntimeException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        uuid: "handleCauseUnchecked_concurrentRuntimeException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dc219dd1-50b9-304d-a41a-549078551f10"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "handleCauseUncheckedWhenCauseIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "408A3627AD8B33729022B6262F1B6930"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "EF4A3C591D9FEB2149AF1E3338E98413"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.concurrent.ExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "handleCauseUnchecked_executionException1-cause"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.concurrent.ExecutionException"
+        uuid: "handleCauseUnchecked_executionException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "986DB28BCFAF20DCD78BC267D90A5C68"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "extractCauseUnchecked"
+        parameters:
+        - name: "ex"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCauseUnchecked_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "handleCauseUnchecked_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.concurrent.ExecutionException"
+            uuid: "handleCauseUnchecked_executionException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "extractCauseUnchecked(ExecutionException): ConcurrentRuntimeException"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          uuid: "handleCauseUnchecked_concurrentRuntimeException1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "135cfc74-cbf8-3f31-bcce-30380aa7b314"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "checkedException"
+    returnType: "java.lang.Throwable"
+    signature: "checkedException(java.lang.Throwable) : java.lang.Throwable"
+    instructionFingerprint: "3D78FB38053A3B350AFEEC8E0BE5C6D6"
+    parametersTypes:
+    - "java.lang.Throwable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "checkedExceptionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8A6CB93F2F5C6AB83D30969876B55AFF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      modelFingerprint: "D4BF4C2D3C48A298C5EA9EA3D01A5A12"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "checkedException_throwable1"
+        fixed: false
+        nameForMock: "checkedException_throwable1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "51C52D6E8844B7F2891CF7334CD01BA3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "checkedException_throwable1"
+        fixed: false
+        nameForMock: "checkedException_throwable1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4fcbd87f-8838-3161-b4bb-367ba7abc850"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "initialize"
+    returnType: "java.lang.Object"
+    signature: "initialize(org.apache.commons.lang3.concurrent.ConcurrentInitializer<java.lang.Object>)\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "D46D01EBA24F8B93F64FBC15BFB69368"
+    parametersTypes:
+    - "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "initializeWhenInitializerIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "57A3AB1AC7C13267A207C3D961CB10F3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      modelFingerprint: "B390AC1397E8C693C179F96928154BFC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "initialize_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "initialize_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e3f3cd6c-f2f6-386c-8827-95d96ee849d4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "initializeWhenInitializerIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AD41AEAC06B108B297F0E838BCBBD906"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      modelFingerprint: "DA2DF11AA4BC9FDCC25D595092883415"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "initialize_concurrentInitializer1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "initialize_object1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9495d233-6477-3be4-a42a-544cebd7ba21"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "initializeUnchecked"
+    returnType: "java.lang.Object"
+    signature: "initializeUnchecked(org.apache.commons.lang3.concurrent.ConcurrentInitializer<java.lang.Object>)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "6A96512EF03CF1678D2C38ECDD46368F"
+    parametersTypes:
+    - "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "initializeUncheckedTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9967DBB005A4359C33E3AD5914F9D22A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      modelFingerprint: "B390AC1397E8C693C179F96928154BFC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "initializeUnchecked_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "634A9E7EC1115F349C0872DA0E560F56"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "initialize"
+        parameters:
+        - name: "initializer"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+            genericValueType: "java.lang.Object"
+            uuid: "initializeUnchecked_concurrentInitializer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(ConcurrentInitializer): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "initializeUnchecked_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "initializeUnchecked_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "26c3d1f9-c5c0-355b-ab8a-9bdb8156c70a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "initializeUncheckedWhenCaughtConcurrentExceptionThrowsConcurrentRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "57899DE104E66B5608C75EE87C9FAA13"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      modelFingerprint: "B390AC1397E8C693C179F96928154BFC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "initializeUnchecked_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "634A9E7EC1115F349C0872DA0E560F56"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "initialize"
+        parameters:
+        - name: "initializer"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+            genericValueType: "java.lang.Object"
+            uuid: "initializeUnchecked_concurrentInitializer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "initialize(ConcurrentInitializer): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "initializeUnchecked_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9266C6CA3D6B2B5C9787967B5C495B5D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "initializeUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "initializeUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        uuid: "initializeUnchecked_concurrentRuntimeException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1458ea06-4509-3b0f-9c2e-02d20b67a693"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "putIfAbsent"
+    returnType: "java.lang.Object"
+    signature: "putIfAbsent(java.util.concurrent.ConcurrentMap<java.lang.Object,java.lang.Object>,java.lang.Object,java.lang.Object)\
+      \ : java.lang.Object"
+    instructionFingerprint: "C39DC2AC03FDB52CE3880AF319354F64"
+    parametersTypes:
+    - "java.util.concurrent.ConcurrentMap"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "putIfAbsentWhenMapIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4D3906C5A40D293FE721B93A398DAC4B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "475CF4D791FC20904CE7C1B782FAB7D1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "putIfAbsent_concurrentMap1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "722f637f-8057-3fe1-b0cb-c05d8bac8d0d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "putIfAbsentWhenResultIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED43EB6FB5250D8E8E12CDDD39CE19DA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "CB3127EE8ADC0A71D6A65368BDD5094A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "putIfAbsent_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "putIfAbsent_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "map"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "putIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "putIfAbsent_object2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "java.lang.Object,java.lang.Object"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "putIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "putIfAbsent_object2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Map$Entry"
+            genericValueType: "java.lang.Object,java.lang.Object"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "putIfAbsent_concurrentMap2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      originalValueUuid: "putIfAbsent_concurrentMap1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "131567fd-609b-3be7-98cd-7c2814e24884"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "createIfAbsent"
+    returnType: "java.lang.Object"
+    signature: "createIfAbsent(java.util.concurrent.ConcurrentMap<java.lang.Object,java.lang.Object>,java.lang.Object,org.apache.commons.lang3.concurrent.ConcurrentInitializer<java.lang.Object>)\
+      \ : java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "8D68CA3DDC3E102CDFA0348FF4912363"
+    parametersTypes:
+    - "java.util.concurrent.ConcurrentMap"
+    - "java.lang.Object"
+    - "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "createIfAbsentWhenMapIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D33D3C9EB7F05958A05C6375725DC983"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b02d040f-4fb2-378b-8e50-b664d8f6a981"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "createIfAbsentWhenInitIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A23C85809EFD02AAD1D7550E46D198B3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "0B036C22002C09B7DC4392DECAC9C789"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "createIfAbsent_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "init"
+      modelFingerprint: "B75DD6F553C2AC8A764C2C96ACF22FF1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "createIfAbsent_concurrentInitializer1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e539115e-d0c7-3d3b-97d4-6a3fffc2f053"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "createIfAbsentWhenValueIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "264FD1388F1094793864690C5FABAECE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "EAA0C0C181130EE7CA2251B7CCE62B8A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "NULL"
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object2"
+                fixed: true
+                collectionUuid: "createIfAbsent_concurrentMap1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "NULL"
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object2"
+                fixed: true
+                collectionUuid: "createIfAbsent_concurrentMap1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "createIfAbsent_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "init"
+      modelFingerprint: "B3DF1978CA9061C62A84A799F3BECFDD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "createIfAbsent_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "AA5B4BF23345D88017F606478AF8FB99"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "putIfAbsent"
+        parameters:
+        - name: "map"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.concurrent.ConcurrentHashMap"
+              parameters: []
+              values:
+              - sapientType: "PAIR"
+                content: !<pair>
+                  key:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "createIfAbsent_object1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  value:
+                    sapientType: "NULL"
+                    valueType: "java.lang.Object"
+                    uuid: "createIfAbsent_object2"
+                    fixed: true
+                    collectionUuid: "createIfAbsent_concurrentMap1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.concurrent.ConcurrentHashMap"
+              parameters: []
+              values:
+              - sapientType: "PAIR"
+                content: !<pair>
+                  key:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Object"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Object"
+                    uuid: "createIfAbsent_object1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  value:
+                    sapientType: "NULL"
+                    valueType: "java.lang.Object"
+                    uuid: "createIfAbsent_object2"
+                    fixed: true
+                    collectionUuid: "createIfAbsent_concurrentMap1"
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.concurrent.ConcurrentMap"
+            genericValueType: "java.lang.Object,java.lang.Object"
+            uuid: "createIfAbsent_concurrentMap1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "createIfAbsent_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "createIfAbsent_object3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "putIfAbsent(ConcurrentMap,Object,Object): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "createIfAbsent_object4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object4"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f58b393f-bf41-3939-a11c-b60454578ae8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "createIfAbsentWhenValueIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "341EDF749460F49DC5A71A0CBE54AA6B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "240A3658F83925F7744A433751A2AEF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object2"
+                fixed: false
+                collectionUuid: "createIfAbsent_concurrentMap1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values:
+          - sapientType: "PAIR"
+            content: !<pair>
+              key:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              value:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "java.lang.Object"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "java.lang.Object"
+                uuid: "createIfAbsent_object2"
+                fixed: false
+                collectionUuid: "createIfAbsent_concurrentMap1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "createIfAbsent_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "init"
+      modelFingerprint: "B3DF1978CA9061C62A84A799F3BECFDD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "createIfAbsent_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsent_object2"
+        fixed: false
+        collectionUuid: "createIfAbsent_concurrentMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "80c4a6db-e039-3b08-b2ad-d36cf1867f75"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "createIfAbsentUnchecked"
+    returnType: "java.lang.Object"
+    signature: "createIfAbsentUnchecked(java.util.concurrent.ConcurrentMap<java.lang.Object,java.lang.Object>,java.lang.Object,org.apache.commons.lang3.concurrent.ConcurrentInitializer<java.lang.Object>)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "8A7F4959903BA0CC458D3C2775BEA09F"
+    parametersTypes:
+    - "java.util.concurrent.ConcurrentMap"
+    - "java.lang.Object"
+    - "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createIfAbsentUncheckedTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5CFD71E6A04FD570EC081B3E347ACA6F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "0B036C22002C09B7DC4392DECAC9C789"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "createIfAbsentUnchecked_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsentUnchecked_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "init"
+      modelFingerprint: "B3DF1978CA9061C62A84A799F3BECFDD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "createIfAbsentUnchecked_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "BBACC3A39AD331E526DA5354793789C7"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "createIfAbsent"
+        parameters:
+        - name: "map"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.concurrent.ConcurrentMap"
+            genericValueType: "java.lang.Object,java.lang.Object"
+            uuid: "createIfAbsentUnchecked_concurrentMap1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "createIfAbsentUnchecked_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "init"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+            genericValueType: "java.lang.Object"
+            uuid: "createIfAbsentUnchecked_concurrentInitializer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "createIfAbsent(ConcurrentMap,Object,ConcurrentInitializer): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "createIfAbsentUnchecked_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsentUnchecked_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a946ce2b-5cf3-3935-b2ed-f87e3ee12fe2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "createIfAbsentUncheckedWhenCaughtConcurrentExceptionThrowsConcurrentRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D243709E24F5E201C2855160760D7A69"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      modelFingerprint: "67673429E361DE43CAA335599AC15AE8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          collectionClass: "java.util.concurrent.ConcurrentHashMap"
+          parameters: []
+          values: []
+        valueType: "java.util.concurrent.ConcurrentMap"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "createIfAbsentUnchecked_concurrentMap1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "BB10A065F1B4C22BDC52BA18FF97EC6E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createIfAbsentUnchecked_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "init"
+      modelFingerprint: "B3DF1978CA9061C62A84A799F3BECFDD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+        genericValueType: "java.lang.Object"
+        uuid: "createIfAbsentUnchecked_concurrentInitializer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "24A70C7C76EC9EDDBCD10A51A952B679"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "createIfAbsent"
+        parameters:
+        - name: "map"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.concurrent.ConcurrentHashMap"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.concurrent.ConcurrentHashMap"
+              parameters: []
+              values: []
+            valueType: "java.util.concurrent.ConcurrentMap"
+            genericValueType: "java.lang.Object,java.lang.Object"
+            uuid: "createIfAbsentUnchecked_concurrentMap1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "createIfAbsentUnchecked_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "init"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+            genericValueType: "java.lang.Object"
+            uuid: "createIfAbsentUnchecked_concurrentInitializer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "createIfAbsent(ConcurrentMap,Object,ConcurrentInitializer): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "createIfAbsentUnchecked_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9266C6CA3D6B2B5C9787967B5C495B5D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "createIfAbsentUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "createIfAbsentUnchecked_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        uuid: "createIfAbsentUnchecked_concurrentRuntimeException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2587c616-20fa-3702-8046-bcbd7071065d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "constantFuture"
+    returnType: "java.util.concurrent.Future"
+    signature: "constantFuture(java.lang.Object) : java.util.concurrent.Future<java.lang.Object>"
+    instructionFingerprint: "28F8496B8FB10BCB5C404D505F17C299"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "constantFutureTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5612CE53718D8040FF9A3B8DF2EF496F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "E20A51C9C7E747158E6D18C62CBE5EAD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "constantFuture_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "341B30F2F43A5002AB3BA5277E0F4818"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "constantFuture_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "constantFuture_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture"
+        uuid: "constantFuture_concurrentUtils.ConstantFuture1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "47022dd0-a38e-347b-a1fd-f17272f4d470"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

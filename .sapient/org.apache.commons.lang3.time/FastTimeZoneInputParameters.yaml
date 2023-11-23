@@ -1,0 +1,938 @@
+---
+modelFingerprint: "577EAE582094F24D850C738026AE0A9A"
+methods:
+- method:
+    name: "getGmtTimeZone"
+    returnType: "java.util.TimeZone"
+    signature: "getGmtTimeZone() : java.util.TimeZone"
+    instructionFingerprint: "FA0786F0D9385314846E5AAFB9D62C67"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getGmtTimeZoneTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C86491944FF8CC0957F33576B35CFCC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CF62EAF4BBEC96F57C9222FD120E5D9F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "<clinit>_gmtTimeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85c7bcbf-13b8-3a4b-9beb-9c19cc341c8d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getGmtTimeZone"
+    returnType: "java.util.TimeZone"
+    signature: "getGmtTimeZone(java.lang.String) : java.util.TimeZone"
+    instructionFingerprint: "D51781EA5C88C894C22E7259763DB60D"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path9"
+    pathIdForUser: "path1"
+    testPathName: "getGmtTimeZone1WhenZEqualsPattern"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "28E488174D49E8ECAF0630717840A825"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "08fd452d-6da0-3e46-a86e-56da75cde7d6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getGmtTimeZone1WhenUTCEqualsPattern"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5BB5391225FD3001C4F1313080C7E119"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "5DA8378E54AA29277803321A3C1AFF3A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "UTC"
+        suggestedContent: !<regular>
+          value: "UTC"
+        valueType: "java.lang.String"
+        uuid: "getGmtTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CF62EAF4BBEC96F57C9222FD120E5D9F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "<clinit>_gmtTimeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5638854b-6541-30b8-8a34-167f1facedce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path3"
+    testPathName: "getGmtTimeZone1WhenMNotMatches"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E00E5AA3FC41DA3F7078355C169EA2B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "EAA17F5023E9129FF12322CE1A0AB5F8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "getGmtTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4929A60934FF9BFA0116D549016791E1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.TimeZone"
+        uuid: "getGmtTimeZone_timeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c990b6a-94d3-3f2e-a43f-f2c78ef5d564"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "getGmtTimeZone1WhenMinutesEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3DCCF13D52F9D2E4095AE4F46C84C46B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "695bcbc9-01e5-3107-ba8a-758c4124c112"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path5"
+    testPathName: "getGmtTimeZone1WhenGroupIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FB801190E2FB98018C6C206BB3DD149"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3a5001a9-4767-3e4e-9c6d-e70feea3c439"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path6"
+    testPathName: "getGmtTimeZone1WhenHoursEquals0AndMinutesEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E5B176B3A5633002383C7D8A0211212F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "getGmtTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CF62EAF4BBEC96F57C9222FD120E5D9F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "<clinit>_gmtTimeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec2ec15d-974f-32c7-bf89-a69407057b5c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path7"
+    testPathName: "getGmtTimeZone1WhenMinutesNotEquals0AndGroupIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "904E3F457240FA98EDA63B9DEF94A12D"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "67a718e7-915d-3a31-8c10-3d074079257d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "getGmtTimeZone1WhenGroupCharAt0Equals___"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8BB88C68C4FF356EAC48E51D35B97ED4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "getGmtTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "710D4E0D8F329E9068CDC83B42ABD3D3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseInt_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseInt_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseInt_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseInt_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "getGmtTimeZone_gmtTimeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "95793e51-1805-3ecc-917a-471c4660cba6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "getGmtTimeZone1WhenGroupCharAt0NotEquals___"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7A047D0EB3A95729D7BE1B2189C82CD6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "getGmtTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3C25EBEF38A52D4CFE492F01373FB2C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseInt_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseInt_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseInt_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseInt_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "getGmtTimeZone_gmtTimeZone1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d6c15c29-9c7c-3420-9816-9a15c846882f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getTimeZone"
+    returnType: "java.util.TimeZone"
+    signature: "getTimeZone(java.lang.String) : java.util.TimeZone"
+    instructionFingerprint: "7DC4DC6DB1005A03CEDAF985A618FA40"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTimeZoneWhenTzIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2B5D5119006088D12F658D821BEDDB08"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "id"
+      modelFingerprint: "32EECB3E162DFC0FCF6171E2CD50728C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "id1"
+        valueType: "java.lang.String"
+        uuid: "getTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "FastTimeZone"
+      modelFingerprint: "0D2AA0AA81AD74B3F52A80771145C84A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.time.FastTimeZone"
+        uuid: "org.apache.commons.lang3.time.FastTimeZone"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.time.FastTimeZone"
+        name: "getGmtTimeZone"
+        parameters:
+        - name: "pattern"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "id1"
+            valueType: "java.lang.String"
+            uuid: "getTimeZone_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getGmtTimeZone(String): TimeZone"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.TimeZone"
+            method: "getDefault"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "java.util.TimeZone"
+            method: "getDefault"
+            methodParameters: []
+          valueType: "java.util.TimeZone"
+          uuid: "getTimeZone_timeZone1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AD590E4CBC2FD305798FAFCCB8315E24"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "getTimeZone_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "caec973b-d16d-3c96-95e2-6e480447db3a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getTimeZoneWhenTzIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "485C1368A97FE7395EB6CA2C04B34328"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "id"
+      modelFingerprint: "E7580F3E9F136D54DE68601AF7D78ABA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "getTimeZone_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "FastTimeZone"
+      modelFingerprint: "D809858B24A4E3756960A36642F5292D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.time.FastTimeZone"
+        uuid: "org.apache.commons.lang3.time.FastTimeZone"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.time.FastTimeZone"
+        name: "getGmtTimeZone"
+        parameters:
+        - name: "pattern"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "getTimeZone_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getGmtTimeZone(String): TimeZone"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.util.TimeZone"
+          uuid: "getTimeZone_timeZone1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CF5407FDB6CFD36B946CE529EDBCD4AE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getTimeZone"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "getTimeZone_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getTimeZone"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "getTimeZone_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.TimeZone"
+        uuid: "getTimeZone_timeZone2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dcab0180-ee54-382a-ab73-50ddde7f3020"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

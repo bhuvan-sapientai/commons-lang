@@ -1,0 +1,694 @@
+---
+modelFingerprint: "F4A7A672A3685E9F226CADC464F133D1"
+methods:
+- method:
+    name: "format"
+    returnType: "java.lang.StringBuffer"
+    signature: "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)\
+      \ : java.lang.StringBuffer"
+    instructionFingerprint: "F15FEFB127E62CA625BC68E249186919"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.StringBuffer"
+    - "java.text.FieldPosition"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.text.Format,java.text.Format) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "09A90A1D996B086565FEC6079DC9A988"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "113C009B714268232C89891FC7595243"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.CompositeFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "B5E76A0561188674C9689A31138DB4AD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "format_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toAppendTo"
+      modelFingerprint: "DCB789FA01045B9572227FFD66D6D9E1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "6B5FB9BE6B37AB65AAAA03790CABBC58"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.FieldPosition"
+          parameters:
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "format_fieldPosition1-field"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.FieldPosition"
+          parameters:
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "format_fieldPosition1-field"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.FieldPosition"
+        uuid: "format_fieldPosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2023724-fb02-31bf-8f56-c852070520c4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "parseObject"
+    returnType: "java.lang.Object"
+    signature: "parseObject(java.lang.String,java.text.ParsePosition) : java.lang.Object"
+    instructionFingerprint: "3935660745D295CA42E748A307B32C2D"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.text.ParsePosition"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "parseObjectTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.text.Format,java.text.Format) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "40FF9E3A6695A2270DC0B88DC224ABD5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "113C009B714268232C89891FC7595243"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.CompositeFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "DBB4EAD343115BD47E6EFC9880ECE2E5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "12345"
+        suggestedContent: !<regular>
+          value: "12345"
+        valueType: "java.lang.String"
+        uuid: "parseObject_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "E2F6FDDC696CA2909E49235F443C520F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseObject_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseObject_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.ParsePosition"
+        uuid: "parseObject_parsePosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "parseObject_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0e5fd58-457b-3aac-bcde-a4122dfbceb3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getParser"
+    returnType: "java.text.Format"
+    signature: "getParser() : java.text.Format"
+    instructionFingerprint: "9081EF8351A05FD98364C207FA44C5F4"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getParserTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.text.Format,java.text.Format) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3BFE841E06280B122242CF1D31B30333"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "777a2637-0612-3e43-83d2-b75d6490b14b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFormatter"
+    returnType: "java.text.Format"
+    signature: "getFormatter() : java.text.Format"
+    instructionFingerprint: "E16E3565ED91384968BB509411FDC845"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFormatterTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.text.Format,java.text.Format) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3BFE841E06280B122242CF1D31B30333"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "91e6fb83-455b-31e3-8e29-be722366c4a6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "reformat"
+    returnType: "java.lang.String"
+    signature: "reformat(java.lang.String) : java.lang.String"
+    throwsExceptions:
+    - "java.text.ParseException"
+    instructionFingerprint: "0F1BB2DC7DFC7D004E2E45BCC2EDF382"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "reformatTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.text.Format,java.text.Format) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D578778333D6C776AB7E7919BBFC8DD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "113C009B714268232C89891FC7595243"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.CompositeFormat"
+          parameters:
+          - name: "parser"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.text.Format"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.text.Format"
+              uuid: "<init>_format2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.CompositeFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "076F1FC7BD68AA24F9EE17B7687CB6EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "input1"
+        valueType: "java.lang.String"
+        uuid: "reformat_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "26EC44BFE639638CAA4B58D1811A284C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "parseObject"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "input1"
+            valueType: "java.lang.String"
+            uuid: "reformat_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.text.ParseException"
+        signature: "parseObject(String): Object throws java.text.ParseException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "reformat_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "FDCBB9387A76C9C1FE5D66D0BEE9CD99"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "format"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "reformat_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(Object): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_format1"
+          valueType: "java.lang.String"
+          uuid: "reformat_string2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_format1"
+        valueType: "java.lang.String"
+        uuid: "reformat_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6699cfc6-5935-34c5-a0ce-616eb0ff5290"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

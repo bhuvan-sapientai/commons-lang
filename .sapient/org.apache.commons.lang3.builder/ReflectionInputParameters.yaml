@@ -1,0 +1,292 @@
+---
+modelFingerprint: "53FF7E5F75CC1198BCE6186DE9FA27D3"
+methods:
+- method:
+    name: "getUnchecked"
+    returnType: "java.lang.Object"
+    signature: "getUnchecked(java.lang.reflect.Field,java.lang.Object) : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+    instructionFingerprint: "29FDC17A364758E7160905A2E5F0AB88"
+    parametersTypes:
+    - "java.lang.reflect.Field"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUncheckedTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8A3C967F85A5AAD379AB1CD8F56F382"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "field"
+      modelFingerprint: "D12664C75DF45638677978EF3A71A16C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.reflect.Field"
+        uuid: "getUnchecked_field1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "CA188AE719296BA62B6A85B0F3937932"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "getUnchecked_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "686c0fb3-48c5-3739-9918-095b0a8d2bac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getUncheckedWhenCaughtIllegalAccessExceptionThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "59C9CE263F6AB0C89BF23426FFEB9CE5"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "field"
+      modelFingerprint: "37905D6CE25BFBAEBD5601591B950C5F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Field"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Field"
+        uuid: "getUnchecked_field1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "B5E76A0561188674C9689A31138DB4AD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "getUnchecked_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B97222D518DA68645152B6B77C60A4C6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Field"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Field"
+        uuid: "getUnchecked_field1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.lang.reflect.Field"
+        name: "get"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "getUnchecked_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(Object): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "getUnchecked_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "912A199E59FE396E4B93025BC9D198DE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.IllegalAccessException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.IllegalAccessException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.IllegalAccessException"
+              uuid: "getUnchecked_illegalAccessException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.IllegalAccessException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.IllegalAccessException"
+              uuid: "getUnchecked_illegalAccessException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "getUnchecked_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a5e4cf6e-b1c4-3934-9ba6-d8c6ca2c540b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

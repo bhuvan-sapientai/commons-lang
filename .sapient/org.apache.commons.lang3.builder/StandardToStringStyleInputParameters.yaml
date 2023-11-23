@@ -1,0 +1,4299 @@
+---
+modelFingerprint: "EF1A1F08D95AD461558C2340FA3E9702"
+methods:
+- method:
+    name: "isUseClassName"
+    returnType: "boolean"
+    signature: "isUseClassName() : boolean"
+    instructionFingerprint: "E62E927891704B235A0E3CACE5B3FFB2"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isUseClassNameWhenSuperIsUseClassName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "859740C239E2DFAE497C5045246ED106"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isUseClassName_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5c2cca6d-4081-3a76-8051-53d020af4a27"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isUseClassNameWhenSuperNotIsUseClassName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "312B341D60F2105FDB90BE3601E00A2E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isUseClassName_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d1b48f43-ae87-36b7-b0be-b84caf595972"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setUseClassName"
+    returnType: "void"
+    signature: "setUseClassName(boolean) : void"
+    instructionFingerprint: "86FEE13D797EF7B79710983FA06810A3"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setUseClassNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "160FB08E4CF5C5A0AB9DB445588CE432"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "useClassName"
+      modelFingerprint: "6650102649D33E9916AB67ECE3353764"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setUseClassName_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9e394696-81c7-3cef-ab25-69bf7c9d2898"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isUseShortClassName"
+    returnType: "boolean"
+    signature: "isUseShortClassName() : boolean"
+    instructionFingerprint: "10FB305CA163366C873CE4854759855B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isUseShortClassNameWhenSuperIsUseShortClassName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6277F926C29CD106FD50E348D0056EAE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useShortClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseShortClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useShortClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseShortClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isUseShortClassName_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5c2aae38-7070-3362-bc30-6ba4de89dc09"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isUseShortClassNameWhenSuperNotIsUseShortClassName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "621F4543B0C7D71ED3B6A3400B357C69"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useShortClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseShortClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useShortClassName:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseShortClassName_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isUseShortClassName_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e910a403-37f7-3790-91b1-2a6f1a8cd813"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setUseShortClassName"
+    returnType: "void"
+    signature: "setUseShortClassName(boolean) : void"
+    instructionFingerprint: "ADBE1DC43352BA5AF34FDC410788CA5D"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setUseShortClassNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "27A7A0523995237044D368AF8F463232"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "useShortClassName"
+      modelFingerprint: "1D9D371D84B8AE900E8127889FDBBD49"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setUseShortClassName_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7e6403a2-f71a-376e-a11a-d7be54937260"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isUseIdentityHashCode"
+    returnType: "boolean"
+    signature: "isUseIdentityHashCode() : boolean"
+    instructionFingerprint: "6CE022BC1E801E0FEC45FEF42B4159A8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isUseIdentityHashCodeWhenSuperIsUseIdentityHashCode"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "32EBA4BBF412C5BEF63A2DBDFD31BAD2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useIdentityHashCode:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseIdentityHashCode_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useIdentityHashCode:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseIdentityHashCode_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isUseIdentityHashCode_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "71b57eab-744a-3ce5-bced-171a9a15ceb2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isUseIdentityHashCodeWhenSuperNotIsUseIdentityHashCode"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3F875CD547D9177B534F059E49F74326"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useIdentityHashCode:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseIdentityHashCode_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useIdentityHashCode:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseIdentityHashCode_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isUseIdentityHashCode_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cc99aa33-e13c-3b36-b92b-361a255a6ceb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setUseIdentityHashCode"
+    returnType: "void"
+    signature: "setUseIdentityHashCode(boolean) : void"
+    instructionFingerprint: "E2F5D731CE6E43FD50C28008AC05BABB"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setUseIdentityHashCodeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DB7C65448CB245975C77F2E217138BC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "useIdentityHashCode"
+      modelFingerprint: "8B190F7BA35129850082AD6F548C9A9D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setUseIdentityHashCode_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dcf36b1f-5eea-3919-b891-d90d2affb562"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isUseFieldNames"
+    returnType: "boolean"
+    signature: "isUseFieldNames() : boolean"
+    instructionFingerprint: "8F7E0D201D9CCF393990524CDBDBEDE8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isUseFieldNamesWhenSuperIsUseFieldNames"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D55E2C3E50A7D24E853A9FA929C399A1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useFieldNames:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseFieldNames_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useFieldNames:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isUseFieldNames_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isUseFieldNames_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b1c26666-b0f3-3381-8d20-201af91f77ee"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isUseFieldNamesWhenSuperNotIsUseFieldNames"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "452B3CA124DB0199F0950F455AD118F2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useFieldNames:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseFieldNames_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            useFieldNames:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isUseFieldNames_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isUseFieldNames_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f4866dde-8736-3b6a-8988-e01ed5d13e44"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setUseFieldNames"
+    returnType: "void"
+    signature: "setUseFieldNames(boolean) : void"
+    instructionFingerprint: "5CCB1E3EEF96A93B5F47DD8269E46BEB"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setUseFieldNamesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "568D137E5E198636B43772ACD520FF91"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "useFieldNames"
+      modelFingerprint: "AF14734B700D6477D0C17C12B10961C7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setUseFieldNames_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c14e6726-9059-3944-a34b-26bd52a821f8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isDefaultFullDetail"
+    returnType: "boolean"
+    signature: "isDefaultFullDetail() : boolean"
+    instructionFingerprint: "EE380CB979D95104A7F4DCAC5E9E01D0"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isDefaultFullDetailWhenSuperIsDefaultFullDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F3F078E07BC6A8A5F3E42EAB148A0DDE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            defaultFullDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isDefaultFullDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            defaultFullDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isDefaultFullDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isDefaultFullDetail_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fe2b8b3b-88d2-3cd2-b246-eaa9419224cc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isDefaultFullDetailWhenSuperNotIsDefaultFullDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B7A068C9B34453D9668C158AD689A225"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            defaultFullDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isDefaultFullDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            defaultFullDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isDefaultFullDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isDefaultFullDetail_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0e602174-c183-3854-b6df-02b24f22572e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setDefaultFullDetail"
+    returnType: "void"
+    signature: "setDefaultFullDetail(boolean) : void"
+    instructionFingerprint: "D672E85787082B28D522BD6567E26A9B"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setDefaultFullDetailTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A982EB0364C78D533D0D9BB233DBECE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultFullDetail"
+      modelFingerprint: "8B86AA0739695326D0AFF2D11E467EB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setDefaultFullDetail_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cadf1e72-5b1f-3701-b6b8-aa8c446b677b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isArrayContentDetail"
+    returnType: "boolean"
+    signature: "isArrayContentDetail() : boolean"
+    instructionFingerprint: "EFE54BCDF642197C1F123796F4AB5A99"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isArrayContentDetailWhenSuperIsArrayContentDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6D284F65DBD08065DE26547298DBE0AF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayContentDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isArrayContentDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayContentDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isArrayContentDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isArrayContentDetail_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3044d96e-dbef-3406-af02-e4038b7ddf61"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isArrayContentDetailWhenSuperNotIsArrayContentDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "43730B3BFB9617133B06F8E209BE48D9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayContentDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isArrayContentDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayContentDetail:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isArrayContentDetail_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isArrayContentDetail_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "65960ea8-3918-3a31-8ac2-d544364caf83"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setArrayContentDetail"
+    returnType: "void"
+    signature: "setArrayContentDetail(boolean) : void"
+    instructionFingerprint: "A133948579E3B32A3215987A0D4D2032"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setArrayContentDetailTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "452F78139D309B8D390D3340E8E055AF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arrayContentDetail"
+      modelFingerprint: "39DC69BFC523091D5C55C9E9C546FC65"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setArrayContentDetail_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b6769103-65fd-3e79-9eda-d08cb9bc8056"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getArrayStart"
+    returnType: "java.lang.String"
+    signature: "getArrayStart() : java.lang.String"
+    instructionFingerprint: "B11EB6E586B46FE1ADA817581C713E4E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getArrayStartTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "arrayStart1"
+              valueType: "java.lang.String"
+              uuid: "getArrayStart_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayStart:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getArrayStart_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "arrayStart1"
+        valueType: "java.lang.String"
+        uuid: "getArrayStart_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e43080eb-00b6-3604-b47a-c45134a713e3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setArrayStart"
+    returnType: "void"
+    signature: "setArrayStart(java.lang.String) : void"
+    instructionFingerprint: "3F1E1B54EB89FB20655CAC38343F6BFC"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setArrayStartWhenArrayStartIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1622EBCA7C0EF01C9B1DBAA34D08FE80"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arrayStart"
+      modelFingerprint: "C7AA817C9FEAFBFBDA438066B187137F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setArrayStart_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "efd20bd9-2901-3704-8420-eb0a1ba62a5b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setArrayStartWhenArrayStartIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C24BBEE0C6206A1AB168AEF0826D037F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4b5210ea-80d4-37e5-847d-021851a2f509"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getArrayEnd"
+    returnType: "java.lang.String"
+    signature: "getArrayEnd() : java.lang.String"
+    instructionFingerprint: "17DD4FF49BF7769161768C74F27A9300"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getArrayEndTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "arrayEnd1"
+              valueType: "java.lang.String"
+              uuid: "getArrayEnd_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arrayEnd:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getArrayEnd_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "arrayEnd1"
+        valueType: "java.lang.String"
+        uuid: "getArrayEnd_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6dc80005-bc11-38e1-bf39-a03359718a86"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setArrayEnd"
+    returnType: "void"
+    signature: "setArrayEnd(java.lang.String) : void"
+    instructionFingerprint: "F8E4FC72BE79610F3222A092DDDB305D"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setArrayEndWhenArrayEndIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "90AAFFB667BF705E2CA8FCBCE6BA2425"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arrayEnd"
+      modelFingerprint: "B10D555B24ADCEC4CDEC17D9A6442A81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setArrayEnd_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e7cfa4b2-c4e8-312a-9f9e-41cff31c58f8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setArrayEndWhenArrayEndIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D6690A24B65408CA99A855E1465ACBD0"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "39ce323d-2a1a-3de6-a106-be9f8776c9b2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getArraySeparator"
+    returnType: "java.lang.String"
+    signature: "getArraySeparator() : java.lang.String"
+    instructionFingerprint: "BDF4F37A4BDDF1186F70BB5C43F86F70"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getArraySeparatorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arraySeparator:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "arraySeparator1"
+              valueType: "java.lang.String"
+              uuid: "getArraySeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            arraySeparator:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getArraySeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "arraySeparator1"
+        valueType: "java.lang.String"
+        uuid: "getArraySeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f8a85b09-4be9-365d-8e5e-cc5310d3dbda"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setArraySeparator"
+    returnType: "void"
+    signature: "setArraySeparator(java.lang.String) : void"
+    instructionFingerprint: "C48756DB16E840070EAF7EEA0830F688"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setArraySeparatorWhenArraySeparatorIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B1C6229FF839C62ADF3A149C065FD5E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arraySeparator"
+      modelFingerprint: "7D45DB1FAFCA0FE890CD61760A7FDB49"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setArraySeparator_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "96af9ed3-5ba6-38f3-bc74-64ef762936b8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setArraySeparatorWhenArraySeparatorIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5475C479D34C3F906380CF05F91134F2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3d95549d-b73c-3e17-b513-21c9c148c6f7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getContentStart"
+    returnType: "java.lang.String"
+    signature: "getContentStart() : java.lang.String"
+    instructionFingerprint: "442F2BF67B2E576A6A5E624A79F1A9C4"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getContentStartTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            contentStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "contentStart1"
+              valueType: "java.lang.String"
+              uuid: "getContentStart_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            contentStart:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getContentStart_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "contentStart1"
+        valueType: "java.lang.String"
+        uuid: "getContentStart_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "90e2212f-bec4-3ba9-8b3d-fed2afb1321b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setContentStart"
+    returnType: "void"
+    signature: "setContentStart(java.lang.String) : void"
+    instructionFingerprint: "AD8074D9AE2F02434E62F65BA8AA5B85"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setContentStartWhenContentStartIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "903DBA83949BEF19A3D6F8F9BD1F66E6"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "contentStart"
+      modelFingerprint: "B45338861FD2730B50F0109CE992A78F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setContentStart_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fe156f67-a205-3587-90da-adad59aa08cb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setContentStartWhenContentStartIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED718E9C6152ECA6E34EBB5DBC99225D"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d3fcaa7b-3092-33d5-bdff-8b7ad759debd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getContentEnd"
+    returnType: "java.lang.String"
+    signature: "getContentEnd() : java.lang.String"
+    instructionFingerprint: "C7F75D0B7DF880E658A55F0DB52F9018"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getContentEndTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            contentEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "contentEnd1"
+              valueType: "java.lang.String"
+              uuid: "getContentEnd_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            contentEnd:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getContentEnd_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "contentEnd1"
+        valueType: "java.lang.String"
+        uuid: "getContentEnd_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "21455ee3-63e6-3d6d-a87e-8bd965710e5d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setContentEnd"
+    returnType: "void"
+    signature: "setContentEnd(java.lang.String) : void"
+    instructionFingerprint: "5DB1ADB83172F190CD3CDBF551F2A888"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setContentEndWhenContentEndIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BCB47A0D7843CB1FBF0DB72F3036D6E4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "contentEnd"
+      modelFingerprint: "DFAD260355762C8B8480B6640A7D80E0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setContentEnd_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9b9fc0ea-356c-31bf-a50d-b7552c5f64e9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setContentEndWhenContentEndIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BDB06DA2F0770310564F0DD3BB9BCEC7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "356b4ea5-2685-37e7-b7f9-33f002fc98ac"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFieldNameValueSeparator"
+    returnType: "java.lang.String"
+    signature: "getFieldNameValueSeparator() : java.lang.String"
+    instructionFingerprint: "CC29679917E6969E8BC847B264099F80"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFieldNameValueSeparatorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldNameValueSeparator:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "fieldNameValueSeparator1"
+              valueType: "java.lang.String"
+              uuid: "getFieldNameValueSeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldNameValueSeparator:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getFieldNameValueSeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldNameValueSeparator1"
+        valueType: "java.lang.String"
+        uuid: "getFieldNameValueSeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0db7e04f-7974-3be4-823b-44c5e4e99693"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFieldNameValueSeparator"
+    returnType: "void"
+    signature: "setFieldNameValueSeparator(java.lang.String) : void"
+    instructionFingerprint: "33B7D5E2935D03CDE068197886EF7DAD"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFieldNameValueSeparatorWhenFieldNameValueSeparatorIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "46642B6A80798938CFFA363052EB4C38"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldNameValueSeparator"
+      modelFingerprint: "A689CD1683043B396B9AEE09D02814E3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setFieldNameValueSeparator_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9e3d61ff-4f5b-3b0d-820a-74837a861bfe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setFieldNameValueSeparatorWhenFieldNameValueSeparatorIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B8E716C17011A62BD7CAD608E28CB50F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "fa89defc-9f19-310d-8a1b-19529ddb2b0f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFieldSeparator"
+    returnType: "java.lang.String"
+    signature: "getFieldSeparator() : java.lang.String"
+    instructionFingerprint: "F1D67148C73F85E0B9072B22A120CE21"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFieldSeparatorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparator:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "fieldSeparator1"
+              valueType: "java.lang.String"
+              uuid: "getFieldSeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparator:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getFieldSeparator_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldSeparator1"
+        valueType: "java.lang.String"
+        uuid: "getFieldSeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7738af40-97c0-3096-ae83-89dedfc4cf7d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFieldSeparator"
+    returnType: "void"
+    signature: "setFieldSeparator(java.lang.String) : void"
+    instructionFingerprint: "2B6A97D0FD0BAC7382DDDA51AC63B139"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFieldSeparatorWhenFieldSeparatorIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D020BCD37EFF86C7DB2E301A58597497"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldSeparator"
+      modelFingerprint: "8C48B4D659B383B622D6881CF6E954A0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setFieldSeparator_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "278d3887-45ff-308e-9c31-1191b06b2bd9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setFieldSeparatorWhenFieldSeparatorIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5715FAD28B1F9F2864806517FCF308F6"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5073c4bd-6cae-3ef0-8ca9-bbd28d37eb8f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isFieldSeparatorAtStart"
+    returnType: "boolean"
+    signature: "isFieldSeparatorAtStart() : boolean"
+    instructionFingerprint: "7E1D8BAB18BD15AA5396507A867667FB"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isFieldSeparatorAtStartWhenSuperIsFieldSeparatorAtStart"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "75361AD67F98AD9CFBCE8C9333B9D073"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtStart_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtStart_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isFieldSeparatorAtStart_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dd1e48ff-5938-3b8b-8a1f-8a24147b4b1e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isFieldSeparatorAtStartWhenSuperNotIsFieldSeparatorAtStart"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "23549041C67BCA73EFE1CB0A7E411B87"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtStart_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtStart:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtStart_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isFieldSeparatorAtStart_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "91025fb7-0219-3272-a8a6-955a3493218b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFieldSeparatorAtStart"
+    returnType: "void"
+    signature: "setFieldSeparatorAtStart(boolean) : void"
+    instructionFingerprint: "7224E94BE33B5270F1A6C4C4BB24DB6C"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFieldSeparatorAtStartTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E66955067612FC16D47B0B5FF2B005E9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldSeparatorAtStart"
+      modelFingerprint: "8C176A91650655929F9A5FB5EEA67DAD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setFieldSeparatorAtStart_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4fd487d7-fef1-3c37-90c3-573782f34d5a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isFieldSeparatorAtEnd"
+    returnType: "boolean"
+    signature: "isFieldSeparatorAtEnd() : boolean"
+    instructionFingerprint: "363E4ED4E0FD21B81D2B015F217BC1D2"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isFieldSeparatorAtEndWhenSuperIsFieldSeparatorAtEnd"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DB63D28717BADDBAF985286E3A73BE05"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtEnd_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtEnd_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isFieldSeparatorAtEnd_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2b191f06-1469-396a-89e7-ec81beec54e5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isFieldSeparatorAtEndWhenSuperNotIsFieldSeparatorAtEnd"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6FF55CABCEF6B9CD09D4731060506143"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtEnd_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            fieldSeparatorAtEnd:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "isFieldSeparatorAtEnd_boolean1"
+              fixed: true
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isFieldSeparatorAtEnd_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "791df892-2b0d-318f-b121-279c7e70386e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFieldSeparatorAtEnd"
+    returnType: "void"
+    signature: "setFieldSeparatorAtEnd(boolean) : void"
+    instructionFingerprint: "08863823084E2E35F0A450E7E043D448"
+    parametersTypes:
+    - "boolean"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFieldSeparatorAtEndTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5ED42A09F6B88FDF3C117C7A568A3D8F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldSeparatorAtEnd"
+      modelFingerprint: "5339082188C1740F66DAAB86E34D2C7C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "setFieldSeparatorAtEnd_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "332e8da2-9398-3436-a57f-d26b7e2515d7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getNullText"
+    returnType: "java.lang.String"
+    signature: "getNullText() : java.lang.String"
+    instructionFingerprint: "8BB7A81B4CF628CAA1C814D59E8A8D52"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNullTextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            nullText:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "nullText1"
+              valueType: "java.lang.String"
+              uuid: "getNullText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            nullText:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getNullText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "nullText1"
+        valueType: "java.lang.String"
+        uuid: "getNullText_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "80914e0f-1842-3cfb-aa9d-c712f196c4de"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setNullText"
+    returnType: "void"
+    signature: "setNullText(java.lang.String) : void"
+    instructionFingerprint: "F4585BD94387F945B20B9E77B65C4A8C"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setNullTextWhenNullTextIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EE0956D5054DA32EE244CDFE2081FE42"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "nullText"
+      modelFingerprint: "4306592EE5F1F7EDEAC8F94E35ACA503"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setNullText_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "13cdead9-f262-3897-8a29-46bcc1f14f01"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setNullTextWhenNullTextIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6CC472758422DDEA17FFDF0A7B6F4BF0"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "915ac9f8-f88c-3b8d-b8f6-e3c5913bfb5b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getSizeStartText"
+    returnType: "java.lang.String"
+    signature: "getSizeStartText() : java.lang.String"
+    instructionFingerprint: "13876FEB77045C1748E1DEA04FC1D4AF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSizeStartTextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            sizeStartText:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "sizeStartText1"
+              valueType: "java.lang.String"
+              uuid: "getSizeStartText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            sizeStartText:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getSizeStartText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "sizeStartText1"
+        valueType: "java.lang.String"
+        uuid: "getSizeStartText_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b544c7a1-60ba-3898-81ae-8b37beed1f45"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setSizeStartText"
+    returnType: "void"
+    signature: "setSizeStartText(java.lang.String) : void"
+    instructionFingerprint: "09B691FE05E885E5051BBA4825AA053A"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setSizeStartTextWhenSizeStartTextIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5A0FD194B4F485B524BECD5EE1CD9E0B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sizeStartText"
+      modelFingerprint: "DF58D33FAE4CAECB1ADDDAB25B3FFCC3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setSizeStartText_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "40b33774-4460-376d-ba12-470b0406e28b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setSizeStartTextWhenSizeStartTextIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BCF6AEB26AA08EF64332E9B4F6FD6AC0"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3bd5ae45-bb2c-3259-9e7e-a27f503a8ed8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getSizeEndText"
+    returnType: "java.lang.String"
+    signature: "getSizeEndText() : java.lang.String"
+    instructionFingerprint: "8351F16FFB1F1077485EE333E62D1B0F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSizeEndTextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            sizeEndText:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "sizeEndText1"
+              valueType: "java.lang.String"
+              uuid: "getSizeEndText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            sizeEndText:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getSizeEndText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "sizeEndText1"
+        valueType: "java.lang.String"
+        uuid: "getSizeEndText_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "32542a27-81c3-381f-999e-f976046c3831"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setSizeEndText"
+    returnType: "void"
+    signature: "setSizeEndText(java.lang.String) : void"
+    instructionFingerprint: "FDAD509EEA74997B7F58C1A6A56E55F6"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setSizeEndTextWhenSizeEndTextIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8951EB1A1862033E861EF9ADFF4932B2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sizeEndText"
+      modelFingerprint: "5C793690166F389BC904FF5DD57B6025"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setSizeEndText_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a0c6518e-c327-3e31-a386-6ed64b7b7526"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setSizeEndTextWhenSizeEndTextIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "51E7DF93766B910E3589953A0E5D6F78"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b482d9b8-e7c7-35ef-a09f-8e8f97b311f4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getSummaryObjectStartText"
+    returnType: "java.lang.String"
+    signature: "getSummaryObjectStartText() : java.lang.String"
+    instructionFingerprint: "4D99E380EF98235C0DECFF41F004AC93"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSummaryObjectStartTextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            summaryObjectStartText:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "summaryObjectStartText1"
+              valueType: "java.lang.String"
+              uuid: "getSummaryObjectStartText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            summaryObjectStartText:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getSummaryObjectStartText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "summaryObjectStartText1"
+        valueType: "java.lang.String"
+        uuid: "getSummaryObjectStartText_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b18e0af2-ecd1-3b74-8dfc-007519d104fd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setSummaryObjectStartText"
+    returnType: "void"
+    signature: "setSummaryObjectStartText(java.lang.String) : void"
+    instructionFingerprint: "B7C0F91495CC3804ED4AB9A8A8E31D11"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setSummaryObjectStartTextWhenSummaryObjectStartTextIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "009C3445661C6690741CE05C615BA89A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "summaryObjectStartText"
+      modelFingerprint: "1D3AAC038CEF0298D068AB1E9F4FE567"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setSummaryObjectStartText_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cafa55ff-0718-3191-9252-38f25981ffd0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setSummaryObjectStartTextWhenSummaryObjectStartTextIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "118496AAC24D7094F4DB98A95DBE83DA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "acfeb5e1-47f5-308f-91f5-c3e6599f5a23"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getSummaryObjectEndText"
+    returnType: "java.lang.String"
+    signature: "getSummaryObjectEndText() : java.lang.String"
+    instructionFingerprint: "BC99248272FA1FF265BC5B1F7E68D78C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSummaryObjectEndTextTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4896B93A8396EF2F36051125A815704C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            summaryObjectEndText:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "summaryObjectEndText1"
+              valueType: "java.lang.String"
+              uuid: "getSummaryObjectEndText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+          propertiesMap:
+            summaryObjectEndText:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "getSummaryObjectEndText_string1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "summaryObjectEndText1"
+        valueType: "java.lang.String"
+        uuid: "getSummaryObjectEndText_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "db48e23f-592a-3f8b-9ec8-6de1a3114842"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setSummaryObjectEndText"
+    returnType: "void"
+    signature: "setSummaryObjectEndText(java.lang.String) : void"
+    instructionFingerprint: "814390002379210BCC7574F88FD9C7BD"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setSummaryObjectEndTextWhenSummaryObjectEndTextIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DED166516FA2F52DE5ABF20B36DDE25"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.StandardToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.StandardToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "summaryObjectEndText"
+      modelFingerprint: "C70E215DF0497A6CA5FAD09ED1609FB0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "setSummaryObjectEndText_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ed178d67-a7a2-3179-aa6d-0472352c9983"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setSummaryObjectEndTextWhenSummaryObjectEndTextIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6CD606BFEB4F978755000BE2F9DFAA20"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "16a353dc-c8f4-344d-aed9-58a8bdd01bc4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

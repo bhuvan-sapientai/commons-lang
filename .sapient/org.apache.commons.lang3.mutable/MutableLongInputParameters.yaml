@@ -1,0 +1,2423 @@
+---
+modelFingerprint: "AAA47FD743D1F762DADD09922392B6F4"
+methods:
+- method:
+    name: "getValue"
+    returnType: "java.lang.Long"
+    signature: "getValue() : java.lang.Long"
+    instructionFingerprint: "060D6CB79D9AF56E4BB955B8B98CD600"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6F6608566D9A96D3DF420B3BA072DEBD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7A1821257D5E84BFA9DDBEF0462CFCF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Long"
+        uuid: "getValue_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0d20fa9-e250-397e-b581-b3faccc5922b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setValue"
+    returnType: "void"
+    signature: "setValue(long) : void"
+    instructionFingerprint: "98506BB81ACC348E8D8C9C6D2A44BECB"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "558DE5C2160F287B7A905C4918DD147A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "caf82ae3-0e98-3057-9861-2dae5125f309"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setValue"
+    returnType: "void"
+    signature: "setValue(java.lang.Number) : void"
+    instructionFingerprint: "DAFE4ED05E0588B2FBAD9C555985A427"
+    parametersTypes:
+    - "java.lang.Number"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setValue1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "017604C946AC8220E7FAA530DF59DECF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "848089BE47E859367AC3B6844675621D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "67A4D98290245DDF05A924388F6C8AB1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Number"
+        uuid: "setValue_number1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3a069434-0a20-3c0a-b281-65568fb6e90d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "increment"
+    returnType: "void"
+    signature: "increment() : void"
+    instructionFingerprint: "DAF5650C228AC03DF9661B84CC8701BC"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "incrementTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "533CEDBB55CD0EB6EAA52DE651932125"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6571E2EF761939747029343AA5DEF0C1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d92442e6-cddd-31db-b2df-1af19fc2f595"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAndIncrement"
+    returnType: "long"
+    signature: "getAndIncrement() : long"
+    instructionFingerprint: "E79B45CDB8054E51FC6171ADFC4B0203"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAndIncrementTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D8A69CDE0F363E7FC50FF41A8AB2D947"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "15AE9A805A01EDDA67E38A37639AF26F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8C02C4B74ECB6B399338B7B593088C43"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "<init>_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bbae3125-0cb3-334f-97c3-39c7da056dc4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "incrementAndGet"
+    returnType: "long"
+    signature: "incrementAndGet() : long"
+    instructionFingerprint: "37831F9DD75EA56718B752AE3D0716A6"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "incrementAndGetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C77DAC712E3E1789E2966F1F778F6961"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6571E2EF761939747029343AA5DEF0C1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C5C2DC38C9E6BAF6D416216AB0606C32"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "incrementAndGet_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "890f896f-c388-3106-a430-8811e86b0db6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "decrement"
+    returnType: "void"
+    signature: "decrement() : void"
+    instructionFingerprint: "D67D3CCBAD4534B40E391CC910805842"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "decrementTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5B21F2300B98FEFC7F3059D79C2B66E9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "34FCB88EAA7ED66BA65191547F779553"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0dcc1d22-7fa4-328c-80de-22c9ae9d2bf0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAndDecrement"
+    returnType: "long"
+    signature: "getAndDecrement() : long"
+    instructionFingerprint: "771C57124CEEA09BDD36F30E33EF986C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAndDecrementTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E1A67FDFD5E8229951BB29D6C92AF313"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "3B5F2A904E4FBC826754FF504CC52BF4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B35B441BEBFAE5B691EE431F92739963"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2
+        suggestedContent: !<regular>
+          value: 2
+        valueType: "long"
+        uuid: "<init>_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fae6f0a6-e362-3b8b-a92c-1d02d9fd0672"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "decrementAndGet"
+    returnType: "long"
+    signature: "decrementAndGet() : long"
+    instructionFingerprint: "0CA143EC4A6EE18146712FB7170768B5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "decrementAndGetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3DDEDF3FA8EB694EDFE3A540EAD798CA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "34FCB88EAA7ED66BA65191547F779553"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C5C2DC38C9E6BAF6D416216AB0606C32"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "decrementAndGet_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ea46b7d1-8a0f-3621-b6a8-12e1b7d43e79"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "add"
+    returnType: "void"
+    signature: "add(long) : void"
+    instructionFingerprint: "F5C3B65647D604A4FFEEF1CC142973AD"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F03F1C7CE8CBED315CE6DEA0CE009CF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "0ABC3A75A517A9CB5A1A3FCF31E19362"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "add_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2f52d914-224e-3cf8-a2e5-c61089a0f6f4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "add"
+    returnType: "void"
+    signature: "add(java.lang.Number) : void"
+    instructionFingerprint: "8E874B4EA6E063CB5A4B3E690FA17F83"
+    parametersTypes:
+    - "java.lang.Number"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "add1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9912E6D9E7416C96BD406C319317EBD3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "921BBD9484EA30DF45F59F01A3C4E03E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Number"
+        uuid: "add_number1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c171c54c-6269-3c0b-b712-82c3caeff653"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "subtract"
+    returnType: "void"
+    signature: "subtract(long) : void"
+    instructionFingerprint: "13CBB0B92EF6E20D905A10D438FE1B17"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "subtractTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F03F1C7CE8CBED315CE6DEA0CE009CF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "0ABC3A75A517A9CB5A1A3FCF31E19362"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "subtract_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "97b5e3b9-042a-36e9-ba00-8365659a5608"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "subtract"
+    returnType: "void"
+    signature: "subtract(java.lang.Number) : void"
+    instructionFingerprint: "C6716417611A7C533459DDACBF64B895"
+    parametersTypes:
+    - "java.lang.Number"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "subtract1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9912E6D9E7416C96BD406C319317EBD3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "921BBD9484EA30DF45F59F01A3C4E03E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Number"
+        uuid: "subtract_number1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5908211b-82d8-3fa8-a6d0-2be222d4a70b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "addAndGet"
+    returnType: "long"
+    signature: "addAndGet(long) : long"
+    instructionFingerprint: "904C80165F9C3DD448461B18CC6CFD25"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addAndGetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CAD2B763C32DAD920D490B58A6513F8E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "0ABC3A75A517A9CB5A1A3FCF31E19362"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "addAndGet_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B35B441BEBFAE5B691EE431F92739963"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2
+        suggestedContent: !<regular>
+          value: 2
+        valueType: "long"
+        uuid: "addAndGet_long2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1398fbfe-b231-35e3-9e1c-683ed1d4d73d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "addAndGet"
+    returnType: "long"
+    signature: "addAndGet(java.lang.Number) : long"
+    instructionFingerprint: "00FAC4CAFD57AA385682ADD70CE3B598"
+    parametersTypes:
+    - "java.lang.Number"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addAndGet1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B0BBD8F0E21B1DEE37CEEC61F0FD35BA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "921BBD9484EA30DF45F59F01A3C4E03E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Number"
+        uuid: "addAndGet_number1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B35B441BEBFAE5B691EE431F92739963"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2
+        suggestedContent: !<regular>
+          value: 2
+        valueType: "long"
+        uuid: "addAndGet_long2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "665959d3-3962-349d-ab3e-782533879234"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAndAdd"
+    returnType: "long"
+    signature: "getAndAdd(long) : long"
+    instructionFingerprint: "61F667AE8B6DDFF5FB853E06D26A541F"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAndAddTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CEBA262B8D5D1274CCC47FB4609D89C4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "5448E3A09AC2D59051BE04D694AAC23E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "0ABC3A75A517A9CB5A1A3FCF31E19362"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "getAndAdd_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C5C2DC38C9E6BAF6D416216AB0606C32"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "<init>_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "61f8febd-b51c-3ca7-9d82-9e442a3a6b8e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAndAdd"
+    returnType: "long"
+    signature: "getAndAdd(java.lang.Number) : long"
+    instructionFingerprint: "56925C3BDD1D4A9636185F375E36A151"
+    parametersTypes:
+    - "java.lang.Number"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAndAdd1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B46DFB5D01E31C0542B995163FC825F9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "5448E3A09AC2D59051BE04D694AAC23E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "operand"
+      modelFingerprint: "921BBD9484EA30DF45F59F01A3C4E03E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Number"
+        uuid: "getAndAdd_number1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C5C2DC38C9E6BAF6D416216AB0606C32"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "<init>_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ac1aec5a-7d5e-3bde-8bb7-ae4975dfb17a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "intValue"
+    returnType: "int"
+    signature: "intValue() : int"
+    instructionFingerprint: "A3637FDB1F5FB723A05C62FC3159055A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "intValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E2A4E8EAC4132A083FC137E3F1FA3F77"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        originalValueType: "long"
+        uuid: "intValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "767dc907-1074-3191-bfda-0a702630b7c3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "longValue"
+    returnType: "long"
+    signature: "longValue() : long"
+    instructionFingerprint: "78040D81B9F361B75B27027F42325F5E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "longValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2595CCC5A56C54EB9E2ECA64E6A132CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "64911F1E671E4CC0EEBFE5E21C69598A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: true
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "804632FC35F3D360B4AE3373F0AFA52B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "<init>_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9023386b-0a58-3cc3-912f-1a61aadf88ac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "floatValue"
+    returnType: "float"
+    signature: "floatValue() : float"
+    instructionFingerprint: "6F407ABF9229C11D74F7159BF3B0080E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "floatValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BC4CF51052EAFBA8322975641E45640"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6571E2EF761939747029343AA5DEF0C1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "122487349AFE68454B8B9ADCC7F74DD6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "float"
+        originalValueType: "long"
+        uuid: "floatValue_float1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aeac4aab-4829-3a1e-aab9-a9108ac2e6bd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "doubleValue"
+    returnType: "double"
+    signature: "doubleValue() : double"
+    instructionFingerprint: "841DC511A6635B11BD754393010C9041"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "doubleValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F9720EA006E3263536870CEB5619FD2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6571E2EF761939747029343AA5DEF0C1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9137498EFBEBDD3FA216D1B7B56DA3B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "double"
+        originalValueType: "long"
+        uuid: "doubleValue_double1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6f7e6bb6-bfda-39e2-9303-4545aceabb0b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toLong"
+    returnType: "java.lang.Long"
+    signature: "toLong() : java.lang.Long"
+    instructionFingerprint: "7A0284D9A939C3BB1FF502327AC238CD"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toLongTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8B2AF4492356C12572010159C8B1D7FF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7A1821257D5E84BFA9DDBEF0462CFCF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "java.lang.Long"
+        uuid: "toLong_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3eb23fc9-ff64-35ad-a9f5-8930b7bb33f8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "09D71AFEFD6E7965E82D8845D4898B28"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenObjNotInstanceOfMutableLong"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "01F758BFF22F7DA86387C71E7F3A8D30"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cc34c05e-af3c-3811-8d1a-42e40c7eb339"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenValueEqualsObjLongValue"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E31C2DF031142F880708F745E24A3A55"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "06c9e9ba-3d99-3c66-ad03-4795b7e3d552"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenValueNotEqualsObjLongValue"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "90CC2F75D3E4381048B06BCEC8037559"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3952a602-4c84-39d2-821e-f68ebb874259"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "compareTo"
+    returnType: "int"
+    signature: "compareTo(org.apache.commons.lang3.mutable.MutableLong) : int"
+    instructionFingerprint: "7E90E13B3439DEF8489096C1D0460094"
+    parametersTypes:
+    - "org.apache.commons.lang3.mutable.MutableLong"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "compareToTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1F0FD026EE05CB8972E2A287D717D917"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D58DF4B459B7669A2FFE614D08718C6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "other"
+      modelFingerprint: "7A389BAA9395C724B452EC56D56B5CE4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 1
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "compareTo_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 1
+              valueType: "long"
+              uuid: "compareTo_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "compareTo_mutableLong1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "231276223B3DD65935C1F8594364B51A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "compareTo_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "af5f6332-26a2-3749-8f9a-ac87ce6fe7cf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "B66060AFFC6D3B9CAAF47DF015F78FA6"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(long) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F1DBBCE9DC75BDD24B85013DEBEDC71C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "34FCB88EAA7ED66BA65191547F779553"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 2
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.mutable.MutableLong"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 2
+              valueType: "long"
+              uuid: "<init>_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.mutable.MutableLong"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EC730116184F68C582123EBB15320733"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2"
+        suggestedContent: !<regular>
+          value: "2"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

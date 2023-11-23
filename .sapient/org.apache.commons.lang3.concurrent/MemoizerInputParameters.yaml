@@ -1,0 +1,5701 @@
+---
+modelFingerprint: "BB1375C75A60684EAB0E242A2AE88CA1"
+methods:
+- method:
+    name: "compute"
+    returnType: "java.lang.Object"
+    signature: "compute(java.lang.Object) : java.lang.Object"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.util.concurrent.CancellationException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "CBF21BD8BBBA92713E1FD6F15EFC6537"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "computeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.concurrent.Computable<java.lang.Object,java.lang.Object>,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1F916847F5073631557BFFFD2B0FE9F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "F5BA574F9CBF56228E35EF03D894AC72"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.Memoizer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arg"
+      modelFingerprint: "83329DD8277B8006FE76B4CA8BBAC793"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "compute_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "compute_object3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e022dd50-ee00-3029-91de-7c419773931f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "computeWhenCaughtCancellationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.concurrent.Computable<java.lang.Object,java.lang.Object>,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "210A55172653F5AF72283AE86A3F8719"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.util.concurrent.CancellationException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "F5BA574F9CBF56228E35EF03D894AC72"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.Memoizer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arg"
+      modelFingerprint: "83329DD8277B8006FE76B4CA8BBAC793"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "compute_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future1"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future2"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future3"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future4"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future5"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future6"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future7"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object8"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future8"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object9"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future9"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object10"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future10"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object11"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future11"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object12"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future12"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object13"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future13"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object14"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future14"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object15"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 17
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future15"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object16"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 18
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future16"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object17"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 19
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future17"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object18"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 20
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future18"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object19"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 21
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future19"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object20"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 22
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future20"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object21"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 23
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future21"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object22"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 24
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future22"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object23"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 25
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future23"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object24"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 26
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future24"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object25"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 27
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future25"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object26"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 28
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future26"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object27"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 29
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future27"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object28"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 30
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future28"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object29"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 31
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future29"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object30"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 32
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future30"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object31"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 33
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future31"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object32"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 34
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future32"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object33"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 35
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future33"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object34"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 36
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future34"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object35"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 37
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future35"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object36"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 38
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future36"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object37"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 39
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future37"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object38"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 40
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future38"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object39"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 41
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future39"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object40"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 42
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future40"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object41"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 43
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future41"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object42"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 44
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future42"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object43"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 45
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future43"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object44"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 46
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future44"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object45"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 47
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future45"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object46"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 48
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future46"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object47"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 49
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future47"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object48"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 50
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future48"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object49"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 51
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future49"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object50"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 52
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future50"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object51"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 53
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future51"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object52"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 54
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future52"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object53"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 55
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future53"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object54"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 56
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future54"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object55"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 57
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future55"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object56"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 58
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future56"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object57"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 59
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future57"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object58"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 60
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future58"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object59"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 61
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future59"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object60"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 62
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future60"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object61"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 63
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future61"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object62"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 64
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future62"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object63"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 65
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future63"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object64"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 66
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future64"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object65"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 67
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future65"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object66"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 68
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future66"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object67"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 69
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future67"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object68"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 70
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future68"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object69"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 71
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future69"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object70"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 72
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future70"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object71"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 73
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future71"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object72"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 74
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future72"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object73"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 75
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future73"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object74"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 76
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future74"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object75"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 77
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future75"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object76"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 78
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future76"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object77"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 79
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future77"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object78"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 80
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future78"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object79"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 81
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future79"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object80"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 82
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future80"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object81"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 83
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future81"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object82"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 84
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future82"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object83"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 85
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future83"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object84"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 86
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future84"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object85"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 87
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future85"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object86"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 88
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future86"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object87"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 89
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future87"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object88"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 90
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future88"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object89"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 91
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future89"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object90"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 92
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future90"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object91"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 93
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future91"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object92"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 94
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future92"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object93"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 95
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future93"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object94"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 96
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future94"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object95"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 97
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future95"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object96"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 98
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future96"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object97"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 99
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future97"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object98"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 100
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future98"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object99"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 101
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future99"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object100"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 102
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future100"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object101"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 103
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future101"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object102"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 104
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "80ba8494-d6d5-3cf8-9fdc-64a2022ed8f3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "computeWhenRecalculateThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.concurrent.Computable<java.lang.Object,java.lang.Object>,boolean)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8C16A0BB60F9B3A7DAC969C06CAD55BB"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "6577FD3A2A4B3EC0B18B8E7728B598AF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              suggestedContent: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.Memoizer"
+          parameters:
+          - name: "computable"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "org.apache.commons.lang3.concurrent.Computable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "org.apache.commons.lang3.concurrent.Computable"
+              genericValueType: "java.lang.Object,java.lang.Object"
+              uuid: "<init>_computable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "recalculate"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: true
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.Memoizer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arg"
+      modelFingerprint: "83329DD8277B8006FE76B4CA8BBAC793"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "compute_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "future"
+      modelFingerprint: "9E941CD6A6CCF6B9348BCC5EDB174E02"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 2
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        genericValueType: "java.lang.Object"
+        uuid: "compute_future1"
+        fixed: false
+        collectionUuid: "<init>_concurrentHashMap1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "compute_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1E436502E5B0172DCB2CD0A06E89CD22"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Unchecked exception"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "launderException_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Unchecked exception"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "launderException_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "launderException_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e0c3b259-6cb2-37d1-ab1a-3713597689d5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

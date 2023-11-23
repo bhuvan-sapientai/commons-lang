@@ -1,0 +1,167 @@
+---
+modelFingerprint: "1114EACEDA470C397DE93978E40A01E2"
+methods:
+- method:
+    name: "nul"
+    returnType: "java.util.function.Supplier"
+    signature: "nul() : java.util.function.Supplier<java.lang.Object>"
+    instructionFingerprint: "4289FB81C549E4D039CC76E466E6CE77"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "nulTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9AB2869CB47F24D1DE550B7AA2B4555B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3DFCA879D842FFB440161C84FAF1D204"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.Supplier"
+        uuid: "nul_supplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aed7c6f0-a167-3925-82f4-0e518e31097a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get(java.util.function.Supplier<java.lang.Object>) : java.lang.Object"
+    instructionFingerprint: "6E9C7AE170D763EA7A5B890CABD541CF"
+    parametersTypes:
+    - "java.util.function.Supplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getWhenSupplierIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1C6CB2B34985696015F0E54964BC7084"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "4C923D526D1D06E992C4AB215A8ACBFC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.function.Supplier"
+        genericValueType: "java.lang.Object"
+        uuid: "get_supplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c46cea8-2d5b-3394-9fbf-e124d8ecaed3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getWhenSupplierIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "58FC906C6E8798FE2B2BF3262A2CFEB4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "33A814C0FDEA194E73393DB4ADD64E97"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Supplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Supplier"
+        genericValueType: "java.lang.Object"
+        uuid: "get_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "435d7013-90e2-36a2-ad5a-7611b76ef17d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

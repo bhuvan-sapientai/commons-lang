@@ -1,0 +1,243 @@
+---
+modelFingerprint: "E21BC9B3C3F89A237781E0C394AA9CEA"
+methods:
+- method:
+    name: "translate"
+    returnType: "boolean"
+    signature: "translate(int,java.io.Writer) : boolean"
+    throwsExceptions:
+    - "java.io.IOException"
+    instructionFingerprint: "C1FF5FB137BA18BD77A82D27E5DD5F17"
+    parametersTypes:
+    - "int"
+    - "java.io.Writer"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "translate3WhenCodePointLessThanCharacterMIN_SURROGATE"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "94D0EC66B542041BB45BA5A86CC59BF1"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "bfdfadc7-b397-38be-be11-12ea9701d2b1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "translate3WhenCodePointLessThanOrEqualsToCharacterMAX_SURROGATE"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0E511D0E6CF8413D99DCF9E03CCDADED"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "codePoint"
+      modelFingerprint: "A9D997ACDC1588D6B951343D3A101CF8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 55296
+        suggestedContent: !<regular>
+          value: 55296
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0386830b-02e2-3dd1-9162-ecd1602d92cb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "translate3WhenCodePointGreaterThanCharacterMAX_SURROGATE"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A9FCF113F913D8DCCA81D751055950CC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "codePoint"
+      modelFingerprint: "6B051F51739D38C29D4C6F9C9FCCE8C1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 57344
+        suggestedContent: !<regular>
+          value: 57344
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "84cdaa36-072e-3895-9516-9195e6e21ffb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

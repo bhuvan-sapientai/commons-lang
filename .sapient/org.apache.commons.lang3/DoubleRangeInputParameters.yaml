@@ -1,0 +1,496 @@
+---
+modelFingerprint: "3AF2608304DCA1F48D77E0167456A4D9"
+methods:
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.DoubleRange"
+    signature: "of(double,double) : org.apache.commons.lang3.DoubleRange"
+    instructionFingerprint: "1ED6D18F64A233445430068530D080E0"
+    parametersTypes:
+    - "double"
+    - "double"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "004C8AFF3FC9B4ADECACFB088E864C83"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "2E135F6B26E9B67139ADD80D00FF01E1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "double"
+        uuid: "of_double1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "FFA3787FCA181B4A60070F955F2716BD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "double"
+        uuid: "of_double2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "DoubleRange"
+      modelFingerprint: "60BCF6353B5DB834D521C2C67D83EF84"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.DoubleRange"
+        uuid: "org.apache.commons.lang3.DoubleRange"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.DoubleRange"
+        name: "of"
+        parameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            suggestedContent: !<regular>
+              value: 0.0
+            valueType: "java.lang.Double"
+            uuid: "of_double3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            suggestedContent: !<regular>
+              value: 0.0
+            valueType: "java.lang.Double"
+            uuid: "of_double4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Double,Double): DoubleRange"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.apache.commons.lang3.DoubleRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0.0
+                valueType: "double"
+                uuid: "of_doubleRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "arg1"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0.0
+                valueType: "double"
+                uuid: "of_doubleRange1-arg1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.apache.commons.lang3.DoubleRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                valueType: "double"
+                uuid: "of_doubleRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "arg1"
+              value:
+                sapientType: "BASIC"
+                valueType: "double"
+                uuid: "of_doubleRange1-arg1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.apache.commons.lang3.DoubleRange"
+          uuid: "of_doubleRange1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6E1A20C3A47177B2C9F87299124BEAFC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.apache.commons.lang3.DoubleRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              valueType: "double"
+              uuid: "of_doubleRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "arg1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              valueType: "double"
+              uuid: "of_doubleRange1-arg1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.apache.commons.lang3.DoubleRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              valueType: "double"
+              uuid: "of_doubleRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "arg1"
+            value:
+              sapientType: "BASIC"
+              valueType: "double"
+              uuid: "of_doubleRange1-arg1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.DoubleRange"
+        uuid: "of_doubleRange1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89de7933-05e8-343b-97f3-1b0a1a26943a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.DoubleRange"
+    signature: "of(java.lang.Double,java.lang.Double) : org.apache.commons.lang3.DoubleRange"
+    instructionFingerprint: "34D171BB03CDA02239D1DC875BA6B100"
+    parametersTypes:
+    - "java.lang.Double"
+    - "java.lang.Double"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of3WhenDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BE283205A7F77AF4FED095F90AA58D27"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "65E58591D95104FA2E8200A58B97ABCE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "java.lang.Double"
+        uuid: "of_double1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "A5EF96D0F3BD72E0DACE307A2AD904C2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "java.lang.Double"
+        uuid: "of_double2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D5D35B9A8487BF68B5A0A73D63A6C63E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.DoubleRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.DoubleRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.DoubleRange"
+        uuid: "of_doubleRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3e55c46-8fa8-31a3-835a-1820f41ee673"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E2E17569DAE5D5A7D2F4B14A6BE0D1B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "B8A13CB98B6128F6C8650B6751F8D750"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "java.lang.Double"
+        uuid: "of_double1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "749CEF77FCE67A9EDF00833B82A5E205"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0.0
+        suggestedContent: !<regular>
+          value: 0.0
+        valueType: "java.lang.Double"
+        uuid: "of_double2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D091E6E978C8FC1F01E22B3571903B3A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.DoubleRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.DoubleRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0.0
+              suggestedContent: !<regular>
+                value: 0.0
+              valueType: "java.lang.Double"
+              uuid: "of_double2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.DoubleRange"
+        uuid: "of_doubleRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a9cdbde-7415-3a09-b04a-1a4540112cfe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

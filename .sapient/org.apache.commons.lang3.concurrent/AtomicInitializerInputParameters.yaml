@@ -1,0 +1,190 @@
+---
+modelFingerprint: "FDB5EA1EA381DDA7A88C22CBE3F0105C"
+methods:
+- method:
+    name: "builder"
+    returnType: "org.apache.commons.lang3.concurrent.AtomicInitializer$Builder"
+    signature: "builder() : org.apache.commons.lang3.concurrent.AtomicInitializer$Builder<org.apache.commons.lang3.concurrent.AtomicInitializer<java.lang.Object>,java.lang.Object>"
+    instructionFingerprint: "47EC33994A0A1B8B390C6C1B32AEEC58"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "builderTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C1656387C1F41241EE8512A95B5B87A1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "42D7405BD0BA3F12782B38FE96C53A4E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.AtomicInitializer$Builder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.AtomicInitializer$Builder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer$Builder"
+        genericValueType: "org.apache.commons.lang3.concurrent.AtomicInitializer<java.lang.Object>,java.lang.Object"
+        uuid: "builder_atomicInitializer.Builder1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ed212fe2-2afd-3617-872a-5724a1f34c1c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getTypedException"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+    signature: "getTypedException(java.lang.Exception) : org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "9F480E5456D358B95DBDB7F7EFA52EA8"
+    parametersTypes:
+    - "java.lang.Exception"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTypedException1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E38570AB6008E9B1ABBEE8B3C7793132"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "e"
+      modelFingerprint: "575757A61B386E85024D9FECBC39E417"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Exception"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Exception"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Exception"
+        uuid: "getTypedException_exception1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D45B9637BC9F2D7B5DFEE084CA74E9AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "getTypedException_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "getTypedException_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        uuid: "getTypedException_concurrentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4c4fead5-dcfd-313d-a47b-e83ad23f6769"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

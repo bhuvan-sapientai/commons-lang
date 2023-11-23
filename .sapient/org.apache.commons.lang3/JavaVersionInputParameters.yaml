@@ -1,0 +1,1471 @@
+---
+modelFingerprint: "8F2B63F9A684726E45DCFABFFB0CBAA6"
+methods:
+- method:
+    name: "getJavaVersion"
+    returnType: "org.apache.commons.lang3.JavaVersion"
+    signature: "getJavaVersion(java.lang.String) : org.apache.commons.lang3.JavaVersion"
+    instructionFingerprint: "CA787E914CC69CB23A95C17C3E2F8E0A"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C71C7389AC5FF2F2F72763566725B7F5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "771AA8A012D197D095C556E6C8FEDA56"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.8"
+        suggestedContent: !<regular>
+          value: "1.8"
+        valueType: "java.lang.String"
+        uuid: "getJavaVersion_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "JavaVersion"
+      modelFingerprint: "60F5C450E0251AA5524D31100084841C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "org.apache.commons.lang3.JavaVersion"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.JavaVersion"
+        name: "get"
+        parameters:
+        - name: "versionStr"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1.8"
+            suggestedContent: !<regular>
+              value: "1.8"
+            valueType: "java.lang.String"
+            uuid: "getJavaVersion_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(String): JavaVersion"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "JAVA_0_9"
+          valueType: "org.apache.commons.lang3.JavaVersion"
+          uuid: "getJavaVersion_javaVersion1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B3FF929A109AEB7C07977BFF85DE74EB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_0_9"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "getJavaVersion_javaVersion1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e22a9744-058f-3158-86bd-a2487d7d1f4a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "get"
+    returnType: "org.apache.commons.lang3.JavaVersion"
+    signature: "get(java.lang.String) : org.apache.commons.lang3.JavaVersion"
+    instructionFingerprint: "C3FD558DEE4E531AB09AFA96A05A1287"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getWhenVersionStrIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F92BE8FB5C7C87B323349B168F17AA54"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "C2809E7896A27C25117EA91B1EA4C203"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8BB9A6D1D2AB810DEBC207A88C5F6DD1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "get_javaVersion1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f78fef20-323f-3292-8681-bb472a3f6f66"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path2"
+    testPathName: "getWhenSwitchVersionStrCase0_9"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9B0840552E3C275B977EE6786C64689F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "EA78A0A448891EFA0FC6A1B6A73400B6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "0.9"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "502D950EF3B323D6957425145519C30E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_0_9"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_0_9"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5d2f6ec8-1e76-3eec-aefd-bc8ef0f615c6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path16"
+    pathIdForUser: "path3"
+    testPathName: "getWhenSwitchVersionStrCase1_1"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4411A097A059DC4B80DD7F34EF0D0B8B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "B8F51C07668E0A5B65DC2438105E3766"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.1"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1E650B44305EE8E0B50909A73F9FC7BF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_1"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f14d0b39-bead-3015-860b-1efe611fef71"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path17"
+    pathIdForUser: "path4"
+    testPathName: "getWhenSwitchVersionStrCase1_2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1B93BB446B45479F442D2C8FAF1261C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "578B58440BC0F210EBAC1F6CA9C7C3FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.2"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0764285B34F8BEEB6D705002FC62CB76"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_2"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1df1d994-9da9-3cce-93be-f0dc15b0cdf8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path18"
+    pathIdForUser: "path5"
+    testPathName: "getWhenSwitchVersionStrCase1_3"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0BFE66E8FFFD00C88E13C73B8E45B67B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "A5C49C80D4837E76396B981186EDF57E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.3"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CEB79A407EB9D1B48E95498379E17BE9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_3"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_3"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aa379c02-c519-3373-a289-3c9cd47875a8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path19"
+    pathIdForUser: "path6"
+    testPathName: "getWhenSwitchVersionStrCase1_4"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "625B368CABD8A7DA3BF7BDEDB1035C37"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "3DAA79B94673CCCC768551CE750A3C2B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.4"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2916056B2FE09900E794C928E5CE30D3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_4"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_4"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7af2a762-e894-37e0-8164-a5fe8278255c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path20"
+    pathIdForUser: "path7"
+    testPathName: "getWhenSwitchVersionStrCase1_5"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E4ED12A80B7F98EEA96ACB93F64352EC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "536FDC561027EF5861536DFEF06A4BCD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.5"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1B27876D4194F90D5139A4402341A8D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_5"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_5"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5fb89835-cb5f-3555-91ae-441d1199d17f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path21"
+    pathIdForUser: "path8"
+    testPathName: "getWhenSwitchVersionStrCase1_6"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E742C849B2AD92E39C5FF7FC3A961613"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "44ED6564DE9013A337B38E482A627F6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.6"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6E55AAC78E02F327BAACD00EA1FE2972"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_6"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_6"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0fb9ef28-749b-35cb-8892-618a676d71a6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path22"
+    pathIdForUser: "path9"
+    testPathName: "getWhenSwitchVersionStrCase1_7"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5317E71AFB590674D9649E77C690A699"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "E82E3AC904631D3589AE9E94CD8EC7D8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.7"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8264CA7238D0D6BAFB64C737F13BCE01"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_7"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_7"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a507f603-39d5-32ea-afb4-1b6f9ea9487d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path23"
+    pathIdForUser: "path10"
+    testPathName: "getWhenSwitchVersionStrCase1_8"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "612AEBC542291EBB389A9AD2F245D8FF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "D00634FA0EF217293BC0DC4B67D51B2A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1.8"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "05999D6BE3D2DD7E5E5E03210529990D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_8"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_1_8"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "14ab7614-361b-3e6c-a536-3a0392650628"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path11"
+    testPathName: "getWhenSwitchVersionStrCase10"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55EA6F99053E0C4AD79E99AC7CEB246F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "41D43232239AD7CCFC23D5FF9749F4E8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "10"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "91BA00F285C85EC5C3ADED7442EF0016"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_10"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_10"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "92e34485-402e-3a1d-ade8-2dd424c95474"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path12"
+    testPathName: "getWhenSwitchVersionStrCase11"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B93854BA284AB4FB224A97312359519"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "80D2722980B87A81B383F7C3BD40FB6D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "11"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "75FDA282377515256649ECB651420528"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_11"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_11"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "11479df8-4156-3d9f-83e9-ed2222834ace"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path13"
+    testPathName: "getWhenSwitchVersionStrCase12"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BBBD76E1FBE8D18F1C731BD6715D1501"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "3C3CEFA6FD0A5506B533CDD766E981F4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "12"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "221CEC1F6E5588AC6671165E84B1A29F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_12"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_12"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b75fa75f-2521-32b7-a4ea-e9202cd639a3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path14"
+    testPathName: "getWhenSwitchVersionStrCase13"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5C4B2E443D157E06C1261F2286F82F03"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "916A5D2FF26BE7935045A365FD93F0B4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "13"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "49BF4C5F578DB82CAC1BE8C3247F5D27"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_13"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_13"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b93ed032-a492-38ed-a8be-747af0e4eec2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path15"
+    testPathName: "getWhenSwitchVersionStrCase14"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BC39D0E4841E2AF80CD5ACA939ACA5FF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "F05ED5D6D2648E7715EB8DDB0065A641"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "14"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1E41D86332FBB7387AE56FA3306243C7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_14"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_14"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3877a2b9-93a9-3b6b-8784-d49342ebcdb2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path16"
+    testPathName: "getWhenSwitchVersionStrCase15"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F47380CF8EC336C82F2BA9E454536903"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "D8176654C99D4FB7493BCB3CA537617E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "15"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6D7DEAA1F34AA6505B00A1C91479AA02"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_15"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_15"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "02546acc-a1b7-3362-a357-510f3117b284"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path17"
+    testPathName: "getWhenSwitchVersionStrCase16"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B130679C3AD2524C7D67BE012B169B8E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "357EFF568A406362C4E41EDF36A5AF02"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "16"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "02D3CD77A3B5EE36D654952D846F3713"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_16"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_16"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cb409155-a81e-3c55-a6f4-20ca260439cb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path18"
+    testPathName: "getWhenSwitchVersionStrCase17"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AA0C5B0D619C0EBA3FDA1640FF71B575"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "46A8CB6B24FEB78E4AC7307E61CDB2DD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "17"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DCAF5A0F14F4A55954E5A8AF5F6A632C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_17"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_17"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "13c469ed-bb59-3e26-900b-2f1ae9cdd7ac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path19"
+    testPathName: "getWhenSwitchVersionStrCase18"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "91C4D93592C21A3E6C8BBC723DE60912"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "741142C2236ABFEB0EE17194A62899BC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "18"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5FC2932217BBF2C8A59383D0400DA6B0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_18"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_18"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "08ce35dc-e8b4-30da-b8d3-2e822785a5b4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path20"
+    testPathName: "getWhenSwitchVersionStrCase19"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "45D60DBDAE4C086519DF9E7414C4447A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "A9A0C2ABA578B30696AEDC7593D3BBFB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "19"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DA17EA8F9EF5E52165E8FB3B4DB4AC1D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_19"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_19"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ebe75e2a-708f-3c87-b95f-c95862cb53be"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path13"
+    pathIdForUser: "path21"
+    testPathName: "getWhenSwitchVersionStrCase20"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "820EF62A45E532633D8283684A463337"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "11843A5A4B187D6D9DDF241DBF5A5470"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "20"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "02F127B41877B54BA6D44A7B6A59984B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_20"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_20"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0b7a87e-74de-30f1-90c1-8fd6c4552188"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path22"
+    testPathName: "getWhenSwitchVersionStrCase21"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5F80202CE430C4691DA2F74A72F7DBAC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "545B69F5781B3490362F0502E65272AA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "21"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ABF668C83E683F393010142EDBE894A3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_21"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_21"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5aa7df3a-8080-354b-9c32-f363fbd43180"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path23"
+    testPathName: "getWhenSwitchVersionStrCase9"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "683F8A1DC974879E99C141DBBE280A78"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "4EFCF581655B1ED561F71DDC1110C7A0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "9"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "64E8E0EAF81F5A077CD2264624EDA669"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_9"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_9"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "31f79120-415c-377b-8ea5-602091bca034"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path24"
+    pathIdForUser: "path24"
+    testPathName: "getWhenFloatParseFloatVersionStrSubstringFirstCommaPlus1EndGreaterThan_9f"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3D2E28CE6298F4147F3994A870FD64C3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "433B5616F8724B4FEDBD59B7E2EF1765"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "versionStr1"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6BFD28FF92885CA4CA94B456B734C070"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_RECENT"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "Enum-org.apache.commons.lang3.JavaVersion-JAVA_RECENT"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ebdf2f01-e841-32f0-ab6c-690d87a56841"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path25"
+    pathIdForUser: "path25"
+    testPathName: "getWhenFloatParseFloatVersionStrSubstringFirstCommaPlus1EndNotGreaterThan_9f"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "652FA0FB8E72F7DB8849F928D69F68B2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6fe0ff0e-86b6-33ea-902c-4dde312c7d7f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path26"
+    pathIdForUser: "path26"
+    testPathName: "getWhenVMinus1_LessThan1_AndFloatParseFloatVersionStrSubstringFirstCommaPlus1EndGreaterThan_9f"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1067D1A372748F705D3357B885106602"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dcdab2a2-2ea1-3b36-a0a0-c224049d6def"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path27"
+    pathIdForUser: "path27"
+    testPathName: "getWhenVMinus1_LessThan1_AndFloatParseFloatVersionStrSubstringFirstCommaPlus1EndNotGreaterThan_9f"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "10F2C86560D694B3ECC47E890E227D01"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "versionStr"
+      modelFingerprint: "433B5616F8724B4FEDBD59B7E2EF1765"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "versionStr1"
+        valueType: "java.lang.String"
+        uuid: "get_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8BB9A6D1D2AB810DEBC207A88C5F6DD1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "get_javaVersion1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6b247e77-59c9-3d2d-93d4-b76a8917674a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

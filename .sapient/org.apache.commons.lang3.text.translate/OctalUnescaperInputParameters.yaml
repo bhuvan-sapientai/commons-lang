@@ -1,0 +1,773 @@
+---
+modelFingerprint: "ADBBE0D24F7EE7C6CAB00192624DFE59"
+methods:
+- method:
+    name: "translate"
+    returnType: "int"
+    signature: "translate(java.lang.CharSequence,int,java.io.Writer) : int"
+    throwsExceptions:
+    - "java.io.IOException"
+    instructionFingerprint: "4F707D5A8E654E267FA1CC1217D960A8"
+    parametersTypes:
+    - "java.lang.CharSequence"
+    - "int"
+    - "java.io.Writer"
+  paths:
+  - pathId: "path12"
+    pathIdForUser: "path1"
+    testPathName: "translateWhenRemainingNotGreaterThan0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "71F155BEDD9A5FD578671A2FC5F2DEC0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "37ad5034-9769-355c-8d47-848c36eec433"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path2"
+    testPathName: "translateWhenIsOctalDigitNotInputCharAtIndexPlus1"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "79CC0C05BE56E6CDC9ED76BCF8041659"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a064f6dc-965c-3a38-9454-fa119a760f6c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path3"
+    testPathName: "translateWhenChGreaterThan_7_AndIsOctalDigitNotInputCharAtIndexPlus1"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C0A2EDB5BDC0E62D4EA8F3E66AD43458"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "3AA7A281AF957334EC60FB4709DC7758"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "40be5157-50d7-3ff0-b17d-589681223868"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path4"
+    testPathName: "translateWhenRemainingNotGreaterThan1"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6B0820554E96D881923F0D65EFBBACEB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "fa2ccd90-593c-39ad-9772-2c6f351591d0"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path5"
+    testPathName: "translateWhenIsOctalDigitNotInputCharAtNext2"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7D3C60FE8CC6013D6227456D8662851F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "3AA7A281AF957334EC60FB4709DC7758"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "translate_int11"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b7d517c8-fda7-3277-aa6c-28c30611b376"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path6"
+    testPathName: "translateWhenRemainingGreaterThan1AndIsOctalDigitNotInputCharAtNext2"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9BC18341CB9F85E83F7D20B4582B358"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "72b88695-dd64-35bd-b821-94b003204878"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path7"
+    testPathName: "translateWhenRemainingNotGreaterThan2"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FDF2C67C60E9D684F6BFC418D6EB85B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "84f2f7ff-9d26-3afb-b855-eb9a82162a50"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path8"
+    testPathName: "translateWhenIsZeroToThreeNotInputCharAtNext"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "12B26BF68902681E39AD4C5B929EE1AA"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "185035aa-e640-37a1-9f45-dd0d8ead3e7f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "translateWhenChGreaterThan_3_AndIsZeroToThreeNotInputCharAtNext"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "46F4AE281DC83D1AA7EC382E4FF15810"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "3AA7A281AF957334EC60FB4709DC7758"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "translate_int11"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9a664ebf-b16a-3e48-b1ad-d502043063ec"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path10"
+    testPathName: "translateWhenIsOctalDigitInputCharAtNext3"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "99DA214116BDFA1C3F61BC1AB910FE95"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "3AA7A281AF957334EC60FB4709DC7758"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "translate_int11"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "81f81aba-f8c4-3f84-97e4-13f4c562554e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path11"
+    testPathName: "translateWhenIsOctalDigitNotInputCharAtNext3"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D3DF9CCD341643DEE193126D96AAD5E8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.OctalUnescaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "3AA7A281AF957334EC60FB4709DC7758"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "translate_int11"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ee6ee53d-5a3e-36a0-a563-32e3de92147a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path12"
+    testPathName: "translateWhenIsZeroToThreeInputCharAtNextAndIsOctalDigitNotInputCharAtNext3"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E1B22FD49BEC4ED5DF69875E2924E66A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "844d27c8-fcf5-3ebe-bfb3-6587a2d41812"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

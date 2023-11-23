@@ -1,0 +1,5559 @@
+---
+modelFingerprint: "79724B87CFAFC63254E2CA63D85B429B"
+methods:
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.annotation.Annotation,java.lang.annotation.Annotation)\
+      \ : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    instructionFingerprint: "7AE38894FC3A8CC6D2D239889940A512"
+    parametersTypes:
+    - "java.lang.annotation.Annotation"
+    - "java.lang.annotation.Annotation"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenA1EqualsA2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "346723CACED1351095231B4A4A39AB29"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d4da03a5-fabc-327b-88dc-841a4c1f973a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path35"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenA1IsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "924AB1E714FF82C8A32A83B2189FF50E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "aab0b1da-17d3-3c8c-a69d-c0be9add47a3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenA2IsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DF3C64062AF04386E135DDC3D32E793C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "B638BD51A52B8E165DF918A69319384C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "393ec62c-066a-3466-9556-e08e6a10c0f2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "equalsWhenType1NotEqualsType2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "638E430EBEC6DF74DA82F41C779B27AF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8fcb5cd6-f778-3a5a-bcc2-7a5e447e1dd0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path34"
+    pathIdForUser: "path5"
+    testPathName: "equalsWhenMGetParameterTypesLengthNotEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2B4B8D076EEBAF0ED1D2CF92FD3469F8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dfb77dc8-c2a0-3a08-beb3-e14d7572000d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path33"
+    pathIdForUser: "path6"
+    testPathName: "equalsWhenIsValidAnnotationMemberTypeNotMGetReturnType"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3FC4D359D05EEB2D1AD52A35A14DBA17"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f5cf907f-4534-3734-9548-6a406ce33d34"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path38"
+    pathIdForUser: "path7"
+    testPathName: "equalsWhenCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "50AA25D5DC06D7F5C25BA17665946C32"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: true
+    inputParameters: []
+    uuid: "283bc32b-4843-3f16-ac42-f9720af5c685"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path37"
+    pathIdForUser: "path8"
+    testPathName: "equalsWhenIsValidAnnotationMemberTypeNotMGetReturnTypeAndCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5F589631FBFDB9819FF98FDB43B5BA44"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: true
+    inputParameters: []
+    uuid: "0d8d141f-1e07-3fd5-a74f-02967a24255a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "equalsWhenMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3D4A329B02633CE591572CD7D33A8729"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fdf21317-0dd3-331b-abb7-0f7d37a193c9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path36"
+    pathIdForUser: "path10"
+    testPathName: "equalsWhenMemberEqualsMGetReturnTypeV1V2AndCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7BF9700E82FCC9ED6CF5C58A4B7B7054"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "type1"
+      modelFingerprint: "7A3F55F56BB5A95F1D335232711B92FC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? extends java.lang.annotation.Annotation"
+        valueType: "java.lang.Class"
+        genericValueType: "? extends java.lang.annotation.Annotation"
+        uuid: "equals_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "type1"
+        name: "getDeclaredMethods"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredMethods(): Method[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "equals_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "equals_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Method[]"
+          uuid: "equals_method[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "m"
+      modelFingerprint: "B3C9448D98B7339D991B88C2805354BB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "equals_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "m"
+        name: "invoke"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.annotation.Annotation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.annotation.Annotation"
+            uuid: "equals_annotation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "equals_object[]3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Annotation,Object[]): Object throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "equals_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "m"
+      modelFingerprint: "B3C9448D98B7339D991B88C2805354BB"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "equals_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "m"
+        name: "invoke"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.annotation.Annotation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.annotation.Annotation"
+            uuid: "equals_annotation2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "equals_object[]4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Annotation,Object[]): Object throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "equals_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "05dc0751-b7a7-3bd8-b7bb-d53476ea9e53"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path32"
+    pathIdForUser: "path11"
+    testPathName: "equalsWhenMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C1607F92809406B5A59148D51D2A183B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "121e173b-10b8-3cf0-838e-de47916a527c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path12"
+    testPathName: "equalsWhenO2IsNullAndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EEA726AAD4B259DEBE3182EA70240556"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f7125332-b3a0-37b8-bd4e-3ced78a15617"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path28"
+    pathIdForUser: "path13"
+    testPathName: "equalsWhenTypeIsAnnotationAndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "275A915720B1477F54B6EC82E1CFE513"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2ec4574-7ad0-3c93-8796-52b077be5f1f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path29"
+    pathIdForUser: "path14"
+    testPathName: "equalsWhenTypeIsAnnotationAndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F150D30A64A1F95F676C4C53C1240611"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ec08d1d8-7395-354b-bc03-010e5ea045d8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path15"
+    testPathName: "equalsWhenA1LengthNotEqualsA2LengthAndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "45FF385488E4B984B74EE6BEF21A8777"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a3ef869c-2ed5-337b-8076-cc0570fd852e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path30"
+    pathIdForUser: "path16"
+    testPathName: "equalsWhenO1EqualsO2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "633858EB8737C16E03EEF369E04A4355"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8bcf1450-6c7d-33cd-9919-331244914288"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path31"
+    pathIdForUser: "path17"
+    testPathName: "equalsWhenO1NotEqualsO2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "07A89927877581AD7B8A2AA0A4458612"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "97f04c30-9089-3486-a251-3ca164a69f20"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path18"
+    testPathName: "equalsWhenINotLessThanA1LengthAndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E742F959BC8BA36FD31F20B1EA9C1177"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1dd4ebed-ce9d-3bd5-9006-764af037b0cd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path19"
+    testPathName: "equalsWhenArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "2BD7FEB76D389F223A1AD4DCA907C41F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8a0e2682-7dfd-3d41-9ce1-854ce9f27406"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path20"
+    testPathName: "equalsWhenArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "87D318ECB975793578E18EEAD8249A5C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "08742782-ad3d-35b0-a191-df2df51500a5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path21"
+    testPathName: "equalsWhenEqualsNotIIndexOfA1IIndexOfA2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "C83C1CC36E645990FA83A3DA51F4A16D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e94ccf4d-e090-3664-bbc5-6b772d554659"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path22"
+    testPathName: "equalsWhenEqualsIIndexOfA1IIndexOfA2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "35CA5B6E6CD2BD92160FB0341FF54C11"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "563e4079-5a61-3812-a056-01e464b7e8e7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path23"
+    testPathName: "equalsWhenComponentTypeEqualsShortTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5B3501A3C3440CDC900688FF01F5A13F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7b01a969-03f9-387b-ba2e-def33a627155"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path13"
+    pathIdForUser: "path24"
+    testPathName: "equalsWhenComponentTypeEqualsShortTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F974D67913306199ADE77399BDE21B79"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "351a8b63-5907-3742-8202-38aaa507447a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path25"
+    testPathName: "equalsWhenComponentTypeEqualsIntegerTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "7795F37B9437CA0885679BAF42D5FB2B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9ac81d71-8219-3809-89f6-6e6b5afc3a01"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path26"
+    testPathName: "equalsWhenComponentTypeEqualsIntegerTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "39F88DD1EBFFCD31036CC8C1FF343555"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "246290d8-93fa-3382-9ee6-4a07ddef4925"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path16"
+    pathIdForUser: "path27"
+    testPathName: "equalsWhenComponentTypeEqualsCharacterTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "763518DADC2E86DAEBF3FB8E58ECA27A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e2d68bdf-d1c8-3665-957c-29b23eaf7fb3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path17"
+    pathIdForUser: "path28"
+    testPathName: "equalsWhenComponentTypeEqualsCharacterTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "1055D1230EDF5E0277831CB8E7B2769C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dacac754-89c0-311e-ab7e-3dff96acc980"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path18"
+    pathIdForUser: "path29"
+    testPathName: "equalsWhenComponentTypeEqualsLongTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "68436F7DE06AB1DF497B8CA61FBD0544"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2bb7fbed-1341-3f1f-88b5-16bc55fb4f5a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path19"
+    pathIdForUser: "path30"
+    testPathName: "equalsWhenComponentTypeEqualsLongTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "15D5D4508C8E97361D69B479C0FB109F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cc74d1dc-92d0-3b0a-aa3d-33b7f08a8955"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path20"
+    pathIdForUser: "path31"
+    testPathName: "equalsWhenComponentTypeEqualsFloatTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "1F534F7EAD6B4A4AD84E48B13BE22BD3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "956c2b06-b995-316b-8dda-0c75b7c91b78"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path21"
+    pathIdForUser: "path32"
+    testPathName: "equalsWhenComponentTypeEqualsFloatTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "596042B4B851FE777842E0A3065524ED"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1764c969-0470-390d-a474-c91d0b2a048d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path22"
+    pathIdForUser: "path33"
+    testPathName: "equalsWhenComponentTypeEqualsDoubleTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E190F1A28B1B757BF4BF5FAFBDA4F09F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "23ccb048-27aa-3624-ac6e-5ea7e3e9fe80"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path23"
+    pathIdForUser: "path34"
+    testPathName: "equalsWhenComponentTypeEqualsDoubleTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FBA07FB1C7FFA090D8646965F62DE230"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "72b7b9dd-5e62-3033-b8bf-6d19be31ef1a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path24"
+    pathIdForUser: "path35"
+    testPathName: "equalsWhenComponentTypeEqualsBooleanTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "BA593AD9B902B42FEDF3150C36B4F3C1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4f6ed194-ce4e-3116-92f1-d8b4897ccc75"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path25"
+    pathIdForUser: "path36"
+    testPathName: "equalsWhenComponentTypeEqualsBooleanTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "3F972EA71A48D7111D2B01BAA3CB4D17"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "93A7D2AC73DFFE2DCB77A8FFFA3398B5"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2ebcd19e-7f45-353d-a746-e0b34a790d19"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path26"
+    pathIdForUser: "path37"
+    testPathName: "equalsWhenComponentTypeNotEqualsBooleanTYPEAndArraysEqualsO1O2AndMemberEqualsMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "A0A2BCEE953BE41C53B9AA216D600377"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f1f24648-6ec9-324a-aaa5-deaeeb4b183e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path27"
+    pathIdForUser: "path38"
+    testPathName: "equalsWhenComponentTypeNotEqualsBooleanTYPEAndArraysNotEqualsO1O2AndMemberEqualsNotMGetReturnTypeV1V2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "16E6A4E05246DA3EF0D4D8CC997DB66B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a1"
+      modelFingerprint: "9BFFB6DEEF73FB8EC442091B6184B672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "a2"
+      modelFingerprint: "5DBE485C6C45CCCC82589959202067A1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "equals_annotation2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "AnnotationUtils"
+      modelFingerprint: "71203E4F7353DCF497668B39E35102DE"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.AnnotationUtils"
+        uuid: "org.apache.commons.lang3.AnnotationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.AnnotationUtils"
+        name: "isValidAnnotationMemberType"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "equals_class5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isValidAnnotationMemberType(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "equals_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5b97a1af-74a3-336b-a229-2bd08c07ef74"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "hashCode"
+    returnType: "int"
+    signature: "hashCode(java.lang.annotation.Annotation) : int"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    instructionFingerprint: "DA2DDFC2006B76D651C57319F6CDF5B5"
+    parametersTypes:
+    - "java.lang.annotation.Annotation"
+  paths:
+  - pathId: "path13"
+    pathIdForUser: "path1"
+    testPathName: "hashCodeWhenTypeGetDeclaredMethodsIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "92A5297C5CBD5DD38961D4384B01E9DB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "cca59e95-684f-34c2-b823-1a23b17d0405"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "hashCodeWhenValueIsNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7D1D2F94A5E3464D05F348E7592CBA10"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4050E0D39ADFBEDA560094519E8C660D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Annotation method null returned null"
+              suggestedContent: !<regular>
+                value: "Annotation method null returned null"
+              valueType: "java.lang.String"
+              uuid: "hashCode_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Annotation method null returned null"
+              valueType: "java.lang.String"
+              uuid: "hashCode_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "hashCode_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "582cb030-7897-322d-adbe-f4fbdce0d8f2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path3"
+    testPathName: "hashCodeWhenCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B9F703CE21A6DCB6EC8120184D5274E"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "type"
+      modelFingerprint: "96FF1FB5AAAB1DA78F0BB7FEDEF1AA05"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? extends java.lang.annotation.Annotation"
+        valueType: "java.lang.Class"
+        genericValueType: "? extends java.lang.annotation.Annotation"
+        uuid: "hashCode_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "type"
+        name: "getDeclaredMethods"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredMethods(): Method[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "java.lang.reflect.Method[]"
+          uuid: "hashCode_method[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "hashCode_int1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8678f7c2-4988-38e1-9787-416aae2c7be2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "hashCodeWhenComponentTypeEqualsByteTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "390708A7BBA60CD9F97F01170D2119FF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "79f5d0f0-b655-3a81-988c-f380b3649d42"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path5"
+    testPathName: "hashCodeWhenValueInstanceOfAnnotation"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6D64AD00086557A94AD02F4C4C163D0E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0cf532af-0fbb-3637-9bf9-235a34c9af60"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path6"
+    testPathName: "hashCodeWhenValueNotInstanceOfAnnotation"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E8B61DA2DBC4B6C6820D85E218951458"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0fe7539-eb01-309b-9bc7-5acd16a08dff"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path7"
+    testPathName: "hashCodeWhenComponentTypeEqualsShortTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5B667A1EF68567FDF2FD2CA9BE172A7F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "64bd6014-90e9-362f-8041-b6b2dcd3dc21"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path8"
+    testPathName: "hashCodeWhenComponentTypeEqualsIntegerTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "46D7EFDF9347C6F72BC87B743E063BC3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "15cd35ad-929d-3daf-a873-3c1e8f2b5295"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path9"
+    testPathName: "hashCodeWhenComponentTypeEqualsCharacterTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D26201EDCC6F300A38D2230668BDD97"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c93dba30-cfd6-3aa9-871b-7240156e7b42"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path10"
+    testPathName: "hashCodeWhenComponentTypeEqualsLongTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C0FF323964A762D273F9185CF1E5F364"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "27747a8c-2f7c-3484-baea-1c5445541533"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path11"
+    testPathName: "hashCodeWhenComponentTypeEqualsFloatTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "37625AE4D27407586CCFFD3E40060417"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7e9cf32b-5b6b-3402-8c41-f13977eff37b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path12"
+    testPathName: "hashCodeWhenComponentTypeEqualsDoubleTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "421BC8A29313BF645C7F8EFAC4B525A8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0ccda7eb-3e52-38d7-9ec2-a85968a09c7a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path13"
+    testPathName: "hashCodeWhenComponentTypeEqualsBooleanTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "291AE90A5BE2BE14EB074E6AC7F8F8B2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e38f24cf-1b49-35ce-b7ed-60adf074ce30"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path14"
+    testPathName: "hashCodeWhenComponentTypeNotEqualsBooleanTYPE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F24875F3C464A27B00FC052CCE3CB655"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2A8AB981A1505AD6737DABDF7241F1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "hashCode_int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "672af1fd-ed6c-3315-86cc-0cbd8febe09a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path15"
+    testPathName: "hashCodeWhenCaughtReflectiveOperationExceptionThrowsUncheckedException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CD944B1AF8BCB96BD8D15EB7D7317A39"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "hashCode_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "type"
+      modelFingerprint: "7A3F55F56BB5A95F1D335232711B92FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? extends java.lang.annotation.Annotation"
+        valueType: "java.lang.Class"
+        genericValueType: "? extends java.lang.annotation.Annotation"
+        uuid: "hashCode_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "type"
+        name: "getDeclaredMethods"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredMethods(): Method[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "hashCode_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "hashCode_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Method[]"
+          uuid: "hashCode_method[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "m"
+      modelFingerprint: "B3C9448D98B7339D991B88C2805354BB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "hashCode_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "m"
+        name: "invoke"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.annotation.Annotation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.annotation.Annotation"
+            uuid: "hashCode_annotation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "hashCode_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Annotation,Object[]): Object throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "hashCode_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "35938E4C8641B120370B59F909370340"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ReflectiveOperationException"
+              uuid: "hashCode_reflectiveOperationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ReflectiveOperationException"
+              uuid: "hashCode_reflectiveOperationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.exception.UncheckedException"
+        uuid: "hashCode_uncheckedException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d8c1d6ee-7d37-3932-9a7f-dc1a80000348"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(java.lang.annotation.Annotation) : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    instructionFingerprint: "4D981F2AF6F9E354CC93CD36AFB48423"
+    parametersTypes:
+    - "java.lang.annotation.Annotation"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringWhenMGetParameterTypesLengthGreaterThan0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9F03BC1B7E9E84F2416F00EFB0CEC2B4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "toString_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bf5027ab-541c-3498-a096-3c9762098907"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toStringWhenMGetParameterTypesLengthNotGreaterThan0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6F39019E8C1617B6733C842962D696F7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "toString_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "toString_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f6cd818d-8bda-3960-a3ab-bb217fa9fe5b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path3"
+    testPathName: "toStringWhenCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "03A921826C021C964C7A4699E6C827BD"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: true
+    inputParameters: []
+    uuid: "0e817d56-24bd-359d-80f4-c6ee3ca88fc1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "toStringWhenMGetParameterTypesLengthGreaterThan0AndCaughtReflectiveOperationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F03252A66E9CC85FCE3BAC3E064E891C"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "toString_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7A3F55F56BB5A95F1D335232711B92FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? extends java.lang.annotation.Annotation"
+        valueType: "java.lang.Class"
+        genericValueType: "? extends java.lang.annotation.Annotation"
+        uuid: "toString_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.lang.Class"
+        name: "getDeclaredMethods"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredMethods(): Method[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "toString_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "toString_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Method[]"
+          uuid: "toString_method[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7f98c0c3-4a09-3103-8f34-ad4e93b4f4b0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path5"
+    testPathName: "toStringWhenCaughtReflectiveOperationExceptionThrowsUncheckedException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CA4F2B27091F4A9A2DEE152BD6023A75"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.ReflectiveOperationException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "9D9EA3422A65341BDB426173C8556323"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.annotation.Annotation"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.annotation.Annotation"
+        uuid: "toString_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7A3F55F56BB5A95F1D335232711B92FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "? extends java.lang.annotation.Annotation"
+        valueType: "java.lang.Class"
+        genericValueType: "? extends java.lang.annotation.Annotation"
+        uuid: "toString_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.lang.Class"
+        name: "getDeclaredMethods"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredMethods(): Method[] throws java.lang.SecurityException"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "toString_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "NULL"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Method"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Method"
+                uuid: "toString_method1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.reflect.Method[]"
+          uuid: "toString_method[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "m"
+      modelFingerprint: "B3C9448D98B7339D991B88C2805354BB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 4
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "toString_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "m"
+        name: "invoke"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.annotation.Annotation"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.annotation.Annotation"
+            uuid: "toString_annotation1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "toString_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Annotation,Object[]): Object throws java.lang.IllegalAccessException,java.lang.IllegalArgumentException,java.lang.reflect.InvocationTargetException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "toString_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "35938E4C8641B120370B59F909370340"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ReflectiveOperationException"
+              uuid: "toString_reflectiveOperationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.ReflectiveOperationException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ReflectiveOperationException"
+              uuid: "toString_reflectiveOperationException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.exception.UncheckedException"
+        uuid: "toString_uncheckedException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c46678f8-b0a8-3c38-9d38-c4a60edaef51"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isValidAnnotationMemberType"
+    returnType: "boolean"
+    signature: "isValidAnnotationMemberType(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "257D26429422A3D7680355126E5B0689"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isValidAnnotationMemberTypeWhenTypeIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3BE9C2CAD95BEC6E8A2D378B7B39E4A7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "622DBA9806B1AE2D6BC31256E966BA6F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "isValidAnnotationMemberType_class1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "59757330-e7c9-3dd7-9b97-4a850ce7a900"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isValidAnnotationMemberTypeWhenClassEqualsType"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3442D1BD13ADD523E691E9CCC867C680"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "isValidAnnotationMemberType_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b5d29baa-e679-3f67-b3a6-9fed67b028ff"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "isValidAnnotationMemberTypeWhenClassNotEqualsType"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "32CF9270EB43173B8644BAA475C08C7F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "4C54C3600004F714223F8E825810DB34"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "isValidAnnotationMemberType_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "955b1391-429f-3379-a4f9-fbefc0a2ba5a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

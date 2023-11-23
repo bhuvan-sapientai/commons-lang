@@ -1,0 +1,1331 @@
+---
+modelFingerprint: "432E1E785353E900162BE376BC783D7B"
+methods:
+- method:
+    name: "toPattern"
+    returnType: "java.lang.String"
+    signature: "toPattern() : java.lang.String"
+    instructionFingerprint: "7B9999E5E60667A40297B20F94AF9E86"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toPatternTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DF0B822A38B01B667AA89B0E57066334"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "applyPattern_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e7fba370-2326-3eba-bce7-a8bd7eb427d1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "applyPattern"
+    returnType: "void"
+    signature: "applyPattern(java.lang.String) : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NumberFormatException"
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NumberFormatException"
+    instructionFingerprint: "A8EACF4A015E96670B9553A2121DC223"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyPatternWhenRegistryIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B2DB7A756114F569ED9E4BCC0E89132"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "<init>_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "C468FE4757759CD1ED82175DEEED9D4D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "applyPattern"
+        parameters:
+        - name: "pattern"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "pattern1"
+            valueType: "java.lang.String"
+            uuid: "<init>_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "applyPattern(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyPattern_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "DD42282ABBF3871D44672EF278661F91"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "toPattern"
+        parameters: []
+        signature: "toPattern(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_toPattern1"
+          valueType: "java.lang.String"
+          uuid: "applyPattern_string3"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4ba18306-a9a3-3b6e-b6e0-382acf326b9f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFormat"
+    returnType: "void"
+    signature: "setFormat(int,java.text.Format) : void"
+    instructionFingerprint: "0BF61CE0A6933E674130B75A2E1B6019"
+    parametersTypes:
+    - "int"
+    - "java.text.Format"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFormatThrowsUnsupportedOperationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F7536B8FF4E692AF76D7751A2A75BB4E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatElementIndex"
+      modelFingerprint: "9CC49E141232E457CC838B89F4809F5E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "setFormat_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newFormat"
+      modelFingerprint: "2284668EEC23BF27BE2F42DD3608D505"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.text.Format"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.text.Format"
+        uuid: "setFormat_format1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3021C1E995B586CC19DD3CF76049D4D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.UnsupportedOperationException"
+        uuid: "setFormat_unsupportedOperationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5ef10941-480d-3d93-a353-09ef92e40305"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFormatByArgumentIndex"
+    returnType: "void"
+    signature: "setFormatByArgumentIndex(int,java.text.Format) : void"
+    instructionFingerprint: "6AAF8544AE38482242D9E5E90B1164CB"
+    parametersTypes:
+    - "int"
+    - "java.text.Format"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFormatByArgumentIndexThrowsUnsupportedOperationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0BCAF4DE1D9E36D551C761832C67CD68"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "argumentIndex"
+      modelFingerprint: "62CB7AA37DDBF818A1204CA9D988C6F0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "setFormatByArgumentIndex_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newFormat"
+      modelFingerprint: "2284668EEC23BF27BE2F42DD3608D505"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.text.Format"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.text.Format"
+        uuid: "setFormatByArgumentIndex_format1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3021C1E995B586CC19DD3CF76049D4D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.UnsupportedOperationException"
+        uuid: "setFormatByArgumentIndex_unsupportedOperationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2a910c62-dbc3-365f-9227-2527fabe8bef"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFormats"
+    returnType: "void"
+    signature: "setFormats(java.text.Format[]) : void"
+    instructionFingerprint: "4FFAEF797CF10186456E51E6F611C1DA"
+    parametersTypes:
+    - "java.text.Format[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFormatsThrowsUnsupportedOperationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "098CDCFD440D370623B74850A94E27C6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newFormats"
+      modelFingerprint: "BED9107456C69307F210EEBE6C67FD40"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.text.Format[]"
+        uuid: "setFormats_format[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3021C1E995B586CC19DD3CF76049D4D6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.UnsupportedOperationException"
+        uuid: "setFormats_unsupportedOperationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "91af6ff5-863d-3376-90c7-bfb425d93ffc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setFormatsByArgumentIndex"
+    returnType: "void"
+    signature: "setFormatsByArgumentIndex(java.text.Format[]) : void"
+    instructionFingerprint: "5948A2EC0A6ABC7A71BD41E8D27A8746"
+    parametersTypes:
+    - "java.text.Format[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setFormatsByArgumentIndexThrowsUnsupportedOperationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "098CDCFD440D370623B74850A94E27C6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "941B265092AA615A0A3827C246BDB22A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "registry"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.String,? extends org.apache.commons.lang3.text.FormatFactory"
+              uuid: "<init>_map1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.ExtendedMessageFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newFormats"
+      modelFingerprint: "BED9107456C69307F210EEBE6C67FD40"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.text.Format[]"
+        uuid: "setFormatsByArgumentIndex_format[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3021C1E995B586CC19DD3CF76049D4D6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.UnsupportedOperationException"
+        uuid: "setFormatsByArgumentIndex_unsupportedOperationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "30c8cee3-4e19-3303-ab75-89d8234b1d79"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "24ADF46E1B1B716A7BEF346F0C94BBDE"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenObjEqualsThis"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9E0A66B1D893D067DD26680EC93266BB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "16caa39e-2c3e-346f-ae77-8d525c1ff8ee"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenObjIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7471174E1D911149D437C7E6648C4761"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "42f03dea-2e61-3c4b-bbc0-1a97b94b4d90"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenSuperNotEqualsObj"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C98A2DE9E0FF6A05F7F2FE64D7648A84"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4ea6b692-3a8c-31f9-a774-c064f4aa36e9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "equalsWhenObjectUtilsNotEqualToPatternRhsToPattern"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "63B7440E1DB21F01AB82CCA23C83F051"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "0643e7cd-9d61-3f5c-857a-f5fd03dbd27a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path5"
+    testPathName: "equalsWhenObjectUtilsNotNotEqualRegistryRhsRegistry"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1F91D0DEAD535072D0E4196685BEBC77"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "034daff2-bc78-3e98-826f-2532051e8e49"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path6"
+    testPathName: "equalsWhenObjectUtilsNotEqualRegistryRhsRegistry"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.Locale,java.util.Map<java.lang.String,?\
+      \ extends org.apache.commons.lang3.text.FormatFactory>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E35DFC5D50F5F8900A15D1C1EAB7F7DC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "9240b8ca-74be-34e4-80e4-4b446bd4ee46"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

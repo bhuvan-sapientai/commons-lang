@@ -1,0 +1,1603 @@
+---
+modelFingerprint: "F1DA02FAD3036ABF344D9F78A7D52491"
+methods:
+- method:
+    name: "getEnvironmentVariable"
+    returnType: "java.lang.String"
+    signature: "getEnvironmentVariable(java.lang.String,java.lang.String) : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "FCF2C2EE8C730FBE99AF5796A31DFBA3"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnvironmentVariableWhenValueIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4845B6D77A91900D241423E7A3AE826C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "006BBF5182B7B07068D027E61089D559"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "NON_EXISTING_VARIABLE"
+        suggestedContent: !<regular>
+          value: "NON_EXISTING_VARIABLE"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "7E81A5766C482B00AE8D6FB12FF59B1E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "DEFAULT_VALUE"
+        suggestedContent: !<regular>
+          value: "DEFAULT_VALUE"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638EEBFA7F1C3191D3E4D5BDA9A4482E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "DEFAULT_VALUE"
+        suggestedContent: !<regular>
+          value: "DEFAULT_VALUE"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e61394c3-0293-3541-9ddc-51d3e9fb993d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getEnvironmentVariableWhenValueIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C7A759A310AAB65E95B40DAF0CF7F7A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "510B5AAD2B8E99F6E44BB98D6F1D5DCD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "PATH"
+        suggestedContent: !<regular>
+          value: "PATH"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "F9526A442513E6E439EE0E1DF5B5C73B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "/usr/bin"
+        suggestedContent: !<regular>
+          value: "/usr/bin"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E9CC215306486BC3843054A962B280C3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "/usr/bin:/bin:/usr/sbin:/sbin"
+        valueType: "java.lang.String"
+        uuid: "getEnvironmentVariable_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "66508131-425c-3052-b520-609a35244917"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getHostName"
+    returnType: "java.lang.String"
+    signature: "getHostName() : java.lang.String"
+    instructionFingerprint: "3899405EEB5FF389DA89E842DCC09019"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getHostNameWhenNotIS_OS_WINDOWS"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1F94C9193923363A121EC3AA56BB62F6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getHostName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "70466e75-bbad-3dad-8754-3224c48a7a36"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaHome"
+    returnType: "java.io.File"
+    signature: "getJavaHome() : java.io.File"
+    instructionFingerprint: "3FBA0B9177F4382ADD5B947E4EEB63B0"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaHomeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "945C44AFC248BEA8D0838221D0038031"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B2DA9DA766BEF18B816C1306AC6B3259"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/Applications/IntelliJ IDEA CE 231.app/Contents/jbr/Contents/Home"
+              valueType: "java.lang.String"
+              uuid: "getJavaHome_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/Applications/IntelliJ IDEA CE 231.app/Contents/jbr/Contents/Home"
+              valueType: "java.lang.String"
+              uuid: "getJavaHome_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.File"
+        uuid: "getJavaHome_file1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a7c7ee35-a552-3f54-8dab-d10b5f866c18"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaIoTmpDir"
+    returnType: "java.io.File"
+    signature: "getJavaIoTmpDir() : java.io.File"
+    instructionFingerprint: "8C29157864BFC19C1E10D365D75F8FCE"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaIoTmpDirTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B3B97F5748E0F1AD90705E6AF5B00B9E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D44C15C96C6016DE42DF89B75C51D393"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/var/folders/23/6wlpx0js4c9b9z51m_1txb780000gn/T/"
+              valueType: "java.lang.String"
+              uuid: "getJavaIoTmpDir_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/var/folders/23/6wlpx0js4c9b9z51m_1txb780000gn/T/"
+              valueType: "java.lang.String"
+              uuid: "getJavaIoTmpDir_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.File"
+        uuid: "getJavaIoTmpDir_file1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b3465731-467a-31dd-b5e9-df8cffce27a2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserDir"
+    returnType: "java.io.File"
+    signature: "getUserDir() : java.io.File"
+    instructionFingerprint: "2D422234FA22ED9D2FCB175C15DD3906"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserDirTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0F1E6930DFAC3B02FC12919987DB5EE1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CA903C5C3EE8928ABF3F40CCD9B42ED6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/"
+              valueType: "java.lang.String"
+              uuid: "getUserDir_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/"
+              valueType: "java.lang.String"
+              uuid: "getUserDir_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.File"
+        uuid: "getUserDir_file1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec79bec4-465b-30f0-880c-3b4d761d9f36"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserHome"
+    returnType: "java.io.File"
+    signature: "getUserHome() : java.io.File"
+    instructionFingerprint: "4D1C4B7EFC43D7C79983169F4F4A52FB"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserHomeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BE20CD28EDE9CF57F1A6449B48993787"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "09BD68FF2A53AE2FDA481F4EB0E35D68"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/Users/bhuvan"
+              valueType: "java.lang.String"
+              uuid: "getUserHome_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.File"
+          parameters:
+          - name: "pathname"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "/Users/bhuvan"
+              valueType: "java.lang.String"
+              uuid: "getUserHome_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.File"
+        uuid: "getUserHome_file1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "12e9ce3a-7ba1-38af-8aaa-1edf2ee30c1f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserName"
+    returnType: "java.lang.String"
+    signature: "getUserName() : java.lang.String"
+    instructionFingerprint: "14DF81DD67C5B1C2BBEE411549345FD5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1FB08727E0F3AE9B216F70033551C67"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F0E13D403855D1770F5387A813F33241"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "bhuvan"
+        valueType: "java.lang.String"
+        uuid: "getUserName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a51bcb8-69de-33a3-9bea-031d2f592a3d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserName"
+    returnType: "java.lang.String"
+    signature: "getUserName(java.lang.String) : java.lang.String"
+    instructionFingerprint: "3477EC31B54822BA84313F58B8DEFDF5"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserName1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55F9D11B28DB5EE72DEEBDE8670C6618"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "84C2C2AC03340E1B5D5088AA7CB9EF75"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "guest"
+        suggestedContent: !<regular>
+          value: "guest"
+        valueType: "java.lang.String"
+        uuid: "getUserName_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getUserName_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d4dd2f36-3629-3528-9f46-85c4fec60339"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isJavaAwtHeadless"
+    returnType: "boolean"
+    signature: "isJavaAwtHeadless() : boolean"
+    instructionFingerprint: "A52F335484E3B34FDAC963AB4288CB01"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isJavaAwtHeadlessWhenBooleanTRUEToStringEqualsJAVA_AWT_HEADLESS"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E069477167AC1268105220D6EA169D36"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7153138E93283A9BCEC4D09F0F5CF1C3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        suggestedContent: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isJavaAwtHeadless_boolean2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9bb5efe8-d69a-3428-a24e-c012eab69234"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isJavaAwtHeadlessWhenBooleanTRUEToStringNotEqualsJAVA_AWT_HEADLESS"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AC06FE197FC7275B99D04FDF2D122000"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4372D606E42017F615E0087C598EFD72"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        suggestedContent: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isJavaAwtHeadless_boolean2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b367e6f2-1963-349c-9564-5978754d9d0d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isJavaVersionAtLeast"
+    returnType: "boolean"
+    signature: "isJavaVersionAtLeast(org.apache.commons.lang3.JavaVersion) : boolean"
+    instructionFingerprint: "79A874321D7232BD846C39B4A86E7F7E"
+    parametersTypes:
+    - "org.apache.commons.lang3.JavaVersion"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isJavaVersionAtLeastWhenJAVA_SPECIFICATION_VERSION_AS_ENUMAtLeastRequiredVersion"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "86C9536F020B49279F3B9CEC4692CF24"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      modelFingerprint: "CEB2E8855B1FCA6B72CA491C710B2EC2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_0_9"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "isJavaVersionAtLeast_javaVersion1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isJavaVersionAtLeast_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a292c2a9-181e-3c50-9fbd-be9c3ad86cd2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isJavaVersionAtLeastWhenJAVA_SPECIFICATION_VERSION_AS_ENUMNotAtLeastRequiredVersion"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "419ADFB82BF92E5ECEC25CFC08415001"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      modelFingerprint: "62544B3CF7D1EA81F8C88970C05421E1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_8"
+        suggestedContent: !<regular>
+          value: "JAVA_1_8"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "isJavaVersionAtLeast_javaVersion1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4372D606E42017F615E0087C598EFD72"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        suggestedContent: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isJavaVersionAtLeast_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0d2388b6-62b4-3d65-9616-9fe274bef522"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isJavaVersionAtMost"
+    returnType: "boolean"
+    signature: "isJavaVersionAtMost(org.apache.commons.lang3.JavaVersion) : boolean"
+    instructionFingerprint: "B248E63812A04DF2EC606ABD2238C86B"
+    parametersTypes:
+    - "org.apache.commons.lang3.JavaVersion"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isJavaVersionAtMostWhenJAVA_SPECIFICATION_VERSION_AS_ENUMAtMostRequiredVersion"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB507D2B8A7DFF41C9AFA0DDFEF6327B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      modelFingerprint: "62544B3CF7D1EA81F8C88970C05421E1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_1_8"
+        suggestedContent: !<regular>
+          value: "JAVA_1_8"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "isJavaVersionAtMost_javaVersion1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7153138E93283A9BCEC4D09F0F5CF1C3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        suggestedContent: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "isJavaVersionAtMost_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "270f423f-bfa0-3f17-85fe-5cd4f0dba09d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isJavaVersionAtMostWhenJAVA_SPECIFICATION_VERSION_AS_ENUMNotAtMostRequiredVersion"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "830AB6E99C81B4D57E3680C8C58EF35D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      modelFingerprint: "CEB2E8855B1FCA6B72CA491C710B2EC2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "JAVA_0_9"
+        valueType: "org.apache.commons.lang3.JavaVersion"
+        uuid: "isJavaVersionAtMost_javaVersion1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isJavaVersionAtMost_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "09535cee-e2b9-36d7-bb50-492aa424bbd3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isJavaVersionMatch"
+    returnType: "boolean"
+    signature: "isJavaVersionMatch(java.lang.String,java.lang.String) : boolean"
+    instructionFingerprint: "8880442FA0E6561F0C3A39987A861551"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isJavaVersionMatchWhenVersionIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B84CD6B9201BC1240199253D8DAADC87"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "version"
+      modelFingerprint: "01FEDD04261668643D835E51F816976E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "17"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string19"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "versionPrefix"
+      modelFingerprint: "5B5F508B4591553DE1A1BDBA3A9ECA31"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "21"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "26F354D57EDB6DE30F14FF7FA23B655D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isJavaVersionMatch_boolean23"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5052aea3-af2c-320b-b5f0-520e66a130da"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isOSMatch"
+    returnType: "boolean"
+    signature: "isOSMatch(java.lang.String,java.lang.String,java.lang.String,java.lang.String)\
+      \ : boolean"
+    instructionFingerprint: "E325EE04C07DB42D2DE84A28BAD8729A"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isOSMatchWhenIsOSNameMatchNotOsNameOsNamePrefix"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D2CC91C6D5CBFBE2DC9FA9ECF2736799"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ce8ccedd-de47-3f4c-9b21-f73078833395"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isOSMatchWhenIsOSVersionMatchOsVersionOsVersionPrefix"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F74E7654CEBC15DCC57A97D80DB7933"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      modelFingerprint: "55819326C186FAA48890F57EA11BB9C3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Mac OS X"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string33"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osVersion"
+      modelFingerprint: "BE75B2B58D7DAEA91157B6FDDC3BE9C8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "14.0"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string34"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osNamePrefix"
+      modelFingerprint: "49F7091AFD7CA6ACAD564F0D876B6C1B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Mac OS X"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      modelFingerprint: "F5D32DCF26CF708B8810789D72891E96"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "13"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemUtils"
+      modelFingerprint: "58E08BFE22D7F5299502469F2F90A605"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemUtils"
+        uuid: "org.apache.commons.lang3.SystemUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemUtils"
+        name: "isOSNameMatch"
+        parameters:
+        - name: "osName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Mac OS X"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string33"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "osNamePrefix"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Mac OS X"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isOSNameMatch(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isOSMatch_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemUtils"
+      modelFingerprint: "6F13FF06692D50676EC59B4D567DCCCD"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemUtils"
+        uuid: "org.apache.commons.lang3.SystemUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemUtils"
+        name: "isOSVersionMatch"
+        parameters:
+        - name: "osVersion"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "14.0"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string34"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "osVersionPrefix"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "13"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isOSVersionMatch(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isOSMatch_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "845e1bb0-88e4-317a-ab3f-1458418096f4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isOSMatchWhenIsOSVersionMatchNotOsVersionOsVersionPrefix"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E8C80DBDCA91FC2BC13E3A3A8B86FE05"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      modelFingerprint: "55819326C186FAA48890F57EA11BB9C3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Mac OS X"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string33"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osVersion"
+      modelFingerprint: "BE75B2B58D7DAEA91157B6FDDC3BE9C8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "14.0"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string34"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osNamePrefix"
+      modelFingerprint: "49F7091AFD7CA6ACAD564F0D876B6C1B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Mac OS X"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      modelFingerprint: "F5D32DCF26CF708B8810789D72891E96"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "13"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemUtils"
+      modelFingerprint: "58E08BFE22D7F5299502469F2F90A605"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemUtils"
+        uuid: "org.apache.commons.lang3.SystemUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemUtils"
+        name: "isOSNameMatch"
+        parameters:
+        - name: "osName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Mac OS X"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string33"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "osNamePrefix"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Mac OS X"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isOSNameMatch(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isOSMatch_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemUtils"
+      modelFingerprint: "38A2C51206079EE5E6005BFE0AD5E094"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemUtils"
+        uuid: "org.apache.commons.lang3.SystemUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemUtils"
+        name: "isOSVersionMatch"
+        parameters:
+        - name: "osVersion"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "14.0"
+            valueType: "java.lang.String"
+            uuid: "<clinit>_string34"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "osVersionPrefix"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "13"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isOSVersionMatch(String,String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isOSMatch_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3fbd86ca-9de3-3226-b57e-dcfefe63eaa4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isOSNameMatch"
+    returnType: "boolean"
+    signature: "isOSNameMatch(java.lang.String,java.lang.String) : boolean"
+    instructionFingerprint: "63E283EFA34354928FE69F64D0FB3323"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isOSNameMatchWhenOsNameIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EA7005781C983FED44B74BAFCECC2C7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      modelFingerprint: "55819326C186FAA48890F57EA11BB9C3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Mac OS X"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string33"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osNamePrefix"
+      modelFingerprint: "B21F075C1E0F1B5E64F216FEBDA9B228"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "z/OS"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "26F354D57EDB6DE30F14FF7FA23B655D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "isOSNameMatch_boolean50"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "162b9411-5186-3742-84f7-e2e0fcb193db"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isOSVersionMatch"
+    returnType: "boolean"
+    signature: "isOSVersionMatch(java.lang.String,java.lang.String) : boolean"
+    instructionFingerprint: "A3E49D3C0FC7F9D5CD847C7566959C9D"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isOSVersionMatchWhenIIndexOfVersionPrefixPartsNotEqualsIIndexOfVersionParts"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9B1C8D0B1A50D2DEA072D6FE72579BF6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "osVersion"
+      modelFingerprint: "BE75B2B58D7DAEA91157B6FDDC3BE9C8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "14.0"
+        valueType: "java.lang.String"
+        uuid: "<clinit>_string34"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      modelFingerprint: "F5D32DCF26CF708B8810789D72891E96"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "13"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "83b9a32a-d6e4-3bd2-bd8a-3ed627179942"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

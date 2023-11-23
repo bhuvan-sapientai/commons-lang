@@ -1,0 +1,1111 @@
+---
+modelFingerprint: "1A64CB08D5727FC625A73785663EAA18"
+methods:
+- method:
+    name: "create"
+    returnType: "org.apache.commons.lang3.event.EventListenerSupport"
+    signature: "create(java.lang.Class<java.lang.Object>) : org.apache.commons.lang3.event.EventListenerSupport<java.lang.Object>"
+    instructionFingerprint: "6B32F7919B79B74DB52861696E2AB9AC"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5ED4C4277E0756022B7A8A75EBB3D1AF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "listenerInterface"
+      modelFingerprint: "7EB7E1FD54D3130A40F950B8E3B0760F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Object"
+        uuid: "create_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3E9C76AB51311DE97AE9C2294CD5E1D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.IllegalArgumentException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2284fc3d-473b-3992-886d-8fe431bd702d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "fire"
+    returnType: "java.lang.Object"
+    signature: "fire() : java.lang.Object"
+    instructionFingerprint: "E734BC8A83BFE559ABE447DB4636ACB8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "fireTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "21F8A8B0A2DE4D04FB87BEFC3EAAB1FA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "createProxy_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8198ac6d-4747-3f7d-83b5-d8ecfefc72c5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "addListener"
+    returnType: "void"
+    signature: "addListener(java.lang.Object) : void"
+    instructionFingerprint: "4F6454F01A07741B97903175DED7CC19"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addListenerTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EFC79E56111B0793FC5C7485A957D67F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "listener"
+      modelFingerprint: "58175350D7D31E1437054E3605D1698C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "addListener_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "A060F191764C429097E145A891F57A0A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "addListener"
+        parameters:
+        - name: "listener"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "addListener_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "allowDuplicate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "addListener(Object,boolean): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "addListener_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b42a3086-1ce1-3df4-8464-a2efc15fdc63"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "addListener"
+    returnType: "void"
+    signature: "addListener(java.lang.Object,boolean) : void"
+    instructionFingerprint: "559B124564CB12227BC0F0EF063667BA"
+    parametersTypes:
+    - "java.lang.Object"
+    - "boolean"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "addListener1WhenAllowDuplicate"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AAEF2C90244F568C11E43A2C171218FE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4515a9c6-28c9-3904-8cf9-40955b0573b6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "addListener1WhenListenersNotContainsListener"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF4E8CB3537B06002298383C41C5F01C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "listener"
+      modelFingerprint: "58175350D7D31E1437054E3605D1698C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "addListener_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "allowDuplicate"
+      modelFingerprint: "BBE097A752EF96B7088099719B030536"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        suggestedContent: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "addListener_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d4507ac8-9ef4-35de-a066-36af0686ee9b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getListenerCount"
+    returnType: "int"
+    signature: "getListenerCount() : int"
+    instructionFingerprint: "C685B005EA290B00404305D286D244D9"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getListenerCountTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F4211C4F1525EF8D7ED8F0C15DB76F6F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E4E4A3F04320A5F313F9B77CB2C7276"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getListenerCount_int1"
+        fixed: false
+        collectionUuid: "<init>_copyOnWriteArrayList1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "952661c9-48dd-367a-980d-b8d1ca05e0ec"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removeListener"
+    returnType: "void"
+    signature: "removeListener(java.lang.Object) : void"
+    instructionFingerprint: "6C15994781614A9A9D4EFFB1351EA302"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeListenerTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "827725E77BE033050A97A4A496274486"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "listener"
+      modelFingerprint: "58175350D7D31E1437054E3605D1698C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "removeListener_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6bcc2d87-95d0-3d30-abf1-4e8d40c773a8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getListeners"
+    returnType: "java.lang.Object[]"
+    signature: "getListeners() : java.lang.Object[]"
+    instructionFingerprint: "6D5E7932CEA3B1507ECE78FB4DF419F1"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getListenersTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "394519740B5F5D475349FB9F06E13CE1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "78CBD40DD88D829BC0BD569150020DE1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Object[]"
+        uuid: "getListeners_object[]1"
+        fixed: false
+        collectionUuid: "<init>_copyOnWriteArrayList1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b1c37231-1147-3ac0-8762-d7c1e4be3220"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "createInvocationHandler"
+    returnType: "java.lang.reflect.InvocationHandler"
+    signature: "createInvocationHandler() : java.lang.reflect.InvocationHandler"
+    instructionFingerprint: "C78D6DAB524C4D186C8704D74248E49C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createInvocationHandlerTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<java.lang.Object>,java.lang.ClassLoader)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5D13A17BE12743D30272F38047E0F732"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "812F5A63F993680FECE650A7C9E1AF81"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.event.EventListenerSupport"
+          parameters:
+          - name: "listenerInterface"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.lang.ClassLoader"
+                method: "getPlatformClassLoader"
+                methodParameters: []
+              valueType: "java.lang.ClassLoader"
+              uuid: "<init>_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.event.EventListenerSupport"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8D777A8A065069089DC961F9589F0BA0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.lang.reflect.InvocationHandler"
+        uuid: "createInvocationHandler_eventListenerSupport.ProxyInvocationHandler1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b79473f4-8cf2-31f1-ae19-84ea52227e8b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

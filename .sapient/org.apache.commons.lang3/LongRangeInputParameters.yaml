@@ -1,0 +1,496 @@
+---
+modelFingerprint: "8A8F360E0F58EB5DEFB3C87DE8FD6903"
+methods:
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.LongRange"
+    signature: "of(long,long) : org.apache.commons.lang3.LongRange"
+    instructionFingerprint: "C26BD851D4AD1B1F978695A306DA2207"
+    parametersTypes:
+    - "long"
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B18ECD2E850B001AAE456695ED5B761"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "B3DB50B8CD742B725432B670F7E29DD0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "of_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "E7D565D603BB2076C94491F5874D6B8E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "of_long2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LongRange"
+      modelFingerprint: "ABACD434C5CBCE735CA1C57055B88D54"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.LongRange"
+        uuid: "org.apache.commons.lang3.LongRange"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.LongRange"
+        name: "of"
+        parameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Long"
+            uuid: "of_long3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Long"
+            uuid: "of_long4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Long,Long): LongRange"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.apache.commons.lang3.LongRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "long"
+                uuid: "of_longRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "arg1"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "long"
+                uuid: "of_longRange1-arg1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.apache.commons.lang3.LongRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                valueType: "long"
+                uuid: "of_longRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "arg1"
+              value:
+                sapientType: "BASIC"
+                valueType: "long"
+                uuid: "of_longRange1-arg1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.apache.commons.lang3.LongRange"
+          uuid: "of_longRange1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1B90C02AFD187A8D069A532B9BB7AAE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.apache.commons.lang3.LongRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "of_longRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "arg1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "of_longRange1-arg1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.apache.commons.lang3.LongRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "of_longRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "arg1"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "of_longRange1-arg1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.LongRange"
+        uuid: "of_longRange1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89de7933-05e8-343b-97f3-1b0a1a26943a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.LongRange"
+    signature: "of(java.lang.Long,java.lang.Long) : org.apache.commons.lang3.LongRange"
+    instructionFingerprint: "114EF509F28256D8962C18F251893EAE"
+    parametersTypes:
+    - "java.lang.Long"
+    - "java.lang.Long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of3WhenDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "271A3AE7F86A13B95F8296FB76BB2C27"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "98871B734ABC3F42835A97370FE1DEE6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Long"
+        uuid: "of_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "5466EA6E1262598959B9D464E8ABE568"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Long"
+        uuid: "of_long2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "72D631EE5C39FF2B3BD4C56B3E3CD191"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.LongRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.LongRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.LongRange"
+        uuid: "of_longRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3e55c46-8fa8-31a3-835a-1820f41ee673"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9B23DEE9DC64CB8AB6BE72D2131214E1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "B11925C4AC41FE240FAD3A8A201DD477"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Long"
+        uuid: "of_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "D1589A432BB5F096AB2EDABAC056F0DC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Long"
+        uuid: "of_long2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A54E6C1DC404ED710D3CCEA22590F77F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.LongRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.LongRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Long"
+              uuid: "of_long2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.LongRange"
+        uuid: "of_longRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a9cdbde-7415-3a09-b04a-1a4540112cfe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

@@ -1,0 +1,1439 @@
+---
+modelFingerprint: "C5D0F0D5EB6CCCBB8591B9E64ECCE39D"
+methods:
+- method:
+    name: "getArch"
+    returnType: "org.apache.commons.lang3.arch.Processor$Arch"
+    signature: "getArch() : org.apache.commons.lang3.arch.Processor$Arch"
+    instructionFingerprint: "4450D3DEB3F47AACAECBAF9C14A26166"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getArchTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "91462A33FA19EBAF648BFF097F636F3E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "4ebca866-cab1-3b3d-8c56-f37978ac67ab"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getType"
+    returnType: "org.apache.commons.lang3.arch.Processor$Type"
+    signature: "getType() : org.apache.commons.lang3.arch.Processor$Type"
+    instructionFingerprint: "335722E939F8B65F82BD94B6632F698A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTypeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0510C4C5A426F8AAD5D3A940EBB205B1"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "13368fac-223f-37ba-a843-3c9b25e276be"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "is32Bit"
+    returnType: "boolean"
+    signature: "is32Bit() : boolean"
+    instructionFingerprint: "5995F6016EE74C5FC8EED53306227EDA"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "is32BitWhenArchBIT_32EqualsArch"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "120820D653EB09453F4B1B30A146E3FC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "7DF230D8CABA2D1D7EB6B48A2D87F764"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              suggestedContent: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c3138ddc-ab16-3e81-9422-b5a8a5dd352a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "is32BitWhenArchBIT_32NotEqualsArch"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9C21B0F0684098202CCE1178CD076C22"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9D175A7139D368C2B66C8F20A1DEF581"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_64"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3476542e-5a24-3817-a65d-e422d8e35ad8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "is64Bit"
+    returnType: "boolean"
+    signature: "is64Bit() : boolean"
+    instructionFingerprint: "E011EFE4021D833C3374AD61679D70CF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "is64BitWhenArchBIT_64EqualsArch"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2572A4E1F8452D4AA6A8378DEA516317"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9D175A7139D368C2B66C8F20A1DEF581"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_64"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c845e334-a287-38f9-a991-47d6c89152fd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "is64BitWhenArchBIT_64NotEqualsArch"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4C4CA89C20280EB53ED4346AFEDF6038"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "7DF230D8CABA2D1D7EB6B48A2D87F764"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              suggestedContent: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c7c09bfc-1589-3049-9f1c-412f01b450aa"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAarch64"
+    returnType: "boolean"
+    signature: "isAarch64() : boolean"
+    instructionFingerprint: "C6AEF71F5DF8A0224B448DDE5C0D2F59"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isAarch64WhenTypeAARCH_64EqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EDEC8F4658FCE01A75F6BAEEE4DD933E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "1198E55230B39A04AFE5F040EB613C87"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AARCH_64"
+              suggestedContent: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "AARCH_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9f2d25c9-c803-37b9-aec9-0fbc9aa7d938"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isAarch64WhenTypeAARCH_64NotEqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "561C4530996E6AAA828C712C339427BD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "77032450DC433690448F856EAA826AA4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "IA_64"
+              suggestedContent: !<regular>
+                value: "IA_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "IA_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "313ad28e-3f33-353f-a65e-76186c6c3357"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isIA64"
+    returnType: "boolean"
+    signature: "isIA64() : boolean"
+    instructionFingerprint: "2D705D3A75E2AD1659033106402A23C5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isIA64WhenTypeIA_64EqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A0DC891EA753F259EF21CEE58C12E904"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "77032450DC433690448F856EAA826AA4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "IA_64"
+              suggestedContent: !<regular>
+                value: "IA_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "IA_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "49ab5cfa-ac6c-3ebb-9d53-cd7b7be02528"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isIA64WhenTypeIA_64NotEqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C3AFA2778E5CD8FAA2F6E48910130B84"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "19BF062764081220EA8C57DD1024F914"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "UNKNOWN"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1e4819b9-30cd-365f-bd3f-1283395232dd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isPPC"
+    returnType: "boolean"
+    signature: "isPPC() : boolean"
+    instructionFingerprint: "3B4C3F0945ABFFA72CD1044852931B9D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isPPCWhenTypePPCEqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F04A1D164CC617828A97498B2DE2D01E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "AB7A80D5CEE4A8C5FAC89470451D1A8F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "PPC"
+              suggestedContent: !<regular>
+                value: "PPC"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "PPC"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f00c328e-a80f-3c0b-bb6e-1ef1a9fcc44c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isPPCWhenTypePPCNotEqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "34CE576A19B8E8384D15AC22768CBB5E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "19BF062764081220EA8C57DD1024F914"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "UNKNOWN"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "76aad96a-72a3-3628-9cf0-50ae6457cda2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isX86"
+    returnType: "boolean"
+    signature: "isX86() : boolean"
+    instructionFingerprint: "2A4519CED6BF2C4153BC8241195F9414"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isX86WhenTypeX86EqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "70EE413E2A322D92146B53E1D06AE2C9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2C1B567A799EC4BE0E8D3AF080517234"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "X86"
+              suggestedContent: !<regular>
+                value: "X86"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "X86"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bb27b434-9115-3a33-bf42-6f30ae285c41"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isX86WhenTypeX86NotEqualsType"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C30D37111F5496A32BA49F02422BA954"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "19BF062764081220EA8C57DD1024F914"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_32"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "UNKNOWN"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "UNKNOWN"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e3128dc9-b225-393a-8a9c-39233302c182"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "B28290AE889F85339D2957287F722277"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A57523167920FE76BEAC7FD97F22AE2D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "B58DB20D9496A6545E2291AF10B195B7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "BIT_64"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "PPC"
+              suggestedContent: !<regular>
+                value: "PPC"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.arch.Processor"
+          parameters:
+          - name: "arch"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "BIT_64"
+              valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+              uuid: "<init>_processor.Arch1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "PPC"
+              valueType: "org.apache.commons.lang3.arch.Processor$Type"
+              uuid: "<init>_processor.Type1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.arch.Processor"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3D49D15FF8858172215152E48900C83E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "PPC 64-bit"
+        suggestedContent: !<regular>
+          value: "PPC 64-bit"
+        valueType: "java.lang.String"
+        uuid: "toString_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

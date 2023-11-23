@@ -1,0 +1,2056 @@
+---
+modelFingerprint: "50EB53AA02B10B9540659934C99184E7"
+methods:
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Calendar,java.lang.String) : java.lang.String"
+    instructionFingerprint: "44E42302A84CCA6260AB119756E3806C"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatWhenCalendarIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A804D0AD3224B2BCB61B72081B4A14B5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "9EE0A29FD48C4F60116425478276DA95"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bd08e1ae-e1ca-313c-aa1b-2e90f6a41325"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "formatWhenCalendarIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "01FB73170E52C1644137892FB6DE3DA5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ecbbedb8-1f57-3c49-9a07-2d12056912c8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Calendar,java.lang.String,java.util.Locale) : java.lang.String"
+    instructionFingerprint: "A1322E6D7CD3F77E2A5FE05C07211B6A"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.String"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format1WhenCalendarIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A41335D49139079846204A49E31AAAC7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "9EE0A29FD48C4F60116425478276DA95"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ab1b7925-605b-31ec-9d40-f2f7365b70fd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "format1WhenCalendarIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "70F4C0D1402F8732D094EFAA44B6CCEA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "779f5622-1a2b-3b8a-85ef-d26d6a5af506"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Calendar,java.lang.String,java.util.TimeZone) : java.lang.String"
+    instructionFingerprint: "6B0CBA40B9FDC5725AC7DEA60A609839"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F24B85E49B6015E55CCA4CF7047F82BE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9726d1df-62b7-35d6-8c66-49ae903a39b5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Calendar,java.lang.String,java.util.TimeZone,java.util.Locale)\
+      \ : java.lang.String"
+    instructionFingerprint: "7841F104B22CFFCEEEA1F9D4C0B6D5F4"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format3Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FEC61934C7B5417A3AB854BA1BBD6C6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "01B51E1ED86C4A470E57083126D7D62A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "yyyy-MM-dd HH:mm:ss"
+        suggestedContent: !<regular>
+          value: "yyyy-MM-dd HH:mm:ss"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5eccb8d2-1a93-3abf-8fe3-ca5e867cab35"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Date,java.lang.String) : java.lang.String"
+    instructionFingerprint: "478A8E4A820AEDC7C680A0542E65A153"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format4Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3145D5EB18D711514945D3E9B4B600FE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3612aa57-1eb2-3d0d-9cca-fef59552b16f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Date,java.lang.String,java.util.Locale) : java.lang.String"
+    instructionFingerprint: "426E8F3A7B1C7670D35C75FA6F3CFD3B"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format5Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9ADC4744D4F5DB65175E99636DE1CD68"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "43fa53a3-cb6a-33e5-9520-348ec399d4da"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Date,java.lang.String,java.util.TimeZone) : java.lang.String"
+    instructionFingerprint: "D515DD89F18D2C74CE1E9A36806EDADE"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format6Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CCD7E70D7723BD7FF4EFD5CACC3FA690"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7645e822-384a-31ee-88cb-323c31841239"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Date,java.lang.String,java.util.TimeZone,java.util.Locale)\
+      \ : java.lang.String"
+    instructionFingerprint: "EF77AA115DEFCC57141579FEA30C509A"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format7Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "37C74D3D25C337B49078F5A28AF2F279"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "4CA23E081062A50B31F86651625FEC7B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "dd MMMM yyyy"
+        suggestedContent: !<regular>
+          value: "dd MMMM yyyy"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d137a877-9e47-3cf5-8fac-23e9d327b517"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(long,java.lang.String) : java.lang.String"
+    instructionFingerprint: "29205D775CF5F0EC48C9351219D6CC19"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format8Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AC177635A12932DA8E7843C48D0BF9DA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b056ca0c-67d1-33be-babe-b63e194984f7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(long,java.lang.String,java.util.Locale) : java.lang.String"
+    instructionFingerprint: "AA86715AD9F6C99AB993BDB8BEA70688"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format9Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A4ACB8239191BC4680C144EA052F7611"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "294e3ade-8c15-3e5d-9773-c21d984450c1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(long,java.lang.String,java.util.TimeZone) : java.lang.String"
+    instructionFingerprint: "89E99EFE5F70A31EB4E74AB409123249"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format10Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CDA1444F7B762DB445011DDE822C2476"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7c88f2f6-4d15-343c-ac61-33f8931b1b13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(long,java.lang.String,java.util.TimeZone,java.util.Locale)\
+      \ : java.lang.String"
+    instructionFingerprint: "FF93CCC2812C7C9CF601809D803FDCCF"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+    - "java.util.TimeZone"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format11Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C4F9F268591DDE5386A775B3A6A4E58C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "format_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "format_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "format_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cf4b1bf8-1cf9-3931-9a68-03cfaddf5093"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "formatUTC"
+    returnType: "java.lang.String"
+    signature: "formatUTC(java.util.Date,java.lang.String) : java.lang.String"
+    instructionFingerprint: "BD34C34FD8793BAD3AFE76966B3A53BB"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatUTCTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CAD635685D910F458EE03A03939BC516"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "formatUTC_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "formatUTC_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fd2a93e0-ddf7-3ee1-b079-1d62b344023b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "formatUTC"
+    returnType: "java.lang.String"
+    signature: "formatUTC(java.util.Date,java.lang.String,java.util.Locale) : java.lang.String"
+    instructionFingerprint: "89D1782786082026B0EB3D63FF8FACF9"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.String"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatUTC1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C878FE4E55AFFE492090F48BFF3CB750"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "formatUTC_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "formatUTC_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "formatUTC_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "formatUTC_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "formatUTC_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "09c7817d-bc11-3beb-ab3e-38a429d25009"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "formatUTC"
+    returnType: "java.lang.String"
+    signature: "formatUTC(long,java.lang.String) : java.lang.String"
+    instructionFingerprint: "7057227539209CE8ECD1EEA406581AF7"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatUTC2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B93035F4CD0F54223C776B9DD9D91BEB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "formatUTC_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "formatUTC_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f20b52ac-8154-32e5-ab70-64a1f7a88540"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "formatUTC"
+    returnType: "java.lang.String"
+    signature: "formatUTC(long,java.lang.String,java.util.Locale) : java.lang.String"
+    instructionFingerprint: "4A36024A9811EEBF53F2DB5CF85781FC"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+    - "java.util.Locale"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatUTC3Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C49FFA130D27CC8B61D2511BF8017FC0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "formatUTC_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pattern"
+      modelFingerprint: "99922039E9395696EBAC3111561E54FC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "formatUTC_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "locale"
+      modelFingerprint: "CBD21D56216917E6F9087D66B1C60A6D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "formatUTC_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "formatUTC_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "formatUTC_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c562ca61-efde-3e78-8dd9-98a96151949a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

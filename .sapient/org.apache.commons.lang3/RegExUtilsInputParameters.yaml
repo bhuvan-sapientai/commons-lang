@@ -1,0 +1,2315 @@
+---
+modelFingerprint: "7AC12D477BEC3FDB420613F83BDA327A"
+methods:
+- method:
+    name: "dotAll"
+    returnType: "java.util.regex.Pattern"
+    signature: "dotAll(java.lang.String) : java.util.regex.Pattern"
+    instructionFingerprint: "63BCED79C17D4C519EB6D67ABBA15DA4"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "dotAllTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D445D3291B554B8D84E0DEF222CFCEF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "389B93AA707CA9AEBE95A1BEA5BAA576"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "dotAll_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0F98F2518018FF60413FA5BEAEF58D9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "dotAll_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 32
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "dotAll_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 32
+              valueType: "int"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "dotAll_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec83d889-3efa-32d5-a265-914a119df70a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "dotAllMatcher"
+    returnType: "java.util.regex.Matcher"
+    signature: "dotAllMatcher(java.lang.String,java.lang.String) : java.util.regex.Matcher"
+    instructionFingerprint: "8DB860422AA506B10F82557A97D60052"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "dotAllMatcherTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2A70C612836CFBD78BCC44DEB4549193"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "389B93AA707CA9AEBE95A1BEA5BAA576"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "dotAllMatcher_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "80B6F0EF357701780A6DAF93BD494A80"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B"
+        suggestedContent: !<regular>
+          value: "B"
+        valueType: "java.lang.String"
+        uuid: "dotAllMatcher_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D78AF3F23ACD03B14CF30CBB9240DC40"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "java.util.regex.Matcher"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.String"
+                  uuid: "dotAllMatcher_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 32
+                  valueType: "int"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.String"
+                  uuid: "dotAllMatcher_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 32
+                  valueType: "int"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.util.regex.Pattern"
+            uuid: "dotAll_pattern1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "dotAllMatcher_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "matcher"
+        suggestedContent: !<method_return_from_value>
+          target: "java.util.regex.Matcher"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.String"
+                  uuid: "dotAllMatcher_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 32
+                  valueType: "int"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.util.regex.Pattern"
+            uuid: "dotAll_pattern1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "B"
+              valueType: "java.lang.String"
+              uuid: "dotAllMatcher_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "matcher"
+        valueType: "java.util.regex.Matcher"
+        uuid: "dotAllMatcher_matcher1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad6cabd0-4c6f-3ab6-9a16-ecd93ec30981"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removeAll"
+    returnType: "java.lang.String"
+    signature: "removeAll(java.lang.String,java.util.regex.Pattern) : java.lang.String"
+    instructionFingerprint: "3909DE8113BA0BDAED61B26889A2AD4E"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.regex.Pattern"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeAllTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3E60991384F68279934CA8A22440A377"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "removeAll_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "72BB5B1C38858E8822F25FA0006E0DF2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "removeAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "removeAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "removeAll_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "AED045E908F804CA54724FA2CAA8C5E9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "replaceAll"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "removeAll_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "regex"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - name: "regex"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "regex1"
+                  valueType: "java.lang.String"
+                  uuid: "removeAll_pattern1-regex"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - name: "regex"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "removeAll_pattern1-regex"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.util.regex.Pattern"
+            uuid: "removeAll_pattern1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "replacement"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replaceAll(String,Pattern,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replaceAll1"
+          valueType: "java.lang.String"
+          uuid: "removeAll_string2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replaceAll1"
+        valueType: "java.lang.String"
+        uuid: "removeAll_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "eea02421-abce-3087-aa87-bb2be702634b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removeAll"
+    returnType: "java.lang.String"
+    signature: "removeAll(java.lang.String,java.lang.String) : java.lang.String"
+    instructionFingerprint: "18F916075D35ABD8E67F019A983FE013"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeAll1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A5F3F7970FF858EF99C0FBF7295C5013"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "removeAll_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "BF8A227D6BA506E6A258506A9C865AB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "removeAll_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "33E15A4F0757F661061F93A2C89827B9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "replaceAll"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "removeAll_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "removeAll_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "replacement"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replaceAll(String,String,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replaceAll1"
+          valueType: "java.lang.String"
+          uuid: "removeAll_string3"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replaceAll1"
+        valueType: "java.lang.String"
+        uuid: "removeAll_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f9e72a62-ea1a-38dd-a2e7-e587e478110e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removeFirst"
+    returnType: "java.lang.String"
+    signature: "removeFirst(java.lang.String,java.util.regex.Pattern) : java.lang.String"
+    instructionFingerprint: "E9C60FC470A1E0DD8231B57DC895C608"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.regex.Pattern"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeFirstTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "45935613761F688728A591F1B956BFAF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "removeFirst_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "72BB5B1C38858E8822F25FA0006E0DF2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "removeFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "removeFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "removeFirst_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "78690F9A9A29EF7FCBC8978E3B0DF614"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "replaceFirst"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "removeFirst_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "regex"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - name: "regex"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "regex1"
+                  valueType: "java.lang.String"
+                  uuid: "removeFirst_pattern1-regex"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "java.util.regex.Pattern"
+              method: "compile"
+              methodParameters:
+              - name: "regex"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "removeFirst_pattern1-regex"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.util.regex.Pattern"
+            uuid: "removeFirst_pattern1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "replacement"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replaceFirst(String,Pattern,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replaceFirst1"
+          valueType: "java.lang.String"
+          uuid: "removeFirst_string2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replaceFirst1"
+        valueType: "java.lang.String"
+        uuid: "removeFirst_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "974cad2f-3ef9-39b7-8748-b16db39ddc16"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removeFirst"
+    returnType: "java.lang.String"
+    signature: "removeFirst(java.lang.String,java.lang.String) : java.lang.String"
+    instructionFingerprint: "3D11407A8683078EB6A772869EFD92E7"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removeFirst1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CECDEB685B4434F31345559C3A13C838"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "removeFirst_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "BF8A227D6BA506E6A258506A9C865AB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "removeFirst_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "FFE7DF7F7A988C8D3887946AAA2EDC05"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "replaceFirst"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "removeFirst_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "removeFirst_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "replacement"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replaceFirst(String,String,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replaceFirst1"
+          valueType: "java.lang.String"
+          uuid: "removeFirst_string3"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replaceFirst1"
+        valueType: "java.lang.String"
+        uuid: "removeFirst_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f73f91b1-6aa5-3970-bb54-a8c5cd316c12"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "removePattern"
+    returnType: "java.lang.String"
+    signature: "removePattern(java.lang.String,java.lang.String) : java.lang.String"
+    instructionFingerprint: "729F5A0605AF7C6AA0B434213DCB98E9"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "removePatternTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CCEAC6AE98242C2373A42C9E49283E79"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "removePattern_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "BF8A227D6BA506E6A258506A9C865AB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "removePattern_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "8DB767FDCD230774C5E8D87824BB8016"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "replacePattern"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "removePattern_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "removePattern_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "replacement"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "replacePattern(String,String,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_replacePattern1"
+          valueType: "java.lang.String"
+          uuid: "removePattern_string3"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_replacePattern1"
+        valueType: "java.lang.String"
+        uuid: "removePattern_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0ed2db9-022a-30ec-8a62-ef1f858ae707"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "replaceAll"
+    returnType: "java.lang.String"
+    signature: "replaceAll(java.lang.String,java.util.regex.Pattern,java.lang.String)\
+      \ : java.lang.String"
+    instructionFingerprint: "DD078FE1A327A1772F2B5E2ECF38A48C"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.regex.Pattern"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "replaceAllWhenObjectUtilsAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "56BC03C49CEC408A6DFB0AA7B075C6E5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "5837DC20074FD0F8736F85E22D3CD928"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "D4FCEAC6F4F50F308163F1427632C69C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              suggestedContent: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "replaceAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              suggestedContent: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "replaceAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "replaceAll_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "81BE2E7FA951209052DB9C818E92331A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "replacement1"
+        suggestedContent: !<regular>
+          value: "replacement1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7A6F2E1CFD5EA3EE91038DD9B37CD05F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "45cdf541-5fcc-31bd-bf56-2614402434ef"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "replaceAllWhenObjectUtilsNotAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B36D7B30F3A7A36F368001CB010EEB91"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "23973798925A0D12770A6110385ABE06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "The quick brown fox jumps over the lazy dog"
+        suggestedContent: !<regular>
+          value: "The quick brown fox jumps over the lazy dog"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "72BB5B1C38858E8822F25FA0006E0DF2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "replaceAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "replaceAll_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "replaceAll_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "B4961356CABC37AC48E652FA5F42CDBB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "cat"
+        suggestedContent: !<regular>
+          value: "cat"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c0eccb6-26e7-3bb9-ba4c-045f430a5114"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "replaceAll"
+    returnType: "java.lang.String"
+    signature: "replaceAll(java.lang.String,java.lang.String,java.lang.String) : java.lang.String"
+    instructionFingerprint: "CEE4570EF47AD051E607B54F0796C9D3"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "replaceAll1WhenObjectUtilsAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DB631CDF99A097630484F11BFCE9233"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "5837DC20074FD0F8736F85E22D3CD928"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "F3037FFAD98BAB7C55735AF451BD8F9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        suggestedContent: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "81BE2E7FA951209052DB9C818E92331A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "replacement1"
+        suggestedContent: !<regular>
+          value: "replacement1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7A6F2E1CFD5EA3EE91038DD9B37CD05F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "662921ae-8c2e-3433-ba22-98f365cd3da5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "replaceAll1WhenObjectUtilsNotAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DDCECF41B7C517E84D2F80FA0EEACA9F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "30333CEC48AC8C4DE26EF2C4F834C3C2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "C"
+        suggestedContent: !<regular>
+          value: "C"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "389B93AA707CA9AEBE95A1BEA5BAA576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "122F40B8703A57BBACCB12C33BA1A030"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B"
+        suggestedContent: !<regular>
+          value: "B"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F40ECF546F17B60875ADD91B1A95B3B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "C"
+        suggestedContent: !<regular>
+          value: "C"
+        valueType: "java.lang.String"
+        uuid: "replaceAll_string4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ca6a4236-8f19-3154-bb3a-f3d7e33e5bf3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "replaceFirst"
+    returnType: "java.lang.String"
+    signature: "replaceFirst(java.lang.String,java.util.regex.Pattern,java.lang.String)\
+      \ : java.lang.String"
+    instructionFingerprint: "0D213BB69E88B2534CAA7BC38589B0E5"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.regex.Pattern"
+    - "java.lang.String"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "replaceFirstWhenTextIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CA533920E0170E5C5CFBFDF4DA8958DF"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0c3cbac6-ce20-3a3f-a618-4f3fc4760691"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "replaceFirstWhenRegexIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DBEC76AC73DC2B777CC79346642A9CB7"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "7a1e2fef-7e6d-3df2-a1f0-a502da1e737e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "replaceFirstWhenReplacementIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "91B3F8454126B14296ECEA719CAB1796"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "72BB5B1C38858E8822F25FA0006E0DF2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "replaceFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "replaceFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "replaceFirst_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "716904A4949E8191F6C0A02058F34EC3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string2"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b19e86f7-b23d-38ad-981a-72a10edaac66"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "replaceFirstWhenReplacementIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "35FBC4F223A9C67CA541D3FA4B328F54"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "B1119AEBD315BB3E648D6C86BD9217D6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Hello World"
+        suggestedContent: !<regular>
+          value: "Hello World"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "72BB5B1C38858E8822F25FA0006E0DF2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "regex1"
+              valueType: "java.lang.String"
+              uuid: "replaceFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.util.regex.Pattern"
+          method: "compile"
+          methodParameters:
+          - name: "regex"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "replaceFirst_pattern1-regex"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.util.regex.Pattern"
+        uuid: "replaceFirst_pattern1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "8483871908570EC810C288013061F081"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d66dac95-0004-309a-9596-2951702f9b08"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "replaceFirst"
+    returnType: "java.lang.String"
+    signature: "replaceFirst(java.lang.String,java.lang.String,java.lang.String) :\
+      \ java.lang.String"
+    instructionFingerprint: "9F1B237B1C892ED7F02A55E842A0A9CF"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "replaceFirst1WhenTextIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "829555C9D95A23F5759B3CD06B8A60B3"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "d83f9143-e268-3523-ad88-e6e837dc8753"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "replaceFirst1WhenRegexIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5783CDD7ABC9ADF8719CCE3ED7C55D4C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "32642d31-ceeb-3090-80fb-c27666e049dd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "replaceFirst1WhenReplacementIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DFBB1E307FB5C6926139CEBDBE485A0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "BF8A227D6BA506E6A258506A9C865AB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "716904A4949E8191F6C0A02058F34EC3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string3"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ae4699ed-1424-3ab8-9fa5-2fc8fe7ae36f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "replaceFirst1WhenReplacementIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7E4CD98CEBF6ED19EB9B9C53D1AA40AA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "30333CEC48AC8C4DE26EF2C4F834C3C2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "C"
+        suggestedContent: !<regular>
+          value: "C"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "389B93AA707CA9AEBE95A1BEA5BAA576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "122F40B8703A57BBACCB12C33BA1A030"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B"
+        suggestedContent: !<regular>
+          value: "B"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F40ECF546F17B60875ADD91B1A95B3B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "C"
+        suggestedContent: !<regular>
+          value: "C"
+        valueType: "java.lang.String"
+        uuid: "replaceFirst_string4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4f2efad2-90c2-360a-a7ce-da3197c1aa1c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "replacePattern"
+    returnType: "java.lang.String"
+    signature: "replacePattern(java.lang.String,java.lang.String,java.lang.String)\
+      \ : java.lang.String"
+    instructionFingerprint: "034F3D31879B2145CF3E05584C47E179"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "replacePatternWhenObjectUtilsAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DB631CDF99A097630484F11BFCE9233"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "5837DC20074FD0F8736F85E22D3CD928"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "F3037FFAD98BAB7C55735AF451BD8F9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        suggestedContent: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "81BE2E7FA951209052DB9C818E92331A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "replacement1"
+        suggestedContent: !<regular>
+          value: "replacement1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7A6F2E1CFD5EA3EE91038DD9B37CD05F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        suggestedContent: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "341c4515-3eb1-3b92-bb4e-7332374c8973"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "replacePatternWhenObjectUtilsNotAnyNullTextRegexReplacement"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C785572DBC0C210D62C248A820518434"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "788B1B6D16024D16D347A7FC6AA46DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "text1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "regex"
+      modelFingerprint: "BF8A227D6BA506E6A258506A9C865AB5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "regex1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "replacement"
+      modelFingerprint: "0D603AB2F8FDF8247E6E1A10533034E7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "replacement1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RegExUtils"
+      modelFingerprint: "0419690E7DF39235709BAEC572E39389"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.RegExUtils"
+        uuid: "org.apache.commons.lang3.RegExUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.RegExUtils"
+        name: "dotAllMatcher"
+        parameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "replacePattern_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "text1"
+            valueType: "java.lang.String"
+            uuid: "replacePattern_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "dotAllMatcher(String,String): Matcher"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.util.regex.Matcher"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.util.regex.Matcher"
+          uuid: "replacePattern_matcher1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "replacePattern_string4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5099d277-d806-3843-94b1-d843dfb9eb4b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

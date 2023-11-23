@@ -1,0 +1,2340 @@
+---
+modelFingerprint: "9246B5A2063428D1C207CCA0DE22FD93"
+methods:
+- method:
+    name: "generateBitVector"
+    returnType: "long"
+    signature: "generateBitVector(java.lang.Class<java.lang.Enum>,java.lang.Iterable<?\
+      \ extends java.lang.Enum>) : long"
+    instructionFingerprint: "8E1004960639D8BD1D89B3495E606CBF"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "generateBitVector1WhenConstantsLengthLessThanOrEqualsToLongSIZEThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "59D455766CE0980F3A2FB7C7C08B9BAA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "generateBitVector_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "A1A3825E0FD41C69B761A8DDFF184DEF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        genericValueType: "? extends java.lang.Enum"
+        uuid: "generateBitVector_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3E9C76AB51311DE97AE9C2294CD5E1D6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.IllegalArgumentException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "64c5b9a2-d567-38e7-8d06-c20cfd8d7e46"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "generateBitVectors"
+    returnType: "long[]"
+    signature: "generateBitVectors(java.lang.Class<java.lang.Enum>,java.lang.Iterable<?\
+      \ extends java.lang.Enum>) : long[]"
+    instructionFingerprint: "B9BDD21DF839E7E30ACE8C669987264C"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "generateBitVectors1WhenCondensedIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9FC492C3A96CBA5CD13EF6A064889E1A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "generateBitVectors_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "A1A3825E0FD41C69B761A8DDFF184DEF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        genericValueType: "? extends java.lang.Enum"
+        uuid: "generateBitVectors_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C68D39930F0EEE2FB1654CBDEAD807A9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "generateBitVectors_long3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "generateBitVectors_long3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "long[]"
+        uuid: "generateBitVectors_long[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "74e121db-7816-3fdc-bf48-c31748aa1299"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "generateBitVectors1WhenCondensedIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E60B0C3A1DFDBE0A0B0C5CFA23F4B962"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e63eba8b-c33a-30f7-adee-7137690ca29b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnum"
+    returnType: "java.lang.Enum"
+    signature: "getEnum(java.lang.Class<java.lang.Enum>,java.lang.String) : java.lang.Enum"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+    instructionFingerprint: "26C0CAFC9B9156E7A7F55D9121396201"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C4A893B8473CDC969E25DD31D135393F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getEnum_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "3CF4C4A69C5BDAF08DACDDBD1F82B865"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnum"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "getEnum_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "getEnum_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultEnum"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Enum"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnum(Class,String,Enum): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "getEnum_enum1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e653e082-1073-3e19-a7ae-6c9d76dc9144"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnum"
+    returnType: "java.lang.Enum"
+    signature: "getEnum(java.lang.Class<java.lang.Enum>,java.lang.String,java.lang.Enum)\
+      \ : java.lang.Enum"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+    instructionFingerprint: "9AC47EFAF73C829DF8D3F9BB538B623E"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+    - "java.lang.Enum"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnum1WhenEnumNameIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7899C1621DAA3FE8280E93E7E9FC909F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "D3163FF6BE1E4CCF0DE6CF7E72939125"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "getEnum_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "304A01C596D3BA41924471D0C3909EA8"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "244c9518-4a45-3b6d-9440-0829bfa6a889"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getEnum1WhenEnumNameIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6CDD4302193F9AF5FE4BB9E64A86BBC9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "6C6F04D8FEE477E4AAE78E16E2B273F1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        suggestedContent: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "C79120DD41241754B01B84D3AB5608D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        suggestedContent: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getEnum_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "C09AEB1DF26812362209FF6CDB59505C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1C0FCD01835BA9CA08544D7B1744BF71"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e38c9d6-cf17-3e27-a2f8-90689081e009"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getEnum1WhenCaughtIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B0CDF91B28FF439EBE482ECA497227E0"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getEnum_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "304A01C596D3BA41924471D0C3909EA8"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnum_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "76dc6bed-d4cc-3789-83cd-f446607873de"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumIgnoreCase"
+    returnType: "java.lang.Enum"
+    signature: "getEnumIgnoreCase(java.lang.Class<java.lang.Enum>,java.lang.String)\
+      \ : java.lang.Enum"
+    instructionFingerprint: "13EB7D43663ED122EA346966C380B66D"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumIgnoreCaseTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "031DFF4A6C3092320AD4342A601950DC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumIgnoreCase_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getEnumIgnoreCase_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "BFE5E2DCB425F33AB078AF8F6CED000B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnumIgnoreCase"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "getEnumIgnoreCase_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "getEnumIgnoreCase_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultEnum"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Enum"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnumIgnoreCase(Class,String,Enum): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "getEnumIgnoreCase_enum1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumIgnoreCase_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bcf01090-f86a-35a9-9431-f5f932dd992a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumIgnoreCase"
+    returnType: "java.lang.Enum"
+    signature: "getEnumIgnoreCase(java.lang.Class<java.lang.Enum>,java.lang.String,java.lang.Enum)\
+      \ : java.lang.Enum"
+    instructionFingerprint: "8DA0558A7783B2EDB9BBC823BDEED4AC"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+    - "java.lang.Enum"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumIgnoreCase1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AAAF11EB0E754A05291C0497EB22060C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumIgnoreCase_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getEnumIgnoreCase_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "934B7781958F31F5C1FB596743488984"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumIgnoreCase_enum1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "5DF414EDA6063C937F10FBA09FB6E9D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getFirstEnumIgnoreCase"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "getEnumIgnoreCase_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "getEnumIgnoreCase_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "stringFunction"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Function"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultEnum"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Enum"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Enum"
+            uuid: "getEnumIgnoreCase_enum1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getFirstEnumIgnoreCase(Class,String,Function,Enum): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "getEnumIgnoreCase_enum2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumIgnoreCase_enum2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "57a424ae-25db-3ded-9978-1b0487812a54"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumList"
+    returnType: "java.util.List"
+    signature: "getEnumList(java.lang.Class<java.lang.Enum>) : java.util.List<java.lang.Enum>"
+    instructionFingerprint: "8E2F698F039538B790298FA9D6046B85"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumListTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CF0FA2EE416D007FFDBD4E7727700C17"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumList_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4B5FE943A5F8575C355A63D451A19634"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.ArrayList"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumList_arrayList1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5e12cbe1-80fb-3d79-af39-2f38045155ea"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumMap"
+    returnType: "java.util.Map"
+    signature: "getEnumMap(java.lang.Class<java.lang.Enum>) : java.util.Map<java.lang.String,java.lang.Enum>"
+    instructionFingerprint: "9590C5EDF0F440DE229D20B8EFD04CB2"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumMapTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BC9A4C1D2BFD66286BCFEC9050DB5136"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumMap_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D45DA09BE917CE04FF55F937B18A0E59"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Map"
+        genericValueType: "java.lang.String,java.lang.Enum"
+        uuid: "getEnumMap_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b7889fb3-5857-397d-ae8f-f33ccd4d2f38"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumMap"
+    returnType: "java.util.Map"
+    signature: "getEnumMap(java.lang.Class<java.lang.Enum>,java.util.function.Function<java.lang.Enum,java.lang.Object>)\
+      \ : java.util.Map<java.lang.Object,java.lang.Enum>"
+    instructionFingerprint: "1AE58179E4AAA35E5591240EF83C772C"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.util.function.Function"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnumMap1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B8B2D40247484033B01D66B164C55C9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumMap_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "keyFunction"
+      modelFingerprint: "8453B465996105B81A74619E0904C218"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Function"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Function"
+        genericValueType: "java.lang.Enum,java.lang.Object"
+        uuid: "getEnumMap_function1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B9F8D75AC0DB825E9736D2B7616B0708"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Map"
+        genericValueType: "java.lang.Object,java.lang.Enum"
+        uuid: "getEnumMap_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "305fe02e-3621-3538-9235-7086b8a7c8f9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getEnumSystemProperty"
+    returnType: "java.lang.Enum"
+    signature: "getEnumSystemProperty(java.lang.Class<java.lang.Enum>,java.lang.String,java.lang.Enum)\
+      \ : java.lang.Enum"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+    instructionFingerprint: "64AB6D6F503913BC5AC39BA520DAE960"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+    - "java.lang.Enum"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getEnumSystemPropertyWhenEnumClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4C9C9138991E7B338586FE0AA48477DB"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "bb16254f-97f5-33a0-ab1b-08db2d25ce8f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getEnumSystemPropertyWhenPropNameIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FF3678A851D5650372E11193A7D7A1AE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "propName"
+      modelFingerprint: "1C26FB6F145C318257132731477AD4A4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "getEnumSystemProperty_string1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "304A01C596D3BA41924471D0C3909EA8"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0096e3c4-49b0-3d95-9b5b-b207bc6f6be3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "getEnumSystemPropertyWhenPropNameIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C79F6213F123E17B978237360E399D40"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "propName"
+      modelFingerprint: "99621DF741215CD312FEEEF01F2F2606"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "propName1"
+        valueType: "java.lang.String"
+        uuid: "getEnumSystemProperty_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "934B7781958F31F5C1FB596743488984"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_enum1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "048C30C23C0D3436C46E477795D333E5"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnum"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "getEnumSystemProperty_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "getEnumSystemProperty_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultEnum"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Enum"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Enum"
+            uuid: "getEnumSystemProperty_enum1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnum(Class,String,Enum): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "getEnumSystemProperty_enum2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95C7D2211129347792E13FE24BF0C2C8"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Enum"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Enum"
+        uuid: "getEnumSystemProperty_enum2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "06d576d1-2011-3da4-baaa-73a1dce90230"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFirstEnumIgnoreCase"
+    returnType: "java.lang.Enum"
+    signature: "getFirstEnumIgnoreCase(java.lang.Class<java.lang.Enum>,java.lang.String,java.util.function.Function<java.lang.Enum,java.lang.String>,java.lang.Enum)\
+      \ : java.lang.Enum"
+    instructionFingerprint: "4052968EF63D080EA5323972B3CA07BF"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+    - "java.util.function.Function"
+    - "java.lang.Enum"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "getFirstEnumIgnoreCaseWhenEnumNameIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2B2AB6687E68E31C2A86740DA43FDC39"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c67bf014-6540-3730-873b-945a991f6e3a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getFirstEnumIgnoreCaseWhenEnumClassNotIsEnum"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B558E9CB65247B8464EA9470639E6474"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "6C6F04D8FEE477E4AAE78E16E2B273F1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        suggestedContent: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "getFirstEnumIgnoreCase_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "C79120DD41241754B01B84D3AB5608D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        suggestedContent: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "getFirstEnumIgnoreCase_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "stringFunction"
+      modelFingerprint: "42AFD670D9CC6E1EB012828F53A4C30D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.function.Function"
+        genericValueType: "java.lang.Enum,java.lang.String"
+        uuid: "getFirstEnumIgnoreCase_function1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultEnum"
+      modelFingerprint: "C09AEB1DF26812362209FF6CDB59505C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Enum"
+        uuid: "getFirstEnumIgnoreCase_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1C0FCD01835BA9CA08544D7B1744BF71"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Enum"
+        uuid: "getFirstEnumIgnoreCase_enum1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aefcd1b2-4a24-3dad-81d8-a7bfae265f37"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isValidEnum"
+    returnType: "boolean"
+    signature: "isValidEnum(java.lang.Class<java.lang.Enum>,java.lang.String) : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+    instructionFingerprint: "2922EC431DAE09240BD1C40B3CA60551"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isValidEnumWhenGetEnumEnumClassEnumNameIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7DD49E83C45F42D21B57BD9E19CCE5D9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "isValidEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "isValidEnum_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "FAC550846E26BFF5D9368D78A32D08B5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnum"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "isValidEnum_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "isValidEnum_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnum(Class,String): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "isValidEnum_enum1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6efefff9-3482-3f71-b854-325960e09c03"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isValidEnumWhenGetEnumEnumClassEnumNameIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D49D5AFA63E1F9178997CC05131082CC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "isValidEnum_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "isValidEnum_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "3F92A8316DBA3306EED82A390FAD35B6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnum"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "isValidEnum_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "isValidEnum_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnum(Class,String): Enum"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Enum"
+          uuid: "isValidEnum_enum1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a8fbd573-befc-3aaf-9ec1-85118a8be346"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isValidEnumIgnoreCase"
+    returnType: "boolean"
+    signature: "isValidEnumIgnoreCase(java.lang.Class<java.lang.Enum>,java.lang.String)\
+      \ : boolean"
+    instructionFingerprint: "ABB8821FBD3102B6C2E729FAF4B1C739"
+    parametersTypes:
+    - "java.lang.Class"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isValidEnumIgnoreCaseWhenGetEnumIgnoreCaseEnumClassEnumNameIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ABB748591E62D29A39475DF0989E9AD4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "isValidEnumIgnoreCase_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "isValidEnumIgnoreCase_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "50288A012F79B5217361BF620A101486"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnumIgnoreCase"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "isValidEnumIgnoreCase_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "isValidEnumIgnoreCase_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnumIgnoreCase(Class,String): Enum"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Enum"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.Enum"
+          uuid: "isValidEnumIgnoreCase_enum1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0cca7785-b96c-3240-86bd-61d12a3a9a89"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isValidEnumIgnoreCaseWhenGetEnumIgnoreCaseEnumClassEnumNameIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D9E98357BCA259DA5AB931EE901198A2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "isValidEnumIgnoreCase_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "enumName"
+      modelFingerprint: "1289E663C160A18F8A3FB69EB5F0941B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "enumName1"
+        valueType: "java.lang.String"
+        uuid: "isValidEnumIgnoreCase_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "EnumUtils"
+      modelFingerprint: "682139B10600F3A327BB34D7A99B525E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.EnumUtils"
+        uuid: "org.apache.commons.lang3.EnumUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.EnumUtils"
+        name: "getEnumIgnoreCase"
+        parameters:
+        - name: "enumClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Enum"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Enum"
+            uuid: "isValidEnumIgnoreCase_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "enumName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "enumName1"
+            valueType: "java.lang.String"
+            uuid: "isValidEnumIgnoreCase_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getEnumIgnoreCase(Class,String): Enum"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Enum"
+          uuid: "isValidEnumIgnoreCase_enum1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4e08b384-0bfb-3e6d-8879-49a49a6dca1d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "processBitVector"
+    returnType: "java.util.EnumSet"
+    signature: "processBitVector(java.lang.Class<java.lang.Enum>,long) : java.util.EnumSet<java.lang.Enum>"
+    instructionFingerprint: "4D1B7249142CFD42F4BB0DD8972CC9B4"
+    parametersTypes:
+    - "java.lang.Class"
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "processBitVectorWhenConstantsLengthLessThanOrEqualsToLongSIZEThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7938D95C1FD1D8CFF8DA863E6BDA7532"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "processBitVector_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "33F2C8B4A5A4128107A4597EC08073F3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "processBitVector_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3E9C76AB51311DE97AE9C2294CD5E1D6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.IllegalArgumentException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "62366b75-2886-3cf3-b6a4-73ef53d59241"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "processBitVectors"
+    returnType: "java.util.EnumSet"
+    signature: "processBitVectors(java.lang.Class<java.lang.Enum>,long[]) : java.util.EnumSet<java.lang.Enum>"
+    instructionFingerprint: "63FF282A98E90F842CEAF19EC1574CD2"
+    parametersTypes:
+    - "java.lang.Class"
+    - "long[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "processBitVectorsWhenBlockIndexOfLvaluesAnd1LConstantOrdinalModulusLongSIZENotEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D5C58B735FAACF4182FB8A5AB1F63EFA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      modelFingerprint: "9AF1EBDE280B0B06DAAE1A293828C008"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Enum"
+        valueType: "java.lang.Class"
+        genericValueType: "java.lang.Enum"
+        uuid: "processBitVectors_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "values"
+      modelFingerprint: "0C5397AE3F2589287A5A6FCFA82D8436"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "long[]"
+        uuid: "processBitVectors_long[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "99C96A5F5F5015D436DE2EBAD07AB394"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.EnumSet"
+        genericValueType: "java.lang.Enum"
+        uuid: "processBitVectors_enumSet1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "06105b27-ee6a-3562-af83-bd977643c97f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

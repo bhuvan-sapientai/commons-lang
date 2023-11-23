@@ -1,0 +1,912 @@
+---
+modelFingerprint: "867740F8B8499EC7314CAD657C0D2969"
+methods:
+- method:
+    name: "above"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    signature: "above(int) : org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    instructionFingerprint: "2AB588142AFD7AF46040D4C6EB9FA00A"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "above1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7D16FA6F8F74E1484D882C1F20CD98B8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      modelFingerprint: "D09EC6682EC3D29CF210CDCDA61F4E29"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "above_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "JavaUnicodeEscaper"
+      modelFingerprint: "F2A9408728995945DFCDBB5799E01B9D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        name: "outsideOf"
+        parameters:
+        - name: "codePointLow"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "codePointHigh"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "above_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "outsideOf(int,int): JavaUnicodeEscaper"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+            parameters:
+            - name: "below"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "above_javaUnicodeEscaper1-below"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "above"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "above_javaUnicodeEscaper1-above"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "between"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: false
+                valueType: "boolean"
+                uuid: "above_javaUnicodeEscaper1-between"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+            parameters:
+            - name: "below"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "above_javaUnicodeEscaper1-below"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "above"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "above_javaUnicodeEscaper1-above"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "between"
+              value:
+                sapientType: "BASIC"
+                valueType: "boolean"
+                uuid: "above_javaUnicodeEscaper1-between"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          uuid: "above_javaUnicodeEscaper1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BA95EB8AABA5917DEC6B31F76D6461D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "above_javaUnicodeEscaper1-below"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "above_javaUnicodeEscaper1-above"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "above_javaUnicodeEscaper1-between"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "above_javaUnicodeEscaper1-below"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "above_javaUnicodeEscaper1-above"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "above_javaUnicodeEscaper1-between"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "above_javaUnicodeEscaper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c81ab6d5-b975-325f-9877-ebd48dd6b23a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "below"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    signature: "below(int) : org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    instructionFingerprint: "B2946402B1E805EA4B2602BAA4961B2F"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "below1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8C81DA802591105D94E950E61B92C085"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      modelFingerprint: "D09EC6682EC3D29CF210CDCDA61F4E29"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "below_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "JavaUnicodeEscaper"
+      modelFingerprint: "3E93B474E6159739D08652336CFDC129"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        name: "outsideOf"
+        parameters:
+        - name: "codePointLow"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "below_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "codePointHigh"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2147483647
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "outsideOf(int,int): JavaUnicodeEscaper"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+            parameters:
+            - name: "below"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "below_javaUnicodeEscaper1-below"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "above"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "below_javaUnicodeEscaper1-above"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "between"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: false
+                valueType: "boolean"
+                uuid: "below_javaUnicodeEscaper1-between"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+            parameters:
+            - name: "below"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "below_javaUnicodeEscaper1-below"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "above"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "below_javaUnicodeEscaper1-above"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "between"
+              value:
+                sapientType: "BASIC"
+                valueType: "boolean"
+                uuid: "below_javaUnicodeEscaper1-between"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          uuid: "below_javaUnicodeEscaper1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BA95EB8AABA5917DEC6B31F76D6461D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "below_javaUnicodeEscaper1-below"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "below_javaUnicodeEscaper1-above"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "below_javaUnicodeEscaper1-between"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "below_javaUnicodeEscaper1-below"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "below_javaUnicodeEscaper1-above"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "below_javaUnicodeEscaper1-between"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "below_javaUnicodeEscaper1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ce59b530-cd8f-3f1d-bf40-a78f789c2ce1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "between"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    signature: "between(int,int) : org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    instructionFingerprint: "5CE21E1EDD16D2473129CFA8C425BC70"
+    parametersTypes:
+    - "int"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "between1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DA96AAFE5773A1723997191D57DB8AE5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      modelFingerprint: "7CF8C689F10A40221682710783E0EE3A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "between_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "codePointHigh"
+      modelFingerprint: "A1E6641B5A38807598E92EE1C23BB548"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "between_int2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "66EAF9D50FAFB6836B1DC5A5E047DD65"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "between_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "between_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "between_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "between_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "between_javaUnicodeEscaper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "190ce24c-1e5b-3ba3-b730-22d6535019ac"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "outsideOf"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    signature: "outsideOf(int,int) : org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    instructionFingerprint: "17EB3CB924D2BB6B274074E3E73F3621"
+    parametersTypes:
+    - "int"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "outsideOf1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9AF6599371B435A1A55850B96D08EEE9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      modelFingerprint: "7CF8C689F10A40221682710783E0EE3A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "outsideOf_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "codePointHigh"
+      modelFingerprint: "A1E6641B5A38807598E92EE1C23BB548"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "outsideOf_int2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E71C7C1A9EECCDA0141EE57657DDDD21"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "outsideOf_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "outsideOf_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "outsideOf_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "outsideOf_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "outsideOf_javaUnicodeEscaper1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "17e2fd18-bbb3-3ec7-a501-1a4b716fc94a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toUtf16Escape"
+    returnType: "java.lang.String"
+    signature: "toUtf16Escape(int) : java.lang.String"
+    instructionFingerprint: "25BB23E017770A480F79B5189A0BCD42"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toUtf16EscapeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(int,int,boolean) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8616E4640FEF8F32DE59B1F3A948C257"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BEA5180DB25978C9B286984B36710CFB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+          parameters:
+          - name: "below"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "above"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "between"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "codePoint"
+      modelFingerprint: "0DE04D392E26FA20F17BB840EC8798A8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "toUtf16Escape_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "399A42305DBAC95DB70E56205A7C45EE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.ArrayIndexOutOfBoundsException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ArrayIndexOutOfBoundsException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ArrayIndexOutOfBoundsException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2011e0c-dd80-32df-82e7-1307a9299a7e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

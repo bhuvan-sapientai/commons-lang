@@ -1,0 +1,3383 @@
+---
+modelFingerprint: "134278A099AC06D08CF2E2E8193F8973"
+methods:
+- method:
+    name: "accept"
+    returnType: "void"
+    signature: "accept(org.apache.commons.lang3.Functions$FailableBiConsumer<java.lang.Object,java.lang.Object,java.lang.Throwable>,java.lang.Object,java.lang.Object)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "9375EA559C241FA746C2C809B9BD66D0"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiConsumer"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "acceptTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EC14DEDDF195981D0408C10FF13D53E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      modelFingerprint: "8B2193278E911B3CD0C426499EE7E160"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiConsumer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiConsumer"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "accept_functions.FailableBiConsumer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object1"
+      modelFingerprint: "6AEFF565BB75909A8AC6DFE36790AB9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "accept_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object2"
+      modelFingerprint: "FE0663027A9468B5F453E00A3EB58C78"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "accept_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "C97E7909B6F022E8F7BE75D4FAB8E4B0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "run"
+        parameters:
+        - name: "runnable"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "run(Functions$FailableRunnable): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "accept_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7b2c2fb4-ef75-3919-82fb-d0fa67974572"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "accept"
+    returnType: "void"
+    signature: "accept(org.apache.commons.lang3.Functions$FailableConsumer<java.lang.Object,java.lang.Throwable>,java.lang.Object)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "63FA093741D73819B4515256F098EF0B"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableConsumer"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "accept1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8271E140F7BE95B308E22A8F44CA928E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      modelFingerprint: "D7A3E2865F5C4FF7003F4421FB0264F7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableConsumer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableConsumer"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "accept_functions.FailableConsumer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "accept_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "C97E7909B6F022E8F7BE75D4FAB8E4B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "run"
+        parameters:
+        - name: "runnable"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "run(Functions$FailableRunnable): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "accept_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9a5ce440-4a05-30e7-b72f-4f5ad35419d5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "apply"
+    returnType: "java.lang.Object"
+    signature: "apply(org.apache.commons.lang3.Functions$FailableBiFunction<java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Throwable>,java.lang.Object,java.lang.Object)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "F2F4449DB2D1AE83B47BCF580E5E7152"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiFunction"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "210F984FC64652620E164DF3346D192E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      modelFingerprint: "9241BBDAF645C8FF28937D2D74EE4A4F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiFunction"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiFunction"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "apply_functions.FailableBiFunction1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input1"
+      modelFingerprint: "05D60682CC41004668A81A2831F41BCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "apply_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input2"
+      modelFingerprint: "F667C257D2D59ADD952A3E174CAD64A9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "apply_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "D7863A72B3440C566900C8BE57F130E2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "get"
+        parameters:
+        - name: "supplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Functions$FailableSupplier): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "apply_object3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "apply_object3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3d33b7c8-65b1-3105-b11e-1378b185b2be"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "apply"
+    returnType: "java.lang.Object"
+    signature: "apply(org.apache.commons.lang3.Functions$FailableFunction<java.lang.Object,java.lang.Object,java.lang.Throwable>,java.lang.Object)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "26ADB9DABDD6AC75A8B48A7ABD0BF75F"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableFunction"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "apply1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E486A3E0D04F366E8ACC37927FF54E01"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      modelFingerprint: "D0E4C4F52EAF51B0FD0AD9A735EDC816"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableFunction"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableFunction"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "apply_functions.FailableFunction1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "BFF98A537205C705602EFB791D277FCE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "apply_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "D7863A72B3440C566900C8BE57F130E2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "get"
+        parameters:
+        - name: "supplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Functions$FailableSupplier): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "apply_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "apply_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dad8dda9-d06d-3839-9dd6-843634c3b02c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asBiConsumer"
+    returnType: "java.util.function.BiConsumer"
+    signature: "asBiConsumer(org.apache.commons.lang3.Functions$FailableBiConsumer<java.lang.Object,java.lang.Object,?>)\
+      \ : java.util.function.BiConsumer<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "DBED098BFACE563864C2967B8EFAF36D"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiConsumer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asBiConsumerTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B35E25FF10F17140F365E21798042B99"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      modelFingerprint: "C69C0FE3D10D67332B2772D2787B8BD5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiConsumer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiConsumer"
+        genericValueType: "java.lang.Object,java.lang.Object,?"
+        uuid: "asBiConsumer_functions.FailableBiConsumer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "27EB4AE7D6F6B136554D55C112C319CF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.BiConsumer"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "asBiConsumer_biConsumer1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2783fe99-0c97-353f-ad3c-cbbb397817ba"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asBiFunction"
+    returnType: "java.util.function.BiFunction"
+    signature: "asBiFunction(org.apache.commons.lang3.Functions$FailableBiFunction<java.lang.Object,java.lang.Object,java.lang.Object,?>)\
+      \ : java.util.function.BiFunction<java.lang.Object,java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "345C2DF11CB61ADE3B54848A1614C914"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiFunction"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asBiFunctionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1588A6FBA8E63DD98C63D00B1568D1CC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      modelFingerprint: "C5D5CEC70E1EACD553B2C1D3C8995C61"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiFunction"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiFunction"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object,?"
+        uuid: "asBiFunction_functions.FailableBiFunction1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4205B8B02AD677CDB2B65F778E3BCB2E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.BiFunction"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+        uuid: "asBiFunction_biFunction1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ebf05e33-f559-34e6-96f3-756e1f4b54ad"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asBiPredicate"
+    returnType: "java.util.function.BiPredicate"
+    signature: "asBiPredicate(org.apache.commons.lang3.Functions$FailableBiPredicate<java.lang.Object,java.lang.Object,?>)\
+      \ : java.util.function.BiPredicate<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "6BA30A24879B6FC1B73599DEE9028A9A"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiPredicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asBiPredicateTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4FC9E73005F6A5E11A18CF50502CD084"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "C92C267BB57631A7DAAA2B70CCAC8331"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+        genericValueType: "java.lang.Object,java.lang.Object,?"
+        uuid: "asBiPredicate_functions.FailableBiPredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0CD2326545EDBA2278855FFDD244BFA5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.BiPredicate"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "asBiPredicate_biPredicate1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1a9daf5c-7b16-3b39-9ced-8646fd5ea559"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asCallable"
+    returnType: "java.util.concurrent.Callable"
+    signature: "asCallable(org.apache.commons.lang3.Functions$FailableCallable<java.lang.Object,?>)\
+      \ : java.util.concurrent.Callable<java.lang.Object>"
+    instructionFingerprint: "1E860F8F71343810441F31E3C31FF3C5"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableCallable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asCallableTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "373F76DFAC40DCCCD401C2D0248EFD49"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "callable"
+      modelFingerprint: "48B1102BA2BAB32B04C5D2A5A772598F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableCallable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableCallable"
+        genericValueType: "java.lang.Object,?"
+        uuid: "asCallable_functions.FailableCallable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CB288C06E65C2A81DB46BCE160CEA646"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.concurrent.Callable"
+        uuid: "asCallable_callable1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5c3cd683-7de3-373b-877e-d296b4eb4fd9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asConsumer"
+    returnType: "java.util.function.Consumer"
+    signature: "asConsumer(org.apache.commons.lang3.Functions$FailableConsumer<java.lang.Object,?>)\
+      \ : java.util.function.Consumer<java.lang.Object>"
+    instructionFingerprint: "93B9DA23498FBB3927822231044777AE"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableConsumer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asConsumerTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A182E7998DCFD8C77DC06BCB06621914"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      modelFingerprint: "2D3EB5399C27A547DB5442F7D428208E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableConsumer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableConsumer"
+        genericValueType: "java.lang.Object,?"
+        uuid: "asConsumer_functions.FailableConsumer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "57F05715D631751E0400AFCA5A1C4A03"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.Consumer"
+        uuid: "asConsumer_consumer1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a520a8de-a9e7-31b1-9548-dcbc66224f06"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asFunction"
+    returnType: "java.util.function.Function"
+    signature: "asFunction(org.apache.commons.lang3.Functions$FailableFunction<java.lang.Object,java.lang.Object,?>)\
+      \ : java.util.function.Function<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "C70A9D3A9043E76E788250C40696E9B4"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableFunction"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asFunctionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "33E4FAE01EA137CBA49477F29FB59554"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      modelFingerprint: "0F2D0D057BDE5E03616DDCC3EC5F5B62"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableFunction"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableFunction"
+        genericValueType: "java.lang.Object,java.lang.Object,?"
+        uuid: "asFunction_functions.FailableFunction1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E686DB020F41F0181583A40E8A6E2412"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.Function"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "asFunction_function1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7061a179-ec6f-36fa-942d-3673cfe095e2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asPredicate"
+    returnType: "java.util.function.Predicate"
+    signature: "asPredicate(org.apache.commons.lang3.Functions$FailablePredicate<java.lang.Object,?>)\
+      \ : java.util.function.Predicate<java.lang.Object>"
+    instructionFingerprint: "A5E268B7BD74AFEE2CB69106D82C31E1"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailablePredicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asPredicateTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AF2AC2E9FD90C119ECC0AFF7592E9533"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "2627807A5119269ED1D26FC5DB96965E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailablePredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailablePredicate"
+        genericValueType: "java.lang.Object,?"
+        uuid: "asPredicate_functions.FailablePredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3276FC8B55043758455EA24B02AF97F3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.Predicate"
+        uuid: "asPredicate_predicate1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "faf27e9d-8b2c-308c-a212-f28ccab1fb7b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asRunnable"
+    returnType: "java.lang.Runnable"
+    signature: "asRunnable(org.apache.commons.lang3.Functions$FailableRunnable<?>)\
+      \ : java.lang.Runnable"
+    instructionFingerprint: "9FF7E5C1F0E8A8952056790F668DB056"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableRunnable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asRunnableTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "60A7FAF407DE66C541823747D36E9703"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      modelFingerprint: "B059F7CD22BDFCD9282DEB65A1A71999"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "?"
+        uuid: "asRunnable_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5396116BCC1FF3A56024EB6637798F5A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.lang.Runnable"
+        uuid: "asRunnable_runnable1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9d110134-aede-39b7-882a-8aec03520c13"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "asSupplier"
+    returnType: "java.util.function.Supplier"
+    signature: "asSupplier(org.apache.commons.lang3.Functions$FailableSupplier<java.lang.Object,?>)\
+      \ : java.util.function.Supplier<java.lang.Object>"
+    instructionFingerprint: "F4400056E1266F32F8119E86B0AC1607"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableSupplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "asSupplierTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E20B7941C0EE1ED7D5D84E95029AF187"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "DAC548776302C252F6DC16070044C80A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+        genericValueType: "java.lang.Object,?"
+        uuid: "asSupplier_functions.FailableSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3DFCA879D842FFB440161C84FAF1D204"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "java.util.function.Supplier"
+        uuid: "asSupplier_supplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6b37d8ae-48e4-3474-8940-c907b682595f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "call"
+    returnType: "java.lang.Object"
+    signature: "call(org.apache.commons.lang3.Functions$FailableCallable<java.lang.Object,java.lang.Throwable>)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "249577EC9184787FA574950454E333DC"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableCallable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "callTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C06BCEADBB126D24F3F626780402D1F2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "callable"
+      modelFingerprint: "C5C5D4856D46DE0C33FD020D6744595D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableCallable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableCallable"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "call_functions.FailableCallable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "D7863A72B3440C566900C8BE57F130E2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "get"
+        parameters:
+        - name: "supplier"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Functions$FailableSupplier): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "call_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "call_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7f46e9ea-9d9d-3f1a-9edc-cdb3cda2e6b0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get(org.apache.commons.lang3.Functions$FailableSupplier<java.lang.Object,java.lang.Throwable>)\
+      \ : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "C3757A9AA8293F9742B8BBF8F8ECBEDC"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableSupplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8137D7042DD690EA94196D479F48989A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "E9FC21C584ED8A585509D10B2D7FA1F2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "get_functions.FailableSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c25887d-767d-38e9-b5ae-c2e4012c49be"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getWhenCaughtThrowableThrowsRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "93F3FBB76A040A4CCE62C97DF1113139"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      modelFingerprint: "E9FC21C584ED8A585509D10B2D7FA1F2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "get_functions.FailableSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      modelFingerprint: "63B405961A26335A9A41C9C968023697"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableSupplier"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "get_functions.FailableSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "supplier"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.Throwable"
+        signature: "get(): Object throws java.lang.Throwable"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "get_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "B077B85AF56A3AC38D894F59E41BD6BF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "rethrow"
+        parameters:
+        - name: "throwable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "get_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rethrow(Throwable): RuntimeException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.RuntimeException"
+          uuid: "get_runtimeException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7C2DC1B47B9E5EA6864937C4F6082EC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.RuntimeException"
+        uuid: "get_runtimeException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c43ce815-b384-3bcc-a1d4-e8728e056eda"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "rethrow"
+    returnType: "java.lang.RuntimeException"
+    signature: "rethrow(java.lang.Throwable) : java.lang.RuntimeException"
+    instructionFingerprint: "8F2C2958AAE0C4DC86430231CF2302F5"
+    parametersTypes:
+    - "java.lang.Throwable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "rethrowWhenThrowableInstanceOfIOExceptionThrowsUncheckedIOException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "963C448AAB3B4D6CF3A72A315FF70DD1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      modelFingerprint: "CA81E7E3752B5CA8CD32AC85481C1073"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.IOException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.io.IOException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.io.IOException"
+        uuid: "rethrow_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9CBCAA456EC762F89520313F8AE6B449"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.io.UncheckedIOException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "rethrow_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.UncheckedIOException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "rethrow_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.io.UncheckedIOException"
+        uuid: "rethrow_uncheckedIOException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4eaf0b4c-ab43-351b-ab86-4bd64ab5b5e8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "rethrowWhenThrowableNotInstanceOfIOExceptionThrowsUndeclaredThrowableException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3A91FBA646BC98CE4D3B82720EF2C41F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      modelFingerprint: "EA7E0F26358A652BA695C4360362E6AC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "rethrow_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2BEC79AC9183F895C363C1A89CD9820F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.reflect.UndeclaredThrowableException"
+          parameters:
+          - name: "undeclaredThrowable"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "rethrow_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.reflect.UndeclaredThrowableException"
+          parameters:
+          - name: "undeclaredThrowable"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "rethrow_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.reflect.UndeclaredThrowableException"
+        uuid: "rethrow_undeclaredThrowableException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "14cc8fab-e428-3d85-b79d-132a8df49b99"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "run"
+    returnType: "void"
+    signature: "run(org.apache.commons.lang3.Functions$FailableRunnable<java.lang.Throwable>)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "42ECDBBEFCA71905413E4DAE582501B4"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableRunnable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "runTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9E1E754A3688B40034A937FC10074F6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      modelFingerprint: "F85160BC2F036CF370631208B30CA905"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "java.lang.Throwable"
+        uuid: "run_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ef8a815d-5b58-3af3-b941-bad6d059cca5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "runWhenCaughtThrowableThrowsRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "864C159B4D7868953FF9FD919F5D7DCA"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      modelFingerprint: "F85160BC2F036CF370631208B30CA905"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "java.lang.Throwable"
+        uuid: "run_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "runnable"
+      modelFingerprint: "04C4690A75CF440BC473AA9006EE1D5C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "java.lang.Throwable"
+        uuid: "run_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "runnable"
+        name: "run"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.Throwable"
+        signature: "run(): void throws java.lang.Throwable"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "run_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "B077B85AF56A3AC38D894F59E41BD6BF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "rethrow"
+        parameters:
+        - name: "throwable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "run_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rethrow(Throwable): RuntimeException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.RuntimeException"
+          uuid: "run_runtimeException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7C2DC1B47B9E5EA6864937C4F6082EC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.RuntimeException"
+        uuid: "run_runtimeException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c1ba0f90-a1c5-3144-823f-d00ae335e0bb"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "stream"
+    returnType: "org.apache.commons.lang3.Streams$FailableStream"
+    signature: "stream(java.util.Collection<java.lang.Object>) : org.apache.commons.lang3.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "FE05F486297892B1D0B16FF74BA18FB6"
+    parametersTypes:
+    - "java.util.Collection"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "streamTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "29CA85167CC482FF1121E620FB04F0BC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      modelFingerprint: "3788DC7B962E3505EA508601629A76FF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Object"
+        uuid: "stream_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DDCB735AFCC1BFF2500D9AB584040545"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "stream_stream1"
+              fixed: false
+              collectionUuid: "stream_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              content: !<stream>
+                collectionValue:
+                  sapientType: "COLLECTION"
+                  valueType: "java.util.Collection"
+                  genericValueType: "java.lang.Object"
+                  uuid: "stream_collection1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "stream_stream1"
+              fixed: false
+              collectionUuid: "stream_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.Streams$FailableStream"
+        uuid: "stream_streams.FailableStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b4af2388-e781-3800-820a-b8ede09bd914"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "stream"
+    returnType: "org.apache.commons.lang3.Streams$FailableStream"
+    signature: "stream(java.util.stream.Stream<java.lang.Object>) : org.apache.commons.lang3.Streams$FailableStream<java.lang.Object>"
+    instructionFingerprint: "D48B33F4C2A2FF5D08D2380876ACACE6"
+    parametersTypes:
+    - "java.util.stream.Stream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "stream1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E6E69293623D43E2E7F68E83F3E4411D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      modelFingerprint: "15CC3233B81224CAD79D029DBF20A962"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.stream.Stream"
+          method: "empty"
+          methodParameters: []
+        valueType: "java.util.stream.Stream"
+        genericValueType: "java.lang.Object"
+        uuid: "stream_stream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DF0E7F7724A69A6DCE7771B81B239AB6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "stream_stream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.Streams$FailableStream"
+          parameters:
+          - name: "stream"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.stream.Stream"
+                method: "empty"
+                methodParameters: []
+              valueType: "java.util.stream.Stream"
+              genericValueType: "java.lang.Object"
+              uuid: "stream_stream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.Streams$FailableStream"
+        uuid: "stream_streams.FailableStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3b200cb7-448d-34b5-bf0d-0c7d7dec4137"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "test"
+    returnType: "boolean"
+    signature: "test(org.apache.commons.lang3.Functions$FailableBiPredicate<java.lang.Object,java.lang.Object,java.lang.Throwable>,java.lang.Object,java.lang.Object)\
+      \ : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "C72833DAFF7DB7663BBFF4B1404979A8"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableBiPredicate"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "testWhenSupplierGetAsBoolean"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C4EF8B681FADDDD1EE90A149CDC2F83"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "8AFF2A79F6E185BA510B3BDF58C0E39C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailableBiPredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object1"
+      modelFingerprint: "6AEFF565BB75909A8AC6DFE36790AB9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object2"
+      modelFingerprint: "FE0663027A9468B5F453E00A3EB58C78"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "getAsBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "db986202-3ef8-3379-a149-1be947cc078f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "testWhenSupplierNotGetAsBoolean"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A4638F90077B42EC69A0DB180FC73400"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "8AFF2A79F6E185BA510B3BDF58C0E39C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailableBiPredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object1"
+      modelFingerprint: "6AEFF565BB75909A8AC6DFE36790AB9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object2"
+      modelFingerprint: "FE0663027A9468B5F453E00A3EB58C78"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getAsBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f3072eea-d0f9-376b-97c0-6a1369656ed4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "testWhenCaughtThrowableThrowsRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "493D51930532B9A1996016C4E7098D68"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 6
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "8AFF2A79F6E185BA510B3BDF58C0E39C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableBiPredicate"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailableBiPredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object1"
+      modelFingerprint: "6AEFF565BB75909A8AC6DFE36790AB9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object2"
+      modelFingerprint: "FE0663027A9468B5F453E00A3EB58C78"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      modelFingerprint: "E636DEE5A3D95B1B7B77C96306A8EC2C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 60002
+      value:
+        sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+        valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "supplier"
+        name: "getAsBoolean"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.Throwable"
+        signature: "getAsBoolean(): boolean throws java.lang.Throwable"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getAsBoolean_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "B077B85AF56A3AC38D894F59E41BD6BF"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "rethrow"
+        parameters:
+        - name: "throwable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "getAsBoolean_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rethrow(Throwable): RuntimeException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.RuntimeException"
+          uuid: "getAsBoolean_runtimeException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7C2DC1B47B9E5EA6864937C4F6082EC"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.RuntimeException"
+        uuid: "getAsBoolean_runtimeException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c7bf983a-19d5-3cc6-8c50-fb029a5495c5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "test"
+    returnType: "boolean"
+    signature: "test(org.apache.commons.lang3.Functions$FailablePredicate<java.lang.Object,java.lang.Throwable>,java.lang.Object)\
+      \ : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    instructionFingerprint: "2DC48A42CBDA568C0BE54E9F70D92577"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailablePredicate"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "test1WhenSupplierGetAsBoolean"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4083FAC9163B83579B267874355815AD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "7448D50E945CB86B430E76DA7DC10233"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailablePredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailablePredicate"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailablePredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "getAsBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5ada5b2b-64af-31c2-92ef-5c45a8285daa"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "test1WhenSupplierNotGetAsBoolean"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AEDADA0E38DCE5F66972C4DD646B1135"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "7448D50E945CB86B430E76DA7DC10233"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailablePredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailablePredicate"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailablePredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getAsBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7062f986-3a47-33d1-bcfd-4e798f9790d2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "test1WhenCaughtThrowableThrowsRuntimeException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1E038A3057D2965EE7445BC2D0BBDF81"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 5
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "7448D50E945CB86B430E76DA7DC10233"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailablePredicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailablePredicate"
+        genericValueType: "java.lang.Object,java.lang.Throwable"
+        uuid: "test_functions.FailablePredicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "test_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      modelFingerprint: "E636DEE5A3D95B1B7B77C96306A8EC2C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 50002
+      value:
+        sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+        valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "supplier"
+        name: "getAsBoolean"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.Throwable"
+        signature: "getAsBoolean(): boolean throws java.lang.Throwable"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "getAsBoolean_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "B077B85AF56A3AC38D894F59E41BD6BF"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "rethrow"
+        parameters:
+        - name: "throwable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "getAsBoolean_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "rethrow(Throwable): RuntimeException"
+        returnValue:
+          sapientType: "EXCEPTION"
+          content: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.RuntimeException"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.RuntimeException"
+          uuid: "getAsBoolean_runtimeException1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7C2DC1B47B9E5EA6864937C4F6082EC"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.RuntimeException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.RuntimeException"
+        uuid: "getAsBoolean_runtimeException1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "27fc3219-9943-363d-9541-b4be5a11f2f0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "tryWithResources"
+    returnType: "void"
+    signature: "tryWithResources(org.apache.commons.lang3.Functions$FailableRunnable<?\
+      \ extends java.lang.Throwable>,org.apache.commons.lang3.Functions$FailableConsumer<java.lang.Throwable,?\
+      \ extends java.lang.Throwable>,org.apache.commons.lang3.Functions$FailableRunnable<?\
+      \ extends java.lang.Throwable>[]) : void"
+    instructionFingerprint: "13A81FCFED8DF9B42E9B8A1B933A6FD3"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableRunnable"
+    - "org.apache.commons.lang3.Functions$FailableConsumer"
+    - "org.apache.commons.lang3.Functions$FailableRunnable[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "tryWithResourcesWhenErrorHandlerIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DEE499D4F05ED137A8E9F44C010DCA5F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      modelFingerprint: "FF6CD47CFB029CA789794AEF136D64D2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errorHandler"
+      modelFingerprint: "4CC73FC8E11E6BC4E59C323C278194C7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableConsumer"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableConsumer"
+        genericValueType: "java.lang.Throwable,? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableConsumer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resources"
+      modelFingerprint: "47242317DCC2404212F6E61BA2A6343B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable[]"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c7d12704-ec03-3dd8-b60c-7dcbb20fb6b1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "tryWithResourcesWhenErrorHandlerIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A3C4EC720966E427DB19C910D4CC5F38"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      modelFingerprint: "FF6CD47CFB029CA789794AEF136D64D2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errorHandler"
+      modelFingerprint: "CD963FD213FCEDF4CF360966AAB6D390"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "org.apache.commons.lang3.Functions$FailableConsumer"
+        genericValueType: "java.lang.Throwable,? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableConsumer1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resources"
+      modelFingerprint: "47242317DCC2404212F6E61BA2A6343B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable[]"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "15ecb5e8-296c-3275-9081-480e2243d3c2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "tryWithResources"
+    returnType: "void"
+    signature: "tryWithResources(org.apache.commons.lang3.Functions$FailableRunnable<?\
+      \ extends java.lang.Throwable>,org.apache.commons.lang3.Functions$FailableRunnable<?\
+      \ extends java.lang.Throwable>[]) : void"
+    instructionFingerprint: "6C502349554D5987B1D140473DA91F5D"
+    parametersTypes:
+    - "org.apache.commons.lang3.Functions$FailableRunnable"
+    - "org.apache.commons.lang3.Functions$FailableRunnable[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "tryWithResources1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6FA0D7A13F2659317FC487A56E777C92"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      modelFingerprint: "FF6CD47CFB029CA789794AEF136D64D2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.Functions$FailableRunnable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "resources"
+      modelFingerprint: "46D1FC45F3F223A00A7E6CE55E6D5523"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.apache.commons.lang3.Functions$FailableRunnable[]"
+        genericValueType: "? extends java.lang.Throwable"
+        uuid: "tryWithResources_functions.FailableRunnable[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Functions"
+      modelFingerprint: "0F580F2277C776D831799955715B3447"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.Functions"
+        uuid: "org.apache.commons.lang3.Functions"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.Functions"
+        name: "tryWithResources"
+        parameters:
+        - name: "action"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "org.apache.commons.lang3.Functions$FailableRunnable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "org.apache.commons.lang3.Functions$FailableRunnable"
+            genericValueType: "? extends java.lang.Throwable"
+            uuid: "tryWithResources_functions.FailableRunnable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorHandler"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.Functions$FailableConsumer"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "resources"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "org.apache.commons.lang3.Functions$FailableRunnable[]"
+            genericValueType: "? extends java.lang.Throwable"
+            uuid: "tryWithResources_functions.FailableRunnable[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "tryWithResources(Functions$FailableRunnable,Functions$FailableConsumer,Functions$FailableRunnable[]):\
+          \ void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "tryWithResources_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "623ef367-30bf-34dc-9043-636bf43dfe12"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

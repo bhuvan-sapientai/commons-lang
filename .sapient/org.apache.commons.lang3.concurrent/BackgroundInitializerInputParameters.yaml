@@ -1,0 +1,1869 @@
+---
+modelFingerprint: "1A2425753BC65F59A1F3D3AC7E946E5E"
+methods:
+- method:
+    name: "builder"
+    returnType: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+    signature: "builder() : org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder<org.apache.commons.lang3.concurrent.BackgroundInitializer<java.lang.Object>,java.lang.Object>"
+    instructionFingerprint: "47EC33994A0A1B8B390C6C1B32AEEC58"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "builderTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "93F01968E1A197F6AB5E4C82696103E3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "57D94DEA04E0598CE173BBDE0AAA1DBB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+        genericValueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer<java.lang.Object>,java.lang.Object"
+        uuid: "builder_backgroundInitializer.Builder1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ed212fe2-2afd-3617-872a-5724a1f34c1c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getExternalExecutor"
+    returnType: "java.util.concurrent.ExecutorService"
+    signature: "getExternalExecutor() : java.util.concurrent.ExecutorService"
+    instructionFingerprint: "E21A7702954847AD6C8B25BE0FB73C12"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getExternalExecutorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D04B586A7767BF562977BEA4AFDD98CA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b4a5ca01-ff04-30ed-8520-05a5ada93d0f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isInitialized"
+    returnType: "boolean"
+    signature: "isInitialized() : boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.util.concurrent.CancellationException"
+      - "java.util.concurrent.ExecutionException"
+      - "java.lang.InterruptedException"
+    instructionFingerprint: "84B8F831C8D3F40D32CCD463C5267302"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isInitializedWhenFutureIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1EBEF03CDB86567116EF3B882DC10D1E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6622f25d-a757-3657-897d-6e8d267e5dd1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isStarted"
+    returnType: "boolean"
+    signature: "isStarted() : boolean"
+    instructionFingerprint: "265E50A83966C2F48AB22AA2AB378547"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isStartedWhenFutureIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "18C72E5D387E69612C48A07A23DE4165"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "12132c3c-0bc6-33cd-84d8-5a0220c99087"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setExternalExecutor"
+    returnType: "void"
+    signature: "setExternalExecutor(java.util.concurrent.ExecutorService) : void"
+    instructionFingerprint: "927CDAC47196856DADFADB3A9C5DD040"
+    parametersTypes:
+    - "java.util.concurrent.ExecutorService"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setExternalExecutorWhenIsStartedThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4F58318FA06D65A5D304C01ACDA920B9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "externalExecutor"
+      modelFingerprint: "8221FE5E5EF22768351E498672F57444"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.ExecutorService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.ExecutorService"
+        uuid: "<init>_executorService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0C8153ED2C0A60BF5B80CE39D52C566A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "isStarted"
+        parameters: []
+        signature: "isStarted(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "setExternalExecutor_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E976C3323A5B88377DD0432A45270E44"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Cannot set ExecutorService after start()!"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Cannot set ExecutorService after start()!"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "setExternalExecutor_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2496d5f4-e0b7-3ea1-9258-46412530a16c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "setExternalExecutorWhenIsStartedNot"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B9C0EA3A092C4DDC41532EBEC0833F23"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "externalExecutor"
+      modelFingerprint: "8221FE5E5EF22768351E498672F57444"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.ExecutorService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.ExecutorService"
+        uuid: "<init>_executorService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "840D24F9BA214F3DA6BDF90C98DC8D40"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "isStarted"
+        parameters: []
+        signature: "isStarted(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "setExternalExecutor_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_FIELD"
+      name: "externalExecutor"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.ExecutorService"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.ExecutorService"
+        uuid: "<init>_executorService1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      readMethodForField: "getExternalExecutor"
+      staticReadMethodForField: false
+      readMethodModifier: "PUBLIC"
+      filledByUser: false
+    uuid: "d33c5efa-f11c-3ce5-94c1-f5d7a8306d73"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "start"
+    returnType: "boolean"
+    signature: "start() : boolean"
+    instructionFingerprint: "5FF606A52D6AF2E4D28F5378CADFB09A"
+    parametersTypes: []
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "startWhenIsStarted"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "49A30277595BA1B6AA49B7C3FA9CC2EC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "0C8153ED2C0A60BF5B80CE39D52C566A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "isStarted"
+        parameters: []
+        signature: "isStarted(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "start_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "398fbd16-0b04-3d0f-873b-7095b87d3bb9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "startWhenExecutorIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "93663094FA9486CF0DD35D727E3609CC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E5C17876F3E0E732ED31C64D9E0F19AE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "840D24F9BA214F3DA6BDF90C98DC8D40"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "isStarted"
+        parameters: []
+        signature: "isStarted(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "start_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e4e5550c-704e-30ee-98d2-31ae2955cf8d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (ExecutorService.submit) detected;\
+      \ Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "startWhenExecutorIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BAB35CAEA97DA1AD25F1B19B027AD91"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "840D24F9BA214F3DA6BDF90C98DC8D40"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "isStarted"
+        parameters: []
+        signature: "isStarted(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "start_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3f1654f4-0942-34ab-a461-06ea5653f0ef"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (ExecutorService.submit) detected;\
+      \ Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get() : java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    instructionFingerprint: "A610A6094DFD61667B7D3017F9762073"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BC0C639C9D6DBB536D6DE249CE65D40D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7B1C8186966DA9C51F14EAEAFD815DFE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 4
+      - 5
+      methodExercised:
+        target: "target"
+        name: "getFuture"
+        parameters: []
+        signature: "getFuture(): Future"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.util.concurrent.Future"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.util.concurrent.Future"
+          uuid: "get_future1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c25887d-767d-38e9-b5ae-c2e4012c49be"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getWhenCaughtExecutionException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "023A639C33FF5CF31C3F4DF3BD46C0D7"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7B1C8186966DA9C51F14EAEAFD815DFE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 4
+      - 5
+      methodExercised:
+        target: "target"
+        name: "getFuture"
+        parameters: []
+        signature: "getFuture(): Future"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.util.concurrent.Future"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.util.concurrent.Future"
+          uuid: "get_future1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "64D9C5D25E08871821FF7B485B9C100E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 4
+      - 5
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Future"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Future"
+        uuid: "get_future1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "java.util.concurrent.Future"
+        name: "get"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+        signature: "get(): Object throws java.lang.InterruptedException,java.util.concurrent.ExecutionException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "get_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ConcurrentUtils"
+      modelFingerprint: "A7C144C2680E1B126417FA3FDC1F0100"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        uuid: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+        name: "handleCause"
+        parameters:
+        - name: "ex"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "get_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.concurrent.ExecutionException"
+              parameters:
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "get_executionException1-cause"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.concurrent.ExecutionException"
+            uuid: "get_executionException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "org.apache.commons.lang3.concurrent.ConcurrentException"
+        signature: "handleCause(ExecutionException): void throws org.apache.commons.lang3.concurrent.ConcurrentException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "get_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FF3E62C4C26664215CB4A88EF6B4C11"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Object"
+        uuid: "get_object2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ebefa8b5-4c6a-3623-93b4-c2372accb1c6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getWhenCaughtInterruptedExceptionThrowsConcurrentException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3D75A46508742E18467574B6107B6509"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7B1C8186966DA9C51F14EAEAFD815DFE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 4
+      - 5
+      methodExercised:
+        target: "target"
+        name: "getFuture"
+        parameters: []
+        signature: "getFuture(): Future"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.util.concurrent.Future"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.util.concurrent.Future"
+          uuid: "get_future1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 33
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22D89D587802755C0C0194FCA0BE06F9"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        uuid: "get_concurrentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f97c1192-d3a9-3baa-a94c-6ca12f6d3f2a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get, Thread.interrupt)\
+      \ detected; Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFuture"
+    returnType: "java.util.concurrent.Future"
+    signature: "getFuture() : java.util.concurrent.Future<java.lang.Object>"
+    instructionFingerprint: "90CF9E805D306A64FFCDB10C6E1FD404"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFutureWhenFutureIsNullThrowsIllegalStateException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F571D71C483658FB2A5028763BA809DD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EA109D8CCB99F70D0DD532D415C8D704"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "start() must be called first!"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalStateException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "start() must be called first!"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalStateException"
+        uuid: "getFuture_illegalStateException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0e03500e-ab9a-319d-86b7-5996a45b2f1c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getActiveExecutor"
+    returnType: "java.util.concurrent.ExecutorService"
+    signature: "getActiveExecutor() : java.util.concurrent.ExecutorService"
+    instructionFingerprint: "91D172668FB5660C54208FAD9185A2E8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getActiveExecutorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "911BF2979B17E9D2133841422494713E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "ddeddfab-03b0-3e19-aeed-ab4c646a9296"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getTaskCount"
+    returnType: "int"
+    signature: "getTaskCount() : int"
+    instructionFingerprint: "11405E5CDE344BB11948F180F68FD01C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTaskCountTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FED8DA1CBE0F126D23DA6A01644BE404"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "07B9F5C7EDC82C98858A3592D8BDC804"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0a121177-3418-3ef2-9ebe-803c80daa8e3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getTypedException"
+    returnType: "java.lang.Exception"
+    signature: "getTypedException(java.lang.Exception) : java.lang.Exception"
+    instructionFingerprint: "B2B458D1A27363F8A42AE28E0DD4E39D"
+    parametersTypes:
+    - "java.lang.Exception"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTypedException1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BBF8A2D541346797C180C5B61B75F5E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4AF47E8C514494822001FB01C73616E6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+          parameters:
+          - name: "exec"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.ExecutorService"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.ExecutorService"
+              uuid: "<init>_executorService1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "e"
+      modelFingerprint: "575757A61B386E85024D9FECBC39E417"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Exception"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Exception"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Exception"
+        uuid: "getTypedException_exception1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8529024E9956B4076EA4527600D03185"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Exception"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "getTypedException_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.Exception"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "getTypedException_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.Exception"
+        uuid: "getTypedException_exception2"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4c4fead5-dcfd-313d-a47b-e83ad23f6769"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

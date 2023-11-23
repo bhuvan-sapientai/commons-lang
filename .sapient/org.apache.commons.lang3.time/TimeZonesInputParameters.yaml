@@ -1,0 +1,76 @@
+---
+modelFingerprint: "F48E4956BDDBAD724FED6A1D8472C7FD"
+methods:
+- method:
+    name: "toTimeZone"
+    returnType: "java.util.TimeZone"
+    signature: "toTimeZone(java.util.TimeZone) : java.util.TimeZone"
+    instructionFingerprint: "2E6C3D55BA60F8696F675350DEDCCB04"
+    parametersTypes:
+    - "java.util.TimeZone"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toTimeZoneTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E0212960EE94C062DE90D5C5D24D7EF8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "timeZone"
+      modelFingerprint: "B9BA85AD9A4C42D7AA9393335E4413D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "toTimeZone_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AD590E4CBC2FD305798FAFCCB8315E24"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "toTimeZone_timeZone2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0610e4aa-76c2-395b-a3c6-93c5fecc5184"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

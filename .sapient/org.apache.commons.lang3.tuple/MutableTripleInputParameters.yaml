@@ -1,0 +1,667 @@
+---
+modelFingerprint: "D82A318FA18943442FACF5D12EA584DD"
+methods:
+- method:
+    name: "emptyArray"
+    returnType: "org.apache.commons.lang3.tuple.MutableTriple[]"
+    signature: "emptyArray() : org.apache.commons.lang3.tuple.MutableTriple[]<java.lang.Object,java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "0BA4F916BC0FEB3F7E8CB34FFB43CD98"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "emptyArray1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "05469B039F30B932A3B12235B458764C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E486369EBE16C61814211EB87EBB80BE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.apache.commons.lang3.tuple.MutableTriple[]"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+        uuid: "mutableTriple[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d12da1d2-df97-3fe2-8847-218afb2f25e9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.tuple.MutableTriple"
+    signature: "of(java.lang.Object,java.lang.Object,java.lang.Object) : org.apache.commons.lang3.tuple.MutableTriple<java.lang.Object,java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "ED94FAEFC2B1F4C1A93CC948F1F7B856"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "334D2375C6572C965CA676CB1B0760D6"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "BA360AAAC3097D03D1A868EFE7946465"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "of_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "middle"
+      modelFingerprint: "93010635542FE5C6DAE255CA5E5DD57D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "of_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "7B27DF2E329D7CCC17B311756613811B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "of_object3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3A6F0005711766F023747512E2ED43F"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutableTriple"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "middle"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutableTriple"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "middle"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.tuple.MutableTriple"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+        uuid: "of_mutableTriple1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2d9e451b-59ca-3da9-a6c7-f80da9bfa12e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "ofNonNull"
+    returnType: "org.apache.commons.lang3.tuple.MutableTriple"
+    signature: "ofNonNull(java.lang.Object,java.lang.Object,java.lang.Object) : org.apache.commons.lang3.tuple.MutableTriple<java.lang.Object,java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "722CFEFAC2BA13E46DBF1F23D9859788"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "ofNonNull1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A308752E2A7F802B605755FD59FF0B6B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "BA360AAAC3097D03D1A868EFE7946465"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "ofNonNull_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "middle"
+      modelFingerprint: "93010635542FE5C6DAE255CA5E5DD57D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "ofNonNull_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "7B27DF2E329D7CCC17B311756613811B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "ofNonNull_object3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MutableTriple"
+      modelFingerprint: "5BA8C62A11EE4A578E3A7BAFCAE4B4C6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.tuple.MutableTriple"
+        uuid: "org.apache.commons.lang3.tuple.MutableTriple"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.tuple.MutableTriple"
+        name: "of"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "ofNonNull_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "middle"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "ofNonNull_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "ofNonNull_object3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Object,Object,Object): MutableTriple"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.tuple.MutableTriple"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.tuple.MutableTriple"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.tuple.MutableTriple"
+          genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+          uuid: "ofNonNull_mutableTriple1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "FBE9E973BE9D2A438B6B33FC626749B3"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutableTriple"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutableTriple"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.tuple.MutableTriple"
+        genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+        uuid: "ofNonNull_mutableTriple1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba305d04-37b6-34e8-b947-c11feca121c7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getLeft"
+    returnType: "java.lang.Object"
+    signature: "getLeft() : java.lang.Object"
+    instructionFingerprint: "5DBB4E3DF0F8FC96495618D932646AA4"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLeftTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B480F3D898DB24195AB19C4C7F64053"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "30074f87-6aa3-3bb2-b8f7-eb030fc5321b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getMiddle"
+    returnType: "java.lang.Object"
+    signature: "getMiddle() : java.lang.Object"
+    instructionFingerprint: "2072D2385D7ADCCB58FDA1B544A8D147"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMiddleTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B480F3D898DB24195AB19C4C7F64053"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "8cafd91b-8d12-3074-a211-5c525bdd0b06"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getRight"
+    returnType: "java.lang.Object"
+    signature: "getRight() : java.lang.Object"
+    instructionFingerprint: "2374B75C391E139A3B0F37DE19DB5FA5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getRightTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B480F3D898DB24195AB19C4C7F64053"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cd6b3e03-55df-337e-80e2-751102c681e4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setLeft"
+    returnType: "void"
+    signature: "setLeft(java.lang.Object) : void"
+    instructionFingerprint: "CC837824D498935E082013B788479BB8"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setLeftTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F1B51BAA02B15C21342AABF6E4C72D20"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c00e006f-2877-36e2-8c20-af7c303132fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setMiddle"
+    returnType: "void"
+    signature: "setMiddle(java.lang.Object) : void"
+    instructionFingerprint: "5343508E13B10B86E9C82EB5332C7E3B"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setMiddleTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "016B81CB2F762C0CCABEA459F92314C8"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "79f1f659-9ded-3e2e-93de-06081d0bbde8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setRight"
+    returnType: "void"
+    signature: "setRight(java.lang.Object) : void"
+    instructionFingerprint: "8AEB67C8F28CB4C9831BEEB4BF089AA4"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setRightTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.lang.Object)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C70BE25E4E6B06620BC24DF5AB1F627A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "691b76c9-d29d-31b3-b5e7-24a092bb1b4e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

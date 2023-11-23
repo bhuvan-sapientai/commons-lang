@@ -1,0 +1,336 @@
+---
+modelFingerprint: "73F572D70ED29FB8CCC8FC7DE55DD92E"
+methods:
+- method:
+    name: "translate"
+    returnType: "int"
+    signature: "translate(java.lang.CharSequence,int,java.io.Writer) : int"
+    throwsExceptions:
+    - "java.io.IOException"
+    instructionFingerprint: "332BD4C5DE29FABD909FF2E27BEF79EC"
+    parametersTypes:
+    - "java.lang.CharSequence"
+    - "int"
+    - "java.io.Writer"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "translateWhenILessThanShortest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence[][]) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "006C20034675DD5895E64BC8384E5A2A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2c3e5667-004d-3acd-abed-1b16c45d339e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "translateWhenResultIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence[][]) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1A9766AC7367D97754FE49FDC2BD8FA3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "F46CAF4B0739CD111D8E7B39B510303F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.LookupTranslator"
+          parameters:
+          - name: "lookup"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.CharSequence[][]"
+              uuid: "<init>_charSequence[][]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.LookupTranslator"
+          parameters:
+          - name: "lookup"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.CharSequence[][]"
+              uuid: "<init>_charSequence[][]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.LookupTranslator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "BF19D054F28E26F8F709D34B84F889B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int5"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8eaba18e-09b8-3f35-8622-357e3ae1c000"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "translateWhenResultIsNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence[][]) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BEC02956B6C9EE792CE209F308DB332"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "F46CAF4B0739CD111D8E7B39B510303F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.text.translate.LookupTranslator"
+          parameters:
+          - name: "lookup"
+            value:
+              sapientType: "ARRAY"
+              content: !<array>
+                values: {}
+              suggestedContent: !<array>
+                values: {}
+              valueType: "java.lang.CharSequence[][]"
+              uuid: "<init>_charSequence[][]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.text.translate.LookupTranslator"
+          parameters:
+          - name: "lookup"
+            value:
+              sapientType: "ARRAY"
+              valueType: "java.lang.CharSequence[][]"
+              uuid: "<init>_charSequence[][]1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.text.translate.LookupTranslator"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "input"
+      modelFingerprint: "9DBBE10DDAEA98ED5773018F3914ACCB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "translate_charSequence1"
+        suggestedContent: !<regular>
+          value: "translate_charSequence1"
+        valueType: "java.lang.String"
+        uuid: "translate_charSequence1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "BF19D054F28E26F8F709D34B84F889B0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "translate_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "out"
+      modelFingerprint: "3C073FF1E3B4FB0821135F74276255C0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.Writer"
+          method: "nullWriter"
+          methodParameters: []
+        valueType: "java.io.Writer"
+        uuid: "translate_writer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7ad08f9b-e7cf-3374-872d-9bb23d406b20"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "translateWhenIGreaterThanOrEqualsToShortestAndResultIsNotNull"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.CharSequence[][]) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BF2BE7A084A799108029A48EAA5E017"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "be4c4664-232b-34db-acd0-d8c8c6de1b6e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

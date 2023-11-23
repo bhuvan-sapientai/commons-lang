@@ -1,0 +1,2779 @@
+---
+modelFingerprint: "FB18C2C765EDA02651FDBE5C6AFD871A"
+methods:
+- method:
+    name: "clone"
+    returnType: "java.io.Serializable"
+    signature: "clone(java.io.Serializable) : java.io.Serializable"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 10
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 11
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "2581A3BEDDFE98EDDE03ED3E949B1E4E"
+    parametersTypes:
+    - "java.io.Serializable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "cloneWhenObjectIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2E8C69B8944894B503D3FD767FE01B2F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "0957CF4CB9AED73E66F540F6C1011D2B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.io.Serializable"
+        uuid: "clone_serializable1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C5098FA432F2C03B5F0AEC8973733F21"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.io.Serializable"
+        uuid: "clone_serializable2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c4bf8b3c-4cbf-3d75-94a6-c408b5c1131c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "cloneWhenObjectIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D17EC8632430C3AF060B710F2D44B13"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "FA9041CCBDEA181DEFA609DF16DE388C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "clone_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "ACFDA16863D43B1720432D63D9793399"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "serialize"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "clone_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "serialize(Serializable): byte[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "byte[]"
+          uuid: "clone_byte[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "44A8224369AFDEF5727E5051F202AF17"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "clone_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "67a7bb14-a25d-31f8-a1e7-f9ed6c7754c8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "cloneWhenDefaultBranchThrowsThrowable"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A4A989442D8011D4732A2813453D6D49"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "FA9041CCBDEA181DEFA609DF16DE388C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "clone_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "ACFDA16863D43B1720432D63D9793399"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "serialize"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "clone_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "serialize(Serializable): byte[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "byte[]"
+          uuid: "clone_byte[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "6E1CA1862DD44CDA727D1689908E4A0D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 3
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+        uuid: "clone_serializationUtils.ClassLoaderAwareObjectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "readObject"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        - "java.lang.ClassNotFoundException"
+        signature: "readObject(): Object throws java.io.IOException,java.lang.ClassNotFoundException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "clone_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "6981D5B743E39228606F42CF0B9E7FCC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      - 4
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+        uuid: "clone_serializationUtils.ClassLoaderAwareObjectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "clone_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C66E340C0F5EAAC7D97CB9C0818A07E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "clone_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "63c99d69-816b-30f5-85a4-dc14e7682003"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "cloneWhenCaughtClassNotFoundExceptionOrIOExceptionThrowsSerializationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "92D635847D8059A47C8CE2516A6C9566"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "FA9041CCBDEA181DEFA609DF16DE388C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "clone_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "ACFDA16863D43B1720432D63D9793399"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "serialize"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "clone_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "serialize(Serializable): byte[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "byte[]"
+          uuid: "clone_byte[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "6E1CA1862DD44CDA727D1689908E4A0D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      - 3
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+        uuid: "clone_serializationUtils.ClassLoaderAwareObjectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "readObject"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        - "java.lang.ClassNotFoundException"
+        signature: "readObject(): Object throws java.io.IOException,java.lang.ClassNotFoundException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "clone_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "6981D5B743E39228606F42CF0B9E7FCC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              suggestedContent: !<inputStream>
+                inputStreamClass: "java.io.ByteArrayInputStream"
+                values: []
+                parameters:
+                - name: "buf"
+                  value:
+                    sapientType: "ARRAY"
+                    valueType: "byte[]"
+                    uuid: "clone_byte[]1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "java.io.ByteArrayInputStream"
+              uuid: "clone_byteArrayInputStream1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "classLoader"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "java.lang.ClassLoader"
+              uuid: "clone_classLoader1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream"
+        uuid: "clone_serializationUtils.ClassLoaderAwareObjectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "clone_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E1405F0D91FBD05F226BBF733CEA89FE"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: " while reading cloned object data"
+              suggestedContent: !<regular>
+                value: " while reading cloned object data"
+              valueType: "java.lang.String"
+              uuid: "clone_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "clone_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "msg"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: " while reading cloned object data"
+              valueType: "java.lang.String"
+              uuid: "clone_string2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "clone_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.SerializationException"
+        uuid: "clone_serializationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7f4a8a0a-12c0-3f96-abd4-efb5c589dfa4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "deserialize"
+    returnType: "java.lang.Object"
+    signature: "deserialize(byte[]) : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 6
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 7
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 8
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    instructionFingerprint: "2E6CF922D79B7B131364FD862E95EEDA"
+    parametersTypes:
+    - "byte[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "deserializeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AB18A49189ED95276731562A0B908839"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "objectData"
+      modelFingerprint: "98F0BC3C104DCCB758FDE80D10A2EDBB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "byte[]"
+        uuid: "deserialize_byte[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "B7E5E3BDFE5E296E50B9CB28F3692E18"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "deserialize"
+        parameters:
+        - name: "inputStream"
+          value:
+            sapientType: "INPUT_STREAM"
+            content: !<inputStream>
+              inputStreamClass: "java.io.ByteArrayInputStream"
+              values: []
+              parameters:
+              - name: "buf"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "byte[]"
+                  uuid: "deserialize_byte[]1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<inputStream>
+              inputStreamClass: "java.io.ByteArrayInputStream"
+              values: []
+              parameters:
+              - name: "buf"
+                value:
+                  sapientType: "ARRAY"
+                  valueType: "byte[]"
+                  uuid: "deserialize_byte[]1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.io.ByteArrayInputStream"
+            uuid: "deserialize_byteArrayInputStream1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deserialize(ByteArrayInputStream): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "deserialize_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "deserialize_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9d317733-e6d7-3927-8baa-83a51bcd6892"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "deserialize"
+    returnType: "java.lang.Object"
+    signature: "deserialize(java.io.InputStream) : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 6
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 7
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 8
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    instructionFingerprint: "D17444452283F42F1CBB54B3131F89E0"
+    parametersTypes:
+    - "java.io.InputStream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "deserialize1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "939E2188E82C2F6551AF48D474F08EC7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "inputStream"
+      modelFingerprint: "C91D946B97E737E0D2E31E7428DADB0B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          values: []
+        valueType: "java.io.InputStream"
+        uuid: "deserialize_inputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "deserialize_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48f153f8-9f5d-3f80-9a15-fb1715c8b9da"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "deserialize1WhenDefaultBranchThrowsThrowable"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4CA00F8B0888C9B2B9991F1230801FFD"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "inputStream"
+      modelFingerprint: "C91D946B97E737E0D2E31E7428DADB0B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          values: []
+        valueType: "java.io.InputStream"
+        uuid: "deserialize_inputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "F0ADEBBBEBACACA74BDBC09B312E5FA0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 5
+      - 7
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.io.ObjectInputStream"
+        uuid: "deserialize_objectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "readObject"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        - "java.lang.ClassNotFoundException"
+        signature: "readObject(): Object throws java.io.IOException,java.lang.ClassNotFoundException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "deserialize_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "CF190ABA052AEF74F99CE02880B88A55"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 6
+      - 8
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.io.ObjectInputStream"
+        uuid: "deserialize_objectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "deserialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C66E340C0F5EAAC7D97CB9C0818A07E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "deserialize_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1871a3a9-f82c-3e16-ad8e-ee5b7c3d371b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "deserialize1WhenCaughtClassNotFoundExceptionOrIOExceptionThrowsSerializationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4812D6F7F333F7EA5FFE00763DBE6579"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 7
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "inputStream"
+      modelFingerprint: "C91D946B97E737E0D2E31E7428DADB0B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          values: []
+        valueType: "java.io.InputStream"
+        uuid: "deserialize_inputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "F0ADEBBBEBACACA74BDBC09B312E5FA0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 5
+      - 7
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.io.ObjectInputStream"
+        uuid: "deserialize_objectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "readObject"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        - "java.lang.ClassNotFoundException"
+        signature: "readObject(): Object throws java.io.IOException,java.lang.ClassNotFoundException"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "deserialize_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "in"
+      modelFingerprint: "CF190ABA052AEF74F99CE02880B88A55"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 7
+      value:
+        sapientType: "INPUT_STREAM"
+        content: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<inputStream>
+          inputStreamClass: "java.io.ObjectInputStream"
+          values: []
+          parameters:
+          - name: "in"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "deserialize_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.io.ObjectInputStream"
+        uuid: "deserialize_objectInputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "in"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "deserialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8D8EB3D5B32C89AC9FB320DA7C205E2B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "deserialize_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Exception"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Exception"
+              uuid: "deserialize_exception1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.SerializationException"
+        uuid: "deserialize_serializationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1de7c734-9bd9-3a6f-8c9f-9bdf64b4a0fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "roundtrip"
+    returnType: "java.io.Serializable"
+    signature: "roundtrip(java.io.Serializable) : java.io.Serializable"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 10
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 11
+      catchExceptions:
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 6
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 7
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    - idExternalInstruction: 0
+      id: 8
+      catchExceptions:
+      - "java.lang.ClassNotFoundException"
+      - "java.io.IOException"
+    instructionFingerprint: "496854D80B37D5E61D7182E7C3C93DAA"
+    parametersTypes:
+    - "java.io.Serializable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "roundtripTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "96F736998DF05054F6BD922E0256D4BC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "roundtrip_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "ACFDA16863D43B1720432D63D9793399"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "serialize"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "roundtrip_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "serialize(Serializable): byte[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values: {}
+          suggestedContent: !<array>
+            values: {}
+          valueType: "byte[]"
+          uuid: "roundtrip_byte[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "6C498CE7388728857B4236E4B5033D19"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "deserialize"
+        parameters:
+        - name: "objectData"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "byte[]"
+            uuid: "roundtrip_byte[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "deserialize(byte[]): Object"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "java.io.Serializable"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.io.Serializable"
+          uuid: "roundtrip_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "44A8224369AFDEF5727E5051F202AF17"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "roundtrip_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6bfef4ef-bf2c-36c9-9e83-5149a5b48e80"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "serialize"
+    returnType: "byte[]"
+    signature: "serialize(java.io.Serializable) : byte[]"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 10
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 11
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "45D5D8BC9B42B8604DBB9CADAA2EB4F1"
+    parametersTypes:
+    - "java.io.Serializable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "serializeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "197CE6F5B2A42507058B189C040A4FCA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "serialize_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SerializationUtils"
+      modelFingerprint: "FD24DBA3F862B92DB196B7C92F83D48B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SerializationUtils"
+        uuid: "org.apache.commons.lang3.SerializationUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SerializationUtils"
+        name: "serialize"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "serialize_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "outputStream"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.io.ByteArrayOutputStream"
+              parameters:
+              - name: "size"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 512
+                  valueType: "int"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.io.ByteArrayOutputStream"
+              parameters:
+              - name: "size"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 512
+                  valueType: "int"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.io.ByteArrayOutputStream"
+            uuid: "serialize_byteArrayOutputStream1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "serialize(Serializable,ByteArrayOutputStream): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6F284CA220F919F7D0C6EB6C97E89FCE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "byte[]"
+        uuid: "serialize_byte[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9d328af1-2293-3544-bbbc-a0683c1f9fbe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "serialize"
+    returnType: "void"
+    signature: "serialize(java.io.Serializable,java.io.OutputStream) : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 10
+      catchExceptions:
+      - "java.lang.Throwable"
+    - idExternalInstruction: 0
+      id: 11
+      catchExceptions:
+      - "java.io.IOException"
+    instructionFingerprint: "54F012E4E85106500AE025E8079D84D1"
+    parametersTypes:
+    - "java.io.Serializable"
+    - "java.io.OutputStream"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "serialize1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DE387EEB3BF371D49F9312B90EFA9144"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "serialize_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "outputStream"
+      modelFingerprint: "44505F47F95B436CA9F5C825D2725F71"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        valueType: "java.io.OutputStream"
+        uuid: "serialize_outputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aa3027ac-8bca-34c8-a436-b48f639f992a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "serialize1WhenDefaultBranchThrowsThrowable"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1F13B752D2037D0B4D53D9B1A89ED2CE"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "serialize_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "outputStream"
+      modelFingerprint: "44505F47F95B436CA9F5C825D2725F71"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        valueType: "java.io.OutputStream"
+        uuid: "serialize_outputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "2F7A4D5070095A87FC6871874DCA3AEE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 9
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "writeObject"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "serialize_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "writeObject(Serializable): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "F158571FCDA3FB2ED56557EFC29E9223"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 10
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C66E340C0F5EAAC7D97CB9C0818A07E"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "serialize_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "40d33135-6c9b-3cf1-8a30-4e4d70464d23"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "serialize1WhenDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DB8F798C620AB7BBC0AFC2FB3840A214"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 10
+      catchExceptions:
+      - "java.lang.Throwable"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "serialize_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "outputStream"
+      modelFingerprint: "44505F47F95B436CA9F5C825D2725F71"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        valueType: "java.io.OutputStream"
+        uuid: "serialize_outputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "2F7A4D5070095A87FC6871874DCA3AEE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 9
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "writeObject"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "serialize_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "writeObject(Serializable): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "F158571FCDA3FB2ED56557EFC29E9223"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0aca93ce-bc67-30dc-aae7-03bcf7aff1f7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "serialize1WhenCaughtIOExceptionThrowsSerializationException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0CF8F33F7689E28ED3A5CB1DEDC5BC33"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 11
+      catchExceptions:
+      - "java.io.IOException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "2E063E70600ED106E5D15B9E940D399A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.io.Serializable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.io.Serializable"
+        uuid: "serialize_serializable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "outputStream"
+      modelFingerprint: "44505F47F95B436CA9F5C825D2725F71"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.io.OutputStream"
+          method: "nullOutputStream"
+          methodParameters: []
+        valueType: "java.io.OutputStream"
+        uuid: "serialize_outputStream1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "2F7A4D5070095A87FC6871874DCA3AEE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 9
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "writeObject"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.io.Serializable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.io.Serializable"
+            uuid: "serialize_serializable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "writeObject(Serializable): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "out"
+      modelFingerprint: "F158571FCDA3FB2ED56557EFC29E9223"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 11
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.io.ObjectOutputStream"
+          parameters:
+          - name: "out"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.io.OutputStream"
+                method: "nullOutputStream"
+                methodParameters: []
+              valueType: "java.io.OutputStream"
+              uuid: "serialize_outputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "java.io.ObjectOutputStream"
+        uuid: "serialize_objectOutputStream1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "out"
+        name: "close"
+        parameters: []
+        throwsExceptions:
+        - "java.io.IOException"
+        signature: "close(): void throws java.io.IOException"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "serialize_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6992E67864A7089EBEE6542678315126"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "serialize_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.SerializationException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.io.IOException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.io.IOException"
+              uuid: "serialize_iOException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.SerializationException"
+        uuid: "serialize_serializationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c274606-4003-3c42-a46a-5ef0d4b5f8a6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

@@ -1,0 +1,3132 @@
+---
+modelFingerprint: "952D60BB5261EF02AE466FE42499F6E6"
+methods:
+- method:
+    name: "findThreadById"
+    returnType: "java.lang.Thread"
+    signature: "findThreadById(long) : java.lang.Thread"
+    instructionFingerprint: "EAB035B2B30F625837CFEB922F93F83E"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadByIdWhenThreadIdLessThanOrEqualsTo0ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E648113B0E9DD7A96E4732C9EBFC86D7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "1D059E1E9DEF25FF136FFC395D3BD0D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: -1
+        suggestedContent: !<regular>
+          value: -1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EBBF79B50AE3E5EB3689ABD9FE4EE1E8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "The thread id must be greater than zero"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "The thread id must be greater than zero"
+              valueType: "java.lang.String"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "findThreadById_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "62b3e488-5259-3c6d-89ad-ea70754235b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "findThreadByIdWhenResultIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A0CB5D992163B36AD7B73919602AAF01"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "71A4FBC5EAFDF2BF48A3001F99D8C381"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "84D11C44DD1273FD28DEAB1A765F705B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "findThreadById_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E4C052A1EF364C706B821FF84D7EC777"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_thread1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aadbb6a5-c4d0-31c6-a45e-336bc8fe76aa"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "findThreadByIdWhenResultNotIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1AB0B6C36901B1818EC53F72439F01B7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "71A4FBC5EAFDF2BF48A3001F99D8C381"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "39076C2387E7260632743C04F868D6E5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Thread"
+              uuid: "findThreadById_object1"
+              fixed: false
+              collectionUuid: "findThreadById_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Thread"
+              uuid: "findThreadById_object1"
+              fixed: false
+              collectionUuid: "findThreadById_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "findThreadById_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638C2A11682AA4C5775CA1EDC2E73C32"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_object1"
+        fixed: false
+        collectionUuid: "findThreadById_collection1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3bfc9a04-8b8a-3141-b576-83fdca096221"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadById"
+    returnType: "java.lang.Thread"
+    signature: "findThreadById(long,java.lang.String) : java.lang.Thread"
+    instructionFingerprint: "4F58EC0D2CB9F669B56C4631F09936A7"
+    parametersTypes:
+    - "long"
+    - "java.lang.String"
+  paths:
+  - pathId: "path4"
+    pathIdForUser: "path1"
+    testPathName: "findThreadById1WhenThreadIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A5BA2E3074CD2AF8233234EB21B8459"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "328b3890-a06f-3e57-bceb-13db4057a47b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "findThreadById1WhenThreadGetThreadGroupIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5FDA3F87BE4F52C9AC36EA8FC29A38E6"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ee18e78f-c026-3572-9a11-d851d5fef0d9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path3"
+    testPathName: "findThreadById1WhenThreadGetThreadGroupGetNameEqualsThreadGroupName"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E904B3EFB4D83D9D642AB6A3A7DA0405"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "B28D08DB6FB9D8969190BD2C8636E4D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroupName"
+      modelFingerprint: "02A0EAED4CB85A56BC142ECF1642482A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "main"
+        suggestedContent: !<regular>
+          value: "main"
+        valueType: "java.lang.String"
+        uuid: "findThreadById_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "77E7B081A2F9FC27C3E70ADFB8270B77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadById"
+        parameters:
+        - name: "threadId"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "findThreadById_long1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadById(long): Thread"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Thread"
+          uuid: "findThreadById_thread1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638C2A11682AA4C5775CA1EDC2E73C32"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_thread1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4d027dc1-efdb-383d-b1b7-7025c5a1c83c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "findThreadById1WhenThreadGetThreadGroupGetNameNotEqualsThreadGroupName"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F835094C6330E1728CF72E4486B6798F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "B28D08DB6FB9D8969190BD2C8636E4D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroupName"
+      modelFingerprint: "02A0EAED4CB85A56BC142ECF1642482A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "main"
+        suggestedContent: !<regular>
+          value: "main"
+        valueType: "java.lang.String"
+        uuid: "findThreadById_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "77E7B081A2F9FC27C3E70ADFB8270B77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadById"
+        parameters:
+        - name: "threadId"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "findThreadById_long1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadById(long): Thread"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Thread"
+          uuid: "findThreadById_thread1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E4C052A1EF364C706B821FF84D7EC777"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_thread2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "027e6d5a-0799-316e-9234-97c84ba5a9c1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadById"
+    returnType: "java.lang.Thread"
+    signature: "findThreadById(long,java.lang.ThreadGroup) : java.lang.Thread"
+    instructionFingerprint: "6196EA78AB9C4C18BC67489B772E5F4C"
+    parametersTypes:
+    - "long"
+    - "java.lang.ThreadGroup"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "findThreadById2WhenThreadIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E88124754187F8565FFB4E4D655F3D00"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "e0ee9a67-4321-3c85-839e-c86aa2fc263b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "findThreadById2WhenThreadGroupEqualsThreadGetThreadGroup"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "33CFD1FD58DAA7B5AD49B2E8E1348B26"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "B28D08DB6FB9D8969190BD2C8636E4D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroup"
+      modelFingerprint: "C0667453A1DAA9F43E371B88B3A6AE5F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "findThreadById_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "findThreadById_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ThreadGroup"
+        uuid: "findThreadById_threadGroup1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "77E7B081A2F9FC27C3E70ADFB8270B77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadById"
+        parameters:
+        - name: "threadId"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "findThreadById_long1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadById(long): Thread"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Thread"
+          uuid: "findThreadById_thread1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "638C2A11682AA4C5775CA1EDC2E73C32"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_thread1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "17b36b46-e8c9-3572-86c3-498a1113bc13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "findThreadById2WhenThreadGroupNotEqualsThreadGetThreadGroup"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B5E052C49392A35D4E205EA44920A0D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      modelFingerprint: "B28D08DB6FB9D8969190BD2C8636E4D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "long"
+        uuid: "findThreadById_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroup"
+      modelFingerprint: "C0667453A1DAA9F43E371B88B3A6AE5F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "findThreadById_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "findThreadById_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ThreadGroup"
+        uuid: "findThreadById_threadGroup1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "77E7B081A2F9FC27C3E70ADFB8270B77"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadById"
+        parameters:
+        - name: "threadId"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "findThreadById_long1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadById(long): Thread"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Thread"
+          uuid: "findThreadById_thread1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E4C052A1EF364C706B821FF84D7EC777"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Thread"
+        uuid: "findThreadById_thread2"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a6939b82-5213-3831-b148-bf09505011f9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadGroups"
+    returnType: "java.util.Collection"
+    signature: "findThreadGroups(java.util.function.Predicate<java.lang.ThreadGroup>)\
+      \ : java.util.Collection<java.lang.ThreadGroup>"
+    instructionFingerprint: "4B40F57705994802901D3D100799E576"
+    parametersTypes:
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadGroupsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C259D4D90C86C7228CB6A80AB6455A3C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "CF6DEA64B0A9F2C08DC8FC1F1A6A220D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroups_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "572FF3A0BF09345745E5B1EA8FB5304E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "getSystemThreadGroup"
+        parameters: []
+        signature: "getSystemThreadGroup(): ThreadGroup"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.ThreadGroup"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "name1"
+                valueType: "java.lang.String"
+                uuid: "findThreadGroups_threadGroup1-name"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.ThreadGroup"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "findThreadGroups_threadGroup1-name"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.ThreadGroup"
+          uuid: "findThreadGroups_threadGroup1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "F2D8D59C400DCBA9DF5AA393C60461FB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadGroups"
+        parameters:
+        - name: "threadGroup"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "name1"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadGroups_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadGroups_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.ThreadGroup"
+            uuid: "findThreadGroups_threadGroup1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "recurse"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "predicate"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.util.function.Predicate"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.ThreadGroup"
+            uuid: "findThreadGroups_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadGroups(ThreadGroup,boolean,Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.ThreadGroup"
+          uuid: "findThreadGroups_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "92D9E750E0C790D358F9CAD01F96F615"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroups_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8b89e0f5-ec4e-396f-89c2-0072182ae5d8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadGroups"
+    returnType: "java.util.Collection"
+    signature: "findThreadGroups(java.lang.ThreadGroup,boolean,java.util.function.Predicate<java.lang.ThreadGroup>)\
+      \ : java.util.Collection<java.lang.ThreadGroup>"
+    instructionFingerprint: "587F4EFDE0674D5A92267FD9DA598633"
+    parametersTypes:
+    - "java.lang.ThreadGroup"
+    - "boolean"
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadGroups1WhenCountLessThanThreadGroupsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A9297C1AAFE92FB9F76E49CD9AE9EEB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroup"
+      modelFingerprint: "C0667453A1DAA9F43E371B88B3A6AE5F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "findThreadGroups_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "findThreadGroups_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroups_threadGroup1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "recurse"
+      modelFingerprint: "B9865457848EC0234FC93B1E9FFE8347"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        suggestedContent: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "findThreadGroups_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "CF6DEA64B0A9F2C08DC8FC1F1A6A220D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroups_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "92D9E750E0C790D358F9CAD01F96F615"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroups_collection2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a07861ae-084d-3aa5-80d3-3981117a7be3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadGroupsByName"
+    returnType: "java.util.Collection"
+    signature: "findThreadGroupsByName(java.lang.String) : java.util.Collection<java.lang.ThreadGroup>"
+    instructionFingerprint: "A3BDF5C8F79B833D1A894ECC1AE878A9"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadGroupsByNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BE678FAFDFF322F34EBB295A994D30EF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroupName"
+      modelFingerprint: "B1B7E5C9F1C34E22D05DF1E1C5FCBA29"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "threadGroupName1"
+        valueType: "java.lang.String"
+        uuid: "findThreadGroupsByName_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "CAAED391ED2F8F8F4A092E1AEB31798B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadGroups"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.ThreadGroup"
+            uuid: "namePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadGroups(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.ThreadGroup"
+          uuid: "findThreadGroupsByName_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "92D9E750E0C790D358F9CAD01F96F615"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "findThreadGroupsByName_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b32c1f09-adad-3618-9c54-bfea5d360cd7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreads"
+    returnType: "java.util.Collection"
+    signature: "findThreads(java.util.function.Predicate<java.lang.Thread>) : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "5C89BB222172477FA2AC7CA638D3685F"
+    parametersTypes:
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2BCE5AF302DABC13C9D8E2CD0E38E971"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "B61B42DA641C04B0CD01F5935B1DC95D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreads_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "572FF3A0BF09345745E5B1EA8FB5304E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "getSystemThreadGroup"
+        parameters: []
+        signature: "getSystemThreadGroup(): ThreadGroup"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.ThreadGroup"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "name1"
+                valueType: "java.lang.String"
+                uuid: "findThreads_threadGroup1-name"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.ThreadGroup"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "findThreads_threadGroup1-name"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.ThreadGroup"
+          uuid: "findThreads_threadGroup1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "88E9199B7E826A8F3366E2DDF4DA9197"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "threadGroup"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "name1"
+                  valueType: "java.lang.String"
+                  uuid: "findThreads_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "findThreads_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.ThreadGroup"
+            uuid: "findThreads_threadGroup1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "recurse"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "predicate"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.util.function.Predicate"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.Thread"
+            uuid: "findThreads_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(ThreadGroup,boolean,Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "findThreads_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreads_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f2f41e9f-d476-3306-a372-e1ef4d15ce8e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreads"
+    returnType: "java.util.Collection"
+    signature: "findThreads(java.lang.ThreadGroup,boolean,java.util.function.Predicate<java.lang.Thread>)\
+      \ : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "D5C4EE507EBBDC8B112ED5BC9AF5FD4C"
+    parametersTypes:
+    - "java.lang.ThreadGroup"
+    - "boolean"
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreads1WhenCountLessThanThreadsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A7357723ADDDE93E5C74F7D5A47CC2B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroup"
+      modelFingerprint: "C0667453A1DAA9F43E371B88B3A6AE5F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "findThreads_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "findThreads_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ThreadGroup"
+        uuid: "findThreads_threadGroup1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "recurse"
+      modelFingerprint: "B9865457848EC0234FC93B1E9FFE8347"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        suggestedContent: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "findThreads_boolean1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "predicate"
+      modelFingerprint: "B61B42DA641C04B0CD01F5935B1DC95D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreads_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreads_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b83892b9-0b98-37cf-98a5-dfe9fe832ee0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadsByName"
+    returnType: "java.util.Collection"
+    signature: "findThreadsByName(java.lang.String) : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "88E62AD67B1EA091B6998F248DDEC21D"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadsByNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2BC3509DE93BDD7670AEAED01BD2BB47"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      modelFingerprint: "EE271BA90F5C385A5C5B5326DCB1BD33"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "threadName1"
+        valueType: "java.lang.String"
+        uuid: "findThreadsByName_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "DB4F2FABA4F8A3EA8F7FEC08162ACBE5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.Thread"
+            uuid: "namePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "findThreadsByName_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreadsByName_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bb9940e5-9b85-3e23-b912-5292a8b231de"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadsByName"
+    returnType: "java.util.Collection"
+    signature: "findThreadsByName(java.lang.String,java.lang.String) : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "7C64187C211C21FCD66882EAD41860DC"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadsByName1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FCE61C9D7C48A49C4391C8801D59BD9F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      modelFingerprint: "EE271BA90F5C385A5C5B5326DCB1BD33"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "threadName1"
+        valueType: "java.lang.String"
+        uuid: "findThreadsByName_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroupName"
+      modelFingerprint: "B1B7E5C9F1C34E22D05DF1E1C5FCBA29"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "threadGroupName1"
+        valueType: "java.lang.String"
+        uuid: "findThreadsByName_string2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "09F99D0D334A6AFAD224862793B3E953"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadGroups"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.ThreadGroup"
+            uuid: "namePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadGroups(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.ThreadGroup"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "name1"
+                    valueType: "java.lang.String"
+                    uuid: "findThreadsByName_threadGroup1-name"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.ThreadGroup"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "findThreadsByName_threadGroup1-name"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ThreadGroup"
+              uuid: "findThreadsByName_threadGroup1"
+              fixed: false
+              collectionUuid: "findThreadsByName_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.ThreadGroup"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "name1"
+                    valueType: "java.lang.String"
+                    uuid: "findThreadsByName_threadGroup1-name"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.ThreadGroup"
+                parameters:
+                - name: "name"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "findThreadsByName_threadGroup1-name"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.ThreadGroup"
+              uuid: "findThreadsByName_threadGroup1"
+              fixed: false
+              collectionUuid: "findThreadsByName_collection1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.ThreadGroup"
+          uuid: "findThreadsByName_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "3682349EA25FBC72FBEC9B6F24A6C66A"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "threadGroup"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "name1"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadsByName_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadsByName_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.ThreadGroup"
+            uuid: "findThreadsByName_threadGroup1"
+            fixed: false
+            collectionUuid: "findThreadsByName_collection1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "recurse"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.Thread"
+            uuid: "namePredicate_predicate2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(ThreadGroup,boolean,Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Thread"
+              uuid: "findThreadsByName_thread1"
+              fixed: false
+              collectionUuid: "lambda$findThreadsByName$2_collection1item"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Thread"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Thread"
+              uuid: "findThreadsByName_thread1"
+              fixed: false
+              collectionUuid: "lambda$findThreadsByName$2_collection1item"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "lambda$findThreadsByName$2_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreadsByName_collection2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "17231689-908f-3609-854d-8414289e8b58"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "findThreadsByName"
+    returnType: "java.util.Collection"
+    signature: "findThreadsByName(java.lang.String,java.lang.ThreadGroup) : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "0876882A64709EAD7ABFD0C1ABBFF00A"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.lang.ThreadGroup"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findThreadsByName2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8EE40B98B5F51FF295F33840AAC800F3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      modelFingerprint: "EE271BA90F5C385A5C5B5326DCB1BD33"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "threadName1"
+        valueType: "java.lang.String"
+        uuid: "findThreadsByName_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "threadGroup"
+      modelFingerprint: "C0667453A1DAA9F43E371B88B3A6AE5F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "name1"
+              valueType: "java.lang.String"
+              uuid: "findThreadsByName_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.ThreadGroup"
+          parameters:
+          - name: "name"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "findThreadsByName_threadGroup1-name"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.ThreadGroup"
+        uuid: "findThreadsByName_threadGroup1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "9B605AB0C5D5FB8559B7B0CE47805640"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "threadGroup"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "name1"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadsByName_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.ThreadGroup"
+              parameters:
+              - name: "name"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "findThreadsByName_threadGroup1-name"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.ThreadGroup"
+            uuid: "findThreadsByName_threadGroup1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "recurse"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            genericValueType: "java.lang.Thread"
+            uuid: "namePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(ThreadGroup,boolean,Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "findThreadsByName_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "findThreadsByName_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6f749b15-9b55-37a1-a049-9bdbbb367096"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAllThreadGroups"
+    returnType: "java.util.Collection"
+    signature: "getAllThreadGroups() : java.util.Collection<java.lang.ThreadGroup>"
+    instructionFingerprint: "07D858EC1BB1F1EA81936EE56523E93A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAllThreadGroupsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "82D2C6643FDEA484A10156CD0531DD21"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "1051F9B7E9BF6E7B3C73408C1A4F0FFF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreadGroups"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            uuid: "alwaysTruePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreadGroups(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.ThreadGroup"
+          uuid: "getAllThreadGroups_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "92D9E750E0C790D358F9CAD01F96F615"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.ThreadGroup"
+        uuid: "getAllThreadGroups_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "563584bb-4a90-3e4e-a0ef-b49f76cc26c4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getAllThreads"
+    returnType: "java.util.Collection"
+    signature: "getAllThreads() : java.util.Collection<java.lang.Thread>"
+    instructionFingerprint: "C6F5E6B0EFBEB3957C7258CF4AD9A40D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAllThreadsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4EDC3B000B297E8FCD924F7ACB98FE54"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "ThreadUtils"
+      modelFingerprint: "A6C27FCBBB175EE3B50E851E05557FA6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.ThreadUtils"
+        uuid: "org.apache.commons.lang3.ThreadUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.ThreadUtils"
+        name: "findThreads"
+        parameters:
+        - name: "predicate"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Predicate"
+            uuid: "alwaysTruePredicate_predicate1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "findThreads(Predicate): Collection"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Collection"
+          genericValueType: "java.lang.Thread"
+          uuid: "getAllThreads_collection1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1077891F12EB8E0524DC5F5B81C8F1CC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Collection"
+        genericValueType: "java.lang.Thread"
+        uuid: "getAllThreads_collection1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "51947fbe-adf1-37a1-a281-42bc6b1f9d07"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getSystemThreadGroup"
+    returnType: "java.lang.ThreadGroup"
+    signature: "getSystemThreadGroup() : java.lang.ThreadGroup"
+    instructionFingerprint: "BAEBA986BB99F8FD89C6A3385C9D3C1E"
+    parametersTypes: []
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getSystemThreadGroupWhenThreadGroupIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AE9D82BD42A3D9632E1EDFD26B265198"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "a572540c-8dcd-314f-b9a5-ee3e0c02ffab"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getSystemThreadGroupWhenThreadGroupGetParentIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9289462CCC60DB5AC8E6D8CCF4C1CAEC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BE8CE74C28FEBA9DF9A94C270CB0CFAD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "java.lang.ThreadGroup"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "java.lang.ThreadGroup"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<static_method_return>
+                  target: "java.lang.Thread"
+                  method: "currentThread"
+                  methodParameters: []
+                suggestedContent: !<static_method_return>
+                  target: "java.lang.Thread"
+                  method: "currentThread"
+                  methodParameters: []
+                valueType: "java.lang.Thread"
+                uuid: "getSystemThreadGroup_thread1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getThreadGroup"
+            suggestedContent: !<method_return_from_value>
+              target: "java.lang.ThreadGroup"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<static_method_return>
+                  target: "java.lang.Thread"
+                  method: "currentThread"
+                  methodParameters: []
+                valueType: "java.lang.Thread"
+                uuid: "getSystemThreadGroup_thread1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getThreadGroup"
+            valueType: "java.lang.ThreadGroup"
+            uuid: "getSystemThreadGroup_threadGroup1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getParent"
+        suggestedContent: !<method_return_from_value>
+          target: "java.lang.ThreadGroup"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<method_return_from_value>
+              target: "java.lang.ThreadGroup"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<static_method_return>
+                  target: "java.lang.Thread"
+                  method: "currentThread"
+                  methodParameters: []
+                valueType: "java.lang.Thread"
+                uuid: "getSystemThreadGroup_thread1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              methodName: "getThreadGroup"
+            valueType: "java.lang.ThreadGroup"
+            uuid: "getSystemThreadGroup_threadGroup1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getParent"
+        valueType: "java.lang.ThreadGroup"
+        uuid: "getSystemThreadGroup_threadGroup3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c40ac4b1-f983-3d66-b649-d14d815c40d0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "getSystemThreadGroupWhenThreadGroupGetParentIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "22B3099588360668C309BFF2E16451F4"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6b98e510-53fb-310b-8ed1-6c67cfec518e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "join"
+    returnType: "void"
+    signature: "join(java.lang.Thread,java.time.Duration) : void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    instructionFingerprint: "7A225B6E3513FFBD458DA57A5798A9C8"
+    parametersTypes:
+    - "java.lang.Thread"
+    - "java.time.Duration"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "joinTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8675C04DEAC4A9E2C0F5A50835EF9EF8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "thread"
+      modelFingerprint: "E07DE2137B2B1EAC22BBA9C71205F1C5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Thread"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Thread"
+        uuid: "join_thread1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "duration"
+      modelFingerprint: "7FF05983714DA5177792B4DB4D5A6396"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "join_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "join_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "join_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48c37f1f-f666-3286-8fa6-93184e92bee8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "sleep"
+    returnType: "void"
+    signature: "sleep(java.time.Duration) : void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    instructionFingerprint: "351B1499DD5DEB6752D5087F1C56D564"
+    parametersTypes:
+    - "java.time.Duration"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "sleepTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0A1205010BB226D8D8C1CD47CB1FF5AB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      modelFingerprint: "7FF05983714DA5177792B4DB4D5A6396"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "sleep_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "sleep_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "sleep_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c72cede0-4b6f-3a5d-9842-93e94d5152ff"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "sleepQuietly"
+    returnType: "void"
+    signature: "sleepQuietly(java.time.Duration) : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    instructionFingerprint: "4B9EC32633418D07638CD2DA4C5B4820"
+    parametersTypes:
+    - "java.time.Duration"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "sleepQuietlyTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C38D5FA7A1C6045C5E5BA67424692927"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      modelFingerprint: "7FF05983714DA5177792B4DB4D5A6396"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "sleepQuietly_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "sleepQuietly_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "sleepQuietly_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9ff92c18-9f84-3bca-87bf-d59d51e4edbb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "sleepQuietlyWhenCaughtInterruptedException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DC0CBC55E4CF4D61B0D1AF55D507CF28"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      modelFingerprint: "7FF05983714DA5177792B4DB4D5A6396"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "long"
+              uuid: "sleepQuietly_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "java.time.Duration"
+          method: "ofDays"
+          methodParameters:
+          - name: "days"
+            value:
+              sapientType: "BASIC"
+              valueType: "long"
+              uuid: "sleepQuietly_duration1-days"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.time.Duration"
+        uuid: "sleepQuietly_duration1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "33d9f4e7-e7a9-376c-a94d-f7c9f58981f0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

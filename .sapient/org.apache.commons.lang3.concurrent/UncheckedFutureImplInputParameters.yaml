@@ -1,0 +1,1146 @@
+---
+modelFingerprint: "E753D8A460804AE6F55238F5DD48ED2A"
+methods:
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get() : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "5B056CE3A3887092AB36C77BE0040A5C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "857C0F21A8C8385F8F1B0CBF64F766FB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c25887d-767d-38e9-b5ae-c2e4012c49be"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getWhenCaughtInterruptedExceptionThrowsUncheckedInterruptedException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C7E8C4375D9F66CC6648A6EA319B23EB"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2C2EEC0040D84329E91D51454B1F8BC6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+        uuid: "get_uncheckedInterruptedException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f40719e8-632e-3049-8d5b-92a6aa32d037"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getWhenCaughtExecutionExceptionThrowsUncheckedExecutionException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BF4FE2933C0FC45E33BC97014652B695"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7E75A54CBDCA4C0AB350DD63CB2EE2DA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.ExecutionException"
+              uuid: "get_executionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.ExecutionException"
+              uuid: "get_executionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+        uuid: "get_uncheckedExecutionException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6a368ecd-4bbd-35b6-a106-de1cb75a681e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "get"
+    returnType: "java.lang.Object"
+    signature: "get(long,java.util.concurrent.TimeUnit) : java.lang.Object"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    - idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    - idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.util.concurrent.TimeoutException"
+    instructionFingerprint: "318C2D6D1B1410C365EAABFFACFAF186"
+    parametersTypes:
+    - "long"
+    - "java.util.concurrent.TimeUnit"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "get1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4C0A0D4CCB811A3924DC2D2619C57F3D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeout"
+      modelFingerprint: "60FD4A3E54AAB9500B3D67D89BE93977"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "get_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unit"
+      modelFingerprint: "A4CED86963B07B504E50AF5B18586EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "NANOSECONDS"
+        valueType: "java.util.concurrent.TimeUnit"
+        uuid: "get_timeUnit1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "get_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fa77ec73-5d5e-3732-b683-af7decc28622"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "get1WhenCaughtInterruptedExceptionThrowsUncheckedInterruptedException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8AA28DA1A68648DF3024DF1C2BA36D88"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.InterruptedException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeout"
+      modelFingerprint: "60FD4A3E54AAB9500B3D67D89BE93977"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "get_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unit"
+      modelFingerprint: "A4CED86963B07B504E50AF5B18586EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "NANOSECONDS"
+        valueType: "java.util.concurrent.TimeUnit"
+        uuid: "get_timeUnit1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2C2EEC0040D84329E91D51454B1F8BC6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.InterruptedException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.InterruptedException"
+              uuid: "get_interruptedException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.exception.UncheckedInterruptedException"
+        uuid: "get_uncheckedInterruptedException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "90fb10a5-b4ab-3da6-a499-87696cf1f350"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "get1WhenCaughtExecutionExceptionThrowsUncheckedExecutionException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2836F4975EC82F64B4E03B10B8EA8588"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeout"
+      modelFingerprint: "60FD4A3E54AAB9500B3D67D89BE93977"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "get_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unit"
+      modelFingerprint: "A4CED86963B07B504E50AF5B18586EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "NANOSECONDS"
+        valueType: "java.util.concurrent.TimeUnit"
+        uuid: "get_timeUnit1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7E75A54CBDCA4C0AB350DD63CB2EE2DA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.ExecutionException"
+              uuid: "get_executionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.concurrent.ExecutionException"
+                parameters:
+                - name: "cause"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "get_executionException1-cause"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.ExecutionException"
+              uuid: "get_executionException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedExecutionException"
+        uuid: "get_uncheckedExecutionException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f36e22a5-09f3-3654-8bd5-3e34f2cbcc1a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "get1WhenCaughtTimeoutExceptionThrowsUncheckedTimeoutException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.util.concurrent.Future<java.lang.Object>) :\
+      \ void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8FF1E3B0C4A1F6C24744E7343862AC57"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.util.concurrent.TimeoutException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "17FCEEF55510678988F2053E90BA7C65"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+          parameters:
+          - name: "future"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Future"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Future"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_future1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedFutureImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "timeout"
+      modelFingerprint: "60FD4A3E54AAB9500B3D67D89BE93977"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "get_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unit"
+      modelFingerprint: "A4CED86963B07B504E50AF5B18586EDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "NANOSECONDS"
+        valueType: "java.util.concurrent.TimeUnit"
+        uuid: "get_timeUnit1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B31ECC5BE56629CE575F0FD45532EF9D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedTimeoutException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.concurrent.TimeoutException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.concurrent.TimeoutException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.TimeoutException"
+              uuid: "get_timeoutException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.UncheckedTimeoutException"
+          parameters:
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.concurrent.TimeoutException"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.concurrent.TimeoutException"
+              uuid: "get_timeoutException1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.UncheckedTimeoutException"
+        uuid: "get_uncheckedTimeoutException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7ddb5c23-4b64-3ad8-bc92-0ef50fc497c1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (Future.get) detected; Learn more:\
+      \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

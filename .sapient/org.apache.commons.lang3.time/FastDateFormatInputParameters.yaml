@@ -1,0 +1,5289 @@
+---
+modelFingerprint: "F89FABCDC2B5ABB9AB216C83336E1444"
+methods:
+- method:
+    name: "format"
+    returnType: "java.lang.StringBuffer"
+    signature: "format(java.lang.Object,java.lang.StringBuffer,java.text.FieldPosition)\
+      \ : java.lang.StringBuffer"
+    instructionFingerprint: "A752CE0B1558D35881DB637545C0BB6C"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.StringBuffer"
+    - "java.text.FieldPosition"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D4E74EFD155D6501F658A9B12CBFE655"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "B5E76A0561188674C9689A31138DB4AD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "format_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toAppendTo"
+      modelFingerprint: "DCB789FA01045B9572227FFD66D6D9E1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "6B5FB9BE6B37AB65AAAA03790CABBC58"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.FieldPosition"
+          parameters:
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "format_fieldPosition1-field"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.FieldPosition"
+          parameters:
+          - name: "field"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "format_fieldPosition1-field"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.FieldPosition"
+        uuid: "format_fieldPosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2023724-fb02-31bf-8f56-c852070520c4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(long) : java.lang.String"
+    instructionFingerprint: "BDB0FDBEBFCD61F466736B3C8F3F1246"
+    parametersTypes:
+    - "long"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "444223D448F8AFE90C2B6DC3BA479330"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "B7B7511A16E98D18760CE1B654A53E8D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1634567890000
+        suggestedContent: !<regular>
+          value: 1634567890000
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ddac4c27-7299-3192-a97f-bb7224671687"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Date) : java.lang.String"
+    instructionFingerprint: "0D74750EB2FA2A806C07B89B6773E69B"
+    parametersTypes:
+    - "java.util.Date"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format2Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB57FE6F4B1DA543750441C67C160A43"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9726d1df-62b7-35d6-8c66-49ae903a39b5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.String"
+    signature: "format(java.util.Calendar) : java.lang.String"
+    instructionFingerprint: "1584210C9CDB5F35CC5837AE28A2A31F"
+    parametersTypes:
+    - "java.util.Calendar"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format3Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0CA3A4352FBC2E0AFB2003EF032C643D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "format_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5eccb8d2-1a93-3abf-8fe3-ca5e867cab35"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.StringBuffer"
+    signature: "format(long,java.lang.StringBuffer) : java.lang.StringBuffer"
+    instructionFingerprint: "C5BB76091551F52D7563F213B52514CE"
+    parametersTypes:
+    - "long"
+    - "java.lang.StringBuffer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format4Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "92F3C972A80B6A5D6688DE301AA6D62A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "857D4B2CA54B315F272E7C1B19F2C836"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1629876543210
+        suggestedContent: !<regular>
+          value: 1629876543210
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "3C6685C81AE6F453B210A8B1DC3D45B1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3612aa57-1eb2-3d0d-9cca-fef59552b16f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.StringBuffer"
+    signature: "format(java.util.Date,java.lang.StringBuffer) : java.lang.StringBuffer"
+    instructionFingerprint: "9ACF270DE721627D9B4BA0F58C27DE72"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.StringBuffer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format5Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "486AE099D165C96FC79E72E885291425"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "3C6685C81AE6F453B210A8B1DC3D45B1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "43fa53a3-cb6a-33e5-9520-348ec399d4da"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.StringBuffer"
+    signature: "format(java.util.Calendar,java.lang.StringBuffer) : java.lang.StringBuffer"
+    instructionFingerprint: "7F7D33CA82CCB0517EB4AB1E36E3F9B0"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.StringBuffer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format6Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7176F41CF4917CEF2DD32FC5ADC8DB36"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "3C6685C81AE6F453B210A8B1DC3D45B1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "format_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7645e822-384a-31ee-88cb-323c31841239"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.Appendable"
+    signature: "format(long,java.lang.Appendable) : java.lang.Appendable"
+    instructionFingerprint: "EBB5C8A7C510067DF2A60CB227A608EB"
+    parametersTypes:
+    - "long"
+    - "java.lang.Appendable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format7Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2BF26F699BBE61D5B3CA56FA35E47E2C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "millis"
+      modelFingerprint: "CCC7AEDFBE311CCBD51AE366C393E311"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "format_long1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "C5A488444A236AA8DCE0A31D2CFCEA44"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "50767AFED71A6D9A3CDD7ED2A281882B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d137a877-9e47-3cf5-8fac-23e9d327b517"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.Appendable"
+    signature: "format(java.util.Date,java.lang.Appendable) : java.lang.Appendable"
+    instructionFingerprint: "319C4D9F2B779DEDD8261CF6A7A9305A"
+    parametersTypes:
+    - "java.util.Date"
+    - "java.lang.Appendable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format8Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8E7624618950AA4D70300921CEA41573"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "format_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "C5A488444A236AA8DCE0A31D2CFCEA44"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "50767AFED71A6D9A3CDD7ED2A281882B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b056ca0c-67d1-33be-babe-b63e194984f7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "format"
+    returnType: "java.lang.Appendable"
+    signature: "format(java.util.Calendar,java.lang.Appendable) : java.lang.Appendable"
+    instructionFingerprint: "33E0021A9D1137E325AB51D254C35EE7"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.Appendable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "format9Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DEAF59A9A131A1878EA766B4EC370C39"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "format_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "C5A488444A236AA8DCE0A31D2CFCEA44"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "50767AFED71A6D9A3CDD7ED2A281882B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Appendable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Appendable"
+        uuid: "format_appendable2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "294e3ade-8c15-3e5d-9773-c21d984450c1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "parse"
+    returnType: "java.util.Date"
+    signature: "parse(java.lang.String) : java.util.Date"
+    throwsExceptions:
+    - "java.text.ParseException"
+    instructionFingerprint: "C23439FD1CF9CD7B18375214EC016B05"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "parseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "149EC337406BA22820D32EEA421BA394"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "D57ABF897797E93709B071968FA15D9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2022-01-01 12:00:00"
+        suggestedContent: !<regular>
+          value: "2022-01-01 12:00:00"
+        valueType: "java.lang.String"
+        uuid: "parse_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "91A9CF80B8279C04A4748E7D32E7A398"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "parse_date1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3a1fa216-77d7-3552-a886-5cb34f671ab0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "parse"
+    returnType: "java.util.Date"
+    signature: "parse(java.lang.String,java.text.ParsePosition) : java.util.Date"
+    instructionFingerprint: "F8E2BE0DFCC6F678B41D9066EAECB437"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.text.ParsePosition"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "parse1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BA4F21C866F0DBC45F6A206B107AEABB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "594358E153477C143AA45757293C8D81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2021-01-01 00:00:00"
+        suggestedContent: !<regular>
+          value: "2021-01-01 00:00:00"
+        valueType: "java.lang.String"
+        uuid: "parse_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "E2F6FDDC696CA2909E49235F443C520F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.ParsePosition"
+        uuid: "parse_parsePosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "91A9CF80B8279C04A4748E7D32E7A398"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "parse_date1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "68933352-f68c-3750-96b1-4ca6ef66b122"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "parse"
+    returnType: "boolean"
+    signature: "parse(java.lang.String,java.text.ParsePosition,java.util.Calendar)\
+      \ : boolean"
+    instructionFingerprint: "9AA91AC06E2C6EA7F9A6FEEF77D47553"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.text.ParsePosition"
+    - "java.util.Calendar"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "parse2WhenParserParseSourcePosCalendar"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6D3B675BAA72A683EB63488D086661B1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "56448C3A357D63C4601E3C70CAB88CF0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2022-01-01"
+        suggestedContent: !<regular>
+          value: "2022-01-01"
+        valueType: "java.lang.String"
+        uuid: "parse_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "E2F6FDDC696CA2909E49235F443C520F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.ParsePosition"
+        uuid: "parse_parsePosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "parse_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "parse_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "697824c6-39c3-3388-ae3b-8ccc0be76864"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "parse2WhenParserNotParseSourcePosCalendar"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F49B281C387EB92986D8A17CEE45CE3A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "56448C3A357D63C4601E3C70CAB88CF0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2022-01-01"
+        suggestedContent: !<regular>
+          value: "2022-01-01"
+        valueType: "java.lang.String"
+        uuid: "parse_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "E2F6FDDC696CA2909E49235F443C520F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parse_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.ParsePosition"
+        uuid: "parse_parsePosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "parse_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "parse_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e89c27d3-6a1d-348d-ad94-d229bbe424be"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "parseObject"
+    returnType: "java.lang.Object"
+    signature: "parseObject(java.lang.String,java.text.ParsePosition) : java.lang.Object"
+    instructionFingerprint: "64D0CD41E49312A64318888F6FA7B6BC"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.text.ParsePosition"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "parseObjectTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A83D95313FC1EBBF7574943300F277C0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "D57ABF897797E93709B071968FA15D9B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "2022-01-01 12:00:00"
+        suggestedContent: !<regular>
+          value: "2022-01-01 12:00:00"
+        valueType: "java.lang.String"
+        uuid: "parseObject_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "pos"
+      modelFingerprint: "E2F6FDDC696CA2909E49235F443C520F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "parseObject_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.text.ParsePosition"
+          parameters:
+          - name: "index"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "parseObject_parsePosition1-index"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.text.ParsePosition"
+        uuid: "parseObject_parsePosition1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "parseObject_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0e5fd58-457b-3aac-bcde-a4122dfbceb3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getPattern"
+    returnType: "java.lang.String"
+    signature: "getPattern() : java.lang.String"
+    instructionFingerprint: "AE5625BEE132DE50C67D4FAE6E7DBE95"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPatternTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D05AB4C93C80B2B00E0804AAF9A56366"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "pattern1"
+        valueType: "java.lang.String"
+        uuid: "<init>_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0c65633c-01c2-3e06-b2b4-80fe1df1a534"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getTimeZone"
+    returnType: "java.util.TimeZone"
+    signature: "getTimeZone() : java.util.TimeZone"
+    instructionFingerprint: "1FFC61E52E284ABE8463FF41B142D987"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getTimeZoneTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E4C4E325631411FDEDF4F5E2D5DB7EE7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AD590E4CBC2FD305798FAFCCB8315E24"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.TimeZone"
+          method: "getDefault"
+          methodParameters: []
+        valueType: "java.util.TimeZone"
+        uuid: "<init>_timeZone1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "16a17e32-ea3f-3a2f-a8e6-0b3d09d2eb97"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getLocale"
+    returnType: "java.util.Locale"
+    signature: "getLocale() : java.util.Locale"
+    instructionFingerprint: "72E29E768F3B3D0B9E5DDCBFEAA6701F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLocaleTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7231C1A420EC19C35B5DE88D1DAE7B6B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7018D01778FF5D7CEE391D401E0B7482"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "language1"
+              valueType: "java.lang.String"
+              uuid: "<init>_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Locale"
+          parameters:
+          - name: "language"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_locale1-language"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Locale"
+        uuid: "<init>_locale1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2e6c6e76-3e52-3c72-9bec-28de0d7d1cce"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getMaxLengthEstimate"
+    returnType: "int"
+    signature: "getMaxLengthEstimate() : int"
+    instructionFingerprint: "1143A180C52958AA28479CFD983DD8AF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMaxLengthEstimateTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EA0727CC408FF5EC5F93058B8FA91335"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getMaxLengthEstimate_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "33b767b1-f84d-3c42-8e79-63cba886def1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "210021914DCBCCB6D14DD610AE00EA1D"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenObjNotInstanceOfFastDateFormat"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "67780B2B67341E0EFB28BDACC8A22529"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ca0029b1-ad54-3287-bff7-721979b6401a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenPrinterEqualsOtherPrinter"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "811F2BB5B969E8ECFE23D61CA68C86FE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b45eabb1-913e-3c67-8834-10498b7a23ea"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenPrinterNotEqualsOtherPrinter"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2CF1BD469F1FB10778D4DE35A099797B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "0472afb8-a8f7-369e-9776-c5910ca597cf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "D1EC74E74BFD65A67E6D3AB5AE660050"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D11A165994318187D7E5111BB2ABEAAB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E25B9513F4D6D5DEF05EC8FB54CFF3FF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "A"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              nameForMock: "<init>_locale1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "A"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              nameForMock: "<init>_locale1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BDBDBEB46661F74324329FE6EEA9493E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "FastDateFormat[A,<init>_locale1,B]"
+        suggestedContent: !<regular>
+          value: "FastDateFormat[A,<init>_locale1,B]"
+        valueType: "java.lang.String"
+        uuid: "toString_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "applyRules"
+    returnType: "java.lang.StringBuffer"
+    signature: "applyRules(java.util.Calendar,java.lang.StringBuffer) : java.lang.StringBuffer"
+    instructionFingerprint: "83A86D34831146E24A574B7CD19361C8"
+    parametersTypes:
+    - "java.util.Calendar"
+    - "java.lang.StringBuffer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyRulesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7176F41CF4917CEF2DD32FC5ADC8DB36"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "474B282DCD0417F8955727FF2D58D701"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "pattern1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "language1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.FastDateFormat"
+          parameters:
+          - name: "pattern"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "timeZone"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "java.util.TimeZone"
+                method: "getDefault"
+                methodParameters: []
+              valueType: "java.util.TimeZone"
+              uuid: "<init>_timeZone1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "locale"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Locale"
+                parameters:
+                - name: "language"
+                  value:
+                    sapientType: "BASIC"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_locale1-language"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Locale"
+              uuid: "<init>_locale1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "centuryStart"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Date"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Date"
+              uuid: "<init>_date1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.FastDateFormat"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "calendar"
+      modelFingerprint: "D0D698913B97AB855BDC47D13B01EBAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        suggestedContent: !<static_method_return>
+          target: "java.util.Calendar"
+          method: "getInstance"
+          methodParameters: []
+        valueType: "java.util.Calendar"
+        uuid: "applyRules_calendar1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buf"
+      modelFingerprint: "3C6685C81AE6F453B210A8B1DC3D45B1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "applyRules_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56C37F56E3EBE032C7759A8D9983D4AA"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "applyRules_stringBuffer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a1cf6001-b515-3bd6-8ab4-1fd6aefb50e3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

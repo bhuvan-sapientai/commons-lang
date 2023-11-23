@@ -1,0 +1,5685 @@
+---
+modelFingerprint: "76D85E89889F25971191643D701D373D"
+methods:
+- method:
+    name: "setAccessibleWorkaround"
+    returnType: "java.lang.reflect.AccessibleObject"
+    signature: "setAccessibleWorkaround(java.lang.reflect.AccessibleObject) : java.lang.reflect.AccessibleObject"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "1000B81925A7844B7D6EEC669C50837F"
+    parametersTypes:
+    - "java.lang.reflect.AccessibleObject"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "setAccessibleWorkaroundWhenObjIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4ADC51654C25A64CB493207D81EB7B24"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "37bfb62c-6d27-3724-8419-e29268222c33"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "setAccessibleWorkaroundWhenObjIsAccessible"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E0E71924E308530A650C10E453BC4142"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "1CEAAF62512DF070018D71519C97C48F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "126B81E221D0C8CD96424A50508F20D6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bd4dec70-1f09-3e5c-8da1-34069c8575b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "setAccessibleWorkaroundWhenIsPublicNotM"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C613C8F12386B1C78F05F661DD9371D1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4ad03923-8cce-354c-b874-899efb876b34"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "setAccessibleWorkaroundWhenIsPackageAccessMGetDeclaringClassGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "69C63F44AFC154064B722AEC0B78CFC4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "1CEAAF62512DF070018D71519C97C48F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "C6DF1D597999A6BFF4FD255199818528"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPublic"
+        parameters:
+        - name: "member"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Member"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Member"
+            uuid: "setAccessibleWorkaround_accessibleObject1checkCast"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "isPublic(Member): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "setAccessibleWorkaround_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "FF4EFA25B8DA3850CB260D864FDEF873"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPackageAccess"
+        parameters:
+        - name: "modifiers"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "setAccessibleWorkaround_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPackageAccess(int): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "setAccessibleWorkaround_boolean4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "126B81E221D0C8CD96424A50508F20D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd986a5d-dfc3-37c5-a19e-5b32c163de95"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "setAccessibleWorkaroundWhenIsPackageAccessNotMGetDeclaringClassGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C75328450C6314AC4514130872B973F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      modelFingerprint: "1CEAAF62512DF070018D71519C97C48F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "C6DF1D597999A6BFF4FD255199818528"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPublic"
+        parameters:
+        - name: "member"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Member"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Member"
+            uuid: "setAccessibleWorkaround_accessibleObject1checkCast"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        signature: "isPublic(Member): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "setAccessibleWorkaround_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "1560AF2AB1CE00D903207B0D2B6F6958"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPackageAccess"
+        parameters:
+        - name: "modifiers"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "setAccessibleWorkaround_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPackageAccess(int): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "setAccessibleWorkaround_boolean4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "126B81E221D0C8CD96424A50508F20D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.AccessibleObject"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.AccessibleObject"
+        uuid: "setAccessibleWorkaround_accessibleObject1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "709f2ca0-47bf-3e08-a799-d96c0e478c99"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isPackageAccess"
+    returnType: "boolean"
+    signature: "isPackageAccess(int) : boolean"
+    instructionFingerprint: "A0DDD4B879F20285AA12992C53A63EB8"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isPackageAccessWhenModifiersAndACCESS_TESTEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "27356D7B33E6526984E8B2B3374DE66E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modifiers"
+      modelFingerprint: "4F65368F0E59B8FD26AB714999F87680"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "isPackageAccess_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7bc1667e-e337-359b-afa8-fa8c60396e4a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isPackageAccessWhenModifiersAndACCESS_TESTNotEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E28D6BD54CF5E66ED8513AAFBED9C24B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modifiers"
+      modelFingerprint: "94698F90C45E02783638CE3C1EDC7EFA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "isPackageAccess_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dd264f16-b6f2-34d4-bcdd-02db8540ddab"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isPublic"
+    returnType: "boolean"
+    signature: "isPublic(java.lang.reflect.Member) : boolean"
+    instructionFingerprint: "0E7AE59234668246CA53DB0ECCF50E07"
+    parametersTypes:
+    - "java.lang.reflect.Member"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isPublicWhenMemberIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95CD0911FC821A041678965C7A03E955"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9830dd9d-9166-3e32-a9ce-78f33b8e897a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isPublicWhenModifierIsPublicMemberGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3B40701AE637F4DAD7CD3423C135D1DA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isPublic_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d269e754-85c5-339e-8c29-fc3847b5edfe"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isPublicWhenModifierNotIsPublicMemberGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1D00C5323F52A839D4C97D33C1833A5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isPublic_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "97f9abde-b883-34df-b7ef-74458c58714e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isStatic"
+    returnType: "boolean"
+    signature: "isStatic(java.lang.reflect.Member) : boolean"
+    instructionFingerprint: "A0EBFA7DA5CF676635C50D00AA2CDAF0"
+    parametersTypes:
+    - "java.lang.reflect.Member"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isStaticWhenMemberIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95CD0911FC821A041678965C7A03E955"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "835ae9af-fa43-3429-8e94-88997d37abd6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isStaticWhenModifierIsStaticMemberGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C553A3D9D5A417B4AEF6C7C1B64BC51E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isStatic_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1b5c80a1-3af8-3bc8-b4bf-c7bf2c25c47e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isStaticWhenModifierNotIsStaticMemberGetModifiers"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3C02C979126CA145A9157C5E4BA77F0E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isStatic_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "eec77fca-d364-3d69-8c20-5e8a40fa7e7c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAccessible"
+    returnType: "boolean"
+    signature: "isAccessible(java.lang.reflect.Member) : boolean"
+    instructionFingerprint: "D206FC3B05588541FB5FA2DD7E1C43EE"
+    parametersTypes:
+    - "java.lang.reflect.Member"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAccessibleWhenIsPublicNotMember"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D1A34124AB048E5D36085D987E2601B2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5d61ebeb-ea98-3959-b98a-b0e6e6a801c2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAccessibleWhenMemberNotIsSynthetic"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6E8F23B816ACD52287FA52010FAF5413"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isAccessible_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "C6DF1D597999A6BFF4FD255199818528"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPublic"
+        parameters:
+        - name: "member"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Member"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Member"
+            uuid: "isAccessible_member1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPublic(Member): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isAccessible_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "07acd1b4-5cbc-37a0-8006-f6815e735321"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAccessibleWhenMemberIsSynthetic"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C59F99A682ED3E23564D4E7189F9CCE1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "isAccessible_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MemberUtils"
+      modelFingerprint: "C6DF1D597999A6BFF4FD255199818528"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.reflect.MemberUtils"
+        uuid: "org.apache.commons.lang3.reflect.MemberUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.reflect.MemberUtils"
+        name: "isPublic"
+        parameters:
+        - name: "member"
+          value:
+            sapientType: "NULL"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Member"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Member"
+            uuid: "isAccessible_member1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isPublic(Member): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isAccessible_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5495a6df-1953-3761-a456-ec862234cfa3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "compareConstructorFit"
+    returnType: "int"
+    signature: "compareConstructorFit(java.lang.reflect.Constructor<?>,java.lang.reflect.Constructor<?>,java.lang.Class<?>[])\
+      \ : int"
+    instructionFingerprint: "9BBEEC2E016533DE46F67DF8C5C1D35A"
+    parametersTypes:
+    - "java.lang.reflect.Constructor"
+    - "java.lang.reflect.Constructor"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "compareConstructorFitWhenSrcArgsLengthLessThanNormalArgsLen"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B346C142EF12F177450AE5A75D1C8C7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "B449715B9D0BC7C5F98E40DE84D03FE9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E4E4A3F04320A5F313F9B77CB2C7276"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2b0d7b1a-efdd-397f-8081-c74d3afff3bc"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path2"
+    testPathName: "compareConstructorFitWhenSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "48C8B8B21082765E697E892F8F2D0F51"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4f8d6ef2-f766-3ef5-b8f5-c9de66d5bd24"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path3"
+    testPathName: "compareConstructorFitWhenSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FC6D7F98BC6D4537C1C5664F02E77AF8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2f777fea-5f58-30ea-b8fa-d88a6427cf64"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path4"
+    testPathName: "compareConstructorFitWhenExplicitArrayForVarargs"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "997E40120F3D1E8512CCCE87E04E8FAD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0d045635-19a4-38f9-95c0-440ddeb94ca5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path5"
+    testPathName: "compareConstructorFitWhenNoVarArgsPassedAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "144E1A3B66C58E24725C11EFC2ABBDFC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "0e96048b-ed0a-327d-9458-ec9c6ea0b8b5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path20"
+    pathIdForUser: "path6"
+    testPathName: "compareConstructorFitWhenILessThanSrcArgsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "21536491B566ED0E6E8F361FF9D68518"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "A251FA790FE02E57D90302BF21930CCA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "71b7d7a9-6446-364b-92da-a8c8444f7086"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path32"
+    pathIdForUser: "path7"
+    testPathName: "compareConstructorFitWhenINotLessThanSrcArgsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "81EDCDA5B17BF9EAE3DA9F910812B20E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "44d99d5d-d342-3652-b558-03002420d181"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path34"
+    pathIdForUser: "path8"
+    testPathName: "compareConstructorFitWhenILessThanSrcArgsLengthAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "AE17633518ECBC8817726E58741670FF"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6d778b68-79c1-3cb9-af8f-ff0fef01a5c3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "compareConstructorFitWhenSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "1B5B7F7057D98F852C463BE7037B2DC8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4ba041fc-3a99-3626-86d8-ae9c3abe0284"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path19"
+    pathIdForUser: "path10"
+    testPathName: "compareConstructorFitWhenExplicitArrayForVarargsAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F8846458DD4570C5CAA4684F24978ACD"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f691c28f-f9e9-3ab6-b472-b3c646b76e4d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path11"
+    testPathName: "compareConstructorFitWhenClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B4CDA59FA51A628EAB49E682775DE27A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "32db39b9-798d-32f4-b069-2eaad31f92b8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path12"
+    testPathName: "compareConstructorFitWhenClsIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "991433A69BF4E226A96FBB4904EBC16F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "055bc47e-699f-3b02-bfb1-65da33fe1e45"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path33"
+    pathIdForUser: "path13"
+    testPathName: "compareConstructorFitWhenNotExplicitArrayForVarargsAndILessThanSrcArgsLengthAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E3FCFEDDC4DC407D751A28E5D3BACDA0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "172241a0-7def-3b50-b001-fb44cc98ee4d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path14"
+    testPathName: "compareConstructorFitWhenDestClassNotIsInterfaceAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "57E4FB1335E1DF8C52DDFC8E5B2F5E37"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "7283BC9E89CE34B994050CD0AFA96D46"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6d805fa9-d46d-33f7-a8c4-7cd7e8f874df"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path15"
+    testPathName: "compareConstructorFitWhenDestClassNotIsInterfaceAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "35FF59B5CFA6B781864CE46DF5CEE99A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c284f6fc-9f01-335f-96ed-02fb9a2a8706"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path18"
+    pathIdForUser: "path16"
+    testPathName: "compareConstructorFitWhenDestClassEqualsSrcClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "6E013F965EDF45E417AFD8AB9B58F4CC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1584a736-d51c-3cc4-b540-7ef930b1355a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path31"
+    pathIdForUser: "path17"
+    testPathName: "compareConstructorFitWhenNotNoVarArgsPassedAndNotExplicitArrayForVarargsAndILessThanSrcArgsLengthAndSrcClassIsNullAndSr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E38C41299B71B6AAFC905752F0867348"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "db08ce9d-5324-31c2-9a6a-d0b8a4413ec3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path23"
+    pathIdForUser: "path18"
+    testPathName: "compareConstructorFitWhenClsNotIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F9502A9F569F789410A906BB997607FF"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "babd7c34-71d6-38f5-b230-f498b9c1918d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path26"
+    pathIdForUser: "path19"
+    testPathName: "compareConstructorFitWhenILessThanSrcArgsLengthAndClsIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "D572A311AB73C010F22C3876EEECC90F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "98389328-414b-37ec-bad5-f537b6eb6788"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path20"
+    testPathName: "compareConstructorFitWhenClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "4E6186D2D588D7D9E7DCBD9E159A92F0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c2777c6e-b13f-3b07-b043-6cbb07c9b17c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path13"
+    pathIdForUser: "path21"
+    testPathName: "compareConstructorFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "8CBAB0C66C5CA8007F726DF7CAB9B649"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b3fde77c-70e5-317a-a1ef-180c944c7087"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path30"
+    pathIdForUser: "path22"
+    testPathName: "compareConstructorFitWhenSrcClassIsNotNullAndDestClassEqualsSrcClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "ACC88457EA2B55CCF724C7F20B67EF07"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "57367c77-852e-34d8-8ddb-9b15d377758e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path23"
+    testPathName: "compareConstructorFitWhenClassUtilsIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "610A570B823AB81CA33B908252DE072C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ae88d872-443a-32e0-96bc-390c656b3abd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path16"
+    pathIdForUser: "path24"
+    testPathName: "compareConstructorFitWhenClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "73EE6A7E1226741260B1288F76B03404"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "20de6bb0-f07d-32a0-abd2-8155d6e5f87a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path17"
+    pathIdForUser: "path25"
+    testPathName: "compareConstructorFitWhenClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "3373449B2EA6D9C3923B5AEB2B601EC1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e68af60d-7913-3bb8-b898-4b506293c0ef"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path26"
+    testPathName: "compareConstructorFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthMinus1"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "4C115937C70038E067C156A615C53224"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e6e62e5c-6482-3c92-8b00-fae0ee645cb5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path27"
+    testPathName: "compareConstructorFitWhenClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanORDERED_PRIMITIVE_TYPESLengthMinus1"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "BCBE86628CC04938DE71478C60CD454B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "fdabf1ad-a5f2-3aae-99c8-4c9ddee5e95e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path22"
+    pathIdForUser: "path28"
+    testPathName: "compareConstructorFitWhenClsNotEqualsDestClassAndILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_P"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E7CC851C794B690DDA43AEA876B6B797"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5537aaee-4692-3f71-986c-b6367e5552e2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path25"
+    pathIdForUser: "path29"
+    testPathName: "compareConstructorFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "04A16740C06A2CEAA9455E168C30CF13"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "69dc7e0d-f7f7-3032-9bd3-c6a4590e126a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path27"
+    pathIdForUser: "path30"
+    testPathName: "compareConstructorFitWhenDestClassIsInterfaceAndClassUtilsIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B2F5CE230DD6749086B5646646EDBA6D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e0791214-e27f-3388-9e50-a9b118fa1cb6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path28"
+    pathIdForUser: "path31"
+    testPathName: "compareConstructorFitWhenDestClassIsInterfaceAndClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FC946E0FC5C78866F40CFF030CE165BB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "24f3be44-5cd1-3aef-b06b-6ffd99eeff8e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path29"
+    pathIdForUser: "path32"
+    testPathName: "compareConstructorFitWhenDestClassIsInterfaceAndClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "7E942BDDBBB827F0714F68F0F561A85F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3a16c2cc-093e-3e7f-a80b-bbe5d8b5892f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path21"
+    pathIdForUser: "path33"
+    testPathName: "compareConstructorFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanO"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B0BF7C0D842E5FB6E9D871E47C291B1D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "14B8046E58DB7436E619407A98369380"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "07A478A50C9756A0BD18C6C6D7644C81"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_constructor2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareConstructorFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareConstructorFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8abdb761-cf2d-31bf-aa23-e5e36b0ce3e3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path24"
+    pathIdForUser: "path34"
+    testPathName: "compareConstructorFitWhenClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanORDERED_PRIMITIVE_TYPESLengthMinus12"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "53C0A0E92199E56C133AC1EA47DE8AA4"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6616851e-896c-3387-91a1-6464c7f05540"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "compareMethodFit"
+    returnType: "int"
+    signature: "compareMethodFit(java.lang.reflect.Method,java.lang.reflect.Method,java.lang.Class<?>[])\
+      \ : int"
+    instructionFingerprint: "326E8EC608F2C65121029B3D326619F6"
+    parametersTypes:
+    - "java.lang.reflect.Method"
+    - "java.lang.reflect.Method"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "compareMethodFitWhenSrcArgsLengthLessThanNormalArgsLen"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E7DBD6731827580EA7AB99AFA0E17A5B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "B449715B9D0BC7C5F98E40DE84D03FE9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E4E4A3F04320A5F313F9B77CB2C7276"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bb724be1-d888-3103-b9d3-03f1b6730e5c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path2"
+    testPathName: "compareMethodFitWhenSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "867613FF5A2D0419992F5095D7372026"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "291e3af7-93dc-3115-a7cc-2815941b752d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path3"
+    testPathName: "compareMethodFitWhenSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "784111110E355A9C089B718363226E6F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4b7265da-2a44-3e8e-95ab-a007f1fa4553"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path4"
+    testPathName: "compareMethodFitWhenExplicitArrayForVarargs"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "80070A828C1BDD6AE01BA4E79B37CA1C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "24204f4b-de3e-3e60-94a9-91308c131d64"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path5"
+    testPathName: "compareMethodFitWhenNoVarArgsPassedAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "6445D19EE23CC8D6DEA964F4240C55EC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d43e05b3-4e3c-35ab-a5dd-79551c8c0fd5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path20"
+    pathIdForUser: "path6"
+    testPathName: "compareMethodFitWhenILessThanSrcArgsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "DBA6175E66A491C8C4F88ECF5917E193"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "A251FA790FE02E57D90302BF21930CCA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d19da7d1-5044-3fca-96a4-0d3c438a4ee1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path32"
+    pathIdForUser: "path7"
+    testPathName: "compareMethodFitWhenINotLessThanSrcArgsLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "300C4B967D4217BF265F11D7F7544117"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "65e0372a-7a1f-3f41-b9bb-748d8394a6d7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path34"
+    pathIdForUser: "path8"
+    testPathName: "compareMethodFitWhenILessThanSrcArgsLengthAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "18F1A75ECCA24487253F19D03A323525"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "087aa347-c965-3dcd-bc55-02491aaf382f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "compareMethodFitWhenSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FC10F87AB8454BF1D7337F508653E1A6"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ea1bbf84-dc13-38cf-aefd-65cade0d0594"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path19"
+    pathIdForUser: "path10"
+    testPathName: "compareMethodFitWhenExplicitArrayForVarargsAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "2EFA8CC2F1E6EC1B0F4F631200513B44"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6fcf5e43-27a9-377d-85fa-90c564ce01f1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path11"
+    pathIdForUser: "path11"
+    testPathName: "compareMethodFitWhenClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "AA30BB8D0BD0D8B50AC36CCE4C08FB9F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e0f3d31a-12c7-36df-87a9-9b7a8319a7ec"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path14"
+    pathIdForUser: "path12"
+    testPathName: "compareMethodFitWhenClsIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F6EB57C0343FA2FF602D9927678C11DF"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6182f91d-bf15-3e39-b41f-dc6990b4a2da"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path33"
+    pathIdForUser: "path13"
+    testPathName: "compareMethodFitWhenNotExplicitArrayForVarargsAndILessThanSrcArgsLengthAndSrcClassIsNullAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "B43BF5EB0418F1C61010E41A315A9B75"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "962bcf80-7929-3b45-9519-72c058d3ea0d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path14"
+    testPathName: "compareMethodFitWhenDestClassNotIsInterfaceAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "004DCEDBC5D50B37CAE4CAC5AA1F3850"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "7283BC9E89CE34B994050CD0AFA96D46"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f8c7d3ec-b6ae-3e1a-9216-b048ecf082cd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path15"
+    testPathName: "compareMethodFitWhenDestClassNotIsInterfaceAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FBAE7F40CE55591A8DBB34F943C67CF6"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5914b4b0-b9a6-3e72-9260-4d065edd27a1"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path18"
+    pathIdForUser: "path16"
+    testPathName: "compareMethodFitWhenDestClassEqualsSrcClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F5C8A3FAF2DC2A4DA36E1B89C487854A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ed055bd6-e66c-3197-95dc-d9125d6eab88"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path31"
+    pathIdForUser: "path17"
+    testPathName: "compareMethodFitWhenNotNoVarArgsPassedAndNotExplicitArrayForVarargsAndILessThanSrcArgsLengthAndSrcClassIsNullAndSrcClas"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E6D6D9650B247D583D78D91DE09625C5"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "66d1ddb1-e8e8-3fba-bff4-38e40ea93e93"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path23"
+    pathIdForUser: "path18"
+    testPathName: "compareMethodFitWhenClsNotIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "E7E9477323DA64B85ECE952DA04F8AC1"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "faf18981-8aff-3c16-9813-9cd8a654e7d3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path26"
+    pathIdForUser: "path19"
+    testPathName: "compareMethodFitWhenILessThanSrcArgsLengthAndClsIsPrimitiveAndClsEqualsDestClass"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "56E683FC02F4A4CCDB5ACCC0106FA2C7"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "874c3d6a-fab4-34d4-9b6c-2c00a1343238"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path10"
+    pathIdForUser: "path20"
+    testPathName: "compareMethodFitWhenClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "4CA913AF7F90F01D610C4CBB29435336"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "cae6a9b9-d3ad-3fc3-9c91-fae6ced44453"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path13"
+    pathIdForUser: "path21"
+    testPathName: "compareMethodFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "C1A18EC4CE141CD8882DBE1D8FA3FC4A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1b859937-1be4-3f73-bf9c-6e026c2bb14d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path30"
+    pathIdForUser: "path22"
+    testPathName: "compareMethodFitWhenSrcClassIsNotNullAndDestClassEqualsSrcClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "0777B5A9D4A965F327814943706D9AA2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4db65682-0b01-3499-a0a2-58b0231941d8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path15"
+    pathIdForUser: "path23"
+    testPathName: "compareMethodFitWhenClassUtilsIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "FE49C3B6D3720A5E031F97B0D2AA9AC6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "45fc32b7-c4ed-31d2-9694-d4bbe8c9ba74"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path16"
+    pathIdForUser: "path24"
+    testPathName: "compareMethodFitWhenClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "A94E07BFD298E7E0046E7FC7709CCFAD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d5a3b637-052b-370b-b174-2612524873f1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path17"
+    pathIdForUser: "path25"
+    testPathName: "compareMethodFitWhenClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "0022253959E2DE01C1B2173B3AA5B894"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f04df9de-7c00-3b65-a953-6bb962ec3acb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path26"
+    testPathName: "compareMethodFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthMinus1"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "6FE2BB62466CF661E78043938294425E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "F8A130575B67F6878CCEB64FF2B8607B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "804a04b0-aa3e-3d2d-8969-1ae3ea62c410"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path12"
+    pathIdForUser: "path27"
+    testPathName: "compareMethodFitWhenClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanORDERED_PRIMITIVE_TYPESLengthMinus1"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "9FBDA09D40EA4F40D3D3217A2D94B905"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "483e6190-772f-3f52-9b83-8b92b56c49ce"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path22"
+    pathIdForUser: "path28"
+    testPathName: "compareMethodFitWhenClsNotEqualsDestClassAndILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_PRIMIT"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F0B0A9E750537C0277ECC95F95CF45D8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "cfa8161e-884f-3d75-93e8-b7ab09927087"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path25"
+    pathIdForUser: "path29"
+    testPathName: "compareMethodFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsNotEqualsIIndexOfORDERED_PRIMITIVE_TYPES2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "90E6A91DC848E5B6DD084823D4286173"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8ff89add-966d-38ff-9b3f-8c28dd58c5a5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path27"
+    pathIdForUser: "path30"
+    testPathName: "compareMethodFitWhenDestClassIsInterfaceAndClassUtilsIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "2D042839AF4853DD5EAF4E097BEBE311"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1c5473c9-0aee-381d-bbf1-8cb8d6717bb1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path28"
+    pathIdForUser: "path31"
+    testPathName: "compareMethodFitWhenDestClassIsInterfaceAndClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "F4CCB2E4A8C810B814C2C45B282C733E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "833e3331-a7b0-35d9-87e6-f8fa39f2d380"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path29"
+    pathIdForUser: "path32"
+    testPathName: "compareMethodFitWhenDestClassIsInterfaceAndClassUtilsNotIsAssignableSrcClassDestClassAndSrcClassIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "611F2055D1DDCD3B1E8C3848A21FF3E4"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "26692132-388a-3cb7-a8aa-43b501f412a2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path21"
+    pathIdForUser: "path33"
+    testPathName: "compareMethodFitWhenILessThanORDERED_PRIMITIVE_TYPESLengthAndClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanORDERE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "14F30B41E6E7412BF20878A987BC5B6C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "AEB96DBF8CEC97C8B34C4378FA5A1B91"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "922C18DADA3D66D9C95395878A8F6699"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "compareMethodFit_method2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "actual"
+      modelFingerprint: "2AF97C03CDC4F9FEF418BFC88173FEDC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "NULL"
+              valueType: "java.lang.Class"
+              uuid: "getTotalTransformationCost_class1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "compareMethodFit_class[]1Item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "getTotalTransformationCost_class7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "compareMethodFit_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9FF7AC4985BCA90E6EC922541E9BE11E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "compareParameterTypes_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a3f2f69e-d736-3754-b52a-4b63257784d6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path24"
+    pathIdForUser: "path34"
+    testPathName: "compareMethodFitWhenClsEqualsIIndexOfORDERED_PRIMITIVE_TYPESAndILessThanORDERED_PRIMITIVE_TYPESLengthMinus12"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "7E3CB9E9A0EA375F37253B085008B0BC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1df5bc2b-ab44-3dd4-a72f-23f08faf9f18"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isMatchingMethod"
+    returnType: "boolean"
+    signature: "isMatchingMethod(java.lang.reflect.Method,java.lang.Class<?>[]) :\
+      \ boolean"
+    instructionFingerprint: "872D1161145EC3D0C9D320DE82518042"
+    parametersTypes:
+    - "java.lang.reflect.Method"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isMatchingMethodWhenClassUtilsIsAssignableParameterTypesMethodParameterTypesTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "73BBD29DCC53F46BBACED4C4E573378D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "isMatchingMethod_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingMethod_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3dfb2d3a-3ece-38c4-b87a-6f2b575c73da"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path2"
+    testPathName: "isMatchingMethodWhenMethodNotIsVarArgs"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F2D0130BDB2AE9DC5EF8E166C3DA529"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "isMatchingMethod_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingMethod_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0fed05c8-b9f6-3993-a0e6-f47faf065389"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isMatchingMethodWhenClassUtilsNotIsAssignableIIndexOfParameterTypesIIndexOfMethodParameterTypesTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2F026F7524FF77036B5B7573689F1A7E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "isMatchingMethod_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "90368C6DDEA6BD35670A20F53B45CC1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingMethod_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec771de4-52ec-3386-a92b-e0d167b9e49e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path4"
+    testPathName: "isMatchingMethodWhenINotLessThanParameterTypesLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B53DC552C1CE6519B17E71C5FC01EA3E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "57e0ef0c-c603-3fcb-ab70-ef34068e2ccc"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path5"
+    testPathName: "isMatchingMethodWhenClassUtilsNotIsAssignableIIndexOfParameterTypesVarArgParameterTypeTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0C39785D7D1FD1C2410E8C51D0E5AB01"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "49c7b0fd-ccb4-3f1e-9087-da5e8d6f2edc"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path6"
+    testPathName: "isMatchingMethodWhenClassUtilsIsAssignableIIndexOfParameterTypesVarArgParameterTypeTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "022E60F91AF448A6822B582822F9471E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "45987e59-71d7-3300-ad42-5c438490fd12"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path7"
+    testPathName: "isMatchingMethodWhenClassUtilsIsAssignableIIndexOfParameterTypesIIndexOfMethodParameterTypesTrueAndINotLessThanParamete"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7AF0A23F83C15A4D8EF9EEB0FA1E9070"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4f87d3e2-e260-3e6e-998a-5bf83d7ba15b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "isMatchingMethodWhenILessThanParameterTypesLengthAndClassUtilsNotIsAssignableIIndexOfParameterTypesVarArgParameterTypeT"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB2B743B11E74516DA7EB1C31D8F5B52"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "isMatchingMethod_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "B0ED1F705845B4B2846FB6F579E4BAA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingMethod_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3c5b0e49-36d3-3a7c-8c09-6ef51f5a1a3d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "isMatchingMethodWhenILessThanParameterTypesLengthAndClassUtilsIsAssignableIIndexOfParameterTypesVarArgParameterTypeTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0016D73D2328C4EA5DE19BC4F34F73C7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "isMatchingMethod_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "B0ED1F705845B4B2846FB6F579E4BAA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingMethod_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "817c6a92-3eef-34ee-a730-66114a98e362"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isMatchingConstructor"
+    returnType: "boolean"
+    signature: "isMatchingConstructor(java.lang.reflect.Constructor<?>,java.lang.Class<?>[])\
+      \ : boolean"
+    instructionFingerprint: "04D9C8CE23EA6313CD3B403CCD4F719D"
+    parametersTypes:
+    - "java.lang.reflect.Constructor"
+    - "java.lang.Class[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isMatchingConstructorWhenClassUtilsIsAssignableParameterTypesMethodParameterTypesTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D5407ABEF5B0EBFC1C92C26D0E9E1098"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "18CB159E9A6E090DED7A5DB2CEDE1841"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "52b20917-4a26-39b8-b759-785bc901faa7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path9"
+    pathIdForUser: "path2"
+    testPathName: "isMatchingConstructorWhenMethodNotIsVarArgs"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B2815BB977423C9F4CCBC75799A7B41E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "18CB159E9A6E090DED7A5DB2CEDE1841"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "FB78747D37DCEB9C391BF4883E9356EA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "991df8cd-f8ad-30a3-aceb-40450f6bf233"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isMatchingConstructorWhenClassUtilsNotIsAssignableIIndexOfParameterTypesIIndexOfMethodParameterTypesTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "076A0B0BF4656EB333F9EF44ABBEAD62"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "18CB159E9A6E090DED7A5DB2CEDE1841"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "90368C6DDEA6BD35670A20F53B45CC1F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4297ac72-6d66-330b-adb6-857ab6ec7a43"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path6"
+    pathIdForUser: "path4"
+    testPathName: "isMatchingConstructorWhenINotLessThanParameterTypesLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1B0DF84A833B64152DBF52BA2895FEB3"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c06e056a-4a9a-3561-870f-16c6fb654dc2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path7"
+    pathIdForUser: "path5"
+    testPathName: "isMatchingConstructorWhenClassUtilsNotIsAssignableIIndexOfParameterTypesVarArgParameterTypeTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "94565935DCFA18292F59154CDC32C038"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "aafcef78-c3ce-3da6-af2d-65b34fbc648c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path8"
+    pathIdForUser: "path6"
+    testPathName: "isMatchingConstructorWhenClassUtilsIsAssignableIIndexOfParameterTypesVarArgParameterTypeTrue"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "498204EA35A8AEBA170DBAB55719D484"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3085fe26-2863-3a47-a5e0-5b584570e546"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path7"
+    testPathName: "isMatchingConstructorWhenClassUtilsIsAssignableIIndexOfParameterTypesIIndexOfMethodParameterTypesTrueAndINotLessThanPar"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "85320F74AABB03534500AE1F3A97033E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d585e9eb-94fd-35b1-8109-fa0951bac67d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path8"
+    testPathName: "isMatchingConstructorWhenILessThanParameterTypesLengthAndClassUtilsNotIsAssignableIIndexOfParameterTypesVarArgParameter"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "20306B7A69FD8191834B0A303E4F370A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "18CB159E9A6E090DED7A5DB2CEDE1841"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "B0ED1F705845B4B2846FB6F579E4BAA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dcef5ba7-022f-3d25-a864-e8922f985b2b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path9"
+    testPathName: "isMatchingConstructorWhenILessThanParameterTypesLengthAndClassUtilsIsAssignableIIndexOfParameterTypesVarArgParameterTyp"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "90C6A59C13F361287A476F9CA7D2FE9D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "18CB159E9A6E090DED7A5DB2CEDE1841"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "B0ED1F705845B4B2846FB6F579E4BAA4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "isMatchingExecutable_class5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "java.lang.Class[]"
+        genericValueType: "?"
+        uuid: "isMatchingConstructor_class[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d446dabd-1fab-3d27-ba11-55d7c027c23c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

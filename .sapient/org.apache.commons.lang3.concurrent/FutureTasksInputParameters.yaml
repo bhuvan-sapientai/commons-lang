@@ -1,0 +1,105 @@
+---
+modelFingerprint: "AF239773323FBC708384818EA07B38C9"
+methods:
+- method:
+    name: "run"
+    returnType: "java.util.concurrent.FutureTask"
+    signature: "run(java.util.concurrent.Callable<java.lang.Object>) : java.util.concurrent.FutureTask<java.lang.Object>"
+    instructionFingerprint: "52AEEBA9D921AA7F7571D98DB159C33A"
+    parametersTypes:
+    - "java.util.concurrent.Callable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "runTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4125E5B4CEA006AD0F9641FEFC9BD785"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "callable"
+      modelFingerprint: "64E20B8D7098CE6243E9C6C662C91652"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.concurrent.Callable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.concurrent.Callable"
+        genericValueType: "java.lang.Object"
+        uuid: "run_callable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D56BEE289FFFDAB17C2409C6C7267667"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.concurrent.FutureTask"
+          parameters:
+          - name: "callable"
+            value:
+              sapientType: "NULL"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Callable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Callable"
+              genericValueType: "java.lang.Object"
+              uuid: "run_callable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.util.concurrent.FutureTask"
+          parameters:
+          - name: "callable"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.concurrent.Callable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.concurrent.Callable"
+              genericValueType: "java.lang.Object"
+              uuid: "run_callable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.util.concurrent.FutureTask"
+        genericValueType: "java.lang.Object"
+        uuid: "run_futureTask1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ef8a815d-5b58-3af3-b941-bad6d059cca5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    disabledReason: "Potential harmful system call (FutureTask.run) detected; Learn\
+      \ more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

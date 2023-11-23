@@ -1,0 +1,929 @@
+---
+modelFingerprint: "518EC9E4D201433065B584B9E5A73828"
+methods:
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "029AF3074FE1FFE984B46EFD63A87359"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenThisEqualsObj"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C006A20AE54349DD68F3229ECEBCBDF4"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d0712d51-f0f8-381e-af89-bd29c8516608"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenObjNotInstanceOfGmtTimeZone"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A1A5F45A318031608C9FE380BADB05C3"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8763c202-f213-31d8-915c-486ab967545e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenObjectsEqualsZoneIdOtherZoneId"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BBD2637C32BDE4BD959CB2105D7EABB3"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6b9bd850-0175-373f-8603-9dff59047a0d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getID"
+    returnType: "java.lang.String"
+    signature: "getID() : java.lang.String"
+    instructionFingerprint: "706D94B63A000439F48D341E0CFB4F1D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getIDTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "47A8CDB808CCAE7C4489E310D5A6997F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d1a135db-1e34-355a-8ada-3dc3d6c471d6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getOffset"
+    returnType: "int"
+    signature: "getOffset(int,int,int,int,int,int) : int"
+    instructionFingerprint: "111FCF00F5A8B66BE57CA761E9780297"
+    parametersTypes:
+    - "int"
+    - "int"
+    - "int"
+    - "int"
+    - "int"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOffsetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4CC1792D96A3044491320BDC21A9AB8B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "CC8F6D23320D7BE715237FF8F793973B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 60
+              suggestedContent: !<regular>
+                value: 60
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 60
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "era"
+      modelFingerprint: "73FE0502A3F580443012AA86EFACCAAD"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "getOffset_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "year"
+      modelFingerprint: "9B05628A35F679E6723E3C9D6071A317"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2021
+        suggestedContent: !<regular>
+          value: 2021
+        valueType: "int"
+        uuid: "getOffset_int2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "month"
+      modelFingerprint: "246EF7D71C61BF27D445443A469FBDED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 9
+        suggestedContent: !<regular>
+          value: 9
+        valueType: "int"
+        uuid: "getOffset_int3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "day"
+      modelFingerprint: "70D5A4382166DBDE202890CEE1C7FA5D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "getOffset_int4"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "dayOfWeek"
+      modelFingerprint: "31B5B3AABAAD59BBE5EA258BE8FDCBCE"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 3
+        suggestedContent: !<regular>
+          value: 3
+        valueType: "int"
+        uuid: "getOffset_int5"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "milliseconds"
+      modelFingerprint: "4EE24EC638FA28EF5001E924D7D2B86A"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getOffset_int6"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E4E4A3F04320A5F313F9B77CB2C7276"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "int4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e777a41c-5544-3891-9eff-556a5a0f6660"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getRawOffset"
+    returnType: "int"
+    signature: "getRawOffset() : int"
+    instructionFingerprint: "1F94974D182339D0762201185B36B207"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getRawOffsetTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4CA0EDD68A0C8C2C6525E8875E628C90"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "72bd3eae-95ab-3b37-85df-396adb8bde1f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "inDaylightTime"
+    returnType: "boolean"
+    signature: "inDaylightTime(java.util.Date) : boolean"
+    instructionFingerprint: "62D8600DA7EFD34CE64D7B798DFE374F"
+    parametersTypes:
+    - "java.util.Date"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "inDaylightTimeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "684FA7248DF484784FAB83040A579D89"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "041BA1FC13F2BECA670087FF0DEA92DF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 30
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "date"
+      modelFingerprint: "8982B01B8F307EEA0A2A0104B99646E6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Date"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Date"
+        uuid: "inDaylightTime_date1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dbf937dc-a5ea-352d-925c-b436f652486a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setRawOffset"
+    returnType: "void"
+    signature: "setRawOffset(int) : void"
+    instructionFingerprint: "B49966EEC4C6B7679EF4E1799D7F631F"
+    parametersTypes:
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setRawOffsetThrowsUnsupportedOperationException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4A7B47430C0C13AC23EB87976F60BC88"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "CC8F6D23320D7BE715237FF8F793973B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 60
+              suggestedContent: !<regular>
+                value: 60
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 60
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "offsetMillis"
+      modelFingerprint: "3B92DD113E58D2E6839B7DD1E3E64A3B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "setRawOffset_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3021C1E995B586CC19DD3CF76049D4D6"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.UnsupportedOperationException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.UnsupportedOperationException"
+        uuid: "setRawOffset_unsupportedOperationException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4bd0e973-b0be-3ccf-89be-9808c9f0388a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "42C64F7CCFC03AB47492B4D2A2468619"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "97802FC050720BF4862856106B9C7330"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "041BA1FC13F2BECA670087FF0DEA92DF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 30
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "80D32504B5D5AE79B6D39312B21B160A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "[GmtTimeZone id=\\\"null\\\",offset=0]"
+        suggestedContent: !<regular>
+          value: "[GmtTimeZone id=\\\"null\\\",offset=0]"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "useDaylightTime"
+    returnType: "boolean"
+    signature: "useDaylightTime() : boolean"
+    instructionFingerprint: "C231EE507DB6FDCB18917A7340C82EDF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "useDaylightTimeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(boolean,int,int) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6927A8CCA7DF0B56499C8DD52494F027"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "041BA1FC13F2BECA670087FF0DEA92DF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 30
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.time.GmtTimeZone"
+          parameters:
+          - name: "negate"
+            value:
+              sapientType: "BASIC"
+              valueType: "boolean"
+              uuid: "<init>_boolean1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "hours"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 30
+              valueType: "int"
+              uuid: "<init>_int1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "minutes"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "<init>_int2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1cf77399-f6fb-3e49-8cd4-2fd2e862ac16"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

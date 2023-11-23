@@ -1,0 +1,496 @@
+---
+modelFingerprint: "2E06EAA6918E93838CE41CFF68B2CD6C"
+methods:
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.IntegerRange"
+    signature: "of(int,int) : org.apache.commons.lang3.IntegerRange"
+    instructionFingerprint: "E431E0154202D894A7C5DA387000377A"
+    parametersTypes:
+    - "int"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B3F96D7A04E01F9ADD44EDF68AB64448"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "F4D8348C64BD8591C1056E5F87DE35E1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "of_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "F3767249739548C06F07B5B20C975563"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        suggestedContent: !<regular>
+          value: 1
+        valueType: "int"
+        uuid: "of_int2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "IntegerRange"
+      modelFingerprint: "E018EE3477DE498882F9432A19EB99AF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.IntegerRange"
+        uuid: "org.apache.commons.lang3.IntegerRange"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.IntegerRange"
+        name: "of"
+        parameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "of_integer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "of_integer2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Integer,Integer): IntegerRange"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "org.apache.commons.lang3.IntegerRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "of_integerRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "toInclusive"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 0
+                valueType: "int"
+                uuid: "of_integerRange1-toInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "org.apache.commons.lang3.IntegerRange"
+            method: "of"
+            methodParameters:
+            - name: "fromInclusive"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "of_integerRange1-fromInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "toInclusive"
+              value:
+                sapientType: "BASIC"
+                valueType: "int"
+                uuid: "of_integerRange1-toInclusive"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "org.apache.commons.lang3.IntegerRange"
+          uuid: "of_integerRange1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F7E8B9109B9A05C261975F236926B4BC"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "org.apache.commons.lang3.IntegerRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "of_integerRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "toInclusive"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "int"
+              uuid: "of_integerRange1-toInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "org.apache.commons.lang3.IntegerRange"
+          method: "of"
+          methodParameters:
+          - name: "fromInclusive"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "of_integerRange1-fromInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "toInclusive"
+            value:
+              sapientType: "BASIC"
+              valueType: "int"
+              uuid: "of_integerRange1-toInclusive"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "org.apache.commons.lang3.IntegerRange"
+        uuid: "of_integerRange1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89de7933-05e8-343b-97f3-1b0a1a26943a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.IntegerRange"
+    signature: "of(java.lang.Integer,java.lang.Integer) : org.apache.commons.lang3.IntegerRange"
+    instructionFingerprint: "72EDBC57071B45DD404D69CEB9F4A233"
+    parametersTypes:
+    - "java.lang.Integer"
+    - "java.lang.Integer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of3WhenDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6380A38E52B9F1D3DBE06945CBAD926F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "F9C9C40931C7618B2FF76E46E8FC1E6F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Integer"
+        uuid: "of_integer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "2782187E8805EB9BE9663AB250FF1083"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Integer"
+        uuid: "of_integer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9380F583EB73864B2E4E6F1B33BE3207"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.IntegerRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.IntegerRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.IntegerRange"
+        uuid: "of_integerRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3e55c46-8fa8-31a3-835a-1820f41ee673"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EDA42D4431DC13ECA259653E372890C0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      modelFingerprint: "90DE8BBFF7D02C3FD6A1DA9DE2D7CCF0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Integer"
+        uuid: "of_integer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toInclusive"
+      modelFingerprint: "BF35582D0A0B5069D2F79512C0812551"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "java.lang.Integer"
+        uuid: "of_integer2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "14E3F7056BB9CDFCF78F00170AE2662A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.IntegerRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.IntegerRange"
+          parameters:
+          - name: "number1"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "number2"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              suggestedContent: !<regular>
+                value: 0
+              valueType: "java.lang.Integer"
+              uuid: "of_integer2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.IntegerRange"
+        uuid: "of_integerRange1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a9cdbde-7415-3a09-b04a-1a4540112cfe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

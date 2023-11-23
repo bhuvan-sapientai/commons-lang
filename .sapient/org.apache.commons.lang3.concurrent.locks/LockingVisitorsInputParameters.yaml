@@ -1,0 +1,439 @@
+---
+modelFingerprint: "E753C4EAED202CCD3CAA1BFDC50F29BC"
+methods:
+- method:
+    name: "create"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+    signature: "create(java.lang.Object,java.util.concurrent.locks.ReadWriteLock)\
+      \ : org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor<java.lang.Object>"
+    instructionFingerprint: "D608D23B4B3BF7CD53E2F60BCAE1577B"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.util.concurrent.locks.ReadWriteLock"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "59E45F012E5184050FFB325F4BDE4C6B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "43742BD04879CA816EACCA964550F9DC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "create_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "readWriteLock"
+      modelFingerprint: "C72E72F52527BF1F3D8AC3A352D6CFB6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.concurrent.locks.ReadWriteLock"
+        uuid: "create_readWriteLock1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F93FDC60406EDB87EDAC35346EB7BEAF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+          parameters:
+          - name: "object"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "create_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "readWriteLock"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.concurrent.locks.ReadWriteLock"
+              uuid: "create_readWriteLock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+          parameters:
+          - name: "object"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "create_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "readWriteLock"
+            value:
+              sapientType: "NULL"
+              valueType: "java.util.concurrent.locks.ReadWriteLock"
+              uuid: "create_readWriteLock1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+        uuid: "create_lockingVisitors.ReadWriteLockVisitor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2284fc3d-473b-3992-886d-8fe431bd702d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "reentrantReadWriteLockVisitor"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+    signature: "reentrantReadWriteLockVisitor(java.lang.Object) : org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor<java.lang.Object>"
+    instructionFingerprint: "CD85406AED47386A17163D46AAE5B363"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "reentrantReadWriteLockVisitorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6E65A62AD48998A7DDFA3FBEA04F9434"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "reentrantReadWriteLockVisitor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "LockingVisitors"
+      modelFingerprint: "D3A8DCCD6FEB9E5AA386C743B5F0F333"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+        uuid: "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+        name: "create"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "reentrantReadWriteLockVisitor_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "readWriteLock"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.locks.ReentrantReadWriteLock"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.util.concurrent.locks.ReentrantReadWriteLock"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.concurrent.locks.ReentrantReadWriteLock"
+            uuid: "reentrantReadWriteLockVisitor_reentrantReadWriteLock1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "create(Object,ReentrantReadWriteLock): LockingVisitors$ReadWriteLockVisitor"
+        returnValue:
+          sapientType: "NULL"
+          suggestedContent: !<unknown_object>
+            target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+          genericValueType: "java.lang.Object"
+          uuid: "reentrantReadWriteLockVisitor_lockingVisitors.ReadWriteLockVisitor1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "45BDE79B35D0FA13556B30BDED6E07A5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+        genericValueType: "java.lang.Object"
+        uuid: "reentrantReadWriteLockVisitor_lockingVisitors.ReadWriteLockVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89eba046-442c-30b3-8d5a-babfcd9703a1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "stampedLockVisitor"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+    signature: "stampedLockVisitor(java.lang.Object) : org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor<java.lang.Object>"
+    instructionFingerprint: "3F9879540E8DDFEC9E3A45363E5CD78E"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "stampedLockVisitorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D5B07E689F4BAC308AE05EFEE1699F55"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "43742BD04879CA816EACCA964550F9DC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "stampedLockVisitor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7FFC41146B1C153C2A159FC19FB5E69"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+          parameters:
+          - name: "object"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "stampedLockVisitor_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "stampedLock"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.concurrent.locks.StampedLock"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.util.concurrent.locks.StampedLock"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.concurrent.locks.StampedLock"
+              uuid: "stampedLockVisitor_stampedLock1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+          parameters:
+          - name: "object"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "stampedLockVisitor_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "stampedLock"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.util.concurrent.locks.StampedLock"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.concurrent.locks.StampedLock"
+              uuid: "stampedLockVisitor_stampedLock1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+        uuid: "stampedLockVisitor_lockingVisitors.StampedLockVisitor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d1f61be7-4b13-338a-a387-4f3a43fe4ef3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

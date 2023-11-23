@@ -1,0 +1,928 @@
+---
+modelFingerprint: "F5FB342F97F9DB7937B02694493AB56B"
+methods:
+- method:
+    name: "emptyArray"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair[]"
+    signature: "emptyArray() : org.apache.commons.lang3.tuple.MutablePair[]<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "C39FB9D841FC55D31B1E44107244DEB8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "emptyArray1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "76358181FCDB3BEFD1AFC34201B9D5AE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "101A48AFF4422FD9FAC59765AE0B3374"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "org.apache.commons.lang3.tuple.MutablePair[]"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "mutablePair[]1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d12da1d2-df97-3fe2-8847-218afb2f25e9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    signature: "of(java.lang.Object,java.lang.Object) : org.apache.commons.lang3.tuple.MutablePair<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "9655E7E55188AC8E45876BB6B7E33F3A"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9F2E8F6CA45C8C5970E178FB252CA090"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "BA360AAAC3097D03D1A868EFE7946465"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "of_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "7B27DF2E329D7CCC17B311756613811B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "of_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "50F6522CF6F8BC2FC8ED95ABB70643DC"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "of_mutablePair1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89de7933-05e8-343b-97f3-1b0a1a26943a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "of"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    signature: "of(java.util.Map$Entry<java.lang.Object,java.lang.Object>) : org.apache.commons.lang3.tuple.MutablePair<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "4D273E769BF12D05A7B791B1EFD5A3A3"
+    parametersTypes:
+    - "java.util.Map$Entry"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "of3WhenPairIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0716D7D57BEA9B6464EB489462E16DBF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      modelFingerprint: "DA9C328027462BA2954F6B1747D74DE6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "PAIR"
+        content: !<pair>
+          key:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "of_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "of_map.Entry1Value"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Map$Entry"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "of_map.Entry1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "50F6522CF6F8BC2FC8ED95ABB70643DC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_map.Entry1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "of_map.Entry1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "of_mutablePair1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a17ea412-dc40-396d-adf6-7e1bad70aa59"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "of3WhenPairIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DD684350AAD971D5F75A4384428C0218"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      modelFingerprint: "49F344561ED92EB7070FFC32728FCFDC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.Map$Entry"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "of_map.Entry1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C91B747F934F818211E9CBDB0704A7AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Object"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Object"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Object"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Object"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "of_mutablePair1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b9902692-7c31-3509-8f67-a0fc8344991d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "ofNonNull"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    signature: "ofNonNull(java.lang.Object,java.lang.Object) : org.apache.commons.lang3.tuple.MutablePair<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "5E2DF87074C32F425343F60C93F6E3F9"
+    parametersTypes:
+    - "java.lang.Object"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "ofNonNull1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "03151A4AA7F8D2EB5E2B583C7FDA40FE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      modelFingerprint: "BA360AAAC3097D03D1A868EFE7946465"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "ofNonNull_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "right"
+      modelFingerprint: "7B27DF2E329D7CCC17B311756613811B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "ofNonNull_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MutablePair"
+      modelFingerprint: "83EDFF6EF96DE1089374511F2457D9DD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        uuid: "org.apache.commons.lang3.tuple.MutablePair"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        name: "of"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "ofNonNull_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "ofNonNull_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "of(Object,Object): MutablePair"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "org.apache.commons.lang3.tuple.MutablePair"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "org.apache.commons.lang3.tuple.MutablePair"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "org.apache.commons.lang3.tuple.MutablePair"
+          genericValueType: "java.lang.Object,java.lang.Object"
+          uuid: "ofNonNull_mutablePair1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "85EA68B775CD98B30A74EC5B91468E09"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        uuid: "ofNonNull_mutablePair1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba305d04-37b6-34e8-b947-c11feca121c7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getLeft"
+    returnType: "java.lang.Object"
+    signature: "getLeft() : java.lang.Object"
+    instructionFingerprint: "99838CF52C1B5C95FB3DDE0875B99A9E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLeftTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "858C241C31941954148EE936674D519E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "30074f87-6aa3-3bb2-b8f7-eb030fc5321b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getRight"
+    returnType: "java.lang.Object"
+    signature: "getRight() : java.lang.Object"
+    instructionFingerprint: "5DC90DC912BB2F65887336004980C1AF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getRightTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "858C241C31941954148EE936674D519E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cd6b3e03-55df-337e-80e2-751102c681e4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setLeft"
+    returnType: "void"
+    signature: "setLeft(java.lang.Object) : void"
+    instructionFingerprint: "7E6E064D48B317BAB855959AA23EDB2E"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setLeftTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "47A5062E11D84FCF2BC0FCCA2F0059B2"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c00e006f-2877-36e2-8c20-af7c303132fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setRight"
+    returnType: "void"
+    signature: "setRight(java.lang.Object) : void"
+    instructionFingerprint: "B1B4DF99843ABDBD81DF217841BE4258"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setRightTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4DF310D1934202C9892735325AB68E76"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "691b76c9-d29d-31b3-b5e7-24a092bb1b4e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "setValue"
+    returnType: "java.lang.Object"
+    signature: "setValue(java.lang.Object) : java.lang.Object"
+    instructionFingerprint: "648A9CEA135EB89583B7515AC70F4EA5"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setValueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3CEC029080E5F06B7533974971FA2C60"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "95BC063F8D528550B9BC85EFBB0122CA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.tuple.MutablePair"
+          parameters:
+          - name: "left"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "right"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.tuple.MutablePair"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "setValue_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "<init>_object2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "caf82ae3-0e98-3057-9861-2dae5125f309"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

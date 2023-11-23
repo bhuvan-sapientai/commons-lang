@@ -1,0 +1,3443 @@
+---
+modelFingerprint: "DDFE7F28EF4DEAA1B01D3B498105BA61"
+methods:
+- method:
+    name: "toCharacterObject"
+    returnType: "java.lang.Character"
+    signature: "toCharacterObject(char) : java.lang.Character"
+    instructionFingerprint: "E1979B24AFD1E779163719A82CDDB34B"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toCharacterObjectTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9587B9118521621E789943D978959CAC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toCharacterObject_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22C29C9D5C1AD1193EE360A4E5DAEA0A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "toCharacterObject_character1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ed4d63fe-62f9-330f-a33f-3df50b7fe349"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toCharacterObject"
+    returnType: "java.lang.Character"
+    signature: "toCharacterObject(java.lang.String) : java.lang.Character"
+    instructionFingerprint: "334899ABA2C573E42F2B495A1C16697C"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toCharacterObject1WhenStringUtilsIsEmptyStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EBE6F40B862C5F404D25FDD736E8240F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: ""
+        suggestedContent: !<regular>
+          value: ""
+        valueType: "java.lang.String"
+        uuid: "toCharacterObject_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "00C54427646EA9AC4CBFD2A8FD8B7EFF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Character"
+        uuid: "toCharacterObject_character1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1c60febc-d3af-3f67-8564-15ded4ae509e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toCharacterObject1WhenStringUtilsNotIsEmptyStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1BE80AF12965FE5F7DA2EF2C1B12106C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "13FB3B72880511C45EAC4352054B49FC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Hello"
+        suggestedContent: !<regular>
+          value: "Hello"
+        valueType: "java.lang.String"
+        uuid: "toCharacterObject_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "58AB5DF111F75E882899A226E8745058"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "H"
+        valueType: "java.lang.Character"
+        uuid: "toCharacterObject_character1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "564beac9-c419-37aa-a25f-d49192da2dbe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toChar"
+    returnType: "char"
+    signature: "toChar(java.lang.Character) : char"
+    instructionFingerprint: "29509D1144ED6D4D67F9F37CB47FB6E7"
+    parametersTypes:
+    - "java.lang.Character"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toCharTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "567988A148F43A99B42E3DE607710005"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "0B2E52404ECACECA6C8A2CE113D1377A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "toChar_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F42D80CDE7C7E97456DC2345F6EE9F90"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a2a22b9d-cfcc-3e4b-9428-d7d14295f1ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toChar"
+    returnType: "char"
+    signature: "toChar(java.lang.Character,char) : char"
+    instructionFingerprint: "31C160F6BDCFCC1C09B9388A094EE630"
+    parametersTypes:
+    - "java.lang.Character"
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toChar1WhenChIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55E1AB5C93925A5165F0458A602A7BB3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "0B2E52404ECACECA6C8A2CE113D1377A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "toChar_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "A2D7C440D92D8B3D6EF88A6CF1C2C79F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "b"
+        suggestedContent: !<regular>
+          value: "b"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F42D80CDE7C7E97456DC2345F6EE9F90"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1126d6e4-e840-3bf4-819a-4afb927e5efc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toChar1WhenChIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F3DF45891989BF57CC121423F4B8FC10"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "A5DBC6D925BF2092016E6809271D1B13"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Character"
+        uuid: "toChar_character1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "0A1BBE0C3F77DDED83767D5A1D0F1F1A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "215B325BC0E7A7B8992E82E4813D361A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5d923826-d84e-39ec-b8e8-256181592dab"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toChar"
+    returnType: "char"
+    signature: "toChar(java.lang.String) : char"
+    instructionFingerprint: "5102F2A714E2E2CEE0D11287101247C0"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toChar2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D961F05206D3BDBAEA7215D21A101365"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "4F4CF07077D5241AC5859001690FF055"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "Hello World"
+        suggestedContent: !<regular>
+          value: "Hello World"
+        valueType: "java.lang.String"
+        uuid: "toChar_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B428CF5381ACA387C7B5DD35A1F323FE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "H"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "234651bd-5f36-3cd8-aede-f063471ced9d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toChar"
+    returnType: "char"
+    signature: "toChar(java.lang.String,char) : char"
+    instructionFingerprint: "975FB0AC39A7BE372E3A00400798424C"
+    parametersTypes:
+    - "java.lang.String"
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toChar3WhenStringUtilsIsEmptyStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2AFA944796AFB6E052242D61E2C3F9BF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "8B29BF11053EA8ECE2269DD21D27063D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: ""
+        suggestedContent: !<regular>
+          value: ""
+        valueType: "java.lang.String"
+        uuid: "toChar_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "0A1BBE0C3F77DDED83767D5A1D0F1F1A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "215B325BC0E7A7B8992E82E4813D361A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ffc9c39c-a527-3249-95e1-3e75f2e797fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toChar3WhenStringUtilsNotIsEmptyStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2479B45714C5405AB15D910BD917CBB2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      modelFingerprint: "47F566AFC00938DA64CDE3BA35ADE30A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.String"
+        uuid: "toChar_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "A2D7C440D92D8B3D6EF88A6CF1C2C79F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "b"
+        suggestedContent: !<regular>
+          value: "b"
+        valueType: "char"
+        uuid: "toChar_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F42D80CDE7C7E97456DC2345F6EE9F90"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toChar_char2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7583bf4c-65e7-370f-9d24-7223a06c7c16"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toIntValue"
+    returnType: "int"
+    signature: "toIntValue(char) : int"
+    instructionFingerprint: "3EE526B9C9D2CB0102265838AB03F4AB"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toIntValueWhenIsAsciiNumericNotChThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2151004D35D59F2C9435EFD109CA20F1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toIntValue_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "EAEA3A7DADEF8865ABA126C02F9ECBE7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "a"
+            suggestedContent: !<regular>
+              value: "a"
+            valueType: "char"
+            uuid: "toIntValue_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiNumeric(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "toIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "948E2C88AB78E0EE83580AFC26D476DA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "The character a is not in the range '0' - '9'"
+              suggestedContent: !<regular>
+                value: "The character a is not in the range '0' - '9'"
+              valueType: "java.lang.String"
+              uuid: "toIntValue_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "The character a is not in the range '0' - '9'"
+              suggestedContent: !<regular>
+                value: "The character a is not in the range '0' - '9'"
+              valueType: "java.lang.String"
+              uuid: "toIntValue_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "toIntValue_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "32a1c0a9-0e3b-326c-8a3a-1d6e0c293915"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toIntValueWhenIsAsciiNumericCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "43639AACC0CFCD8B80EDFCE9DFF82B18"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "57497A536A119B1A178284C315DBC99A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "5"
+        suggestedContent: !<regular>
+          value: "5"
+        valueType: "int"
+        uuid: "toIntValue_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "char"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "7EF4C8004E01F00CE259961A7686E4FE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "5"
+            suggestedContent: !<regular>
+              value: "5"
+            valueType: "int"
+            uuid: "toIntValue_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+            explicitCastForOverloadedMethods: "char"
+        signature: "isAsciiNumeric(int): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "toIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "02A8CEA63B6C8DB4868B150B159E9173"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 5
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d73d996e-056a-3445-a78f-0d5128dba078"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toIntValue"
+    returnType: "int"
+    signature: "toIntValue(char,int) : int"
+    instructionFingerprint: "F092F10C1036AF4C9523BDF929302A1D"
+    parametersTypes:
+    - "char"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toIntValue1WhenIsAsciiNumericCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2BDFA99C041A7BAEC9866C1546786C56"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "57497A536A119B1A178284C315DBC99A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "5"
+        suggestedContent: !<regular>
+          value: "5"
+        valueType: "int"
+        uuid: "toIntValue_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "char"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "2F53ADA415B7610D6D8A8C631B55E24D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "7EF4C8004E01F00CE259961A7686E4FE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "5"
+            suggestedContent: !<regular>
+              value: "5"
+            valueType: "int"
+            uuid: "toIntValue_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+            explicitCastForOverloadedMethods: "char"
+        signature: "isAsciiNumeric(int): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "toIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "02A8CEA63B6C8DB4868B150B159E9173"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 5
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c6d6b397-f017-33a2-83dd-3920ccc3948a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toIntValue1WhenIsAsciiNumericNotCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AECB87CBCDF9A336C0EFD411DCB9507F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toIntValue_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "5A0C4C13ADB3C4480E6EEF38066C0BAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 10
+        suggestedContent: !<regular>
+          value: 10
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "EAEA3A7DADEF8865ABA126C02F9ECBE7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "a"
+            suggestedContent: !<regular>
+              value: "a"
+            valueType: "char"
+            uuid: "toIntValue_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiNumeric(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "toIntValue_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D02DA7FFCB75AEB0BFF8485F51F097D9"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 10
+        suggestedContent: !<regular>
+          value: 10
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d00b106f-f18c-3bf4-b57c-602bcd6f0bd2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toIntValue"
+    returnType: "int"
+    signature: "toIntValue(java.lang.Character) : int"
+    instructionFingerprint: "1153364A5BF64265DBD1142BC4A4C2FE"
+    parametersTypes:
+    - "java.lang.Character"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toIntValue2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "86778908907B5C3C8E0B0FA93A71EAA9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F015E19CD0416BC2D8B9A8A31A99490D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A"
+        suggestedContent: !<regular>
+          value: "A"
+        valueType: "java.lang.Character"
+        uuid: "toIntValue_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "3CACC2131A5BC7CD8E37BA7F3CC135F2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "toIntValue"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            suggestedContent: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "toChar_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toIntValue(char): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "toIntValue_int1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "34851fcf-6444-3fcd-9643-18c7e7fe160b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toIntValue"
+    returnType: "int"
+    signature: "toIntValue(java.lang.Character,int) : int"
+    instructionFingerprint: "2E4F52D4D191B164A601B54A355D5B48"
+    parametersTypes:
+    - "java.lang.Character"
+    - "int"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toIntValue3WhenChIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D90E073357687DFDC2DDFED2FC7C9408"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "0B2E52404ECACECA6C8A2CE113D1377A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "toIntValue_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "2F53ADA415B7610D6D8A8C631B55E24D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "9F167EDE843584662E1613ED76E57F0C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "toIntValue"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "a"
+            valueType: "char"
+            uuid: "toIntValue_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultValue"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            suggestedContent: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "toIntValue_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toIntValue(char,int): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "toIntValue_int2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "toIntValue_int2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c6dcc136-1359-3cb5-a4bb-62fd4b10a4e7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toIntValue3WhenChIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1E40E2198F3EBC726AE8067AD52093DF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "A5DBC6D925BF2092016E6809271D1B13"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Character"
+        uuid: "toIntValue_character1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "5A0C4C13ADB3C4480E6EEF38066C0BAF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 10
+        suggestedContent: !<regular>
+          value: 10
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D02DA7FFCB75AEB0BFF8485F51F097D9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 10
+        suggestedContent: !<regular>
+          value: 10
+        valueType: "int"
+        uuid: "toIntValue_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1b146c57-c24b-3111-a281-acb656a0a98b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(char) : java.lang.String"
+    instructionFingerprint: "6FD2EEF6F2E2473490854B97D9612A88"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringWhenChLessThanCHAR_STRING_ARRAYLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3E0530A34BDF64E8BD7A1D3E71311E35"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "toString_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3560E61103D2C8F65AB5F43A62DB93A5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c3579771-c688-3dbb-9988-52037ea1733b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toStringWhenChNotLessThanCHAR_STRING_ARRAYLength"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2506609803DF1536F675B54F578110EB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "88260570045681680FB2E1BF84C9D2DA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "€"
+        suggestedContent: !<regular>
+          value: "€"
+        valueType: "char"
+        uuid: "toString_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F650DAC1A503B190B3C8D5BE400733CB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\\u20AC"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5a5f5fcc-fdac-32ce-a991-53a6e341e455"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(java.lang.Character) : java.lang.String"
+    instructionFingerprint: "28DC3705A4B8B166C7DB3F972F2ED744"
+    parametersTypes:
+    - "java.lang.Character"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toString1WhenChIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A388652B4B7005927E5A61505928668B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "0B2E52404ECACECA6C8A2CE113D1377A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "toString_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "84AC6702398F9AC542FCE8672DD82E11"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "toString"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "a"
+            valueType: "char"
+            uuid: "toString_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toString(char): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_toString1"
+          valueType: "java.lang.String"
+          uuid: "toString_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_toString1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8e6aef49-4325-3a39-8ad8-51c57295fe67"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toString1WhenChIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F48BB2B2E017A8BC354CE01D1CF90EFA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "A5DBC6D925BF2092016E6809271D1B13"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Character"
+        uuid: "toString_character1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8EDA3F2AE365AC99A4FDAA03D44C0B66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f300ba1b-f019-318f-802c-6c7436acbb7c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "unicodeEscaped"
+    returnType: "java.lang.String"
+    signature: "unicodeEscaped(char) : java.lang.String"
+    instructionFingerprint: "7067E9346A9C7F63B94A7864A0EBC383"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "unicodeEscapedTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "45429A70A601842E3523FA15ECD2E83F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "unicodeEscaped_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EE50505AD703F855347FE7368A91F364"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\\\\uAAAA"
+        suggestedContent: !<regular>
+          value: "\\\\uAAAA"
+        valueType: "java.lang.String"
+        uuid: "unicodeEscaped_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ee621511-b895-314b-b6b8-6c7fa5e803bc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "unicodeEscaped"
+    returnType: "java.lang.String"
+    signature: "unicodeEscaped(java.lang.Character) : java.lang.String"
+    instructionFingerprint: "B61CFE0FC73DAD8B0CFB1B12C0438278"
+    parametersTypes:
+    - "java.lang.Character"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "unicodeEscaped1WhenChIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7240D3B025E02EC66CD54E969D1C351A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "0B2E52404ECACECA6C8A2CE113D1377A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "java.lang.Character"
+        uuid: "unicodeEscaped_character1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "84EC6A0F18BF8745960CFC3147F1442E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "unicodeEscaped"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "a"
+            valueType: "char"
+            uuid: "unicodeEscaped_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "unicodeEscaped(char): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_unicodeEscaped1"
+          valueType: "java.lang.String"
+          uuid: "unicodeEscaped_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_unicodeEscaped1"
+        valueType: "java.lang.String"
+        uuid: "unicodeEscaped_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4eb62bd0-cae1-3274-aa0c-dd3859b591d5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "unicodeEscaped1WhenChIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F48BB2B2E017A8BC354CE01D1CF90EFA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "A5DBC6D925BF2092016E6809271D1B13"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.Character"
+        uuid: "unicodeEscaped_character1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8EDA3F2AE365AC99A4FDAA03D44C0B66"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.lang.String"
+        uuid: "unicodeEscaped_string1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d694ea81-99cb-3c5f-831e-45ff966f4259"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAscii"
+    returnType: "boolean"
+    signature: "isAscii(char) : boolean"
+    instructionFingerprint: "A2DCD8E531EEB8632877AED503F95FA6"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiWhenChLessThan128"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5043B888CFB134AF4477D32E210FD261"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "F415321642CAE185013F2BB091268DB4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "char"
+        uuid: "isAscii_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a4e92dce-b66c-3cb5-a419-731c68cf322e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiWhenChNotLessThan128"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B2D4A913EF71EBCC0D9C38F05F46168C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "BF1999C9EF2E45F78C7BE2A80BBC0649"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "é"
+        suggestedContent: !<regular>
+          value: "é"
+        valueType: "char"
+        uuid: "isAscii_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85636d8b-9c49-30c4-befc-9c4976eb52bf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiPrintable"
+    returnType: "boolean"
+    signature: "isAsciiPrintable(char) : boolean"
+    instructionFingerprint: "A1F7B1A94C3EA2B88249BC0FDF99A9FF"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiPrintableWhenChLessThan32"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E7D6B84E12F058CFB2E45098DC99F595"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b776fded-d7b2-31bd-ba93-624f0e8d2713"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiPrintableWhenChLessThan127"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B380D79D56AAA54BFC6E0ADD032AFB32"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "AFABDB8E8388EF30055E1C2C4A4D2D7B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "6"
+        suggestedContent: !<regular>
+          value: "6"
+        valueType: "char"
+        uuid: "isAsciiPrintable_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e8c9e6d6-f933-3f19-bd5d-a23c3e4c6548"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiPrintableWhenChNotLessThan127"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "85ADE9EE033BB12F51F88A4718A78A85"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "236A2FB226A5E450D6380B61EED99CB8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\ud83f"
+        suggestedContent: !<regular>
+          value: "\ud83f"
+        valueType: "char"
+        uuid: "isAsciiPrintable_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c87f4b48-dc70-33c4-946c-c9944d3c09eb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiControl"
+    returnType: "boolean"
+    signature: "isAsciiControl(char) : boolean"
+    instructionFingerprint: "F42EF3031CC5D7AAFEBEE693776CC405"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiControlWhenChLessThan32"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "059B9839FE30146F7D83D7FE61EE14CC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3b9fe61d-075d-336a-b52d-4a09232d9942"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiControlWhenChEquals127"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1016E1AE17751DF512B2B806B0A9CE30"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "B9CE19F486A8E01A7946BE4519836E89"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\x7f"
+        suggestedContent: !<regular>
+          value: "\x7f"
+        valueType: "char"
+        uuid: "isAsciiControl_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fdcfd985-63d6-3df2-8485-9ad7ef1bd98a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiControlWhenChNotEquals127"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F2CFD3E5CECCE9FE4AA67354FB3AD876"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "08E36D899A48913422753382EF881D26"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "3"
+        suggestedContent: !<regular>
+          value: "3"
+        valueType: "char"
+        uuid: "isAsciiControl_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "abe76657-4cd6-3858-bb3b-d717cd91add7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiAlpha"
+    returnType: "boolean"
+    signature: "isAsciiAlpha(char) : boolean"
+    instructionFingerprint: "850DE249144744A16C4C594B7DCD6680"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiAlphaWhenIsAsciiAlphaUpperCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D71A7B4AD506930EAA2C061A87762B40"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "648d9dc9-7fc4-321b-9931-9d0e518b5621"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiAlphaWhenIsAsciiAlphaLowerCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "26825615F4927B830C0BB19F93A19231"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "ACB0B81F93DD846FD48DEE99232822E5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1"
+        suggestedContent: !<regular>
+          value: "1"
+        valueType: "char"
+        uuid: "isAsciiAlpha_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "2075E377E8655B9ECC7ED92D1B60A1EB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlphaUpper"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1"
+            suggestedContent: !<regular>
+              value: "1"
+            valueType: "char"
+            uuid: "isAsciiAlpha_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlphaUpper(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlpha_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "E1CF15CD079DA9C33E033ACDC9285E21"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlphaLower"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1"
+            suggestedContent: !<regular>
+              value: "1"
+            valueType: "char"
+            uuid: "isAsciiAlpha_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlphaLower(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isAsciiAlpha_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6a6ab76f-2803-300c-b5a0-06cbda61e4b7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiAlphaWhenIsAsciiAlphaLowerNotCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6B32137CE812483AC7D48505E5022B6D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "ACB0B81F93DD846FD48DEE99232822E5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "1"
+        suggestedContent: !<regular>
+          value: "1"
+        valueType: "char"
+        uuid: "isAsciiAlpha_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "2075E377E8655B9ECC7ED92D1B60A1EB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlphaUpper"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1"
+            suggestedContent: !<regular>
+              value: "1"
+            valueType: "char"
+            uuid: "isAsciiAlpha_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlphaUpper(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlpha_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "4A3881B48A310DF7AC2CA0A3DAB0CB8E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlphaLower"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1"
+            suggestedContent: !<regular>
+              value: "1"
+            valueType: "char"
+            uuid: "isAsciiAlpha_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlphaLower(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlpha_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "228e77bd-5be0-3f2f-989c-29fd7ee7141b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiAlphaUpper"
+    returnType: "boolean"
+    signature: "isAsciiAlphaUpper(char) : boolean"
+    instructionFingerprint: "71C6148C783B33C75D444EBD1A57CBD0"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiAlphaUpperWhenChLessThan_A_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "054030A318E402F40AFCB61F2ADA5075"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e6ce593e-5d64-315b-a7c1-51f67257a042"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiAlphaUpperWhenChLessThanOrEqualsTo_Z_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9453D624BD70BFEEE3B147CC6DC79A8D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "3782BF9B4F8BF27C075AD7094413A848"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "B"
+        suggestedContent: !<regular>
+          value: "B"
+        valueType: "char"
+        uuid: "isAsciiAlphaUpper_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3ae43050-2fd4-320e-bc15-01662784d1e0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiAlphaUpperWhenChGreaterThan_Z_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF5827B36B4FC724C52F5CD889FD2393"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "236A2FB226A5E450D6380B61EED99CB8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\ud83f"
+        suggestedContent: !<regular>
+          value: "\ud83f"
+        valueType: "char"
+        uuid: "isAsciiAlphaUpper_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "51e7a298-1a95-3ff3-ab6c-416e882197a3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiAlphaLower"
+    returnType: "boolean"
+    signature: "isAsciiAlphaLower(char) : boolean"
+    instructionFingerprint: "C1109E26895CFFF293C642CF0806723A"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiAlphaLowerWhenChLessThan_a_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E234EBB62AA821A09E95DD0586AF289A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3a6e0b26-9e9c-3f8b-9461-31a92e73fe13"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiAlphaLowerWhenChLessThanOrEqualsTo_z_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5A94D086FA591CD65BF88C76489B1E0C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "5B1652ED71D2BE232BC485F7CE89BFC3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "m"
+        suggestedContent: !<regular>
+          value: "m"
+        valueType: "char"
+        uuid: "isAsciiAlphaLower_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "58b03b74-cbe3-3cf8-a8c3-5318f8569bfa"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiAlphaLowerWhenChGreaterThan_z_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B2D4D8DE5A5A95EE8B7FA510E18DF0CC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "236A2FB226A5E450D6380B61EED99CB8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\ud83f"
+        suggestedContent: !<regular>
+          value: "\ud83f"
+        valueType: "char"
+        uuid: "isAsciiAlphaLower_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "80cbe6d8-59cf-37fa-9853-41f2c4a833c4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiNumeric"
+    returnType: "boolean"
+    signature: "isAsciiNumeric(char) : boolean"
+    instructionFingerprint: "F78D93B3A17067BF0AC381A61EC8B400"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiNumericWhenChLessThan_0_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7ACB336BBE387A2B08853ACF6A42BC1C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "0201974e-b646-3c6e-9bab-fe00e0c00180"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiNumericWhenChLessThanOrEqualsTo_9_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B4F9DCE71561D8615865940052419B46"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "71A6C767DAE0A0A693751DE54F225837"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "5"
+        suggestedContent: !<regular>
+          value: "5"
+        valueType: "char"
+        uuid: "isAsciiNumeric_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "faa2bfde-39b4-35d1-b882-8d3397875b2b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiNumericWhenChGreaterThan_9_"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A885254E2EE77E701B6E317C33F8CD5A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "236A2FB226A5E450D6380B61EED99CB8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "\ud83f"
+        suggestedContent: !<regular>
+          value: "\ud83f"
+        valueType: "char"
+        uuid: "isAsciiNumeric_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fe228b51-ebbc-305b-9e74-cf60bb353014"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "isAsciiAlphanumeric"
+    returnType: "boolean"
+    signature: "isAsciiAlphanumeric(char) : boolean"
+    instructionFingerprint: "34F9F66CCD2D0712C2658A8396A1CE3B"
+    parametersTypes:
+    - "char"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "isAsciiAlphanumericWhenIsAsciiAlphaCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8812C14429EEDED1FAA01FF3A40D9964"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "59dfcbc9-aefd-3eb6-8d20-8c3073aa1398"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "isAsciiAlphanumericWhenIsAsciiNumericCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "95B56094730992FBC87A25DB91453DF6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "63AB76C7D54D1F1C562A8BEB0F42DA37"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "@"
+        suggestedContent: !<regular>
+          value: "@"
+        valueType: "char"
+        uuid: "isAsciiAlphanumeric_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "47DF6E1E7C79A4DA080BD89B143DB58E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlpha"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "@"
+            suggestedContent: !<regular>
+              value: "@"
+            valueType: "char"
+            uuid: "isAsciiAlphanumeric_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlpha(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlphanumeric_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "77E851F42EB15EB9E248690BAB22E66B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "@"
+            suggestedContent: !<regular>
+              value: "@"
+            valueType: "char"
+            uuid: "isAsciiAlphanumeric_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiNumeric(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "isAsciiAlphanumeric_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d18207d4-8b46-3f95-ad2a-1e65fa526eda"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "isAsciiAlphanumericWhenIsAsciiNumericNotCh"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F73E1E72D2C2BE5314AFAB44EC885552"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      modelFingerprint: "63AB76C7D54D1F1C562A8BEB0F42DA37"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "@"
+        suggestedContent: !<regular>
+          value: "@"
+        valueType: "char"
+        uuid: "isAsciiAlphanumeric_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "47DF6E1E7C79A4DA080BD89B143DB58E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiAlpha"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "@"
+            suggestedContent: !<regular>
+              value: "@"
+            valueType: "char"
+            uuid: "isAsciiAlphanumeric_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiAlpha(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlphanumeric_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "CharUtils"
+      modelFingerprint: "B4881BF49BB864E55A50F0D41CF31956"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.CharUtils"
+        uuid: "org.apache.commons.lang3.CharUtils"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.CharUtils"
+        name: "isAsciiNumeric"
+        parameters:
+        - name: "ch"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "@"
+            suggestedContent: !<regular>
+              value: "@"
+            valueType: "char"
+            uuid: "isAsciiAlphanumeric_char1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "isAsciiNumeric(char): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "isAsciiAlphanumeric_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ef893ff5-63e0-3bd0-86fe-f2d4bdf8cca6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "compare"
+    returnType: "int"
+    signature: "compare(char,char) : int"
+    instructionFingerprint: "599849BB3780D6CDE13459F27FA94E25"
+    parametersTypes:
+    - "char"
+    - "char"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "compareTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DFE332B263681352FEC54C82849B561A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "x"
+      modelFingerprint: "C28454113FB37A6C6794EC6377FD9353"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "a"
+        suggestedContent: !<regular>
+          value: "a"
+        valueType: "int"
+        uuid: "compare_char1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "y"
+      modelFingerprint: "7E198C385CC2788125F64BD2F2DE48C1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "b"
+        suggestedContent: !<regular>
+          value: "b"
+        valueType: "int"
+        uuid: "compare_char2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7B3BE5AC36FECF744FC9BF7388A79A5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: -1
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3e977de-633f-3acd-9866-5ed0c48a1db3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false

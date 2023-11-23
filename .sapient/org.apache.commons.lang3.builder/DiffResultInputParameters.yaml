@@ -1,0 +1,1283 @@
+---
+modelFingerprint: "93DEADDC57EB5EA5554982AF00DA6B92"
+methods:
+- method:
+    name: "getLeft"
+    returnType: "java.lang.Object"
+    signature: "getLeft() : java.lang.Object"
+    instructionFingerprint: "6DC0BBB68671371E0CF2AE897731222F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLeftTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E0DBDD955E8F8E0F5EEE54844A083531"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "30074f87-6aa3-3bb2-b8f7-eb030fc5321b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getRight"
+    returnType: "java.lang.Object"
+    signature: "getRight() : java.lang.Object"
+    instructionFingerprint: "A114B74CABB97BF9FC76EDD3F7AD17CD"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getRightTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E0DBDD955E8F8E0F5EEE54844A083531"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "cd6b3e03-55df-337e-80e2-751102c681e4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getDiffs"
+    returnType: "java.util.List"
+    signature: "getDiffs() : java.util.List<org.apache.commons.lang3.builder.Diff<?>>"
+    instructionFingerprint: "7DDC96374E17BEB2F3DBADF6988C3AA3"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getDiffsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C2B9ECC7F454ACC53AF9C399ABB86A62"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9B7F172C647EDCFBC8CD91B9E13D8874"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ADCF9AF50D8984D73934DD0DC5CBEB84"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+        uuid: "getDiffs_list1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "567b19bc-8f91-3884-b935-1ff4556d2712"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getNumberOfDiffs"
+    returnType: "int"
+    signature: "getNumberOfDiffs() : int"
+    instructionFingerprint: "04ED0016D92ACDA0BDC2F1BA688F3ACC"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getNumberOfDiffsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "11A7BA7A3AE017D3A5DC5E17F59EF386"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2D12F0AA2A5ABD2BE321C9B892D566A9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "231276223B3DD65935C1F8594364B51A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        suggestedContent: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getNumberOfDiffs_int1"
+        fixed: false
+        collectionUuid: "<init>_list1"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8069d348-a647-3d7d-a5fe-329c386e6dbc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getToStringStyle"
+    returnType: "org.apache.commons.lang3.builder.ToStringStyle"
+    signature: "getToStringStyle() : org.apache.commons.lang3.builder.ToStringStyle"
+    instructionFingerprint: "CDD92DFF2289A6C428AE77EFCA14D111"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getToStringStyleTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2A439AA04963AA8DD69D987F1D3B3D7A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "6cce1119-ff3f-3b35-82ba-abdd8cee2375"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "30581467EC32BD13E18A8A4516B42CCC"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8B8BE689F7519A0F9087922A43421327"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9B7F172C647EDCFBC8CD91B9E13D8874"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "6B07D461280148D86420898A016D76B1"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "toString"
+        parameters:
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "org.apache.commons.lang3.builder.ToStringStyle"
+              fieldName: "DEFAULT_STYLE"
+            suggestedContent: !<static_field_return>
+              target: "org.apache.commons.lang3.builder.ToStringStyle"
+              fieldName: "DEFAULT_STYLE"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "<init>_toStringStyle2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toString(ToStringStyle): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_toString1"
+          valueType: "java.lang.String"
+          uuid: "toString_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_toString1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString(org.apache.commons.lang3.builder.ToStringStyle) : java.lang.String"
+    instructionFingerprint: "DD43E361FC14401277792DBFBBAFA1C3"
+    parametersTypes:
+    - "org.apache.commons.lang3.builder.ToStringStyle"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toString1WhenDiffListIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A33C9DDDCF69EBEC47126600F597C08D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2D12F0AA2A5ABD2BE321C9B892D566A9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "style"
+      modelFingerprint: "9D4AFA3D4D8D866D80EEE42C2A24EFAC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.builder.ToStringStyle"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+        uuid: "toString_toStringStyle1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7512A5CE35824DCAFE78D54DDB7BFDE"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: ""
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "91969d80-d354-3b99-bd69-246cb605afdb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "toString1WhenDiffListNotIsEmptyAndDiffListIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FCB6249247B0196F63DF175076736CED"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "930f8f9f-b512-3d7c-b4c0-540c0d8f0042"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "toString1WhenNotDiffListIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "04AA20DBB88BCB304AFEC9BB29308BF2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2336F54561BBCCE0CFF0BC84CCD2AAB5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "NULL"
+                  suggestedContent: !<unknown_object>
+                    target: "org.apache.commons.lang3.builder.Diff"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.apache.commons.lang3.builder.Diff"
+                  genericValueType: "?"
+                  uuid: "toString_diff1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "NULL"
+                  suggestedContent: !<unknown_object>
+                    target: "org.apache.commons.lang3.builder.Diff"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.apache.commons.lang3.builder.Diff"
+                  genericValueType: "?"
+                  uuid: "toString_diff1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "org.apache.commons.lang3.builder.Diff"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "org.apache.commons.lang3.builder.Diff"
+                  genericValueType: "?"
+                  uuid: "toString_diff1"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "style"
+      modelFingerprint: "9D4AFA3D4D8D866D80EEE42C2A24EFAC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "org.apache.commons.lang3.builder.ToStringStyle"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+        uuid: "toString_toStringStyle1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "938C21030B9045F3F1786C12CD1A557D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A differs from B"
+        suggestedContent: !<regular>
+          value: "A differs from B"
+        valueType: "java.lang.String"
+        uuid: "toString_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d7449e5f-b54c-3d46-a8b5-6e9727843638"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "iterator"
+    returnType: "java.util.Iterator"
+    signature: "iterator() : java.util.Iterator<org.apache.commons.lang3.builder.Diff<?>>"
+    instructionFingerprint: "B7B89277E2DD08C9E6D31121B9F0A5F5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "iteratorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C2D93B4F0EBC4890DAA67CAB1E22197"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "9B7F172C647EDCFBC8CD91B9E13D8874"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.DiffResult"
+          parameters:
+          - name: "lhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "rhs"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "diffList"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "style"
+            value:
+              sapientType: "NULL"
+              valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+              uuid: "<init>_toStringStyle1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.DiffResult"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "073A9AE2E6E352EF748B4C889013DD67"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+        uuid: "iterator_iterator1"
+        fixed: false
+        collectionUuid: "<init>_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "78c09fb6-edcf-3ce7-9932-6ef4ffc152b3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

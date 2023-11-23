@@ -1,0 +1,5590 @@
+---
+modelFingerprint: "87A75F6E419F54D1C299399816C032DA"
+methods:
+- method:
+    name: "getAwtToolkit"
+    returnType: "java.lang.String"
+    signature: "getAwtToolkit() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "456279251F222044149FC506EEBAE473"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getAwtToolkitTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1C4BDDAF06A835C1D0CF3403BC96343F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "C8888192A8921559CCF4AD07B6D4ECFC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "awt.toolkit"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getAwtToolkit_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getAwtToolkit_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "793d2afe-a79f-343b-8b13-56e51aaf5130"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getBoolean"
+    returnType: "boolean"
+    signature: "getBoolean(java.lang.String,java.util.function.BooleanSupplier) :\
+      \ boolean"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "00466252EA076C54E6DC07F3C4673107"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.function.BooleanSupplier"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getBooleanWhenStrIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AA503BA808DD78B3373FC1BDEC36612E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "92cb0235-774d-3313-aa69-bfbf2689bfe0"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getBooleanWhenDefaultIfAbsentIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7FA06BA39315FB3473E95DE2A3047DFD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "03C04E8CFBF1237D5296EE71A1CCCA92"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "my.custom.property"
+        suggestedContent: !<regular>
+          value: "my.custom.property"
+        valueType: "java.lang.String"
+        uuid: "getBoolean_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "9D4C40A02EF2FA309F9596CE516D9374"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.BooleanSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.BooleanSupplier"
+        uuid: "getBoolean_booleanSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "E28D48E7A4E881CC8A360F617A28B6D9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "my.custom.property"
+            suggestedContent: !<regular>
+              value: "my.custom.property"
+            valueType: "java.lang.String"
+            uuid: "getBoolean_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getBoolean_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b67a3be8-267c-3f8d-aece-b654d29ff3b0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "getBooleanWhenDefaultIfAbsentIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "034F8DB700FDBCFED812AA3F8CA5A67B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "03C04E8CFBF1237D5296EE71A1CCCA92"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "my.custom.property"
+        suggestedContent: !<regular>
+          value: "my.custom.property"
+        valueType: "java.lang.String"
+        uuid: "getBoolean_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "9D4C40A02EF2FA309F9596CE516D9374"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.BooleanSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.BooleanSupplier"
+        uuid: "getBoolean_booleanSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "E28D48E7A4E881CC8A360F617A28B6D9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "my.custom.property"
+            suggestedContent: !<regular>
+              value: "my.custom.property"
+            valueType: "java.lang.String"
+            uuid: "getBoolean_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getBoolean_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9284b6b7-6f3f-399e-8e3f-b4b6e92e48f4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path4"
+    testPathName: "getBooleanWhenStrIsNullDefaultIfAbsentIsNotNullAndDefaultIfAbsentGetAsBoolean"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BFCD21E759FA459068573621EC2466DB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8F920334D57B16A0241A36AB81DCF3A8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "java.version"
+        suggestedContent: !<regular>
+          value: "java.version"
+        valueType: "java.lang.String"
+        uuid: "getBoolean_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "9D4C40A02EF2FA309F9596CE516D9374"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.BooleanSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.BooleanSupplier"
+        uuid: "getBoolean_booleanSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "620027F55385972D546C6B39709E8F31"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.version"
+            suggestedContent: !<regular>
+              value: "java.version"
+            valueType: "java.lang.String"
+            uuid: "getBoolean_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getBoolean_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "getBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "36895023-6812-308b-9126-e159ebcc7e2d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path5"
+    pathIdForUser: "path5"
+    testPathName: "getBooleanWhenStrIsNullBooleanParseBooleanStr"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "595173D1C49F6E284809CE7BA6234F27"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "getBoolean_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "9D4C40A02EF2FA309F9596CE516D9374"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.BooleanSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.BooleanSupplier"
+        uuid: "getBoolean_booleanSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "B19BD69C19B6C99B27569A93B79232C3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "getBoolean_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getBoolean_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "getBoolean_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fbfbdaa2-816c-375d-80e2-d4fd076d3840"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFileEncoding"
+    returnType: "java.lang.String"
+    signature: "getFileEncoding() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "1F8C1EBA605FB439A810397061D842E8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFileEncodingTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "449AA5161FF9C7E86BE50EAAFD6C6B56"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "F2BEB5FA206AA834D8C5A6B2C9938E1E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "file.encoding"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getFileEncoding_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getFileEncoding_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d040489d-6a19-3758-8e2c-fc4b04cf099f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getFileSeparator"
+    returnType: "java.lang.String"
+    signature: "getFileSeparator() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "D78C16F8BCAE08DE83E0E90FDC58DFE7"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFileSeparatorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0214C3A957977F6482DC5EC2E9B5A1F3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "AD2EF6CDC7392BE9D140D988F426AAAD"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "file.separator"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getFileSeparator_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getFileSeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a5dfe32-d2a5-3981-8dfe-df490c2005b9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getInt"
+    returnType: "int"
+    signature: "getInt(java.lang.String,java.util.function.IntSupplier) : int"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "1F1F5D18DC477450E7961E5451357768"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.function.IntSupplier"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getIntWhenStrIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C356282FF93983DC71DC2E66ECDBD886"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "getInt_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "4BB3656572D1E9E45E70C74944703525"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.IntSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.IntSupplier"
+        uuid: "getInt_intSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "8A7C36D7A997DA18DAFE187E0C7102E1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "getInt_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "2"
+          suggestedContent: !<regular>
+            value: "2"
+          valueType: "java.lang.String"
+          uuid: "getInt_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5B7037320197BCA6D87B98AA6A9A8326"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2
+        suggestedContent: !<regular>
+          value: 2
+        valueType: "int"
+        uuid: "getInt_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "57585347-469e-3e97-82b3-d12008a84055"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getIntWhenDefaultIfAbsentIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "34E1671363D71476AF62EF7D751CA6E9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8BD67D70F5C96AE60CCC9F61EF1E5808"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "nonexistent_key"
+        suggestedContent: !<regular>
+          value: "nonexistent_key"
+        valueType: "java.lang.String"
+        uuid: "getInt_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "4BB3656572D1E9E45E70C74944703525"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.IntSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.IntSupplier"
+        uuid: "getInt_intSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "B30561786AA70832BE2A5F1B76C48075"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "nonexistent_key"
+            suggestedContent: !<regular>
+              value: "nonexistent_key"
+            valueType: "java.lang.String"
+            uuid: "getInt_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getInt_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        uuid: "getInt_int1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "38f78799-40fc-3113-999c-848d2788a710"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "getIntWhenDefaultIfAbsentIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7519CCD2704581F006C0F0DA119CB697"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "getInt_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "57DBF553510434408C30F681CED6F834"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.function.IntSupplier"
+        uuid: "getInt_intSupplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "CAE3CFF34DC7C243EA036C456B12166F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "getInt_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getInt_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "158A76FAE4C1E5741587C22A6148B6F0"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "790932c6-85e7-3bc2-b166-944d1d758d80"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaAwtFonts"
+    returnType: "java.lang.String"
+    signature: "getJavaAwtFonts() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "371A90837307D37B3A0836C578BD77B9"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaAwtFontsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "49D0EF132940C983DB43F4776530DA67"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "190368B61B912206C8508B9BF53B48EA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.awt.fonts"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaAwtFonts_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaAwtFonts_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6604c3ce-9b0a-3368-ba84-64a7218c81e5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaAwtGraphicsenv"
+    returnType: "java.lang.String"
+    signature: "getJavaAwtGraphicsenv() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "D18302974472DEEF7E088121E1938E6C"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaAwtGraphicsenvTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "71E520DEDD702ADCC2D6E04EE4805BE7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "39F6ECE96FB01FC3332B351C57D90D2F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.awt.graphicsenv"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaAwtGraphicsenv_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaAwtGraphicsenv_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7b69e71e-5503-3458-96ad-c4cd025afef9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaAwtHeadless"
+    returnType: "java.lang.String"
+    signature: "getJavaAwtHeadless() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "F40DF224D14286D761E4FFDC7174048A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaAwtHeadlessTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8176C1543A9A0CE0D2914AF69D9ABBB0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "5040392F255DD5E99C8C41D09EDA8CD4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.awt.headless"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaAwtHeadless_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaAwtHeadless_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d9e105b6-4c0e-3b2e-8ee0-8bc9fc8879ce"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaAwtPrinterjob"
+    returnType: "java.lang.String"
+    signature: "getJavaAwtPrinterjob() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "4B46458846BABADE4D2F8E31CE2C56DF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaAwtPrinterjobTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7FF9CBBA76A7DACA11DD3229881F8D48"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "6AB88E953223171B98FE1A97434EC938"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.awt.printerjob"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaAwtPrinterjob_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaAwtPrinterjob_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "587d2543-5805-38fa-9e15-38d755556980"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaClassPath"
+    returnType: "java.lang.String"
+    signature: "getJavaClassPath() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "EBFC334950D997A21C99B3EE150D0259"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaClassPathTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "446768E358A167CF8B3C4C379B89B927"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "F13A00C236285CAC84BC1AA94FD38C25"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.class.path"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaClassPath_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaClassPath_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "315733a2-1635-3dc8-93cd-a5d59d170387"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaClassVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaClassVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "3AEF9AC5EB0FBCCD44B30710E4D3C825"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaClassVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C5EE6EB2F5B01E53B0BD28050B065682"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "B275CC6379D686B41B9ABABA74106647"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.class.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaClassVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaClassVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ce29beab-523b-38b9-8567-b456ff2cf9d2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaCompiler"
+    returnType: "java.lang.String"
+    signature: "getJavaCompiler() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "F6E7AD8C7EF685A7C82C886D36C5ED91"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaCompilerTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D51ED69B8347D3853AC9F1BBF01B3184"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "5449E30E53162EB196CD461CB011006C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.compiler"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaCompiler_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaCompiler_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "35ebb895-d32d-3b22-914d-06ebade1633a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaEndorsedDirs"
+    returnType: "java.lang.String"
+    signature: "getJavaEndorsedDirs() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "0631C980EAD04ECDD4B9833D7A8AEB36"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaEndorsedDirsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0D8EE220328B121D1F648105237DC338"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "A28B5B149A6EC3F39AD836D3C706D26E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.endorsed.dirs"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaEndorsedDirs_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaEndorsedDirs_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b38d7876-f4e0-35e2-975c-599859662502"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaExtDirs"
+    returnType: "java.lang.String"
+    signature: "getJavaExtDirs() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "56BC08C8EDF44E533F155A75FFFB729E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaExtDirsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B9280BE166B03D0E31673553BF4A927B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "09BFE46CB468D013C0C0590774D16905"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.ext.dirs"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaExtDirs_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaExtDirs_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "45792c7c-8637-3a99-bb80-be1fed9c56e1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaHome"
+    returnType: "java.lang.String"
+    signature: "getJavaHome() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "ACDA94E4A95D9FA6366CA30EC86F5C11"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaHomeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A837B26A37C814E9C95A05FC025F9E83"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "2B167E877B9C4F66B241634531838F58"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.home"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaHome_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaHome_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a7c7ee35-a552-3f54-8dab-d10b5f866c18"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaIoTmpdir"
+    returnType: "java.lang.String"
+    signature: "getJavaIoTmpdir() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "C3581C30A2336D25900C0A12F91EBC2E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaIoTmpdirTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9029E809E01BE5EED5C694D9F40BD68B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "1A2FB5B44CA74F579F1895924BF308BC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.io.tmpdir"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaIoTmpdir_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaIoTmpdir_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "195ac9af-08a2-30fb-ac69-d112696721e1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaLibraryPath"
+    returnType: "java.lang.String"
+    signature: "getJavaLibraryPath() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "E61B732A9C89A9F2C8BFDDED7C264C6E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaLibraryPathTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6A02489FA72D079D280A3AA5A80CE39B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "720179282C211C1DB75DAFE2782B7A8D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.library.path"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaLibraryPath_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaLibraryPath_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3ce07852-ddee-3052-8c44-d5b74e291b14"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaLocaleProviders"
+    returnType: "java.lang.String"
+    signature: "getJavaLocaleProviders() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "C334527AF3E173BB6C7702BB3EB6FB0B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaLocaleProvidersTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B1432DDA1782ADBB190281F92DDE833F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "AC09EA00D1F1607CCB7CDAC8CADF2085"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.locale.providers"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaLocaleProviders_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaLocaleProviders_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "41cb2380-e494-3b08-8a07-623db2a80c25"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaRuntimeName"
+    returnType: "java.lang.String"
+    signature: "getJavaRuntimeName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "4D07049E0A7D9F0A8B0C6CEF7A21F383"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaRuntimeNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DE1D34C1926BA56F220844DF8B0A2939"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "2F330034A95924008335D78D534CBFC3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.runtime.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaRuntimeName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaRuntimeName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd09bab7-fa6b-3dda-9565-8d037226fab0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaRuntimeVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaRuntimeVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "9D5B08C70B556933F8B6E1BA352E5151"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaRuntimeVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "074586F0C2546CD0C359CE9F50BCA27C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "084643776DE29251C1808AF6DF27B0B5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.runtime.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaRuntimeVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaRuntimeVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2b8af317-ad53-3b62-b4c0-69d836d3e634"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaSpecificationName"
+    returnType: "java.lang.String"
+    signature: "getJavaSpecificationName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "9E19E64398ECF16E20753F251E360367"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaSpecificationNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E1C06AE8884FB5CCB6116DD6CC5D7DC5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "F9ECCDB2DAE370B477B7C6C3D3D9BBA7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.specification.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaSpecificationName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaSpecificationName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d61bab95-1cae-3486-a5e7-31a3b075ac3f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaSpecificationVendor"
+    returnType: "java.lang.String"
+    signature: "getJavaSpecificationVendor() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "0E72600526C59397D18AF5B28610EADE"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaSpecificationVendorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BCBCEF91326F010EDC73E8F49B0F8BDA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "512437BBCDC39F9BBD3F997CA4CC6B04"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.specification.vendor"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaSpecificationVendor_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaSpecificationVendor_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4a2541bb-3f1f-3a76-ba20-df5899ff889b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaSpecificationVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaSpecificationVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "99C44211015793D8646349B3D2FFF961"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaSpecificationVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4BE5BDFAEDB0411D81B43243AFB1CB70"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "49E60200F5AC8DF4BF9DAE0A7963AFF8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.specification.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaSpecificationVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaSpecificationVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "84450305-267b-3e3e-986b-f24f0752fc4e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaUtilPrefsPreferencesFactory"
+    returnType: "java.lang.String"
+    signature: "getJavaUtilPrefsPreferencesFactory() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "5B6F8CBC87DE31A1A62F28BCE9D97EC9"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaUtilPrefsPreferencesFactoryTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2EB963F676889A514D3F3826257E8A46"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "46EFC358B3430C4C72B4C43F47AA1A8F"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.util.prefs.PreferencesFactory"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaUtilPrefsPreferencesFactory_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaUtilPrefsPreferencesFactory_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "35e9f204-ec7c-3c77-81fb-48843a774a28"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVendor"
+    returnType: "java.lang.String"
+    signature: "getJavaVendor() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "418EE8C2E4E34C87E417E0500F1169FC"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVendorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E7D244FC146A01F87D033BE1BC504F52"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "D97D5C4FCCBF8B8CEDC9D40B2229C87A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vendor"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVendor_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVendor_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fc7524de-ed7e-3b1b-b409-c22a92ce0ce8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVendorUrl"
+    returnType: "java.lang.String"
+    signature: "getJavaVendorUrl() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "116349DFF64437CAA820957C57E3D8B7"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVendorUrlTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "038B19D5B35950EB20F4AB06CB873AAF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "25A76297AD8820D06AAF4EE6E3BE095E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vendor.url"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVendorUrl_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVendorUrl_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3ad8061b-e4cc-3f7a-aad4-f8caaaa42bd1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "F8B41CFC205029DD44D548379A1E0EFF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "797F362AC183728150549913EFB543F6"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "A4FDFAC1E8B456D2CD0F84410331CF48"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e22a9744-058f-3158-86bd-a2487d7d1f4a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmInfo"
+    returnType: "java.lang.String"
+    signature: "getJavaVmInfo() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "194196BA8239FAD24F0F6BB60D3A6767"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmInfoTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "60D0327CE3659AB3BA75188BB4D3E3CF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "D6E780C13FB60504FD258E245BEB8992"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.info"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmInfo_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmInfo_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "32d1d115-2b3a-3a77-9590-9a68d0676099"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmName"
+    returnType: "java.lang.String"
+    signature: "getJavaVmName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "CA9F8F79AACB9FB26444646981675256"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "761E92125A65DEB9FE8ED7025992936A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "30A15D534DB8E302F369EE35A9AE412A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bac74457-88bb-3901-93e0-a9426a0bd452"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmSpecificationName"
+    returnType: "java.lang.String"
+    signature: "getJavaVmSpecificationName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "C972915A9F3153C302B4EE87BB7586D8"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmSpecificationNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CAC49CC5D9559A2FCBDA3D8637CF97A9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "D24B41B53EAA4A0F2F69C1B7314F1C0B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.specification.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmSpecificationName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmSpecificationName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "51635232-634f-3df0-9559-7f58feeec6ae"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmSpecificationVendor"
+    returnType: "java.lang.String"
+    signature: "getJavaVmSpecificationVendor() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "9533809AD6469D4A89C7A3CB75BB8580"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmSpecificationVendorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A444B5406A7C6BD01FFE88E6EC245D03"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "5E9A94923DF5757B2D7C3DB4E37BB5B8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.specification.vendor"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmSpecificationVendor_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmSpecificationVendor_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd8960ec-59e8-3ddc-b64d-61c88ef3e09c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmSpecificationVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaVmSpecificationVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "627E7CBF64B0E37AEEE108319AEAA63A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmSpecificationVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4D4E472F453DF96CC06E5CEA204BFDEF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "365E6E3F83111B8D6ACFFA9051585966"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.specification.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmSpecificationVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmSpecificationVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5d267fa6-ad63-342e-a705-f3daff9e6a6d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmVendor"
+    returnType: "java.lang.String"
+    signature: "getJavaVmVendor() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "0FA425A7885BF12640A1B6CB28CF0E3E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmVendorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B740A95EBFB75B3C44E2C407EA34E43"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "C6E78E622BC26E6A3A1464CC5E2664B9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.vendor"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmVendor_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmVendor_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1f558299-4df9-3a24-b1fd-293730b6b9da"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getJavaVmVersion"
+    returnType: "java.lang.String"
+    signature: "getJavaVmVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "CB699E17217F486838773B66E4C5C38F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getJavaVmVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "89ECD458CA104FC6B0EB31B650CE7266"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "D27D49071E38C4C042616CF4B67731B2"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.vm.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getJavaVmVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getJavaVmVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba6614b9-5806-38f8-9e87-2dfd290f7151"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getLineSeparator"
+    returnType: "java.lang.String"
+    signature: "getLineSeparator() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "09474C62D44C0C485E97F830B427E7CF"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getLineSeparatorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FA415531D0926CFF42C14007EE97680B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "2695AE72AE9DDDCB4630091A7C548E46"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "line.separator"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getLineSeparator_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getLineSeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b9ca9277-18ae-3b64-9946-7a465d479ca4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getLong"
+    returnType: "long"
+    signature: "getLong(java.lang.String,java.util.function.LongSupplier) : long"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "4A19A114848072D401F17788A18AAFEC"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.function.LongSupplier"
+  paths:
+  - pathId: "path3"
+    pathIdForUser: "path1"
+    testPathName: "getLongWhenStrIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "24AC46DEF41A07DA8BC6C7352C60E522"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "getLong_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "1F1070151ED7250DBD575138252E64CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.LongSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.LongSupplier"
+        uuid: "getLong_longSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "8A7C36D7A997DA18DAFE187E0C7102E1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "getLong_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "2"
+          suggestedContent: !<regular>
+            value: "2"
+          valueType: "java.lang.String"
+          uuid: "getLong_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B35B441BEBFAE5B691EE431F92739963"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 2
+        suggestedContent: !<regular>
+          value: 2
+        valueType: "long"
+        uuid: "getLong_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c332fff6-db41-35eb-92fd-bcbb02c1dd42"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getLongWhenDefaultIfAbsentIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F463ED0E1EBE15CF3E5828EA7A10E83C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "5EE83BF42E6CA4410B1E89E58A9B5A7B"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "non.existent.property"
+        suggestedContent: !<regular>
+          value: "non.existent.property"
+        valueType: "java.lang.String"
+        uuid: "getLong_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "1F1070151ED7250DBD575138252E64CE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.LongSupplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.LongSupplier"
+        uuid: "getLong_longSupplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "341F82105298539011995AAF7AFF1959"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "non.existent.property"
+            suggestedContent: !<regular>
+              value: "non.existent.property"
+            valueType: "java.lang.String"
+            uuid: "getLong_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getLong_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "804632FC35F3D360B4AE3373F0AFA52B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        uuid: "getLong_long1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "899d78c0-3691-38c6-b61d-92f6362373ee"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path3"
+    testPathName: "getLongWhenDefaultIfAbsentIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E848C275183685B514F2BF989F8BBF00"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "23A886133DA0141E522DC74D3398EA06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "key1"
+        valueType: "java.lang.String"
+        uuid: "getLong_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      modelFingerprint: "29088B390DD13ABC1F0984D1E7E6F551"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        valueType: "java.util.function.LongSupplier"
+        uuid: "getLong_longSupplier1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "CAE3CFF34DC7C243EA036C456B12166F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "key1"
+            valueType: "java.lang.String"
+            uuid: "getLong_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.String"
+          uuid: "getLong_string2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3938B0F3ED7FBE2A90E461B02D2EF6B1"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 0
+        valueType: "long"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "540a2d72-0424-341c-8f30-338c42a00577"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getOsArch"
+    returnType: "java.lang.String"
+    signature: "getOsArch() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "C7908E1290495806C7B37842C4F65574"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOsArchTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "57E6006B01CA171914B2F3617881D8CB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "42AAA7E4A843493AA322086CE228E062"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "os.arch"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getOsArch_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getOsArch_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1d946f46-e3ea-37fb-94bb-fc65b2c8638b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getOsName"
+    returnType: "java.lang.String"
+    signature: "getOsName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "D98C3EC88F5F52B4C7FCEE4DB8BF7A10"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOsNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "37D1D0D98BE977DE05E36E595A0412D7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "AF8A5CCE89A8CC6929DF6F95BD9CF819"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "os.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getOsName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getOsName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "31709543-e2b5-3411-a33e-0034353bcd3e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getOsVersion"
+    returnType: "java.lang.String"
+    signature: "getOsVersion() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "3C93ABC6F1B022A694055C40C425367D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getOsVersionTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2A36B5AB05F534C94F64CC8070AFC215"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "2B8A702EB6574BAD8A388C2B402045AB"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "os.version"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getOsVersion_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getOsVersion_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9ac7b2aa-19f2-3ebe-af73-2ab61fbcae15"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getPathSeparator"
+    returnType: "java.lang.String"
+    signature: "getPathSeparator() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "02F7C5D7C1292B4006E8E14B87D6DE4D"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPathSeparatorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CDC7D91A0985BA5AFAE14AF30443A658"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "168B7BC8AFC44452A5B9303C546AE027"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "path.separator"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getPathSeparator_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getPathSeparator_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6180c46f-f5d7-3456-a3ca-3f19a6def067"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getProperty"
+    returnType: "java.lang.String"
+    signature: "getProperty(java.lang.String) : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "68CEA51003515BBE453441E34BE1C523"
+    parametersTypes:
+    - "java.lang.String"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getPropertyTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DEE4F92A66FF1AE3A26658CF41CA4B7F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      modelFingerprint: "76FFCE4D7600CA48827583ECE6177203"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "property1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "B5609AB36C4A8871F0342D7402F66688"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "property1"
+            valueType: "java.lang.String"
+            uuid: "getProperty_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "defaultValue"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "org.apache.commons.lang3.function.Suppliers"
+              method: "nul"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "org.apache.commons.lang3.function.Suppliers"
+              method: "nul"
+              methodParameters: []
+            valueType: "java.util.function.Supplier"
+            uuid: "getProperty_supplier1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String,Supplier): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getProperty_string2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ebf9d063-d15c-33a6-bbb2-427433abed69"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getProperty"
+    returnType: "java.lang.String"
+    signature: "getProperty(java.lang.String,java.util.function.Supplier<java.lang.String>)\
+      \ : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "4E46CDA6F276098BA551B4F5A0E728C6"
+    parametersTypes:
+    - "java.lang.String"
+    - "java.util.function.Supplier"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProperty1WhenStringUtilsIsEmptyProperty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DCFF5CC471E31D3F1CB6CCD7598300B1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      modelFingerprint: "76FFCE4D7600CA48827583ECE6177203"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "property1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "E1BA18C08B2D72D508238E50CFFC7B2F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Supplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Supplier"
+        genericValueType: "java.lang.String"
+        uuid: "getProperty_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_object1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: true
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1c39b0fe-539a-3677-bb73-40e63b6df086"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getProperty1WhenStringUtilsNotIsEmptyProperty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "73D140720CFC9140D1BE8A808C7CAF49"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      modelFingerprint: "455DF98927C8E3B0146AC32782328EC8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "java.version"
+        suggestedContent: !<regular>
+          value: "java.version"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "E1BA18C08B2D72D508238E50CFFC7B2F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Supplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Supplier"
+        genericValueType: "java.lang.String"
+        uuid: "getProperty_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d564385a-4ff9-3a8a-9956-f1300b6fb208"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "getProperty1WhenCaughtSecurityException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "967B46B7B1375448D2B5531B5F1BC5B1"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      modelFingerprint: "455DF98927C8E3B0146AC32782328EC8"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "java.version"
+        suggestedContent: !<regular>
+          value: "java.version"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "defaultValue"
+      modelFingerprint: "E1BA18C08B2D72D508238E50CFFC7B2F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NULL"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Supplier"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Supplier"
+        genericValueType: "java.lang.String"
+        uuid: "getProperty_supplier1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getProperty_string4"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "310afadc-abc5-3828-99a5-3b2413b9d1ee"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    prover: "LLM"
+    usedLLM: true
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path4"
+    testPathName: "getProperty1WhenStringUtilsNotIsEmptyPropertyAndCaughtSecurityException"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1C26EAD903108AF067AA5098CEEBAA99"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    truncated: true
+    inputParameters: []
+    uuid: "065cadeb-a46e-353a-b048-84da7ee2857b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserCountry"
+    returnType: "java.lang.String"
+    signature: "getUserCountry() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "1F18124C940CD9AEAD31525ECAF3465A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserCountryTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7F47022DBAE57B3AD0BCAD84A8378A11"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "6693FF93D8AD7F6F2C0486F02FFB9159"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.country"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserCountry_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserCountry_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "17f12b18-a2bc-355b-9ec3-c35c091eade3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserDir"
+    returnType: "java.lang.String"
+    signature: "getUserDir() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "B8C3545FCBC49EE77C787DAC15BA7D0B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserDirTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "349DE08346874D9494ABB5D64C37D4CF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "D3314AAC71534375D405D0B91A813135"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.dir"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserDir_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserDir_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec79bec4-465b-30f0-880c-3b4d761d9f36"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserHome"
+    returnType: "java.lang.String"
+    signature: "getUserHome() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "3D20E83485C2E3958FB29D4AEAD12E74"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserHomeTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E7804BC698F243A35B6A986324392C0C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "1BAC5C1B8FA8A777CFA0B8108876BD30"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.home"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserHome_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserHome_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "12e9ce3a-7ba1-38af-8aaa-1edf2ee30c1f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserLanguage"
+    returnType: "java.lang.String"
+    signature: "getUserLanguage() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "0A37392EBFB35849B16F0694642B9C54"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserLanguageTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "69A3CEDEEC048422095B34F920883FA5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "A271676E0937D42FEE8FC399EEF5DF4C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.language"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserLanguage_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserLanguage_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9bcb345b-a068-3e21-a72e-66e56cf07ebb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserName"
+    returnType: "java.lang.String"
+    signature: "getUserName() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "469CD1F9142AF83E2960914D6582D177"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserNameTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E55A15314E7546ACABF46DAF3D17EA89"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "458C54B48B40A7FF5A5BA71C5E2BF770"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.name"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserName_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a51bcb8-69de-33a3-9bea-031d2f592a3d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "getUserTimezone"
+    returnType: "java.lang.String"
+    signature: "getUserTimezone() : java.lang.String"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "CDB1BAFA355A525FFACA247733668452"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserTimezoneTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2599993D08F2EA8274D635EC10497802"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties"
+      modelFingerprint: "8FA2E49B87AACB260324FC02A11C8E06"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "org.apache.commons.lang3.SystemProperties"
+        uuid: "org.apache.commons.lang3.SystemProperties"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.apache.commons.lang3.SystemProperties"
+        name: "getProperty"
+        parameters:
+        - name: "property"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "user.timezone"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getProperty(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getProperty1"
+          valueType: "java.lang.String"
+          uuid: "getUserTimezone_string1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "return_of_getProperty1"
+        valueType: "java.lang.String"
+        uuid: "getUserTimezone_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "075e09f7-1dea-3d41-b878-d39177a68185"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    usedLLM: false
+    disabledStatusUpdatedByUser: false

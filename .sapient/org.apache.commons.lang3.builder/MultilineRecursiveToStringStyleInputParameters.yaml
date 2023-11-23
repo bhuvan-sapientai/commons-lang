@@ -1,0 +1,1580 @@
+---
+modelFingerprint: "AE9C0D3669268DFA826C659D4D3B8A41"
+methods:
+- method:
+    name: "appendDetail"
+    returnType: "void"
+    signature: "appendDetail(java.lang.StringBuffer,java.lang.String,java.lang.Object)\
+      \ : void"
+    instructionFingerprint: "757B676FE6E14501BC1D92B1B66F3B85"
+    parametersTypes:
+    - "java.lang.StringBuffer"
+    - "java.lang.String"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "appendDetailWhenClassUtilsIsPrimitiveWrapperValueGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6423EA7C916FB869D3E5602DF72C74B8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "aaf37710-53e9-3541-8bf7-dfc1a977ab67"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "appendDetailWhenILessThanSpaces"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "HIGH"
+    modelFingerprint: "2D817067842E90D6FE436671F4497474"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buffer"
+      modelFingerprint: "3CBE24EDC70CA670957C42D6CD2ADB3A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "appendDetail_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldName"
+      modelFingerprint: "C9403AF32812D86F53CC85ADF79450B7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldName1"
+        valueType: "java.lang.String"
+        uuid: "appendDetail_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "appendDetail_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "874131EAD9234E814CD7B61176E9B68F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "accept"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "appendDetail_class3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "appendDetail_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "4418DDEF986BE2441B87C4009A3F54BC"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayStart"
+        parameters:
+        - name: "arrayStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "{\\n!6!"
+            suggestedContent: !<regular>
+              value: "{\\n!6!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string14"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "F6211D70A96CD9065B40B720FE3E6A93"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArraySeparator"
+        parameters:
+        - name: "arraySeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!7!"
+            suggestedContent: !<regular>
+              value: ",\\n!7!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string16"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArraySeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7A195689EB696F1E7AC25EDFBA86E0AC"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayEnd"
+        parameters:
+        - name: "arrayEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!8!}"
+            suggestedContent: !<regular>
+              value: "\\n!8!}"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string18"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "4CD9FDAF51992AC3F96865AA6E62E9E5"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentStart"
+        parameters:
+        - name: "contentStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "[\\n!9!"
+            suggestedContent: !<regular>
+              value: "[\\n!9!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string20"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "E9DB4C109340DCD42858558FEA9D12FC"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setFieldSeparator"
+        parameters:
+        - name: "fieldSeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!a!"
+            suggestedContent: !<regular>
+              value: ",\\n!a!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string22"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setFieldSeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void5"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "DD85B25904757175798CF81A0B9D93A0"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentEnd"
+        parameters:
+        - name: "contentEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!b!]"
+            suggestedContent: !<regular>
+              value: "\\n!b!]"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string24"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void6"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "E595D5266F73510013630A1D5005AC06"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayStart"
+        parameters:
+        - name: "arrayStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "{\\n!c!"
+            suggestedContent: !<regular>
+              value: "{\\n!c!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string26"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void7"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7609644FC61D600314D2925A8C1B8144"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArraySeparator"
+        parameters:
+        - name: "arraySeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!d!"
+            suggestedContent: !<regular>
+              value: ",\\n!d!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string28"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArraySeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void8"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "8B05CE1B85EB0CABB02B6CFCC2814944"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayEnd"
+        parameters:
+        - name: "arrayEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!e!}"
+            suggestedContent: !<regular>
+              value: "\\n!e!}"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string30"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void9"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D33E956FE8B860C08464BF4EC85C78E7"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentStart"
+        parameters:
+        - name: "contentStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "[\\n!f!"
+            suggestedContent: !<regular>
+              value: "[\\n!f!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string32"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void10"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "1F2BA20A96D5BAA2EDC82FD49EA1A428"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setFieldSeparator"
+        parameters:
+        - name: "fieldSeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!10!"
+            suggestedContent: !<regular>
+              value: ",\\n!10!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string34"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setFieldSeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void11"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "9884C46644E4DD4C7DA3969A067B6DB4"
+      index: 17
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentEnd"
+        parameters:
+        - name: "contentEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!11!]"
+            suggestedContent: !<regular>
+              value: "\\n!11!]"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string36"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void12"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 18
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4907bc98-1ba7-3999-9447-a442a23d494d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "appendDetailWhenStringEqualsValueGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0B47AB345A4CF9D4BBCC3734DFDCF469"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ae123c68-fe0e-382b-a100-296a078253d9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path2"
+    pathIdForUser: "path4"
+    testPathName: "appendDetailWhenAcceptValueGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B44AAB7A8BDA8B9C6059810BB3BD3F8E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buffer"
+      modelFingerprint: "3CBE24EDC70CA670957C42D6CD2ADB3A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "appendDetail_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldName"
+      modelFingerprint: "C9403AF32812D86F53CC85ADF79450B7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldName1"
+        valueType: "java.lang.String"
+        uuid: "appendDetail_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "appendDetail_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "00A0938761EEA280E2E5CCFC9C3A7516"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "accept"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "appendDetail_class3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "appendDetail_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "874131EAD9234E814CD7B61176E9B68F"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "accept"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "appendDetail_class6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "appendDetail_boolean6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "06b5e3db-d661-3194-aaf0-0eb1e68e32f2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+  - pathId: "path3"
+    pathIdForUser: "path5"
+    testPathName: "appendDetailWhenAcceptNotValueGetClass"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D2F164BC6C197CFC64E26ADB557D0B1D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buffer"
+      modelFingerprint: "3CBE24EDC70CA670957C42D6CD2ADB3A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "appendDetail_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldName"
+      modelFingerprint: "C9403AF32812D86F53CC85ADF79450B7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldName1"
+        valueType: "java.lang.String"
+        uuid: "appendDetail_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "718139F4601F12A322C1CD74BE17B261"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "appendDetail_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "00A0938761EEA280E2E5CCFC9C3A7516"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "accept"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "appendDetail_class3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "appendDetail_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "00A0938761EEA280E2E5CCFC9C3A7516"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "accept"
+        parameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "appendDetail_class6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(Class): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "appendDetail_boolean6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "09faeffd-ed91-3a80-8d01-b964376e649e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
+- method:
+    name: "reflectionAppendArrayDetail"
+    returnType: "void"
+    signature: "reflectionAppendArrayDetail(java.lang.StringBuffer,java.lang.String,java.lang.Object)\
+      \ : void"
+    instructionFingerprint: "A4AB7F35AF5CD29FC9994EF12A3E9027"
+    parametersTypes:
+    - "java.lang.StringBuffer"
+    - "java.lang.String"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "reflectionAppendArrayDetailWhenILessThanSpaces"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "HIGH"
+    modelFingerprint: "76E9AB5D8C256FDCFBFD9B5B305B25E9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BCD8B0C2EB1FCE714EAB6CEF0D771ACC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "buffer"
+      modelFingerprint: "3CBE24EDC70CA670957C42D6CD2ADB3A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.StringBuffer"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.StringBuffer"
+        uuid: "reflectionAppendArrayDetail_stringBuffer1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "fieldName"
+      modelFingerprint: "C9403AF32812D86F53CC85ADF79450B7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "fieldName1"
+        valueType: "java.lang.String"
+        uuid: "reflectionAppendArrayDetail_string1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "array"
+      modelFingerprint: "2802202CB045F0A129B71541A828BE2A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "reflectionAppendArrayDetail_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "4418DDEF986BE2441B87C4009A3F54BC"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayStart"
+        parameters:
+        - name: "arrayStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "{\\n!6!"
+            suggestedContent: !<regular>
+              value: "{\\n!6!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string14"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "F6211D70A96CD9065B40B720FE3E6A93"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArraySeparator"
+        parameters:
+        - name: "arraySeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!7!"
+            suggestedContent: !<regular>
+              value: ",\\n!7!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string16"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArraySeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7A195689EB696F1E7AC25EDFBA86E0AC"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayEnd"
+        parameters:
+        - name: "arrayEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!8!}"
+            suggestedContent: !<regular>
+              value: "\\n!8!}"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string18"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "4CD9FDAF51992AC3F96865AA6E62E9E5"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentStart"
+        parameters:
+        - name: "contentStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "[\\n!9!"
+            suggestedContent: !<regular>
+              value: "[\\n!9!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string20"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "E9DB4C109340DCD42858558FEA9D12FC"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setFieldSeparator"
+        parameters:
+        - name: "fieldSeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!a!"
+            suggestedContent: !<regular>
+              value: ",\\n!a!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string22"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setFieldSeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void5"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "DD85B25904757175798CF81A0B9D93A0"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentEnd"
+        parameters:
+        - name: "contentEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!b!]"
+            suggestedContent: !<regular>
+              value: "\\n!b!]"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string24"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void6"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "E595D5266F73510013630A1D5005AC06"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayStart"
+        parameters:
+        - name: "arrayStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "{\\n!c!"
+            suggestedContent: !<regular>
+              value: "{\\n!c!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string26"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void7"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "7609644FC61D600314D2925A8C1B8144"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArraySeparator"
+        parameters:
+        - name: "arraySeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!d!"
+            suggestedContent: !<regular>
+              value: ",\\n!d!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string28"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArraySeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void8"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "8B05CE1B85EB0CABB02B6CFCC2814944"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setArrayEnd"
+        parameters:
+        - name: "arrayEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!e!}"
+            suggestedContent: !<regular>
+              value: "\\n!e!}"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string30"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setArrayEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void9"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D33E956FE8B860C08464BF4EC85C78E7"
+      index: 14
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentStart"
+        parameters:
+        - name: "contentStart"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "[\\n!f!"
+            suggestedContent: !<regular>
+              value: "[\\n!f!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string32"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentStart(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void10"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "1F2BA20A96D5BAA2EDC82FD49EA1A428"
+      index: 15
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setFieldSeparator"
+        parameters:
+        - name: "fieldSeparator"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ",\\n!10!"
+            suggestedContent: !<regular>
+              value: ",\\n!10!"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string34"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setFieldSeparator(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void11"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "9884C46644E4DD4C7DA3969A067B6DB4"
+      index: 16
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "setContentEnd"
+        parameters:
+        - name: "contentEnd"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n!11!]"
+            suggestedContent: !<regular>
+              value: "\\n!11!]"
+            valueType: "java.lang.String"
+            uuid: "resetIndent_string36"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setContentEnd(String): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "resetIndent_void12"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 4
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 17
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "92f0c5c0-c5ff-3d02-83d2-b0dbc6a58fa8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    usedLLM: false
+    disabledStatusUpdatedByUser: false
