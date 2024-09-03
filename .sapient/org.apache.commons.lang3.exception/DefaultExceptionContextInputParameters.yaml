@@ -1,0 +1,280 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+methods:
+- method:
+    name: "addContextValue"
+    sourceCodeSignature: "DefaultExceptionContext addContextValue(final String label,\
+      \ final Object value)"
+    returnType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "D68C9D91F037100303C137221C3C685F"
+  paths:
+  - testPathName: "addContextValueTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "targetClassObject"
+- method:
+    name: "getContextLabels"
+    sourceCodeSignature: "Set<String> getContextLabels()"
+    returnType: "java.util.Set"
+    genericReturnType: "java.lang.String"
+    instructionFingerprint: "F51CD0BDAD9843F93044F3F137F0B827"
+  paths:
+  - testPathName: "getContextLabelsTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Set"
+      genericValueType: "java.lang.String"
+      uuid: "object"
+- method:
+    name: "getContextValues"
+    sourceCodeSignature: "List<Object> getContextValues(final String label)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.Object"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    instructionFingerprint: "C2C737BC3D8A443DC18D044E7174497C"
+  paths:
+  - testPathName: "getContextValuesTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "object"
+- method:
+    name: "getFirstContextValue"
+    sourceCodeSignature: "Object getFirstContextValue(final String label)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    instructionFingerprint: "D0489D91A9528EF7939DF5714DDBEBAB"
+  paths:
+  - testPathName: "getFirstContextValueTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object2"
+- method:
+    name: "getFormattedExceptionMessage"
+    sourceCodeSignature: "String getFormattedExceptionMessage(final String baseMessage)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "baseMessage"
+      type: "java.lang.String"
+    instructionFingerprint: "392EA0C9C5BF12A1A36E080F12FDB980"
+  paths:
+  - testPathName: "getFormattedExceptionMessageWhenContextValuesIsEmpty"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "baseMessage"
+      valueUuid: "baseMessage"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "baseMessage"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 99
+      expression: "baseMessage != null"
+      range: "(99,13)-(99,31)"
+      evaluatedAs: true
+    - lineNumber: 103
+      expression: "!contextValues.isEmpty()"
+      range: "(103,13)-(103,36)"
+      evaluatedAs: false
+- method:
+    name: "setContextValue"
+    sourceCodeSignature: "DefaultExceptionContext setContextValue(final String label,\
+      \ final Object value)"
+    returnType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "34B98958635029FFE45884381F4410F9"
+  paths:
+  - testPathName: "setContextValueTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "addContextValue(label,value):defaultExceptionContext2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.List.removeIf(java.util.function.Predicate)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+        parameters: []
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "defaultExceptionContext2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.exception.DefaultExceptionContext"
+      uuid: "targetClassObject"

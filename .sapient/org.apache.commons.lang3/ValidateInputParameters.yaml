@@ -1,0 +1,6312 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.Validate"
+methods:
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "void exclusiveBetween(final double start, final double end,\
+      \ final double value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "double"
+    - name: "end"
+      type: "double"
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "6CF9087D103DA10FBC288F8CDD123030"
+  paths:
+  - testPathName: "exclusiveBetweenWhenValueGreaterThanOrEqualsToEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.3125
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value null is not in the specified exclusive range of null\
+                \ to null"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 95
+      expression: "value <= start"
+      range: "(95,13)-(95,26)"
+      evaluatedAs: false
+    - lineNumber: 95
+      expression: "value >= end"
+      range: "(95,31)-(95,42)"
+      evaluatedAs: true
+  - testPathName: "exclusiveBetweenWhenValueLessThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -0.5
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 95
+      expression: "value <= start"
+      range: "(95,13)-(95,26)"
+      evaluatedAs: false
+    - lineNumber: 95
+      expression: "value >= end"
+      range: "(95,31)-(95,42)"
+      evaluatedAs: false
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "void exclusiveBetween(final double start, final double end,\
+      \ final double value, final String message)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "double"
+    - name: "end"
+      type: "double"
+    - name: "value"
+      type: "double"
+    - name: "message"
+      type: "java.lang.String"
+    instructionFingerprint: "9C3BD72A7ACF838938FDE4902DD2A217"
+  paths:
+  - testPathName: "exclusiveBetween1WhenValueGreaterThanOrEqualsToEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 116
+      expression: "value <= start"
+      range: "(116,13)-(116,26)"
+      evaluatedAs: false
+    - lineNumber: 116
+      expression: "value >= end"
+      range: "(116,31)-(116,42)"
+      evaluatedAs: true
+  - testPathName: "exclusiveBetween1WhenValueLessThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -0.5
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 116
+      expression: "value <= start"
+      range: "(116,13)-(116,26)"
+      evaluatedAs: false
+    - lineNumber: 116
+      expression: "value >= end"
+      range: "(116,31)-(116,42)"
+      evaluatedAs: false
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "void exclusiveBetween(final long start, final long end,\
+      \ final long value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "long"
+    - name: "end"
+      type: "long"
+    - name: "value"
+      type: "long"
+    instructionFingerprint: "29CAE74D445DE9B682D188B8BBC90EB2"
+  paths:
+  - testPathName: "exclusiveBetween2WhenValueGreaterThanOrEqualsToEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value 3 is not in the specified exclusive range of 2 to\
+                \ 2"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 136
+      expression: "value <= start"
+      range: "(136,13)-(136,26)"
+      evaluatedAs: false
+    - lineNumber: 136
+      expression: "value >= end"
+      range: "(136,31)-(136,42)"
+      evaluatedAs: true
+  - testPathName: "exclusiveBetween2WhenValueLessThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 136
+      expression: "value <= start"
+      range: "(136,13)-(136,26)"
+      evaluatedAs: false
+    - lineNumber: 136
+      expression: "value >= end"
+      range: "(136,31)-(136,42)"
+      evaluatedAs: false
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "void exclusiveBetween(final long start, final long end,\
+      \ final long value, final String message)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "long"
+    - name: "end"
+      type: "long"
+    - name: "value"
+      type: "long"
+    - name: "message"
+      type: "java.lang.String"
+    instructionFingerprint: "8F75CD100AD9D4E7E6E5F8B64BB2BE17"
+  paths:
+  - testPathName: "exclusiveBetween3WhenValueGreaterThanOrEqualsToEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 157
+      expression: "value <= start"
+      range: "(157,13)-(157,26)"
+      evaluatedAs: false
+    - lineNumber: 157
+      expression: "value >= end"
+      range: "(157,31)-(157,42)"
+      evaluatedAs: true
+  - testPathName: "exclusiveBetween3WhenValueLessThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 157
+      expression: "value <= start"
+      range: "(157,13)-(157,26)"
+      evaluatedAs: false
+    - lineNumber: 157
+      expression: "value >= end"
+      range: "(157,31)-(157,42)"
+      evaluatedAs: false
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "<T> void exclusiveBetween(final T start, final T end, final\
+      \ Comparable<T> value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "java.lang.Object"
+    - name: "end"
+      type: "java.lang.Object"
+    - name: "value"
+      type: "java.lang.Comparable"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "09D002AA8199C81811C4AA381EC36E22"
+  paths:
+  - testPathName: "exclusiveBetween4WhenValueCompareToEndGreaterThanOrEqualsTo0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "start"
+      nameForMock: "start"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "end"
+      nameForMock: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+      nameForMock: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value null is not in the specified exclusive range of null\
+                \ to null"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 178
+      expression: "value.compareTo(start) <= 0"
+      range: "(178,13)-(178,39)"
+      evaluatedAs: false
+    - lineNumber: 178
+      expression: "value.compareTo(end) >= 0"
+      range: "(178,44)-(178,68)"
+      evaluatedAs: true
+  - testPathName: "exclusiveBetween4WhenValueCompareToEndLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 178
+      expression: "value.compareTo(start) <= 0"
+      range: "(178,13)-(178,39)"
+      evaluatedAs: false
+    - lineNumber: 178
+      expression: "value.compareTo(end) >= 0"
+      range: "(178,44)-(178,68)"
+      evaluatedAs: false
+- method:
+    name: "exclusiveBetween"
+    sourceCodeSignature: "<T> void exclusiveBetween(final T start, final T end, final\
+      \ Comparable<T> value, final String message, final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "java.lang.Object"
+    - name: "end"
+      type: "java.lang.Object"
+    - name: "value"
+      type: "java.lang.Comparable"
+      genericType: "java.lang.Object"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "B0D2231AC133277E601AF08B35997C3D"
+  paths:
+  - testPathName: "exclusiveBetween5WhenValueCompareToEndLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 202
+      expression: "value.compareTo(start) <= 0"
+      range: "(202,13)-(202,39)"
+      evaluatedAs: false
+    - lineNumber: 202
+      expression: "value.compareTo(end) >= 0"
+      range: "(202,44)-(202,68)"
+      evaluatedAs: false
+  - testPathName: "exclusiveBetween5WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 202
+      expression: "value.compareTo(start) <= 0"
+      range: "(202,13)-(202,39)"
+      evaluatedAs: false
+    - lineNumber: 202
+      expression: "value.compareTo(end) >= 0"
+      range: "(202,44)-(202,68)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "exclusiveBetween5WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 202
+      expression: "value.compareTo(start) <= 0"
+      range: "(202,13)-(202,39)"
+      evaluatedAs: false
+    - lineNumber: 202
+      expression: "value.compareTo(end) >= 0"
+      range: "(202,44)-(202,68)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "finite"
+    sourceCodeSignature: "void finite(final double value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "6435451B10D3728AED21300EBD0BA7D8"
+  paths:
+  - testPathName: "finiteTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "finite(value,message,objectArray):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The value is invalid: %f"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "java.lang.Double"
+            uuid: "double"
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "finite"
+    sourceCodeSignature: "void finite(final double value, final String message, final\
+      \ Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "double"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "CECA725C82F797A5EADF2F2A6A142E51"
+  paths:
+  - testPathName: "finite1WhenDoubleNotIsInfiniteValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 238
+      expression: "Double.isNaN(value)"
+      range: "(238,13)-(238,31)"
+      evaluatedAs: false
+    - lineNumber: 238
+      expression: "Double.isInfinite(value)"
+      range: "(238,36)-(238,59)"
+      evaluatedAs: false
+  - testPathName: "finite1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 238
+      expression: "Double.isNaN(value)"
+      range: "(238,13)-(238,31)"
+      evaluatedAs: false
+    - lineNumber: 238
+      expression: "Double.isInfinite(value)"
+      range: "(238,36)-(238,59)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "finite1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s1"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 238
+      expression: "Double.isNaN(value)"
+      range: "(238,13)-(238,31)"
+      evaluatedAs: false
+    - lineNumber: 238
+      expression: "Double.isInfinite(value)"
+      range: "(238,36)-(238,59)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "void inclusiveBetween(final double start, final double end,\
+      \ final double value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "double"
+    - name: "end"
+      type: "double"
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "EDE0A8CE820B9A405282BBC0CBB149B1"
+  paths:
+  - testPathName: "inclusiveBetweenWhenValueGreaterThanEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.3125
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value null is not in the specified inclusive range of null\
+                \ to null"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 274
+      expression: "value < start"
+      range: "(274,13)-(274,25)"
+      evaluatedAs: false
+    - lineNumber: 274
+      expression: "value > end"
+      range: "(274,30)-(274,40)"
+      evaluatedAs: true
+  - testPathName: "inclusiveBetweenWhenValueNotGreaterThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 274
+      expression: "value < start"
+      range: "(274,13)-(274,25)"
+      evaluatedAs: false
+    - lineNumber: 274
+      expression: "value > end"
+      range: "(274,30)-(274,40)"
+      evaluatedAs: false
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "void inclusiveBetween(final double start, final double end,\
+      \ final double value, final String message)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "double"
+    - name: "end"
+      type: "double"
+    - name: "value"
+      type: "double"
+    - name: "message"
+      type: "java.lang.String"
+    instructionFingerprint: "EEC4652898DCC6D3E112002428B6FA74"
+  paths:
+  - testPathName: "inclusiveBetween1WhenValueGreaterThanEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.25
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 295
+      expression: "value < start"
+      range: "(295,13)-(295,25)"
+      evaluatedAs: false
+    - lineNumber: 295
+      expression: "value > end"
+      range: "(295,30)-(295,40)"
+      evaluatedAs: true
+  - testPathName: "inclusiveBetween1WhenValueNotGreaterThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 295
+      expression: "value < start"
+      range: "(295,13)-(295,25)"
+      evaluatedAs: false
+    - lineNumber: 295
+      expression: "value > end"
+      range: "(295,30)-(295,40)"
+      evaluatedAs: false
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "void inclusiveBetween(final long start, final long end,\
+      \ final long value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "long"
+    - name: "end"
+      type: "long"
+    - name: "value"
+      type: "long"
+    instructionFingerprint: "02C39E2B1EBD536FDAB7A27028392305"
+  paths:
+  - testPathName: "inclusiveBetween2WhenValueGreaterThanEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value 3 is not in the specified inclusive range of 2 to\
+                \ 2"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 315
+      expression: "value < start"
+      range: "(315,13)-(315,25)"
+      evaluatedAs: false
+    - lineNumber: 315
+      expression: "value > end"
+      range: "(315,30)-(315,40)"
+      evaluatedAs: true
+  - testPathName: "inclusiveBetween2WhenValueNotGreaterThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 315
+      expression: "value < start"
+      range: "(315,13)-(315,25)"
+      evaluatedAs: false
+    - lineNumber: 315
+      expression: "value > end"
+      range: "(315,30)-(315,40)"
+      evaluatedAs: false
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "void inclusiveBetween(final long start, final long end,\
+      \ final long value, final String message)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "long"
+    - name: "end"
+      type: "long"
+    - name: "value"
+      type: "long"
+    - name: "message"
+      type: "java.lang.String"
+    instructionFingerprint: "ABD05AD321AFBB973D7C8F51A2CC728C"
+  paths:
+  - testPathName: "inclusiveBetween3WhenValueGreaterThanEndThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 336
+      expression: "value < start"
+      range: "(336,13)-(336,25)"
+      evaluatedAs: false
+    - lineNumber: 336
+      expression: "value > end"
+      range: "(336,30)-(336,40)"
+      evaluatedAs: true
+  - testPathName: "inclusiveBetween3WhenValueNotGreaterThanEnd"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 336
+      expression: "value < start"
+      range: "(336,13)-(336,25)"
+      evaluatedAs: false
+    - lineNumber: 336
+      expression: "value > end"
+      range: "(336,30)-(336,40)"
+      evaluatedAs: false
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "<T> void inclusiveBetween(final T start, final T end, final\
+      \ Comparable<T> value)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "java.lang.Object"
+    - name: "end"
+      type: "java.lang.Object"
+    - name: "value"
+      type: "java.lang.Comparable"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "5EB8EF06CF634ACE67D150524F7D42E3"
+  paths:
+  - testPathName: "inclusiveBetween4WhenValueCompareToEndGreaterThan0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "start"
+      nameForMock: "start"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "end"
+      nameForMock: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+      nameForMock: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The value null is not in the specified inclusive range of null\
+                \ to null"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 357
+      expression: "value.compareTo(start) < 0"
+      range: "(357,13)-(357,38)"
+      evaluatedAs: false
+    - lineNumber: 357
+      expression: "value.compareTo(end) > 0"
+      range: "(357,43)-(357,66)"
+      evaluatedAs: true
+  - testPathName: "inclusiveBetween4WhenValueCompareToEndNotGreaterThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 357
+      expression: "value.compareTo(start) < 0"
+      range: "(357,13)-(357,38)"
+      evaluatedAs: false
+    - lineNumber: 357
+      expression: "value.compareTo(end) > 0"
+      range: "(357,43)-(357,66)"
+      evaluatedAs: false
+- method:
+    name: "inclusiveBetween"
+    sourceCodeSignature: "<T> void inclusiveBetween(final T start, final T end, final\
+      \ Comparable<T> value, final String message, final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "start"
+      type: "java.lang.Object"
+    - name: "end"
+      type: "java.lang.Object"
+    - name: "value"
+      type: "java.lang.Comparable"
+      genericType: "java.lang.Object"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "D1FF070D472A24BADBCD8B0DAA88B6B2"
+  paths:
+  - testPathName: "inclusiveBetween5WhenValueCompareToEndNotGreaterThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 381
+      expression: "value.compareTo(start) < 0"
+      range: "(381,13)-(381,38)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "value.compareTo(end) > 0"
+      range: "(381,43)-(381,66)"
+      evaluatedAs: false
+  - testPathName: "inclusiveBetween5WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 381
+      expression: "value.compareTo(start) < 0"
+      range: "(381,13)-(381,38)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "value.compareTo(end) > 0"
+      range: "(381,43)-(381,66)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "inclusiveBetween5WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "start"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "end"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 381
+      expression: "value.compareTo(start) < 0"
+      range: "(381,13)-(381,38)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "value.compareTo(end) > 0"
+      range: "(381,43)-(381,66)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "isAssignableFrom"
+    sourceCodeSignature: "void isAssignableFrom(final Class<?> superType, final Class<?>\
+      \ type)"
+    returnType: "void"
+    parameters:
+    - name: "superType"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "?"
+    instructionFingerprint: "7BE8E4E7A6F9185EE35B215D2CDCB00F"
+  paths:
+  - testPathName: "isAssignableFromWhenSuperTypeNotIsAssignableFromTypeThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "superType"
+      valueUuid: "superType"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "superType"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot assign a A to a B"
+            valueType: "java.lang.String"
+            uuid: "string3"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 403
+      expression: "type == null"
+      range: "(403,13)-(403,24)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "superType == null"
+      range: "(403,29)-(403,45)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "!superType.isAssignableFrom(type)"
+      range: "(403,50)-(403,82)"
+      evaluatedAs: true
+  - testPathName: "isAssignableFromWhenSuperTypeIsAssignableFromType"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "superType"
+      valueUuid: "superType"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "superType"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 403
+      expression: "type == null"
+      range: "(403,13)-(403,24)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "superType == null"
+      range: "(403,29)-(403,45)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "!superType.isAssignableFrom(type)"
+      range: "(403,50)-(403,82)"
+      evaluatedAs: false
+- method:
+    name: "isAssignableFrom"
+    sourceCodeSignature: "void isAssignableFrom(final Class<?> superType, final Class<?>\
+      \ type, final String message, final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "superType"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "A1D6281B84AAC94C201598EBF9EFBEB8"
+  paths:
+  - testPathName: "isAssignableFrom1WhenSuperTypeIsAssignableFromType"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "superType"
+      valueUuid: "superType"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "superType"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 428
+      expression: "!superType.isAssignableFrom(type)"
+      range: "(428,13)-(428,45)"
+      evaluatedAs: false
+  - testPathName: "isAssignableFrom1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "superType"
+      valueUuid: "superType"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "superType"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 428
+      expression: "!superType.isAssignableFrom(type)"
+      range: "(428,13)-(428,45)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "isAssignableFrom1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "superType"
+      valueUuid: "superType"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "superType"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 428
+      expression: "!superType.isAssignableFrom(type)"
+      range: "(428,13)-(428,45)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "isInstanceOf"
+    sourceCodeSignature: "void isInstanceOf(final Class<?> type, final Object obj)"
+    returnType: "void"
+    parameters:
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "E1986EE04BFD8E865F6EE1B2A72A6F35"
+  paths:
+  - testPathName: "isInstanceOfWhenTypeNotIsInstanceObjThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Object) :\
+        \ boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Expected type: , actual: A"
+            valueType: "java.lang.String"
+            uuid: "string3"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 450
+      expression: "!type.isInstance(obj)"
+      range: "(450,13)-(450,33)"
+      evaluatedAs: true
+  - testPathName: "isInstanceOfWhenTypeIsInstanceObj"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 450
+      expression: "!type.isInstance(obj)"
+      range: "(450,13)-(450,33)"
+      evaluatedAs: false
+- method:
+    name: "isInstanceOf"
+    sourceCodeSignature: "void isInstanceOf(final Class<?> type, final Object obj,\
+      \ final String message, final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "obj"
+      type: "java.lang.Object"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "2BD68A272F87B4CFCBE7089FC9958DEC"
+  paths:
+  - testPathName: "isInstanceOf1WhenTypeIsInstanceObj"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 473
+      expression: "!type.isInstance(obj)"
+      range: "(473,13)-(473,33)"
+      evaluatedAs: false
+  - testPathName: "isInstanceOf1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Object) :\
+        \ boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 473
+      expression: "!type.isInstance(obj)"
+      range: "(473,13)-(473,33)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "isInstanceOf1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Object) :\
+        \ boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "type"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 473
+      expression: "!type.isInstance(obj)"
+      range: "(473,13)-(473,33)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "isTrue"
+    sourceCodeSignature: "void isTrue(final boolean expression)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    instructionFingerprint: "3DB8A6DD85632CD344FC789D9C308B19"
+  paths:
+  - testPathName: "isTrueWhenNotExpressionThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The validated expression is false"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 498
+      expression: "!expression"
+      range: "(498,13)-(498,23)"
+      evaluatedAs: true
+  - testPathName: "isTrueWhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 498
+      expression: "!expression"
+      range: "(498,13)-(498,23)"
+      evaluatedAs: false
+- method:
+    name: "isTrue"
+    sourceCodeSignature: "void isTrue(final boolean expression, final String message,\
+      \ final double value)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "526646F139F31DB8F1FAC86AC1BC2C83"
+  paths:
+  - testPathName: "isTrue1WhenNotExpressionThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 523
+      expression: "!expression"
+      range: "(523,13)-(523,23)"
+      evaluatedAs: true
+  - testPathName: "isTrue1WhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 523
+      expression: "!expression"
+      range: "(523,13)-(523,23)"
+      evaluatedAs: false
+- method:
+    name: "isTrue"
+    sourceCodeSignature: "void isTrue(final boolean expression, final String message,\
+      \ final long value)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "value"
+      type: "long"
+    instructionFingerprint: "9B69AE478C9114F1F0EFD82F8B3FCE0D"
+  paths:
+  - testPathName: "isTrue2WhenNotExpressionThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 548
+      expression: "!expression"
+      range: "(548,13)-(548,23)"
+      evaluatedAs: true
+  - testPathName: "isTrue2WhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 548
+      expression: "!expression"
+      range: "(548,13)-(548,23)"
+      evaluatedAs: false
+- method:
+    name: "isTrue"
+    sourceCodeSignature: "void isTrue(final boolean expression, final String message,\
+      \ final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "CB30A1F773A385CA691C47D2C0FF41EF"
+  paths:
+  - testPathName: "isTrue3WhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 571
+      expression: "!expression"
+      range: "(571,13)-(571,23)"
+      evaluatedAs: false
+  - testPathName: "isTrue3WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 571
+      expression: "!expression"
+      range: "(571,13)-(571,23)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "isTrue3WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 571
+      expression: "!expression"
+      range: "(571,13)-(571,23)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "matchesPattern"
+    sourceCodeSignature: "void matchesPattern(final CharSequence input, final String\
+      \ pattern)"
+    returnType: "void"
+    parameters:
+    - name: "input"
+      type: "java.lang.CharSequence"
+    - name: "pattern"
+      type: "java.lang.String"
+    instructionFingerprint: "AA963347B2ADFBCA0080427E6CA20412"
+  paths:
+  - testPathName: "matchesPatternWhenPatternNotMatchesPatternInputThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "input1"
+      valueType: "java.lang.String"
+      uuid: "input"
+      nameForMock: "input"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The string input1 does not match the pattern A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 592
+      expression: "!Pattern.matches(pattern, input)"
+      range: "(592,13)-(592,44)"
+      evaluatedAs: true
+  - testPathName: "matchesPatternWhenPatternMatchesPatternInput"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.regex.Pattern.matches(java.lang.String,java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "input1"
+      valueType: "java.lang.String"
+      uuid: "input"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 592
+      expression: "!Pattern.matches(pattern, input)"
+      range: "(592,13)-(592,44)"
+      evaluatedAs: false
+- method:
+    name: "matchesPattern"
+    sourceCodeSignature: "void matchesPattern(final CharSequence input, final String\
+      \ pattern, final String message, final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "input"
+      type: "java.lang.CharSequence"
+    - name: "pattern"
+      type: "java.lang.String"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "4340D8FFD4A843B41EB0A9DD7B0BE0E0"
+  paths:
+  - testPathName: "matchesPattern1WhenPatternMatchesPatternInput"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.regex.Pattern.matches(java.lang.String,java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "input1"
+      valueType: "java.lang.String"
+      uuid: "input"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 615
+      expression: "!Pattern.matches(pattern, input)"
+      range: "(615,13)-(615,44)"
+      evaluatedAs: false
+  - testPathName: "matchesPattern1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "input1"
+      valueType: "java.lang.String"
+      uuid: "input"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 615
+      expression: "!Pattern.matches(pattern, input)"
+      range: "(615,13)-(615,44)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "matchesPattern1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.regex.Pattern.matches(java.lang.String,java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "input1"
+      valueType: "java.lang.String"
+      uuid: "input"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 615
+      expression: "!Pattern.matches(pattern, input)"
+      range: "(615,13)-(615,44)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "noNullElements"
+    sourceCodeSignature: "<T extends Iterable<?>> T noNullElements(final T iterable)"
+    returnType: "java.lang.Iterable"
+    parameters:
+    - name: "iterable"
+      type: "java.lang.Iterable"
+    instructionFingerprint: "A155992F45CE6300313E2A610A9D1C7F"
+  paths:
+  - testPathName: "noNullElementsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "noNullElements(iterable,message,objectArray):iterable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "iterable2"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.lang.Iterable"
+      uuid: "iterable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.lang.Iterable"
+      uuid: "iterable2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated collection contains null element at index: %d"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "noNullElements"
+    sourceCodeSignature: "<T extends Iterable<?>> T noNullElements(final T iterable,\
+      \ final String message, final Object... values)"
+    returnType: "java.lang.Iterable"
+    parameters:
+    - name: "iterable"
+      type: "java.lang.Iterable"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "12CE152D10407C3206FF1CEF10A7823D"
+  paths:
+  - testPathName: "noNullElements1WhenItNextIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "iterable"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+          valueType: "java.lang.Object"
+          uuid: "object"
+      valueType: "java.lang.Iterable"
+      uuid: "iterable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 671
+      expression: "it.hasNext()"
+      range: "(671,58)-(671,69)"
+      evaluatedAs: true
+    - lineNumber: 672
+      expression: "it.next() == null"
+      range: "(672,17)-(672,33)"
+      evaluatedAs: false
+  - testPathName: "noNullElements1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.addAll(java.lang.Object[],java.lang.Object[])\
+        \ : java.lang.Object[]"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "NULL"
+          valueType: "java.lang.Object"
+          uuid: "object"
+      valueType: "java.lang.Iterable"
+      uuid: "iterable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 671
+      expression: "it.hasNext()"
+      range: "(671,58)-(671,69)"
+      evaluatedAs: true
+    - lineNumber: 672
+      expression: "it.next() == null"
+      range: "(672,17)-(672,33)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "noNullElements1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "NULL"
+          valueType: "java.lang.Object"
+          uuid: "object"
+      valueType: "java.lang.Iterable"
+      uuid: "iterable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 671
+      expression: "it.hasNext()"
+      range: "(671,58)-(671,69)"
+      evaluatedAs: true
+    - lineNumber: 672
+      expression: "it.next() == null"
+      range: "(672,17)-(672,33)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "noNullElements"
+    sourceCodeSignature: "<T> T[] noNullElements(final T[] array)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "30E3AAF32C71AD5EDEAFAAE67A491F58"
+  paths:
+  - testPathName: "noNullElements2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "noNullElements(array,message,objectArray):objectArray2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated array contains null element at index: %d"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "noNullElements"
+    sourceCodeSignature: "<T> T[] noNullElements(final T[] array, final String message,\
+      \ final Object... values)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "47085D78884D48011EF16150A7E7D3BF"
+  paths:
+  - testPathName: "noNullElements3WhenIIndexOfArrayIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "array"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 730
+      expression: "i < array.length"
+      range: "(730,25)-(730,40)"
+      evaluatedAs: true
+    - lineNumber: 731
+      expression: "array[i] == null"
+      range: "(731,17)-(731,32)"
+      evaluatedAs: false
+  - testPathName: "noNullElements3WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.add(java.lang.Object[],java.lang.Integer)\
+        \ : java.lang.Integer[]"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "object"
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 730
+      expression: "i < array.length"
+      range: "(730,25)-(730,40)"
+      evaluatedAs: true
+    - lineNumber: 731
+      expression: "array[i] == null"
+      range: "(731,17)-(731,32)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "noNullElements3WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.add(java.lang.Object[],java.lang.Integer)\
+        \ : java.lang.Integer[]"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s1"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 730
+      expression: "i < array.length"
+      range: "(730,25)-(730,40)"
+      evaluatedAs: true
+    - lineNumber: 731
+      expression: "array[i] == null"
+      range: "(731,17)-(731,32)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notBlank"
+    sourceCodeSignature: "<T extends CharSequence> T notBlank(final T chars)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "FBB58EE2CA65EDB9ECC04265400DFDF3"
+  paths:
+  - testPathName: "notBlankTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notBlank(chars,message,objectArray):charSequence"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSequence"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "charSequence1"
+      valueType: "java.lang.String"
+      uuid: "charSequence"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated character sequence is blank"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notBlank"
+    sourceCodeSignature: "<T extends CharSequence> T notBlank(final T chars, final\
+      \ String message, final Object... values)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "987D2C17762F2A194D5AAEAB6EFC7E8B"
+  paths:
+  - testPathName: "notBlank1WhenStringUtilsNotIsBlankChars"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "chars"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 781
+      expression: "StringUtils.isBlank(chars)"
+      range: "(781,13)-(781,38)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notBlank1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.StringUtils.isBlank(java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 781
+      expression: "StringUtils.isBlank(chars)"
+      range: "(781,13)-(781,38)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notBlank1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.StringUtils.isBlank(java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 781
+      expression: "StringUtils.isBlank(chars)"
+      range: "(781,13)-(781,38)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends Collection<?>> T notEmpty(final T collection)"
+    returnType: "java.util.Collection"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+    instructionFingerprint: "A7253DD31FA752CE0A65F9B2D44DAC50"
+  paths:
+  - testPathName: "notEmptyTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notEmpty(collection,message,objectArray):collection2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection2"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated collection is empty"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends Map<?, ?>> T notEmpty(final T map)"
+    returnType: "java.util.Map"
+    parameters:
+    - name: "map"
+      type: "java.util.Map"
+    instructionFingerprint: "7129C184717BA0B9AA814F45E1A915BE"
+  paths:
+  - testPathName: "notEmpty1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notEmpty(map,message,objectArray):map2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "map2"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      uuid: "map"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      uuid: "map2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated map is empty"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends CharSequence> T notEmpty(final T chars)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "DD22E5CBEC9859C63F6EB57115D8D989"
+  paths:
+  - testPathName: "notEmpty2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notEmpty(chars,message,objectArray):charSequence"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSequence"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "charSequence1"
+      valueType: "java.lang.String"
+      uuid: "charSequence"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated character sequence is empty"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends Collection<?>> T notEmpty(final T collection,\
+      \ final String message, final Object... values)"
+    returnType: "java.util.Collection"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "A8EE1B278EBA56EA2264D8578D98A051"
+  paths:
+  - testPathName: "notEmpty3WhenCollectionNotIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "NULL"
+          uuid: "collectionItem0"
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 866
+      expression: "collection.isEmpty()"
+      range: "(866,13)-(866,32)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty3WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 866
+      expression: "collection.isEmpty()"
+      range: "(866,13)-(866,32)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty3WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 866
+      expression: "collection.isEmpty()"
+      range: "(866,13)-(866,32)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends Map<?, ?>> T notEmpty(final T map, final String\
+      \ message, final Object... values)"
+    returnType: "java.util.Map"
+    parameters:
+    - name: "map"
+      type: "java.util.Map"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "EE5B5E79D08F482C1AE8023248694061"
+  paths:
+  - testPathName: "notEmpty4WhenMapNotIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "map"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "mapKey"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "mapValue"
+          uuid: "pair"
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.Object, java.lang.Object"
+      uuid: "map"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 890
+      expression: "map.isEmpty()"
+      range: "(890,13)-(890,25)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty4WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      uuid: "map"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 890
+      expression: "map.isEmpty()"
+      range: "(890,13)-(890,25)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty4WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      uuid: "map"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 890
+      expression: "map.isEmpty()"
+      range: "(890,13)-(890,25)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T extends CharSequence> T notEmpty(final T chars, final\
+      \ String message, final Object... values)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "62B5D13F199ED81091B1A284A07D6725"
+  paths:
+  - testPathName: "notEmpty5WhenCharsLengthNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "chars"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 914
+      expression: "chars.length() == 0"
+      range: "(914,13)-(914,31)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty5WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 914
+      expression: "chars.length() == 0"
+      range: "(914,13)-(914,31)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty5WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 914
+      expression: "chars.length() == 0"
+      range: "(914,13)-(914,31)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T> T[] notEmpty(final T[] array)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "3D1AAC1DF60B1714570C9D907E7A3614"
+  paths:
+  - testPathName: "notEmpty6Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notEmpty(array,message,objectArray):objectArray2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated array is empty"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notEmpty"
+    sourceCodeSignature: "<T> T[] notEmpty(final T[] array, final String message,\
+      \ final Object... values)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "A54B6ECA91FD98D7FEB009A0D8C6D5A4"
+  paths:
+  - testPathName: "notEmpty7WhenArrayLengthNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "array"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "arrayItem0"
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 958
+      expression: "array.length == 0"
+      range: "(958,13)-(958,29)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty7WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 958
+      expression: "array.length == 0"
+      range: "(958,13)-(958,29)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notEmpty7WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 958
+      expression: "array.length == 0"
+      range: "(958,13)-(958,29)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notNaN"
+    sourceCodeSignature: "void notNaN(final double value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "A0CD82CE9829BF5A4AAD2FF2FB1B2287"
+  paths:
+  - testPathName: "notNaNTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notNaN(value,message,objectArray):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated value is not a number"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "notNaN"
+    sourceCodeSignature: "void notNaN(final double value, final String message, final\
+      \ Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "double"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "491117C093282715C065C6994B45E6D6"
+  paths:
+  - testPathName: "notNaN1WhenDoubleNotIsNaNValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 996
+      expression: "Double.isNaN(value)"
+      range: "(996,13)-(996,31)"
+      evaluatedAs: false
+  - testPathName: "notNaN1WhenArrayUtilsIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 996
+      expression: "Double.isNaN(value)"
+      range: "(996,13)-(996,31)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "notNaN1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s1"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 996
+      expression: "Double.isNaN(value)"
+      range: "(996,13)-(996,31)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "notNull"
+    sourceCodeSignature: "<T> T notNull(final T object)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "433EC5EA4E9BB28F287415DC829F486F"
+  paths:
+  - testPathName: "notNullTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "notNull(object,message,objectArray):object2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated object is null"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "notNull"
+    sourceCodeSignature: "<T> T notNull(final T object, final String message, final\
+      \ Object... values)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "E0A261CA923D035902235B67FA6DD4E2"
+  paths:
+  - testPathName: "notNull1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T extends Collection<?>> T validIndex(final T collection,\
+      \ final int index)"
+    returnType: "java.util.Collection"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+    - name: "index"
+      type: "int"
+    instructionFingerprint: "0655461A47E4D7DCCB08A51EF6485EF6"
+  paths:
+  - testPathName: "validIndexTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "validIndex(collection,index,message,objectArray):collection2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection2"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated collection index is invalid: %d"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "integer"
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T extends CharSequence> T validIndex(final T chars, final\
+      \ int index)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    - name: "index"
+      type: "int"
+    instructionFingerprint: "20C5638004B1DF235BE3C27A0882E3A0"
+  paths:
+  - testPathName: "validIndex1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "validIndex(chars,index,message,objectArray):charSequence"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSequence"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "charSequence1"
+      valueType: "java.lang.String"
+      uuid: "charSequence"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated character sequence index is invalid: %d"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "integer"
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T extends Collection<?>> T validIndex(final T collection,\
+      \ final int index, final String message, final Object... values)"
+    returnType: "java.util.Collection"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+    - name: "index"
+      type: "int"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "B28835451BD45A1DADCA87BDBC54B1C2"
+  paths:
+  - testPathName: "validIndex2WhenIndexLessThanCollectionSize"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "NULL"
+          uuid: "collectionItem0"
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 1116
+      expression: "index < 0"
+      range: "(1116,13)-(1116,21)"
+      evaluatedAs: false
+    - lineNumber: 1116
+      expression: "index >= collection.size()"
+      range: "(1116,26)-(1116,51)"
+      evaluatedAs: false
+  - testPathName: "validIndex2WhenArrayUtilsIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1116
+      expression: "index < 0"
+      range: "(1116,13)-(1116,21)"
+      evaluatedAs: false
+    - lineNumber: 1116
+      expression: "index >= collection.size()"
+      range: "(1116,26)-(1116,51)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "validIndex2WhenIndexGreaterThanOrEqualsToCollectionSizeAndArrayUtilsNotIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1116
+      expression: "index < 0"
+      range: "(1116,13)-(1116,21)"
+      evaluatedAs: false
+    - lineNumber: 1116
+      expression: "index >= collection.size()"
+      range: "(1116,26)-(1116,51)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T extends CharSequence> T validIndex(final T chars, final\
+      \ int index, final String message, final Object... values)"
+    returnType: "java.lang.CharSequence"
+    parameters:
+    - name: "chars"
+      type: "java.lang.CharSequence"
+    - name: "index"
+      type: "int"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "E9D3253FD184F456F14FD12C3F4AC18D"
+  paths:
+  - testPathName: "validIndex3WhenIndexLessThanCharsLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "chars"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 1145
+      expression: "index < 0"
+      range: "(1145,13)-(1145,21)"
+      evaluatedAs: false
+    - lineNumber: 1145
+      expression: "index >= chars.length()"
+      range: "(1145,26)-(1145,48)"
+      evaluatedAs: false
+  - testPathName: "validIndex3WhenArrayUtilsIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1145
+      expression: "index < 0"
+      range: "(1145,13)-(1145,21)"
+      evaluatedAs: false
+    - lineNumber: 1145
+      expression: "index >= chars.length()"
+      range: "(1145,26)-(1145,48)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "validIndex3WhenIndexGreaterThanOrEqualsToCharsLengthAndArrayUtilsNotIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "chars1"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1145
+      expression: "index < 0"
+      range: "(1145,13)-(1145,21)"
+      evaluatedAs: false
+    - lineNumber: 1145
+      expression: "index >= chars.length()"
+      range: "(1145,26)-(1145,48)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T> T[] validIndex(final T[] array, final int index)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    - name: "index"
+      type: "int"
+    instructionFingerprint: "1AA1E5B528B1D63188E111E2E3104DF9"
+  paths:
+  - testPathName: "validIndex4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "STATIC"
+      name: "Validate.class"
+      valueUuid: "Validate.class"
+      methodExercised:
+        expression: "validIndex(array,index,message,objectArray):objectArray2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Validate"
+      uuid: "Validate.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "The validated array index is invalid: %d"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "integer"
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+- method:
+    name: "validIndex"
+    sourceCodeSignature: "<T> T[] validIndex(final T[] array, final int index, final\
+      \ String message, final Object... values)"
+    returnType: "java.lang.Object[]"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    - name: "index"
+      type: "int"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "B96A3EA1460A0B829ADAC25CE7732ED6"
+  paths:
+  - testPathName: "validIndex5WhenIndexLessThanArrayLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "array"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "arrayItem0"
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    branches:
+    - lineNumber: 1199
+      expression: "index < 0"
+      range: "(1199,13)-(1199,21)"
+      evaluatedAs: false
+    - lineNumber: 1199
+      expression: "index >= array.length"
+      range: "(1199,26)-(1199,46)"
+      evaluatedAs: false
+  - testPathName: "validIndex5WhenArrayUtilsIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1199
+      expression: "index < 0"
+      range: "(1199,13)-(1199,21)"
+      evaluatedAs: false
+    - lineNumber: 1199
+      expression: "index >= array.length"
+      range: "(1199,26)-(1199,46)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "validIndex5WhenIndexGreaterThanOrEqualsToArrayLengthAndArrayUtilsNotIsEmptyValuesThrowsIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INPUT"
+      name: "index"
+      valueUuid: "index"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "indexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "index"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IndexOutOfBoundsException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IndexOutOfBoundsException"
+      uuid: "indexOutOfBoundsException"
+    branches:
+    - lineNumber: 1199
+      expression: "index < 0"
+      range: "(1199,13)-(1199,21)"
+      evaluatedAs: false
+    - lineNumber: 1199
+      expression: "index >= array.length"
+      range: "(1199,26)-(1199,46)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+- method:
+    name: "validState"
+    sourceCodeSignature: "void validState(final boolean expression)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    instructionFingerprint: "6B0E3BB82A42611C52E82E14B6EBA010"
+  paths:
+  - testPathName: "validStateWhenNotExpressionThrowsIllegalStateException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The validated state is false"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 1224
+      expression: "!expression"
+      range: "(1224,13)-(1224,23)"
+      evaluatedAs: true
+  - testPathName: "validStateWhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 1224
+      expression: "!expression"
+      range: "(1224,13)-(1224,23)"
+      evaluatedAs: false
+- method:
+    name: "validState"
+    sourceCodeSignature: "void validState(final boolean expression, final String message,\
+      \ final Object... values)"
+    returnType: "void"
+    parameters:
+    - name: "expression"
+      type: "boolean"
+    - name: "message"
+      type: "java.lang.String"
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "474F6B7755B7B46C7C219CC245A683C7"
+  paths:
+  - testPathName: "validState1WhenExpression"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 1245
+      expression: "!expression"
+      range: "(1245,13)-(1245,23)"
+      evaluatedAs: false
+  - testPathName: "validState1WhenArrayUtilsIsEmptyValuesThrowsIllegalStateException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 1245
+      expression: "!expression"
+      range: "(1245,13)-(1245,23)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: true
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"
+  - testPathName: "validState1WhenArrayUtilsNotIsEmptyValuesThrowsIllegalStateException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "expression"
+      valueUuid: "expression"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expression"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 1245
+      expression: "!expression"
+      range: "(1245,13)-(1245,23)"
+      evaluatedAs: true
+    - lineNumber: 256
+      expression: "ArrayUtils.isEmpty(values)"
+      range: "(256,16)-(256,41)"
+      evaluatedAs: false
+      internalMethodName: "getMessage"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.Validate"

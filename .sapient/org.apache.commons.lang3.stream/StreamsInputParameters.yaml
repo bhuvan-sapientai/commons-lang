@@ -1,0 +1,921 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.stream.Streams"
+methods:
+- method:
+    name: "failableStream"
+    sourceCodeSignature: "<T> FailableStream<T> failableStream(final Collection<T>\
+      \ stream)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "8B50664CE1EE496E081673FB53AA3AD4"
+  paths:
+  - testPathName: "failableStreamTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(stream):stream2"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "failableStream(stream2):streamsFailableStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            uuid: "streamsFailableStream-stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "failableStream"
+    sourceCodeSignature: "<T> FailableStream<T> failableStream(final Stream<T> stream)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.stream.Stream"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "59403A62A8B761A72172358EC717800C"
+  paths:
+  - testPathName: "failableStream1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "failableStream"
+    sourceCodeSignature: "<T> FailableStream<T> failableStream(final T... values)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "222A5C728F44B06787FCC812221D4B2D"
+  paths:
+  - testPathName: "failableStream2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(values):stream"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "failableStream(stream):streamsFailableStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            uuid: "streamsFailableStream-stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "instancesOf"
+    sourceCodeSignature: "<E> Stream<E> instancesOf(final Class<? super E> clazz,\
+      \ final Collection<? super E> collection)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "? super java.lang.Object"
+    - name: "collection"
+      type: "java.util.Collection"
+      genericType: "? super java.lang.Object"
+    instructionFingerprint: "AA9EC2477AA971D87743FC5AEE9A3CEF"
+  paths:
+  - testPathName: "instancesOfWhenStreamIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(collection):stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream3"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "clazz"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "? super java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "NULL"
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream3"
+    branches:
+    - lineNumber: 713
+      expression: "stream == null"
+      range: "(713,16)-(713,29)"
+      evaluatedAs: true
+      internalMethodName: "of"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.stream.Streams"
+  - testPathName: "instancesOfWhenStreamIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(collection):stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.stream.Stream.filter(java.util.function.Predicate)\
+        \ : java.util.stream.Stream"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "clazz"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "? super java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream2"
+    branches:
+    - lineNumber: 713
+      expression: "stream == null"
+      range: "(713,16)-(713,29)"
+      evaluatedAs: false
+      internalMethodName: "of"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.stream.Streams"
+- method:
+    name: "nonNull"
+    sourceCodeSignature: "<E> Stream<E> nonNull(final Collection<E> collection)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "43BDA9A9FFC9EC2890F21952963AFCC9"
+  paths:
+  - testPathName: "nonNullTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(collection):stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.stream.Stream.filter(java.util.function.Predicate)\
+        \ : java.util.stream.Stream"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream2"
+- method:
+    name: "nonNull"
+    sourceCodeSignature: "<E> Stream<E> nonNull(final E... array)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "array"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "22A59103CE81C85C58A6FEF30B700A1A"
+  paths:
+  - testPathName: "nonNull1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "of(array):stream"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "nonNull(stream):stream2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream2"
+- method:
+    name: "nonNull"
+    sourceCodeSignature: "<E> Stream<E> nonNull(final Stream<E> stream)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "stream"
+      type: "java.util.stream.Stream"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "9BA8F4C22D371BC506ACD3DF35423BCC"
+  paths:
+  - testPathName: "nonNull2WhenStreamIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream3"
+    branches:
+    - lineNumber: 713
+      expression: "stream == null"
+      range: "(713,16)-(713,29)"
+      evaluatedAs: true
+      internalMethodName: "of"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.stream.Streams"
+  - testPathName: "nonNull2WhenStreamIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.stream.Stream.filter(java.util.function.Predicate)\
+        \ : java.util.stream.Stream"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream2"
+    branches:
+    - lineNumber: 713
+      expression: "stream == null"
+      range: "(713,16)-(713,29)"
+      evaluatedAs: false
+      internalMethodName: "of"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.stream.Streams"
+- method:
+    name: "of"
+    sourceCodeSignature: "<E> Stream<E> of(final Collection<E> collection)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "1B17D9C09B5C64D86C86BBC992948B41"
+  paths:
+  - testPathName: "ofWhenCollectionIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 665
+      expression: "collection == null"
+      range: "(665,16)-(665,33)"
+      evaluatedAs: true
+  - testPathName: "ofWhenCollectionIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 665
+      expression: "collection == null"
+      range: "(665,16)-(665,33)"
+      evaluatedAs: false
+- method:
+    name: "of"
+    sourceCodeSignature: "<E> Stream<E> of(final Enumeration<E> enumeration)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "enumeration"
+      type: "java.util.Enumeration"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "4DF79002E4FC2BF66F0EFBE1CDBA46D5"
+  paths:
+  - testPathName: "of1Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumeration"
+      valueUuid: "enumeration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.Enumeration"
+      uuid: "enumeration"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+- method:
+    name: "of"
+    sourceCodeSignature: "<E> Stream<E> of(final Iterable<E> iterable)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "iterable"
+      type: "java.lang.Iterable"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "30EE098E5D505C5A2742BEF222DA7C10"
+  paths:
+  - testPathName: "of2WhenIterableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Iterable"
+      genericValueType: "java.lang.Object"
+      uuid: "iterable"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 689
+      expression: "iterable == null"
+      range: "(689,16)-(689,31)"
+      evaluatedAs: true
+  - testPathName: "of2WhenIterableIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterable"
+      valueUuid: "iterable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.lang.Iterable"
+      genericValueType: "java.lang.Object"
+      uuid: "iterable"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.StreamSupport"
+        method: "stream"
+        methodParameters:
+        - value:
+            sapientType: "MOCK"
+            valueType: "java.util.Spliterator"
+            uuid: "spliterator"
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean1"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 689
+      expression: "iterable == null"
+      range: "(689,16)-(689,31)"
+      evaluatedAs: false
+- method:
+    name: "of"
+    sourceCodeSignature: "<E> Stream<E> of(final Iterator<E> iterator)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "iterator"
+      type: "java.util.Iterator"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "05EC907DB348BEF3D0AD01022BE4C66A"
+  paths:
+  - testPathName: "of3WhenIteratorIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "iterator"
+      valueUuid: "iterator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.Iterator"
+      genericValueType: "java.lang.Object"
+      uuid: "iterator"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 701
+      expression: "iterator == null"
+      range: "(701,16)-(701,31)"
+      evaluatedAs: true
+  - testPathName: "of3WhenIteratorIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "iterator"
+      valueUuid: "iterator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Spliterators.spliteratorUnknownSize(java.util.Iterator<java.lang.Object>,int)\
+        \ : java.util.Spliterator<java.lang.Object>"
+    allValues:
+    - sapientType: "ITERATOR"
+      content: !<iterator>
+        collectionValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "iteratorCollection"
+      valueType: "java.util.Iterator"
+      genericValueType: "java.lang.Object"
+      uuid: "iterator"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 701
+      expression: "iterator == null"
+      range: "(701,16)-(701,31)"
+      evaluatedAs: false
+- method:
+    name: "of"
+    sourceCodeSignature: "<T> Stream<T> of(final T... values)"
+    returnType: "java.util.stream.Stream"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "96B87D3108F345414310936007C73A1B"
+  paths:
+  - testPathName: "of5WhenValuesIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 726
+      expression: "values == null"
+      range: "(726,16)-(726,29)"
+      evaluatedAs: true
+  - testPathName: "of5WhenValuesIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    branches:
+    - lineNumber: 726
+      expression: "values == null"
+      range: "(726,16)-(726,29)"
+      evaluatedAs: false
+- method:
+    name: "stream"
+    sourceCodeSignature: "<E> FailableStream<E> stream(final Collection<E> collection)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "C0FC222616B89F632922A4CFB23C15EE"
+  paths:
+  - testPathName: "streamTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "failableStream(collection):streamsFailableStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "collection"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            uuid: "streamsFailableStream-stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "stream"
+    sourceCodeSignature: "<T> FailableStream<T> stream(final Stream<T> stream)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.stream.Stream"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "AEED27F7DFF3D01EAD2BA4A932002CCD"
+  paths:
+  - testPathName: "stream1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "failableStream(stream):streamsFailableStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            uuid: "streamsFailableStream-stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "toArray"
+    sourceCodeSignature: "<T> Collector<T, ?, T[]> toArray(final Class<T> pElementType)"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.Object[]"
+    parameters:
+    - name: "pElementType"
+      type: "java.lang.Class"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "1DB2A07D3D21F6D508AA794628D71381"
+  paths:
+  - testPathName: "toArrayTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pElementType"
+      valueUuid: "pElementType"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsArrayCollector"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "pElementType"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$ArrayCollector"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "pElementType"
+      valueType: "org.apache.commons.lang3.stream.Streams$ArrayCollector"
+      uuid: "streamsArrayCollector"

@@ -1,0 +1,202 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.ClassLoaderUtils"
+methods:
+- method:
+    name: "getSystemURLs"
+    sourceCodeSignature: "URL[] getSystemURLs()"
+    returnType: "java.net.URL[]"
+    instructionFingerprint: "95C57F33FF4E68CD8A82614096D73F0E"
+  paths:
+  - testPathName: "getSystemURLsWhenClNotInstanceOfURLClassLoader"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "uRLArray"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.net.URL[]"
+      uuid: "uRLArray"
+    branches:
+    - lineNumber: 55
+      expression: "cl instanceof URLClassLoader"
+      range: "(55,16)-(55,43)"
+      evaluatedAs: false
+      internalMethodName: "getURLs"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ClassLoaderUtils"
+- method:
+    name: "getThreadURLs"
+    sourceCodeSignature: "URL[] getThreadURLs()"
+    returnType: "java.net.URL[]"
+    instructionFingerprint: "56D2FEF4798112E084F2D7C55A02904A"
+  paths:
+  - testPathName: "getThreadURLsWhenClNotInstanceOfURLClassLoader"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "uRLArray"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.net.URL[]"
+      uuid: "uRLArray"
+    branches:
+    - lineNumber: 55
+      expression: "cl instanceof URLClassLoader"
+      range: "(55,16)-(55,43)"
+      evaluatedAs: false
+      internalMethodName: "getURLs"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ClassLoaderUtils"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final ClassLoader classLoader)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "classLoader"
+      type: "java.lang.ClassLoader"
+    instructionFingerprint: "04FC39BC8B1A8A6663D4A66E6FC04E73"
+  paths:
+  - testPathName: "toStringWhenClassLoaderInstanceOfURLClassLoader"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      valueUuid: "classLoader"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.net.URLClassLoader"
+        parameters:
+        - name: "urls"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.net.URL[]"
+            uuid: "classLoader-urls"
+      valueType: "java.net.URLClassLoader"
+      uuid: "classLoader"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 65
+      expression: "classLoader instanceof URLClassLoader"
+      range: "(65,13)-(65,49)"
+      evaluatedAs: true
+  - testPathName: "toStringWhenClassLoaderNotInstanceOfURLClassLoader"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      valueUuid: "classLoader"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.lang.ClassLoader"
+        method: "getPlatformClassLoader"
+        methodParameters: []
+      valueType: "java.lang.ClassLoader"
+      uuid: "classLoader"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "jdk.internal.loader.ClassLoaders$PlatformClassLoader@6f30716"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 65
+      expression: "classLoader instanceof URLClassLoader"
+      range: "(65,13)-(65,49)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final URLClassLoader classLoader)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "classLoader"
+      type: "java.net.URLClassLoader"
+    instructionFingerprint: "04979626E38A3BBCBEC0C1345C5250EC"
+  paths:
+  - testPathName: "toString1WhenClassLoaderIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      valueUuid: "classLoader"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.net.URLClassLoader.getURLs() : java.net.URL[]"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.net.URLClassLoader"
+        parameters:
+        - name: "urls"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.net.URL[]"
+            uuid: "classLoader-urls"
+      valueType: "java.net.URLClassLoader"
+      uuid: "classLoader"
+      nameForMock: "classLoader"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "classLoaderA"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 78
+      expression: "classLoader != null"
+      range: "(78,16)-(78,34)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenClassLoaderIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "classLoader"
+      valueUuid: "classLoader"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.net.URLClassLoader"
+      uuid: "classLoader"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "null"
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 78
+      expression: "classLoader != null"
+      range: "(78,16)-(78,34)"
+      evaluatedAs: false

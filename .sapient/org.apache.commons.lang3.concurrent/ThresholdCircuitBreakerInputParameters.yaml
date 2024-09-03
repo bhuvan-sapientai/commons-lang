@@ -1,0 +1,294 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+methods:
+- method:
+    name: "checkState"
+    sourceCodeSignature: "boolean checkState()"
+    returnType: "boolean"
+    instructionFingerprint: "264A02E21DDB2E80E05BDAEC12E599AA"
+  paths:
+  - testPathName: "checkStateWhenIsOpenNot"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isOpen():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+        parameters:
+        - name: "threshold"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "threshold"
+      valueType: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 83
+      expression: "!isOpen()"
+      range: "(83,16)-(83,24)"
+      evaluatedAs: true
+  - testPathName: "checkStateWhenIsOpen"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isOpen():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+        parameters:
+        - name: "threshold"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "threshold"
+      valueType: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 83
+      expression: "!isOpen()"
+      range: "(83,16)-(83,24)"
+      evaluatedAs: false
+- method:
+    name: "close"
+    sourceCodeSignature: "void close()"
+    returnType: "void"
+    instructionFingerprint: "6E379D6E511CDA30E9AA5F7179AAB1D2"
+  paths:
+  - testPathName: "closeTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "changeState(Enum-org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State-CLOSED):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+        parameters:
+        - name: "threshold"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "threshold"
+      valueType: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+      uuid: "target"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "CLOSED"
+      valueType: "org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State"
+      uuid: "Enum-org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State-CLOSED"
+    - sapientType: "VOID"
+      uuid: "void3"
+- method:
+    name: "incrementAndCheckState"
+    sourceCodeSignature: "boolean incrementAndCheckState(final Long increment)"
+    returnType: "boolean"
+    parameters:
+    - name: "increment"
+      type: "java.lang.Long"
+    instructionFingerprint: "DCB380D46782AE4EB2EA5C7C97F1B4CA"
+  paths:
+  - testPathName: "incrementAndCheckState1WhenCheckState"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "increment"
+      valueUuid: "increment"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "open():void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "open():void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "checkState():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+        parameters:
+        - name: "threshold"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "threshold"
+      valueType: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "increment"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 113
+      expression: "threshold == 0"
+      range: "(113,13)-(113,26)"
+      evaluatedAs: true
+    - lineNumber: 118
+      expression: "used > threshold"
+      range: "(118,13)-(118,28)"
+      evaluatedAs: true
+    - lineNumber: 122
+      expression: "checkState()"
+      range: "(122,16)-(122,27)"
+      evaluatedAs: true
+  - testPathName: "incrementAndCheckState1WhenCheckStateNot"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "increment"
+      valueUuid: "increment"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "open():void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "open():void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "checkState():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+        parameters:
+        - name: "threshold"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "threshold"
+      valueType: "org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "increment"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 113
+      expression: "threshold == 0"
+      range: "(113,13)-(113,26)"
+      evaluatedAs: true
+    - lineNumber: 118
+      expression: "used > threshold"
+      range: "(118,13)-(118,28)"
+      evaluatedAs: true
+    - lineNumber: 122
+      expression: "checkState()"
+      range: "(122,16)-(122,27)"
+      evaluatedAs: false

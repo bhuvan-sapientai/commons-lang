@@ -1,0 +1,322 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+methods:
+- method:
+    name: "above"
+    sourceCodeSignature: "JavaUnicodeEscaper above(final int codePoint)"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    instructionFingerprint: "D4C7A5803B29D9A846CF6969FC110ECD"
+  paths:
+  - testPathName: "above1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "STATIC"
+      name: "JavaUnicodeEscaper.class"
+      valueUuid: "JavaUnicodeEscaper.class"
+      methodExercised:
+        expression: "outsideOf(codePointLow,codePoint):javaUnicodeEscaper"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "javaUnicodeEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "JavaUnicodeEscaper.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "javaUnicodeEscaper-below"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "javaUnicodeEscaper-above"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "javaUnicodeEscaper-between"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "javaUnicodeEscaper"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+- method:
+    name: "below"
+    sourceCodeSignature: "JavaUnicodeEscaper below(final int codePoint)"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    instructionFingerprint: "159E16AE1741FF643168D0ED91CD513D"
+  paths:
+  - testPathName: "below1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "STATIC"
+      name: "JavaUnicodeEscaper.class"
+      valueUuid: "JavaUnicodeEscaper.class"
+      methodExercised:
+        expression: "outsideOf(codePoint,codePointHigh):javaUnicodeEscaper"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "javaUnicodeEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "JavaUnicodeEscaper.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "javaUnicodeEscaper-below"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "javaUnicodeEscaper-above"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "javaUnicodeEscaper-between"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "javaUnicodeEscaper"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2147483647
+      valueType: "int"
+      uuid: "codePointHigh"
+- method:
+    name: "between"
+    sourceCodeSignature: "JavaUnicodeEscaper between(final int codePointLow, final\
+      \ int codePointHigh)"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    parameters:
+    - name: "codePointLow"
+      type: "int"
+    - name: "codePointHigh"
+      type: "int"
+    instructionFingerprint: "FD1107D1F4DFB639D601A75746FA002B"
+  paths:
+  - testPathName: "between1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      valueUuid: "codePointLow"
+    - type: "INPUT"
+      name: "codePointHigh"
+      valueUuid: "codePointHigh"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "javaUnicodeEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointHigh"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointLow"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointHigh"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "between"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "javaUnicodeEscaper"
+- method:
+    name: "outsideOf"
+    sourceCodeSignature: "JavaUnicodeEscaper outsideOf(final int codePointLow, final\
+      \ int codePointHigh)"
+    returnType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+    parameters:
+    - name: "codePointLow"
+      type: "int"
+    - name: "codePointHigh"
+      type: "int"
+    instructionFingerprint: "5DC530EF89FA81BB145058D8D2338B38"
+  paths:
+  - testPathName: "outsideOf1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      valueUuid: "codePointLow"
+    - type: "INPUT"
+      name: "codePointHigh"
+      valueUuid: "codePointHigh"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "javaUnicodeEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointHigh"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointLow"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointHigh"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "between"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "javaUnicodeEscaper"
+- method:
+    name: "toUtf16Escape"
+    sourceCodeSignature: "String toUtf16Escape(final int codePoint)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    instructionFingerprint: "40EBCA20568CD7CBCA55080885D347B9"
+  paths:
+  - testPathName: "toUtf16EscapeTest"
+    constructorSignature: "<init>(int,int,boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayIndexOutOfBoundsException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "below"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "above"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "between"
+      valueType: "org.apache.commons.lang3.text.translate.JavaUnicodeEscaper"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.ArrayIndexOutOfBoundsException"
+        parameters: []
+      valueType: "java.lang.ArrayIndexOutOfBoundsException"
+      uuid: "arrayIndexOutOfBoundsException"

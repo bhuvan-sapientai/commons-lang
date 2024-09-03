@@ -1,0 +1,692 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.arch.Processor"
+methods:
+- method:
+    name: "is32Bit"
+    sourceCodeSignature: "boolean is32Bit()"
+    returnType: "boolean"
+    instructionFingerprint: "A58FE1BBE6039A83C079E1D3062F0A7C"
+  paths:
+  - testPathName: "is32BitWhenArchBIT_32EqualsArch"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AARCH_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 186
+      expression: "Arch.BIT_32 == arch"
+      range: "(186,16)-(186,34)"
+      evaluatedAs: true
+  - testPathName: "is32BitWhenArchBIT_32NotEqualsArch"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AARCH_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 186
+      expression: "Arch.BIT_32 == arch"
+      range: "(186,16)-(186,34)"
+      evaluatedAs: false
+- method:
+    name: "is64Bit"
+    sourceCodeSignature: "boolean is64Bit()"
+    returnType: "boolean"
+    instructionFingerprint: "3E50D3163F89BE3CE65C866BD8E1AB88"
+  paths:
+  - testPathName: "is64BitWhenArchBIT_64EqualsArch"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AARCH_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "Arch.BIT_64 == arch"
+      range: "(195,16)-(195,34)"
+      evaluatedAs: true
+  - testPathName: "is64BitWhenArchBIT_64NotEqualsArch"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AARCH_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "Arch.BIT_64 == arch"
+      range: "(195,16)-(195,34)"
+      evaluatedAs: false
+- method:
+    name: "isAarch64"
+    sourceCodeSignature: "boolean isAarch64()"
+    returnType: "boolean"
+    instructionFingerprint: "2D85F7B959C7C1D4D3ED2BB1F4BCA4DF"
+  paths:
+  - testPathName: "isAarch64WhenTypeAARCH_64EqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AARCH_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 206
+      expression: "Type.AARCH_64 == type"
+      range: "(206,16)-(206,36)"
+      evaluatedAs: true
+  - testPathName: "isAarch64WhenTypeAARCH_64NotEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 206
+      expression: "Type.AARCH_64 == type"
+      range: "(206,16)-(206,36)"
+      evaluatedAs: false
+- method:
+    name: "isIA64"
+    sourceCodeSignature: "boolean isIA64()"
+    returnType: "boolean"
+    instructionFingerprint: "A5C9114F087796EBEE619CF4CFE934F2"
+  paths:
+  - testPathName: "isIA64WhenTypeIA_64EqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "IA_64"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 215
+      expression: "Type.IA_64 == type"
+      range: "(215,16)-(215,33)"
+      evaluatedAs: true
+  - testPathName: "isIA64WhenTypeIA_64NotEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 215
+      expression: "Type.IA_64 == type"
+      range: "(215,16)-(215,33)"
+      evaluatedAs: false
+- method:
+    name: "isPPC"
+    sourceCodeSignature: "boolean isPPC()"
+    returnType: "boolean"
+    instructionFingerprint: "9A76B44183A33D3635CE475CB552ED35"
+  paths:
+  - testPathName: "isPPCWhenTypePPCEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "PPC"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 224
+      expression: "Type.PPC == type"
+      range: "(224,16)-(224,31)"
+      evaluatedAs: true
+  - testPathName: "isPPCWhenTypePPCNotEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 224
+      expression: "Type.PPC == type"
+      range: "(224,16)-(224,31)"
+      evaluatedAs: false
+- method:
+    name: "isX86"
+    sourceCodeSignature: "boolean isX86()"
+    returnType: "boolean"
+    instructionFingerprint: "52892FCB91C563EAECBF2DA5564902E3"
+  paths:
+  - testPathName: "isX86WhenTypeX86EqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "X86"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 233
+      expression: "Type.X86 == type"
+      range: "(233,16)-(233,31)"
+      evaluatedAs: true
+  - testPathName: "isX86WhenTypeX86NotEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 233
+      expression: "Type.X86 == type"
+      range: "(233,16)-(233,31)"
+      evaluatedAs: false
+- method:
+    name: "isRISCV"
+    sourceCodeSignature: "boolean isRISCV()"
+    returnType: "boolean"
+    instructionFingerprint: "ABEE74A3040E9CCE3A9863AFF0ACB686"
+  paths:
+  - testPathName: "isRISCVWhenTypeRISC_VEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "RISC_V"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 243
+      expression: "Type.RISC_V == type"
+      range: "(243,16)-(243,34)"
+      evaluatedAs: true
+  - testPathName: "isRISCVWhenTypeRISC_VNotEqualsType"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "BIT_32"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 243
+      expression: "Type.RISC_V == type"
+      range: "(243,16)-(243,34)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "78F527515510C48B21FCF87568A1E8F8"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(org.apache.commons.lang3.arch.Processor$Arch,org.apache.commons.lang3.arch.Processor$Type)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.arch.Processor"
+        parameters:
+        - name: "arch"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "UNKNOWN"
+            valueType: "org.apache.commons.lang3.arch.Processor$Arch"
+            uuid: "arch"
+        - name: "type"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "PPC"
+            valueType: "org.apache.commons.lang3.arch.Processor$Type"
+            uuid: "type"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "PPC Unknown"
+      valueType: "java.lang.String"
+      uuid: "string3"

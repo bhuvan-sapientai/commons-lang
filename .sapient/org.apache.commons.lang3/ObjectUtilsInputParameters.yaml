@@ -1,0 +1,3930 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.ObjectUtils"
+methods:
+- method:
+    name: "allNotNull"
+    sourceCodeSignature: "boolean allNotNull(final Object... values)"
+    returnType: "boolean"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "14C8B5DC22A42BB93F9D92E08914880E"
+  paths:
+  - testPathName: "allNotNullWhenValuesIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 142
+      expression: "values != null"
+      range: "(142,16)-(142,29)"
+      evaluatedAs: false
+  - testPathName: "allNotNullWhenStreamOfValuesNoneMatchIsNullObjects"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 142
+      expression: "values != null"
+      range: "(142,16)-(142,29)"
+      evaluatedAs: true
+    - lineNumber: 142
+      expression: "Stream.of(values).noneMatch(Objects::isNull)"
+      range: "(142,34)-(142,77)"
+      evaluatedAs: true
+- method:
+    name: "allNull"
+    sourceCodeSignature: "boolean allNull(final Object... values)"
+    returnType: "boolean"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "D60299F04C3FB1E5F25FFD56634B24E9"
+  paths:
+  - testPathName: "allNullWhenAnyNotNullNotValues"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "anyNotNull(values):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 168
+      expression: "!anyNotNull(values)"
+      range: "(168,16)-(168,34)"
+      evaluatedAs: true
+  - testPathName: "allNullWhenAnyNotNullValues"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "anyNotNull(values):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 168
+      expression: "!anyNotNull(values)"
+      range: "(168,16)-(168,34)"
+      evaluatedAs: false
+- method:
+    name: "anyNotNull"
+    sourceCodeSignature: "boolean anyNotNull(final Object... values)"
+    returnType: "boolean"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "1A3830F25BF23B297E84C73F386CA355"
+  paths:
+  - testPathName: "anyNotNullWhenFirstNonNullValuesIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.lang.Object[])\
+        \ : java.util.stream.Stream<java.lang.Object>"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "firstNonNull(values) != null"
+      range: "(195,16)-(195,43)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "anyNull"
+    sourceCodeSignature: "boolean anyNull(final Object... values)"
+    returnType: "boolean"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "0F80E77A49DEB7A7C3DFB7F42F5C078A"
+  paths:
+  - testPathName: "anyNullWhenAllNotNullNotValues"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "allNotNull(values):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 223
+      expression: "!allNotNull(values)"
+      range: "(223,16)-(223,34)"
+      evaluatedAs: true
+  - testPathName: "anyNullWhenAllNotNullValues"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "allNotNull(values):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 223
+      expression: "!allNotNull(values)"
+      range: "(223,16)-(223,34)"
+      evaluatedAs: false
+- method:
+    name: "clone"
+    sourceCodeSignature: "<T> T clone(final T obj)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "57E48EC5315D7D5B1B5B32ECFD2203D0"
+  paths:
+  - testPathName: "cloneWhenObjNotInstanceOfCloneable"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: false
+  - testPathName: "cloneWhenIsArrayNotObj"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: false
+  - testPathName: "cloneWhenCaughtNoSuchMethodExceptionThrowsCloneFailedException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "cloneFailedException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.CloneFailedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cloneable type java.lang.Cloneable has no clone method"
+            valueType: "java.lang.String"
+            uuid: "string2"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.NoSuchMethodException"
+              parameters: []
+            valueType: "java.lang.NoSuchMethodException"
+            uuid: "noSuchMethodException"
+      valueType: "org.apache.commons.lang3.exception.CloneFailedException"
+      uuid: "cloneFailedException"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: false
+    - lineNumber: 253
+      expression: "catch-exception (NoSuchMethodException)"
+      range: "(253,19)-(253,54)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+  - testPathName: "cloneWhenCaughtIllegalAccessExceptionThrowsCloneFailedException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "cloneFailedException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.CloneFailedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot clone Cloneable type java.lang.Cloneable"
+            valueType: "java.lang.String"
+            uuid: "string2"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.IllegalAccessException"
+              parameters: []
+            valueType: "java.lang.IllegalAccessException"
+            uuid: "illegalAccessException"
+      valueType: "org.apache.commons.lang3.exception.CloneFailedException"
+      uuid: "cloneFailedException"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: false
+    - lineNumber: 257
+      expression: "catch-exception (IllegalAccessException)"
+      range: "(257,19)-(257,55)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+  - testPathName: "cloneWhenCaughtInvocationTargetExceptionThrowsCloneFailedException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "cloneFailedException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.CloneFailedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Exception cloning Cloneable type java.lang.Cloneable"
+            valueType: "java.lang.String"
+            uuid: "string2"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+      valueType: "org.apache.commons.lang3.exception.CloneFailedException"
+      uuid: "cloneFailedException"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: false
+    - lineNumber: 260
+      expression: "catch-exception (InvocationTargetException)"
+      range: "(260,19)-(260,58)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.reflect.InvocationTargetException"
+  - testPathName: "cloneWhenLengthGreaterThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: true
+    - lineNumber: 240
+      expression: "componentType.isPrimitive()"
+      range: "(240,21)-(240,47)"
+      evaluatedAs: true
+    - lineNumber: 243
+      expression: "length-- > 0"
+      range: "(243,28)-(243,39)"
+      evaluatedAs: true
+  - testPathName: "cloneWhenCaughtNoSuchMethodException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "Array.class"
+      valueUuid: "Array.class"
+      methodExercised:
+        expression: "getLength(obj):int1"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+    - type: "STATIC"
+      name: "Array.class"
+      valueUuid: "Array.class"
+      methodExercised:
+        expression: "newInstance(class2,int1):object"
+        throwsExceptions:
+        - "java.lang.NegativeArraySizeException"
+    - type: "STATIC"
+      name: "Array.class"
+      valueUuid: "Array.class"
+      methodExercised:
+        expression: "get(obj,int2):object2"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.ArrayIndexOutOfBoundsException"
+    - type: "STATIC"
+      name: "Array.class"
+      valueUuid: "Array.class"
+      methodExercised:
+        expression: "set(object,int2,object2):void"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.ArrayIndexOutOfBoundsException"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(obj):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Cloneable"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Array"
+      uuid: "Array.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 236
+      expression: "obj instanceof Cloneable"
+      range: "(236,13)-(236,36)"
+      evaluatedAs: true
+    - lineNumber: 238
+      expression: "isArray(obj)"
+      range: "(238,17)-(238,28)"
+      evaluatedAs: true
+    - lineNumber: 240
+      expression: "componentType.isPrimitive()"
+      range: "(240,21)-(240,47)"
+      evaluatedAs: true
+    - lineNumber: 243
+      expression: "length-- > 0"
+      range: "(243,28)-(243,39)"
+      evaluatedAs: true
+    - lineNumber: 253
+      expression: "catch-exception (NoSuchMethodException)"
+      range: "(253,19)-(253,54)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.NoSuchMethodException"
+- method:
+    name: "cloneIfPossible"
+    sourceCodeSignature: "<T> T cloneIfPossible(final T obj)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "28502955016DCEBFBDCC41587A549BC9"
+  paths:
+  - testPathName: "cloneIfPossibleWhenCloneIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "clone(obj):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "obj"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 291
+      expression: "clone == null"
+      range: "(291,16)-(291,28)"
+      evaluatedAs: true
+  - testPathName: "cloneIfPossibleWhenCloneIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "clone(obj):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 291
+      expression: "clone == null"
+      range: "(291,16)-(291,28)"
+      evaluatedAs: false
+- method:
+    name: "compare"
+    sourceCodeSignature: "<T extends Comparable<? super T>> int compare(final T c1,\
+      \ final T c2)"
+    returnType: "int"
+    parameters:
+    - name: "c1"
+      type: "java.lang.Comparable"
+    - name: "c2"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "49C522B2360A8703495E3E7E26F24136"
+  paths:
+  - testPathName: "compareTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "compare(c1,c2,nullGreater):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+- method:
+    name: "compare"
+    sourceCodeSignature: "<T extends Comparable<? super T>> int compare(final T c1,\
+      \ final T c2, final boolean nullGreater)"
+    returnType: "int"
+    parameters:
+    - name: "c1"
+      type: "java.lang.Comparable"
+    - name: "c2"
+      type: "java.lang.Comparable"
+    - name: "nullGreater"
+      type: "boolean"
+    instructionFingerprint: "23984E6ED80D9E86A94C357046DE1FE2"
+  paths:
+  - testPathName: "compare1WhenC1EqualsC2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: true
+  - testPathName: "compare1WhenNullGreater"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "c1 == null"
+      range: "(327,13)-(327,22)"
+      evaluatedAs: true
+    - lineNumber: 328
+      expression: "nullGreater"
+      range: "(328,20)-(328,30)"
+      evaluatedAs: true
+  - testPathName: "compare1WhenNotNullGreater"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "c1 == null"
+      range: "(327,13)-(327,22)"
+      evaluatedAs: true
+    - lineNumber: 328
+      expression: "nullGreater"
+      range: "(328,20)-(328,30)"
+      evaluatedAs: false
+  - testPathName: "compare1WhenC2IsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Comparable.compareTo(java.lang.Comparable)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "c1 == null"
+      range: "(327,13)-(327,22)"
+      evaluatedAs: false
+    - lineNumber: 330
+      expression: "c2 == null"
+      range: "(330,13)-(330,22)"
+      evaluatedAs: false
+  - testPathName: "compare1WhenC2IsNullAndNullGreater"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "c1 == null"
+      range: "(327,13)-(327,22)"
+      evaluatedAs: false
+    - lineNumber: 330
+      expression: "c2 == null"
+      range: "(330,13)-(330,22)"
+      evaluatedAs: true
+    - lineNumber: 331
+      expression: "nullGreater"
+      range: "(331,20)-(331,30)"
+      evaluatedAs: true
+  - testPathName: "compare1WhenC2IsNullAndNotNullGreater"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "c1"
+      valueUuid: "c1"
+    - type: "INPUT"
+      name: "c2"
+      valueUuid: "c2"
+    - type: "INPUT"
+      name: "nullGreater"
+      valueUuid: "nullGreater"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c1"
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 324
+      expression: "c1 == c2"
+      range: "(324,13)-(324,20)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "c1 == null"
+      range: "(327,13)-(327,22)"
+      evaluatedAs: false
+    - lineNumber: 330
+      expression: "c2 == null"
+      range: "(330,13)-(330,22)"
+      evaluatedAs: true
+    - lineNumber: 331
+      expression: "nullGreater"
+      range: "(331,20)-(331,30)"
+      evaluatedAs: false
+- method:
+    name: "CONST"
+    sourceCodeSignature: "boolean CONST(final boolean v)"
+    returnType: "boolean"
+    parameters:
+    - name: "v"
+      type: "boolean"
+    instructionFingerprint: "11086CBCC2CEF65C04AAA773C41DEE78"
+  paths:
+  - testPathName: "CONSTWhenV"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "v"
+    branches:
+    - lineNumber: 354
+      expression: "v"
+      range: "(354,16)-(354,16)"
+      evaluatedAs: true
+  - testPathName: "CONSTWhenNotV"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "v"
+    branches:
+    - lineNumber: 354
+      expression: "v"
+      range: "(354,16)-(354,16)"
+      evaluatedAs: false
+- method:
+    name: "CONST"
+    sourceCodeSignature: "byte CONST(final byte v)"
+    returnType: "byte"
+    parameters:
+    - name: "v"
+      type: "byte"
+    instructionFingerprint: "1A75AF74548D695EBEEA873FA57FB588"
+  paths:
+  - testPathName: "CONST1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "char CONST(final char v)"
+    returnType: "char"
+    parameters:
+    - name: "v"
+      type: "char"
+    instructionFingerprint: "E70FCDEAA1E8ACB7C5DDCD75DB7847EB"
+  paths:
+  - testPathName: "CONST2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "double CONST(final double v)"
+    returnType: "double"
+    parameters:
+    - name: "v"
+      type: "double"
+    instructionFingerprint: "91D4214A8F1E7C3B643306D8E3C6D0FF"
+  paths:
+  - testPathName: "CONST3Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "float CONST(final float v)"
+    returnType: "float"
+    parameters:
+    - name: "v"
+      type: "float"
+    instructionFingerprint: "F0A42B8E08078C60A20F206CBAC20B96"
+  paths:
+  - testPathName: "CONST4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "int CONST(final int v)"
+    returnType: "int"
+    parameters:
+    - name: "v"
+      type: "int"
+    instructionFingerprint: "169212600A2BCDE1A3C0F76233E6E11D"
+  paths:
+  - testPathName: "CONST5Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "long CONST(final long v)"
+    returnType: "long"
+    parameters:
+    - name: "v"
+      type: "long"
+    instructionFingerprint: "A2D6AAA641E43966FAE641C96657D167"
+  paths:
+  - testPathName: "CONST6Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "short CONST(final short v)"
+    returnType: "short"
+    parameters:
+    - name: "v"
+      type: "short"
+    instructionFingerprint: "038D47BAE663B46319E86A079BAF9BF4"
+  paths:
+  - testPathName: "CONST7Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "v"
+- method:
+    name: "CONST"
+    sourceCodeSignature: "<T> T CONST(final T v)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "v"
+      type: "java.lang.Object"
+    instructionFingerprint: "A4DAEB5232DB64C39D9C3CFBF1899D85"
+  paths:
+  - testPathName: "CONST8Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "v"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "v"
+- method:
+    name: "CONST_BYTE"
+    sourceCodeSignature: "byte CONST_BYTE(final int v)"
+    returnType: "byte"
+    parameters:
+    - name: "v"
+      type: "int"
+    instructionFingerprint: "2F67C151776CFCB112BAA3104FC5D56B"
+  paths:
+  - testPathName: "CONST_BYTEWhenVGreaterThanByteMAX_VALUEThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2044
+      valueType: "int"
+      uuid: "v"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Supplied value must be a valid byte literal between -128 and\
+                \ 127: [2044]"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 547
+      expression: "v < Byte.MIN_VALUE"
+      range: "(547,13)-(547,30)"
+      evaluatedAs: false
+    - lineNumber: 547
+      expression: "v > Byte.MAX_VALUE"
+      range: "(547,35)-(547,52)"
+      evaluatedAs: true
+  - testPathName: "CONST_BYTEWhenVNotGreaterThanByteMAX_VALUE"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "v"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "byte1"
+    branches:
+    - lineNumber: 547
+      expression: "v < Byte.MIN_VALUE"
+      range: "(547,13)-(547,30)"
+      evaluatedAs: false
+    - lineNumber: 547
+      expression: "v > Byte.MAX_VALUE"
+      range: "(547,35)-(547,52)"
+      evaluatedAs: false
+- method:
+    name: "CONST_SHORT"
+    sourceCodeSignature: "short CONST_SHORT(final int v)"
+    returnType: "short"
+    parameters:
+    - name: "v"
+      type: "int"
+    instructionFingerprint: "F0F8E1933802C61858660EBAA87AA9C6"
+  paths:
+  - testPathName: "CONST_SHORTWhenVGreaterThanShortMAX_VALUEThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 109022
+      valueType: "int"
+      uuid: "v"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Supplied value must be a valid byte literal between -32768 and\
+                \ 32767: [109022]"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 574
+      expression: "v < Short.MIN_VALUE"
+      range: "(574,13)-(574,31)"
+      evaluatedAs: false
+    - lineNumber: 574
+      expression: "v > Short.MAX_VALUE"
+      range: "(574,36)-(574,54)"
+      evaluatedAs: true
+  - testPathName: "CONST_SHORTWhenVNotGreaterThanShortMAX_VALUE"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "v"
+      valueUuid: "v"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "v"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+    branches:
+    - lineNumber: 574
+      expression: "v < Short.MIN_VALUE"
+      range: "(574,13)-(574,31)"
+      evaluatedAs: false
+    - lineNumber: 574
+      expression: "v > Short.MAX_VALUE"
+      range: "(574,36)-(574,54)"
+      evaluatedAs: false
+- method:
+    name: "defaultIfNull"
+    sourceCodeSignature: "<T> T defaultIfNull(final T object, final T defaultValue)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    - name: "defaultValue"
+      type: "java.lang.Object"
+    instructionFingerprint: "560495F9BA344210B63F21A806F373F9"
+  paths:
+  - testPathName: "defaultIfNullWhenObjectIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 598
+      expression: "object != null"
+      range: "(598,16)-(598,29)"
+      evaluatedAs: true
+  - testPathName: "defaultIfNullWhenObjectIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 598
+      expression: "object != null"
+      range: "(598,16)-(598,29)"
+      evaluatedAs: false
+- method:
+    name: "equals"
+    sourceCodeSignature: "boolean equals(final Object object1, final Object object2)"
+    returnType: "boolean"
+    parameters:
+    - name: "object1"
+      type: "java.lang.Object"
+    - name: "object2"
+      type: "java.lang.Object"
+    instructionFingerprint: "86274C759444739D4469585F19B33A96"
+  paths:
+  - testPathName: "equalsWhenObjectsEqualsObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 625
+      expression: "Objects.equals(object1, object2)"
+      range: "(625,16)-(625,47)"
+      evaluatedAs: true
+  - testPathName: "equalsWhenObjectsNotEqualsObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 625
+      expression: "Objects.equals(object1, object2)"
+      range: "(625,16)-(625,47)"
+      evaluatedAs: false
+- method:
+    name: "firstNonNull"
+    sourceCodeSignature: "<T> T firstNonNull(final T... values)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "values"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "9A96C491328B2B9F48513DF99ED60E68"
+  paths:
+  - testPathName: "firstNonNullTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.lang.Object[])\
+        \ : java.util.stream.Stream<java.lang.Object>"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "values"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object2"
+- method:
+    name: "getClass"
+    sourceCodeSignature: "<T> Class<T> getClass(final T object)"
+    returnType: "java.lang.Class"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "D6806D57336D39686265CCF79C2ED395"
+  paths:
+  - testPathName: "getClassWhenObjectIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "class"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      uuid: "class"
+    branches:
+    - lineNumber: 665
+      expression: "object == null"
+      range: "(665,16)-(665,29)"
+      evaluatedAs: true
+  - testPathName: "getClassWhenObjectIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "class"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "class"
+    branches:
+    - lineNumber: 665
+      expression: "object == null"
+      range: "(665,16)-(665,29)"
+      evaluatedAs: false
+- method:
+    name: "getFirstNonNull"
+    sourceCodeSignature: "<T> T getFirstNonNull(final Supplier<T>... suppliers)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "suppliers"
+      type: "java.util.function.Supplier[]"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "F83C1AC6E305CF2C19DBAF82A5907E41"
+  paths:
+  - testPathName: "getFirstNonNullTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "suppliers"
+      valueUuid: "suppliers"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.util.function.Supplier<java.lang.Object>[])\
+        \ : java.util.stream.Stream<java.util.function.Supplier>"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.util.function.Supplier[]"
+      genericValueType: "java.lang.Object"
+      uuid: "suppliers"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object2"
+- method:
+    name: "getIfNull"
+    sourceCodeSignature: "<T> T getIfNull(final T object, final Supplier<T> defaultSupplier)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    - name: "defaultSupplier"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "8E2D7E46765E4F5BD8DE437473607584"
+  paths:
+  - testPathName: "getIfNullWhenObjectIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "defaultSupplier"
+      valueUuid: "defaultSupplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultSupplier"
+    branches:
+    - lineNumber: 721
+      expression: "object != null"
+      range: "(721,16)-(721,29)"
+      evaluatedAs: true
+  - testPathName: "getIfNullWhenObjectIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "defaultSupplier"
+      valueUuid: "defaultSupplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.Object>)\
+        \ : java.lang.Object"
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultSupplier"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    branches:
+    - lineNumber: 721
+      expression: "object != null"
+      range: "(721,16)-(721,29)"
+      evaluatedAs: false
+- method:
+    name: "hashCode"
+    sourceCodeSignature: "int hashCode(final Object obj)"
+    returnType: "int"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "9D299AA819EAF60A0B4CDFF4730C3068"
+  paths:
+  - testPathName: "hashCodeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1937514545
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "hashCodeHex"
+    sourceCodeSignature: "String hashCodeHex(final Object object)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "035FE5729185F5FEC6E7D8129AA1CAC6"
+  paths:
+  - testPathName: "hashCodeHexTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "27ec1c71"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "hashCodeMulti"
+    sourceCodeSignature: "int hashCodeMulti(final Object... objects)"
+    returnType: "int"
+    parameters:
+    - name: "objects"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "64ACB62392577CC1D0C166A2A0610DBC"
+  paths:
+  - testPathName: "hashCodeMultiWhenObjectsIsNotEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "objects"
+      valueUuid: "objects"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int7"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+      valueType: "java.lang.Object[]"
+      uuid: "objects"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1060441774
+      valueType: "int"
+      uuid: "int7"
+    branches:
+    - lineNumber: 785
+      expression: "objects != null"
+      range: "(785,13)-(785,27)"
+      evaluatedAs: true
+    - lineNumber: 786
+      expression: "for-each(objects)"
+      range: "(786,40)-(786,46)"
+      evaluatedAs: true
+- method:
+    name: "identityHashCodeHex"
+    sourceCodeSignature: "String identityHashCodeHex(final Object object)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "2E833FDF314FE408B7A664DFAC7336E0"
+  paths:
+  - testPathName: "identityHashCodeHexTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "50531779"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "identityToString"
+    sourceCodeSignature: "void identityToString(final Appendable appendable, final\
+      \ Object object)"
+    returnType: "void"
+    throwsExceptions:
+    - "java.io.IOException"
+    parameters:
+    - name: "appendable"
+      type: "java.lang.Appendable"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "85EA05E11632E2071E77B7DF1690C3AD"
+  paths:
+  - testPathName: "identityToStringTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "appendable"
+      valueUuid: "appendable"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Appendable.append(java.lang.String)\
+        \ : java.lang.Appendable"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Appendable"
+      uuid: "appendable"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "VOID"
+      uuid: "void"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "identityToString"
+    sourceCodeSignature: "String identityToString(final Object object)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "F402423CEAC2765EBA3DA1EB42D990BD"
+  paths:
+  - testPathName: "identityToString1WhenObjectIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 848
+      expression: "object == null"
+      range: "(848,13)-(848,26)"
+      evaluatedAs: true
+  - testPathName: "identityToString1WhenObjectIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object@39b17cbf"
+      valueType: "java.lang.String"
+      uuid: "string3"
+    branches:
+    - lineNumber: 848
+      expression: "object == null"
+      range: "(848,13)-(848,26)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "identityToString"
+    sourceCodeSignature: "void identityToString(final StrBuilder builder, final Object\
+      \ object)"
+    returnType: "void"
+    parameters:
+    - name: "builder"
+      type: "org.apache.commons.lang3.text.StrBuilder"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "76220C82DC6771DD6ED345142631F285"
+  paths:
+  - testPathName: "identityToString2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "builder"
+      valueUuid: "builder"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.StrBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.StrBuilder"
+      uuid: "builder"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "VOID"
+      uuid: "void"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "identityToString"
+    sourceCodeSignature: "void identityToString(final StringBuffer buffer, final Object\
+      \ object)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "4F5DE437853854CBE47CAD4715C48178"
+  paths:
+  - testPathName: "identityToString3Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "VOID"
+      uuid: "void2"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "identityToString"
+    sourceCodeSignature: "void identityToString(final StringBuilder builder, final\
+      \ Object object)"
+    returnType: "void"
+    parameters:
+    - name: "builder"
+      type: "java.lang.StringBuilder"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "F7B63442FB4E43ED6BFCB8641BBE1F13"
+  paths:
+  - testPathName: "identityToString4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "builder"
+      valueUuid: "builder"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuilder"
+        parameters:
+        - name: "str"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "builderinitString"
+      valueType: "java.lang.StringBuilder"
+      uuid: "builder"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "VOID"
+      uuid: "void2"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ObjectUtils"
+- method:
+    name: "isArray"
+    sourceCodeSignature: "boolean isArray(final Object object)"
+    returnType: "boolean"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "2F67CA5B40EF87EA27BBE6827B80314A"
+  paths:
+  - testPathName: "isArrayWhenObjectGetClassIsArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isArray() : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 982
+      expression: "object != null"
+      range: "(982,16)-(982,29)"
+      evaluatedAs: true
+    - lineNumber: 982
+      expression: "object.getClass().isArray()"
+      range: "(982,34)-(982,60)"
+      evaluatedAs: true
+  - testPathName: "isArrayWhenObjectGetClassNotIsArray"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 982
+      expression: "object != null"
+      range: "(982,16)-(982,29)"
+      evaluatedAs: true
+    - lineNumber: 982
+      expression: "object.getClass().isArray()"
+      range: "(982,34)-(982,60)"
+      evaluatedAs: false
+- method:
+    name: "isEmpty"
+    sourceCodeSignature: "boolean isEmpty(final Object object)"
+    returnType: "boolean"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "03DC96168E8D739991A4E16713836376"
+  paths:
+  - testPathName: "isEmptyWhenObjectIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenObjectLengthEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "object1"
+      valueType: "java.lang.String"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: true
+    - lineNumber: 1019
+      expression: "((CharSequence) object).length() == 0"
+      range: "(1019,20)-(1019,56)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenObjectLengthNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "object1"
+      valueType: "java.lang.String"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: true
+    - lineNumber: 1019
+      expression: "((CharSequence) object).length() == 0"
+      range: "(1019,20)-(1019,56)"
+      evaluatedAs: false
+  - testPathName: "isEmptyWhenArrayGetLengthObjectEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Array.getLength(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: true
+    - lineNumber: 1022
+      expression: "Array.getLength(object) == 0"
+      range: "(1022,20)-(1022,47)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenArrayGetLengthObjectNotEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Array.getLength(java.lang.Object)\
+        \ : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: true
+    - lineNumber: 1022
+      expression: "Array.getLength(object) == 0"
+      range: "(1022,20)-(1022,47)"
+      evaluatedAs: false
+  - testPathName: "isEmptyWhenObjectIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean4"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean4"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: true
+    - lineNumber: 1025
+      expression: "((Collection<?>) object).isEmpty()"
+      range: "(1025,20)-(1025,53)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenObjectNotIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean4"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "NULL"
+          uuid: "objectItem0"
+      valueType: "java.util.Collection"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean4"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: true
+    - lineNumber: 1025
+      expression: "((Collection<?>) object).isEmpty()"
+      range: "(1025,20)-(1025,53)"
+      evaluatedAs: false
+  - testPathName: "isEmptyWhenObjectInstanceOfMap__AndObjectIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean5"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean5"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: false
+    - lineNumber: 1027
+      expression: "object instanceof Map<?, ?>"
+      range: "(1027,13)-(1027,39)"
+      evaluatedAs: true
+    - lineNumber: 1028
+      expression: "((Map<?, ?>) object).isEmpty()"
+      range: "(1028,20)-(1028,49)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenObjectNotInstanceOfOptional_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: false
+    - lineNumber: 1027
+      expression: "object instanceof Map<?, ?>"
+      range: "(1027,13)-(1027,39)"
+      evaluatedAs: false
+    - lineNumber: 1030
+      expression: "object instanceof Optional<?>"
+      range: "(1030,13)-(1030,41)"
+      evaluatedAs: false
+  - testPathName: "isEmptyWhenObjectNotIsPresent"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "NULL"
+          uuid: "optionalValue"
+      valueType: "java.util.Optional"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: false
+    - lineNumber: 1027
+      expression: "object instanceof Map<?, ?>"
+      range: "(1027,13)-(1027,39)"
+      evaluatedAs: false
+    - lineNumber: 1030
+      expression: "object instanceof Optional<?>"
+      range: "(1030,13)-(1030,41)"
+      evaluatedAs: true
+    - lineNumber: 1032
+      expression: "!((Optional<?>) object).isPresent()"
+      range: "(1032,20)-(1032,54)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenObjectIsPresent"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isArray(object):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "NULL"
+          uuid: "object-value"
+      valueType: "java.util.Optional"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1015
+      expression: "object == null"
+      range: "(1015,13)-(1015,26)"
+      evaluatedAs: false
+    - lineNumber: 1018
+      expression: "object instanceof CharSequence"
+      range: "(1018,13)-(1018,42)"
+      evaluatedAs: false
+    - lineNumber: 1021
+      expression: "isArray(object)"
+      range: "(1021,13)-(1021,27)"
+      evaluatedAs: false
+    - lineNumber: 1024
+      expression: "object instanceof Collection<?>"
+      range: "(1024,13)-(1024,43)"
+      evaluatedAs: false
+    - lineNumber: 1027
+      expression: "object instanceof Map<?, ?>"
+      range: "(1027,13)-(1027,39)"
+      evaluatedAs: false
+    - lineNumber: 1030
+      expression: "object instanceof Optional<?>"
+      range: "(1030,13)-(1030,41)"
+      evaluatedAs: true
+    - lineNumber: 1032
+      expression: "!((Optional<?>) object).isPresent()"
+      range: "(1032,20)-(1032,54)"
+      evaluatedAs: false
+- method:
+    name: "isNotEmpty"
+    sourceCodeSignature: "boolean isNotEmpty(final Object object)"
+    returnType: "boolean"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "6498D3D69C284DE7260C448B6932D2A6"
+  paths:
+  - testPathName: "isNotEmptyWhenIsEmptyNotObject"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isEmpty(object):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1066
+      expression: "!isEmpty(object)"
+      range: "(1066,16)-(1066,31)"
+      evaluatedAs: true
+  - testPathName: "isNotEmptyWhenIsEmptyObject"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isEmpty(object):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1066
+      expression: "!isEmpty(object)"
+      range: "(1066,16)-(1066,31)"
+      evaluatedAs: false
+- method:
+    name: "max"
+    sourceCodeSignature: "<T extends Comparable<? super T>> T max(final T... values)"
+    returnType: "java.lang.Comparable"
+    parameters:
+    - name: "values"
+      type: "java.lang.Comparable[]"
+    instructionFingerprint: "22E9C5B90EF37FB3E2AE5677E79B4F8A"
+  paths:
+  - testPathName: "maxWhenCompareValueResultFalseGreaterThan0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "compare(comparable,c2,nullGreater):int3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "java.lang.Comparable"
+            uuid: "comparable"
+      valueType: "java.lang.Comparable[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int3"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "nullGreater"
+    branches:
+    - lineNumber: 1086
+      expression: "values != null"
+      range: "(1086,13)-(1086,26)"
+      evaluatedAs: true
+    - lineNumber: 1087
+      expression: "for-each(values)"
+      range: "(1087,34)-(1087,39)"
+      evaluatedAs: true
+    - lineNumber: 1088
+      expression: "compare(value, result, false) > 0"
+      range: "(1088,21)-(1088,53)"
+      evaluatedAs: true
+- method:
+    name: "median"
+    sourceCodeSignature: "<T> T median(final Comparator<T> comparator, final T...\
+      \ items)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "comparator"
+      type: "java.util.Comparator"
+      genericType: "java.lang.Object"
+    - name: "items"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "B280EA312317DB9D50CC8C73B45B91A4"
+  paths:
+  - testPathName: "medianThrowsArrayIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "INPUT"
+      name: "items"
+      valueUuid: "items"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayIndexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.Validate.notEmpty(java.lang.Object[],java.lang.String,java.lang.Object[])\
+        \ : java.lang.Object[]"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "items"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.ArrayIndexOutOfBoundsException"
+        parameters: []
+      valueType: "java.lang.ArrayIndexOutOfBoundsException"
+      uuid: "arrayIndexOutOfBoundsException"
+- method:
+    name: "median"
+    sourceCodeSignature: "<T extends Comparable<? super T>> T median(final T... items)"
+    returnType: "java.lang.Comparable"
+    parameters:
+    - name: "items"
+      type: "java.lang.Comparable[]"
+    instructionFingerprint: "6BBB799C486720AE608965B259D573B6"
+  paths:
+  - testPathName: "median1ThrowsArrayIndexOutOfBoundsException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "items"
+      valueUuid: "items"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayIndexOutOfBoundsException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.Validate.notEmpty(java.lang.Comparable[])\
+        \ : java.lang.Comparable[]"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Comparable[]"
+      uuid: "items"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.ArrayIndexOutOfBoundsException"
+        parameters: []
+      valueType: "java.lang.ArrayIndexOutOfBoundsException"
+      uuid: "arrayIndexOutOfBoundsException"
+- method:
+    name: "min"
+    sourceCodeSignature: "<T extends Comparable<? super T>> T min(final T... values)"
+    returnType: "java.lang.Comparable"
+    parameters:
+    - name: "values"
+      type: "java.lang.Comparable[]"
+    instructionFingerprint: "55422BB66D7B42722B9C27FC8F0FC744"
+  paths:
+  - testPathName: "minWhenCompareValueResultTrueLessThan0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "compare(comparable,c2,nullGreater):int3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "java.lang.Comparable"
+            uuid: "comparable"
+      valueType: "java.lang.Comparable[]"
+      uuid: "values"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int3"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Comparable"
+      uuid: "c2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "nullGreater"
+    branches:
+    - lineNumber: 1157
+      expression: "values != null"
+      range: "(1157,13)-(1157,26)"
+      evaluatedAs: true
+    - lineNumber: 1158
+      expression: "for-each(values)"
+      range: "(1158,34)-(1158,39)"
+      evaluatedAs: true
+    - lineNumber: 1159
+      expression: "compare(value, result, true) < 0"
+      range: "(1159,21)-(1159,52)"
+      evaluatedAs: true
+- method:
+    name: "mode"
+    sourceCodeSignature: "<T> T mode(final T... items)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "items"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "5327960AF58A06FDC097FEC0C5FF39A2"
+  paths:
+  - testPathName: "modeWhenArrayUtilsNotIsNotEmptyItems"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "items"
+      valueUuid: "items"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "items"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 1178
+      expression: "ArrayUtils.isNotEmpty(items)"
+      range: "(1178,13)-(1178,40)"
+      evaluatedAs: false
+  - testPathName: "modeWhenCmpGreaterThanMax"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "items"
+      valueUuid: "items"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+      valueType: "java.lang.Object[]"
+      uuid: "items"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 1178
+      expression: "ArrayUtils.isNotEmpty(items)"
+      range: "(1178,13)-(1178,40)"
+      evaluatedAs: true
+    - lineNumber: 1180
+      expression: "for-each(items)"
+      range: "(1180,30)-(1180,34)"
+      evaluatedAs: true
+    - lineNumber: 1182
+      expression: "count == null"
+      range: "(1182,21)-(1182,33)"
+      evaluatedAs: true
+    - lineNumber: 1190
+      expression: "for-each(occurrences.entrySet())"
+      range: "(1190,53)-(1190,74)"
+      evaluatedAs: true
+    - lineNumber: 1192
+      expression: "cmp == max"
+      range: "(1192,21)-(1192,30)"
+      evaluatedAs: false
+    - lineNumber: 1194
+      expression: "cmp > max"
+      range: "(1194,28)-(1194,36)"
+      evaluatedAs: true
+- method:
+    name: "notEqual"
+    sourceCodeSignature: "boolean notEqual(final Object object1, final Object object2)"
+    returnType: "boolean"
+    parameters:
+    - name: "object1"
+      type: "java.lang.Object"
+    - name: "object2"
+      type: "java.lang.Object"
+    instructionFingerprint: "04C6F314D606DB57DCDAA8B76CE39071"
+  paths:
+  - testPathName: "notEqualWhenObjectsNotEqualsObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1224
+      expression: "!Objects.equals(object1, object2)"
+      range: "(1224,16)-(1224,48)"
+      evaluatedAs: true
+  - testPathName: "notEqualWhenObjectsEqualsObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1224
+      expression: "!Objects.equals(object1, object2)"
+      range: "(1224,16)-(1224,48)"
+      evaluatedAs: false
+- method:
+    name: "requireNonEmpty"
+    sourceCodeSignature: "<T> T requireNonEmpty(final T obj)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "C89C903307700129B3E2EC2134EF3534"
+  paths:
+  - testPathName: "requireNonEmptyTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "requireNonEmpty(obj,message):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "object"
+      valueType: "java.lang.String"
+      uuid: "message"
+- method:
+    name: "requireNonEmpty"
+    sourceCodeSignature: "<T> T requireNonEmpty(final T obj, final String message)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    - name: "message"
+      type: "java.lang.String"
+    instructionFingerprint: "45B062CB555BE7A8EE067CE8418C7DE7"
+  paths:
+  - testPathName: "requireNonEmpty1WhenIsEmptyObjThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isEmpty(obj):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 1279
+      expression: "isEmpty(obj)"
+      range: "(1279,13)-(1279,24)"
+      evaluatedAs: true
+  - testPathName: "requireNonEmpty1WhenIsEmptyNotObj"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "message"
+      valueUuid: "message"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "isEmpty(obj):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "obj"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "message1"
+      valueType: "java.lang.String"
+      uuid: "message"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 1279
+      expression: "isEmpty(obj)"
+      range: "(1279,13)-(1279,24)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Object obj)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    instructionFingerprint: "19E0C745374CE87EB785B7D93145B996"
+  paths:
+  - testPathName: "toStringWhenObjIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 1307
+      expression: "obj == null"
+      range: "(1307,16)-(1307,26)"
+      evaluatedAs: true
+  - testPathName: "toStringWhenObjIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+      nameForMock: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "obj"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 1307
+      expression: "obj == null"
+      range: "(1307,16)-(1307,26)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Object obj, final String nullStr)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    - name: "nullStr"
+      type: "java.lang.String"
+    instructionFingerprint: "276CE681BA036C429FD30801BDCF4177"
+  paths:
+  - testPathName: "toString1WhenObjIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "nullStr"
+      valueUuid: "nullStr"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "nullStr"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullStr1"
+      valueType: "java.lang.String"
+      uuid: "nullStr"
+    branches:
+    - lineNumber: 1333
+      expression: "obj == null"
+      range: "(1333,16)-(1333,26)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenObjIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "nullStr"
+      valueUuid: "nullStr"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+      nameForMock: "obj"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullStr1"
+      valueType: "java.lang.String"
+      uuid: "nullStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "obj"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 1333
+      expression: "obj == null"
+      range: "(1333,16)-(1333,26)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Supplier<Object> obj, final Supplier<String>\
+      \ supplier)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "obj"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.Object"
+    - name: "supplier"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.String"
+    instructionFingerprint: "684C3701A73962D34B3D14464001F9BB"
+  paths:
+  - testPathName: "toString2WhenObjIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.String>)\
+        \ : java.lang.String"
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.function.Supplier"
+      genericValueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 1357
+      expression: "obj == null"
+      range: "(1357,16)-(1357,26)"
+      evaluatedAs: true
+  - testPathName: "toString2WhenObjIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "ObjectUtils.class"
+      valueUuid: "ObjectUtils.class"
+      methodExercised:
+        expression: "toString(object,supplier):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ObjectUtils"
+      uuid: "ObjectUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 1357
+      expression: "obj == null"
+      range: "(1357,16)-(1357,26)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "<T> String toString(final T obj, final Supplier<String>\
+      \ supplier)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    - name: "supplier"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.String"
+    instructionFingerprint: "409BF09E76FAF3BE7B9A015B77E16FE8"
+  paths:
+  - testPathName: "toString3WhenObjIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.String>)\
+        \ : java.lang.String"
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 1382
+      expression: "obj == null"
+      range: "(1382,16)-(1382,26)"
+      evaluatedAs: true
+  - testPathName: "toString3WhenObjIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "obj"
+      nameForMock: "obj"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "obj"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 1382
+      expression: "obj == null"
+      range: "(1382,16)-(1382,26)"
+      evaluatedAs: false
+- method:
+    name: "wait"
+    sourceCodeSignature: "void wait(final Object obj, final Duration duration)"
+    returnType: "void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    parameters:
+    - name: "obj"
+      type: "java.lang.Object"
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "DDE66BBE10F2262411BC2AF7031ED61E"
+  paths:
+  - testPathName: "waitTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "obj"
+      valueUuid: "obj"
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.time.DurationUtils.zeroIfNull(java.time.Duration)\
+        \ : java.time.Duration"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "VOID"
+      uuid: "void3"

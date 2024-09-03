@@ -1,0 +1,1140 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.EnumUtils"
+methods:
+- method:
+    name: "generateBitVector"
+    sourceCodeSignature: "<E extends Enum<E>> long generateBitVector(final Class<E>\
+      \ enumClass, final Iterable<? extends E> values)"
+    returnType: "long"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "values"
+      type: "java.lang.Iterable"
+      genericType: "? extends java.lang.Enum"
+    instructionFingerprint: "71C937A90E702851702D4EBE60020C73"
+  paths:
+  - testPathName: "generateBitVector1WhenConstantsLengthLessThanOrEqualsToLongSIZEThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isEnum() : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.lang.Iterable"
+      genericValueType: "? extends java.lang.Enum"
+      uuid: "values"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 70
+      expression: "constants.length <= Long.SIZE"
+      range: "(70,25)-(70,53)"
+      evaluatedAs: true
+      internalMethodName: "checkBitVectorable"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.EnumUtils"
+- method:
+    name: "generateBitVectors"
+    sourceCodeSignature: "<E extends Enum<E>> long[] generateBitVectors(final Class<E>\
+      \ enumClass, final Iterable<? extends E> values)"
+    returnType: "long[]"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "values"
+      type: "java.lang.Iterable"
+      genericType: "? extends java.lang.Enum"
+    instructionFingerprint: "4BC91040E98E9387FC41AB5B67C1BF7D"
+  paths:
+  - testPathName: "generateBitVectors1WhenCondensedIsNotEmpty"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "longArray"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isEnum() : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "ENUM"
+          content: !<regular>
+            value: "MONDAY"
+          valueType: "java.time.DayOfWeek"
+          uuid: "enum"
+      valueType: "java.lang.Iterable"
+      genericValueType: "? extends java.lang.Enum"
+      uuid: "values"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "long3"
+      valueType: "long[]"
+      uuid: "longArray"
+    branches:
+    - lineNumber: 180
+      expression: "for-each(condensed)"
+      range: "(180,30)-(180,38)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.EnumUtils"
+- method:
+    name: "getEnum"
+    sourceCodeSignature: "<E extends Enum<E>> E getEnum(final Class<E> enumClass,\
+      \ final String enumName)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    instructionFingerprint: "30DC9CBAD9D5F8E7A5843FBCF0F3465A"
+  paths:
+  - testPathName: "getEnumTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnum(enumClass,enumName,defaultEnum):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "NULL"
+      valueType: "java.lang.Enum"
+      uuid: "defaultEnum"
+- method:
+    name: "getEnum"
+    sourceCodeSignature: "<E extends Enum<E>> E getEnum(final Class<E> enumClass,\
+      \ final String enumName, final E defaultEnum)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    - name: "defaultEnum"
+      type: "java.lang.Enum"
+    instructionFingerprint: "AF594C472371CE4A6F78D702CA5FBB03"
+  paths:
+  - testPathName: "getEnum1WhenEnumNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultEnum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    branches:
+    - lineNumber: 216
+      expression: "enumName == null"
+      range: "(216,13)-(216,28)"
+      evaluatedAs: true
+  - testPathName: "getEnum1WhenEnumNameIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.time.DayOfWeek"
+      valueType: "java.lang.Class"
+      genericValueType: "java.time.DayOfWeek"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    branches:
+    - lineNumber: 216
+      expression: "enumName == null"
+      range: "(216,13)-(216,28)"
+      evaluatedAs: false
+  - testPathName: "getEnum1WhenCaughtIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultEnum"
+    disabled: false
+    failureReason:
+      reason: "DEPENDENCY_TO_THROW_EXCEPTION_NOT_FOUND"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.time.DayOfWeek"
+      valueType: "java.lang.Class"
+      genericValueType: "java.time.DayOfWeek"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    branches:
+    - lineNumber: 216
+      expression: "enumName == null"
+      range: "(216,13)-(216,28)"
+      evaluatedAs: false
+    - lineNumber: 221
+      expression: "catch-exception (IllegalArgumentException)"
+      range: "(221,11)-(221,50)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalArgumentException"
+- method:
+    name: "getEnumIgnoreCase"
+    sourceCodeSignature: "<E extends Enum<E>> E getEnumIgnoreCase(final Class<E> enumClass,\
+      \ final String enumName)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    instructionFingerprint: "8B30EADA7B526B59FE71636DFE3BCA39"
+  paths:
+  - testPathName: "getEnumIgnoreCaseTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnumIgnoreCase(enumClass,enumName,defaultEnum):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "NULL"
+      valueType: "java.lang.Enum"
+      uuid: "defaultEnum"
+- method:
+    name: "getEnumIgnoreCase"
+    sourceCodeSignature: "<E extends Enum<E>> E getEnumIgnoreCase(final Class<E> enumClass,\
+      \ final String enumName, final E defaultEnum)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    - name: "defaultEnum"
+      type: "java.lang.Enum"
+    instructionFingerprint: "8DA0558A7783B2EDB9BBC823BDEED4AC"
+  paths:
+  - testPathName: "getEnumIgnoreCase1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getFirstEnumIgnoreCase(enumClass,enumName,stringFunction-any,defaultEnum):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Function"
+      uuid: "stringFunction-any"
+- method:
+    name: "getEnumList"
+    sourceCodeSignature: "<E extends Enum<E>> List<E> getEnumList(final Class<E> enumClass)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    instructionFingerprint: "8E2F698F039538B790298FA9D6046B85"
+  paths:
+  - testPathName: "getEnumListTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayList"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values:
+        - sapientType: "ENUM"
+          content: !<regular>
+            value: "MONDAY"
+          valueType: "java.time.DayOfWeek"
+          uuid: "listItem0"
+      valueType: "java.util.ArrayList"
+      genericValueType: "java.lang.Enum"
+      uuid: "arrayList"
+- method:
+    name: "getEnumMap"
+    sourceCodeSignature: "<E extends Enum<E>> Map<String, E> getEnumMap(final Class<E>\
+      \ enumClass)"
+    returnType: "java.util.Map"
+    genericReturnType: "java.lang.String,java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    instructionFingerprint: "9590C5EDF0F440DE229D20B8EFD04CB2"
+  paths:
+  - testPathName: "getEnumMapTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.String,java.lang.Enum"
+      uuid: "object"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.EnumUtils"
+- method:
+    name: "getEnumMap"
+    sourceCodeSignature: "<E extends Enum<E>, K> Map<K, E> getEnumMap(final Class<E>\
+      \ enumClass, final Function<E, K> keyFunction)"
+    returnType: "java.util.Map"
+    genericReturnType: "java.lang.Object,java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "keyFunction"
+      type: "java.util.function.Function"
+      genericType: "java.lang.Enum,java.lang.Object"
+    instructionFingerprint: "1AE58179E4AAA35E5591240EF83C772C"
+  paths:
+  - testPathName: "getEnumMap1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "keyFunction"
+      valueUuid: "keyFunction"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "keyFunction"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.Object,java.lang.Enum"
+      uuid: "object"
+- method:
+    name: "getEnumSystemProperty"
+    sourceCodeSignature: "<E extends Enum<E>> E getEnumSystemProperty(final Class<E>\
+      \ enumClass, final String propName, final E defaultEnum)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "propName"
+      type: "java.lang.String"
+    - name: "defaultEnum"
+      type: "java.lang.Enum"
+    instructionFingerprint: "64AB6D6F503913BC5AC39BA520DAE960"
+  paths:
+  - testPathName: "getEnumSystemPropertyWhenPropNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "propName"
+      valueUuid: "propName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultEnum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "propName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    branches:
+    - lineNumber: 320
+      expression: "enumClass == null"
+      range: "(320,16)-(320,32)"
+      evaluatedAs: false
+    - lineNumber: 320
+      expression: "propName == null"
+      range: "(320,37)-(320,52)"
+      evaluatedAs: true
+  - testPathName: "getEnumSystemPropertyWhenPropNameIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "propName"
+      valueUuid: "propName"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnum(enumClass,string,defaultEnum):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enum"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: ": getEnum(enumClass, System.getProperty(propName), defaultEnum);"
+      lineNumber: 321
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "propName1"
+      valueType: "java.lang.String"
+      uuid: "propName"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "string1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 320
+      expression: "enumClass == null"
+      range: "(320,16)-(320,32)"
+      evaluatedAs: false
+    - lineNumber: 320
+      expression: "propName == null"
+      range: "(320,37)-(320,52)"
+      evaluatedAs: false
+- method:
+    name: "getFirstEnumIgnoreCase"
+    sourceCodeSignature: "<E extends Enum<E>> E getFirstEnumIgnoreCase(final Class<E>\
+      \ enumClass, final String enumName, final Function<E, String> stringFunction,\
+      \ final E defaultEnum)"
+    returnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    - name: "stringFunction"
+      type: "java.util.function.Function"
+      genericType: "java.lang.Enum,java.lang.String"
+    - name: "defaultEnum"
+      type: "java.lang.Enum"
+    instructionFingerprint: "4052968EF63D080EA5323972B3CA07BF"
+  paths:
+  - testPathName: "getFirstEnumIgnoreCaseWhenEnumClassNotIsEnum"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "stringFunction"
+      valueUuid: "stringFunction"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultEnum"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "stringFunction"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    branches:
+    - lineNumber: 340
+      expression: "enumName == null"
+      range: "(340,13)-(340,28)"
+      evaluatedAs: false
+    - lineNumber: 340
+      expression: "!enumClass.isEnum()"
+      range: "(340,33)-(340,51)"
+      evaluatedAs: true
+  - testPathName: "getFirstEnumIgnoreCaseWhenEnumClassIsEnum"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "INPUT"
+      name: "stringFunction"
+      valueUuid: "stringFunction"
+    - type: "INPUT"
+      name: "defaultEnum"
+      valueUuid: "defaultEnum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultEnum"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isEnum() : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "stringFunction"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "defaultEnum"
+    branches:
+    - lineNumber: 340
+      expression: "enumName == null"
+      range: "(340,13)-(340,28)"
+      evaluatedAs: false
+    - lineNumber: 340
+      expression: "!enumClass.isEnum()"
+      range: "(340,33)-(340,51)"
+      evaluatedAs: false
+- method:
+    name: "isValidEnum"
+    sourceCodeSignature: "<E extends Enum<E>> boolean isValidEnum(final Class<E> enumClass,\
+      \ final String enumName)"
+    returnType: "boolean"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    instructionFingerprint: "9DE118E47C80C2E0612B70DB66F26B2B"
+  paths:
+  - testPathName: "isValidEnumWhenGetEnumEnumClassEnumNameIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnum(enumClass,enumName):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 358
+      expression: "getEnum(enumClass, enumName) != null"
+      range: "(358,16)-(358,51)"
+      evaluatedAs: true
+  - testPathName: "isValidEnumWhenGetEnumEnumClassEnumNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnum(enumClass,enumName):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.Enum"
+      uuid: "enum"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 358
+      expression: "getEnum(enumClass, enumName) != null"
+      range: "(358,16)-(358,51)"
+      evaluatedAs: false
+- method:
+    name: "isValidEnumIgnoreCase"
+    sourceCodeSignature: "<E extends Enum<E>> boolean isValidEnumIgnoreCase(final\
+      \ Class<E> enumClass, final String enumName)"
+    returnType: "boolean"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "enumName"
+      type: "java.lang.String"
+    instructionFingerprint: "896775B5538E2550F988C8B6DE2F348D"
+  paths:
+  - testPathName: "isValidEnumIgnoreCaseWhenGetEnumIgnoreCaseEnumClassEnumNameIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnumIgnoreCase(enumClass,enumName):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MONDAY"
+      valueType: "java.time.DayOfWeek"
+      uuid: "enum"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 375
+      expression: "getEnumIgnoreCase(enumClass, enumName) != null"
+      range: "(375,16)-(375,61)"
+      evaluatedAs: true
+  - testPathName: "isValidEnumIgnoreCaseWhenGetEnumIgnoreCaseEnumClassEnumNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "enumName"
+      valueUuid: "enumName"
+    - type: "STATIC"
+      name: "EnumUtils.class"
+      valueUuid: "EnumUtils.class"
+      methodExercised:
+        expression: "getEnumIgnoreCase(enumClass,enumName):enum"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "enumName1"
+      valueType: "java.lang.String"
+      uuid: "enumName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.EnumUtils"
+      uuid: "EnumUtils.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.Enum"
+      uuid: "enum"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 375
+      expression: "getEnumIgnoreCase(enumClass, enumName) != null"
+      range: "(375,16)-(375,61)"
+      evaluatedAs: false
+- method:
+    name: "processBitVector"
+    sourceCodeSignature: "<E extends Enum<E>> EnumSet<E> processBitVector(final Class<E>\
+      \ enumClass, final long value)"
+    returnType: "java.util.EnumSet"
+    genericReturnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "value"
+      type: "long"
+    instructionFingerprint: "71773EEC91E904910D54A01C7E02CF54"
+  paths:
+  - testPathName: "processBitVectorWhenConstantsLengthLessThanOrEqualsToLongSIZEThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isEnum() : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 70
+      expression: "constants.length <= Long.SIZE"
+      range: "(70,25)-(70,53)"
+      evaluatedAs: true
+      internalMethodName: "checkBitVectorable"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.EnumUtils"
+- method:
+    name: "processBitVectors"
+    sourceCodeSignature: "<E extends Enum<E>> EnumSet<E> processBitVectors(final Class<E>\
+      \ enumClass, final long... values)"
+    returnType: "java.util.EnumSet"
+    genericReturnType: "java.lang.Enum"
+    parameters:
+    - name: "enumClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Enum"
+    - name: "values"
+      type: "long[]"
+    instructionFingerprint: "353CE1BFFD38AA5DFAEED650B354F4B6"
+  paths:
+  - testPathName: "processBitVectorsWhenBlockIndexOfLvaluesAnd1LConstantOrdinalModulusLongSIZENotEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enumClass"
+      valueUuid: "enumClass"
+    - type: "INPUT"
+      name: "values"
+      valueUuid: "values"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "enumSet"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isEnum() : boolean"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Enum"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "values"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.EnumSet"
+      genericValueType: "java.lang.Enum"
+      uuid: "enumSet"
+    branches:
+    - lineNumber: 413
+      expression: "for-each(enumClass.getEnumConstants())"
+      range: "(413,33)-(413,60)"
+      evaluatedAs: true
+    - lineNumber: 415
+      expression: "block < lvalues.length"
+      range: "(415,17)-(415,38)"
+      evaluatedAs: true
+    - lineNumber: 415
+      expression: "(lvalues[block] & 1L << (constant.ordinal() % Long.SIZE)) != 0"
+      range: "(415,43)-(415,104)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.EnumUtils"

@@ -1,0 +1,1085 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableFloat"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final float operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "float"
+    instructionFingerprint: "2BAA9B7772FB56229C47636B6E72FDB7"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "B1A1B1A7FB52149D1F9B425CEBAA0C68"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "float addAndGet(final float operand)"
+    returnType: "float"
+    parameters:
+    - name: "operand"
+      type: "float"
+    instructionFingerprint: "E5518581B1584022E140C3EC83BD239A"
+  paths:
+  - testPathName: "addAndGetTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "float addAndGet(final Number operand)"
+    returnType: "float"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "38C9B0153A0C6692D97CDC3E551E189E"
+  paths:
+  - testPathName: "addAndGet1Test"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float2"
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableFloat other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableFloat"
+    instructionFingerprint: "AB790F453640205CB7BF170EA76F650D"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "float"
+            uuid: "other-value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "void decrement()"
+    returnType: "void"
+    instructionFingerprint: "50FCA22F3453CAB9C9993BA3C3F906B6"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "decrementAndGet"
+    sourceCodeSignature: "float decrementAndGet()"
+    returnType: "float"
+    instructionFingerprint: "437FAC596016CB76AAEBC8EFC0608272"
+  paths:
+  - testPathName: "decrementAndGetTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "doubleValue"
+    sourceCodeSignature: "double doubleValue()"
+    returnType: "double"
+    instructionFingerprint: "74F43DFEDD1AF81DEB9C713DD6E6A78E"
+  paths:
+  - testPathName: "doubleValueTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "floatValue"
+    sourceCodeSignature: "float floatValue()"
+    returnType: "float"
+    instructionFingerprint: "876917A8F2689DC1420203A7DB8345D9"
+  paths:
+  - testPathName: "floatValueTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "value"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "float getAndAdd(final float operand)"
+    returnType: "float"
+    parameters:
+    - name: "operand"
+      type: "float"
+    instructionFingerprint: "F877B03660DEB6B55A1C3DAA7C17CE76"
+  paths:
+  - testPathName: "getAndAddTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "value"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "float getAndAdd(final Number operand)"
+    returnType: "float"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "71D2A1CC8F3A97FDE0D987528C98F041"
+  paths:
+  - testPathName: "getAndAdd1Test"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "value"
+- method:
+    name: "getAndDecrement"
+    sourceCodeSignature: "float getAndDecrement()"
+    returnType: "float"
+    instructionFingerprint: "8F855F42747587E8CDF9D175CA9B11FC"
+  paths:
+  - testPathName: "getAndDecrementTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "value"
+- method:
+    name: "getAndIncrement"
+    sourceCodeSignature: "float getAndIncrement()"
+    returnType: "float"
+    instructionFingerprint: "0B6AA4963DCD50E21588B340F826539F"
+  paths:
+  - testPathName: "getAndIncrementTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "value"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Float getValue()"
+    returnType: "java.lang.Float"
+    instructionFingerprint: "F417F79E646FCFEC59D3AE025B637461"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Float"
+      uuid: "float"
+- method:
+    name: "increment"
+    sourceCodeSignature: "void increment()"
+    returnType: "void"
+    instructionFingerprint: "FDD951F4AA9A2BDE312B81FAC4A6AF35"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "incrementAndGet"
+    sourceCodeSignature: "float incrementAndGet()"
+    returnType: "float"
+    instructionFingerprint: "DDB924065D6074AEC940F81853E6C08A"
+  paths:
+  - testPathName: "incrementAndGetTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "intValue"
+    sourceCodeSignature: "int intValue()"
+    returnType: "int"
+    instructionFingerprint: "41758A23B77F12C3E71FFE40E63C8190"
+  paths:
+  - testPathName: "intValueTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "isInfinite"
+    sourceCodeSignature: "boolean isInfinite()"
+    returnType: "boolean"
+    instructionFingerprint: "D10CA814E2C44A299DE76D3FF7E85D9F"
+  paths:
+  - testPathName: "isInfiniteWhenFloatIsInfiniteValue"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 326
+      expression: "Float.isInfinite(value)"
+      range: "(326,16)-(326,38)"
+      evaluatedAs: true
+  - testPathName: "isInfiniteWhenFloatNotIsInfiniteValue"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 326
+      expression: "Float.isInfinite(value)"
+      range: "(326,16)-(326,38)"
+      evaluatedAs: false
+- method:
+    name: "isNaN"
+    sourceCodeSignature: "boolean isNaN()"
+    returnType: "boolean"
+    instructionFingerprint: "F69BFDD8968893533C7211830D8E3142"
+  paths:
+  - testPathName: "isNaNWhenFloatIsNaNValue"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 335
+      expression: "Float.isNaN(value)"
+      range: "(335,16)-(335,33)"
+      evaluatedAs: true
+  - testPathName: "isNaNWhenFloatNotIsNaNValue"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 335
+      expression: "Float.isNaN(value)"
+      range: "(335,16)-(335,33)"
+      evaluatedAs: false
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "5AA80ABF74D5BF7F90E50D16E9091C2E"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Number value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Number"
+    instructionFingerprint: "7A8FEE1BBCF8CE0508EEF505F6F4DE51"
+  paths:
+  - testPathName: "setValue1Test"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final float operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "float"
+    instructionFingerprint: "7C3EC7F44F1D0B5271E48885EC045DA7"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "5A58E76EBFCB690B9B1DE87F8F014057"
+  paths:
+  - testPathName: "subtract1Test"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toFloat"
+    sourceCodeSignature: "Float toFloat()"
+    returnType: "java.lang.Float"
+    instructionFingerprint: "38A86FDD3413F9F5B6D149428D678246"
+  paths:
+  - testPathName: "toFloatTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Float"
+      uuid: "float"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "60D56CC711DF5AFB2B4AC42BC0909823"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(float) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableFloat"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "float"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableFloat"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0.0"
+      valueType: "java.lang.String"
+      uuid: "string"

@@ -1,0 +1,304 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.tuple.MutablePair"
+methods:
+- method:
+    name: "emptyArray"
+    sourceCodeSignature: "<L, R> MutablePair<L, R>[] emptyArray()"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair[]"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    instructionFingerprint: "C39FB9D841FC55D31B1E44107244DEB8"
+  paths:
+  - testPathName: "emptyArray1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "mutablePairArray"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "org.apache.commons.lang3.tuple.MutablePair[]"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "mutablePairArray"
+- method:
+    name: "of"
+    sourceCodeSignature: "<L, R> MutablePair<L, R> of(final L left, final R right)"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "9655E7E55188AC8E45876BB6B7E33F3A"
+  paths:
+  - testPathName: "of2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "mutablePair"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "mutablePair"
+- method:
+    name: "of"
+    sourceCodeSignature: "<L, R> MutablePair<L, R> of(final Map.Entry<L, R> pair)"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "pair"
+      type: "java.util.Map$Entry"
+      genericType: "java.lang.Object,java.lang.Object"
+    instructionFingerprint: "B04473C1985960E14D46808807E4CA16"
+  paths:
+  - testPathName: "of3WhenPairIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      valueUuid: "pair"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "mutablePair"
+    disabled: false
+    allValues:
+    - sapientType: "PAIR"
+      content: !<pair>
+        key:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+          valueType: "java.lang.Object"
+          uuid: "object"
+        value:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+          valueType: "java.lang.Object"
+          uuid: "pairValue"
+      valueType: "java.util.Map$Entry"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "pair"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "pairValue"
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "mutablePair"
+    branches:
+    - lineNumber: 91
+      expression: "pair != null"
+      range: "(91,13)-(91,24)"
+      evaluatedAs: true
+  - testPathName: "of3WhenPairIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      valueUuid: "pair"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "mutablePair"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.Map$Entry"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "pair"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "left2"
+        - name: "right"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "right2"
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "mutablePair"
+    branches:
+    - lineNumber: 91
+      expression: "pair != null"
+      range: "(91,13)-(91,24)"
+      evaluatedAs: false
+- method:
+    name: "ofNonNull"
+    sourceCodeSignature: "<L, R> MutablePair<L, R> ofNonNull(final L left, final R\
+      \ right)"
+    returnType: "org.apache.commons.lang3.tuple.MutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "117DC579A97C00EC17D120F651ED6DF5"
+  paths:
+  - testPathName: "ofNonNull1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "MutablePair.class"
+      valueUuid: "MutablePair.class"
+      methodExercised:
+        expression: "of(left,right):mutablePair"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "mutablePair"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      uuid: "MutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        parameters: []
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "mutablePair"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "R setValue(final R value)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "648A9CEA135EB89583B7515AC70F4EA5"
+  paths:
+  - testPathName: "setValueTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "right"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.MutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.MutablePair"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"

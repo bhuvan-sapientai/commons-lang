@@ -1,0 +1,595 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.RandomUtils"
+methods:
+- method:
+    name: "nextBoolean"
+    sourceCodeSignature: "boolean nextBoolean()"
+    returnType: "boolean"
+    instructionFingerprint: "980725729A052A267C71A11523D50DD8"
+  paths:
+  - testPathName: "nextBooleanWhenRandomNextBoolean"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "return random().nextBoolean();"
+      lineNumber: 46
+      details: "Method java.util.concurrent.ThreadLocalRandom::nextBoolean has a unrepeatable\
+        \ behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 46
+      expression: "random().nextBoolean()"
+      range: "(46,16)-(46,37)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomUtils"
+  - testPathName: "nextBooleanWhenRandomNotNextBoolean"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "return random().nextBoolean();"
+      lineNumber: 46
+      details: "Method java.util.concurrent.ThreadLocalRandom::nextBoolean has a unrepeatable\
+        \ behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 46
+      expression: "random().nextBoolean()"
+      range: "(46,16)-(46,37)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomUtils"
+- method:
+    name: "nextBytes"
+    sourceCodeSignature: "byte[] nextBytes(final int count)"
+    returnType: "byte[]"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "BADCAD692BFF07F4065BEF5A26098E6E"
+  paths:
+  - testPathName: "nextBytesWhenCountGreaterThanOrEqualsTo0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 58
+      expression: "count >= 0"
+      range: "(58,25)-(58,34)"
+      evaluatedAs: true
+  - testPathName: "nextBytesWhenCountLessThan0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 58
+      expression: "count >= 0"
+      range: "(58,25)-(58,34)"
+      evaluatedAs: false
+- method:
+    name: "nextDouble"
+    sourceCodeSignature: "double nextDouble()"
+    returnType: "double"
+    instructionFingerprint: "34C8A2528FFE27EA807F520A9A80DC0C"
+  paths:
+  - testPathName: "nextDoubleTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextDouble(startInclusive,endExclusive):double1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.7976931348623157E308
+      valueType: "double"
+      uuid: "endExclusive"
+- method:
+    name: "nextDouble"
+    sourceCodeSignature: "double nextDouble(final double startInclusive, final double\
+      \ endExclusive)"
+    returnType: "double"
+    parameters:
+    - name: "startInclusive"
+      type: "double"
+    - name: "endExclusive"
+      type: "double"
+    instructionFingerprint: "9BC593AE8ADF9CF3C622A4A3B229DF10"
+  paths:
+  - testPathName: "nextDouble1WhenEndExclusiveGreaterThanOrEqualsToStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 89
+      expression: "endExclusive >= startInclusive"
+      range: "(89,25)-(89,54)"
+      evaluatedAs: true
+  - testPathName: "nextDouble1WhenEndExclusiveLessThanStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "double"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 89
+      expression: "endExclusive >= startInclusive"
+      range: "(89,25)-(89,54)"
+      evaluatedAs: false
+- method:
+    name: "nextFloat"
+    sourceCodeSignature: "float nextFloat()"
+    returnType: "float"
+    instructionFingerprint: "1D7352D5946B55C52BAA02FEFAB9E5D5"
+  paths:
+  - testPathName: "nextFloatTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextFloat(startInclusive,endExclusive):float1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3.4028235E38
+      valueType: "float"
+      uuid: "endExclusive"
+- method:
+    name: "nextFloat"
+    sourceCodeSignature: "float nextFloat(final float startInclusive, final float\
+      \ endExclusive)"
+    returnType: "float"
+    parameters:
+    - name: "startInclusive"
+      type: "float"
+    - name: "endExclusive"
+      type: "float"
+    instructionFingerprint: "3B56C835A5D1717459571E4C41986F77"
+  paths:
+  - testPathName: "nextFloat1WhenEndExclusiveGreaterThanOrEqualsToStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "float"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "float"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 124
+      expression: "endExclusive >= startInclusive"
+      range: "(124,25)-(124,54)"
+      evaluatedAs: true
+  - testPathName: "nextFloat1WhenEndExclusiveLessThanStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "float"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 124
+      expression: "endExclusive >= startInclusive"
+      range: "(124,25)-(124,54)"
+      evaluatedAs: false
+- method:
+    name: "nextInt"
+    sourceCodeSignature: "int nextInt()"
+    returnType: "int"
+    instructionFingerprint: "EDC3590BE8AF5F31E80967F5BB08B208"
+  paths:
+  - testPathName: "nextIntTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(startInclusive,endExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2147483647
+      valueType: "int"
+      uuid: "endExclusive"
+- method:
+    name: "nextInt"
+    sourceCodeSignature: "int nextInt(final int startInclusive, final int endExclusive)"
+    returnType: "int"
+    parameters:
+    - name: "startInclusive"
+      type: "int"
+    - name: "endExclusive"
+      type: "int"
+    instructionFingerprint: "B916ADEE83B9E6A07050C4D0FF7ADCE3"
+  paths:
+  - testPathName: "nextInt1WhenEndExclusiveGreaterThanOrEqualsToStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 159
+      expression: "endExclusive >= startInclusive"
+      range: "(159,25)-(159,54)"
+      evaluatedAs: true
+  - testPathName: "nextInt1WhenEndExclusiveLessThanStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 159
+      expression: "endExclusive >= startInclusive"
+      range: "(159,25)-(159,54)"
+      evaluatedAs: false
+- method:
+    name: "nextLong"
+    sourceCodeSignature: "long nextLong()"
+    returnType: "long"
+    instructionFingerprint: "C247F1ABBD4AB82ED209380C563DBCD5"
+  paths:
+  - testPathName: "nextLongWhenBitsMinusValPlusNMinus1NotLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "bits = random().nextLong() >>> 1;"
+      lineNumber: 194
+      details: "Method java.util.concurrent.ThreadLocalRandom::nextLong has a unrepeatable\
+        \ behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long3"
+    branches:
+    - lineNumber: 196
+      expression: "bits - val + (n - 1) < 0"
+      range: "(196,18)-(196,41)"
+      evaluatedAs: false
+      internalMethodName: "nextLong"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomUtils"
+- method:
+    name: "nextLong"
+    sourceCodeSignature: "long nextLong(final long startInclusive, final long endExclusive)"
+    returnType: "long"
+    parameters:
+    - name: "startInclusive"
+      type: "long"
+    - name: "endExclusive"
+      type: "long"
+    instructionFingerprint: "34D02D8DED3F456B373BAD50DA8A2488"
+  paths:
+  - testPathName: "nextLong2WhenEndExclusiveGreaterThanOrEqualsToStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 214
+      expression: "endExclusive >= startInclusive"
+      range: "(214,25)-(214,54)"
+      evaluatedAs: true
+  - testPathName: "nextLong2WhenEndExclusiveLessThanStartInclusiveThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "startInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "endExclusive"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 214
+      expression: "endExclusive >= startInclusive"
+      range: "(214,25)-(214,54)"
+      evaluatedAs: false

@@ -1,0 +1,335 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+methods:
+- method:
+    name: "above"
+    sourceCodeSignature: "NumericEntityEscaper above(final int codePoint)"
+    returnType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    instructionFingerprint: "D4C7A5803B29D9A846CF6969FC110ECD"
+  paths:
+  - testPathName: "aboveTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "STATIC"
+      name: "NumericEntityEscaper.class"
+      valueUuid: "NumericEntityEscaper.class"
+      methodExercised:
+        expression: "outsideOf(codePointLow,codePoint):numericEntityEscaper"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "numericEntityEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "NumericEntityEscaper.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "numericEntityEscaper"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+- method:
+    name: "below"
+    sourceCodeSignature: "NumericEntityEscaper below(final int codePoint)"
+    returnType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    instructionFingerprint: "159E16AE1741FF643168D0ED91CD513D"
+  paths:
+  - testPathName: "belowTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "STATIC"
+      name: "NumericEntityEscaper.class"
+      valueUuid: "NumericEntityEscaper.class"
+      methodExercised:
+        expression: "outsideOf(codePoint,codePointHigh):numericEntityEscaper"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "numericEntityEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "NumericEntityEscaper.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "numericEntityEscaper"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2147483647
+      valueType: "int"
+      uuid: "codePointHigh"
+- method:
+    name: "between"
+    sourceCodeSignature: "NumericEntityEscaper between(final int codePointLow, final\
+      \ int codePointHigh)"
+    returnType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+    parameters:
+    - name: "codePointLow"
+      type: "int"
+    - name: "codePointHigh"
+      type: "int"
+    instructionFingerprint: "40314A129740E095E7B76BCFF9FA4147"
+  paths:
+  - testPathName: "betweenTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      valueUuid: "codePointLow"
+    - type: "INPUT"
+      name: "codePointHigh"
+      valueUuid: "codePointHigh"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "numericEntityEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointHigh"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointLow"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointHigh"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "between"
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "numericEntityEscaper"
+- method:
+    name: "outsideOf"
+    sourceCodeSignature: "NumericEntityEscaper outsideOf(final int codePointLow, final\
+      \ int codePointHigh)"
+    returnType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+    parameters:
+    - name: "codePointLow"
+      type: "int"
+    - name: "codePointHigh"
+      type: "int"
+    instructionFingerprint: "C0AC90AB0B97EF9AA9B54BF627172449"
+  paths:
+  - testPathName: "outsideOfTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "codePointLow"
+      valueUuid: "codePointLow"
+    - type: "INPUT"
+      name: "codePointHigh"
+      valueUuid: "codePointHigh"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "numericEntityEscaper"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointLow"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePointHigh"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters:
+        - name: "below"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointLow"
+        - name: "above"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "codePointHigh"
+        - name: "between"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "between"
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "numericEntityEscaper"
+- method:
+    name: "translate"
+    sourceCodeSignature: "boolean translate(final int codePoint, final Writer out)"
+    returnType: "boolean"
+    throwsExceptions:
+    - "java.io.IOException"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    - name: "out"
+      type: "java.io.Writer"
+    instructionFingerprint: "8413244CA64D699968D27184F74AF8F4"
+  paths:
+  - testPathName: "translate3WhenCodePointLessThanBelow"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 107
+      expression: "between"
+      range: "(107,13)-(107,19)"
+      evaluatedAs: true
+    - lineNumber: 108
+      expression: "codePoint < below"
+      range: "(108,17)-(108,33)"
+      evaluatedAs: true
+  - testPathName: "translate3WhenCodePointNotGreaterThanAbove"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.NumericEntityEscaper"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 107
+      expression: "between"
+      range: "(107,13)-(107,19)"
+      evaluatedAs: true
+    - lineNumber: 108
+      expression: "codePoint < below"
+      range: "(108,17)-(108,33)"
+      evaluatedAs: false
+    - lineNumber: 108
+      expression: "codePoint > above"
+      range: "(108,38)-(108,54)"
+      evaluatedAs: false

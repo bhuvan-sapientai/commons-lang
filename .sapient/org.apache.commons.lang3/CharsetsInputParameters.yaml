@@ -1,0 +1,181 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.Charsets"
+methods:
+- method:
+    name: "toCharset"
+    sourceCodeSignature: "Charset toCharset(final Charset charset)"
+    returnType: "java.nio.charset.Charset"
+    parameters:
+    - name: "charset"
+      type: "java.nio.charset.Charset"
+    instructionFingerprint: "9E1484BC448314F97A2FFD43118D481D"
+  paths:
+  - testPathName: "toCharsetWhenCharsetIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "charset"
+      valueUuid: "charset"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charset2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.nio.charset.Charset"
+      uuid: "charset"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.nio.charset.Charset"
+        method: "defaultCharset"
+        methodParameters: []
+      valueType: "java.nio.charset.Charset"
+      uuid: "charset2"
+    branches:
+    - lineNumber: 44
+      expression: "charset == null"
+      range: "(44,16)-(44,30)"
+      evaluatedAs: true
+  - testPathName: "toCharsetWhenCharsetIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "charset"
+      valueUuid: "charset"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charset"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.nio.charset.Charset"
+        method: "defaultCharset"
+        methodParameters: []
+      valueType: "java.nio.charset.Charset"
+      uuid: "charset"
+    branches:
+    - lineNumber: 44
+      expression: "charset == null"
+      range: "(44,16)-(44,30)"
+      evaluatedAs: false
+- method:
+    name: "toCharset"
+    sourceCodeSignature: "Charset toCharset(final String charsetName)"
+    returnType: "java.nio.charset.Charset"
+    parameters:
+    - name: "charsetName"
+      type: "java.lang.String"
+    instructionFingerprint: "18B32B68C641665859026B7DA5B96DCC"
+  paths:
+  - testPathName: "toCharset1WhenCharsetNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "charsetName"
+      valueUuid: "charsetName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charset"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "charsetName"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.nio.charset.Charset"
+        method: "defaultCharset"
+        methodParameters: []
+      valueType: "java.nio.charset.Charset"
+      uuid: "charset"
+    branches:
+    - lineNumber: 56
+      expression: "charsetName == null"
+      range: "(56,16)-(56,34)"
+      evaluatedAs: true
+  - testPathName: "toCharset1WhenCharsetNameIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "charsetName"
+      valueUuid: "charsetName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charset"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "charsetName"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.nio.charset.Charset"
+        method: "defaultCharset"
+        methodParameters: []
+      valueType: "java.nio.charset.Charset"
+      uuid: "charset"
+    branches:
+    - lineNumber: 56
+      expression: "charsetName == null"
+      range: "(56,16)-(56,34)"
+      evaluatedAs: false
+- method:
+    name: "toCharsetName"
+    sourceCodeSignature: "String toCharsetName(final String charsetName)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "charsetName"
+      type: "java.lang.String"
+    instructionFingerprint: "FFFC4EA3384827C4695F8B28FB5382AE"
+  paths:
+  - testPathName: "toCharsetNameWhenCharsetNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "charsetName"
+      valueUuid: "charsetName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "charsetName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "UTF-8"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 66
+      expression: "charsetName == null"
+      range: "(66,16)-(66,34)"
+      evaluatedAs: true
+  - testPathName: "toCharsetNameWhenCharsetNameIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "charsetName"
+      valueUuid: "charsetName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charsetName"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "charsetName1"
+      valueType: "java.lang.String"
+      uuid: "charsetName"
+    branches:
+    - lineNumber: 66
+      expression: "charsetName == null"
+      range: "(66,16)-(66,34)"
+      evaluatedAs: false

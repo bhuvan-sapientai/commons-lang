@@ -1,0 +1,405 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+methods:
+- method:
+    name: "compare"
+    sourceCodeSignature: "int compare(final Object o1, final Object o2)"
+    returnType: "int"
+    parameters:
+    - name: "o1"
+      type: "java.lang.Object"
+    - name: "o2"
+      type: "java.lang.Object"
+    instructionFingerprint: "569AE8985DC5BD2C7F7A1D3FF813A558"
+  paths:
+  - testPathName: "compareWhenO2IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: true
+    - lineNumber: 46
+      expression: "o2 == null"
+      range: "(46,27)-(46,36)"
+      evaluatedAs: true
+  - testPathName: "compareWhenO1IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: true
+    - lineNumber: 46
+      expression: "o2 == null"
+      range: "(46,27)-(46,36)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: true
+  - testPathName: "compareWhenO1IsNotNullAndO2IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "o1"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: false
+    - lineNumber: 52
+      expression: "o2 == null"
+      range: "(52,13)-(52,22)"
+      evaluatedAs: true
+  - testPathName: "compareWhenString2IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+      nameForMock: "o1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+      nameForMock: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: false
+    - lineNumber: 52
+      expression: "o2 == null"
+      range: "(52,13)-(52,22)"
+      evaluatedAs: false
+    - lineNumber: 58
+      expression: "string1 == null"
+      range: "(58,13)-(58,27)"
+      evaluatedAs: true
+    - lineNumber: 58
+      expression: "string2 == null"
+      range: "(58,32)-(58,46)"
+      evaluatedAs: true
+  - testPathName: "compareWhenString1IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+      nameForMock: "o1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+      nameForMock: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: false
+    - lineNumber: 52
+      expression: "o2 == null"
+      range: "(52,13)-(52,22)"
+      evaluatedAs: false
+    - lineNumber: 58
+      expression: "string1 == null"
+      range: "(58,13)-(58,27)"
+      evaluatedAs: true
+    - lineNumber: 58
+      expression: "string2 == null"
+      range: "(58,32)-(58,46)"
+      evaluatedAs: false
+    - lineNumber: 61
+      expression: "string1 == null"
+      range: "(61,13)-(61,27)"
+      evaluatedAs: true
+  - testPathName: "compareWhenString1IsNotNullAndString2IsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+      nameForMock: "o1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+      nameForMock: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: false
+    - lineNumber: 52
+      expression: "o2 == null"
+      range: "(52,13)-(52,22)"
+      evaluatedAs: false
+    - lineNumber: 58
+      expression: "string1 == null"
+      range: "(58,13)-(58,27)"
+      evaluatedAs: false
+    - lineNumber: 61
+      expression: "string1 == null"
+      range: "(61,13)-(61,27)"
+      evaluatedAs: false
+    - lineNumber: 64
+      expression: "string2 == null"
+      range: "(64,13)-(64,27)"
+      evaluatedAs: true
+  - testPathName: "compareWhenString2IsNotNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "o1"
+      valueUuid: "o1"
+    - type: "INPUT"
+      name: "o2"
+      valueUuid: "o2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+        parameters: []
+      valueType: "org.apache.commons.lang3.compare.ObjectToStringComparator"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o1"
+      nameForMock: "o1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "o2"
+      nameForMock: "o2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 46
+      expression: "o1 == null"
+      range: "(46,13)-(46,22)"
+      evaluatedAs: false
+    - lineNumber: 49
+      expression: "o1 == null"
+      range: "(49,13)-(49,22)"
+      evaluatedAs: false
+    - lineNumber: 52
+      expression: "o2 == null"
+      range: "(52,13)-(52,22)"
+      evaluatedAs: false
+    - lineNumber: 58
+      expression: "string1 == null"
+      range: "(58,13)-(58,27)"
+      evaluatedAs: false
+    - lineNumber: 61
+      expression: "string1 == null"
+      range: "(61,13)-(61,27)"
+      evaluatedAs: false
+    - lineNumber: 64
+      expression: "string2 == null"
+      range: "(64,13)-(64,27)"
+      evaluatedAs: false

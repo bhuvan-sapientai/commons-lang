@@ -1,0 +1,4837 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+methods:
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final boolean[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "boolean[]"
+    instructionFingerprint: "73C27B29AB73443485DBBF4C7F6D0634"
+  paths:
+  - testPathName: "appendDetail1WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "boolean[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail1WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "boolean[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final byte[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "byte[]"
+    instructionFingerprint: "739848C807ABA1D3A5D88B4F8A48C6AB"
+  paths:
+  - testPathName: "appendDetail3WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "byte[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail3WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "byte[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final char[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "char[]"
+    instructionFingerprint: "1E5307AECA07E57AF085670B6A7A1CE8"
+  paths:
+  - testPathName: "appendDetail5WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "char[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail5WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "char[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final double[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "double[]"
+    instructionFingerprint: "C0CECBC37E731FE049FDCDF1386AA657"
+  paths:
+  - testPathName: "appendDetail8WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "double[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail8WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "double[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final float[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "float[]"
+    instructionFingerprint: "D3EBE34DE92C31AB7DA31FAE05B34364"
+  paths:
+  - testPathName: "appendDetail10WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "float[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail10WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "float[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final int[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "int[]"
+    instructionFingerprint: "9C2711B9270C58425DB4B94554F92675"
+  paths:
+  - testPathName: "appendDetail13WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "int[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail13WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "int[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final long[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "long[]"
+    instructionFingerprint: "2DFEE2325A74B1B3F924E9632F6FBA42"
+  paths:
+  - testPathName: "appendDetail15WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "long[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail15WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "long[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final Object value)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "1CE0CED062785649D5EC10C46E1A398D"
+  paths:
+  - testPathName: "appendDetail17WhenILessThanSpaces"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 150
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(150,13)-(150,60)"
+      evaluatedAs: true
+    - lineNumber: 150
+      expression: "!String.class.equals(value.getClass())"
+      range: "(150,65)-(150,102)"
+      evaluatedAs: true
+    - lineNumber: 151
+      expression: "accept(value.getClass())"
+      range: "(151,20)-(151,43)"
+      evaluatedAs: true
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+  - testPathName: "appendDetail17WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class6):boolean6"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean6"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class6"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 150
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(150,13)-(150,60)"
+      evaluatedAs: true
+    - lineNumber: 150
+      expression: "!String.class.equals(value.getClass())"
+      range: "(150,65)-(150,102)"
+      evaluatedAs: true
+    - lineNumber: 151
+      expression: "accept(value.getClass())"
+      range: "(151,20)-(151,43)"
+      evaluatedAs: false
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail17WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class6):boolean6"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean6"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class6"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 150
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(150,13)-(150,60)"
+      evaluatedAs: true
+    - lineNumber: 150
+      expression: "!String.class.equals(value.getClass())"
+      range: "(150,65)-(150,102)"
+      evaluatedAs: true
+    - lineNumber: 151
+      expression: "accept(value.getClass())"
+      range: "(151,20)-(151,43)"
+      evaluatedAs: false
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final Object[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "FEBB0342C2885C9CD02F18DC1F762456"
+  paths:
+  - testPathName: "appendDetail18WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail18WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final short[] array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "short[]"
+    instructionFingerprint: "9DCB912F27243C90CDBC34822547A57D"
+  paths:
+  - testPathName: "appendDetail20WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string45):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string47):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string49):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string51):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string53):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string55):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "short[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string45"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string47"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string49"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string51"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string53"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string55"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+  - testPathName: "appendDetail20WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void7"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void12"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void13"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "short[]"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void13"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+      internalMethodName: "appendDetail"
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false
+      internalMethodName: "appendDetail"
+- method:
+    name: "reflectionAppendArrayDetail"
+    sourceCodeSignature: "void reflectionAppendArrayDetail(final StringBuffer buffer,\
+      \ final String fieldName, final Object array)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "array"
+      type: "java.lang.Object"
+    instructionFingerprint: "AA69BD908B5A05BCD551F99543B3E2F1"
+  paths:
+  - testPathName: "reflectionAppendArrayDetailWhenILessThanSpaces"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string32):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string34):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string36):void3"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string38):void4"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string40):void5"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string42):void6"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayStart(string44):void8"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArraySeparator(string46):void9"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setArrayEnd(string48):void10"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentStart(string50):void11"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setFieldSeparator(string52):void12"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "setContentEnd(string54):void13"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void14"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_FAILURE"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "array"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string32"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"}"
+      valueType: "java.lang.String"
+      uuid: "string36"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void4"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string38"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\",\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string40"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n\\\" \\\",\\\" \\\"]"
+      valueType: "java.lang.String"
+      uuid: "string42"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void8"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string44"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void9"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string46"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void10"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n}"
+      valueType: "java.lang.String"
+      uuid: "string48"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void11"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string50"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void12"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ",\\n\\\" \\\",\\\" \\\""
+      valueType: "java.lang.String"
+      uuid: "string52"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void13"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n]"
+      valueType: "java.lang.String"
+      uuid: "string54"
+    - sapientType: "VOID"
+      uuid: "void14"
+    branches:
+    - lineNumber: 211
+      expression: "i < spaces"
+      range: "(211,25)-(211,34)"
+      evaluatedAs: true
+      internalMethodName: "spacer"

@@ -1,0 +1,1153 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+methods:
+- method:
+    name: "checkedException"
+    sourceCodeSignature: "Throwable checkedException(final Throwable ex)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "ex"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "7EBC2F6DCA525AE0F3CE4C61DD969C88"
+  paths:
+  - testPathName: "checkedExceptionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "ex"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "ex"
+      nameForMock: "ex"
+- method:
+    name: "constantFuture"
+    sourceCodeSignature: "<T> Future<T> constantFuture(final T value)"
+    returnType: "java.util.concurrent.Future"
+    parameters:
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "28F8496B8FB10BCB5C404D505F17C299"
+  paths:
+  - testPathName: "constantFutureTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentUtilsConstantFuture"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture"
+      uuid: "concurrentUtilsConstantFuture"
+- method:
+    name: "createIfAbsent"
+    sourceCodeSignature: "<K, V> V createIfAbsent(final ConcurrentMap<K, V> map, final\
+      \ K key, final ConcurrentInitializer<V> init)"
+    returnType: "java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "map"
+      type: "java.util.concurrent.ConcurrentMap"
+      genericType: "java.lang.Object,java.lang.Object"
+    - name: "key"
+      type: "java.lang.Object"
+    - name: "init"
+      type: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "03FB09AB8FB392BEB1F8D22C63F32C21"
+  paths:
+  - testPathName: "createIfAbsentWhenInitIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "init"
+      valueUuid: "init"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "init"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 153
+      expression: "map == null"
+      range: "(153,13)-(153,23)"
+      evaluatedAs: false
+    - lineNumber: 153
+      expression: "init == null"
+      range: "(153,28)-(153,39)"
+      evaluatedAs: true
+  - testPathName: "createIfAbsentWhenValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "init"
+      valueUuid: "init"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "putIfAbsent(map,key,object2):object3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object3"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.concurrent.ConcurrentHashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "key"
+            value:
+              sapientType: "NULL"
+              valueType: "java.lang.Object"
+              uuid: "object"
+          valueType: "java.util.Map$Entry"
+          uuid: "pair"
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "init"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object3"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    branches:
+    - lineNumber: 153
+      expression: "map == null"
+      range: "(153,13)-(153,23)"
+      evaluatedAs: false
+    - lineNumber: 153
+      expression: "init == null"
+      range: "(153,28)-(153,39)"
+      evaluatedAs: false
+    - lineNumber: 158
+      expression: "value == null"
+      range: "(158,13)-(158,25)"
+      evaluatedAs: true
+  - testPathName: "createIfAbsentWhenValueIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "init"
+      valueUuid: "init"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.concurrent.ConcurrentHashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "object"
+          valueType: "java.util.Map$Entry"
+          uuid: "pair"
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "init"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 153
+      expression: "map == null"
+      range: "(153,13)-(153,23)"
+      evaluatedAs: false
+    - lineNumber: 153
+      expression: "init == null"
+      range: "(153,28)-(153,39)"
+      evaluatedAs: false
+    - lineNumber: 158
+      expression: "value == null"
+      range: "(158,13)-(158,25)"
+      evaluatedAs: false
+- method:
+    name: "createIfAbsentUnchecked"
+    sourceCodeSignature: "<K, V> V createIfAbsentUnchecked(final ConcurrentMap<K,\
+      \ V> map, final K key, final ConcurrentInitializer<V> init)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "map"
+      type: "java.util.concurrent.ConcurrentMap"
+      genericType: "java.lang.Object,java.lang.Object"
+    - name: "key"
+      type: "java.lang.Object"
+    - name: "init"
+      type: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "03336F28914259CED0ABA5222E8B821F"
+  paths:
+  - testPathName: "createIfAbsentUncheckedTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "init"
+      valueUuid: "init"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "createIfAbsent(map,key,init):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "init"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+  - testPathName: "createIfAbsentUncheckedWhenCaughtConcurrentExceptionThrowsConcurrentRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "init"
+      valueUuid: "init"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "createIfAbsent(map,key,init):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentRuntimeException"
+    disabled: false
+    failureReason:
+      reason: "DEPENDENCY_TO_THROW_EXCEPTION_NOT_FOUND"
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "init"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    branches:
+    - lineNumber: 183
+      expression: "catch-exception (ConcurrentException)"
+      range: "(183,11)-(183,46)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+- method:
+    name: "extractCause"
+    sourceCodeSignature: "ConcurrentException extractCause(final ExecutionException\
+      \ ex)"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "ex"
+      type: "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "9480B38C34038C88B8CAF090585D1FA6"
+  paths:
+  - testPathName: "extractCauseWhenExGetCauseIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+    branches:
+    - lineNumber: 207
+      expression: "ex == null"
+      range: "(207,13)-(207,22)"
+      evaluatedAs: false
+    - lineNumber: 207
+      expression: "ex.getCause() == null"
+      range: "(207,27)-(207,47)"
+      evaluatedAs: true
+  - testPathName: "extractCauseWhenExGetCauseIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "ex-message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        parameters:
+        - name: "msg"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "ex-message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+    branches:
+    - lineNumber: 207
+      expression: "ex == null"
+      range: "(207,13)-(207,22)"
+      evaluatedAs: false
+    - lineNumber: 207
+      expression: "ex.getCause() == null"
+      range: "(207,27)-(207,47)"
+      evaluatedAs: false
+- method:
+    name: "extractCauseUnchecked"
+    sourceCodeSignature: "ConcurrentRuntimeException extractCauseUnchecked(final ExecutionException\
+      \ ex)"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+    parameters:
+    - name: "ex"
+      type: "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "94190E4FF5EFFFF33036653FB0446136"
+  paths:
+  - testPathName: "extractCauseUncheckedWhenExGetCauseIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentRuntimeException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    branches:
+    - lineNumber: 228
+      expression: "ex == null"
+      range: "(228,13)-(228,22)"
+      evaluatedAs: false
+    - lineNumber: 228
+      expression: "ex.getCause() == null"
+      range: "(228,27)-(228,47)"
+      evaluatedAs: true
+  - testPathName: "extractCauseUncheckedWhenExGetCauseIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentRuntimeException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "ex-message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        parameters:
+        - name: "msg"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "ex-message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    branches:
+    - lineNumber: 228
+      expression: "ex == null"
+      range: "(228,13)-(228,22)"
+      evaluatedAs: false
+    - lineNumber: 228
+      expression: "ex.getCause() == null"
+      range: "(228,27)-(228,47)"
+      evaluatedAs: false
+- method:
+    name: "handleCause"
+    sourceCodeSignature: "void handleCause(final ExecutionException ex)"
+    returnType: "void"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "ex"
+      type: "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "B8931A80D08C8A485473AA5B36968CF2"
+  paths:
+  - testPathName: "handleCauseWhenCauseIsNotNullThrowsConcurrentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "extractCause(ex):concurrentException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "concurrentException-cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+    branches:
+    - lineNumber: 253
+      expression: "cause != null"
+      range: "(253,13)-(253,25)"
+      evaluatedAs: true
+  - testPathName: "handleCauseWhenCauseIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "extractCause(ex):concurrentException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 253
+      expression: "cause != null"
+      range: "(253,13)-(253,25)"
+      evaluatedAs: false
+- method:
+    name: "handleCauseUnchecked"
+    sourceCodeSignature: "void handleCauseUnchecked(final ExecutionException ex)"
+    returnType: "void"
+    parameters:
+    - name: "ex"
+      type: "java.util.concurrent.ExecutionException"
+    instructionFingerprint: "2507EE628165FC8C73522839836C0C8C"
+  paths:
+  - testPathName: "handleCauseUncheckedWhenCauseIsNotNullThrowsConcurrentRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "extractCauseUnchecked(ex):concurrentRuntimeException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentRuntimeException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "concurrentRuntimeException-cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    branches:
+    - lineNumber: 274
+      expression: "cause != null"
+      range: "(274,13)-(274,25)"
+      evaluatedAs: true
+  - testPathName: "handleCauseUncheckedWhenCauseIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ex"
+      valueUuid: "ex"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "extractCauseUnchecked(ex):concurrentRuntimeException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "ex-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "ex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 274
+      expression: "cause != null"
+      range: "(274,13)-(274,25)"
+      evaluatedAs: false
+- method:
+    name: "initialize"
+    sourceCodeSignature: "<T> T initialize(final ConcurrentInitializer<T> initializer)"
+    returnType: "java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "initializer"
+      type: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "0E8D9F0CAE1C3747E1E7242A89F4BF80"
+  paths:
+  - testPathName: "initializeWhenInitializerIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      valueUuid: "initializer"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "initializer"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 294
+      expression: "initializer != null"
+      range: "(294,16)-(294,34)"
+      evaluatedAs: true
+  - testPathName: "initializeWhenInitializerIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      valueUuid: "initializer"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "initializer"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 294
+      expression: "initializer != null"
+      range: "(294,16)-(294,34)"
+      evaluatedAs: false
+- method:
+    name: "initializeUnchecked"
+    sourceCodeSignature: "<T> T initializeUnchecked(final ConcurrentInitializer<T>\
+      \ initializer)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "initializer"
+      type: "org.apache.commons.lang3.concurrent.ConcurrentInitializer"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "5BEB65B3150969D1709BD7BCDE359559"
+  paths:
+  - testPathName: "initializeUncheckedTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      valueUuid: "initializer"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "initialize(initializer):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "initializer"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+  - testPathName: "initializeUncheckedWhenCaughtConcurrentExceptionThrowsConcurrentRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "initializer"
+      valueUuid: "initializer"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "initialize(initializer):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentRuntimeException"
+    disabled: false
+    failureReason:
+      reason: "DEPENDENCY_TO_THROW_EXCEPTION_NOT_FOUND"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicInitializer"
+      genericValueType: "java.lang.Object"
+      uuid: "initializer"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentRuntimeException"
+      uuid: "concurrentRuntimeException"
+    branches:
+    - lineNumber: 313
+      expression: "catch-exception (ConcurrentException)"
+      range: "(313,11)-(313,46)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "org.apache.commons.lang3.concurrent.ConcurrentException"
+- method:
+    name: "putIfAbsent"
+    sourceCodeSignature: "<K, V> V putIfAbsent(final ConcurrentMap<K, V> map, final\
+      \ K key, final V value)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "map"
+      type: "java.util.concurrent.ConcurrentMap"
+      genericType: "java.lang.Object,java.lang.Object"
+    - name: "key"
+      type: "java.lang.Object"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "3D6EEA051C52BA5DD3AD94A108592224"
+  paths:
+  - testPathName: "putIfAbsentWhenMapIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 351
+      expression: "map == null"
+      range: "(351,13)-(351,23)"
+      evaluatedAs: true
+  - testPathName: "putIfAbsentWhenResultIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "map"
+      valueUuid: "map"
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "map"
+      valueUuid: "concurrentMap"
+      originalValueUuid: "map"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "map"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "key"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.concurrent.ConcurrentHashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+              valueType: "java.lang.Object"
+              uuid: "value"
+          valueType: "java.util.Map$Entry"
+          genericValueType: "java.lang.Object,java.lang.Object"
+          uuid: "pair"
+      valueType: "java.util.concurrent.ConcurrentMap"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "concurrentMap"
+    branches:
+    - lineNumber: 351
+      expression: "map == null"
+      range: "(351,13)-(351,23)"
+      evaluatedAs: false
+    - lineNumber: 356
+      expression: "result != null"
+      range: "(356,16)-(356,29)"
+      evaluatedAs: false

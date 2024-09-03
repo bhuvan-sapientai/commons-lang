@@ -1,0 +1,5285 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.builder.CompareToBuilder"
+methods:
+- method:
+    name: "reflectionCompare"
+    sourceCodeSignature: "int reflectionCompare(final Object lhs, final Object rhs)"
+    returnType: "int"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    instructionFingerprint: "E9BB40C2A185C2B3B976D9D6550A6734"
+  paths:
+  - testPathName: "reflectionCompareTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "STATIC"
+      name: "CompareToBuilder.class"
+      valueUuid: "CompareToBuilder.class"
+      methodExercised:
+        expression: "reflectionCompare(lhs,rhs,compareTransients,reflectUpToClass,stringArray):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "CompareToBuilder.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      uuid: "reflectUpToClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+- method:
+    name: "reflectionCompare"
+    sourceCodeSignature: "int reflectionCompare(final Object lhs, final Object rhs,\
+      \ final boolean compareTransients)"
+    returnType: "int"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    - name: "compareTransients"
+      type: "boolean"
+    instructionFingerprint: "0DA257676C4CAACF66099E6B7B5A2332"
+  paths:
+  - testPathName: "reflectionCompare1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "compareTransients"
+      valueUuid: "compareTransients"
+    - type: "STATIC"
+      name: "CompareToBuilder.class"
+      valueUuid: "CompareToBuilder.class"
+      methodExercised:
+        expression: "reflectionCompare(lhs,rhs,compareTransients,reflectUpToClass,stringArray):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "CompareToBuilder.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      uuid: "reflectUpToClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+- method:
+    name: "reflectionCompare"
+    sourceCodeSignature: "int reflectionCompare(final Object lhs, final Object rhs,\
+      \ final boolean compareTransients, final Class<?> reflectUpToClass, final String...\
+      \ excludeFields)"
+    returnType: "int"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    - name: "compareTransients"
+      type: "boolean"
+    - name: "reflectUpToClass"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "excludeFields"
+      type: "java.lang.String[]"
+    instructionFingerprint: "B6D5BCAE39D514BD6EB9FDDF318EA056"
+  paths:
+  - testPathName: "reflectionCompare2WhenLhsEqualsRhs"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "compareTransients"
+      valueUuid: "compareTransients"
+    - type: "INPUT"
+      name: "reflectUpToClass"
+      valueUuid: "reflectUpToClass"
+    - type: "INPUT"
+      name: "excludeFields"
+      valueUuid: "excludeFields"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "reflectUpToClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "excludeFields"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 234
+      expression: "lhs == rhs"
+      range: "(234,13)-(234,22)"
+      evaluatedAs: true
+  - testPathName: "reflectionCompare2WhenLhsClazzNotIsInstanceRhsThrowsClassCastException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "compareTransients"
+      valueUuid: "compareTransients"
+    - type: "INPUT"
+      name: "reflectUpToClass"
+      valueUuid: "reflectUpToClass"
+    - type: "INPUT"
+      name: "excludeFields"
+      valueUuid: "excludeFields"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "classCastException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Object) :\
+        \ boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "reflectUpToClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "excludeFields"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.ClassCastException"
+        parameters: []
+      valueType: "java.lang.ClassCastException"
+      uuid: "classCastException"
+    branches:
+    - lineNumber: 234
+      expression: "lhs == rhs"
+      range: "(234,13)-(234,22)"
+      evaluatedAs: false
+    - lineNumber: 241
+      expression: "!lhsClazz.isInstance(rhs)"
+      range: "(241,13)-(241,37)"
+      evaluatedAs: true
+  - testPathName: "reflectionCompare2WhenLhsClazzNotEqualsReflectUpToClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "compareTransients"
+      valueUuid: "compareTransients"
+    - type: "INPUT"
+      name: "reflectUpToClass"
+      valueUuid: "reflectUpToClass"
+    - type: "INPUT"
+      name: "excludeFields"
+      valueUuid: "excludeFields"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int15"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Object) :\
+        \ boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "reflectUpToClass"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "excludeFields"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int15"
+    branches:
+    - lineNumber: 234
+      expression: "lhs == rhs"
+      range: "(234,13)-(234,22)"
+      evaluatedAs: false
+    - lineNumber: 241
+      expression: "!lhsClazz.isInstance(rhs)"
+      range: "(241,13)-(241,37)"
+      evaluatedAs: false
+    - lineNumber: 120
+      expression: "i < fields.length"
+      range: "(120,25)-(120,41)"
+      evaluatedAs: true
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 120
+      expression: "builder.comparison == 0"
+      range: "(120,46)-(120,68)"
+      evaluatedAs: true
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 122
+      expression: "!ArrayUtils.contains(excludeFields, field.getName())"
+      range: "(122,17)-(122,68)"
+      evaluatedAs: true
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 123
+      expression: "!field.getName().contains(\\\"$\\\")"
+      range: "(123,20)-(123,49)"
+      evaluatedAs: true
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 124
+      expression: "useTransients"
+      range: "(124,21)-(124,33)"
+      evaluatedAs: false
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 125
+      expression: "!Modifier.isStatic(field.getModifiers())"
+      range: "(125,20)-(125,59)"
+      evaluatedAs: true
+      internalMethodName: "reflectionAppend"
+    - lineNumber: 246
+      expression: "lhsClazz.getSuperclass() != null"
+      range: "(246,16)-(246,47)"
+      evaluatedAs: true
+    - lineNumber: 246
+      expression: "lhsClazz != reflectUpToClass"
+      range: "(246,52)-(246,79)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.builder.CompareToBuilder"
+- method:
+    name: "reflectionCompare"
+    sourceCodeSignature: "int reflectionCompare(final Object lhs, final Object rhs,\
+      \ final Collection<String> excludeFields)"
+    returnType: "int"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    - name: "excludeFields"
+      type: "java.util.Collection"
+      genericType: "java.lang.String"
+    instructionFingerprint: "AFE087650D64A09E6BA9737BD42A2CB7"
+  paths:
+  - testPathName: "reflectionCompare3Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "excludeFields"
+      valueUuid: "excludeFields"
+    - type: "STATIC"
+      name: "CompareToBuilder.class"
+      valueUuid: "CompareToBuilder.class"
+      methodExercised:
+        expression: "reflectionCompare(lhs,rhs,stringArray):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.builder.ReflectionToStringBuilder.toNoNullStringArray(java.util.Collection<java.lang.String>)\
+        \ : java.lang.String[]"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.String"
+      uuid: "excludeFields"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "CompareToBuilder.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+- method:
+    name: "reflectionCompare"
+    sourceCodeSignature: "int reflectionCompare(final Object lhs, final Object rhs,\
+      \ final String... excludeFields)"
+    returnType: "int"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    - name: "excludeFields"
+      type: "java.lang.String[]"
+    instructionFingerprint: "D16EE8450E597C339CFCD379CE0D6954"
+  paths:
+  - testPathName: "reflectionCompare4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "excludeFields"
+      valueUuid: "excludeFields"
+    - type: "STATIC"
+      name: "CompareToBuilder.class"
+      valueUuid: "CompareToBuilder.class"
+      methodExercised:
+        expression: "reflectionCompare(lhs,rhs,compareTransients,reflectUpToClass,excludeFields):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "excludeFields"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "CompareToBuilder.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "compareTransients"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      uuid: "reflectUpToClass"
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final boolean lhs, final boolean\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "boolean"
+    - name: "rhs"
+      type: "boolean"
+    instructionFingerprint: "763AE8A9BC33CC9B92B9EB1DE815E12B"
+  paths:
+  - testPathName: "appendWhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 344
+      expression: "comparison != 0"
+      range: "(344,13)-(344,27)"
+      evaluatedAs: false
+    - lineNumber: 347
+      expression: "lhs == rhs"
+      range: "(347,13)-(347,22)"
+      evaluatedAs: true
+  - testPathName: "appendWhenLhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 344
+      expression: "comparison != 0"
+      range: "(344,13)-(344,27)"
+      evaluatedAs: false
+    - lineNumber: 347
+      expression: "lhs == rhs"
+      range: "(347,13)-(347,22)"
+      evaluatedAs: false
+    - lineNumber: 350
+      expression: "lhs"
+      range: "(350,13)-(350,15)"
+      evaluatedAs: true
+  - testPathName: "appendWhenNotLhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 344
+      expression: "comparison != 0"
+      range: "(344,13)-(344,27)"
+      evaluatedAs: false
+    - lineNumber: 347
+      expression: "lhs == rhs"
+      range: "(347,13)-(347,22)"
+      evaluatedAs: false
+    - lineNumber: 350
+      expression: "lhs"
+      range: "(350,13)-(350,15)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final boolean[] lhs, final boolean[]\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "boolean[]"
+    - name: "rhs"
+      type: "boolean[]"
+    instructionFingerprint: "5CFB918CEA1F2E14F3528DEFC5CA6C5F"
+  paths:
+  - testPathName: "append1WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: true
+  - testPathName: "append1WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: false
+    - lineNumber: 380
+      expression: "lhs == null"
+      range: "(380,13)-(380,23)"
+      evaluatedAs: true
+  - testPathName: "append1WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: false
+    - lineNumber: 380
+      expression: "lhs == null"
+      range: "(380,13)-(380,23)"
+      evaluatedAs: false
+    - lineNumber: 384
+      expression: "rhs == null"
+      range: "(384,13)-(384,23)"
+      evaluatedAs: true
+  - testPathName: "append1WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "rhsItem0"
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: false
+    - lineNumber: 380
+      expression: "lhs == null"
+      range: "(380,13)-(380,23)"
+      evaluatedAs: false
+    - lineNumber: 384
+      expression: "rhs == null"
+      range: "(384,13)-(384,23)"
+      evaluatedAs: false
+    - lineNumber: 388
+      expression: "lhs.length != rhs.length"
+      range: "(388,13)-(388,36)"
+      evaluatedAs: true
+    - lineNumber: 389
+      expression: "lhs.length < rhs.length"
+      range: "(389,26)-(389,48)"
+      evaluatedAs: true
+  - testPathName: "append1WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "lhsItem0"
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: false
+    - lineNumber: 380
+      expression: "lhs == null"
+      range: "(380,13)-(380,23)"
+      evaluatedAs: false
+    - lineNumber: 384
+      expression: "rhs == null"
+      range: "(384,13)-(384,23)"
+      evaluatedAs: false
+    - lineNumber: 388
+      expression: "lhs.length != rhs.length"
+      range: "(388,13)-(388,36)"
+      evaluatedAs: true
+    - lineNumber: 389
+      expression: "lhs.length < rhs.length"
+      range: "(389,26)-(389,48)"
+      evaluatedAs: false
+  - testPathName: "append1WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(boolean1,boolean2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean1"
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean2"
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 374
+      expression: "comparison != 0"
+      range: "(374,13)-(374,27)"
+      evaluatedAs: false
+    - lineNumber: 377
+      expression: "lhs == rhs"
+      range: "(377,13)-(377,22)"
+      evaluatedAs: false
+    - lineNumber: 380
+      expression: "lhs == null"
+      range: "(380,13)-(380,23)"
+      evaluatedAs: false
+    - lineNumber: 384
+      expression: "rhs == null"
+      range: "(384,13)-(384,23)"
+      evaluatedAs: false
+    - lineNumber: 388
+      expression: "lhs.length != rhs.length"
+      range: "(388,13)-(388,36)"
+      evaluatedAs: false
+    - lineNumber: 392
+      expression: "i < lhs.length"
+      range: "(392,25)-(392,38)"
+      evaluatedAs: true
+    - lineNumber: 392
+      expression: "comparison == 0"
+      range: "(392,43)-(392,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final byte lhs, final byte rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "byte"
+    - name: "rhs"
+      type: "byte"
+    instructionFingerprint: "7EACD88A8518B462BEB2EC0318B7D62F"
+  paths:
+  - testPathName: "append2WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "byte"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "byte"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 407
+      expression: "comparison != 0"
+      range: "(407,13)-(407,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final byte[] lhs, final byte[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "byte[]"
+    - name: "rhs"
+      type: "byte[]"
+    instructionFingerprint: "7923443E31E3A937E7600C37FCCCB757"
+  paths:
+  - testPathName: "append3WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: true
+  - testPathName: "append3WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: false
+    - lineNumber: 436
+      expression: "lhs == null"
+      range: "(436,13)-(436,23)"
+      evaluatedAs: true
+  - testPathName: "append3WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: false
+    - lineNumber: 436
+      expression: "lhs == null"
+      range: "(436,13)-(436,23)"
+      evaluatedAs: false
+    - lineNumber: 440
+      expression: "rhs == null"
+      range: "(440,13)-(440,23)"
+      evaluatedAs: true
+  - testPathName: "append3WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "rhsItem0"
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: false
+    - lineNumber: 436
+      expression: "lhs == null"
+      range: "(436,13)-(436,23)"
+      evaluatedAs: false
+    - lineNumber: 440
+      expression: "rhs == null"
+      range: "(440,13)-(440,23)"
+      evaluatedAs: false
+    - lineNumber: 444
+      expression: "lhs.length != rhs.length"
+      range: "(444,13)-(444,36)"
+      evaluatedAs: true
+    - lineNumber: 445
+      expression: "lhs.length < rhs.length"
+      range: "(445,26)-(445,48)"
+      evaluatedAs: true
+  - testPathName: "append3WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "lhsItem0"
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: false
+    - lineNumber: 436
+      expression: "lhs == null"
+      range: "(436,13)-(436,23)"
+      evaluatedAs: false
+    - lineNumber: 440
+      expression: "rhs == null"
+      range: "(440,13)-(440,23)"
+      evaluatedAs: false
+    - lineNumber: 444
+      expression: "lhs.length != rhs.length"
+      range: "(444,13)-(444,36)"
+      evaluatedAs: true
+    - lineNumber: 445
+      expression: "lhs.length < rhs.length"
+      range: "(445,26)-(445,48)"
+      evaluatedAs: false
+  - testPathName: "append3WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(byte1,byte2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "byte1"
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "byte2"
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "byte1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "byte2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 430
+      expression: "comparison != 0"
+      range: "(430,13)-(430,27)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "lhs == rhs"
+      range: "(433,13)-(433,22)"
+      evaluatedAs: false
+    - lineNumber: 436
+      expression: "lhs == null"
+      range: "(436,13)-(436,23)"
+      evaluatedAs: false
+    - lineNumber: 440
+      expression: "rhs == null"
+      range: "(440,13)-(440,23)"
+      evaluatedAs: false
+    - lineNumber: 444
+      expression: "lhs.length != rhs.length"
+      range: "(444,13)-(444,36)"
+      evaluatedAs: false
+    - lineNumber: 448
+      expression: "i < lhs.length"
+      range: "(448,25)-(448,38)"
+      evaluatedAs: true
+    - lineNumber: 448
+      expression: "comparison == 0"
+      range: "(448,43)-(448,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final char lhs, final char rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "char"
+    - name: "rhs"
+      type: "char"
+    instructionFingerprint: "569D7FEBF65F5D40F8BD399B0A05720E"
+  paths:
+  - testPathName: "append4WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 463
+      expression: "comparison != 0"
+      range: "(463,13)-(463,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final char[] lhs, final char[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "char[]"
+    - name: "rhs"
+      type: "char[]"
+    instructionFingerprint: "46BF20CE4528F75F5B51F14747D843B6"
+  paths:
+  - testPathName: "append5WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: true
+  - testPathName: "append5WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: false
+    - lineNumber: 492
+      expression: "lhs == null"
+      range: "(492,13)-(492,23)"
+      evaluatedAs: true
+  - testPathName: "append5WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: false
+    - lineNumber: 492
+      expression: "lhs == null"
+      range: "(492,13)-(492,23)"
+      evaluatedAs: false
+    - lineNumber: 496
+      expression: "rhs == null"
+      range: "(496,13)-(496,23)"
+      evaluatedAs: true
+  - testPathName: "append5WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "rhsItem0"
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: false
+    - lineNumber: 492
+      expression: "lhs == null"
+      range: "(492,13)-(492,23)"
+      evaluatedAs: false
+    - lineNumber: 496
+      expression: "rhs == null"
+      range: "(496,13)-(496,23)"
+      evaluatedAs: false
+    - lineNumber: 500
+      expression: "lhs.length != rhs.length"
+      range: "(500,13)-(500,36)"
+      evaluatedAs: true
+    - lineNumber: 501
+      expression: "lhs.length < rhs.length"
+      range: "(501,26)-(501,48)"
+      evaluatedAs: true
+  - testPathName: "append5WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "lhsItem0"
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: false
+    - lineNumber: 492
+      expression: "lhs == null"
+      range: "(492,13)-(492,23)"
+      evaluatedAs: false
+    - lineNumber: 496
+      expression: "rhs == null"
+      range: "(496,13)-(496,23)"
+      evaluatedAs: false
+    - lineNumber: 500
+      expression: "lhs.length != rhs.length"
+      range: "(500,13)-(500,36)"
+      evaluatedAs: true
+    - lineNumber: 501
+      expression: "lhs.length < rhs.length"
+      range: "(501,26)-(501,48)"
+      evaluatedAs: false
+  - testPathName: "append5WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(char1,char2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "char1"
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "char2"
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 486
+      expression: "comparison != 0"
+      range: "(486,13)-(486,27)"
+      evaluatedAs: false
+    - lineNumber: 489
+      expression: "lhs == rhs"
+      range: "(489,13)-(489,22)"
+      evaluatedAs: false
+    - lineNumber: 492
+      expression: "lhs == null"
+      range: "(492,13)-(492,23)"
+      evaluatedAs: false
+    - lineNumber: 496
+      expression: "rhs == null"
+      range: "(496,13)-(496,23)"
+      evaluatedAs: false
+    - lineNumber: 500
+      expression: "lhs.length != rhs.length"
+      range: "(500,13)-(500,36)"
+      evaluatedAs: false
+    - lineNumber: 504
+      expression: "i < lhs.length"
+      range: "(504,25)-(504,38)"
+      evaluatedAs: true
+    - lineNumber: 504
+      expression: "comparison == 0"
+      range: "(504,43)-(504,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final double lhs, final double rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "double"
+    - name: "rhs"
+      type: "double"
+    instructionFingerprint: "069E061AB9AC4FB5F82E9E30049C1229"
+  paths:
+  - testPathName: "append6WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 524
+      expression: "comparison != 0"
+      range: "(524,13)-(524,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final double[] lhs, final double[]\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "double[]"
+    - name: "rhs"
+      type: "double[]"
+    instructionFingerprint: "F1CCF1227A543EFD55807190A54F6FC0"
+  paths:
+  - testPathName: "append7WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: true
+  - testPathName: "append7WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: false
+    - lineNumber: 553
+      expression: "lhs == null"
+      range: "(553,13)-(553,23)"
+      evaluatedAs: true
+  - testPathName: "append7WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: false
+    - lineNumber: 553
+      expression: "lhs == null"
+      range: "(553,13)-(553,23)"
+      evaluatedAs: false
+    - lineNumber: 557
+      expression: "rhs == null"
+      range: "(557,13)-(557,23)"
+      evaluatedAs: true
+  - testPathName: "append7WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "rhsItem0"
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: false
+    - lineNumber: 553
+      expression: "lhs == null"
+      range: "(553,13)-(553,23)"
+      evaluatedAs: false
+    - lineNumber: 557
+      expression: "rhs == null"
+      range: "(557,13)-(557,23)"
+      evaluatedAs: false
+    - lineNumber: 561
+      expression: "lhs.length != rhs.length"
+      range: "(561,13)-(561,36)"
+      evaluatedAs: true
+    - lineNumber: 562
+      expression: "lhs.length < rhs.length"
+      range: "(562,26)-(562,48)"
+      evaluatedAs: true
+  - testPathName: "append7WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "lhsItem0"
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: false
+    - lineNumber: 553
+      expression: "lhs == null"
+      range: "(553,13)-(553,23)"
+      evaluatedAs: false
+    - lineNumber: 557
+      expression: "rhs == null"
+      range: "(557,13)-(557,23)"
+      evaluatedAs: false
+    - lineNumber: 561
+      expression: "lhs.length != rhs.length"
+      range: "(561,13)-(561,36)"
+      evaluatedAs: true
+    - lineNumber: 562
+      expression: "lhs.length < rhs.length"
+      range: "(562,26)-(562,48)"
+      evaluatedAs: false
+  - testPathName: "append7WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(double1,double2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "double1"
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "double2"
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "double"
+      uuid: "double1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "double"
+      uuid: "double2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 547
+      expression: "comparison != 0"
+      range: "(547,13)-(547,27)"
+      evaluatedAs: false
+    - lineNumber: 550
+      expression: "lhs == rhs"
+      range: "(550,13)-(550,22)"
+      evaluatedAs: false
+    - lineNumber: 553
+      expression: "lhs == null"
+      range: "(553,13)-(553,23)"
+      evaluatedAs: false
+    - lineNumber: 557
+      expression: "rhs == null"
+      range: "(557,13)-(557,23)"
+      evaluatedAs: false
+    - lineNumber: 561
+      expression: "lhs.length != rhs.length"
+      range: "(561,13)-(561,36)"
+      evaluatedAs: false
+    - lineNumber: 565
+      expression: "i < lhs.length"
+      range: "(565,25)-(565,38)"
+      evaluatedAs: true
+    - lineNumber: 565
+      expression: "comparison == 0"
+      range: "(565,43)-(565,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final float lhs, final float rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "float"
+    - name: "rhs"
+      type: "float"
+    instructionFingerprint: "B922BFD02FA51E216B4D4A8CE086BB67"
+  paths:
+  - testPathName: "append8WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 585
+      expression: "comparison != 0"
+      range: "(585,13)-(585,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final float[] lhs, final float[]\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "float[]"
+    - name: "rhs"
+      type: "float[]"
+    instructionFingerprint: "DF76EFBAC11EE384EACE92A85064D129"
+  paths:
+  - testPathName: "append9WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: true
+  - testPathName: "append9WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: false
+    - lineNumber: 614
+      expression: "lhs == null"
+      range: "(614,13)-(614,23)"
+      evaluatedAs: true
+  - testPathName: "append9WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: false
+    - lineNumber: 614
+      expression: "lhs == null"
+      range: "(614,13)-(614,23)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "rhs == null"
+      range: "(618,13)-(618,23)"
+      evaluatedAs: true
+  - testPathName: "append9WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "rhsItem0"
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: false
+    - lineNumber: 614
+      expression: "lhs == null"
+      range: "(614,13)-(614,23)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "rhs == null"
+      range: "(618,13)-(618,23)"
+      evaluatedAs: false
+    - lineNumber: 622
+      expression: "lhs.length != rhs.length"
+      range: "(622,13)-(622,36)"
+      evaluatedAs: true
+    - lineNumber: 623
+      expression: "lhs.length < rhs.length"
+      range: "(623,26)-(623,48)"
+      evaluatedAs: true
+  - testPathName: "append9WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "lhsItem0"
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: false
+    - lineNumber: 614
+      expression: "lhs == null"
+      range: "(614,13)-(614,23)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "rhs == null"
+      range: "(618,13)-(618,23)"
+      evaluatedAs: false
+    - lineNumber: 622
+      expression: "lhs.length != rhs.length"
+      range: "(622,13)-(622,36)"
+      evaluatedAs: true
+    - lineNumber: 623
+      expression: "lhs.length < rhs.length"
+      range: "(623,26)-(623,48)"
+      evaluatedAs: false
+  - testPathName: "append9WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(float1,float2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "float1"
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "float2"
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "float"
+      uuid: "float1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "float"
+      uuid: "float2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 608
+      expression: "comparison != 0"
+      range: "(608,13)-(608,27)"
+      evaluatedAs: false
+    - lineNumber: 611
+      expression: "lhs == rhs"
+      range: "(611,13)-(611,22)"
+      evaluatedAs: false
+    - lineNumber: 614
+      expression: "lhs == null"
+      range: "(614,13)-(614,23)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "rhs == null"
+      range: "(618,13)-(618,23)"
+      evaluatedAs: false
+    - lineNumber: 622
+      expression: "lhs.length != rhs.length"
+      range: "(622,13)-(622,36)"
+      evaluatedAs: false
+    - lineNumber: 626
+      expression: "i < lhs.length"
+      range: "(626,25)-(626,38)"
+      evaluatedAs: true
+    - lineNumber: 626
+      expression: "comparison == 0"
+      range: "(626,43)-(626,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final int lhs, final int rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "int"
+    - name: "rhs"
+      type: "int"
+    instructionFingerprint: "6108BD025C45FF6E26D16D09BF16EEC2"
+  paths:
+  - testPathName: "append10WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 641
+      expression: "comparison != 0"
+      range: "(641,13)-(641,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final int[] lhs, final int[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "int[]"
+    - name: "rhs"
+      type: "int[]"
+    instructionFingerprint: "3A3AC2FCC60A78DFFD1310B343B39A17"
+  paths:
+  - testPathName: "append11WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: true
+  - testPathName: "append11WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "lhs == null"
+      range: "(670,13)-(670,23)"
+      evaluatedAs: true
+  - testPathName: "append11WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "lhs == null"
+      range: "(670,13)-(670,23)"
+      evaluatedAs: false
+    - lineNumber: 674
+      expression: "rhs == null"
+      range: "(674,13)-(674,23)"
+      evaluatedAs: true
+  - testPathName: "append11WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "rhsItem0"
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "lhs == null"
+      range: "(670,13)-(670,23)"
+      evaluatedAs: false
+    - lineNumber: 674
+      expression: "rhs == null"
+      range: "(674,13)-(674,23)"
+      evaluatedAs: false
+    - lineNumber: 678
+      expression: "lhs.length != rhs.length"
+      range: "(678,13)-(678,36)"
+      evaluatedAs: true
+    - lineNumber: 679
+      expression: "lhs.length < rhs.length"
+      range: "(679,26)-(679,48)"
+      evaluatedAs: true
+  - testPathName: "append11WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "lhsItem0"
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "lhs == null"
+      range: "(670,13)-(670,23)"
+      evaluatedAs: false
+    - lineNumber: 674
+      expression: "rhs == null"
+      range: "(674,13)-(674,23)"
+      evaluatedAs: false
+    - lineNumber: 678
+      expression: "lhs.length != rhs.length"
+      range: "(678,13)-(678,36)"
+      evaluatedAs: true
+    - lineNumber: 679
+      expression: "lhs.length < rhs.length"
+      range: "(679,26)-(679,48)"
+      evaluatedAs: false
+  - testPathName: "append11WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(int6,int7):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int6"
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int7"
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int6"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int7"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "comparison != 0"
+      range: "(664,13)-(664,27)"
+      evaluatedAs: false
+    - lineNumber: 667
+      expression: "lhs == rhs"
+      range: "(667,13)-(667,22)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "lhs == null"
+      range: "(670,13)-(670,23)"
+      evaluatedAs: false
+    - lineNumber: 674
+      expression: "rhs == null"
+      range: "(674,13)-(674,23)"
+      evaluatedAs: false
+    - lineNumber: 678
+      expression: "lhs.length != rhs.length"
+      range: "(678,13)-(678,36)"
+      evaluatedAs: false
+    - lineNumber: 682
+      expression: "i < lhs.length"
+      range: "(682,25)-(682,38)"
+      evaluatedAs: true
+    - lineNumber: 682
+      expression: "comparison == 0"
+      range: "(682,43)-(682,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final long lhs, final long rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "long"
+    - name: "rhs"
+      type: "long"
+    instructionFingerprint: "1748FA64E0D5DA954F057481962E2E8B"
+  paths:
+  - testPathName: "append12WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 697
+      expression: "comparison != 0"
+      range: "(697,13)-(697,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final long[] lhs, final long[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "long[]"
+    - name: "rhs"
+      type: "long[]"
+    instructionFingerprint: "2943F2D55152615D3F0E5A3A3A247242"
+  paths:
+  - testPathName: "append13WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: true
+  - testPathName: "append13WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: false
+    - lineNumber: 726
+      expression: "lhs == null"
+      range: "(726,13)-(726,23)"
+      evaluatedAs: true
+  - testPathName: "append13WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: false
+    - lineNumber: 726
+      expression: "lhs == null"
+      range: "(726,13)-(726,23)"
+      evaluatedAs: false
+    - lineNumber: 730
+      expression: "rhs == null"
+      range: "(730,13)-(730,23)"
+      evaluatedAs: true
+  - testPathName: "append13WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "rhsItem0"
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: false
+    - lineNumber: 726
+      expression: "lhs == null"
+      range: "(726,13)-(726,23)"
+      evaluatedAs: false
+    - lineNumber: 730
+      expression: "rhs == null"
+      range: "(730,13)-(730,23)"
+      evaluatedAs: false
+    - lineNumber: 734
+      expression: "lhs.length != rhs.length"
+      range: "(734,13)-(734,36)"
+      evaluatedAs: true
+    - lineNumber: 735
+      expression: "lhs.length < rhs.length"
+      range: "(735,26)-(735,48)"
+      evaluatedAs: true
+  - testPathName: "append13WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "lhsItem0"
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: false
+    - lineNumber: 726
+      expression: "lhs == null"
+      range: "(726,13)-(726,23)"
+      evaluatedAs: false
+    - lineNumber: 730
+      expression: "rhs == null"
+      range: "(730,13)-(730,23)"
+      evaluatedAs: false
+    - lineNumber: 734
+      expression: "lhs.length != rhs.length"
+      range: "(734,13)-(734,36)"
+      evaluatedAs: true
+    - lineNumber: 735
+      expression: "lhs.length < rhs.length"
+      range: "(735,26)-(735,48)"
+      evaluatedAs: false
+  - testPathName: "append13WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(long1,long2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "long1"
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "long2"
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 720
+      expression: "comparison != 0"
+      range: "(720,13)-(720,27)"
+      evaluatedAs: false
+    - lineNumber: 723
+      expression: "lhs == rhs"
+      range: "(723,13)-(723,22)"
+      evaluatedAs: false
+    - lineNumber: 726
+      expression: "lhs == null"
+      range: "(726,13)-(726,23)"
+      evaluatedAs: false
+    - lineNumber: 730
+      expression: "rhs == null"
+      range: "(730,13)-(730,23)"
+      evaluatedAs: false
+    - lineNumber: 734
+      expression: "lhs.length != rhs.length"
+      range: "(734,13)-(734,36)"
+      evaluatedAs: false
+    - lineNumber: 738
+      expression: "i < lhs.length"
+      range: "(738,25)-(738,38)"
+      evaluatedAs: true
+    - lineNumber: 738
+      expression: "comparison == 0"
+      range: "(738,43)-(738,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final Object lhs, final Object rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    instructionFingerprint: "B2028AD1020366FF46545C395946F9D6"
+  paths:
+  - testPathName: "append14Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(lhs,rhs,comparator):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "compareToBuilder2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "NULL"
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final Object lhs, final Object rhs,\
+      \ final Comparator<?> comparator)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    - name: "comparator"
+      type: "java.util.Comparator"
+      genericType: "?"
+    instructionFingerprint: "A6B68A4DC0A4B5FD18B18A62B9CA67DF"
+  paths:
+  - testPathName: "append15WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: true
+  - testPathName: "append15WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: false
+    - lineNumber: 799
+      expression: "lhs == null"
+      range: "(799,13)-(799,23)"
+      evaluatedAs: true
+  - testPathName: "append15WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: false
+    - lineNumber: 799
+      expression: "lhs == null"
+      range: "(799,13)-(799,23)"
+      evaluatedAs: false
+    - lineNumber: 803
+      expression: "rhs == null"
+      range: "(803,13)-(803,23)"
+      evaluatedAs: true
+  - testPathName: "append15WhenComparatorIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.isArray(java.lang.Object)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Comparable"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "NULL"
+      valueType: "java.util.Comparator"
+      genericValueType: "?"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: false
+    - lineNumber: 799
+      expression: "lhs == null"
+      range: "(799,13)-(799,23)"
+      evaluatedAs: false
+    - lineNumber: 803
+      expression: "rhs == null"
+      range: "(803,13)-(803,23)"
+      evaluatedAs: false
+    - lineNumber: 807
+      expression: "ObjectUtils.isArray(lhs)"
+      range: "(807,13)-(807,36)"
+      evaluatedAs: false
+    - lineNumber: 811
+      expression: "comparator == null"
+      range: "(811,13)-(811,30)"
+      evaluatedAs: true
+  - testPathName: "append15WhenComparatorIsNotNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.isArray(java.lang.Object)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: false
+    - lineNumber: 799
+      expression: "lhs == null"
+      range: "(799,13)-(799,23)"
+      evaluatedAs: false
+    - lineNumber: 803
+      expression: "rhs == null"
+      range: "(803,13)-(803,23)"
+      evaluatedAs: false
+    - lineNumber: 807
+      expression: "ObjectUtils.isArray(lhs)"
+      range: "(807,13)-(807,36)"
+      evaluatedAs: false
+    - lineNumber: 811
+      expression: "comparator == null"
+      range: "(811,13)-(811,30)"
+      evaluatedAs: false
+  - testPathName: "append15WhenLhsNotInstanceOfBooleanArray"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.isArray(java.lang.Object)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<unknown_object>
+        target: "java.lang.Object"
+        onlyPojoFunctions: true
+        builderPattern: false
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 793
+      expression: "comparison != 0"
+      range: "(793,13)-(793,27)"
+      evaluatedAs: false
+    - lineNumber: 796
+      expression: "lhs == rhs"
+      range: "(796,13)-(796,22)"
+      evaluatedAs: false
+    - lineNumber: 799
+      expression: "lhs == null"
+      range: "(799,13)-(799,23)"
+      evaluatedAs: false
+    - lineNumber: 803
+      expression: "rhs == null"
+      range: "(803,13)-(803,23)"
+      evaluatedAs: false
+    - lineNumber: 807
+      expression: "ObjectUtils.isArray(lhs)"
+      range: "(807,13)-(807,36)"
+      evaluatedAs: true
+    - lineNumber: 955
+      expression: "lhs instanceof long[]"
+      range: "(955,13)-(955,33)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 957
+      expression: "lhs instanceof int[]"
+      range: "(957,20)-(957,39)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 959
+      expression: "lhs instanceof short[]"
+      range: "(959,20)-(959,41)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 961
+      expression: "lhs instanceof char[]"
+      range: "(961,20)-(961,40)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 963
+      expression: "lhs instanceof byte[]"
+      range: "(963,20)-(963,40)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 965
+      expression: "lhs instanceof double[]"
+      range: "(965,20)-(965,42)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 967
+      expression: "lhs instanceof float[]"
+      range: "(967,20)-(967,41)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+    - lineNumber: 969
+      expression: "lhs instanceof boolean[]"
+      range: "(969,20)-(969,43)"
+      evaluatedAs: false
+      internalMethodName: "appendArray"
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final Object[] lhs, final Object[]\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object[]"
+    - name: "rhs"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "D428635AD888B15ADA88B259905AE377"
+  paths:
+  - testPathName: "append16Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(lhs,rhs,comparator):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "compareToBuilder2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "NULL"
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final Object[] lhs, final Object[]\
+      \ rhs, final Comparator<?> comparator)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "java.lang.Object[]"
+    - name: "rhs"
+      type: "java.lang.Object[]"
+    - name: "comparator"
+      type: "java.util.Comparator"
+      genericType: "?"
+    instructionFingerprint: "8E2E921ED9AC11BB68950EDAB0CC364A"
+  paths:
+  - testPathName: "append17WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: true
+  - testPathName: "append17WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: false
+    - lineNumber: 877
+      expression: "lhs == null"
+      range: "(877,13)-(877,23)"
+      evaluatedAs: true
+  - testPathName: "append17WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: false
+    - lineNumber: 877
+      expression: "lhs == null"
+      range: "(877,13)-(877,23)"
+      evaluatedAs: false
+    - lineNumber: 881
+      expression: "rhs == null"
+      range: "(881,13)-(881,23)"
+      evaluatedAs: true
+  - testPathName: "append17WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhsItem0"
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: false
+    - lineNumber: 877
+      expression: "lhs == null"
+      range: "(877,13)-(877,23)"
+      evaluatedAs: false
+    - lineNumber: 881
+      expression: "rhs == null"
+      range: "(881,13)-(881,23)"
+      evaluatedAs: false
+    - lineNumber: 885
+      expression: "lhs.length != rhs.length"
+      range: "(885,13)-(885,36)"
+      evaluatedAs: true
+    - lineNumber: 886
+      expression: "lhs.length < rhs.length"
+      range: "(886,26)-(886,48)"
+      evaluatedAs: true
+  - testPathName: "append17WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhsItem0"
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: false
+    - lineNumber: 877
+      expression: "lhs == null"
+      range: "(877,13)-(877,23)"
+      evaluatedAs: false
+    - lineNumber: 881
+      expression: "rhs == null"
+      range: "(881,13)-(881,23)"
+      evaluatedAs: false
+    - lineNumber: 885
+      expression: "lhs.length != rhs.length"
+      range: "(885,13)-(885,36)"
+      evaluatedAs: true
+    - lineNumber: 886
+      expression: "lhs.length < rhs.length"
+      range: "(886,26)-(886,48)"
+      evaluatedAs: false
+  - testPathName: "append17WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INPUT"
+      name: "comparator"
+      valueUuid: "comparator"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(object,object2,comparator):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object2"
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.Comparator"
+        method: "reverseOrder"
+        methodParameters: []
+      valueType: "java.util.Comparator"
+      uuid: "comparator"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 871
+      expression: "comparison != 0"
+      range: "(871,13)-(871,27)"
+      evaluatedAs: false
+    - lineNumber: 874
+      expression: "lhs == rhs"
+      range: "(874,13)-(874,22)"
+      evaluatedAs: false
+    - lineNumber: 877
+      expression: "lhs == null"
+      range: "(877,13)-(877,23)"
+      evaluatedAs: false
+    - lineNumber: 881
+      expression: "rhs == null"
+      range: "(881,13)-(881,23)"
+      evaluatedAs: false
+    - lineNumber: 885
+      expression: "lhs.length != rhs.length"
+      range: "(885,13)-(885,36)"
+      evaluatedAs: false
+    - lineNumber: 889
+      expression: "i < lhs.length"
+      range: "(889,25)-(889,38)"
+      evaluatedAs: true
+    - lineNumber: 889
+      expression: "comparison == 0"
+      range: "(889,43)-(889,57)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final short lhs, final short rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "short"
+    - name: "rhs"
+      type: "short"
+    instructionFingerprint: "189E699E97A87D8D2AE40F6248C227D4"
+  paths:
+  - testPathName: "append18WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 904
+      expression: "comparison != 0"
+      range: "(904,13)-(904,27)"
+      evaluatedAs: false
+- method:
+    name: "append"
+    sourceCodeSignature: "CompareToBuilder append(final short[] lhs, final short[]\
+      \ rhs)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "lhs"
+      type: "short[]"
+    - name: "rhs"
+      type: "short[]"
+    instructionFingerprint: "B5685372C7AD4C6C393D1B6EAD700B1F"
+  paths:
+  - testPathName: "append19WhenLhsEqualsRhs"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "lhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: true
+  - testPathName: "append19WhenLhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "NULL"
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: false
+    - lineNumber: 933
+      expression: "lhs == null"
+      range: "(933,13)-(933,23)"
+      evaluatedAs: true
+  - testPathName: "append19WhenRhsIsNull"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "NULL"
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: false
+    - lineNumber: 933
+      expression: "lhs == null"
+      range: "(933,13)-(933,23)"
+      evaluatedAs: false
+    - lineNumber: 937
+      expression: "rhs == null"
+      range: "(937,13)-(937,23)"
+      evaluatedAs: true
+  - testPathName: "append19WhenLhsLengthLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "short"
+            uuid: "rhsItem0"
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: false
+    - lineNumber: 933
+      expression: "lhs == null"
+      range: "(933,13)-(933,23)"
+      evaluatedAs: false
+    - lineNumber: 937
+      expression: "rhs == null"
+      range: "(937,13)-(937,23)"
+      evaluatedAs: false
+    - lineNumber: 941
+      expression: "lhs.length != rhs.length"
+      range: "(941,13)-(941,36)"
+      evaluatedAs: true
+    - lineNumber: 942
+      expression: "lhs.length < rhs.length"
+      range: "(942,26)-(942,48)"
+      evaluatedAs: true
+  - testPathName: "append19WhenLhsLengthNotLessThanRhsLength"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "short"
+            uuid: "lhsItem0"
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: false
+    - lineNumber: 933
+      expression: "lhs == null"
+      range: "(933,13)-(933,23)"
+      evaluatedAs: false
+    - lineNumber: 937
+      expression: "rhs == null"
+      range: "(937,13)-(937,23)"
+      evaluatedAs: false
+    - lineNumber: 941
+      expression: "lhs.length != rhs.length"
+      range: "(941,13)-(941,36)"
+      evaluatedAs: true
+    - lineNumber: 942
+      expression: "lhs.length < rhs.length"
+      range: "(942,26)-(942,48)"
+      evaluatedAs: false
+  - testPathName: "append19WhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "append(short1,short2):compareToBuilder2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "short"
+            uuid: "short1"
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "short"
+            uuid: "short2"
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "compareToBuilder2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short2"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 927
+      expression: "comparison != 0"
+      range: "(927,13)-(927,27)"
+      evaluatedAs: false
+    - lineNumber: 930
+      expression: "lhs == rhs"
+      range: "(930,13)-(930,22)"
+      evaluatedAs: false
+    - lineNumber: 933
+      expression: "lhs == null"
+      range: "(933,13)-(933,23)"
+      evaluatedAs: false
+    - lineNumber: 937
+      expression: "rhs == null"
+      range: "(937,13)-(937,23)"
+      evaluatedAs: false
+    - lineNumber: 941
+      expression: "lhs.length != rhs.length"
+      range: "(941,13)-(941,36)"
+      evaluatedAs: false
+    - lineNumber: 945
+      expression: "i < lhs.length"
+      range: "(945,25)-(945,38)"
+      evaluatedAs: true
+    - lineNumber: 945
+      expression: "comparison == 0"
+      range: "(945,43)-(945,57)"
+      evaluatedAs: true
+- method:
+    name: "appendSuper"
+    sourceCodeSignature: "CompareToBuilder appendSuper(final int superCompareTo)"
+    returnType: "org.apache.commons.lang3.builder.CompareToBuilder"
+    parameters:
+    - name: "superCompareTo"
+      type: "int"
+    instructionFingerprint: "62F3D40FC94EE73BFDD92ADEA153587D"
+  paths:
+  - testPathName: "appendSuperWhenComparisonEquals0"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "superCompareTo"
+      valueUuid: "superCompareTo"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "superCompareTo"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 987
+      expression: "comparison != 0"
+      range: "(987,13)-(987,27)"
+      evaluatedAs: false
+- method:
+    name: "build"
+    sourceCodeSignature: "Integer build()"
+    returnType: "java.lang.Integer"
+    instructionFingerprint: "044C8777692C4B215A3DD36A48F67DF4"
+  paths:
+  - testPathName: "buildTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+- method:
+    name: "toComparison"
+    sourceCodeSignature: "int toComparison()"
+    returnType: "int"
+    instructionFingerprint: "57A8EA2A7902689501DD8207D1FC2029"
+  paths:
+  - testPathName: "toComparisonTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.CompareToBuilder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.CompareToBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"

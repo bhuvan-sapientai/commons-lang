@@ -1,0 +1,2100 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.util.FluentBitSet"
+methods:
+- method:
+    name: "and"
+    sourceCodeSignature: "FluentBitSet and(final BitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "java.util.BitSet"
+    instructionFingerprint: "C3089DEE8FFFCF896945809EA7FC3ACE"
+  paths:
+  - testPathName: "andTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "and"
+    sourceCodeSignature: "FluentBitSet and(final FluentBitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "3FC8DCD9F6E1F9F28923F5EC2266BBFB"
+  paths:
+  - testPathName: "and1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.and(java.util.BitSet) : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "andNot"
+    sourceCodeSignature: "FluentBitSet andNot(final BitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "java.util.BitSet"
+    instructionFingerprint: "E27A08D8CDD662761496EDDB2A6B11AB"
+  paths:
+  - testPathName: "andNotTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "andNot"
+    sourceCodeSignature: "FluentBitSet andNot(final FluentBitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "EA7F0DB653D22A58F36F7E1D71311640"
+  paths:
+  - testPathName: "andNot1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.andNot(java.util.BitSet) : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "bitSet"
+    sourceCodeSignature: "BitSet bitSet()"
+    returnType: "java.util.BitSet"
+    instructionFingerprint: "7DA4A15DBDDE3627D87C465B6C457F21"
+  paths:
+  - testPathName: "bitSetTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "set"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+- method:
+    name: "cardinality"
+    sourceCodeSignature: "int cardinality()"
+    returnType: "int"
+    instructionFingerprint: "48874210B063CF6AD67D34E30687843F"
+  paths:
+  - testPathName: "cardinalityTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "clear"
+    sourceCodeSignature: "FluentBitSet clear()"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "33F286C5B3C15BCB4D5CD906C14DC13D"
+  paths:
+  - testPathName: "clearTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "clear"
+    sourceCodeSignature: "FluentBitSet clear(final int... bitIndexArray)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndexArray"
+      type: "int[]"
+    instructionFingerprint: "212ACD933E9F0CAA511A5996A7879947"
+  paths:
+  - testPathName: "clear1WhenBitIndexArrayIsNotEmpty"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndexArray"
+      valueUuid: "bitIndexArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int3"
+      valueType: "int[]"
+      uuid: "bitIndexArray"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 151
+      expression: "for-each(bitIndexArray)"
+      range: "(151,28)-(151,40)"
+      evaluatedAs: true
+- method:
+    name: "clear"
+    sourceCodeSignature: "FluentBitSet clear(final int bitIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndex"
+      type: "int"
+    instructionFingerprint: "510E4F8CE30806E1AA309FFDB42A99FC"
+  paths:
+  - testPathName: "clear2Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "clear"
+    sourceCodeSignature: "FluentBitSet clear(final int fromIndex, final int toIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    instructionFingerprint: "35D130B475BB40231E8C11DAAFC98164"
+  paths:
+  - testPathName: "clear3Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "clone"
+    sourceCodeSignature: "Object clone()"
+    returnType: "java.lang.Object"
+    instructionFingerprint: "3F64B5175DCB38D326C8C01BA9C1095A"
+  paths:
+  - testPathName: "cloneTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "fluentBitSet2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "object"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "fluentBitSet2"
+- method:
+    name: "flip"
+    sourceCodeSignature: "FluentBitSet flip(final int bitIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndex"
+      type: "int"
+    instructionFingerprint: "0899374BBE89B800E5814C212BC65761"
+  paths:
+  - testPathName: "flipTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "flip"
+    sourceCodeSignature: "FluentBitSet flip(final int fromIndex, final int toIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    instructionFingerprint: "D4C8DA0D5992BDD749C584530768A221"
+  paths:
+  - testPathName: "flip1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "get"
+    sourceCodeSignature: "boolean get(final int bitIndex)"
+    returnType: "boolean"
+    parameters:
+    - name: "bitIndex"
+      type: "int"
+    instructionFingerprint: "E22289E1CCE68FF36C4B038A9BA1DE3F"
+  paths:
+  - testPathName: "getWhenBitSetGetBitIndex"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 244
+      expression: "bitSet.get(bitIndex)"
+      range: "(244,16)-(244,35)"
+      evaluatedAs: true
+  - testPathName: "getWhenBitSetNotGetBitIndex"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 244
+      expression: "bitSet.get(bitIndex)"
+      range: "(244,16)-(244,35)"
+      evaluatedAs: false
+- method:
+    name: "get"
+    sourceCodeSignature: "FluentBitSet get(final int fromIndex, final int toIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    instructionFingerprint: "E6FA4354CAF8703D4473C300CB7108DD"
+  paths:
+  - testPathName: "get1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "fluentBitSet2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "java.util.BitSet"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "java.util.BitSet"
+                  parameters: []
+                valueType: "java.util.BitSet"
+                uuid: "set"
+              methodParameters:
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 1
+                  valueType: "int"
+                  uuid: "fromIndex"
+              - value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 1
+                  valueType: "int"
+                  uuid: "toIndex"
+              methodName: "get"
+            valueType: "java.util.BitSet"
+            uuid: "bitSet2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "fluentBitSet2"
+- method:
+    name: "intersects"
+    sourceCodeSignature: "boolean intersects(final BitSet set)"
+    returnType: "boolean"
+    parameters:
+    - name: "set"
+      type: "java.util.BitSet"
+    instructionFingerprint: "3A9F3CEE71FBD4AEFCC8B6F1D6C7A369"
+  paths:
+  - testPathName: "intersectsWhenBitSetIntersectsSet"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.intersects(java.util.BitSet)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 274
+      expression: "bitSet.intersects(set)"
+      range: "(274,16)-(274,37)"
+      evaluatedAs: true
+  - testPathName: "intersectsWhenBitSetNotIntersectsSet"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 274
+      expression: "bitSet.intersects(set)"
+      range: "(274,16)-(274,37)"
+      evaluatedAs: false
+- method:
+    name: "intersects"
+    sourceCodeSignature: "boolean intersects(final FluentBitSet set)"
+    returnType: "boolean"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "B9DDA6808748ED2DC38EF86E4DEB8D66"
+  paths:
+  - testPathName: "intersects1WhenBitSetIntersectsSetBitSet"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.intersects(java.util.BitSet)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 285
+      expression: "bitSet.intersects(set.bitSet)"
+      range: "(285,16)-(285,44)"
+      evaluatedAs: true
+  - testPathName: "intersects1WhenBitSetNotIntersectsSetBitSet"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.intersects(java.util.BitSet)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 285
+      expression: "bitSet.intersects(set.bitSet)"
+      range: "(285,16)-(285,44)"
+      evaluatedAs: false
+- method:
+    name: "isEmpty"
+    sourceCodeSignature: "boolean isEmpty()"
+    returnType: "boolean"
+    instructionFingerprint: "C8912CEA84677C5B1441FF5F3C4C8653"
+  paths:
+  - testPathName: "isEmptyWhenBitSetIsEmpty"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 294
+      expression: "bitSet.isEmpty()"
+      range: "(294,16)-(294,31)"
+      evaluatedAs: true
+  - testPathName: "isEmptyWhenBitSetNotIsEmpty"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 294
+      expression: "bitSet.isEmpty()"
+      range: "(294,16)-(294,31)"
+      evaluatedAs: false
+- method:
+    name: "length"
+    sourceCodeSignature: "int length()"
+    returnType: "int"
+    instructionFingerprint: "357E07A6053E6784C194B696BCFBE2C4"
+  paths:
+  - testPathName: "lengthTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "nextClearBit"
+    sourceCodeSignature: "int nextClearBit(final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "473DE3953424610FEB23EFBEEFD97918"
+  paths:
+  - testPathName: "nextClearBitTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "nextSetBit"
+    sourceCodeSignature: "int nextSetBit(final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "9412FACD62CB6A03E172A6498475873B"
+  paths:
+  - testPathName: "nextSetBitTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "or"
+    sourceCodeSignature: "FluentBitSet or(final BitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "java.util.BitSet"
+    instructionFingerprint: "1E61BD4039BA4424DBD67D401BB88AEC"
+  paths:
+  - testPathName: "orTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "or"
+    sourceCodeSignature: "FluentBitSet or(final FluentBitSet... set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet[]"
+    instructionFingerprint: "175756F1C654C8D823D589DD01ED30FC"
+  paths:
+  - testPathName: "or1WhenSetIsNotEmpty"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.or(java.util.BitSet) : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.util.FluentBitSet"
+              parameters: []
+            valueType: "org.apache.commons.lang3.util.FluentBitSet"
+            uuid: "fluentBitSet2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet[]"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 365
+      expression: "for-each(set)"
+      range: "(365,37)-(365,39)"
+      evaluatedAs: true
+- method:
+    name: "or"
+    sourceCodeSignature: "FluentBitSet or(final FluentBitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "03856CE157DD81EE8802D74D634AB83D"
+  paths:
+  - testPathName: "or2Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.or(java.util.BitSet) : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "previousClearBit"
+    sourceCodeSignature: "int previousClearBit(final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "4D432ED82C41D74E8C187D9067366307"
+  paths:
+  - testPathName: "previousClearBitTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "previousSetBit"
+    sourceCodeSignature: "int previousSetBit(final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "7227483480D8A946EBB1B35A82B2F12F"
+  paths:
+  - testPathName: "previousSetBitTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "set"
+    sourceCodeSignature: "FluentBitSet set(final int... bitIndexArray)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndexArray"
+      type: "int[]"
+    instructionFingerprint: "1A7D276524CD3B6860026BD1057ABABB"
+  paths:
+  - testPathName: "setWhenBitIndexArrayIsNotEmpty"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndexArray"
+      valueUuid: "bitIndexArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int3"
+      valueType: "int[]"
+      uuid: "bitIndexArray"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 426
+      expression: "for-each(bitIndexArray)"
+      range: "(426,28)-(426,40)"
+      evaluatedAs: true
+- method:
+    name: "set"
+    sourceCodeSignature: "FluentBitSet set(final int bitIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndex"
+      type: "int"
+    instructionFingerprint: "53B18A01420CA5A87E5216BF5867A016"
+  paths:
+  - testPathName: "set1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "set"
+    sourceCodeSignature: "FluentBitSet set(final int bitIndex, final boolean value)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "bitIndex"
+      type: "int"
+    - name: "value"
+      type: "boolean"
+    instructionFingerprint: "C12539810BF7697A038C0437EC53DEBB"
+  paths:
+  - testPathName: "set2Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "bitIndex"
+      valueUuid: "bitIndex"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "bitIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "value"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "set"
+    sourceCodeSignature: "FluentBitSet set(final int fromIndex, final int toIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    instructionFingerprint: "C37E2541C2C3DCC333576EF9FF8E593D"
+  paths:
+  - testPathName: "set3Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "set"
+    sourceCodeSignature: "FluentBitSet set(final int fromIndex, final int toIndex,\
+      \ final boolean value)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    - name: "value"
+      type: "boolean"
+    instructionFingerprint: "0D46D7A4F9E16BBE86D4FAAB898BD95B"
+  paths:
+  - testPathName: "set4Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "value"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "setInclusive"
+    sourceCodeSignature: "FluentBitSet setInclusive(final int fromIndex, final int\
+      \ toIndex)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "fromIndex"
+      type: "int"
+    - name: "toIndex"
+      type: "int"
+    instructionFingerprint: "C6788EA3984FE9466572093E24CC41B9"
+  paths:
+  - testPathName: "setInclusiveTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "INPUT"
+      name: "toIndex"
+      valueUuid: "toIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toIndex"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "size"
+    sourceCodeSignature: "int size()"
+    returnType: "int"
+    instructionFingerprint: "CDEB602EFA0ED4B65600023E4FB05881"
+  paths:
+  - testPathName: "sizeTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "stream"
+    sourceCodeSignature: "IntStream stream()"
+    returnType: "java.util.stream.IntStream"
+    instructionFingerprint: "86531626F45248DCFE79075F6AB527D7"
+  paths:
+  - testPathName: "streamTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "intStream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.IntStream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.IntStream"
+      uuid: "intStream"
+- method:
+    name: "toByteArray"
+    sourceCodeSignature: "byte[] toByteArray()"
+    returnType: "byte[]"
+    instructionFingerprint: "2333176B17C2FA6DFC84FE1CB77563F4"
+  paths:
+  - testPathName: "toByteArrayTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byteArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "byteArray"
+- method:
+    name: "toLongArray"
+    sourceCodeSignature: "long[] toLongArray()"
+    returnType: "long[]"
+    instructionFingerprint: "180E79566FA931BBDF64B06D9E751DC4"
+  paths:
+  - testPathName: "toLongArrayTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "longArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "longArray"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "5DD291587F813148D9DE1B97F558B8E0"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set"
+            nameForMock: "set"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "{}"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "xor"
+    sourceCodeSignature: "FluentBitSet xor(final BitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "java.util.BitSet"
+    instructionFingerprint: "EC53F39D7CFBAE28554CD340F82E0F60"
+  paths:
+  - testPathName: "xorTest"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.BitSet"
+        parameters: []
+      valueType: "java.util.BitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"
+- method:
+    name: "xor"
+    sourceCodeSignature: "FluentBitSet xor(final FluentBitSet set)"
+    returnType: "org.apache.commons.lang3.util.FluentBitSet"
+    parameters:
+    - name: "set"
+      type: "org.apache.commons.lang3.util.FluentBitSet"
+    instructionFingerprint: "BAD78FF725DE7E6B03C1EB6B9064AB65"
+  paths:
+  - testPathName: "xor1Test"
+    constructorSignature: "<init>(java.util.BitSet) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "set"
+      valueUuid: "set"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.BitSet.xor(java.util.BitSet) : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.BitSet"
+              parameters: []
+            valueType: "java.util.BitSet"
+            uuid: "set2"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.util.FluentBitSet"
+        parameters: []
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "set"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.util.FluentBitSet"
+      uuid: "targetClassObject"

@@ -1,0 +1,529 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.text.FormattableUtils"
+methods:
+- method:
+    name: "append"
+    sourceCodeSignature: "Formatter append(final CharSequence seq, final Formatter\
+      \ formatter, final int flags, final int width, final int precision)"
+    returnType: "java.util.Formatter"
+    parameters:
+    - name: "seq"
+      type: "java.lang.CharSequence"
+    - name: "formatter"
+      type: "java.util.Formatter"
+    - name: "flags"
+      type: "int"
+    - name: "width"
+      type: "int"
+    - name: "precision"
+      type: "int"
+    instructionFingerprint: "505D1C6006C3983BD9FC64E9DC479C5A"
+  paths:
+  - testPathName: "appendTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "seq"
+      valueUuid: "seq"
+    - type: "INPUT"
+      name: "formatter"
+      valueUuid: "formatter"
+    - type: "INPUT"
+      name: "flags"
+      valueUuid: "flags"
+    - type: "INPUT"
+      name: "width"
+      valueUuid: "width"
+    - type: "INPUT"
+      name: "precision"
+      valueUuid: "precision"
+    - type: "STATIC"
+      name: "FormattableUtils.class"
+      valueUuid: "FormattableUtils.class"
+      methodExercised:
+        expression: "append(seq,formatter,flags,width,precision,padChar,ellipsis):formatter2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "formatter2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "seq1"
+      valueType: "java.lang.String"
+      uuid: "seq"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "flags"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "width"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "precision"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.FormattableUtils"
+      uuid: "FormattableUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: " "
+      valueType: "char"
+      uuid: "padChar"
+    - sapientType: "NULL"
+      valueType: "java.lang.CharSequence"
+      uuid: "ellipsis"
+- method:
+    name: "append"
+    sourceCodeSignature: "Formatter append(final CharSequence seq, final Formatter\
+      \ formatter, final int flags, final int width, final int precision, final char\
+      \ padChar)"
+    returnType: "java.util.Formatter"
+    parameters:
+    - name: "seq"
+      type: "java.lang.CharSequence"
+    - name: "formatter"
+      type: "java.util.Formatter"
+    - name: "flags"
+      type: "int"
+    - name: "width"
+      type: "int"
+    - name: "precision"
+      type: "int"
+    - name: "padChar"
+      type: "char"
+    instructionFingerprint: "16D75B32F968CC82FB3848FE35782AA9"
+  paths:
+  - testPathName: "append1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "seq"
+      valueUuid: "seq"
+    - type: "INPUT"
+      name: "formatter"
+      valueUuid: "formatter"
+    - type: "INPUT"
+      name: "flags"
+      valueUuid: "flags"
+    - type: "INPUT"
+      name: "width"
+      valueUuid: "width"
+    - type: "INPUT"
+      name: "precision"
+      valueUuid: "precision"
+    - type: "INPUT"
+      name: "padChar"
+      valueUuid: "padChar"
+    - type: "STATIC"
+      name: "FormattableUtils.class"
+      valueUuid: "FormattableUtils.class"
+      methodExercised:
+        expression: "append(seq,formatter,flags,width,precision,padChar,ellipsis):formatter2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "formatter2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "seq1"
+      valueType: "java.lang.String"
+      uuid: "seq"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "flags"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "width"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "precision"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "padChar"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.FormattableUtils"
+      uuid: "FormattableUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter2"
+    - sapientType: "NULL"
+      valueType: "java.lang.CharSequence"
+      uuid: "ellipsis"
+- method:
+    name: "append"
+    sourceCodeSignature: "Formatter append(final CharSequence seq, final Formatter\
+      \ formatter, final int flags, final int width, final int precision, final char\
+      \ padChar, final CharSequence ellipsis)"
+    returnType: "java.util.Formatter"
+    parameters:
+    - name: "seq"
+      type: "java.lang.CharSequence"
+    - name: "formatter"
+      type: "java.util.Formatter"
+    - name: "flags"
+      type: "int"
+    - name: "width"
+      type: "int"
+    - name: "precision"
+      type: "int"
+    - name: "padChar"
+      type: "char"
+    - name: "ellipsis"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "FC09826CCBB1185CF797F35A530A29A7"
+  paths:
+  - testPathName: "append2WhenNotLeftJustify"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "seq"
+      valueUuid: "seq"
+    - type: "INPUT"
+      name: "formatter"
+      valueUuid: "formatter"
+    - type: "INPUT"
+      name: "flags"
+      valueUuid: "flags"
+    - type: "INPUT"
+      name: "width"
+      valueUuid: "width"
+    - type: "INPUT"
+      name: "precision"
+      valueUuid: "precision"
+    - type: "INPUT"
+      name: "padChar"
+      valueUuid: "padChar"
+    - type: "INPUT"
+      name: "ellipsis"
+      valueUuid: "ellipsis"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "formatter"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "seq1"
+      valueType: "java.lang.String"
+      uuid: "seq"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "flags"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "width"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "precision"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "padChar"
+    - sapientType: "NULL"
+      valueType: "java.lang.CharSequence"
+      uuid: "ellipsis"
+    branches:
+    - lineNumber: 96
+      expression: "ellipsis == null"
+      range: "(96,25)-(96,40)"
+      evaluatedAs: true
+    - lineNumber: 99
+      expression: "precision >= 0"
+      range: "(99,13)-(99,26)"
+      evaluatedAs: true
+    - lineNumber: 99
+      expression: "precision < seq.length()"
+      range: "(99,31)-(99,54)"
+      evaluatedAs: true
+    - lineNumber: 103
+      expression: "(flags & FormattableFlags.LEFT_JUSTIFY) == FormattableFlags.LEFT_JUSTIFY"
+      range: "(103,37)-(103,108)"
+      evaluatedAs: false
+    - lineNumber: 104
+      expression: "i < width"
+      range: "(104,36)-(104,44)"
+      evaluatedAs: true
+    - lineNumber: 105
+      expression: "leftJustify"
+      range: "(105,24)-(105,34)"
+      evaluatedAs: false
+  - testPathName: "append2WhenPrecisionLessThanSeqLengthAndFlagsAndFormattableFlagsLEFT_JUSTIFYEqualsFormattableFlagsLEFT_JUSTIFYAndILessT"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "seq"
+      valueUuid: "seq"
+    - type: "INPUT"
+      name: "formatter"
+      valueUuid: "formatter"
+    - type: "INPUT"
+      name: "flags"
+      valueUuid: "flags"
+    - type: "INPUT"
+      name: "width"
+      valueUuid: "width"
+    - type: "INPUT"
+      name: "precision"
+      valueUuid: "precision"
+    - type: "INPUT"
+      name: "padChar"
+      valueUuid: "padChar"
+    - type: "INPUT"
+      name: "ellipsis"
+      valueUuid: "ellipsis"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "formatter"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.CharSequence.length() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "seq1"
+      valueType: "java.lang.String"
+      uuid: "seq"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "flags"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "width"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "precision"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "padChar"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ellipsis1"
+      valueType: "java.lang.String"
+      uuid: "ellipsis"
+    branches:
+    - lineNumber: 96
+      expression: "ellipsis == null"
+      range: "(96,25)-(96,40)"
+      evaluatedAs: false
+    - lineNumber: 96
+      expression: "precision < 0"
+      range: "(96,45)-(96,57)"
+      evaluatedAs: false
+    - lineNumber: 96
+      expression: "ellipsis.length() <= precision"
+      range: "(96,62)-(96,91)"
+      evaluatedAs: true
+    - lineNumber: 99
+      expression: "precision >= 0"
+      range: "(99,13)-(99,26)"
+      evaluatedAs: true
+    - lineNumber: 99
+      expression: "precision < seq.length()"
+      range: "(99,31)-(99,54)"
+      evaluatedAs: true
+    - lineNumber: 103
+      expression: "(flags & FormattableFlags.LEFT_JUSTIFY) == FormattableFlags.LEFT_JUSTIFY"
+      range: "(103,37)-(103,108)"
+      evaluatedAs: true
+    - lineNumber: 104
+      expression: "i < width"
+      range: "(104,36)-(104,44)"
+      evaluatedAs: true
+    - lineNumber: 105
+      expression: "leftJustify"
+      range: "(105,24)-(105,34)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "Formatter append(final CharSequence seq, final Formatter\
+      \ formatter, final int flags, final int width, final int precision, final CharSequence\
+      \ ellipsis)"
+    returnType: "java.util.Formatter"
+    parameters:
+    - name: "seq"
+      type: "java.lang.CharSequence"
+    - name: "formatter"
+      type: "java.util.Formatter"
+    - name: "flags"
+      type: "int"
+    - name: "width"
+      type: "int"
+    - name: "precision"
+      type: "int"
+    - name: "ellipsis"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "5BBE74431418DFB9FB2213E2E3D46149"
+  paths:
+  - testPathName: "append3Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "seq"
+      valueUuid: "seq"
+    - type: "INPUT"
+      name: "formatter"
+      valueUuid: "formatter"
+    - type: "INPUT"
+      name: "flags"
+      valueUuid: "flags"
+    - type: "INPUT"
+      name: "width"
+      valueUuid: "width"
+    - type: "INPUT"
+      name: "precision"
+      valueUuid: "precision"
+    - type: "INPUT"
+      name: "ellipsis"
+      valueUuid: "ellipsis"
+    - type: "STATIC"
+      name: "FormattableUtils.class"
+      valueUuid: "FormattableUtils.class"
+      methodExercised:
+        expression: "append(seq,formatter,flags,width,precision,padChar,ellipsis):formatter2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "formatter2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "seq1"
+      valueType: "java.lang.String"
+      uuid: "seq"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "flags"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "width"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "precision"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ellipsis1"
+      valueType: "java.lang.String"
+      uuid: "ellipsis"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.FormattableUtils"
+      uuid: "FormattableUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+      valueType: "java.util.Formatter"
+      uuid: "formatter2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: " "
+      valueType: "char"
+      uuid: "padChar"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Formattable formattable)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "formattable"
+      type: "java.util.Formattable"
+    instructionFingerprint: "032B6972520D34C7300EFBB5DC80F8C7"
+  paths:
+  - testPathName: "toStringTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "formattable"
+      valueUuid: "formattable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.Formattable"
+      uuid: "formattable"
+      nameForMock: "formattable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"

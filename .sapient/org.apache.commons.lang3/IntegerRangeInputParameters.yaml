@@ -1,0 +1,200 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.IntegerRange"
+methods:
+- method:
+    name: "of"
+    sourceCodeSignature: "IntegerRange of(final int fromInclusive, final int toInclusive)"
+    returnType: "org.apache.commons.lang3.IntegerRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "int"
+    - name: "toInclusive"
+      type: "int"
+    instructionFingerprint: "E431E0154202D894A7C5DA387000377A"
+  paths:
+  - testPathName: "of2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "STATIC"
+      name: "IntegerRange.class"
+      valueUuid: "IntegerRange.class"
+      methodExercised:
+        expression: "of(integer,integer2):integerRange"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integerRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "toInclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.IntegerRange"
+      uuid: "IntegerRange.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.IntegerRange"
+        method: "of"
+        methodParameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "integerRange-fromInclusive"
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "integerRange-toInclusive"
+      valueType: "org.apache.commons.lang3.IntegerRange"
+      uuid: "integerRange"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "integer2"
+- method:
+    name: "of"
+    sourceCodeSignature: "IntegerRange of(final Integer fromInclusive, final Integer\
+      \ toInclusive)"
+    returnType: "org.apache.commons.lang3.IntegerRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "java.lang.Integer"
+    - name: "toInclusive"
+      type: "java.lang.Integer"
+    instructionFingerprint: "72EDBC57071B45DD404D69CEB9F4A233"
+  paths:
+  - testPathName: "of3WhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integerRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.IntegerRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Integer"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Integer"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.IntegerRange"
+      uuid: "integerRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+  - testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integerRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.IntegerRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Integer"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Integer"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.IntegerRange"
+      uuid: "integerRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"

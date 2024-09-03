@@ -1,0 +1,116 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+methods:
+- method:
+    name: "get"
+    sourceCodeSignature: "T get()"
+    returnType: "java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "CA64B1694870EA7EB582F10921AFE5EF"
+  paths:
+  - testPathName: "getTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "obj"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "obj"
+      valueType: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "obj"
+- method:
+    name: "isInitialized"
+    sourceCodeSignature: "boolean isInitialized()"
+    returnType: "boolean"
+    instructionFingerprint: "1E9F0D49A82E0A843623DC05B1ED3C6A"
+  paths:
+  - testPathName: "isInitializedTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "obj"
+      valueType: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "7E61588A0608602A6D19C30FE5BDF6C4"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+        parameters:
+        - name: "obj"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.Object"
+            uuid: "obj"
+            nameForMock: "obj"
+      valueType: "org.apache.commons.lang3.concurrent.ConstantInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ConstantInitializer@0 [ object = obj ]"
+      valueType: "java.lang.String"
+      uuid: "string2"

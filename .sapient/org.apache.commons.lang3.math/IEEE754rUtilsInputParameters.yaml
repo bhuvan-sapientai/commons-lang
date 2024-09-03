@@ -1,0 +1,1014 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.math.IEEE754rUtils"
+methods:
+- method:
+    name: "max"
+    sourceCodeSignature: "double max(final double... array)"
+    returnType: "double"
+    parameters:
+    - name: "array"
+      type: "double[]"
+    instructionFingerprint: "DFF417CEFBE16BB8344227397E56B7B0"
+  paths:
+  - testPathName: "maxWhenArrayLengthNotEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "arrayItem0"
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 43
+      expression: "array.length != 0"
+      range: "(43,25)-(43,41)"
+      evaluatedAs: true
+  - testPathName: "maxWhenArrayLengthEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 43
+      expression: "array.length != 0"
+      range: "(43,25)-(43,41)"
+      evaluatedAs: false
+- method:
+    name: "max"
+    sourceCodeSignature: "double max(final double a, final double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "F9E26BBDCEA501705EF624CB35986CDD"
+  paths:
+  - testPathName: "max1WhenDoubleIsNaNA"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "b"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    branches:
+    - lineNumber: 64
+      expression: "Double.isNaN(a)"
+      range: "(64,13)-(64,27)"
+      evaluatedAs: true
+  - testPathName: "max1WhenDoubleIsNaNB"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "a"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    branches:
+    - lineNumber: 64
+      expression: "Double.isNaN(a)"
+      range: "(64,13)-(64,27)"
+      evaluatedAs: false
+    - lineNumber: 67
+      expression: "Double.isNaN(b)"
+      range: "(67,13)-(67,27)"
+      evaluatedAs: true
+  - testPathName: "max1WhenDoubleNotIsNaNB"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 64
+      expression: "Double.isNaN(a)"
+      range: "(64,13)-(64,27)"
+      evaluatedAs: false
+    - lineNumber: 67
+      expression: "Double.isNaN(b)"
+      range: "(67,13)-(67,27)"
+      evaluatedAs: false
+- method:
+    name: "max"
+    sourceCodeSignature: "double max(final double a, final double b, final double\
+      \ c)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    - name: "c"
+      type: "double"
+    instructionFingerprint: "EE9865BB666FB8EA10AB05E86274DC96"
+  paths:
+  - testPathName: "max2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "max(a,b):double1"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "max(double1,c):double2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "c"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.math.IEEE754rUtils"
+      uuid: "IEEE754rUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double2"
+- method:
+    name: "max"
+    sourceCodeSignature: "float max(final float... array)"
+    returnType: "float"
+    parameters:
+    - name: "array"
+      type: "float[]"
+    instructionFingerprint: "3BB0E825E1B5BF20642D5E0B98BD9E70"
+  paths:
+  - testPathName: "max3WhenArrayLengthNotEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "arrayItem0"
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 98
+      expression: "array.length != 0"
+      range: "(98,25)-(98,41)"
+      evaluatedAs: true
+  - testPathName: "max3WhenArrayLengthEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 98
+      expression: "array.length != 0"
+      range: "(98,25)-(98,41)"
+      evaluatedAs: false
+- method:
+    name: "max"
+    sourceCodeSignature: "float max(final float a, final float b)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    instructionFingerprint: "9B20EDCE6DCF32655E9FE939D6F1304A"
+  paths:
+  - testPathName: "max4WhenFloatIsNaNA"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "b"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    branches:
+    - lineNumber: 119
+      expression: "Float.isNaN(a)"
+      range: "(119,13)-(119,26)"
+      evaluatedAs: true
+  - testPathName: "max4WhenFloatIsNaNB"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "a"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    branches:
+    - lineNumber: 119
+      expression: "Float.isNaN(a)"
+      range: "(119,13)-(119,26)"
+      evaluatedAs: false
+    - lineNumber: 122
+      expression: "Float.isNaN(b)"
+      range: "(122,13)-(122,26)"
+      evaluatedAs: true
+  - testPathName: "max4WhenFloatNotIsNaNB"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+    branches:
+    - lineNumber: 119
+      expression: "Float.isNaN(a)"
+      range: "(119,13)-(119,26)"
+      evaluatedAs: false
+    - lineNumber: 122
+      expression: "Float.isNaN(b)"
+      range: "(122,13)-(122,26)"
+      evaluatedAs: false
+- method:
+    name: "max"
+    sourceCodeSignature: "float max(final float a, final float b, final float c)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    - name: "c"
+      type: "float"
+    instructionFingerprint: "F59D0DDAA4B047CE39081F6FB8F76C28"
+  paths:
+  - testPathName: "max5Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "max(a,b):float1"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "max(float1,c):float2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "c"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.math.IEEE754rUtils"
+      uuid: "IEEE754rUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float2"
+- method:
+    name: "min"
+    sourceCodeSignature: "double min(final double... array)"
+    returnType: "double"
+    parameters:
+    - name: "array"
+      type: "double[]"
+    instructionFingerprint: "63E1E490EAF475EF6B8403A5E31EA358"
+  paths:
+  - testPathName: "minWhenArrayLengthNotEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "double"
+            uuid: "arrayItem0"
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 153
+      expression: "array.length != 0"
+      range: "(153,25)-(153,41)"
+      evaluatedAs: true
+  - testPathName: "minWhenArrayLengthEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 153
+      expression: "array.length != 0"
+      range: "(153,25)-(153,41)"
+      evaluatedAs: false
+- method:
+    name: "min"
+    sourceCodeSignature: "double min(final double a, final double b)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    instructionFingerprint: "12D548EBC141999AF1F68A9632EA6CE4"
+  paths:
+  - testPathName: "min1WhenDoubleIsNaNA"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "b"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    branches:
+    - lineNumber: 174
+      expression: "Double.isNaN(a)"
+      range: "(174,13)-(174,27)"
+      evaluatedAs: true
+  - testPathName: "min1WhenDoubleIsNaNB"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "a"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    branches:
+    - lineNumber: 174
+      expression: "Double.isNaN(a)"
+      range: "(174,13)-(174,27)"
+      evaluatedAs: false
+    - lineNumber: 177
+      expression: "Double.isNaN(b)"
+      range: "(177,13)-(177,27)"
+      evaluatedAs: true
+  - testPathName: "min1WhenDoubleNotIsNaNB"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 174
+      expression: "Double.isNaN(a)"
+      range: "(174,13)-(174,27)"
+      evaluatedAs: false
+    - lineNumber: 177
+      expression: "Double.isNaN(b)"
+      range: "(177,13)-(177,27)"
+      evaluatedAs: false
+- method:
+    name: "min"
+    sourceCodeSignature: "double min(final double a, final double b, final double\
+      \ c)"
+    returnType: "double"
+    parameters:
+    - name: "a"
+      type: "double"
+    - name: "b"
+      type: "double"
+    - name: "c"
+      type: "double"
+    instructionFingerprint: "F5BC98631E6C1961F4ACC957F11D4540"
+  paths:
+  - testPathName: "min2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "min(a,b):double1"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "min(double1,c):double2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "c"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.math.IEEE754rUtils"
+      uuid: "IEEE754rUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double2"
+- method:
+    name: "min"
+    sourceCodeSignature: "float min(final float... array)"
+    returnType: "float"
+    parameters:
+    - name: "array"
+      type: "float[]"
+    instructionFingerprint: "4437AC25AD3F70D2F4B5DA4CEBB784BD"
+  paths:
+  - testPathName: "min3WhenArrayLengthNotEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "float"
+            uuid: "arrayItem0"
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 208
+      expression: "array.length != 0"
+      range: "(208,25)-(208,41)"
+      evaluatedAs: true
+  - testPathName: "min3WhenArrayLengthEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "array"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters: []
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 208
+      expression: "array.length != 0"
+      range: "(208,25)-(208,41)"
+      evaluatedAs: false
+- method:
+    name: "min"
+    sourceCodeSignature: "float min(final float a, final float b)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    instructionFingerprint: "B8F7AB2B7589AE52F2973214D79E1396"
+  paths:
+  - testPathName: "min4WhenFloatIsNaNA"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "b"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    branches:
+    - lineNumber: 229
+      expression: "Float.isNaN(a)"
+      range: "(229,13)-(229,26)"
+      evaluatedAs: true
+  - testPathName: "min4WhenFloatIsNaNB"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "a"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    branches:
+    - lineNumber: 229
+      expression: "Float.isNaN(a)"
+      range: "(229,13)-(229,26)"
+      evaluatedAs: false
+    - lineNumber: 232
+      expression: "Float.isNaN(b)"
+      range: "(232,13)-(232,26)"
+      evaluatedAs: true
+  - testPathName: "min4WhenFloatNotIsNaNB"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+    branches:
+    - lineNumber: 229
+      expression: "Float.isNaN(a)"
+      range: "(229,13)-(229,26)"
+      evaluatedAs: false
+    - lineNumber: 232
+      expression: "Float.isNaN(b)"
+      range: "(232,13)-(232,26)"
+      evaluatedAs: false
+- method:
+    name: "min"
+    sourceCodeSignature: "float min(final float a, final float b, final float c)"
+    returnType: "float"
+    parameters:
+    - name: "a"
+      type: "float"
+    - name: "b"
+      type: "float"
+    - name: "c"
+      type: "float"
+    instructionFingerprint: "9B77BAB3E41A90F1054690A73CBF3EEB"
+  paths:
+  - testPathName: "min5Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "min(a,b):float1"
+    - type: "STATIC"
+      name: "IEEE754rUtils.class"
+      valueUuid: "IEEE754rUtils.class"
+      methodExercised:
+        expression: "min(float1,c):float2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "a"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "b"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "c"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.math.IEEE754rUtils"
+      uuid: "IEEE754rUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float2"

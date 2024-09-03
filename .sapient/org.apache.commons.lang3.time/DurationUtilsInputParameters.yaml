@@ -1,0 +1,837 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.time.DurationUtils"
+methods:
+- method:
+    name: "accept"
+    sourceCodeSignature: "<T extends Throwable> void accept(final FailableBiConsumer<Long,\
+      \ Integer, T> consumer, final Duration duration)"
+    returnType: "void"
+    throwsExceptions:
+    - "java.lang.Throwable"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableBiConsumer"
+      genericType: "java.lang.Long,java.lang.Integer,java.lang.Throwable"
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "FDD34573A45F0128571067F3890278DB"
+  paths:
+  - testPathName: "acceptWhenDurationIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "STATIC"
+      name: "DurationUtils.class"
+      valueUuid: "DurationUtils.class"
+      methodExercised:
+        expression: "getNanosOfMilli(duration):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiConsumer"
+      uuid: "consumer"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.DurationUtils"
+      uuid: "DurationUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "VOID"
+      uuid: "void2"
+    branches:
+    - lineNumber: 57
+      expression: "consumer != null"
+      range: "(57,13)-(57,28)"
+      evaluatedAs: true
+    - lineNumber: 57
+      expression: "duration != null"
+      range: "(57,33)-(57,48)"
+      evaluatedAs: true
+- method:
+    name: "getNanosOfMiili"
+    sourceCodeSignature: "int getNanosOfMiili(final Duration duration)"
+    returnType: "int"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "E77DF7CB0AB6CAE125B57F42DE29B9EA"
+  paths:
+  - testPathName: "getNanosOfMiiliTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "STATIC"
+      name: "DurationUtils.class"
+      valueUuid: "DurationUtils.class"
+      methodExercised:
+        expression: "getNanosOfMilli(duration):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.DurationUtils"
+      uuid: "DurationUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getNanosOfMilli"
+    sourceCodeSignature: "int getNanosOfMilli(final Duration duration)"
+    returnType: "int"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "1768530BEB12B8A4B253A957280E3AB8"
+  paths:
+  - testPathName: "getNanosOfMilliTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.time.DurationUtils"
+- method:
+    name: "isPositive"
+    sourceCodeSignature: "boolean isPositive(final Duration duration)"
+    returnType: "boolean"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "5E92DB4945F919C0DFB7553587E248A2"
+  paths:
+  - testPathName: "isPositiveWhenDurationNotIsZero"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.time.Duration.isNegative() : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 106
+      expression: "!duration.isNegative()"
+      range: "(106,16)-(106,37)"
+      evaluatedAs: true
+    - lineNumber: 106
+      expression: "!duration.isZero()"
+      range: "(106,42)-(106,59)"
+      evaluatedAs: true
+  - testPathName: "isPositiveWhenDurationIsZero"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 106
+      expression: "!duration.isNegative()"
+      range: "(106,16)-(106,37)"
+      evaluatedAs: true
+    - lineNumber: 106
+      expression: "!duration.isZero()"
+      range: "(106,42)-(106,59)"
+      evaluatedAs: false
+- method:
+    name: "of"
+    sourceCodeSignature: "<E extends Throwable> Duration of(final FailableConsumer<Instant,\
+      \ E> consumer)"
+    returnType: "java.time.Duration"
+    throwsExceptions:
+    - "java.lang.Throwable"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableConsumer"
+      genericType: "java.time.Instant,java.lang.Throwable"
+    instructionFingerprint: "9B960A6D8FFAFCAA0A2D2B918838304A"
+  paths:
+  - testPathName: "ofTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "STATIC"
+      name: "Instant.class"
+      valueUuid: "Instant.class"
+      methodExercised:
+        expression: "now():instant"
+    - type: "STATIC"
+      name: "Instant.class"
+      valueUuid: "Instant.class"
+      methodExercised:
+        expression: "now():instant2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "duration"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "nowConsumer.accept(start);"
+      lineNumber: 111
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: nowConsumer - Method: accept"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "consumer"
+    - sapientType: "MOCK"
+      valueType: "java.time.Instant"
+      uuid: "Instant.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Instant"
+        method: "now"
+        methodParameters: []
+      valueType: "java.time.Instant"
+      uuid: "instant"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Instant"
+        method: "now"
+        methodParameters: []
+      valueType: "java.time.Instant"
+      uuid: "instant2"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.time.DurationUtils"
+- method:
+    name: "of"
+    sourceCodeSignature: "<E extends Throwable> Duration of(final FailableRunnable<E>\
+      \ runnable)"
+    returnType: "java.time.Duration"
+    throwsExceptions:
+    - "java.lang.Throwable"
+    parameters:
+    - name: "runnable"
+      type: "org.apache.commons.lang3.function.FailableRunnable"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "9F57093E18AE9DED5F70DD553C60F637"
+  paths:
+  - testPathName: "of1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      valueUuid: "runnable"
+    - type: "STATIC"
+      name: "DurationUtils.class"
+      valueUuid: "DurationUtils.class"
+      methodExercised:
+        expression: "of(consumer-any):duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "duration"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.DurationUtils"
+      uuid: "DurationUtils.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "consumer-any"
+- method:
+    name: "since"
+    sourceCodeSignature: "Duration since(final Temporal startInclusive)"
+    returnType: "java.time.Duration"
+    parameters:
+    - name: "startInclusive"
+      type: "java.time.temporal.Temporal"
+    instructionFingerprint: "F644F9021ECED0A8F4231F5D86F93392"
+  paths:
+  - testPathName: "sinceTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "startInclusive"
+      valueUuid: "startInclusive"
+    - type: "STATIC"
+      name: "Instant.class"
+      valueUuid: "Instant.class"
+      methodExercised:
+        expression: "now():instant"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "duration"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.time.Duration.between(java.time.temporal.Temporal,java.time.Instant)\
+        \ : java.time.Duration"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.time.temporal.Temporal"
+      uuid: "startInclusive"
+    - sapientType: "MOCK"
+      valueType: "java.time.Instant"
+      uuid: "Instant.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Instant"
+        method: "now"
+        methodParameters: []
+      valueType: "java.time.Instant"
+      uuid: "instant"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+- method:
+    name: "toChronoUnit"
+    sourceCodeSignature: "ChronoUnit toChronoUnit(final TimeUnit timeUnit)"
+    returnType: "java.time.temporal.ChronoUnit"
+    parameters:
+    - name: "timeUnit"
+      type: "java.util.concurrent.TimeUnit"
+    instructionFingerprint: "8DC7FEDFA0C97CB15F619EC71DA3F8C5"
+  paths:
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseDAYS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-DAYS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "DAYS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "DAYS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-DAYS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = DAYS"
+      range: "(173,14)-(173,17)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseHOURS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-HOURS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "HOURS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "HOURS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-HOURS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = HOURS"
+      range: "(171,14)-(171,18)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseMICROSECONDS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-MICROS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MICROSECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MICROS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-MICROS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = MICROSECONDS"
+      range: "(163,14)-(163,25)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseMILLISECONDS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-MILLIS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MILLISECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MILLIS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-MILLIS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = MILLISECONDS"
+      range: "(165,14)-(165,25)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseMINUTES"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-MINUTES"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MINUTES"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "MINUTES"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-MINUTES"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = MINUTES"
+      range: "(169,14)-(169,20)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseNANOSECONDS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-NANOS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "NANOSECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "NANOS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-NANOS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = NANOSECONDS"
+      range: "(161,14)-(161,24)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseSECONDS"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "Enum-java.time.temporal.ChronoUnit-SECONDS"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "SECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "SECONDS"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "Enum-java.time.temporal.ChronoUnit-SECONDS"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = SECONDS"
+      range: "(167,14)-(167,20)"
+      evaluatedAs: true
+  - testPathName: "toChronoUnitWhenSwitchObjectsRequireNonNullTimeUnitCaseDefaultThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "LOOKUP_SWITCH_INSTRUCTION_FAILURE"
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "DAYS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "DAYS"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 160
+      expression: "switch(Objects.requireNonNull(timeUnit)) = default"
+      range: "(175,9)-(175,15)"
+      evaluatedAs: true
+- method:
+    name: "toDuration"
+    sourceCodeSignature: "Duration toDuration(final long amount, final TimeUnit timeUnit)"
+    returnType: "java.time.Duration"
+    parameters:
+    - name: "amount"
+      type: "long"
+    - name: "timeUnit"
+      type: "java.util.concurrent.TimeUnit"
+    instructionFingerprint: "6CAF0948E4F9C7B66FC6C103EC97F437"
+  paths:
+  - testPathName: "toDurationTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "amount"
+      valueUuid: "amount"
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "STATIC"
+      name: "DurationUtils.class"
+      valueUuid: "DurationUtils.class"
+      methodExercised:
+        expression: "toChronoUnit(timeUnit):chronoUnit"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "duration"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "amount"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "NANOSECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.DurationUtils"
+      uuid: "DurationUtils.class"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "FOREVER"
+      valueType: "java.time.temporal.ChronoUnit"
+      uuid: "chronoUnit"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+- method:
+    name: "toMillisInt"
+    sourceCodeSignature: "int toMillisInt(final Duration duration)"
+    returnType: "int"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "AB13097AF0225A6E7C62E128E2084F38"
+  paths:
+  - testPathName: "toMillisIntTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "zeroIfNull"
+    sourceCodeSignature: "Duration zeroIfNull(final Duration duration)"
+    returnType: "java.time.Duration"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "D1478387E21B90DAAD283CB9CC10AF44"
+  paths:
+  - testPathName: "zeroIfNullTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "duration3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.ObjectUtils"
+        method: "defaultIfNull"
+        methodParameters:
+        - value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.time.Duration"
+              method: "ofDays"
+              methodParameters:
+              - name: "days"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "long"
+                  uuid: "duration-days"
+            valueType: "java.time.Duration"
+            uuid: "duration"
+        - value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "java.time.Duration"
+              fieldName: "ZERO"
+            valueType: "java.time.Duration"
+            uuid: "duration2"
+      valueType: "java.time.Duration"
+      uuid: "duration3"

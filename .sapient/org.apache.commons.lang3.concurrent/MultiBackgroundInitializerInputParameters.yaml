@@ -1,0 +1,325 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+methods:
+- method:
+    name: "addInitializer"
+    sourceCodeSignature: "void addInitializer(final String name, final BackgroundInitializer<?>\
+      \ backgroundInitializer)"
+    returnType: "void"
+    parameters:
+    - name: "name"
+      type: "java.lang.String"
+    - name: "backgroundInitializer"
+      type: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      genericType: "?"
+    instructionFingerprint: "71E0A0071E4F23DB0880D3C626B4B703"
+  paths:
+  - testPathName: "addInitializerWhenIsStartedThrowsIllegalStateException"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "INPUT"
+      name: "backgroundInitializer"
+      valueUuid: "backgroundInitializer"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "name1"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "backgroundInitializer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "addInitializer() must not be called after start()!"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 274
+      expression: "isStarted()"
+      range: "(274,17)-(274,27)"
+      evaluatedAs: true
+  - testPathName: "addInitializerWhenIsStartedNot"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "INPUT"
+      name: "backgroundInitializer"
+      valueUuid: "backgroundInitializer"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "name1"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "backgroundInitializer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 274
+      expression: "isStarted()"
+      range: "(274,17)-(274,27)"
+      evaluatedAs: false
+- method:
+    name: "close"
+    sourceCodeSignature: "void close()"
+    returnType: "void"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "C9C8ED95E7423D0411992EE25B37499C"
+  paths:
+  - testPathName: "closeWhenExceptionIsNull"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 291
+      expression: "for-each(childInitializers.values())"
+      range: "(291,47)-(291,72)"
+      evaluatedAs: false
+    - lineNumber: 309
+      expression: "exception != null"
+      range: "(309,13)-(309,29)"
+      evaluatedAs: false
+- method:
+    name: "getTaskCount"
+    sourceCodeSignature: "int getTaskCount()"
+    returnType: "int"
+    instructionFingerprint: "EA310F00797868C0B3502F5550458AF9"
+  paths:
+  - testPathName: "getTaskCountTest"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.stream.Stream.mapToInt(java.util.function.ToIntFunction)\
+        \ : java.util.stream.IntStream"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int2"
+- method:
+    name: "initialize"
+    sourceCodeSignature: "MultiBackgroundInitializerResults initialize()"
+    returnType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults"
+    throwsExceptions:
+    - "java.lang.Exception"
+    instructionFingerprint: "0889A4B6746311D2BA46AADE8C46EBE2"
+  paths:
+  - testPathName: "initialize1Test"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "multiBackgroundInitializerMultiBackgroundInitializerResults"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults"
+        parameters:
+        - name: "x0"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.HashMap"
+              parameters: []
+              values: []
+            valueType: "java.util.Map"
+            genericValueType: "java.lang.String,org.apache.commons.lang3.concurrent.BackgroundInitializer<?>"
+            uuid: "hashMap2"
+        - name: "x1"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.HashMap"
+              parameters: []
+              values: []
+            valueType: "java.util.Map"
+            genericValueType: "java.lang.String,java.lang.Object"
+            uuid: "hashMap3"
+        - name: "x2"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.HashMap"
+              parameters: []
+              values: []
+            valueType: "java.util.Map"
+            genericValueType: "java.lang.String,org.apache.commons.lang3.concurrent.ConcurrentException"
+            uuid: "hashMap4"
+        - name: "x3"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1"
+            uuid: "x3"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults"
+      uuid: "multiBackgroundInitializerMultiBackgroundInitializerResults"
+- method:
+    name: "isInitialized"
+    sourceCodeSignature: "boolean isInitialized()"
+    returnType: "boolean"
+    instructionFingerprint: "1858730286EDCC24B951FE89AB924C7E"
+  paths:
+  - testPathName: "isInitializedWhenChildInitializersIsEmpty"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 380
+      expression: "childInitializers.isEmpty()"
+      range: "(380,13)-(380,39)"
+      evaluatedAs: true

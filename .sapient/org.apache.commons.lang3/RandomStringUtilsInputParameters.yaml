@@ -1,0 +1,2024 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.RandomStringUtils"
+methods:
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "365265453E1CE47E7069F0E7E750F0C0"
+  paths:
+  - testPathName: "random1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count, final boolean letters, final\
+      \ boolean numbers)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "letters"
+      type: "boolean"
+    - name: "numbers"
+      type: "boolean"
+    instructionFingerprint: "820F0AD1D86CC0258E9FE2A7B553CBEE"
+  paths:
+  - testPathName: "random2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count, final char... chars)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "chars"
+      type: "char[]"
+    instructionFingerprint: "4F8C2BF0F305E679D21BB0AE65DB27A9"
+  paths:
+  - testPathName: "random3WhenCharsIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers,chars2,threadLocalRandom):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "chars2"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.concurrent.ThreadLocalRandom"
+        method: "current"
+        methodParameters: []
+      valueType: "java.util.concurrent.ThreadLocalRandom"
+      uuid: "threadLocalRandom"
+    branches:
+    - lineNumber: 103
+      expression: "chars == null"
+      range: "(103,13)-(103,25)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomStringUtils"
+  - testPathName: "random3WhenCharsIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,int1,letters,numbers,chars,threadLocalRandom):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.concurrent.ThreadLocalRandom"
+        method: "current"
+        methodParameters: []
+      valueType: "java.util.concurrent.ThreadLocalRandom"
+      uuid: "threadLocalRandom"
+    branches:
+    - lineNumber: 103
+      expression: "chars == null"
+      range: "(103,13)-(103,25)"
+      evaluatedAs: false
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomStringUtils"
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count, final int start, final int\
+      \ end, final boolean letters, final boolean numbers)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "start"
+      type: "int"
+    - name: "end"
+      type: "int"
+    - name: "letters"
+      type: "boolean"
+    - name: "numbers"
+      type: "boolean"
+    instructionFingerprint: "EAE97A72D97512D7739F12834CF65745"
+  paths:
+  - testPathName: "random4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers,chars,threadLocalRandom):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.concurrent.ThreadLocalRandom"
+        method: "current"
+        methodParameters: []
+      valueType: "java.util.concurrent.ThreadLocalRandom"
+      uuid: "threadLocalRandom"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomStringUtils"
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count, final int start, final int\
+      \ end, final boolean letters, final boolean numbers, final char... chars)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "start"
+      type: "int"
+    - name: "end"
+      type: "int"
+    - name: "letters"
+      type: "boolean"
+    - name: "numbers"
+      type: "boolean"
+    - name: "chars"
+      type: "char[]"
+    instructionFingerprint: "A3DD1FA9B7543D71EB6FFF09BC4C448D"
+  paths:
+  - testPathName: "random5Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers,chars,threadLocalRandom):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.concurrent.ThreadLocalRandom"
+        method: "current"
+        methodParameters: []
+      valueType: "java.util.concurrent.ThreadLocalRandom"
+      uuid: "threadLocalRandom"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomStringUtils"
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(int count, int start, int end, final boolean\
+      \ letters, final boolean numbers, final char[] chars, final Random random)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "start"
+      type: "int"
+    - name: "end"
+      type: "int"
+    - name: "letters"
+      type: "boolean"
+    - name: "numbers"
+      type: "boolean"
+    - name: "chars"
+      type: "char[]"
+    - name: "random"
+      type: "java.util.Random"
+    instructionFingerprint: "8881F5D41D1B22B5E0BB03327AB6557C"
+  paths:
+  - testPathName: "random6WhenCountEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Random"
+        parameters: []
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: true
+  - testPathName: "random6WhenCountLessThan0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Random"
+        parameters: []
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s1"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "count < 0"
+      range: "(197,13)-(197,21)"
+      evaluatedAs: true
+  - testPathName: "random6WhenCharsLengthEquals0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Random"
+        parameters: []
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The chars array must not be empty"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "count < 0"
+      range: "(197,13)-(197,21)"
+      evaluatedAs: false
+    - lineNumber: 200
+      expression: "chars != null"
+      range: "(200,13)-(200,25)"
+      evaluatedAs: true
+    - lineNumber: 200
+      expression: "chars.length == 0"
+      range: "(200,30)-(200,46)"
+      evaluatedAs: true
+  - testPathName: "random6WhenNumberOfCharsGreaterThan1"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "LOCAL_VARIABLE"
+      name: "random"
+      valueUuid: "random"
+      methodExercised:
+        expression: "nextInt(int5):int7"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "count < 0"
+      range: "(197,13)-(197,21)"
+      evaluatedAs: false
+    - lineNumber: 200
+      expression: "chars != null"
+      range: "(200,13)-(200,25)"
+      evaluatedAs: true
+    - lineNumber: 200
+      expression: "chars.length == 0"
+      range: "(200,30)-(200,46)"
+      evaluatedAs: false
+    - lineNumber: 204
+      expression: "start == 0"
+      range: "(204,13)-(204,22)"
+      evaluatedAs: true
+    - lineNumber: 204
+      expression: "end == 0"
+      range: "(204,27)-(204,34)"
+      evaluatedAs: true
+    - lineNumber: 205
+      expression: "chars != null"
+      range: "(205,17)-(205,29)"
+      evaluatedAs: true
+    - lineNumber: 220
+      expression: "chars == null"
+      range: "(220,13)-(220,25)"
+      evaluatedAs: false
+    - lineNumber: 229
+      expression: "count-- != 0"
+      range: "(229,16)-(229,27)"
+      evaluatedAs: true
+    - lineNumber: 231
+      expression: "chars == null"
+      range: "(231,17)-(231,29)"
+      evaluatedAs: false
+    - lineNumber: 247
+      expression: "count == 0"
+      range: "(247,17)-(247,26)"
+      evaluatedAs: true
+    - lineNumber: 247
+      expression: "numberOfChars > 1"
+      range: "(247,31)-(247,47)"
+      evaluatedAs: true
+  - testPathName: "random6WhenCharacterNotIsLetterCodePointAndNumbersAndNotNumbersAndCharacterIsDigitCodePoint"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "LOCAL_VARIABLE"
+      name: "random"
+      valueUuid: "random"
+      methodExercised:
+        expression: "nextInt(int5):int7"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "char1"
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "count < 0"
+      range: "(197,13)-(197,21)"
+      evaluatedAs: false
+    - lineNumber: 200
+      expression: "chars != null"
+      range: "(200,13)-(200,25)"
+      evaluatedAs: true
+    - lineNumber: 200
+      expression: "chars.length == 0"
+      range: "(200,30)-(200,46)"
+      evaluatedAs: false
+    - lineNumber: 204
+      expression: "start == 0"
+      range: "(204,13)-(204,22)"
+      evaluatedAs: true
+    - lineNumber: 204
+      expression: "end == 0"
+      range: "(204,27)-(204,34)"
+      evaluatedAs: true
+    - lineNumber: 205
+      expression: "chars != null"
+      range: "(205,17)-(205,29)"
+      evaluatedAs: true
+    - lineNumber: 220
+      expression: "chars == null"
+      range: "(220,13)-(220,25)"
+      evaluatedAs: false
+    - lineNumber: 229
+      expression: "count-- != 0"
+      range: "(229,16)-(229,27)"
+      evaluatedAs: true
+    - lineNumber: 231
+      expression: "chars == null"
+      range: "(231,17)-(231,29)"
+      evaluatedAs: false
+    - lineNumber: 247
+      expression: "count == 0"
+      range: "(247,17)-(247,26)"
+      evaluatedAs: true
+    - lineNumber: 247
+      expression: "numberOfChars > 1"
+      range: "(247,31)-(247,47)"
+      evaluatedAs: false
+    - lineNumber: 252
+      expression: "letters"
+      range: "(252,17)-(252,23)"
+      evaluatedAs: true
+    - lineNumber: 252
+      expression: "Character.isLetter(codePoint)"
+      range: "(252,28)-(252,56)"
+      evaluatedAs: false
+    - lineNumber: 252
+      expression: "numbers"
+      range: "(253,24)-(253,30)"
+      evaluatedAs: true
+    - lineNumber: 253
+      expression: "numbers"
+      range: "(253,24)-(253,30)"
+      evaluatedAs: false
+    - lineNumber: 253
+      expression: "Character.isDigit(codePoint)"
+      range: "(253,35)-(253,62)"
+      evaluatedAs: true
+  - testPathName: "random6WhenNotNumbersAndNumberOfCharsNotEquals2"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "INPUT"
+      name: "letters"
+      valueUuid: "letters"
+    - type: "INPUT"
+      name: "numbers"
+      valueUuid: "numbers"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "INPUT"
+      name: "random"
+      valueUuid: "random"
+    - type: "LOCAL_VARIABLE"
+      name: "random"
+      valueUuid: "random"
+      methodExercised:
+        expression: "nextInt(int5):int7"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.StringBuilder.appendCodePoint(int) :\
+        \ java.lang.StringBuilder"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "char1"
+      valueType: "char[]"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "java.util.Random"
+      uuid: "random"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int7"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int5"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 194
+      expression: "count == 0"
+      range: "(194,13)-(194,22)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "count < 0"
+      range: "(197,13)-(197,21)"
+      evaluatedAs: false
+    - lineNumber: 200
+      expression: "chars != null"
+      range: "(200,13)-(200,25)"
+      evaluatedAs: true
+    - lineNumber: 200
+      expression: "chars.length == 0"
+      range: "(200,30)-(200,46)"
+      evaluatedAs: false
+    - lineNumber: 204
+      expression: "start == 0"
+      range: "(204,13)-(204,22)"
+      evaluatedAs: true
+    - lineNumber: 204
+      expression: "end == 0"
+      range: "(204,27)-(204,34)"
+      evaluatedAs: true
+    - lineNumber: 205
+      expression: "chars != null"
+      range: "(205,17)-(205,29)"
+      evaluatedAs: true
+    - lineNumber: 220
+      expression: "chars == null"
+      range: "(220,13)-(220,25)"
+      evaluatedAs: false
+    - lineNumber: 229
+      expression: "count-- != 0"
+      range: "(229,16)-(229,27)"
+      evaluatedAs: true
+    - lineNumber: 231
+      expression: "chars == null"
+      range: "(231,17)-(231,29)"
+      evaluatedAs: false
+    - lineNumber: 247
+      expression: "count == 0"
+      range: "(247,17)-(247,26)"
+      evaluatedAs: true
+    - lineNumber: 247
+      expression: "numberOfChars > 1"
+      range: "(247,31)-(247,47)"
+      evaluatedAs: false
+    - lineNumber: 252
+      expression: "letters"
+      range: "(252,17)-(252,23)"
+      evaluatedAs: false
+    - lineNumber: 252
+      expression: "numbers"
+      range: "(253,24)-(253,30)"
+      evaluatedAs: false
+    - lineNumber: 253
+      expression: "Character.isDigit(codePoint)"
+      range: "(253,35)-(253,62)"
+      evaluatedAs: false
+    - lineNumber: 253
+      expression: "numbers"
+      range: "(253,24)-(253,30)"
+      evaluatedAs: false
+    - lineNumber: 257
+      expression: "numberOfChars == 2"
+      range: "(257,21)-(257,38)"
+      evaluatedAs: false
+- method:
+    name: "random"
+    sourceCodeSignature: "String random(final int count, final String chars)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    - name: "chars"
+      type: "java.lang.String"
+    instructionFingerprint: "AD860D1AC2AE66D91C6F9537BC6250F7"
+  paths:
+  - testPathName: "random7WhenCharsIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers,chars2,threadLocalRandom):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "chars2"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.concurrent.ThreadLocalRandom"
+        method: "current"
+        methodParameters: []
+      valueType: "java.util.concurrent.ThreadLocalRandom"
+      uuid: "threadLocalRandom"
+    branches:
+    - lineNumber: 283
+      expression: "chars == null"
+      range: "(283,13)-(283,25)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RandomStringUtils"
+  - testPathName: "random7WhenCharsIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "INPUT"
+      name: "chars"
+      valueUuid: "chars"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,charArray):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "chars"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "charArray-item0"
+      valueType: "char[]"
+      uuid: "charArray"
+    branches:
+    - lineNumber: 283
+      expression: "chars == null"
+      range: "(283,13)-(283,25)"
+      evaluatedAs: false
+- method:
+    name: "randomAlphabetic"
+    sourceCodeSignature: "String randomAlphabetic(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "53F97ACEF176E715BB3274565FD77D15"
+  paths:
+  - testPathName: "randomAlphabeticTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomAlphabetic"
+    sourceCodeSignature: "String randomAlphabetic(final int minLengthInclusive, final\
+      \ int maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "647E012EFBAE13B8C7AFB868A9AD40C4"
+  paths:
+  - testPathName: "randomAlphabetic1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomAlphabetic(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomAlphabetic1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+- method:
+    name: "randomAlphanumeric"
+    sourceCodeSignature: "String randomAlphanumeric(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "5AFDCD9172EB91A184E328F80FCC7A98"
+  paths:
+  - testPathName: "randomAlphanumericTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomAlphanumeric"
+    sourceCodeSignature: "String randomAlphanumeric(final int minLengthInclusive,\
+      \ final int maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "BFA3C938764CA52E87603C227AC901DB"
+  paths:
+  - testPathName: "randomAlphanumeric1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomAlphanumeric(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomAlphanumeric1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+- method:
+    name: "randomAscii"
+    sourceCodeSignature: "String randomAscii(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "1D3B1BCB646BB5D804BD07891359D934"
+  paths:
+  - testPathName: "randomAsciiTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 127
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomAscii"
+    sourceCodeSignature: "String randomAscii(final int minLengthInclusive, final int\
+      \ maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "D974776196B3D1B370C5B0248A56A5E6"
+  paths:
+  - testPathName: "randomAscii1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomAscii(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomAscii1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+- method:
+    name: "randomGraph"
+    sourceCodeSignature: "String randomGraph(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "2453267BDDBABA3ED73E8601B1EB8BBE"
+  paths:
+  - testPathName: "randomGraphTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 33
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 126
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomGraph"
+    sourceCodeSignature: "String randomGraph(final int minLengthInclusive, final int\
+      \ maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "CB1992FCB0D2D665C5D9BCF3562F36BC"
+  paths:
+  - testPathName: "randomGraph1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomGraph(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomGraph1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+- method:
+    name: "randomNumeric"
+    sourceCodeSignature: "String randomNumeric(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "35EF4893B21D1776CFB6E641180DCA69"
+  paths:
+  - testPathName: "randomNumericTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomNumeric"
+    sourceCodeSignature: "String randomNumeric(final int minLengthInclusive, final\
+      \ int maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "02D8A952965B1103C75F086997C27305"
+  paths:
+  - testPathName: "randomNumeric1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomNumeric(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomNumeric1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"
+- method:
+    name: "randomPrint"
+    sourceCodeSignature: "String randomPrint(final int count)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "count"
+      type: "int"
+    instructionFingerprint: "BCD15A7E821199C9417EF38A244912AE"
+  paths:
+  - testPathName: "randomPrintTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "count"
+      valueUuid: "count"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "random(count,start,end,letters,numbers):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "count"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_random1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32
+      valueType: "int"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 126
+      valueType: "int"
+      uuid: "end"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "letters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "numbers"
+- method:
+    name: "randomPrint"
+    sourceCodeSignature: "String randomPrint(final int minLengthInclusive, final int\
+      \ maxLengthExclusive)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "minLengthInclusive"
+      type: "int"
+    - name: "maxLengthExclusive"
+      type: "int"
+    instructionFingerprint: "DBA3745DAF936385245D512B3207B5AF"
+  paths:
+  - testPathName: "randomPrint1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "minLengthInclusive"
+      valueUuid: "minLengthInclusive"
+    - type: "INPUT"
+      name: "maxLengthExclusive"
+      valueUuid: "maxLengthExclusive"
+    - type: "STATIC"
+      name: "RandomStringUtils.class"
+      valueUuid: "RandomStringUtils.class"
+      methodExercised:
+        expression: "randomPrint(int1):string"
+    - type: "STATIC"
+      name: "RandomUtils.class"
+      valueUuid: "RandomUtils.class"
+      methodExercised:
+        expression: "nextInt(minLengthInclusive,maxLengthExclusive):int1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "minLengthInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "maxLengthExclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomStringUtils"
+      uuid: "RandomStringUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_randomPrint1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RandomUtils"
+      uuid: "RandomUtils.class"

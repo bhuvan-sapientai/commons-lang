@@ -1,0 +1,546 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.tuple.ImmutablePair"
+methods:
+- method:
+    name: "emptyArray"
+    sourceCodeSignature: "<L, R> ImmutablePair<L, R>[] emptyArray()"
+    returnType: "org.apache.commons.lang3.tuple.ImmutablePair[]"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    instructionFingerprint: "C39FB9D841FC55D31B1E44107244DEB8"
+  paths:
+  - testPathName: "emptyArray1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePairArray"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair[]"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "immutablePairArray"
+- method:
+    name: "left"
+    sourceCodeSignature: "<L, R> Pair<L, R> left(final L left)"
+    returnType: "org.apache.commons.lang3.tuple.Pair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    instructionFingerprint: "23445D0685FDA03C60A02A626C7C5E68"
+  paths:
+  - testPathName: "leftTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "STATIC"
+      name: "ImmutablePair.class"
+      valueUuid: "ImmutablePair.class"
+      methodExercised:
+        expression: "of(left,right):immutablePair3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "ImmutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "immutablePair3"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "right"
+- method:
+    name: "nullPair"
+    sourceCodeSignature: "<L, R> ImmutablePair<L, R> nullPair()"
+    returnType: "org.apache.commons.lang3.tuple.ImmutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    instructionFingerprint: "AEEE55BD0EBAE396E488AD91272C1A9C"
+  paths:
+  - testPathName: "nullPairTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "right"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "immutablePair"
+- method:
+    name: "of"
+    sourceCodeSignature: "<L, R> ImmutablePair<L, R> of(final L left, final R right)"
+    returnType: "org.apache.commons.lang3.tuple.ImmutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "B8ECB1D3740AA50535F82D21341A7176"
+  paths:
+  - testPathName: "of2WhenRightIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "immutablePair3"
+    branches:
+    - lineNumber: 114
+      expression: "left != null"
+      range: "(114,16)-(114,27)"
+      evaluatedAs: false
+    - lineNumber: 114
+      expression: "right != null"
+      range: "(114,32)-(114,44)"
+      evaluatedAs: true
+  - testPathName: "of2WhenRightIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "ImmutablePair.class"
+      valueUuid: "ImmutablePair.class"
+      methodExercised:
+        expression: "nullPair():immutablePair3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "ImmutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "immutablePair3"
+    branches:
+    - lineNumber: 114
+      expression: "left != null"
+      range: "(114,16)-(114,27)"
+      evaluatedAs: false
+    - lineNumber: 114
+      expression: "right != null"
+      range: "(114,32)-(114,44)"
+      evaluatedAs: false
+- method:
+    name: "of"
+    sourceCodeSignature: "<L, R> ImmutablePair<L, R> of(final Map.Entry<L, R> pair)"
+    returnType: "org.apache.commons.lang3.tuple.ImmutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "pair"
+      type: "java.util.Map$Entry"
+      genericType: "java.lang.Object,java.lang.Object"
+    instructionFingerprint: "1555A28E9B7333E72DAE00ED414BDABF"
+  paths:
+  - testPathName: "of3WhenPairIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      valueUuid: "pair"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "PAIR"
+      content: !<pair>
+        key:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+          valueType: "java.lang.Object"
+          uuid: "object"
+        value:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+          valueType: "java.lang.Object"
+          uuid: "pairValue"
+      valueType: "java.util.Map$Entry"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "pair"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "pairValue"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "immutablePair3"
+    branches:
+    - lineNumber: 130
+      expression: "pair != null"
+      range: "(130,16)-(130,27)"
+      evaluatedAs: true
+  - testPathName: "of3WhenPairIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pair"
+      valueUuid: "pair"
+    - type: "STATIC"
+      name: "ImmutablePair.class"
+      valueUuid: "ImmutablePair.class"
+      methodExercised:
+        expression: "nullPair():immutablePair3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.Map$Entry"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "pair"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "ImmutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "immutablePair3"
+    branches:
+    - lineNumber: 130
+      expression: "pair != null"
+      range: "(130,16)-(130,27)"
+      evaluatedAs: false
+- method:
+    name: "ofNonNull"
+    sourceCodeSignature: "<L, R> ImmutablePair<L, R> ofNonNull(final L left, final\
+      \ R right)"
+    returnType: "org.apache.commons.lang3.tuple.ImmutablePair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "117DC579A97C00EC17D120F651ED6DF5"
+  paths:
+  - testPathName: "ofNonNull1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "ImmutablePair.class"
+      valueUuid: "ImmutablePair.class"
+      methodExercised:
+        expression: "of(left,right):immutablePair3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "ImmutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "immutablePair3"
+- method:
+    name: "right"
+    sourceCodeSignature: "<L, R> Pair<L, R> right(final R right)"
+    returnType: "org.apache.commons.lang3.tuple.Pair"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "5C409922A0553816548B5D6525B79C93"
+  paths:
+  - testPathName: "rightTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "ImmutablePair.class"
+      valueUuid: "ImmutablePair.class"
+      methodExercised:
+        expression: "of(left,right):immutablePair3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutablePair3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "ImmutablePair.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutablePair3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "immutablePair3"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "left"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "R setValue(final R value)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "9A47E57CF10DB26D3D275EDB076779FC"
+  paths:
+  - testPathName: "setValueThrowsUnsupportedOperationException"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "unsupportedOperationException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutablePair"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutablePair"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.UnsupportedOperationException"
+        parameters: []
+      valueType: "java.lang.UnsupportedOperationException"
+      uuid: "unsupportedOperationException"

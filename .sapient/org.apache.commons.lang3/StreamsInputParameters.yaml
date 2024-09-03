@@ -1,0 +1,145 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.Streams"
+methods:
+- method:
+    name: "stream"
+    sourceCodeSignature: "<O> FailableStream<O> stream(final Collection<O> stream)"
+    returnType: "org.apache.commons.lang3.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "9FB95266CD8AC047516926A7377E563F"
+  paths:
+  - testPathName: "streamTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "STATIC"
+      name: "Streams.class"
+      valueUuid: "Streams.class"
+      methodExercised:
+        expression: "stream(stream2):streamsFailableStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.Streams"
+      uuid: "Streams.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            uuid: "streamsFailableStream-stream"
+      valueType: "org.apache.commons.lang3.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream2"
+- method:
+    name: "stream"
+    sourceCodeSignature: "<O> FailableStream<O> stream(final Stream<O> stream)"
+    returnType: "org.apache.commons.lang3.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.stream.Stream"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "0019B0EC036D021EFA16BD35E6AE1BC5"
+  paths:
+  - testPathName: "stream1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "stream"
+      valueType: "org.apache.commons.lang3.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "toArray"
+    sourceCodeSignature: "<O> Collector<O, ?, O[]> toArray(final Class<O> pElementType)"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.Object[]"
+    parameters:
+    - name: "pElementType"
+      type: "java.lang.Class"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "1DB2A07D3D21F6D508AA794628D71381"
+  paths:
+  - testPathName: "toArrayTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pElementType"
+      valueUuid: "pElementType"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsArrayCollector"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "pElementType"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.Streams$ArrayCollector"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "pElementType"
+      valueType: "org.apache.commons.lang3.Streams$ArrayCollector"
+      uuid: "streamsArrayCollector"

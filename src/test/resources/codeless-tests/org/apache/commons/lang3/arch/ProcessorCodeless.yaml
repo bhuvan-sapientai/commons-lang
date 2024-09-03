@@ -1,0 +1,179 @@
+---
+class: "org.apache.commons.lang3.arch.Processor"
+fields: []
+imports:
+- "org.apache.commons.lang3.arch.Processor$Arch"
+- "org.apache.commons.lang3.arch.Processor$Type"
+- "java.lang.String"
+methods:
+- targetMethod: "is32Bit(): boolean result"
+  tests:
+  - name: "is32BitWhenArchBIT_32EqualsArch"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, AARCH_64)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Arch.BIT_32 == arch : true"
+      lineNumber: 186
+  - name: "is32BitWhenArchBIT_32NotEqualsArch"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_64)"
+    - type: "EVAL Enum.valueOf(Processor.Type, AARCH_64)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Arch.BIT_32 == arch : false"
+      lineNumber: 186
+  sourceCodeSignature: "boolean is32Bit()"
+- targetMethod: "is64Bit(): boolean result"
+  tests:
+  - name: "is64BitWhenArchBIT_64EqualsArch"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_64)"
+    - type: "EVAL Enum.valueOf(Processor.Type, AARCH_64)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Arch.BIT_64 == arch : true"
+      lineNumber: 195
+  - name: "is64BitWhenArchBIT_64NotEqualsArch"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, AARCH_64)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Arch.BIT_64 == arch : false"
+      lineNumber: 195
+  sourceCodeSignature: "boolean is64Bit()"
+- targetMethod: "isAarch64(): boolean result"
+  tests:
+  - name: "isAarch64WhenTypeAARCH_64EqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, AARCH_64)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.AARCH_64 == type : true"
+      lineNumber: 206
+  - name: "isAarch64WhenTypeAARCH_64NotEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, UNKNOWN)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.AARCH_64 == type : false"
+      lineNumber: 206
+  sourceCodeSignature: "boolean isAarch64()"
+- targetMethod: "isIA64(): boolean result"
+  tests:
+  - name: "isIA64WhenTypeIA_64EqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, IA_64)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.IA_64 == type : true"
+      lineNumber: 215
+  - name: "isIA64WhenTypeIA_64NotEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, UNKNOWN)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.IA_64 == type : false"
+      lineNumber: 215
+  sourceCodeSignature: "boolean isIA64()"
+- targetMethod: "isPPC(): boolean result"
+  tests:
+  - name: "isPPCWhenTypePPCEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, PPC)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.PPC == type : true"
+      lineNumber: 224
+  - name: "isPPCWhenTypePPCNotEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, UNKNOWN)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.PPC == type : false"
+      lineNumber: 224
+  sourceCodeSignature: "boolean isPPC()"
+- targetMethod: "isX86(): boolean result"
+  tests:
+  - name: "isX86WhenTypeX86EqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, X86)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.X86 == type : true"
+      lineNumber: 233
+  - name: "isX86WhenTypeX86NotEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, UNKNOWN)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.X86 == type : false"
+      lineNumber: 233
+  sourceCodeSignature: "boolean isX86()"
+- targetMethod: "isRISCV(): boolean result"
+  tests:
+  - name: "isRISCVWhenTypeRISC_VEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, RISC_V)"
+    - expectedResult: true
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.RISC_V == type : true"
+      lineNumber: 243
+  - name: "isRISCVWhenTypeRISC_VNotEqualsType"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, BIT_32)"
+    - type: "EVAL Enum.valueOf(Processor.Type, UNKNOWN)"
+    - expectedResult: false
+    - result: "REF expectedResult"
+    branches:
+    - expression: "Type.RISC_V == type : false"
+      lineNumber: 243
+  sourceCodeSignature: "boolean isRISCV()"
+- targetMethod: "toString(): String result"
+  tests:
+  - name: "toStringTest"
+    target: "NEW Processor(Processor.Arch arch,Processor.Type type)"
+    variables:
+    - arch: "EVAL Enum.valueOf(Processor.Arch, UNKNOWN)"
+    - type: "EVAL Enum.valueOf(Processor.Type, PPC)"
+    - string3: "PPC Unknown"
+    - result: "REF string3"
+  sourceCodeSignature: "String toString()"

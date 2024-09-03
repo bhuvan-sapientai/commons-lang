@@ -1,0 +1,136 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.CharEncoding"
+methods:
+- method:
+    name: "isSupported"
+    sourceCodeSignature: "boolean isSupported(final String name)"
+    returnType: "boolean"
+    parameters:
+    - name: "name"
+      type: "java.lang.String"
+    instructionFingerprint: "18A5B1544E23ABA7F678E9A236AD2E55"
+  paths:
+  - testPathName: "isSupportedWhenNameIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 100
+      expression: "name == null"
+      range: "(100,13)-(100,24)"
+      evaluatedAs: true
+  - testPathName: "isSupportedWhenCharsetIsSupportedName"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "name1"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 100
+      expression: "name == null"
+      range: "(100,13)-(100,24)"
+      evaluatedAs: false
+    - lineNumber: 104
+      expression: "Charset.isSupported(name)"
+      range: "(104,20)-(104,44)"
+      evaluatedAs: true
+  - testPathName: "isSupportedWhenCharsetNotIsSupportedName"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 100
+      expression: "name == null"
+      range: "(100,13)-(100,24)"
+      evaluatedAs: false
+    - lineNumber: 104
+      expression: "Charset.isSupported(name)"
+      range: "(104,20)-(104,44)"
+      evaluatedAs: false
+  - testPathName: "isSupportedWhenCaughtIllegalCharsetNameException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "DEPENDENCY_TO_THROW_EXCEPTION_NOT_FOUND"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 100
+      expression: "name == null"
+      range: "(100,13)-(100,24)"
+      evaluatedAs: false
+    - lineNumber: 105
+      expression: "catch-exception (IllegalCharsetNameException)"
+      range: "(105,11)-(105,53)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.nio.charset.IllegalCharsetNameException"

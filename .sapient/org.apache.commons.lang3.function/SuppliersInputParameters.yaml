@@ -1,0 +1,82 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.function.Suppliers"
+methods:
+- method:
+    name: "get"
+    sourceCodeSignature: "<T> T get(final Supplier<T> supplier)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "supplier"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "E07002D70375A9B2192B14F5AC4F7C62"
+  paths:
+  - testPathName: "getWhenSupplierIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.util.function.Supplier"
+      genericValueType: "java.lang.Object"
+      uuid: "supplier"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 46
+      expression: "supplier == null"
+      range: "(46,16)-(46,31)"
+      evaluatedAs: true
+  - testPathName: "getWhenSupplierIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    branches:
+    - lineNumber: 46
+      expression: "supplier == null"
+      range: "(46,16)-(46,31)"
+      evaluatedAs: false
+- method:
+    name: "nul"
+    sourceCodeSignature: "<T> Supplier<T> nul()"
+    returnType: "java.util.function.Supplier"
+    instructionFingerprint: "4289FB81C549E4D039CC76E466E6CE77"
+  paths:
+  - testPathName: "nulTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "supplier2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier2NotNull"

@@ -1,0 +1,967 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableByte"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final byte operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "byte"
+    instructionFingerprint: "2E2AA53CA623B628A4BBC5B41203D587"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "D7BD5ABA5EC3EDAEA6CE22F0551AE41A"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "byte addAndGet(final byte operand)"
+    returnType: "byte"
+    parameters:
+    - name: "operand"
+      type: "byte"
+    instructionFingerprint: "E94F53AF452FC1B5A400A79942D34E03"
+  paths:
+  - testPathName: "addAndGetTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "byte1"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "byte addAndGet(final Number operand)"
+    returnType: "byte"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "75436F96B7735D199E7C4CFC1ED5B815"
+  paths:
+  - testPathName: "addAndGet1Test"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "byte2"
+- method:
+    name: "byteValue"
+    sourceCodeSignature: "byte byteValue()"
+    returnType: "byte"
+    instructionFingerprint: "BA22B685BEBABA34449103BDC7E176CC"
+  paths:
+  - testPathName: "byteValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableByte other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableByte"
+    instructionFingerprint: "DFF5665E5074255228073EACE98898B9"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "other-value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "void decrement()"
+    returnType: "void"
+    instructionFingerprint: "197FBE81ABF009712CFC8D13E9E8B9FA"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "decrementAndGet"
+    sourceCodeSignature: "byte decrementAndGet()"
+    returnType: "byte"
+    instructionFingerprint: "D109A60B4DE25206EC52112F3A5F5C2F"
+  paths:
+  - testPathName: "decrementAndGetTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "byte"
+      uuid: "byte1"
+- method:
+    name: "doubleValue"
+    sourceCodeSignature: "double doubleValue()"
+    returnType: "double"
+    instructionFingerprint: "6667E781A534676BA1ABEE1706C611A6"
+  paths:
+  - testPathName: "doubleValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "floatValue"
+    sourceCodeSignature: "float floatValue()"
+    returnType: "float"
+    instructionFingerprint: "2691E1DF57C32EDFB4F247D3206C6B63"
+  paths:
+  - testPathName: "floatValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "byte getAndAdd(final byte operand)"
+    returnType: "byte"
+    parameters:
+    - name: "operand"
+      type: "byte"
+    instructionFingerprint: "4E4085AE3A7A98E7D0449EC8F6EBC38E"
+  paths:
+  - testPathName: "getAndAddTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "byte getAndAdd(final Number operand)"
+    returnType: "byte"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "1A70974414B84EF6C8373B8138D2666F"
+  paths:
+  - testPathName: "getAndAdd1Test"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "getAndDecrement"
+    sourceCodeSignature: "byte getAndDecrement()"
+    returnType: "byte"
+    instructionFingerprint: "FBFD2893ABA21D327F47EDEBFFF279A9"
+  paths:
+  - testPathName: "getAndDecrementTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "getAndIncrement"
+    sourceCodeSignature: "byte getAndIncrement()"
+    returnType: "byte"
+    instructionFingerprint: "F5D0C4F305AF2C11A77FDFF28E1D069F"
+  paths:
+  - testPathName: "getAndIncrementTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Byte getValue()"
+    returnType: "java.lang.Byte"
+    instructionFingerprint: "564C1FD69C719328B44CAB30327CF3F0"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Byte"
+      uuid: "byte"
+- method:
+    name: "increment"
+    sourceCodeSignature: "void increment()"
+    returnType: "void"
+    instructionFingerprint: "A1FFE4CA3013C65C21F53EF6787A1A32"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "incrementAndGet"
+    sourceCodeSignature: "byte incrementAndGet()"
+    returnType: "byte"
+    instructionFingerprint: "37E11B9DB756AC36AA03F189E99888F0"
+  paths:
+  - testPathName: "incrementAndGetTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "byte"
+      uuid: "byte1"
+- method:
+    name: "intValue"
+    sourceCodeSignature: "int intValue()"
+    returnType: "int"
+    instructionFingerprint: "6AB919AC6824AC6A59A3AB031C68F0F6"
+  paths:
+  - testPathName: "intValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "value"
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "FB49F7223D157D8E41FDDEF33E075AF2"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Number value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Number"
+    instructionFingerprint: "24792F86A9EA699CC97F43C149A137EB"
+  paths:
+  - testPathName: "setValue1Test"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final byte operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "byte"
+    instructionFingerprint: "5D10231D5B69629AB31C8353783C5FE4"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "BBB03A3F369CA54DA992317AC00DEA75"
+  paths:
+  - testPathName: "subtract1Test"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toByte"
+    sourceCodeSignature: "Byte toByte()"
+    returnType: "java.lang.Byte"
+    instructionFingerprint: "95774F06618527EA1527AB2EE826AC43"
+  paths:
+  - testPathName: "toByteTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "byte"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Byte"
+      uuid: "byte"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "A8B2B24E7A499C69C2B1C696BD2DB619"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(byte) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableByte"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "byte"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableByte"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "2"
+      valueType: "java.lang.String"
+      uuid: "string"

@@ -1,0 +1,1247 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.ThreadUtils"
+methods:
+- method:
+    name: "findThreadById"
+    sourceCodeSignature: "Thread findThreadById(final long threadId)"
+    returnType: "java.lang.Thread"
+    parameters:
+    - name: "threadId"
+      type: "long"
+    instructionFingerprint: "360B98898249DE9C31557E958FB459B9"
+  paths:
+  - testPathName: "findThreadByIdWhenThreadIdLessThanOrEqualsTo0ThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The thread id must be greater than zero"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 193
+      expression: "threadId <= 0"
+      range: "(193,13)-(193,25)"
+      evaluatedAs: true
+  - testPathName: "findThreadByIdWhenResultIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "thread"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate2-any"
+    - sapientType: "NULL"
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    branches:
+    - lineNumber: 193
+      expression: "threadId <= 0"
+      range: "(193,13)-(193,25)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "result.isEmpty()"
+      range: "(197,16)-(197,31)"
+      evaluatedAs: true
+  - testPathName: "findThreadByIdWhenResultNotIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+          valueType: "java.lang.Thread"
+          uuid: "object"
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate2-any"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "object"
+    branches:
+    - lineNumber: 193
+      expression: "threadId <= 0"
+      range: "(193,13)-(193,25)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "result.isEmpty()"
+      range: "(197,16)-(197,31)"
+      evaluatedAs: false
+- method:
+    name: "findThreadById"
+    sourceCodeSignature: "Thread findThreadById(final long threadId, final String\
+      \ threadGroupName)"
+    returnType: "java.lang.Thread"
+    parameters:
+    - name: "threadId"
+      type: "long"
+    - name: "threadGroupName"
+      type: "java.lang.String"
+    instructionFingerprint: "05EED1E7188C6C12F2223C09B4B3CA3C"
+  paths:
+  - testPathName: "findThreadById1WhenThreadGetThreadGroupGetNameEqualsThreadGroupName"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "INPUT"
+      name: "threadGroupName"
+      valueUuid: "threadGroupName"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadById(threadId):thread"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "thread"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "main"
+      valueType: "java.lang.String"
+      uuid: "threadGroupName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    branches:
+    - lineNumber: 218
+      expression: "thread != null"
+      range: "(218,13)-(218,26)"
+      evaluatedAs: true
+    - lineNumber: 218
+      expression: "thread.getThreadGroup() != null"
+      range: "(218,31)-(218,61)"
+      evaluatedAs: true
+    - lineNumber: 218
+      expression: "thread.getThreadGroup().getName().equals(threadGroupName)"
+      range: "(218,66)-(218,122)"
+      evaluatedAs: true
+  - testPathName: "findThreadById1WhenThreadGetThreadGroupGetNameNotEqualsThreadGroupName"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "INPUT"
+      name: "threadGroupName"
+      valueUuid: "threadGroupName"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadById(threadId):thread"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "thread2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "threadGroupName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    - sapientType: "NULL"
+      valueType: "java.lang.Thread"
+      uuid: "thread2"
+    branches:
+    - lineNumber: 218
+      expression: "thread != null"
+      range: "(218,13)-(218,26)"
+      evaluatedAs: true
+    - lineNumber: 218
+      expression: "thread.getThreadGroup() != null"
+      range: "(218,31)-(218,61)"
+      evaluatedAs: true
+    - lineNumber: 218
+      expression: "thread.getThreadGroup().getName().equals(threadGroupName)"
+      range: "(218,66)-(218,122)"
+      evaluatedAs: false
+- method:
+    name: "findThreadById"
+    sourceCodeSignature: "Thread findThreadById(final long threadId, final ThreadGroup\
+      \ threadGroup)"
+    returnType: "java.lang.Thread"
+    parameters:
+    - name: "threadId"
+      type: "long"
+    - name: "threadGroup"
+      type: "java.lang.ThreadGroup"
+    instructionFingerprint: "0E8458233181FC40ABC4004E49C4DB69"
+  paths:
+  - testPathName: "findThreadById2WhenThreadGroupEqualsThreadGetThreadGroup"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "INPUT"
+      name: "threadGroup"
+      valueUuid: "threadGroup"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadById(threadId):thread"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "thread"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.ThreadGroup"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+          valueType: "java.lang.Thread"
+          uuid: "thread"
+        methodParameters: []
+        methodName: "getThreadGroup"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    branches:
+    - lineNumber: 242
+      expression: "thread != null"
+      range: "(242,13)-(242,26)"
+      evaluatedAs: true
+    - lineNumber: 242
+      expression: "threadGroup.equals(thread.getThreadGroup())"
+      range: "(242,31)-(242,73)"
+      evaluatedAs: true
+  - testPathName: "findThreadById2WhenThreadGroupNotEqualsThreadGetThreadGroup"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadId"
+      valueUuid: "threadId"
+    - type: "INPUT"
+      name: "threadGroup"
+      valueUuid: "threadGroup"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadById(threadId):thread"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "thread2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "threadId"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    - sapientType: "NULL"
+      valueType: "java.lang.Thread"
+      uuid: "thread2"
+    branches:
+    - lineNumber: 242
+      expression: "thread != null"
+      range: "(242,13)-(242,26)"
+      evaluatedAs: true
+    - lineNumber: 242
+      expression: "threadGroup.equals(thread.getThreadGroup())"
+      range: "(242,31)-(242,73)"
+      evaluatedAs: false
+- method:
+    name: "findThreadGroups"
+    sourceCodeSignature: "Collection<ThreadGroup> findThreadGroups(final Predicate<ThreadGroup>\
+      \ predicate)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.ThreadGroup"
+    parameters:
+    - name: "predicate"
+      type: "java.util.function.Predicate"
+      genericType: "java.lang.ThreadGroup"
+    instructionFingerprint: "BCC949F45F2268532BF5E3CE7E95774E"
+  paths:
+  - testPathName: "findThreadGroupsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "getSystemThreadGroup():threadGroup"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadGroups(threadGroup,recurse,predicate):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "recurse"
+- method:
+    name: "findThreadGroups"
+    sourceCodeSignature: "Collection<ThreadGroup> findThreadGroups(final ThreadGroup\
+      \ threadGroup, final boolean recurse, final Predicate<ThreadGroup> predicate)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.ThreadGroup"
+    parameters:
+    - name: "threadGroup"
+      type: "java.lang.ThreadGroup"
+    - name: "recurse"
+      type: "boolean"
+    - name: "predicate"
+      type: "java.util.function.Predicate"
+      genericType: "java.lang.ThreadGroup"
+    instructionFingerprint: "C2BA4776138E850F8786F98DF4B8650A"
+  paths:
+  - testPathName: "findThreadGroups1WhenCountLessThanThreadGroupsLength"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroup"
+      valueUuid: "threadGroup"
+    - type: "INPUT"
+      name: "recurse"
+      valueUuid: "recurse"
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.ThreadGroup.activeGroupCount() : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "recurse"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "collection"
+    branches:
+    - lineNumber: 286
+      expression: "count >= threadGroups.length"
+      range: "(286,18)-(286,45)"
+      evaluatedAs: false
+- method:
+    name: "findThreadGroupsByName"
+    sourceCodeSignature: "Collection<ThreadGroup> findThreadGroupsByName(final String\
+      \ threadGroupName)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.ThreadGroup"
+    parameters:
+    - name: "threadGroupName"
+      type: "java.lang.String"
+    instructionFingerprint: "A3BDF5C8F79B833D1A894ECC1AE878A9"
+  paths:
+  - testPathName: "findThreadGroupsByNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroupName"
+      valueUuid: "threadGroupName"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadGroups(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "threadGroupName1"
+      valueType: "java.lang.String"
+      uuid: "threadGroupName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "predicate2-any"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "findThreads"
+    sourceCodeSignature: "Collection<Thread> findThreads(final Predicate<Thread> predicate)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    parameters:
+    - name: "predicate"
+      type: "java.util.function.Predicate"
+      genericType: "java.lang.Thread"
+    instructionFingerprint: "976916CE6393C501B29527B2EED69BC2"
+  paths:
+  - testPathName: "findThreadsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "getSystemThreadGroup():threadGroup"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(threadGroup,recurse,predicate):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "recurse"
+- method:
+    name: "findThreads"
+    sourceCodeSignature: "Collection<Thread> findThreads(final ThreadGroup threadGroup,\
+      \ final boolean recurse, final Predicate<Thread> predicate)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    parameters:
+    - name: "threadGroup"
+      type: "java.lang.ThreadGroup"
+    - name: "recurse"
+      type: "boolean"
+    - name: "predicate"
+      type: "java.util.function.Predicate"
+      genericType: "java.lang.Thread"
+    instructionFingerprint: "16681AA72EC8A902EE30A342DB68E227"
+  paths:
+  - testPathName: "findThreads1WhenCountLessThanThreadsLength"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "threadGroup"
+      valueUuid: "threadGroup"
+    - type: "INPUT"
+      name: "recurse"
+      valueUuid: "recurse"
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.ThreadGroup.activeCount() : int"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "recurse"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    branches:
+    - lineNumber: 378
+      expression: "count >= threads.length"
+      range: "(378,18)-(378,40)"
+      evaluatedAs: false
+- method:
+    name: "findThreadsByName"
+    sourceCodeSignature: "Collection<Thread> findThreadsByName(final String threadName)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    parameters:
+    - name: "threadName"
+      type: "java.lang.String"
+    instructionFingerprint: "88E62AD67B1EA091B6998F248DDEC21D"
+  paths:
+  - testPathName: "findThreadsByNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      valueUuid: "threadName"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "threadName1"
+      valueType: "java.lang.String"
+      uuid: "threadName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      genericValueType: "java.lang.Thread"
+      uuid: "predicate2-any"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "findThreadsByName"
+    sourceCodeSignature: "Collection<Thread> findThreadsByName(final String threadName,\
+      \ final String threadGroupName)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    parameters:
+    - name: "threadName"
+      type: "java.lang.String"
+    - name: "threadGroupName"
+      type: "java.lang.String"
+    instructionFingerprint: "0777A22BEA2AA9B5E8FC3A34A7169FBB"
+  paths:
+  - testPathName: "findThreadsByName1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      valueUuid: "threadName"
+    - type: "INPUT"
+      name: "threadGroupName"
+      valueUuid: "threadGroupName"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadGroups(predicate2-any):collection"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(threadGroup,recurse,predicate3-any):collection2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "threadName1"
+      valueType: "java.lang.String"
+      uuid: "threadName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "threadGroupName1"
+      valueType: "java.lang.String"
+      uuid: "threadGroupName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.ThreadGroup"
+            parameters:
+            - name: "name"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "name1"
+                valueType: "java.lang.String"
+                uuid: "threadGroup-name"
+          valueType: "java.lang.ThreadGroup"
+          uuid: "threadGroup"
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "predicate2-any"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+          valueType: "java.lang.Thread"
+          uuid: "thread"
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "recurse"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      genericValueType: "java.lang.Thread"
+      uuid: "predicate3-any"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Thread"
+            parameters: []
+          valueType: "java.lang.Thread"
+          uuid: "thread"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection3"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "findThreadsByName"
+    sourceCodeSignature: "Collection<Thread> findThreadsByName(final String threadName,\
+      \ final ThreadGroup threadGroup)"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    parameters:
+    - name: "threadName"
+      type: "java.lang.String"
+    - name: "threadGroup"
+      type: "java.lang.ThreadGroup"
+    instructionFingerprint: "D7D33FD1E48913199D99472E85706213"
+  paths:
+  - testPathName: "findThreadsByName2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "threadName"
+      valueUuid: "threadName"
+    - type: "INPUT"
+      name: "threadGroup"
+      valueUuid: "threadGroup"
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(threadGroup,recurse,predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "threadName1"
+      valueType: "java.lang.String"
+      uuid: "threadName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.ThreadGroup"
+        parameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "threadGroup-name"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "recurse"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      genericValueType: "java.lang.Thread"
+      uuid: "predicate2-any"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "getAllThreadGroups"
+    sourceCodeSignature: "Collection<ThreadGroup> getAllThreadGroups()"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.ThreadGroup"
+    instructionFingerprint: "07D858EC1BB1F1EA81936EE56523E93A"
+  paths:
+  - testPathName: "getAllThreadGroupsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreadGroups(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.ThreadGroup"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate2-any"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "getAllThreads"
+    sourceCodeSignature: "Collection<Thread> getAllThreads()"
+    returnType: "java.util.Collection"
+    genericReturnType: "java.lang.Thread"
+    instructionFingerprint: "C6F5E6B0EFBEB3957C7258CF4AD9A40D"
+  paths:
+  - testPathName: "getAllThreadsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "ThreadUtils.class"
+      valueUuid: "ThreadUtils.class"
+      methodExercised:
+        expression: "findThreads(predicate2-any):collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collection"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ThreadUtils"
+      uuid: "ThreadUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Thread"
+      uuid: "collection"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate2-any"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+- method:
+    name: "getSystemThreadGroup"
+    sourceCodeSignature: "ThreadGroup getSystemThreadGroup()"
+    returnType: "java.lang.ThreadGroup"
+    instructionFingerprint: "BAEBA986BB99F8FD89C6A3385C9D3C1E"
+  paths:
+  - testPathName: "getSystemThreadGroupWhenThreadGroupGetParentIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "threadGroup3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.ThreadGroup"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "java.lang.ThreadGroup"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "java.lang.Thread"
+                method: "currentThread"
+                methodParameters: []
+              valueType: "java.lang.Thread"
+              uuid: "thread"
+            methodParameters: []
+            methodName: "getThreadGroup"
+          valueType: "java.lang.ThreadGroup"
+          uuid: "threadGroup"
+        methodParameters: []
+        methodName: "getParent"
+      valueType: "java.lang.ThreadGroup"
+      uuid: "threadGroup3"
+    branches:
+    - lineNumber: 512
+      expression: "threadGroup != null"
+      range: "(512,16)-(512,34)"
+      evaluatedAs: true
+    - lineNumber: 512
+      expression: "threadGroup.getParent() != null"
+      range: "(512,39)-(512,69)"
+      evaluatedAs: true
+- method:
+    name: "join"
+    sourceCodeSignature: "void join(final Thread thread, final Duration duration)"
+    returnType: "void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    parameters:
+    - name: "thread"
+      type: "java.lang.Thread"
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "7A225B6E3513FFBD458DA57A5798A9C8"
+  paths:
+  - testPathName: "joinTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "thread"
+      valueUuid: "thread"
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "DurationUtils.accept(thread::join, duration);"
+      lineNumber: 528
+      details: "Potential harmful system call (Thread.join) detected; Learn more:\
+        \ https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Thread"
+        parameters: []
+      valueType: "java.lang.Thread"
+      uuid: "thread"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "VOID"
+      uuid: "void3"
+- method:
+    name: "sleep"
+    sourceCodeSignature: "void sleep(final Duration duration)"
+    returnType: "void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "351B1499DD5DEB6752D5087F1C56D564"
+  paths:
+  - testPathName: "sleepTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.time.DurationUtils.accept(org.apache.commons.lang3.function.FailableBiConsumer,java.time.Duration)\
+        \ : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "VOID"
+      uuid: "void3"
+- method:
+    name: "sleepQuietly"
+    sourceCodeSignature: "void sleepQuietly(final Duration duration)"
+    returnType: "void"
+    parameters:
+    - name: "duration"
+      type: "java.time.Duration"
+    instructionFingerprint: "0C7B4B0FA89FC0A8F3EB57FCD7B79047"
+  paths:
+  - testPathName: "sleepQuietlyTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.time.DurationUtils.accept(org.apache.commons.lang3.function.FailableBiConsumer,java.time.Duration)\
+        \ : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "VOID"
+      uuid: "void3"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+  - testPathName: "sleepQuietlyWhenCaughtInterruptedException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "duration"
+      valueUuid: "duration"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.time.DurationUtils.accept(org.apache.commons.lang3.function.FailableBiConsumer,java.time.Duration)\
+        \ : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.time.Duration"
+        method: "ofDays"
+        methodParameters:
+        - name: "days"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "duration-days"
+      valueType: "java.time.Duration"
+      uuid: "duration"
+    - sapientType: "VOID"
+      uuid: "void3"
+    branches:
+    - lineNumber: 567
+      expression: "catch-exception (InterruptedException)"
+      range: "(567,11)-(567,45)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ThreadUtils"
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.InterruptedException"

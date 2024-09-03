@@ -1,0 +1,147 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+methods:
+- method:
+    name: "create"
+    sourceCodeSignature: "<O> ReadWriteLockVisitor<O> create(final O object, final\
+      \ ReadWriteLock readWriteLock)"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    - name: "readWriteLock"
+      type: "java.util.concurrent.locks.ReadWriteLock"
+    instructionFingerprint: "D608D23B4B3BF7CD53E2F60BCAE1577B"
+  paths:
+  - testPathName: "createTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "INPUT"
+      name: "readWriteLock"
+      valueUuid: "readWriteLock"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "lockingVisitorsReadWriteLockVisitor"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.locks.ReadWriteLock"
+      uuid: "readWriteLock"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+        - name: "readWriteLock"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.locks.ReadWriteLock"
+            uuid: "readWriteLock"
+      valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+      uuid: "lockingVisitorsReadWriteLockVisitor"
+- method:
+    name: "reentrantReadWriteLockVisitor"
+    sourceCodeSignature: "<O> ReadWriteLockVisitor<O> reentrantReadWriteLockVisitor(final\
+      \ O object)"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "CD85406AED47386A17163D46AAE5B363"
+  paths:
+  - testPathName: "reentrantReadWriteLockVisitorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "LockingVisitors.class"
+      valueUuid: "LockingVisitors.class"
+      methodExercised:
+        expression: "create(object,reentrantReadWriteLock-any):lockingVisitorsReadWriteLockVisitor"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "lockingVisitorsReadWriteLockVisitor"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors"
+      uuid: "LockingVisitors.class"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$ReadWriteLockVisitor"
+      uuid: "lockingVisitorsReadWriteLockVisitor"
+    - sapientType: "ANY"
+      valueType: "java.util.concurrent.locks.ReentrantReadWriteLock"
+      uuid: "reentrantReadWriteLock-any"
+- method:
+    name: "stampedLockVisitor"
+    sourceCodeSignature: "<O> StampedLockVisitor<O> stampedLockVisitor(final O object)"
+    returnType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+    parameters:
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "3F9879540E8DDFEC9E3A45363E5CD78E"
+  paths:
+  - testPathName: "stampedLockVisitorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "lockingVisitorsStampedLockVisitor"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+        parameters:
+        - name: "object"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "object"
+        - name: "stampedLock"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.concurrent.locks.StampedLock"
+              parameters: []
+            valueType: "java.util.concurrent.locks.StampedLock"
+            uuid: "stampedLock"
+      valueType: "org.apache.commons.lang3.concurrent.locks.LockingVisitors$StampedLockVisitor"
+      uuid: "lockingVisitorsStampedLockVisitor"

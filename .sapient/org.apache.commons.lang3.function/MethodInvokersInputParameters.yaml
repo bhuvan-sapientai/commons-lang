@@ -1,0 +1,460 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.function.MethodInvokers"
+methods:
+- method:
+    name: "asBiConsumer"
+    sourceCodeSignature: "<T, U> BiConsumer<T, U> asBiConsumer(final Method method)"
+    returnType: "java.util.function.BiConsumer"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "6DE33DEAE75F5822F727EA40A77D8B0B"
+  paths:
+  - testPathName: "asBiConsumerTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-BiConsumer,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiConsumer"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.util.function.BiConsumer"
+      valueType: "java.lang.Class"
+      genericValueType: "java.util.function.BiConsumer"
+      uuid: "class-BiConsumer"
+- method:
+    name: "asBiFunction"
+    sourceCodeSignature: "<T, U, R> BiFunction<T, U, R> asBiFunction(final Method\
+      \ method)"
+    returnType: "java.util.function.BiFunction"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "81F1A07F01ED106EC58A9360F55E746D"
+  paths:
+  - testPathName: "asBiFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-BiFunction,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.util.function.BiFunction"
+      valueType: "java.lang.Class"
+      genericValueType: "java.util.function.BiFunction"
+      uuid: "class-BiFunction"
+- method:
+    name: "asFailableBiConsumer"
+    sourceCodeSignature: "<T, U> FailableBiConsumer<T, U, Throwable> asFailableBiConsumer(final\
+      \ Method method)"
+    returnType: "org.apache.commons.lang3.function.FailableBiConsumer"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "7F1782CB96EF6D29EAEB25789731735F"
+  paths:
+  - testPathName: "asFailableBiConsumerTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-FailableBiConsumer,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiConsumer"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "org.apache.commons.lang3.function.FailableBiConsumer"
+      valueType: "java.lang.Class"
+      genericValueType: "org.apache.commons.lang3.function.FailableBiConsumer"
+      uuid: "class-FailableBiConsumer"
+- method:
+    name: "asFailableBiFunction"
+    sourceCodeSignature: "<T, U, R> FailableBiFunction<T, U, R, Throwable> asFailableBiFunction(final\
+      \ Method method)"
+    returnType: "org.apache.commons.lang3.function.FailableBiFunction"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Throwable"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "C5F11C6375138CE85DCDB523EAB22002"
+  paths:
+  - testPathName: "asFailableBiFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-FailableBiFunction,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiFunction"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiFunction"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "org.apache.commons.lang3.function.FailableBiFunction"
+      valueType: "java.lang.Class"
+      genericValueType: "org.apache.commons.lang3.function.FailableBiFunction"
+      uuid: "class-FailableBiFunction"
+- method:
+    name: "asFailableFunction"
+    sourceCodeSignature: "<T, R> FailableFunction<T, R, Throwable> asFailableFunction(final\
+      \ Method method)"
+    returnType: "org.apache.commons.lang3.function.FailableFunction"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "7E38DF1F9D236F2776FA2F21BBA13657"
+  paths:
+  - testPathName: "asFailableFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-FailableFunction,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableFunction"
+        method: "identity"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableFunction"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "org.apache.commons.lang3.function.FailableFunction"
+      valueType: "java.lang.Class"
+      genericValueType: "org.apache.commons.lang3.function.FailableFunction"
+      uuid: "class-FailableFunction"
+- method:
+    name: "asFailableSupplier"
+    sourceCodeSignature: "<R> FailableSupplier<R, Throwable> asFailableSupplier(final\
+      \ Method method)"
+    returnType: "org.apache.commons.lang3.function.FailableSupplier"
+    genericReturnType: "java.lang.Object,java.lang.Throwable"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "96F948AD22BBE65BDAD8F2BDBDE2633C"
+  paths:
+  - testPathName: "asFailableSupplierTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-FailableSupplier,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableSupplier"
+        method: "nul"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "org.apache.commons.lang3.function.FailableSupplier"
+      valueType: "java.lang.Class"
+      genericValueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "class-FailableSupplier"
+- method:
+    name: "asFunction"
+    sourceCodeSignature: "<T, R> Function<T, R> asFunction(final Method method)"
+    returnType: "java.util.function.Function"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "DF3D32731DE3000E2DC413BC44E86208"
+  paths:
+  - testPathName: "asFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-Function,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.util.function.Function"
+      valueType: "java.lang.Class"
+      genericValueType: "java.util.function.Function"
+      uuid: "class-Function"
+- method:
+    name: "asInterfaceInstance"
+    sourceCodeSignature: "<T> T asInterfaceInstance(final Class<T> interfaceClass,\
+      \ final Method method)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "interfaceClass"
+      type: "java.lang.Class"
+      genericType: "java.lang.Object"
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "3AF136B8E5E019CD3B3B84309F99AD56"
+  paths:
+  - testPathName: "asInterfaceInstanceTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "interfaceClass"
+      valueUuid: "interfaceClass"
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "return MethodHandleProxies.asInterfaceInstance(Objects.requireNonNull(interfaceClass,\
+        \ \\\"interfaceClass\\\"), unreflectUnchecked(method));"
+      lineNumber: 210
+      details: "Potential harmful system call (MethodHandleProxies.asInterfaceInstance)\
+        \ detected; Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "interfaceClass"
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.function.MethodInvokers"
+  - testPathName: "asInterfaceInstanceWhenCaughtIllegalAccessExceptionThrowsUncheckedIllegalAccessException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "interfaceClass"
+      valueUuid: "interfaceClass"
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "uncheckedIllegalAccessException"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return MethodHandles.lookup().unreflect(requireMethod(method));"
+      lineNumber: 241
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: object of type MethodHandles.Lookup - Method: unreflect"
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "interfaceClass"
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.UncheckedIllegalAccessException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.IllegalAccessException"
+              parameters: []
+            valueType: "java.lang.IllegalAccessException"
+            uuid: "illegalAccessException"
+      valueType: "org.apache.commons.lang3.exception.UncheckedIllegalAccessException"
+      uuid: "uncheckedIllegalAccessException"
+    branches:
+    - lineNumber: 247
+      expression: "catch-exception (IllegalAccessException)"
+      range: "(247,11)-(247,47)"
+      evaluatedAs: true
+      internalMethodName: "unreflectUnchecked"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.function.MethodInvokers"
+    catchBlockExercised:
+      idExternalInstruction: 7
+      id: 1
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+- method:
+    name: "asSupplier"
+    sourceCodeSignature: "<R> Supplier<R> asSupplier(final Method method)"
+    returnType: "java.util.function.Supplier"
+    parameters:
+    - name: "method"
+      type: "java.lang.reflect.Method"
+    instructionFingerprint: "DC38223316B53C1759F7883D549ACEB7"
+  paths:
+  - testPathName: "asSupplierTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      valueUuid: "method"
+    - type: "STATIC"
+      name: "MethodInvokers.class"
+      valueUuid: "MethodInvokers.class"
+      methodExercised:
+        expression: "asInterfaceInstance(class-Supplier,method):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "method"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.MethodInvokers"
+      uuid: "MethodInvokers.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "object"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.util.function.Supplier"
+      valueType: "java.lang.Class"
+      genericValueType: "java.util.function.Supplier"
+      uuid: "class-Supplier"

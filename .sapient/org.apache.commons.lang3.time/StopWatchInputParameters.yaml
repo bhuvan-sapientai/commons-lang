@@ -1,0 +1,1211 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.time.StopWatch"
+methods:
+- method:
+    name: "create"
+    sourceCodeSignature: "StopWatch create()"
+    returnType: "org.apache.commons.lang3.time.StopWatch"
+    instructionFingerprint: "6607F5C1C39AF15192FB4C675E063A28"
+  paths:
+  - testPathName: "createTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stopWatch"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters: []
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "stopWatch"
+- method:
+    name: "createStarted"
+    sourceCodeSignature: "StopWatch createStarted()"
+    returnType: "org.apache.commons.lang3.time.StopWatch"
+    instructionFingerprint: "FC0D3C6B80CEFA00E96BA6C9EB0C4A6F"
+  paths:
+  - testPathName: "createStartedTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stopWatch"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters: []
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "stopWatch"
+- method:
+    name: "formatSplitTime"
+    sourceCodeSignature: "String formatSplitTime()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "70783246825BEFCB6D216B46158C928A"
+  paths:
+  - testPathName: "formatSplitTimeTest"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getSplitTime():long1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "00:00:00.001"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "formatTime"
+    sourceCodeSignature: "String formatTime()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "2A806929932591442B6422019D9A2789"
+  paths:
+  - testPathName: "formatTimeTest"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getTime():long1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "00:00:00.001"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "getNanoTime"
+    sourceCodeSignature: "long getNanoTime()"
+    returnType: "long"
+    instructionFingerprint: "32F3919809FDDA84B3BE7B2D512FCE24"
+  paths:
+  - testPathName: "getNanoTimeWhenThisRunningStateEqualsStateUNSTARTED"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 294
+      expression: "this.runningState == State.STOPPED"
+      range: "(294,13)-(294,46)"
+      evaluatedAs: false
+    - lineNumber: 294
+      expression: "this.runningState == State.SUSPENDED"
+      range: "(294,51)-(294,86)"
+      evaluatedAs: false
+    - lineNumber: 297
+      expression: "this.runningState == State.UNSTARTED"
+      range: "(297,13)-(297,48)"
+      evaluatedAs: true
+- method:
+    name: "getSplitNanoTime"
+    sourceCodeSignature: "long getSplitNanoTime()"
+    returnType: "long"
+    instructionFingerprint: "DE1D3BE6472C865118ABCF6C0CB15F99"
+  paths:
+  - testPathName: "getSplitNanoTimeWhenThisSplitStateNotEqualsSplitStateSPLITThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch must be split to get the split time."
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 319
+      expression: "this.splitState != SplitState.SPLIT"
+      range: "(319,13)-(319,47)"
+      evaluatedAs: true
+- method:
+    name: "getSplitTime"
+    sourceCodeSignature: "long getSplitTime()"
+    returnType: "long"
+    instructionFingerprint: "07AC817D5F46FD16B7B09FD069747114"
+  paths:
+  - testPathName: "getSplitTimeTest"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getSplitNanoTime():long1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long2"
+- method:
+    name: "getStartTime"
+    sourceCodeSignature: "long getStartTime()"
+    returnType: "long"
+    instructionFingerprint: "CE99D2C3DAEF9840A1692940B77BC62F"
+  paths:
+  - testPathName: "getStartTimeWhenThisRunningStateEqualsStateUNSTARTEDThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch has not been started"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 349
+      expression: "this.runningState == State.UNSTARTED"
+      range: "(349,13)-(349,48)"
+      evaluatedAs: true
+- method:
+    name: "getStopTime"
+    sourceCodeSignature: "long getStopTime()"
+    returnType: "long"
+    instructionFingerprint: "8B92AC97FE0E75DC4A5F7B142F18DCD5"
+  paths:
+  - testPathName: "getStopTimeWhenThisRunningStateEqualsStateUNSTARTEDThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch has not been started"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 364
+      expression: "this.runningState == State.UNSTARTED"
+      range: "(364,13)-(364,48)"
+      evaluatedAs: true
+- method:
+    name: "getTime"
+    sourceCodeSignature: "long getTime()"
+    returnType: "long"
+    instructionFingerprint: "BF69EDDBDEF371B9A1454345A7E015C1"
+  paths:
+  - testPathName: "getTimeTest"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getNanoTime():long1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long2"
+- method:
+    name: "getTime"
+    sourceCodeSignature: "long getTime(final TimeUnit timeUnit)"
+    returnType: "long"
+    parameters:
+    - name: "timeUnit"
+      type: "java.util.concurrent.TimeUnit"
+    instructionFingerprint: "8D7FF1C439C016C7E2A250029FDDA200"
+  paths:
+  - testPathName: "getTime1Test"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "timeUnit"
+      valueUuid: "timeUnit"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getNanoTime():long1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "NANOSECONDS"
+      valueType: "java.util.concurrent.TimeUnit"
+      uuid: "timeUnit"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long2"
+- method:
+    name: "isStarted"
+    sourceCodeSignature: "boolean isStarted()"
+    returnType: "boolean"
+    instructionFingerprint: "D607420EA630049F9AB29C40A44BB253"
+  paths:
+  - testPathName: "isStartedWhenRunningStateIsStarted"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 408
+      expression: "runningState.isStarted()"
+      range: "(408,16)-(408,39)"
+      evaluatedAs: true
+  - testPathName: "isStartedWhenRunningStateNotIsStarted"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 408
+      expression: "runningState.isStarted()"
+      range: "(408,16)-(408,39)"
+      evaluatedAs: false
+- method:
+    name: "isStopped"
+    sourceCodeSignature: "boolean isStopped()"
+    returnType: "boolean"
+    instructionFingerprint: "F1CA56B9B50CA8DA7881E376324FF534"
+  paths:
+  - testPathName: "isStoppedWhenRunningStateIsStopped"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 418
+      expression: "runningState.isStopped()"
+      range: "(418,16)-(418,39)"
+      evaluatedAs: true
+  - testPathName: "isStoppedWhenRunningStateNotIsStopped"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 418
+      expression: "runningState.isStopped()"
+      range: "(418,16)-(418,39)"
+      evaluatedAs: false
+- method:
+    name: "isSuspended"
+    sourceCodeSignature: "boolean isSuspended()"
+    returnType: "boolean"
+    instructionFingerprint: "55BE8AE45945AAF8F2864344F778B9F6"
+  paths:
+  - testPathName: "isSuspendedWhenRunningStateIsSuspended"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 428
+      expression: "runningState.isSuspended()"
+      range: "(428,16)-(428,41)"
+      evaluatedAs: true
+  - testPathName: "isSuspendedWhenRunningStateNotIsSuspended"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 428
+      expression: "runningState.isSuspended()"
+      range: "(428,16)-(428,41)"
+      evaluatedAs: false
+- method:
+    name: "reset"
+    sourceCodeSignature: "void reset()"
+    returnType: "void"
+    instructionFingerprint: "BE0210DF17C155690FD65659AC7BA895"
+  paths:
+  - testPathName: "resetTest"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "resume"
+    sourceCodeSignature: "void resume()"
+    returnType: "void"
+    instructionFingerprint: "6E0AA13D0C01EE201BC05E74579CB45E"
+  paths:
+  - testPathName: "resumeWhenThisRunningStateNotEqualsStateSUSPENDEDThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch must be suspended to resume. "
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 463
+      expression: "this.runningState != State.SUSPENDED"
+      range: "(463,13)-(463,48)"
+      evaluatedAs: true
+- method:
+    name: "split"
+    sourceCodeSignature: "void split()"
+    returnType: "void"
+    instructionFingerprint: "AE3FF519814FEC67A57DE6E52898E3E7"
+  paths:
+  - testPathName: "splitWhenThisRunningStateNotEqualsStateRUNNINGThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch is not running. "
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 481
+      expression: "this.runningState != State.RUNNING"
+      range: "(481,13)-(481,46)"
+      evaluatedAs: true
+- method:
+    name: "start"
+    sourceCodeSignature: "void start()"
+    returnType: "void"
+    instructionFingerprint: "5B23406D324136A2DBC96D1ACC14309B"
+  paths:
+  - testPathName: "startWhenThisRunningStateEqualsStateUNSTARTED"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "this.startTimeNanos = System.nanoTime();"
+      lineNumber: 504
+      details: "Method java.lang.System::nanoTime has a unrepeatable behavior"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 498
+      expression: "this.runningState == State.STOPPED"
+      range: "(498,13)-(498,46)"
+      evaluatedAs: false
+    - lineNumber: 501
+      expression: "this.runningState != State.UNSTARTED"
+      range: "(501,13)-(501,48)"
+      evaluatedAs: false
+- method:
+    name: "stop"
+    sourceCodeSignature: "void stop()"
+    returnType: "void"
+    instructionFingerprint: "0D1283394BAB137490719E3A1248FB7C"
+  paths:
+  - testPathName: "stopWhenThisRunningStateNotEqualsStateSUSPENDEDThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch is not running. "
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 519
+      expression: "this.runningState != State.RUNNING"
+      range: "(519,13)-(519,46)"
+      evaluatedAs: true
+    - lineNumber: 519
+      expression: "this.runningState != State.SUSPENDED"
+      range: "(519,51)-(519,86)"
+      evaluatedAs: true
+- method:
+    name: "suspend"
+    sourceCodeSignature: "void suspend()"
+    returnType: "void"
+    instructionFingerprint: "D5E8EDF5AC0448BAC4C70FDB35B877B4"
+  paths:
+  - testPathName: "suspendWhenThisRunningStateNotEqualsStateRUNNINGThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch must be running to suspend. "
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 539
+      expression: "this.runningState != State.RUNNING"
+      range: "(539,13)-(539,46)"
+      evaluatedAs: true
+- method:
+    name: "toSplitString"
+    sourceCodeSignature: "String toSplitString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "5FF123F22B5C4F1148A1C2FC69F9F171"
+  paths:
+  - testPathName: "toSplitStringWhenMsgStrIsEmpty"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "formatSplitTime():string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_formatSplitTime1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 561
+      expression: "msgStr.isEmpty()"
+      range: "(561,16)-(561,31)"
+      evaluatedAs: true
+  - testPathName: "toSplitStringWhenMsgStrNotIsEmpty"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "formatSplitTime():string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "C"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C A"
+      valueType: "java.lang.String"
+      uuid: "string3"
+    branches:
+    - lineNumber: 561
+      expression: "msgStr.isEmpty()"
+      range: "(561,16)-(561,31)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "9FF33380FD126E53A03038AD344FD493"
+  paths:
+  - testPathName: "toStringWhenMsgStrIsEmpty"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "formatTime():string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_formatTime1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 578
+      expression: "msgStr.isEmpty()"
+      range: "(578,16)-(578,31)"
+      evaluatedAs: true
+  - testPathName: "toStringWhenMsgStrNotIsEmpty"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "formatTime():string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "C"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C A"
+      valueType: "java.lang.String"
+      uuid: "string3"
+    branches:
+    - lineNumber: 578
+      expression: "msgStr.isEmpty()"
+      range: "(578,16)-(578,31)"
+      evaluatedAs: false
+- method:
+    name: "unsplit"
+    sourceCodeSignature: "void unsplit()"
+    returnType: "void"
+    instructionFingerprint: "610CDB8A92DDF38B420A7EB356F4C8EB"
+  paths:
+  - testPathName: "unsplitWhenThisSplitStateNotEqualsSplitStateSPLITThrowsIllegalStateException"
+    constructorSignature: "<init>(java.lang.String) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.StopWatch"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+      valueType: "org.apache.commons.lang3.time.StopWatch"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Stopwatch has not been split. "
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 591
+      expression: "this.splitState != SplitState.SPLIT"
+      range: "(591,13)-(591,47)"
+      evaluatedAs: true

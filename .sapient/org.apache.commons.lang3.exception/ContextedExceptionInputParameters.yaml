@@ -1,0 +1,561 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.exception.ContextedException"
+methods:
+- method:
+    name: "addContextValue"
+    sourceCodeSignature: "ContextedException addContextValue(final String label, final\
+      \ Object value)"
+    returnType: "org.apache.commons.lang3.exception.ContextedException"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "7EED6FEC6BFBF724E68259EBDA594B8F"
+  paths:
+  - testPathName: "addContextValueTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "targetClassObject"
+- method:
+    name: "getContextEntries"
+    sourceCodeSignature: "List<Pair<String, Object>> getContextEntries()"
+    returnType: "java.util.List"
+    genericReturnType: "org.apache.commons.lang3.tuple.Pair<java.lang.String,java.lang.Object>"
+    instructionFingerprint: "7B635CC4BA4D34973C60CAEA6CDBF130"
+  paths:
+  - testPathName: "getContextEntriesTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "list"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return this.exceptionContext.getContextEntries();"
+      lineNumber: 178
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: exceptionContext - Method: getContextEntries"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "org.apache.commons.lang3.tuple.Pair<java.lang.String,java.lang.Object>"
+      uuid: "list"
+- method:
+    name: "getContextLabels"
+    sourceCodeSignature: "Set<String> getContextLabels()"
+    returnType: "java.util.Set"
+    genericReturnType: "java.lang.String"
+    instructionFingerprint: "133C1EBDA42688940D6E957DF0D68627"
+  paths:
+  - testPathName: "getContextLabelsTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "set"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Set"
+      genericValueType: "java.lang.String"
+      uuid: "set"
+- method:
+    name: "getContextValues"
+    sourceCodeSignature: "List<Object> getContextValues(final String label)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.Object"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    instructionFingerprint: "48F75946D97870102B5AFC6191266FDC"
+  paths:
+  - testPathName: "getContextValuesTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "list"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return this.exceptionContext.getContextValues(label);"
+      lineNumber: 194
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: exceptionContext - Method: getContextValues"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "list"
+- method:
+    name: "getFirstContextValue"
+    sourceCodeSignature: "Object getFirstContextValue(final String label)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    instructionFingerprint: "65392B005A6EBC0146E32E07561CE1CA"
+  paths:
+  - testPathName: "getFirstContextValueTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+- method:
+    name: "getFormattedExceptionMessage"
+    sourceCodeSignature: "String getFormattedExceptionMessage(final String baseMessage)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "baseMessage"
+      type: "java.lang.String"
+    instructionFingerprint: "E02B0CBD86DB9018703B888E2541D9CD"
+  paths:
+  - testPathName: "getFormattedExceptionMessageTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "baseMessage"
+      valueUuid: "baseMessage"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "baseMessage"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "getMessage"
+    sourceCodeSignature: "String getMessage()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "F0492127C98D13E1FD186ADFF23E0113"
+  paths:
+  - testPathName: "getMessageTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getMessage():string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string2"
+- method:
+    name: "getRawMessage"
+    sourceCodeSignature: "String getRawMessage()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "3F9AC5610AEA321F06B2D375CB5BE6BE"
+  paths:
+  - testPathName: "getRawMessageTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getMessage():string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getMessage1"
+      valueType: "java.lang.String"
+      uuid: "string"
+- method:
+    name: "setContextValue"
+    sourceCodeSignature: "ContextedException setContextValue(final String label, final\
+      \ Object value)"
+    returnType: "org.apache.commons.lang3.exception.ContextedException"
+    parameters:
+    - name: "label"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "3A72911EFF5B6BE9BD4593685C5D826B"
+  paths:
+  - testPathName: "setContextValueTest"
+    constructorSignature: "<init>(java.lang.String,java.lang.Throwable,org.apache.commons.lang3.exception.ExceptionContext)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "label"
+      valueUuid: "label"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.exception.ContextedException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "message"
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "cause"
+        - name: "context"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.exception.ExceptionContext"
+            uuid: "context"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "label1"
+      valueType: "java.lang.String"
+      uuid: "label"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.exception.ContextedException"
+      uuid: "targetClassObject"

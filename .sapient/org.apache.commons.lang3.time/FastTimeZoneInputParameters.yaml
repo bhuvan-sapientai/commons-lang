@@ -1,0 +1,467 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.time.FastTimeZone"
+methods:
+- method:
+    name: "getGmtTimeZone"
+    sourceCodeSignature: "TimeZone getGmtTimeZone()"
+    returnType: "java.util.TimeZone"
+    instructionFingerprint: "FA0786F0D9385314846E5AAFB9D62C67"
+  paths:
+  - testPathName: "getGmtTimeZoneTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "gmtTimeZone"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "gmtTimeZone"
+- method:
+    name: "getGmtTimeZone"
+    sourceCodeSignature: "TimeZone getGmtTimeZone(final String pattern)"
+    returnType: "java.util.TimeZone"
+    parameters:
+    - name: "pattern"
+      type: "java.lang.String"
+    instructionFingerprint: "DB586526FA19CE0FC64BB088CF1EC583"
+  paths:
+  - testPathName: "getGmtTimeZone1WhenUTCEqualsPattern"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "gmtTimeZone"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "UTC"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "gmtTimeZone"
+    branches:
+    - lineNumber: 50
+      expression: "\\\"Z\\\".equals(pattern)"
+      range: "(50,13)-(50,31)"
+      evaluatedAs: false
+    - lineNumber: 50
+      expression: "\\\"UTC\\\".equals(pattern)"
+      range: "(50,36)-(50,56)"
+      evaluatedAs: true
+  - testPathName: "getGmtTimeZone1WhenMNotMatches"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "timeZone"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "NULL"
+      valueType: "java.util.TimeZone"
+      uuid: "timeZone"
+    branches:
+    - lineNumber: 50
+      expression: "\\\"Z\\\".equals(pattern)"
+      range: "(50,13)-(50,31)"
+      evaluatedAs: false
+    - lineNumber: 50
+      expression: "\\\"UTC\\\".equals(pattern)"
+      range: "(50,36)-(50,56)"
+      evaluatedAs: false
+    - lineNumber: 55
+      expression: "m.matches()"
+      range: "(55,13)-(55,23)"
+      evaluatedAs: false
+  - testPathName: "getGmtTimeZone1WhenHoursEquals0AndMinutesEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "gmtTimeZone"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "gmtTimeZone"
+    branches:
+    - lineNumber: 50
+      expression: "\\\"Z\\\".equals(pattern)"
+      range: "(50,13)-(50,31)"
+      evaluatedAs: false
+    - lineNumber: 50
+      expression: "\\\"UTC\\\".equals(pattern)"
+      range: "(50,36)-(50,56)"
+      evaluatedAs: false
+    - lineNumber: 55
+      expression: "m.matches()"
+      range: "(55,13)-(55,23)"
+      evaluatedAs: true
+    - lineNumber: 84
+      expression: "group != null"
+      range: "(84,16)-(84,28)"
+      evaluatedAs: false
+      internalMethodName: "parseInt"
+    - lineNumber: 58
+      expression: "hours == 0"
+      range: "(58,17)-(58,26)"
+      evaluatedAs: true
+    - lineNumber: 58
+      expression: "minutes == 0"
+      range: "(58,31)-(58,42)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.time.FastTimeZone"
+  - testPathName: "getGmtTimeZone1WhenGroupCharAt0Equals___"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "gmtTimeZone2"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate2"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int1"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int2"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "gmtTimeZone2"
+    branches:
+    - lineNumber: 50
+      expression: "\\\"Z\\\".equals(pattern)"
+      range: "(50,13)-(50,31)"
+      evaluatedAs: false
+    - lineNumber: 50
+      expression: "\\\"UTC\\\".equals(pattern)"
+      range: "(50,36)-(50,56)"
+      evaluatedAs: false
+    - lineNumber: 55
+      expression: "m.matches()"
+      range: "(55,13)-(55,23)"
+      evaluatedAs: true
+    - lineNumber: 84
+      expression: "group != null"
+      range: "(84,16)-(84,28)"
+      evaluatedAs: true
+      internalMethodName: "parseInt"
+    - lineNumber: 58
+      expression: "hours == 0"
+      range: "(58,17)-(58,26)"
+      evaluatedAs: true
+    - lineNumber: 58
+      expression: "minutes == 0"
+      range: "(58,31)-(58,42)"
+      evaluatedAs: false
+    - lineNumber: 88
+      expression: "group != null"
+      range: "(88,16)-(88,28)"
+      evaluatedAs: true
+      internalMethodName: "parseSign"
+    - lineNumber: 88
+      expression: "group.charAt(0) == '-'"
+      range: "(88,33)-(88,54)"
+      evaluatedAs: true
+      internalMethodName: "parseSign"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.time.FastTimeZone"
+  - testPathName: "getGmtTimeZone1WhenGroupCharAt0NotEquals___"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "pattern"
+      valueUuid: "pattern"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "gmtTimeZone2"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "pattern1"
+      valueType: "java.lang.String"
+      uuid: "pattern"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negate2"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int1"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int2"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "gmtTimeZone2"
+    branches:
+    - lineNumber: 50
+      expression: "\\\"Z\\\".equals(pattern)"
+      range: "(50,13)-(50,31)"
+      evaluatedAs: false
+    - lineNumber: 50
+      expression: "\\\"UTC\\\".equals(pattern)"
+      range: "(50,36)-(50,56)"
+      evaluatedAs: false
+    - lineNumber: 55
+      expression: "m.matches()"
+      range: "(55,13)-(55,23)"
+      evaluatedAs: true
+    - lineNumber: 84
+      expression: "group != null"
+      range: "(84,16)-(84,28)"
+      evaluatedAs: true
+      internalMethodName: "parseInt"
+    - lineNumber: 58
+      expression: "hours == 0"
+      range: "(58,17)-(58,26)"
+      evaluatedAs: true
+    - lineNumber: 58
+      expression: "minutes == 0"
+      range: "(58,31)-(58,42)"
+      evaluatedAs: false
+    - lineNumber: 88
+      expression: "group != null"
+      range: "(88,16)-(88,28)"
+      evaluatedAs: true
+      internalMethodName: "parseSign"
+    - lineNumber: 88
+      expression: "group.charAt(0) == '-'"
+      range: "(88,33)-(88,54)"
+      evaluatedAs: false
+      internalMethodName: "parseSign"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.time.FastTimeZone"
+- method:
+    name: "getTimeZone"
+    sourceCodeSignature: "TimeZone getTimeZone(final String id)"
+    returnType: "java.util.TimeZone"
+    parameters:
+    - name: "id"
+      type: "java.lang.String"
+    instructionFingerprint: "7DC4DC6DB1005A03CEDAF985A618FA40"
+  paths:
+  - testPathName: "getTimeZoneWhenTzIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "id"
+      valueUuid: "id"
+    - type: "STATIC"
+      name: "FastTimeZone.class"
+      valueUuid: "FastTimeZone.class"
+      methodExercised:
+        expression: "getGmtTimeZone(id):timeZone"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "timeZone"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "id1"
+      valueType: "java.lang.String"
+      uuid: "id"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.FastTimeZone"
+      uuid: "FastTimeZone.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.TimeZone"
+        method: "getDefault"
+        methodParameters: []
+      valueType: "java.util.TimeZone"
+      uuid: "timeZone"
+    branches:
+    - lineNumber: 77
+      expression: "tz != null"
+      range: "(77,13)-(77,22)"
+      evaluatedAs: true
+  - testPathName: "getTimeZoneWhenTzIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "id"
+      valueUuid: "id"
+    - type: "STATIC"
+      name: "FastTimeZone.class"
+      valueUuid: "FastTimeZone.class"
+      methodExercised:
+        expression: "getGmtTimeZone(id):timeZone"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "timeZone2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "id"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.time.FastTimeZone"
+      uuid: "FastTimeZone.class"
+    - sapientType: "NULL"
+      valueType: "java.util.TimeZone"
+      uuid: "timeZone"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.TimeZone"
+        method: "getTimeZone"
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "id"
+      valueType: "java.util.TimeZone"
+      uuid: "timeZone2"
+    branches:
+    - lineNumber: 77
+      expression: "tz != null"
+      range: "(77,13)-(77,22)"
+      evaluatedAs: false

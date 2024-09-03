@@ -1,0 +1,199 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.LongRange"
+methods:
+- method:
+    name: "of"
+    sourceCodeSignature: "LongRange of(final long fromInclusive, final long toInclusive)"
+    returnType: "org.apache.commons.lang3.LongRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "long"
+    - name: "toInclusive"
+      type: "long"
+    instructionFingerprint: "C26BD851D4AD1B1F978695A306DA2207"
+  paths:
+  - testPathName: "of2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "STATIC"
+      name: "LongRange.class"
+      valueUuid: "LongRange.class"
+      methodExercised:
+        expression: "of(long,long2):longRange"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "longRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "toInclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.LongRange"
+      uuid: "LongRange.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.LongRange"
+        method: "of"
+        methodParameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "longRange-fromInclusive"
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "longRange-toInclusive"
+      valueType: "org.apache.commons.lang3.LongRange"
+      uuid: "longRange"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Long"
+      uuid: "long"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Long"
+      uuid: "long2"
+- method:
+    name: "of"
+    sourceCodeSignature: "LongRange of(final Long fromInclusive, final Long toInclusive)"
+    returnType: "org.apache.commons.lang3.LongRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "java.lang.Long"
+    - name: "toInclusive"
+      type: "java.lang.Long"
+    instructionFingerprint: "114EF509F28256D8962C18F251893EAE"
+  paths:
+  - testPathName: "of3WhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "longRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.LongRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Long"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Long"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.LongRange"
+      uuid: "longRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+  - testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "longRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Long"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.LongRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Long"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Long"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.LongRange"
+      uuid: "longRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"

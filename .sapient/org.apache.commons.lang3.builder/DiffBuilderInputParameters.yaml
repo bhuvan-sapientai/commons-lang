@@ -1,0 +1,1915 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.builder.DiffBuilder"
+methods:
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final boolean\
+      \ lhs, final boolean rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "boolean"
+    - name: "rhs"
+      type: "boolean"
+    instructionFingerprint: "8A0E743075826090FDBD85414685F96E"
+  paths:
+  - testPathName: "appendWhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 167
+      expression: "objectsTriviallyEqual"
+      range: "(167,13)-(167,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final boolean[]\
+      \ lhs, final boolean[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "boolean[]"
+    - name: "rhs"
+      type: "boolean[]"
+    instructionFingerprint: "2F8393BC36363D7BDA5284EFAD41D209"
+  paths:
+  - testPathName: "append1WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 204
+      expression: "objectsTriviallyEqual"
+      range: "(204,13)-(204,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final byte\
+      \ lhs, final byte rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "byte"
+    - name: "rhs"
+      type: "byte"
+    instructionFingerprint: "CA8A2D22036B543F9891F5A61946084B"
+  paths:
+  - testPathName: "append2WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "byte"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 241
+      expression: "objectsTriviallyEqual"
+      range: "(241,13)-(241,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final byte[]\
+      \ lhs, final byte[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "byte[]"
+    - name: "rhs"
+      type: "byte[]"
+    instructionFingerprint: "E361423033C15E7E29D79E65B1FE3DCE"
+  paths:
+  - testPathName: "append3WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "byte[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 279
+      expression: "objectsTriviallyEqual"
+      range: "(279,13)-(279,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final char\
+      \ lhs, final char rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "char"
+    - name: "rhs"
+      type: "char"
+    instructionFingerprint: "5AB39F4F058178A242EE2104ED00A028"
+  paths:
+  - testPathName: "append4WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 317
+      expression: "objectsTriviallyEqual"
+      range: "(317,13)-(317,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final char[]\
+      \ lhs, final char[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "char[]"
+    - name: "rhs"
+      type: "char[]"
+    instructionFingerprint: "E8C0EDC47E2DE7159A9BB9B207E4D6C2"
+  paths:
+  - testPathName: "append5WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 355
+      expression: "objectsTriviallyEqual"
+      range: "(355,13)-(355,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final DiffResult<T>\
+      \ diffResult)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "diffResult"
+      type: "org.apache.commons.lang3.builder.DiffResult"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "BBB3D5025C7E2F33A95CD11A648FD9C9"
+  paths:
+  - testPathName: "append6WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "diffResult"
+      valueUuid: "diffResult"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      uuid: "diffResult"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 412
+      expression: "objectsTriviallyEqual"
+      range: "(412,13)-(412,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final double\
+      \ lhs, final double rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "double"
+    - name: "rhs"
+      type: "double"
+    instructionFingerprint: "AE4F716560596253E95188B53FE12A73"
+  paths:
+  - testPathName: "append7WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 436
+      expression: "objectsTriviallyEqual"
+      range: "(436,13)-(436,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final double[]\
+      \ lhs, final double[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "double[]"
+    - name: "rhs"
+      type: "double[]"
+    instructionFingerprint: "A6D2BE925BC05529622B131B9EAE69BA"
+  paths:
+  - testPathName: "append8WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "double[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 474
+      expression: "objectsTriviallyEqual"
+      range: "(474,13)-(474,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final float\
+      \ lhs, final float rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "float"
+    - name: "rhs"
+      type: "float"
+    instructionFingerprint: "A5E2D891B5B2F3019925FBF660DD2B23"
+  paths:
+  - testPathName: "append9WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 512
+      expression: "objectsTriviallyEqual"
+      range: "(512,13)-(512,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final float[]\
+      \ lhs, final float[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "float[]"
+    - name: "rhs"
+      type: "float[]"
+    instructionFingerprint: "B9235EE75E412758FEF8F5B7935C4CCE"
+  paths:
+  - testPathName: "append10WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "float[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 550
+      expression: "objectsTriviallyEqual"
+      range: "(550,13)-(550,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final int\
+      \ lhs, final int rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "int"
+    - name: "rhs"
+      type: "int"
+    instructionFingerprint: "FA47DDC41772CCDE928291E05CE0A53E"
+  paths:
+  - testPathName: "append11WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 588
+      expression: "objectsTriviallyEqual"
+      range: "(588,13)-(588,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final int[]\
+      \ lhs, final int[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "int[]"
+    - name: "rhs"
+      type: "int[]"
+    instructionFingerprint: "1FD7C6C9F911E252914589DF46CD59A1"
+  paths:
+  - testPathName: "append12WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "int[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 626
+      expression: "objectsTriviallyEqual"
+      range: "(626,13)-(626,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final long\
+      \ lhs, final long rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "long"
+    - name: "rhs"
+      type: "long"
+    instructionFingerprint: "DDE7FD3AFBE8501F3708720F0710E051"
+  paths:
+  - testPathName: "append13WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 664
+      expression: "objectsTriviallyEqual"
+      range: "(664,13)-(664,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final long[]\
+      \ lhs, final long[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "long[]"
+    - name: "rhs"
+      type: "long[]"
+    instructionFingerprint: "CB72246AAA74F30353B189D6227A9C99"
+  paths:
+  - testPathName: "append14WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "long[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 702
+      expression: "objectsTriviallyEqual"
+      range: "(702,13)-(702,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final Object\
+      \ lhs, final Object rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "java.lang.Object"
+    - name: "rhs"
+      type: "java.lang.Object"
+    instructionFingerprint: "E341D8374C5DB894CEEBF3A18EAEF843"
+  paths:
+  - testPathName: "append15WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "lhs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 739
+      expression: "objectsTriviallyEqual"
+      range: "(739,13)-(739,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final Object[]\
+      \ lhs, final Object[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "java.lang.Object[]"
+    - name: "rhs"
+      type: "java.lang.Object[]"
+    instructionFingerprint: "66CD0EAB115E05B95D8F8EB317F74981"
+  paths:
+  - testPathName: "append16WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 821
+      expression: "objectsTriviallyEqual"
+      range: "(821,13)-(821,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final short\
+      \ lhs, final short rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "short"
+    - name: "rhs"
+      type: "short"
+    instructionFingerprint: "245B1CD68B2BB9384F9A4FA7F05DE1E5"
+  paths:
+  - testPathName: "append17WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "lhs"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 861
+      expression: "objectsTriviallyEqual"
+      range: "(861,13)-(861,33)"
+      evaluatedAs: true
+- method:
+    name: "append"
+    sourceCodeSignature: "DiffBuilder<T> append(final String fieldName, final short[]\
+      \ lhs, final short[] rhs)"
+    returnType: "org.apache.commons.lang3.builder.DiffBuilder"
+    parameters:
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "lhs"
+      type: "short[]"
+    - name: "rhs"
+      type: "short[]"
+    instructionFingerprint: "44D69DE61FEFA7232EFEFB3D5FABF76F"
+  paths:
+  - testPathName: "append18WhenObjectsTriviallyEqual"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "lhs"
+      valueUuid: "lhs"
+    - type: "INPUT"
+      name: "rhs"
+      valueUuid: "rhs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "targetClassObject"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs2"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "lhs"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "short[]"
+      uuid: "rhs"
+    - sapientType: "THIS"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "targetClassObject"
+    branches:
+    - lineNumber: 899
+      expression: "objectsTriviallyEqual"
+      range: "(899,13)-(899,33)"
+      evaluatedAs: true
+- method:
+    name: "build"
+    sourceCodeSignature: "DiffResult<T> build()"
+    returnType: "org.apache.commons.lang3.builder.DiffResult"
+    instructionFingerprint: "FA275581251095A6033507B00C683B0A"
+  paths:
+  - testPathName: "buildTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,org.apache.commons.lang3.builder.ToStringStyle,boolean)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "diffResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffBuilder"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+        - name: "testTriviallyEqual"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "testTriviallyEqual"
+      valueType: "org.apache.commons.lang3.builder.DiffBuilder"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "arrayList"
+        - name: "style"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+              parameters: []
+            valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+            uuid: "style"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      uuid: "diffResult"

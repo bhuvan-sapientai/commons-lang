@@ -1,0 +1,424 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.builder.DiffResult"
+methods:
+- method:
+    name: "getDiffs"
+    sourceCodeSignature: "List<Diff<?>> getDiffs()"
+    returnType: "java.util.List"
+    genericReturnType: "org.apache.commons.lang3.builder.Diff<?>"
+    instructionFingerprint: "7DDC96374E17BEB2F3DBADF6988C3AA3"
+  paths:
+  - testPathName: "getDiffsTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "list2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "MOCK"
+                valueType: "org.apache.commons.lang3.builder.Diff"
+                uuid: "diffListItem0"
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "org.apache.commons.lang3.builder.Diff"
+          uuid: "list2Item0"
+      valueType: "java.util.List"
+      genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+      uuid: "list2"
+- method:
+    name: "getNumberOfDiffs"
+    sourceCodeSignature: "int getNumberOfDiffs()"
+    returnType: "int"
+    instructionFingerprint: "04ED0016D92ACDA0BDC2F1BA688F3ACC"
+  paths:
+  - testPathName: "getNumberOfDiffsTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "iterator"
+    sourceCodeSignature: "Iterator<Diff<?>> iterator()"
+    returnType: "java.util.Iterator"
+    genericReturnType: "org.apache.commons.lang3.builder.Diff<?>"
+    instructionFingerprint: "B7B89277E2DD08C9E6D31121B9F0A5F5"
+  paths:
+  - testPathName: "iteratorTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "iteratorNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.Iterator"
+      genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+      uuid: "iteratorNotNull"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "30581467EC32BD13E18A8A4516B42CCC"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "toString(toStringStyle):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "org.apache.commons.lang3.builder.ToStringStyle"
+        fieldName: "DEFAULT_STYLE"
+      valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+      uuid: "toStringStyle"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final ToStringStyle style)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "style"
+      type: "org.apache.commons.lang3.builder.ToStringStyle"
+    instructionFingerprint: "6326006A4433108B246BC827EA2B98DC"
+  paths:
+  - testPathName: "toString1WhenDiffListIsEmpty"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "style"
+      valueUuid: "style"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style2"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "style"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 188
+      expression: "diffList.isEmpty()"
+      range: "(188,13)-(188,30)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenDiffListNotIsEmpty"
+    constructorSignature: "<init>(java.lang.Object,java.lang.Object,java.util.List<org.apache.commons.lang3.builder.Diff<?>>,org.apache.commons.lang3.builder.ToStringStyle)\
+      \ : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "style"
+      valueUuid: "style"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.builder.Diff.getFieldName()\
+        \ : java.lang.String"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.DiffResult"
+        parameters:
+        - name: "lhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "lhs"
+        - name: "rhs"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "rhs"
+        - name: "diffList"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "MOCK"
+                valueType: "org.apache.commons.lang3.builder.Diff"
+                uuid: "diff"
+            valueType: "java.util.List"
+            genericValueType: "org.apache.commons.lang3.builder.Diff<?>"
+            uuid: "diffList"
+        - name: "style"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.builder.ToStringStyle"
+            uuid: "style2"
+      valueType: "org.apache.commons.lang3.builder.DiffResult"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "style"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A differs from B"
+      valueType: "java.lang.String"
+      uuid: "string5"
+    branches:
+    - lineNumber: 188
+      expression: "diffList.isEmpty()"
+      range: "(188,13)-(188,30)"
+      evaluatedAs: false

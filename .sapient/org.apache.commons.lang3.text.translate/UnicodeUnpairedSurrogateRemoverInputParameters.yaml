@@ -1,0 +1,117 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+methods:
+- method:
+    name: "translate"
+    sourceCodeSignature: "boolean translate(final int codePoint, final Writer out)"
+    returnType: "boolean"
+    throwsExceptions:
+    - "java.io.IOException"
+    parameters:
+    - name: "codePoint"
+      type: "int"
+    - name: "out"
+      type: "java.io.Writer"
+    instructionFingerprint: "DD5B8DB5E1E8A8E990AFDEAD5B3C0DB4"
+  paths:
+  - testPathName: "translate3WhenCodePointLessThanOrEqualsToCharacterMAX_SURROGATE"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 55296
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 38
+      expression: "codePoint >= Character.MIN_SURROGATE"
+      range: "(38,16)-(38,51)"
+      evaluatedAs: true
+    - lineNumber: 38
+      expression: "codePoint <= Character.MAX_SURROGATE"
+      range: "(38,56)-(38,91)"
+      evaluatedAs: true
+  - testPathName: "translate3WhenCodePointGreaterThanCharacterMAX_SURROGATE"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "codePoint"
+      valueUuid: "codePoint"
+    - type: "INPUT"
+      name: "out"
+      valueUuid: "out"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+        parameters: []
+      valueType: "org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 57344
+      valueType: "int"
+      uuid: "codePoint"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.io.Writer"
+        method: "nullWriter"
+        methodParameters: []
+      valueType: "java.io.Writer"
+      uuid: "out"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 38
+      expression: "codePoint >= Character.MIN_SURROGATE"
+      range: "(38,16)-(38,51)"
+      evaluatedAs: true
+    - lineNumber: 38
+      expression: "codePoint <= Character.MAX_SURROGATE"
+      range: "(38,56)-(38,91)"
+      evaluatedAs: false

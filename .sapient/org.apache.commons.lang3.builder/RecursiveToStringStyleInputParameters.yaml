@@ -1,0 +1,296 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+methods:
+- method:
+    name: "accept"
+    sourceCodeSignature: "boolean accept(final Class<?> clazz)"
+    returnType: "boolean"
+    parameters:
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "?"
+    instructionFingerprint: "6E5B3FD04F70CB3F5B2809B90A0EA8DD"
+  paths:
+  - testPathName: "acceptTest"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final Collection<?> coll)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "coll"
+      type: "java.util.Collection"
+      genericType: "?"
+    instructionFingerprint: "5F94FE38D2FE36AF2E4814A9B3B3F52E"
+  paths:
+  - testPathName: "appendDetail6Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "coll"
+      valueUuid: "coll"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "appendClassName(buffer,coll):void"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "appendIdentityHashCode(buffer,coll):void2"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "appendDetail(buffer,fieldName,objectArray):void3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "?"
+      uuid: "coll"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "objectArray"
+    - sapientType: "VOID"
+      uuid: "void4"
+- method:
+    name: "appendDetail"
+    sourceCodeSignature: "void appendDetail(final StringBuffer buffer, final String\
+      \ fieldName, final Object value)"
+    returnType: "void"
+    parameters:
+    - name: "buffer"
+      type: "java.lang.StringBuffer"
+    - name: "fieldName"
+      type: "java.lang.String"
+    - name: "value"
+      type: "java.lang.Object"
+    instructionFingerprint: "92F63A581A34B7D9896D8C10EBD1B348"
+  paths:
+  - testPathName: "appendDetail17WhenAcceptValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: true
+  - testPathName: "appendDetail17WhenAcceptNotValueGetClass"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "buffer"
+      valueUuid: "buffer"
+    - type: "INPUT"
+      name: "fieldName"
+      valueUuid: "fieldName"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "accept(class3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+        parameters: []
+      valueType: "org.apache.commons.lang3.builder.RecursiveToStringStyle"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StringBuffer"
+        parameters: []
+      valueType: "java.lang.StringBuffer"
+      uuid: "buffer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "fieldName1"
+      valueType: "java.lang.String"
+      uuid: "fieldName"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "class3"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 90
+      expression: "!ClassUtils.isPrimitiveWrapper(value.getClass())"
+      range: "(90,13)-(90,60)"
+      evaluatedAs: true
+    - lineNumber: 91
+      expression: "!String.class.equals(value.getClass())"
+      range: "(91,13)-(91,50)"
+      evaluatedAs: true
+    - lineNumber: 92
+      expression: "accept(value.getClass())"
+      range: "(92,13)-(92,36)"
+      evaluatedAs: false

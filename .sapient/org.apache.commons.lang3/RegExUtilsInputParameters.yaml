@@ -1,0 +1,961 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.RegExUtils"
+methods:
+- method:
+    name: "dotAll"
+    sourceCodeSignature: "Pattern dotAll(final String regex)"
+    returnType: "java.util.regex.Pattern"
+    parameters:
+    - name: "regex"
+      type: "java.lang.String"
+    instructionFingerprint: "5F56F767903AE36625EBD81641F6D9EA"
+  paths:
+  - testPathName: "dotAllTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "pattern"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "regex"
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 32
+            valueType: "int"
+            uuid: "int1"
+      valueType: "java.util.regex.Pattern"
+      uuid: "pattern"
+- method:
+    name: "dotAllMatcher"
+    sourceCodeSignature: "Matcher dotAllMatcher(final String regex, final String text)"
+    returnType: "java.util.regex.Matcher"
+    parameters:
+    - name: "regex"
+      type: "java.lang.String"
+    - name: "text"
+      type: "java.lang.String"
+    instructionFingerprint: "8DB860422AA506B10F82557A97D60052"
+  paths:
+  - testPathName: "dotAllMatcherTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "matcher"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.regex.Matcher"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "java.util.regex.Pattern"
+            method: "compile"
+            methodParameters:
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "A"
+                valueType: "java.lang.String"
+                uuid: "regex"
+            - value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: 32
+                valueType: "int"
+                uuid: "int1"
+          valueType: "java.util.regex.Pattern"
+          uuid: "pattern"
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "B"
+            valueType: "java.lang.String"
+            uuid: "text"
+        methodName: "matcher"
+      valueType: "java.util.regex.Matcher"
+      uuid: "matcher"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.RegExUtils"
+- method:
+    name: "removeAll"
+    sourceCodeSignature: "String removeAll(final String text, final Pattern regex)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.util.regex.Pattern"
+    instructionFingerprint: "496924B09B77B69D2EC5A81F98E0B68E"
+  paths:
+  - testPathName: "removeAllTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "replaceAll(text,regex,replacement):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_replaceAll1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "replacement"
+- method:
+    name: "removeAll"
+    sourceCodeSignature: "String removeAll(final String text, final String regex)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    instructionFingerprint: "775DEA83C8690E3227BD802CAD72F404"
+  paths:
+  - testPathName: "removeAll1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "replaceAll(text,regex,replacement):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_replaceAll1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "replacement"
+- method:
+    name: "removeFirst"
+    sourceCodeSignature: "String removeFirst(final String text, final Pattern regex)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.util.regex.Pattern"
+    instructionFingerprint: "3928F76F76EFDAE857FE08D442FC434A"
+  paths:
+  - testPathName: "removeFirstTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "replaceFirst(text,regex,replacement):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_replaceFirst1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "replacement"
+- method:
+    name: "removeFirst"
+    sourceCodeSignature: "String removeFirst(final String text, final String regex)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    instructionFingerprint: "E11F55A8530A9EB4464B58A8640EAE6E"
+  paths:
+  - testPathName: "removeFirst1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "replaceFirst(text,regex,replacement):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_replaceFirst1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "replacement"
+- method:
+    name: "removePattern"
+    sourceCodeSignature: "String removePattern(final String text, final String regex)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    instructionFingerprint: "7834E402054874DFC17F7D001EA96307"
+  paths:
+  - testPathName: "removePatternTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "replacePattern(text,regex,replacement):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_replacePattern1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "replacement"
+- method:
+    name: "replaceAll"
+    sourceCodeSignature: "String replaceAll(final String text, final Pattern regex,\
+      \ final String replacement)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.util.regex.Pattern"
+    - name: "replacement"
+      type: "java.lang.String"
+    instructionFingerprint: "B06679A27370A15AE8E790FD18814283"
+  paths:
+  - testPathName: "replaceAllWhenObjectUtilsAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "text"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.anyNull(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    branches:
+    - lineNumber: 284
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(284,13)-(284,57)"
+      evaluatedAs: true
+  - testPathName: "replaceAllWhenObjectUtilsNotAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.anyNull(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 284
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(284,13)-(284,57)"
+      evaluatedAs: false
+- method:
+    name: "replaceAll"
+    sourceCodeSignature: "String replaceAll(final String text, final String regex,\
+      \ final String replacement)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    - name: "replacement"
+      type: "java.lang.String"
+    instructionFingerprint: "B1D4A1DF0242AE61C9889EF73742FBF5"
+  paths:
+  - testPathName: "replaceAll1WhenObjectUtilsAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "text"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.anyNull(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    branches:
+    - lineNumber: 338
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(338,13)-(338,57)"
+      evaluatedAs: true
+  - testPathName: "replaceAll1WhenObjectUtilsNotAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 338
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(338,13)-(338,57)"
+      evaluatedAs: false
+- method:
+    name: "replaceFirst"
+    sourceCodeSignature: "String replaceFirst(final String text, final Pattern regex,\
+      \ final String replacement)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.util.regex.Pattern"
+    - name: "replacement"
+      type: "java.lang.String"
+    instructionFingerprint: "0D213BB69E88B2534CAA7BC38589B0E5"
+  paths:
+  - testPathName: "replaceFirstWhenReplacementIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "text"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    branches:
+    - lineNumber: 381
+      expression: "text == null"
+      range: "(381,13)-(381,24)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "regex == null"
+      range: "(381,29)-(381,41)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "replacement == null"
+      range: "(381,46)-(381,64)"
+      evaluatedAs: true
+  - testPathName: "replaceFirstWhenReplacementIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.regex.Pattern"
+        method: "compile"
+        methodParameters:
+        - name: "regex"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "regex1"
+            valueType: "java.lang.String"
+            uuid: "regex-regex"
+      valueType: "java.util.regex.Pattern"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 381
+      expression: "text == null"
+      range: "(381,13)-(381,24)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "regex == null"
+      range: "(381,29)-(381,41)"
+      evaluatedAs: false
+    - lineNumber: 381
+      expression: "replacement == null"
+      range: "(381,46)-(381,64)"
+      evaluatedAs: false
+- method:
+    name: "replaceFirst"
+    sourceCodeSignature: "String replaceFirst(final String text, final String regex,\
+      \ final String replacement)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    - name: "replacement"
+      type: "java.lang.String"
+    instructionFingerprint: "9F1B237B1C892ED7F02A55E842A0A9CF"
+  paths:
+  - testPathName: "replaceFirst1WhenReplacementIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "text"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    branches:
+    - lineNumber: 433
+      expression: "text == null"
+      range: "(433,13)-(433,24)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "regex == null"
+      range: "(433,29)-(433,41)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "replacement == null"
+      range: "(433,46)-(433,64)"
+      evaluatedAs: true
+  - testPathName: "replaceFirst1WhenReplacementIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 433
+      expression: "text == null"
+      range: "(433,13)-(433,24)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "regex == null"
+      range: "(433,29)-(433,41)"
+      evaluatedAs: false
+    - lineNumber: 433
+      expression: "replacement == null"
+      range: "(433,46)-(433,64)"
+      evaluatedAs: false
+- method:
+    name: "replacePattern"
+    sourceCodeSignature: "String replacePattern(final String text, final String regex,\
+      \ final String replacement)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "text"
+      type: "java.lang.String"
+    - name: "regex"
+      type: "java.lang.String"
+    - name: "replacement"
+      type: "java.lang.String"
+    instructionFingerprint: "D5906FC2789047FECE817481AAF36A71"
+  paths:
+  - testPathName: "replacePatternWhenObjectUtilsAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "text"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.anyNull(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    branches:
+    - lineNumber: 477
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(477,13)-(477,57)"
+      evaluatedAs: true
+  - testPathName: "replacePatternWhenObjectUtilsNotAnyNullTextRegexReplacement"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      valueUuid: "text"
+    - type: "INPUT"
+      name: "regex"
+      valueUuid: "regex"
+    - type: "INPUT"
+      name: "replacement"
+      valueUuid: "replacement"
+    - type: "STATIC"
+      name: "RegExUtils.class"
+      valueUuid: "RegExUtils.class"
+      methodExercised:
+        expression: "dotAllMatcher(regex,text):matcher"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.anyNull(java.lang.Object[])\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "text"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "regex1"
+      valueType: "java.lang.String"
+      uuid: "regex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "replacement1"
+      valueType: "java.lang.String"
+      uuid: "replacement"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.RegExUtils"
+      uuid: "RegExUtils.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.regex.Matcher"
+      uuid: "matcher"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 477
+      expression: "ObjectUtils.anyNull(text, regex, replacement)"
+      range: "(477,13)-(477,57)"
+      evaluatedAs: false

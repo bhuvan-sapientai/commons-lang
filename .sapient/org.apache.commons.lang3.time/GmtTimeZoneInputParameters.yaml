@@ -1,0 +1,340 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.time.GmtTimeZone"
+methods:
+- method:
+    name: "getOffset"
+    sourceCodeSignature: "int getOffset(final int era, final int year, final int month,\
+      \ final int day, final int dayOfWeek, final int milliseconds)"
+    returnType: "int"
+    parameters:
+    - name: "era"
+      type: "int"
+    - name: "year"
+      type: "int"
+    - name: "month"
+      type: "int"
+    - name: "day"
+      type: "int"
+    - name: "dayOfWeek"
+      type: "int"
+    - name: "milliseconds"
+      type: "int"
+    instructionFingerprint: "111FCF00F5A8B66BE57CA761E9780297"
+  paths:
+  - testPathName: "getOffsetTest"
+    constructorSignature: "<init>(boolean,int,int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "era"
+      valueUuid: "era"
+    - type: "INPUT"
+      name: "year"
+      valueUuid: "year"
+    - type: "INPUT"
+      name: "month"
+      valueUuid: "month"
+    - type: "INPUT"
+      name: "day"
+      valueUuid: "day"
+    - type: "INPUT"
+      name: "dayOfWeek"
+      valueUuid: "dayOfWeek"
+    - type: "INPUT"
+      name: "milliseconds"
+      valueUuid: "milliseconds"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -371
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -160
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "era"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "year"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "month"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "day"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "dayOfWeek"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "milliseconds"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1345200000
+      valueType: "int"
+      uuid: "int4"
+- method:
+    name: "inDaylightTime"
+    sourceCodeSignature: "boolean inDaylightTime(final Date date)"
+    returnType: "boolean"
+    parameters:
+    - name: "date"
+      type: "java.util.Date"
+    instructionFingerprint: "41372BE8B18C41ADF131F5189E5E281D"
+  paths:
+  - testPathName: "inDaylightTimeTest"
+    constructorSignature: "<init>(boolean,int,int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "date"
+      valueUuid: "date"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -371
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -160
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Date"
+        parameters: []
+      valueType: "java.util.Date"
+      uuid: "date"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+- method:
+    name: "setRawOffset"
+    sourceCodeSignature: "void setRawOffset(final int offsetMillis)"
+    returnType: "void"
+    parameters:
+    - name: "offsetMillis"
+      type: "int"
+    instructionFingerprint: "B49966EEC4C6B7679EF4E1799D7F631F"
+  paths:
+  - testPathName: "setRawOffsetThrowsUnsupportedOperationException"
+    constructorSignature: "<init>(boolean,int,int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "offsetMillis"
+      valueUuid: "offsetMillis"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "unsupportedOperationException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -371
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -160
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "offsetMillis"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.UnsupportedOperationException"
+        parameters: []
+      valueType: "java.lang.UnsupportedOperationException"
+      uuid: "unsupportedOperationException"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "DBB276603095FBBA6D253BF817D2681B"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(boolean,int,int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 8
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -480
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[GmtTimeZone id=\\\"GMT-08:\\u00000\\\",offset=0]"
+      valueType: "java.lang.String"
+      uuid: "string4"
+- method:
+    name: "useDaylightTime"
+    sourceCodeSignature: "boolean useDaylightTime()"
+    returnType: "boolean"
+    instructionFingerprint: "7A4C28F0B687DCEF24BA467AAD6AF7F7"
+  paths:
+  - testPathName: "useDaylightTimeTest"
+    constructorSignature: "<init>(boolean,int,int) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.GmtTimeZone"
+        parameters:
+        - name: "negate"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negate"
+        - name: "hours"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -371
+            valueType: "int"
+            uuid: "hours"
+        - name: "minutes"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: -160
+            valueType: "int"
+            uuid: "minutes"
+      valueType: "org.apache.commons.lang3.time.GmtTimeZone"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"

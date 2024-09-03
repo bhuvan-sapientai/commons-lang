@@ -1,0 +1,438 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableBoolean"
+methods:
+- method:
+    name: "booleanValue"
+    sourceCodeSignature: "boolean booleanValue()"
+    returnType: "boolean"
+    instructionFingerprint: "CB5E279FF8AC89C84DAC55205FBA991A"
+  paths:
+  - testPathName: "booleanValueWhenValue"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "value"
+    branches:
+    - lineNumber: 76
+      expression: "value"
+      range: "(76,16)-(76,20)"
+      evaluatedAs: true
+  - testPathName: "booleanValueWhenNotValue"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "value"
+    branches:
+    - lineNumber: 76
+      expression: "value"
+      range: "(76,16)-(76,20)"
+      evaluatedAs: false
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableBoolean other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableBoolean"
+    instructionFingerprint: "BBD1AA240526EC9631CE63D57BE46977"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "other-value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Boolean getValue()"
+    returnType: "java.lang.Boolean"
+    instructionFingerprint: "9DE3346411166955D017BE242A461417"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+- method:
+    name: "isFalse"
+    sourceCodeSignature: "boolean isFalse()"
+    returnType: "boolean"
+    instructionFingerprint: "F5E2D26631FE94304989E4951B950088"
+  paths:
+  - testPathName: "isFalseWhenNotValue"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 134
+      expression: "!value"
+      range: "(134,16)-(134,21)"
+      evaluatedAs: true
+  - testPathName: "isFalseWhenValue"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 134
+      expression: "!value"
+      range: "(134,16)-(134,21)"
+      evaluatedAs: false
+- method:
+    name: "setFalse"
+    sourceCodeSignature: "void setFalse()"
+    returnType: "void"
+    instructionFingerprint: "5949FB48DB94FB481892B2801C4528A6"
+  paths:
+  - testPathName: "setFalseTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "setTrue"
+    sourceCodeSignature: "void setTrue()"
+    returnType: "void"
+    instructionFingerprint: "49A795808594164A59B357A1723244F8"
+  paths:
+  - testPathName: "setTrueTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Boolean value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "C3B96F299BE8DC303E50EE2CC6D15AED"
+  paths:
+  - testPathName: "setValue1Test"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "Boolean toBoolean()"
+    returnType: "java.lang.Boolean"
+    instructionFingerprint: "7CC0DD0689D1F5698EA26B5D57952FB7"
+  paths:
+  - testPathName: "toBooleanTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "booleanValue():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "5B94BD08AB0A882053208F32CCB72F0A"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(boolean) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableBoolean"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableBoolean"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "false"
+      valueType: "java.lang.String"
+      uuid: "string"

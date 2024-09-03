@@ -1,0 +1,929 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableLong"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final long operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "long"
+    instructionFingerprint: "F5C3B65647D604A4FFEEF1CC142973AD"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "8E874B4EA6E063CB5A4B3E690FA17F83"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "long addAndGet(final long operand)"
+    returnType: "long"
+    parameters:
+    - name: "operand"
+      type: "long"
+    instructionFingerprint: "904C80165F9C3DD448461B18CC6CFD25"
+  paths:
+  - testPathName: "addAndGetTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "long addAndGet(final Number operand)"
+    returnType: "long"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "00FAC4CAFD57AA385682ADD70CE3B598"
+  paths:
+  - testPathName: "addAndGet1Test"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "long2"
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableLong other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableLong"
+    instructionFingerprint: "F15E18F6ECDE12FAF5640A5DDDEF5B36"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "other-value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "void decrement()"
+    returnType: "void"
+    instructionFingerprint: "0D0E66A2A70C0C170F152283BD0AEFC7"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "decrementAndGet"
+    sourceCodeSignature: "long decrementAndGet()"
+    returnType: "long"
+    instructionFingerprint: "1424160113622E4EA3F81368E67FE6DA"
+  paths:
+  - testPathName: "decrementAndGetTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "doubleValue"
+    sourceCodeSignature: "double doubleValue()"
+    returnType: "double"
+    instructionFingerprint: "841DC511A6635B11BD754393010C9041"
+  paths:
+  - testPathName: "doubleValueTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "floatValue"
+    sourceCodeSignature: "float floatValue()"
+    returnType: "float"
+    instructionFingerprint: "6F407ABF9229C11D74F7159BF3B0080E"
+  paths:
+  - testPathName: "floatValueTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "long getAndAdd(final long operand)"
+    returnType: "long"
+    parameters:
+    - name: "operand"
+      type: "long"
+    instructionFingerprint: "61F667AE8B6DDFF5FB853E06D26A541F"
+  paths:
+  - testPathName: "getAndAddTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "value"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "long getAndAdd(final Number operand)"
+    returnType: "long"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "56925C3BDD1D4A9636185F375E36A151"
+  paths:
+  - testPathName: "getAndAdd1Test"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "value"
+- method:
+    name: "getAndDecrement"
+    sourceCodeSignature: "long getAndDecrement()"
+    returnType: "long"
+    instructionFingerprint: "813E3844DBE72BB3754364319FE7A9E4"
+  paths:
+  - testPathName: "getAndDecrementTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "value"
+- method:
+    name: "getAndIncrement"
+    sourceCodeSignature: "long getAndIncrement()"
+    returnType: "long"
+    instructionFingerprint: "C44D0BB904A2717634D7D49AE6A55C1F"
+  paths:
+  - testPathName: "getAndIncrementTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "value"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Long getValue()"
+    returnType: "java.lang.Long"
+    instructionFingerprint: "060D6CB79D9AF56E4BB955B8B98CD600"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Long"
+      uuid: "long"
+- method:
+    name: "increment"
+    sourceCodeSignature: "void increment()"
+    returnType: "void"
+    instructionFingerprint: "B23231C0520DCA66E82E83B6FE587BC4"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "incrementAndGet"
+    sourceCodeSignature: "long incrementAndGet()"
+    returnType: "long"
+    instructionFingerprint: "87B7A501F2BE7E3D4FDF095A77744797"
+  paths:
+  - testPathName: "incrementAndGetTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "intValue"
+    sourceCodeSignature: "int intValue()"
+    returnType: "int"
+    instructionFingerprint: "A3637FDB1F5FB723A05C62FC3159055A"
+  paths:
+  - testPathName: "intValueTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "78040D81B9F361B75B27027F42325F5E"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "value"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Number value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Number"
+    instructionFingerprint: "DAFE4ED05E0588B2FBAD9C555985A427"
+  paths:
+  - testPathName: "setValue1Test"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final long operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "long"
+    instructionFingerprint: "13CBB0B92EF6E20D905A10D438FE1B17"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "C6716417611A7C533459DDACBF64B895"
+  paths:
+  - testPathName: "subtract1Test"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toLong"
+    sourceCodeSignature: "Long toLong()"
+    returnType: "java.lang.Long"
+    instructionFingerprint: "7A0284D9A939C3BB1FF502327AC238CD"
+  paths:
+  - testPathName: "toLongTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Long"
+      uuid: "long"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "B66060AFFC6D3B9CAAF47DF015F78FA6"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(long) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableLong"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "long"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableLong"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "2"
+      valueType: "java.lang.String"
+      uuid: "string"

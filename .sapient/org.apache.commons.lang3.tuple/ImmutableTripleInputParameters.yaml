@@ -1,0 +1,321 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.tuple.ImmutableTriple"
+methods:
+- method:
+    name: "emptyArray"
+    sourceCodeSignature: "<L, M, R> ImmutableTriple<L, M, R>[] emptyArray()"
+    returnType: "org.apache.commons.lang3.tuple.ImmutableTriple[]"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    instructionFingerprint: "0BA4F916BC0FEB3F7E8CB34FFB43CD98"
+  paths:
+  - testPathName: "emptyArray1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutableTripleArray"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple[]"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+      uuid: "immutableTripleArray"
+- method:
+    name: "nullTriple"
+    sourceCodeSignature: "<L, M, R> ImmutableTriple<L, M, R> nullTriple()"
+    returnType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    instructionFingerprint: "6BA8080D3D21F1B69435A192C9E6481D"
+  paths:
+  - testPathName: "nullTripleTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutableTriple"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutableTriple"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "middle"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "middle"
+        - name: "right"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+      uuid: "immutableTriple"
+- method:
+    name: "of"
+    sourceCodeSignature: "<L, M, R> ImmutableTriple<L, M, R> of(final L left, final\
+      \ M middle, final R right)"
+    returnType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "middle"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "CDCED88B14ADB343F18A9CEF9CFAA5D0"
+  paths:
+  - testPathName: "of1WhenRightIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "middle"
+      valueUuid: "middle"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutableTriple3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "middle"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutableTriple"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "left"
+        - name: "middle"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "middle"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+      uuid: "immutableTriple3"
+    branches:
+    - lineNumber: 102
+      expression: "left != null"
+      range: "(102,16)-(102,27)"
+      evaluatedAs: true
+    - lineNumber: 102
+      expression: "middle != null"
+      range: "(102,31)-(102,44)"
+      evaluatedAs: true
+    - lineNumber: 102
+      expression: "right != null"
+      range: "(102,49)-(102,61)"
+      evaluatedAs: true
+  - testPathName: "of1WhenRightIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "middle"
+      valueUuid: "middle"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "ImmutableTriple.class"
+      valueUuid: "ImmutableTriple.class"
+      methodExercised:
+        expression: "nullTriple():immutableTriple3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutableTriple3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "middle"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      uuid: "ImmutableTriple.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutableTriple"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-left"
+        - name: "middle"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-middle"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      uuid: "immutableTriple3"
+    branches:
+    - lineNumber: 102
+      expression: "left != null"
+      range: "(102,16)-(102,27)"
+      evaluatedAs: false
+    - lineNumber: 102
+      expression: "middle != null"
+      range: "(102,31)-(102,44)"
+      evaluatedAs: false
+    - lineNumber: 102
+      expression: "right != null"
+      range: "(102,49)-(102,61)"
+      evaluatedAs: false
+- method:
+    name: "ofNonNull"
+    sourceCodeSignature: "<L, M, R> ImmutableTriple<L, M, R> ofNonNull(final L left,\
+      \ final M middle, final R right)"
+    returnType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "left"
+      type: "java.lang.Object"
+    - name: "middle"
+      type: "java.lang.Object"
+    - name: "right"
+      type: "java.lang.Object"
+    instructionFingerprint: "13141EFFC696D55101AA9A21B61160E1"
+  paths:
+  - testPathName: "ofNonNull1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "middle"
+      valueUuid: "middle"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "ImmutableTriple.class"
+      valueUuid: "ImmutableTriple.class"
+      methodExercised:
+        expression: "of(left,middle,right):immutableTriple3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "immutableTriple3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "left"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "middle"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      uuid: "ImmutableTriple.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.tuple.ImmutableTriple"
+        parameters:
+        - name: "left"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-left"
+        - name: "middle"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-middle"
+        - name: "right"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "immutableTriple3-right"
+      valueType: "org.apache.commons.lang3.tuple.ImmutableTriple"
+      uuid: "immutableTriple3"

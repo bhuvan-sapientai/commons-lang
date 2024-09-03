@@ -1,0 +1,197 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.stream.LangCollectors"
+methods:
+- method:
+    name: "joining"
+    sourceCodeSignature: "Collector<Object, ?, String> joining()"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.String"
+    instructionFingerprint: "CB04416E6B46697B0EA7C63C907D0036"
+  paths:
+  - testPathName: "joiningTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "langCollectorsSimpleCollectorNotNull"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    allValues:
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.stream.Collector"
+      genericValueType: "java.lang.Object,?,java.lang.String"
+      uuid: "langCollectorsSimpleCollectorNotNull"
+- method:
+    name: "joining"
+    sourceCodeSignature: "Collector<Object, ?, String> joining(final CharSequence\
+      \ delimiter)"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.String"
+    parameters:
+    - name: "delimiter"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "53805BA401844FE7F4CB7427E41AFBA4"
+  paths:
+  - testPathName: "joining1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "delimiter"
+      valueUuid: "delimiter"
+    - type: "STATIC"
+      name: "LangCollectors.class"
+      valueUuid: "LangCollectors.class"
+      methodExercised:
+        expression: "joining(delimiter,prefix,suffix):collector"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collector"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "delimiter1"
+      valueType: "java.lang.String"
+      uuid: "delimiter"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.LangCollectors"
+      uuid: "LangCollectors.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Collector"
+      uuid: "collector"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "prefix"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "suffix"
+- method:
+    name: "joining"
+    sourceCodeSignature: "Collector<Object, ?, String> joining(final CharSequence\
+      \ delimiter, final CharSequence prefix, final CharSequence suffix)"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.String"
+    parameters:
+    - name: "delimiter"
+      type: "java.lang.CharSequence"
+    - name: "prefix"
+      type: "java.lang.CharSequence"
+    - name: "suffix"
+      type: "java.lang.CharSequence"
+    instructionFingerprint: "45BACF78EC539E5CAD276CA16A6CBDCD"
+  paths:
+  - testPathName: "joining2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "delimiter"
+      valueUuid: "delimiter"
+    - type: "INPUT"
+      name: "prefix"
+      valueUuid: "prefix"
+    - type: "INPUT"
+      name: "suffix"
+      valueUuid: "suffix"
+    - type: "STATIC"
+      name: "LangCollectors.class"
+      valueUuid: "LangCollectors.class"
+      methodExercised:
+        expression: "joining(delimiter,prefix,suffix,toString-any):collector"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "collector"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "delimiter1"
+      valueType: "java.lang.String"
+      uuid: "delimiter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "prefix1"
+      valueType: "java.lang.String"
+      uuid: "prefix"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "suffix1"
+      valueType: "java.lang.String"
+      uuid: "suffix"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.stream.LangCollectors"
+      uuid: "LangCollectors.class"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Collector"
+      uuid: "collector"
+    - sapientType: "ANY"
+      valueType: "java.util.function.Function"
+      uuid: "toString-any"
+- method:
+    name: "joining"
+    sourceCodeSignature: "Collector<Object, ?, String> joining(final CharSequence\
+      \ delimiter, final CharSequence prefix, final CharSequence suffix, final Function<Object,\
+      \ String> toString)"
+    returnType: "java.util.stream.Collector"
+    genericReturnType: "java.lang.Object,?,java.lang.String"
+    parameters:
+    - name: "delimiter"
+      type: "java.lang.CharSequence"
+    - name: "prefix"
+      type: "java.lang.CharSequence"
+    - name: "suffix"
+      type: "java.lang.CharSequence"
+    - name: "toString"
+      type: "java.util.function.Function"
+      genericType: "java.lang.Object,java.lang.String"
+    instructionFingerprint: "4E3722BF6F2F51E8B1D2C14D7B311E71"
+  paths:
+  - testPathName: "joining3Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "delimiter"
+      valueUuid: "delimiter"
+    - type: "INPUT"
+      name: "prefix"
+      valueUuid: "prefix"
+    - type: "INPUT"
+      name: "suffix"
+      valueUuid: "suffix"
+    - type: "INPUT"
+      name: "toString"
+      valueUuid: "toString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "langCollectorsSimpleCollectorNotNull"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "delimiter1"
+      valueType: "java.lang.String"
+      uuid: "delimiter"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "prefix1"
+      valueType: "java.lang.String"
+      uuid: "prefix"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "suffix1"
+      valueType: "java.lang.String"
+      uuid: "suffix"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "toString"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.stream.Collector"
+      genericValueType: "java.lang.Object,?,java.lang.String"
+      uuid: "langCollectorsSimpleCollectorNotNull"

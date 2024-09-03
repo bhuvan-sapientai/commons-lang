@@ -1,0 +1,364 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.compare.ComparableUtils"
+methods:
+- method:
+    name: "between"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> between(final A b,\
+      \ final A c)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    - name: "c"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "36F7904C5AD03523F91479C9B6808C72"
+  paths:
+  - testPathName: "betweenTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "betweenExclusive"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> betweenExclusive(final\
+      \ A b, final A c)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    - name: "c"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "3AB4EE56FBFDAA5CD8D812AD00F65B0C"
+  paths:
+  - testPathName: "betweenExclusiveTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "INPUT"
+      name: "c"
+      valueUuid: "c"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "c"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "ge"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> ge(final A b)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "972852C431B0476018477CB80D9333DF"
+  paths:
+  - testPathName: "geTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "gt"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> gt(final A b)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "E635C0706F776370364EEBB97215AFEE"
+  paths:
+  - testPathName: "gtTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "is"
+    sourceCodeSignature: "<A extends Comparable<A>> ComparableCheckBuilder<A> is(final\
+      \ A a)"
+    returnType: "org.apache.commons.lang3.compare.ComparableUtils$ComparableCheckBuilder"
+    parameters:
+    - name: "a"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "F37F2C3FAF7A49973E5A0E81464DC686"
+  paths:
+  - testPathName: "isTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      valueUuid: "a"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparableUtilsComparableCheckBuilder"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_FAILURE"
+      source: "return new ComparableCheckBuilder<>(a);"
+      lineNumber: 183
+      details: "No constructor found to create an object without any exception for\
+        \ class org.apache.commons.lang3.compare.ComparableUtils$ComparableCheckBuilder"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "a"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.compare.ComparableUtils$ComparableCheckBuilder"
+        parameters:
+        - name: "x0"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.Comparable"
+            uuid: "a"
+        - name: "x1"
+          value:
+            sapientType: "NULL"
+            valueType: "org.apache.commons.lang3.compare.ComparableUtils$1"
+            uuid: "x1"
+      valueType: "org.apache.commons.lang3.compare.ComparableUtils$ComparableCheckBuilder"
+      uuid: "comparableUtilsComparableCheckBuilder"
+- method:
+    name: "le"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> le(final A b)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "9843A44A7FEC581D770DA2B1CDF9E8E2"
+  paths:
+  - testPathName: "leTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "lt"
+    sourceCodeSignature: "<A extends Comparable<A>> Predicate<A> lt(final A b)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "b"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "D462291B5F78A8935FCD7682810F8AB2"
+  paths:
+  - testPathName: "ltTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "b"
+      valueUuid: "b"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "b"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicateNotNull"
+- method:
+    name: "max"
+    sourceCodeSignature: "<A extends Comparable<A>> A max(final A comparable1, final\
+      \ A comparable2)"
+    returnType: "java.lang.Comparable"
+    parameters:
+    - name: "comparable1"
+      type: "java.lang.Comparable"
+    - name: "comparable2"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "87CD3C61EA4C900EB4AB7F8DC6AB3C4C"
+  paths:
+  - testPathName: "maxWhenObjectUtilsCompareComparable1Comparable2FalseGreaterThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "comparable1"
+      valueUuid: "comparable1"
+    - type: "INPUT"
+      name: "comparable2"
+      valueUuid: "comparable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.compare(java.lang.Comparable,java.lang.Comparable,boolean)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable2"
+    branches:
+    - lineNumber: 223
+      expression: "ObjectUtils.compare(comparable1, comparable2, false) > 0"
+      range: "(223,16)-(223,71)"
+      evaluatedAs: true
+  - testPathName: "maxWhenObjectUtilsCompareComparable1Comparable2FalseNotGreaterThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "comparable1"
+      valueUuid: "comparable1"
+    - type: "INPUT"
+      name: "comparable2"
+      valueUuid: "comparable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.compare(java.lang.Comparable,java.lang.Comparable,boolean)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable2"
+    branches:
+    - lineNumber: 223
+      expression: "ObjectUtils.compare(comparable1, comparable2, false) > 0"
+      range: "(223,16)-(223,71)"
+      evaluatedAs: false
+- method:
+    name: "min"
+    sourceCodeSignature: "<A extends Comparable<A>> A min(final A comparable1, final\
+      \ A comparable2)"
+    returnType: "java.lang.Comparable"
+    parameters:
+    - name: "comparable1"
+      type: "java.lang.Comparable"
+    - name: "comparable2"
+      type: "java.lang.Comparable"
+    instructionFingerprint: "485B1392BBFD127463F788F0FE531DCF"
+  paths:
+  - testPathName: "minWhenObjectUtilsCompareComparable1Comparable2TrueLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "comparable1"
+      valueUuid: "comparable1"
+    - type: "INPUT"
+      name: "comparable2"
+      valueUuid: "comparable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.compare(java.lang.Comparable,java.lang.Comparable,boolean)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable2"
+    branches:
+    - lineNumber: 240
+      expression: "ObjectUtils.compare(comparable1, comparable2, true) < 0"
+      range: "(240,16)-(240,70)"
+      evaluatedAs: true
+  - testPathName: "minWhenObjectUtilsCompareComparable1Comparable2TrueNotLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "comparable1"
+      valueUuid: "comparable1"
+    - type: "INPUT"
+      name: "comparable2"
+      valueUuid: "comparable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "comparable2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ObjectUtils.compare(java.lang.Comparable,java.lang.Comparable,boolean)\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable1"
+    - sapientType: "MOCK"
+      valueType: "java.lang.Comparable"
+      uuid: "comparable2"
+    branches:
+    - lineNumber: 240
+      expression: "ObjectUtils.compare(comparable1, comparable2, true) < 0"
+      range: "(240,16)-(240,70)"
+      evaluatedAs: false

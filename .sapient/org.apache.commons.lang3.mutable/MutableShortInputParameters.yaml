@@ -1,0 +1,957 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableShort"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "8064CBD15978F5358990074A6993D760"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final short operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "short"
+    instructionFingerprint: "32C1F8058921A7E99880B498C2CFAE3E"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "short addAndGet(final Number operand)"
+    returnType: "short"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "06BDFE8129B3E55F0C06E0FCC0581C67"
+  paths:
+  - testPathName: "addAndGetTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short3"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short3"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "short addAndGet(final short operand)"
+    returnType: "short"
+    parameters:
+    - name: "operand"
+      type: "short"
+    instructionFingerprint: "CFDBC5A2F52A622AA52E0AEEDF6ACA76"
+  paths:
+  - testPathName: "addAndGet1Test"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short2"
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableShort other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableShort"
+    instructionFingerprint: "9E80564E759A3824CC24BB3CE74C3A62"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "void decrement()"
+    returnType: "void"
+    instructionFingerprint: "092F4AE748CFB7BC809101BBA5CBD742"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "decrementAndGet"
+    sourceCodeSignature: "short decrementAndGet()"
+    returnType: "short"
+    instructionFingerprint: "2B60A4BE7D9A39EC2E39C3D26C5A042A"
+  paths:
+  - testPathName: "decrementAndGetTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short2"
+- method:
+    name: "doubleValue"
+    sourceCodeSignature: "double doubleValue()"
+    returnType: "double"
+    instructionFingerprint: "9B6716421A570C29D05301B208D18C52"
+  paths:
+  - testPathName: "doubleValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "floatValue"
+    sourceCodeSignature: "float floatValue()"
+    returnType: "float"
+    instructionFingerprint: "BE57BE286FFFCFEFE333ACE771F6D09B"
+  paths:
+  - testPathName: "floatValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "short getAndAdd(final Number operand)"
+    returnType: "short"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "774BB11DBA96B86B96D21B2E150A78B6"
+  paths:
+  - testPathName: "getAndAddTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "short getAndAdd(final short operand)"
+    returnType: "short"
+    parameters:
+    - name: "operand"
+      type: "short"
+    instructionFingerprint: "F723F9162958BA6CCE099510235FF049"
+  paths:
+  - testPathName: "getAndAdd1Test"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "getAndDecrement"
+    sourceCodeSignature: "short getAndDecrement()"
+    returnType: "short"
+    instructionFingerprint: "7B7ABFC85B45CEC92B56EF39409DB91F"
+  paths:
+  - testPathName: "getAndDecrementTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "getAndIncrement"
+    sourceCodeSignature: "short getAndIncrement()"
+    returnType: "short"
+    instructionFingerprint: "23ADC57B449A7180091459FBEB01F4D2"
+  paths:
+  - testPathName: "getAndIncrementTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Short getValue()"
+    returnType: "java.lang.Short"
+    instructionFingerprint: "834610B5E325905D3295E511AA857474"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Short"
+      uuid: "short2"
+- method:
+    name: "increment"
+    sourceCodeSignature: "void increment()"
+    returnType: "void"
+    instructionFingerprint: "1922128C50F71204DDA5D25EFA251362"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "incrementAndGet"
+    sourceCodeSignature: "short incrementAndGet()"
+    returnType: "short"
+    instructionFingerprint: "FD0104B2F4008D8A2F528525A63BFA25"
+  paths:
+  - testPathName: "incrementAndGetTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "short"
+      uuid: "short2"
+- method:
+    name: "intValue"
+    sourceCodeSignature: "int intValue()"
+    returnType: "int"
+    instructionFingerprint: "24E191D2E14639FB20077FADAF0B2690"
+  paths:
+  - testPathName: "intValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "20DEEFF93D7A554D2EB93C287423FA69"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Number value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Number"
+    instructionFingerprint: "9452A2BEFB977F1D3DED18740DC481F9"
+  paths:
+  - testPathName: "setValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "shortValue"
+    sourceCodeSignature: "short shortValue()"
+    returnType: "short"
+    instructionFingerprint: "503DB1A51DB8DCA90B4D15483AB70AE2"
+  paths:
+  - testPathName: "shortValueTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "short"
+      uuid: "short1"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "36ACB35D19479F96CBB353F6F05DB3EE"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final short operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "short"
+    instructionFingerprint: "45ACEB9E592738E0B4850A49D74DB944"
+  paths:
+  - testPathName: "subtract1Test"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toShort"
+    sourceCodeSignature: "Short toShort()"
+    returnType: "java.lang.Short"
+    instructionFingerprint: "47B918521C6217A81186B7771172A281"
+  paths:
+  - testPathName: "toShortTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Short"
+      uuid: "short2"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "0BB8C8A4A1E9736EEDBF21EF0E507A7D"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.lang.Number) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableShort"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            valueType: "java.lang.Number"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableShort"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "2"
+      valueType: "java.lang.String"
+      uuid: "string"

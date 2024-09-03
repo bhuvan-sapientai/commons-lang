@@ -1,0 +1,2234 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.function.Failable"
+methods:
+- method:
+    name: "accept"
+    sourceCodeSignature: "<T, U, E extends Throwable> void accept(final FailableBiConsumer<T,\
+      \ U, E> consumer, final T object1, final U object2)"
+    returnType: "void"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableBiConsumer"
+      genericType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+    - name: "object1"
+      type: "java.lang.Object"
+    - name: "object2"
+      type: "java.lang.Object"
+    instructionFingerprint: "7BE24F23DC1A13CCA11D0E9E853279C7"
+  paths:
+  - testPathName: "acceptTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object2"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "run(runnable-any):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiConsumer"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+      uuid: "consumer"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable-any"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "accept"
+    sourceCodeSignature: "<T, E extends Throwable> void accept(final FailableConsumer<T,\
+      \ E> consumer, final T object)"
+    returnType: "void"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableConsumer"
+      genericType: "java.lang.Object,java.lang.Throwable"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "93D1F71AA8356DFA346FCEDD7B9ECB51"
+  paths:
+  - testPathName: "accept1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "run(runnable-any):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      genericValueType: "java.lang.Object,java.lang.Throwable"
+      uuid: "consumer"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable-any"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "accept"
+    sourceCodeSignature: "<E extends Throwable> void accept(final FailableDoubleConsumer<E>\
+      \ consumer, final double value)"
+    returnType: "void"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableDoubleConsumer"
+      genericType: "java.lang.Throwable"
+    - name: "value"
+      type: "double"
+    instructionFingerprint: "607F467287FD3BEE084DC672F8FF440B"
+  paths:
+  - testPathName: "accept2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "run(runnable-any):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableDoubleConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableDoubleConsumer"
+      genericValueType: "java.lang.Throwable"
+      uuid: "consumer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable-any"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "accept"
+    sourceCodeSignature: "<E extends Throwable> void accept(final FailableIntConsumer<E>\
+      \ consumer, final int value)"
+    returnType: "void"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableIntConsumer"
+      genericType: "java.lang.Throwable"
+    - name: "value"
+      type: "int"
+    instructionFingerprint: "77172E5025B108AD17A60910E327E24D"
+  paths:
+  - testPathName: "accept3Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "run(runnable-any):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableIntConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableIntConsumer"
+      genericValueType: "java.lang.Throwable"
+      uuid: "consumer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable-any"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "accept"
+    sourceCodeSignature: "<E extends Throwable> void accept(final FailableLongConsumer<E>\
+      \ consumer, final long value)"
+    returnType: "void"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableLongConsumer"
+      genericType: "java.lang.Throwable"
+    - name: "value"
+      type: "long"
+    instructionFingerprint: "B6E4AAAB3CEE63F5B879B35B7599273B"
+  paths:
+  - testPathName: "accept4Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "run(runnable-any):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableLongConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableLongConsumer"
+      genericValueType: "java.lang.Throwable"
+      uuid: "consumer"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "value"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable-any"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "apply"
+    sourceCodeSignature: "<T, U, R, E extends Throwable> R apply(final FailableBiFunction<T,\
+      \ U, R, E> function, final T input1, final U input2)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "function"
+      type: "org.apache.commons.lang3.function.FailableBiFunction"
+      genericType: "java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Throwable"
+    - name: "input1"
+      type: "java.lang.Object"
+    - name: "input2"
+      type: "java.lang.Object"
+    instructionFingerprint: "42A7C0C5218FE25DFD546A059937B87B"
+  paths:
+  - testPathName: "applyTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      valueUuid: "function"
+    - type: "INPUT"
+      name: "input1"
+      valueUuid: "input1"
+    - type: "INPUT"
+      name: "input2"
+      valueUuid: "input2"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "get(supplier-any):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiFunction"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiFunction"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Throwable"
+      uuid: "function"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "input1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "input2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier-any"
+- method:
+    name: "apply"
+    sourceCodeSignature: "<T, R, E extends Throwable> R apply(final FailableFunction<T,\
+      \ R, E> function, final T input)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "function"
+      type: "org.apache.commons.lang3.function.FailableFunction"
+      genericType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+    - name: "input"
+      type: "java.lang.Object"
+    instructionFingerprint: "D086ADC5C0BF2C6DEAE3CBC7B9CE924C"
+  paths:
+  - testPathName: "apply1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      valueUuid: "function"
+    - type: "INPUT"
+      name: "input"
+      valueUuid: "input"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "get(supplier-any):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableFunction"
+        method: "identity"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableFunction"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+      uuid: "function"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "input"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier-any"
+- method:
+    name: "applyAsDouble"
+    sourceCodeSignature: "<E extends Throwable> double applyAsDouble(final FailableDoubleBinaryOperator<E>\
+      \ function, final double left, final double right)"
+    returnType: "double"
+    parameters:
+    - name: "function"
+      type: "org.apache.commons.lang3.function.FailableDoubleBinaryOperator"
+      genericType: "java.lang.Throwable"
+    - name: "left"
+      type: "double"
+    - name: "right"
+      type: "double"
+    instructionFingerprint: "1662B1F07E712F66B262742C1BFC0595"
+  paths:
+  - testPathName: "applyAsDoubleTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      valueUuid: "function"
+    - type: "INPUT"
+      name: "left"
+      valueUuid: "left"
+    - type: "INPUT"
+      name: "right"
+      valueUuid: "right"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "getAsDouble(supplier-any):double1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableDoubleBinaryOperator"
+      uuid: "function"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "left"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "right"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableDoubleSupplier"
+      uuid: "supplier-any"
+- method:
+    name: "asBiConsumer"
+    sourceCodeSignature: "<T, U> BiConsumer<T, U> asBiConsumer(final FailableBiConsumer<T,\
+      \ U, ?> consumer)"
+    returnType: "java.util.function.BiConsumer"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableBiConsumer"
+      genericType: "java.lang.Object,java.lang.Object,?"
+    instructionFingerprint: "51E37CAE22DB154619CC97CFBE627FDB"
+  paths:
+  - testPathName: "asBiConsumerTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "biConsumerNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiConsumer"
+      uuid: "consumer"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.BiConsumer"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "biConsumerNotNull"
+- method:
+    name: "asBiFunction"
+    sourceCodeSignature: "<T, U, R> BiFunction<T, U, R> asBiFunction(final FailableBiFunction<T,\
+      \ U, R, ?> function)"
+    returnType: "java.util.function.BiFunction"
+    genericReturnType: "java.lang.Object,java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "function"
+      type: "org.apache.commons.lang3.function.FailableBiFunction"
+      genericType: "java.lang.Object,java.lang.Object,java.lang.Object,?"
+    instructionFingerprint: "D511887732436C73A8C93466D59D99FB"
+  paths:
+  - testPathName: "asBiFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      valueUuid: "function"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "biFunctionNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiFunction"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiFunction"
+      uuid: "function"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.BiFunction"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Object"
+      uuid: "biFunctionNotNull"
+- method:
+    name: "asBiPredicate"
+    sourceCodeSignature: "<T, U> BiPredicate<T, U> asBiPredicate(final FailableBiPredicate<T,\
+      \ U, ?> predicate)"
+    returnType: "java.util.function.BiPredicate"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "predicate"
+      type: "org.apache.commons.lang3.function.FailableBiPredicate"
+      genericType: "java.lang.Object,java.lang.Object,?"
+    instructionFingerprint: "FA9B8504CE7511CD15DEF8DB8C1D661D"
+  paths:
+  - testPathName: "asBiPredicateTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "biPredicateNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiPredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiPredicate"
+      uuid: "predicate"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.BiPredicate"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "biPredicateNotNull"
+- method:
+    name: "asCallable"
+    sourceCodeSignature: "<V> Callable<V> asCallable(final FailableCallable<V, ?>\
+      \ callable)"
+    returnType: "java.util.concurrent.Callable"
+    parameters:
+    - name: "callable"
+      type: "org.apache.commons.lang3.function.FailableCallable"
+      genericType: "java.lang.Object,?"
+    instructionFingerprint: "088BA0DD2E1FD19DFE1182286505789A"
+  paths:
+  - testPathName: "asCallableTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "callable"
+      valueUuid: "callable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "callable2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableCallable"
+      uuid: "callable"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.concurrent.Callable"
+      uuid: "callable2NotNull"
+- method:
+    name: "asConsumer"
+    sourceCodeSignature: "<T> Consumer<T> asConsumer(final FailableConsumer<T, ?>\
+      \ consumer)"
+    returnType: "java.util.function.Consumer"
+    parameters:
+    - name: "consumer"
+      type: "org.apache.commons.lang3.function.FailableConsumer"
+      genericType: "java.lang.Object,?"
+    instructionFingerprint: "130F0212A583AD5F23CB3716491AEC73"
+  paths:
+  - testPathName: "asConsumerTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "consumer2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "consumer"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Consumer"
+      uuid: "consumer2NotNull"
+- method:
+    name: "asFunction"
+    sourceCodeSignature: "<T, R> Function<T, R> asFunction(final FailableFunction<T,\
+      \ R, ?> function)"
+    returnType: "java.util.function.Function"
+    genericReturnType: "java.lang.Object,java.lang.Object"
+    parameters:
+    - name: "function"
+      type: "org.apache.commons.lang3.function.FailableFunction"
+      genericType: "java.lang.Object,java.lang.Object,?"
+    instructionFingerprint: "16038A8209ECB182A023D05E1907EB5F"
+  paths:
+  - testPathName: "asFunctionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "function"
+      valueUuid: "function"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "function2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableFunction"
+        method: "identity"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableFunction"
+      uuid: "function"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Function"
+      genericValueType: "java.lang.Object,java.lang.Object"
+      uuid: "function2NotNull"
+- method:
+    name: "asPredicate"
+    sourceCodeSignature: "<T> Predicate<T> asPredicate(final FailablePredicate<T,\
+      \ ?> predicate)"
+    returnType: "java.util.function.Predicate"
+    parameters:
+    - name: "predicate"
+      type: "org.apache.commons.lang3.function.FailablePredicate"
+      genericType: "java.lang.Object,?"
+    instructionFingerprint: "E912A5217311C83C371B267C4BD9A678"
+  paths:
+  - testPathName: "asPredicateTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "predicate2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailablePredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailablePredicate"
+      uuid: "predicate"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Predicate"
+      uuid: "predicate2NotNull"
+- method:
+    name: "asRunnable"
+    sourceCodeSignature: "Runnable asRunnable(final FailableRunnable<?> runnable)"
+    returnType: "java.lang.Runnable"
+    parameters:
+    - name: "runnable"
+      type: "org.apache.commons.lang3.function.FailableRunnable"
+      genericType: "?"
+    instructionFingerprint: "DAEFB5E0AB7BEAE18361EDD005E83B1D"
+  paths:
+  - testPathName: "asRunnableTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      valueUuid: "runnable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runnable2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable"
+    - sapientType: "NOT_NULL"
+      valueType: "java.lang.Runnable"
+      uuid: "runnable2NotNull"
+- method:
+    name: "asSupplier"
+    sourceCodeSignature: "<T> Supplier<T> asSupplier(final FailableSupplier<T, ?>\
+      \ supplier)"
+    returnType: "java.util.function.Supplier"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableSupplier"
+      genericType: "java.lang.Object,?"
+    instructionFingerprint: "FB5A848ACB9D1C400C9F4A6398A4DCA2"
+  paths:
+  - testPathName: "asSupplierTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "supplier2NotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableSupplier"
+        method: "nul"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier2NotNull"
+- method:
+    name: "call"
+    sourceCodeSignature: "<V, E extends Throwable> V call(final FailableCallable<V,\
+      \ E> callable)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "callable"
+      type: "org.apache.commons.lang3.function.FailableCallable"
+      genericType: "java.lang.Object,java.lang.Throwable"
+    instructionFingerprint: "0860B2C60AAB085651524C5C9C1FFFBC"
+  paths:
+  - testPathName: "callTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "callable"
+      valueUuid: "callable"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "get(supplier-any):object"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableCallable"
+      uuid: "callable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier-any"
+- method:
+    name: "get"
+    sourceCodeSignature: "<T, E extends Throwable> T get(final FailableSupplier<T,\
+      \ E> supplier)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableSupplier"
+      genericType: "java.lang.Object,java.lang.Throwable"
+    instructionFingerprint: "F295A90EEAA08E719A3ED0140F1A1398"
+  paths:
+  - testPathName: "getTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableSupplier"
+        method: "nul"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object"
+  - testPathName: "getWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableSupplier.get()\
+        \ : java.lang.Object"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableSupplier"
+        method: "nul"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    branches:
+    - lineNumber: 304
+      expression: "catch-exception (Throwable)"
+      range: "(304,11)-(304,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "getAsBoolean"
+    sourceCodeSignature: "<E extends Throwable> boolean getAsBoolean(final FailableBooleanSupplier<E>\
+      \ supplier)"
+    returnType: "boolean"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "2DF3A610290DED5F8EF492D890B792F2"
+  paths:
+  - testPathName: "getAsBooleanWhenSupplierGetAsBoolean"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableBooleanSupplier.getAsBoolean()\
+        \ : boolean"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 318
+      expression: "supplier.getAsBoolean()"
+      range: "(318,20)-(318,42)"
+      evaluatedAs: true
+  - testPathName: "getAsBooleanWhenSupplierNotGetAsBoolean"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableBooleanSupplier.getAsBoolean()\
+        \ : boolean"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 318
+      expression: "supplier.getAsBoolean()"
+      range: "(318,20)-(318,42)"
+      evaluatedAs: false
+  - testPathName: "getAsBooleanWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      valueUuid: "supplier"
+      methodExercised:
+        expression: "getAsBoolean():boolean1"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableBooleanSupplier.getAsBoolean()\
+        \ : boolean"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 319
+      expression: "catch-exception (Throwable)"
+      range: "(319,11)-(319,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "getAsDouble"
+    sourceCodeSignature: "<E extends Throwable> double getAsDouble(final FailableDoubleSupplier<E>\
+      \ supplier)"
+    returnType: "double"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableDoubleSupplier"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "9C17E0FFABE3E39AB2BBDBD75DCCB7FA"
+  paths:
+  - testPathName: "getAsDoubleTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableDoubleSupplier.getAsDouble()\
+        \ : double"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableDoubleSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+  - testPathName: "getAsDoubleWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      valueUuid: "supplier"
+      methodExercised:
+        expression: "getAsDouble():double1"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableDoubleSupplier.getAsDouble()\
+        \ : double"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableDoubleSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+    branches:
+    - lineNumber: 334
+      expression: "catch-exception (Throwable)"
+      range: "(334,11)-(334,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "getAsInt"
+    sourceCodeSignature: "<E extends Throwable> int getAsInt(final FailableIntSupplier<E>\
+      \ supplier)"
+    returnType: "int"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableIntSupplier"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "3A36ED10467836825C12D6A3857751E4"
+  paths:
+  - testPathName: "getAsIntTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableIntSupplier.getAsInt()\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableIntSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+  - testPathName: "getAsIntWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      valueUuid: "supplier"
+      methodExercised:
+        expression: "getAsInt():int1"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableIntSupplier.getAsInt()\
+        \ : int"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableIntSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 349
+      expression: "catch-exception (Throwable)"
+      range: "(349,11)-(349,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "getAsLong"
+    sourceCodeSignature: "<E extends Throwable> long getAsLong(final FailableLongSupplier<E>\
+      \ supplier)"
+    returnType: "long"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableLongSupplier"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "C62D611D0C222BC760BE325E824BD65B"
+  paths:
+  - testPathName: "getAsLongTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableLongSupplier.getAsLong()\
+        \ : long"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableLongSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+  - testPathName: "getAsLongWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      valueUuid: "supplier"
+      methodExercised:
+        expression: "getAsLong():long1"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableLongSupplier.getAsLong()\
+        \ : long"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableLongSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+    branches:
+    - lineNumber: 364
+      expression: "catch-exception (Throwable)"
+      range: "(364,11)-(364,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 5
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "getAsShort"
+    sourceCodeSignature: "<E extends Throwable> short getAsShort(final FailableShortSupplier<E>\
+      \ supplier)"
+    returnType: "short"
+    parameters:
+    - name: "supplier"
+      type: "org.apache.commons.lang3.function.FailableShortSupplier"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "903E9A3D72C1E3C8E73CEB184031F1CC"
+  paths:
+  - testPathName: "getAsShortTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "short1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableShortSupplier.getAsShort()\
+        \ : short"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableShortSupplier"
+      uuid: "supplier"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+  - testPathName: "getAsShortWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "supplier"
+      valueUuid: "supplier"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "supplier"
+      valueUuid: "supplier"
+      methodExercised:
+        expression: "getAsShort():short1"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableShortSupplier.getAsShort()\
+        \ : short"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableShortSupplier"
+      uuid: "supplier"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "short"
+      uuid: "short1"
+    branches:
+    - lineNumber: 379
+      expression: "catch-exception (Throwable)"
+      range: "(379,11)-(379,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 6
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "rethrow"
+    sourceCodeSignature: "RuntimeException rethrow(final Throwable throwable)"
+    returnType: "java.lang.RuntimeException"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "40DA4F06E8185BCBC78E281CDBF876C0"
+  paths:
+  - testPathName: "rethrowWhenThrowableNotInstanceOfIOExceptionThrowsUndeclaredThrowableException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "undeclaredThrowableException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.reflect.UndeclaredThrowableException"
+        parameters:
+        - name: "undeclaredThrowable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable"
+      valueType: "java.lang.reflect.UndeclaredThrowableException"
+      uuid: "undeclaredThrowableException"
+    branches:
+    - lineNumber: 412
+      expression: "throwable instanceof IOException"
+      range: "(412,13)-(412,44)"
+      evaluatedAs: false
+- method:
+    name: "run"
+    sourceCodeSignature: "<E extends Throwable> void run(final FailableRunnable<E>\
+      \ runnable)"
+    returnType: "void"
+    parameters:
+    - name: "runnable"
+      type: "org.apache.commons.lang3.function.FailableRunnable"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "3B54D0B95ABB2B7E44392B839FA29231"
+  paths:
+  - testPathName: "runTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      valueUuid: "runnable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableRunnable.run()\
+        \ : void"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable"
+    - sapientType: "VOID"
+      uuid: "void2"
+  - testPathName: "runWhenCaughtThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "runnable"
+      valueUuid: "runnable"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "rethrow(throwable):runtimeException"
+    - type: "LOCAL_VARIABLE"
+      name: "runnable"
+      valueUuid: "runnable"
+      methodExercised:
+        expression: "run():void"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.function.FailableRunnable.run()\
+        \ : void"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "runnable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    branches:
+    - lineNumber: 427
+      expression: "catch-exception (Throwable)"
+      range: "(427,11)-(427,34)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 7
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "stream"
+    sourceCodeSignature: "<E> FailableStream<E> stream(final Collection<E> collection)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "collection"
+      type: "java.util.Collection"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "6B9FB1F36537014714C87AB9C48B1173"
+  paths:
+  - testPathName: "streamTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "collection"
+      valueUuid: "collection"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Collection"
+      genericValueType: "java.lang.Object"
+      uuid: "collection"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.stream.Stream"
+            uuid: "stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "stream"
+    sourceCodeSignature: "<T> FailableStream<T> stream(final Stream<T> stream)"
+    returnType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+    parameters:
+    - name: "stream"
+      type: "java.util.stream.Stream"
+      genericType: "java.lang.Object"
+    instructionFingerprint: "74D7C0F0D753F747F46992FB243253B7"
+  paths:
+  - testPathName: "stream1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stream"
+      valueUuid: "stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "streamsFailableStream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      genericValueType: "java.lang.Object"
+      uuid: "stream"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.stream.Streams$FailableStream"
+        parameters:
+        - name: "stream"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.stream.Stream"
+              method: "empty"
+              methodParameters: []
+            valueType: "java.util.stream.Stream"
+            genericValueType: "java.lang.Object"
+            uuid: "stream"
+      valueType: "org.apache.commons.lang3.stream.Streams$FailableStream"
+      uuid: "streamsFailableStream"
+- method:
+    name: "test"
+    sourceCodeSignature: "<T, U, E extends Throwable> boolean test(final FailableBiPredicate<T,\
+      \ U, E> predicate, final T object1, final U object2)"
+    returnType: "boolean"
+    parameters:
+    - name: "predicate"
+      type: "org.apache.commons.lang3.function.FailableBiPredicate"
+      genericType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+    - name: "object1"
+      type: "java.lang.Object"
+    - name: "object2"
+      type: "java.lang.Object"
+    instructionFingerprint: "55253775CB6B990A5A9AA02E4244DEDE"
+  paths:
+  - testPathName: "testWhenGetAsBooleanPredicateTestObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object2"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "getAsBoolean(supplier-any):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiPredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiPredicate"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+      uuid: "predicate"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier-any"
+    branches:
+    - lineNumber: 475
+      expression: "getAsBoolean(() -> predicate.test(object1, object2))"
+      range: "(475,16)-(475,67)"
+      evaluatedAs: true
+  - testPathName: "testWhenGetAsBooleanNotPredicateTestObject1Object2"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "INPUT"
+      name: "object1"
+      valueUuid: "object1"
+    - type: "INPUT"
+      name: "object2"
+      valueUuid: "object2"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "getAsBoolean(supplier-any):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableBiPredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableBiPredicate"
+      genericValueType: "java.lang.Object,java.lang.Object,java.lang.Throwable"
+      uuid: "predicate"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object1"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier-any"
+    branches:
+    - lineNumber: 475
+      expression: "getAsBoolean(() -> predicate.test(object1, object2))"
+      range: "(475,16)-(475,67)"
+      evaluatedAs: false
+- method:
+    name: "test"
+    sourceCodeSignature: "<T, E extends Throwable> boolean test(final FailablePredicate<T,\
+      \ E> predicate, final T object)"
+    returnType: "boolean"
+    parameters:
+    - name: "predicate"
+      type: "org.apache.commons.lang3.function.FailablePredicate"
+      genericType: "java.lang.Object,java.lang.Throwable"
+    - name: "object"
+      type: "java.lang.Object"
+    instructionFingerprint: "0F18D2E8B299FB2BEE1FE0327C31138B"
+  paths:
+  - testPathName: "test1WhenGetAsBooleanPredicateTestObject"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "getAsBoolean(supplier-any):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailablePredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailablePredicate"
+      genericValueType: "java.lang.Object,java.lang.Throwable"
+      uuid: "predicate"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier-any"
+    branches:
+    - lineNumber: 488
+      expression: "getAsBoolean(() -> predicate.test(object))"
+      range: "(488,16)-(488,57)"
+      evaluatedAs: true
+  - testPathName: "test1WhenGetAsBooleanNotPredicateTestObject"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "predicate"
+      valueUuid: "predicate"
+    - type: "INPUT"
+      name: "object"
+      valueUuid: "object"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "getAsBoolean(supplier-any):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailablePredicate"
+        method: "falsePredicate"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailablePredicate"
+      genericValueType: "java.lang.Object,java.lang.Throwable"
+      uuid: "predicate"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "ANY"
+      valueType: "org.apache.commons.lang3.function.FailableBooleanSupplier"
+      uuid: "supplier-any"
+    branches:
+    - lineNumber: 488
+      expression: "getAsBoolean(() -> predicate.test(object))"
+      range: "(488,16)-(488,57)"
+      evaluatedAs: false
+- method:
+    name: "tryWithResources"
+    sourceCodeSignature: "void tryWithResources(final FailableRunnable<? extends Throwable>\
+      \ action, final FailableConsumer<Throwable, ? extends Throwable> errorHandler,\
+      \ final FailableRunnable<? extends Throwable>... resources)"
+    returnType: "void"
+    parameters:
+    - name: "action"
+      type: "org.apache.commons.lang3.function.FailableRunnable"
+      genericType: "? extends java.lang.Throwable"
+    - name: "errorHandler"
+      type: "org.apache.commons.lang3.function.FailableConsumer"
+      genericType: "java.lang.Throwable,? extends java.lang.Throwable"
+    - name: "resources"
+      type: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericType: "? extends java.lang.Throwable"
+    instructionFingerprint: "9EBE13BB01AADA8C55C46CF8E808637F"
+  paths:
+  - testPathName: "tryWithResourcesWhenResourcesIsNotEmptyAndThIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "INPUT"
+      name: "errorHandler"
+      valueUuid: "errorHandler"
+    - type: "INPUT"
+      name: "resources"
+      valueUuid: "resources"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void4"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(org.apache.commons.lang3.function.FailableRunnable<?\
+        \ extends java.lang.Throwable>[]) : java.util.stream.Stream<org.apache.commons.lang3.function.FailableRunnable>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "action"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      genericValueType: "java.lang.Throwable,? extends java.lang.Throwable"
+      uuid: "errorHandler"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "org.apache.commons.lang3.function.FailableRunnable"
+            uuid: "failableRunnable"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "resources"
+    - sapientType: "VOID"
+      uuid: "void4"
+    branches:
+    - lineNumber: 515
+      expression: "errorHandler == null"
+      range: "(515,13)-(515,32)"
+      evaluatedAs: true
+    - lineNumber: 527
+      expression: "resources != null"
+      range: "(527,13)-(527,29)"
+      evaluatedAs: true
+    - lineNumber: 528
+      expression: "for-each(resources)"
+      range: "(528,55)-(528,63)"
+      evaluatedAs: true
+    - lineNumber: 538
+      expression: "th != null"
+      range: "(538,13)-(538,22)"
+      evaluatedAs: false
+  - testPathName: "tryWithResourcesWhenResourcesIsNotNullAndResourcesIsNotEmptyAndThIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "INPUT"
+      name: "errorHandler"
+      valueUuid: "errorHandler"
+    - type: "INPUT"
+      name: "resources"
+      valueUuid: "resources"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void4"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(org.apache.commons.lang3.function.FailableRunnable<?\
+        \ extends java.lang.Throwable>[]) : java.util.stream.Stream<org.apache.commons.lang3.function.FailableRunnable>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "action"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "errorHandler"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "org.apache.commons.lang3.function.FailableRunnable"
+            uuid: "failableRunnable"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "resources"
+    - sapientType: "VOID"
+      uuid: "void4"
+    branches:
+    - lineNumber: 515
+      expression: "errorHandler == null"
+      range: "(515,13)-(515,32)"
+      evaluatedAs: false
+    - lineNumber: 527
+      expression: "resources != null"
+      range: "(527,13)-(527,29)"
+      evaluatedAs: true
+    - lineNumber: 528
+      expression: "for-each(resources)"
+      range: "(528,55)-(528,63)"
+      evaluatedAs: true
+    - lineNumber: 538
+      expression: "th != null"
+      range: "(538,13)-(538,22)"
+      evaluatedAs: false
+  - testPathName: "tryWithResourcesWhenResourcesIsNotNullAndResourcesIsNotEmptyAndThIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "INPUT"
+      name: "errorHandler"
+      valueUuid: "errorHandler"
+    - type: "INPUT"
+      name: "resources"
+      valueUuid: "resources"
+    - type: "LOCAL_VARIABLE"
+      name: "action"
+      valueUuid: "action"
+      methodExercised:
+        expression: "run():void2"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "LOCAL_VARIABLE"
+      name: "runnable"
+      valueUuid: "failableRunnable"
+      methodExercised:
+        expression: "run():void3"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(org.apache.commons.lang3.function.FailableRunnable<?\
+        \ extends java.lang.Throwable>[]) : java.util.stream.Stream<org.apache.commons.lang3.function.FailableRunnable>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "action"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.FailableConsumer"
+        method: "nop"
+        methodParameters: []
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "errorHandler"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "org.apache.commons.lang3.function.FailableRunnable"
+            uuid: "failableRunnable"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "resources"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "failableRunnable"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "VOID"
+      uuid: "void5"
+    branches:
+    - lineNumber: 515
+      expression: "errorHandler == null"
+      range: "(515,13)-(515,32)"
+      evaluatedAs: false
+    - lineNumber: 524
+      expression: "catch-exception (Throwable)"
+      range: "(524,11)-(524,34)"
+      evaluatedAs: true
+    - lineNumber: 527
+      expression: "resources != null"
+      range: "(527,13)-(527,29)"
+      evaluatedAs: true
+    - lineNumber: 528
+      expression: "for-each(resources)"
+      range: "(528,55)-(528,63)"
+      evaluatedAs: true
+    - lineNumber: 538
+      expression: "th != null"
+      range: "(538,13)-(538,22)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 8
+      catchExceptions:
+      - "java.lang.Throwable"
+  - testPathName: "tryWithResourcesWhenThIsNullAndThIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "INPUT"
+      name: "errorHandler"
+      valueUuid: "errorHandler"
+    - type: "INPUT"
+      name: "resources"
+      valueUuid: "resources"
+    - type: "LOCAL_VARIABLE"
+      name: "action"
+      valueUuid: "action"
+      methodExercised:
+        expression: "run():void2"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "LOCAL_VARIABLE"
+      name: "runnable"
+      valueUuid: "failableRunnable"
+      methodExercised:
+        expression: "run():void3"
+        throwsExceptions:
+        - "java.lang.Throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(org.apache.commons.lang3.function.FailableRunnable<?\
+        \ extends java.lang.Throwable>[]) : java.util.stream.Stream<org.apache.commons.lang3.function.FailableRunnable>"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "action"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      genericValueType: "java.lang.Throwable,? extends java.lang.Throwable"
+      uuid: "errorHandler"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "org.apache.commons.lang3.function.FailableRunnable"
+            uuid: "failableRunnable"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "resources"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "failableRunnable"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void3"
+    - sapientType: "VOID"
+      uuid: "void5"
+    branches:
+    - lineNumber: 515
+      expression: "errorHandler == null"
+      range: "(515,13)-(515,32)"
+      evaluatedAs: true
+    - lineNumber: 527
+      expression: "resources != null"
+      range: "(527,13)-(527,29)"
+      evaluatedAs: true
+    - lineNumber: 528
+      expression: "for-each(resources)"
+      range: "(528,55)-(528,63)"
+      evaluatedAs: true
+    - lineNumber: 531
+      expression: "catch-exception (Throwable)"
+      range: "(531,19)-(531,42)"
+      evaluatedAs: true
+    - lineNumber: 532
+      expression: "th == null"
+      range: "(532,25)-(532,34)"
+      evaluatedAs: true
+    - lineNumber: 538
+      expression: "th != null"
+      range: "(538,13)-(538,22)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 9
+      catchExceptions:
+      - "java.lang.Throwable"
+- method:
+    name: "tryWithResources"
+    sourceCodeSignature: "void tryWithResources(final FailableRunnable<? extends Throwable>\
+      \ action, final FailableRunnable<? extends Throwable>... resources)"
+    returnType: "void"
+    parameters:
+    - name: "action"
+      type: "org.apache.commons.lang3.function.FailableRunnable"
+      genericType: "? extends java.lang.Throwable"
+    - name: "resources"
+      type: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericType: "? extends java.lang.Throwable"
+    instructionFingerprint: "69F4644AA7B7ECED5CE249567C3D8B3F"
+  paths:
+  - testPathName: "tryWithResources1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "INPUT"
+      name: "resources"
+      valueUuid: "resources"
+    - type: "STATIC"
+      name: "Failable.class"
+      valueUuid: "Failable.class"
+      methodExercised:
+        expression: "tryWithResources(action,errorHandler,resources):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.FailableRunnable"
+      uuid: "action"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "org.apache.commons.lang3.function.FailableRunnable[]"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "resources"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.function.Failable"
+      uuid: "Failable.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.function.FailableConsumer"
+      uuid: "errorHandler"
+    - sapientType: "VOID"
+      uuid: "void2"

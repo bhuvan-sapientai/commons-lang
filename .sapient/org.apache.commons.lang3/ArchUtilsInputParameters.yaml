@@ -1,0 +1,51 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.ArchUtils"
+methods:
+- method:
+    name: "getProcessor"
+    sourceCodeSignature: "Processor getProcessor()"
+    returnType: "org.apache.commons.lang3.arch.Processor"
+    instructionFingerprint: "D3265F1EA01418096F2DC58E800B6C35"
+  paths:
+  - testPathName: "getProcessorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "processor10"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "processor10"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ArchUtils"
+- method:
+    name: "getProcessor"
+    sourceCodeSignature: "Processor getProcessor(final String value)"
+    returnType: "org.apache.commons.lang3.arch.Processor"
+    parameters:
+    - name: "value"
+      type: "java.lang.String"
+    instructionFingerprint: "7C1FF007DA5ED64F27D65A65741A3235"
+  paths:
+  - testPathName: "getProcessor1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "processor10"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "value1"
+      valueType: "java.lang.String"
+      uuid: "value"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.arch.Processor"
+      uuid: "processor10"

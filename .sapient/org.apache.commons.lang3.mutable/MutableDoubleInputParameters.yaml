@@ -1,0 +1,1085 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableDouble"
+methods:
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final double operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "double"
+    instructionFingerprint: "D903DD7AB3410822ED9E750676B5EBA5"
+  paths:
+  - testPathName: "addTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "A4F54A7E6D589C5759621F6AAC8660B5"
+  paths:
+  - testPathName: "add1Test"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "double addAndGet(final double operand)"
+    returnType: "double"
+    parameters:
+    - name: "operand"
+      type: "double"
+    instructionFingerprint: "F61C7B6B889D3415886A38E121DF5346"
+  paths:
+  - testPathName: "addAndGetTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "addAndGet"
+    sourceCodeSignature: "double addAndGet(final Number operand)"
+    returnType: "double"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "BB3A55CED4E2788878A8DC760266456E"
+  paths:
+  - testPathName: "addAndGet1Test"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "double2"
+- method:
+    name: "compareTo"
+    sourceCodeSignature: "int compareTo(final MutableDouble other)"
+    returnType: "int"
+    parameters:
+    - name: "other"
+      type: "org.apache.commons.lang3.mutable.MutableDouble"
+    instructionFingerprint: "BC3311810050E6DC05985B96103104C8"
+  paths:
+  - testPathName: "compareToTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "other"
+      valueUuid: "other"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "double"
+            uuid: "other-value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "other"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "decrement"
+    sourceCodeSignature: "void decrement()"
+    returnType: "void"
+    instructionFingerprint: "40A444B5158273D1A59CDFCB42A5ABDC"
+  paths:
+  - testPathName: "decrementTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "decrementAndGet"
+    sourceCodeSignature: "double decrementAndGet()"
+    returnType: "double"
+    instructionFingerprint: "64C5CEADFBF5143D0D4479A997574729"
+  paths:
+  - testPathName: "decrementAndGetTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "doubleValue"
+    sourceCodeSignature: "double doubleValue()"
+    returnType: "double"
+    instructionFingerprint: "9188A9A750A44D5964E2E4D538A550DD"
+  paths:
+  - testPathName: "doubleValueTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+- method:
+    name: "floatValue"
+    sourceCodeSignature: "float floatValue()"
+    returnType: "float"
+    instructionFingerprint: "E21811879DDED1E8B3351E7A037792BC"
+  paths:
+  - testPathName: "floatValueTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "float1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "float"
+      uuid: "float1"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "double getAndAdd(final double operand)"
+    returnType: "double"
+    parameters:
+    - name: "operand"
+      type: "double"
+    instructionFingerprint: "6240882BB3B7B3F10C7652903A23AA66"
+  paths:
+  - testPathName: "getAndAddTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+- method:
+    name: "getAndAdd"
+    sourceCodeSignature: "double getAndAdd(final Number operand)"
+    returnType: "double"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "78F33FED362C66E0073C244CC79CF36A"
+  paths:
+  - testPathName: "getAndAdd1Test"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+- method:
+    name: "getAndDecrement"
+    sourceCodeSignature: "double getAndDecrement()"
+    returnType: "double"
+    instructionFingerprint: "2EC287EEBBB048EFD1151740F6C9E446"
+  paths:
+  - testPathName: "getAndDecrementTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+- method:
+    name: "getAndIncrement"
+    sourceCodeSignature: "double getAndIncrement()"
+    returnType: "double"
+    instructionFingerprint: "BE4758F33AEBF16EFF6DC0FA103BE8F3"
+  paths:
+  - testPathName: "getAndIncrementTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "value"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "value"
+- method:
+    name: "getValue"
+    sourceCodeSignature: "Double getValue()"
+    returnType: "java.lang.Double"
+    instructionFingerprint: "709D1ED9F54684C159723FBEB86E779E"
+  paths:
+  - testPathName: "getValueTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "double"
+- method:
+    name: "increment"
+    sourceCodeSignature: "void increment()"
+    returnType: "void"
+    instructionFingerprint: "DB93514A91AC0FEC3BB5D0E99AC650AC"
+  paths:
+  - testPathName: "incrementTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "incrementAndGet"
+    sourceCodeSignature: "double incrementAndGet()"
+    returnType: "double"
+    instructionFingerprint: "1874BEB3FA7AF888CB20DC5D244F814B"
+  paths:
+  - testPathName: "incrementAndGetTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1.0
+      valueType: "double"
+      uuid: "double1"
+- method:
+    name: "intValue"
+    sourceCodeSignature: "int intValue()"
+    returnType: "int"
+    instructionFingerprint: "78123963973C36D70DD202CDDB6C2881"
+  paths:
+  - testPathName: "intValueTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "isInfinite"
+    sourceCodeSignature: "boolean isInfinite()"
+    returnType: "boolean"
+    instructionFingerprint: "D574C667E05B772D1FB67CF42B11D90B"
+  paths:
+  - testPathName: "isInfiniteWhenDoubleIsInfiniteValue"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 325
+      expression: "Double.isInfinite(value)"
+      range: "(325,16)-(325,39)"
+      evaluatedAs: true
+  - testPathName: "isInfiniteWhenDoubleNotIsInfiniteValue"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 325
+      expression: "Double.isInfinite(value)"
+      range: "(325,16)-(325,39)"
+      evaluatedAs: false
+- method:
+    name: "isNaN"
+    sourceCodeSignature: "boolean isNaN()"
+    returnType: "boolean"
+    instructionFingerprint: "CE0C5B58A0AD8C868BD478DA92D064FC"
+  paths:
+  - testPathName: "isNaNWhenDoubleIsNaNValue"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 334
+      expression: "Double.isNaN(value)"
+      range: "(334,16)-(334,34)"
+      evaluatedAs: true
+  - testPathName: "isNaNWhenDoubleNotIsNaNValue"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 334
+      expression: "Double.isNaN(value)"
+      range: "(334,16)-(334,34)"
+      evaluatedAs: false
+- method:
+    name: "longValue"
+    sourceCodeSignature: "long longValue()"
+    returnType: "long"
+    instructionFingerprint: "BD318B31C52BDA591CD4C5083533DF86"
+  paths:
+  - testPathName: "longValueTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+- method:
+    name: "setValue"
+    sourceCodeSignature: "void setValue(final Number value)"
+    returnType: "void"
+    parameters:
+    - name: "value"
+      type: "java.lang.Number"
+    instructionFingerprint: "CAAD48D327864C78A9B0B0F80E779543"
+  paths:
+  - testPathName: "setValue1Test"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value2"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Number"
+      uuid: "value"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final double operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "double"
+    instructionFingerprint: "6E907FACF077D3E896E568E767D9FBB9"
+  paths:
+  - testPathName: "subtractTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "subtract"
+    sourceCodeSignature: "void subtract(final Number operand)"
+    returnType: "void"
+    parameters:
+    - name: "operand"
+      type: "java.lang.Number"
+    instructionFingerprint: "08398775C9D4BE64599CF7D57CAA51BD"
+  paths:
+  - testPathName: "subtract1Test"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "operand"
+      valueUuid: "operand"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Number"
+      uuid: "operand"
+    - sapientType: "VOID"
+      uuid: "void"
+- method:
+    name: "toDouble"
+    sourceCodeSignature: "Double toDouble()"
+    returnType: "java.lang.Double"
+    instructionFingerprint: "E8101CA39229C803398FBF9027CF6BDD"
+  paths:
+  - testPathName: "toDoubleTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "double"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "double"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "DB9DA9A786CE435642C5E74E6CA7E9BC"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(double) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableDouble"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableDouble"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0.0"
+      valueType: "java.lang.String"
+      uuid: "string"

@@ -1,0 +1,302 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.ClassPathUtils"
+methods:
+- method:
+    name: "packageToPath"
+    sourceCodeSignature: "String packageToPath(final String path)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "path"
+      type: "java.lang.String"
+    instructionFingerprint: "C83651B091CFAF81CB665094822ECE38"
+  paths:
+  - testPathName: "packageToPathTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "path"
+      valueUuid: "path"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "/"
+      valueType: "java.lang.String"
+      uuid: "path"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "/"
+      valueType: "java.lang.String"
+      uuid: "string2"
+- method:
+    name: "pathToPackage"
+    sourceCodeSignature: "String pathToPackage(final String path)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "path"
+      type: "java.lang.String"
+    instructionFingerprint: "27A516C405EBAF29BC2A6A2796ACE9B5"
+  paths:
+  - testPathName: "pathToPackageTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "path"
+      valueUuid: "path"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "."
+      valueType: "java.lang.String"
+      uuid: "path"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "."
+      valueType: "java.lang.String"
+      uuid: "string2"
+- method:
+    name: "toFullyQualifiedName"
+    sourceCodeSignature: "String toFullyQualifiedName(final Class<?> context, final\
+      \ String resourceName)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "context"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "resourceName"
+      type: "java.lang.String"
+    instructionFingerprint: "2BF2D56729E460818F1748EAF8429984"
+  paths:
+  - testPathName: "toFullyQualifiedNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "context"
+      valueUuid: "context"
+    - type: "INPUT"
+      name: "resourceName"
+      valueUuid: "resourceName"
+    - type: "STATIC"
+      name: "ClassPathUtils.class"
+      valueUuid: "ClassPathUtils.class"
+      methodExercised:
+        expression: "toFullyQualifiedName(package,resourceName):string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "context"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "resourceName1"
+      valueType: "java.lang.String"
+      uuid: "resourceName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ClassPathUtils"
+      uuid: "ClassPathUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toFullyQualifiedName1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Package"
+        localVariableValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "context"
+        methodParameters: []
+        methodName: "getPackage"
+      valueType: "java.lang.Package"
+      uuid: "package"
+- method:
+    name: "toFullyQualifiedName"
+    sourceCodeSignature: "String toFullyQualifiedName(final Package context, final\
+      \ String resourceName)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "context"
+      type: "java.lang.Package"
+    - name: "resourceName"
+      type: "java.lang.String"
+    instructionFingerprint: "C676208A618774E84E4411A3825F493C"
+  paths:
+  - testPathName: "toFullyQualifiedName1Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "context"
+      valueUuid: "context"
+    - type: "INPUT"
+      name: "resourceName"
+      valueUuid: "resourceName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Package.getName() : java.lang.String"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.lang.Package"
+        method: "getPackage"
+        methodParameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "context-name"
+      valueType: "java.lang.Package"
+      uuid: "context"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "resourceName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "."
+      valueType: "java.lang.String"
+      uuid: "string3"
+- method:
+    name: "toFullyQualifiedPath"
+    sourceCodeSignature: "String toFullyQualifiedPath(final Class<?> context, final\
+      \ String resourceName)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "context"
+      type: "java.lang.Class"
+      genericType: "?"
+    - name: "resourceName"
+      type: "java.lang.String"
+    instructionFingerprint: "15E0CF1F225AAEA352C39FF463A747AD"
+  paths:
+  - testPathName: "toFullyQualifiedPathTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "context"
+      valueUuid: "context"
+    - type: "INPUT"
+      name: "resourceName"
+      valueUuid: "resourceName"
+    - type: "STATIC"
+      name: "ClassPathUtils.class"
+      valueUuid: "ClassPathUtils.class"
+      methodExercised:
+        expression: "toFullyQualifiedPath(package,resourceName):string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "context"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "resourceName1"
+      valueType: "java.lang.String"
+      uuid: "resourceName"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.ClassPathUtils"
+      uuid: "ClassPathUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toFullyQualifiedPath1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Package"
+        localVariableValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "context"
+        methodParameters: []
+        methodName: "getPackage"
+      valueType: "java.lang.Package"
+      uuid: "package"
+- method:
+    name: "toFullyQualifiedPath"
+    sourceCodeSignature: "String toFullyQualifiedPath(final Package context, final\
+      \ String resourceName)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "context"
+      type: "java.lang.Package"
+    - name: "resourceName"
+      type: "java.lang.String"
+    instructionFingerprint: "9CE2B498FA771C52D09C1EE1DE1BCDAC"
+  paths:
+  - testPathName: "toFullyQualifiedPath1Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "context"
+      valueUuid: "context"
+    - type: "INPUT"
+      name: "resourceName"
+      valueUuid: "resourceName"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Package.getName() : java.lang.String"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.lang.Package"
+        method: "getPackage"
+        methodParameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "context-name"
+      valueType: "java.lang.Package"
+      uuid: "context"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "resourceName"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "//A"
+      valueType: "java.lang.String"
+      uuid: "string5"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.ClassPathUtils"

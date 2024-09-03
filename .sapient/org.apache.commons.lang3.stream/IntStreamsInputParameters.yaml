@@ -1,0 +1,92 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.stream.IntStreams"
+methods:
+- method:
+    name: "range"
+    sourceCodeSignature: "IntStream range(final int endExclusive)"
+    returnType: "java.util.stream.IntStream"
+    parameters:
+    - name: "endExclusive"
+      type: "int"
+    instructionFingerprint: "0C19CA531ADBDD25C367E10D3F8205F2"
+  paths:
+  - testPathName: "rangeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "endExclusive"
+      valueUuid: "endExclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "intStream"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "endExclusive"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.IntStream"
+        method: "range"
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int1"
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "endExclusive"
+      valueType: "java.util.stream.IntStream"
+      uuid: "intStream"
+- method:
+    name: "rangeClosed"
+    sourceCodeSignature: "IntStream rangeClosed(final int endInclusive)"
+    returnType: "java.util.stream.IntStream"
+    parameters:
+    - name: "endInclusive"
+      type: "int"
+    instructionFingerprint: "294CA64C7A17D46963FCA85E19A11803"
+  paths:
+  - testPathName: "rangeClosedTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "endInclusive"
+      valueUuid: "endInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "intStream"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "endInclusive"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.IntStream"
+        method: "rangeClosed"
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "int1"
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "endInclusive"
+      valueType: "java.util.stream.IntStream"
+      uuid: "intStream"

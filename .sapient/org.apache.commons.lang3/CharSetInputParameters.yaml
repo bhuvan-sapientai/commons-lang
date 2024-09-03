@@ -1,0 +1,328 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.CharSet"
+methods:
+- method:
+    name: "getInstance"
+    sourceCodeSignature: "CharSet getInstance(final String... setStrs)"
+    returnType: "org.apache.commons.lang3.CharSet"
+    parameters:
+    - name: "setStrs"
+      type: "java.lang.String[]"
+    instructionFingerprint: "0A714504DF2089C250DC85D6D2DBA568"
+  paths:
+  - testPathName: "getInstanceWhenSetStrsIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "setStrs"
+      valueUuid: "setStrs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSet18"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "setStrs"
+    - sapientType: "NULL"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "charSet18"
+    branches:
+    - lineNumber: 153
+      expression: "setStrs == null"
+      range: "(153,13)-(153,27)"
+      evaluatedAs: true
+  - testPathName: "getInstanceWhenCommonIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "setStrs"
+      valueUuid: "setStrs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSet18"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Map.get(java.lang.String) : org.apache.commons.lang3.CharSet"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.String[]"
+      uuid: "setStrs"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharSet"
+        method: "getInstance"
+        methodParameters:
+        - name: "setStrs"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.String[]"
+            uuid: "charSet18-setStrs"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "charSet18"
+    branches:
+    - lineNumber: 153
+      expression: "setStrs == null"
+      range: "(153,13)-(153,27)"
+      evaluatedAs: false
+    - lineNumber: 156
+      expression: "setStrs.length == 1"
+      range: "(156,13)-(156,31)"
+      evaluatedAs: true
+    - lineNumber: 158
+      expression: "common != null"
+      range: "(158,17)-(158,30)"
+      evaluatedAs: true
+  - testPathName: "getInstanceWhenCommonIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "setStrs"
+      valueUuid: "setStrs"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charSet19"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Map.get(java.lang.String) : org.apache.commons.lang3.CharSet"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "string"
+      valueType: "java.lang.String[]"
+      uuid: "setStrs"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "A"
+                  valueType: "java.lang.String"
+                  uuid: "string"
+            valueType: "java.lang.String[]"
+            uuid: "setStrs"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "charSet19"
+    branches:
+    - lineNumber: 153
+      expression: "setStrs == null"
+      range: "(153,13)-(153,27)"
+      evaluatedAs: false
+    - lineNumber: 156
+      expression: "setStrs.length == 1"
+      range: "(156,13)-(156,31)"
+      evaluatedAs: true
+    - lineNumber: 158
+      expression: "common != null"
+      range: "(158,17)-(158,30)"
+      evaluatedAs: false
+- method:
+    name: "add"
+    sourceCodeSignature: "void add(final String str)"
+    returnType: "void"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "7CA28C1B5EA33BA15BD0C8467E5947B6"
+  paths:
+  - testPathName: "addWhenStrCharAtPosPlus1Equals___"
+    constructorSignature: "<init>(java.lang.String[]) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void7"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.String[]"
+            uuid: "set6"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0-9"
+      valueType: "java.lang.String"
+      uuid: "str2"
+    - sapientType: "VOID"
+      uuid: "void7"
+    branches:
+    - lineNumber: 185
+      expression: "str == null"
+      range: "(185,13)-(185,23)"
+      evaluatedAs: false
+    - lineNumber: 191
+      expression: "pos < len"
+      range: "(191,16)-(191,24)"
+      evaluatedAs: true
+    - lineNumber: 193
+      expression: "remainder >= 4"
+      range: "(193,17)-(193,30)"
+      evaluatedAs: false
+    - lineNumber: 197
+      expression: "remainder >= 3"
+      range: "(197,24)-(197,37)"
+      evaluatedAs: true
+    - lineNumber: 197
+      expression: "str.charAt(pos + 1) == '-'"
+      range: "(197,42)-(197,67)"
+      evaluatedAs: true
+- method:
+    name: "contains"
+    sourceCodeSignature: "boolean contains(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "68E273E2FC2F7D420528682B614B4D96"
+  paths:
+  - testPathName: "containsTest"
+    constructorSignature: "<init>(java.lang.String[]) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean6"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.String[]"
+            uuid: "set6"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean6"
+- method:
+    name: "getCharRanges"
+    sourceCodeSignature: "CharRange[] getCharRanges()"
+    returnType: "org.apache.commons.lang3.CharRange[]"
+    instructionFingerprint: "E5B677C3F00CE290D7B92DB398DBD458"
+  paths:
+  - testPathName: "getCharRangesTest"
+    constructorSignature: "<init>(java.lang.String[]) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.String[]"
+            uuid: "set6"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "org.apache.commons.lang3.CharRange[]"
+      uuid: "objectArray"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "D204BA4714DAEAE9718F5BFF2D9679F1"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.lang.String[]) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharSet"
+        parameters:
+        - name: "set"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            valueType: "java.lang.String[]"
+            uuid: "set6"
+      valueType: "org.apache.commons.lang3.CharSet"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[]"
+      valueType: "java.lang.String"
+      uuid: "string"

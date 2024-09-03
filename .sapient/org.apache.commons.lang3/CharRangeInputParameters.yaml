@@ -1,0 +1,660 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.CharRange"
+methods:
+- method:
+    name: "is"
+    sourceCodeSignature: "CharRange is(final char ch)"
+    returnType: "org.apache.commons.lang3.CharRange"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "A24CA0DE3F946FF7FFF0E86644F80DF9"
+  paths:
+  - testPathName: "isWhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharRange"
+        parameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "ch"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "ch"
+        - name: "negated"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negated"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "charRange"
+    branches:
+    - lineNumber: 227
+      expression: "branch expression (line 227)"
+      range: "(227,1)-(227,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+- method:
+    name: "isIn"
+    sourceCodeSignature: "CharRange isIn(final char start, final char end)"
+    returnType: "org.apache.commons.lang3.CharRange"
+    parameters:
+    - name: "start"
+      type: "char"
+    - name: "end"
+      type: "char"
+    instructionFingerprint: "0119642AD587B4001CC3D506D3225872"
+  paths:
+  - testPathName: "isInWhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud85f"
+      valueType: "char"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud83d"
+      valueType: "char"
+      uuid: "end"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharRange"
+        parameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud85f"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud83d"
+            valueType: "char"
+            uuid: "end"
+        - name: "negated"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "negated"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "charRange"
+    branches:
+    - lineNumber: 227
+      expression: "branch expression (line 227)"
+      range: "(227,1)-(227,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+- method:
+    name: "isNot"
+    sourceCodeSignature: "CharRange isNot(final char ch)"
+    returnType: "org.apache.commons.lang3.CharRange"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "58530160AE728FD0A8A5C7F7FC333FA7"
+  paths:
+  - testPathName: "isNotWhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharRange"
+        parameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "ch"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "ch"
+        - name: "negated"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negated"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "charRange"
+    branches:
+    - lineNumber: 227
+      expression: "branch expression (line 227)"
+      range: "(227,1)-(227,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+- method:
+    name: "isNotIn"
+    sourceCodeSignature: "CharRange isNotIn(final char start, final char end)"
+    returnType: "org.apache.commons.lang3.CharRange"
+    parameters:
+    - name: "start"
+      type: "char"
+    - name: "end"
+      type: "char"
+    instructionFingerprint: "7557245E5AF6A97395039101CA9BA582"
+  paths:
+  - testPathName: "isNotInWhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "start"
+      valueUuid: "start"
+    - type: "INPUT"
+      name: "end"
+      valueUuid: "end"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud85f"
+      valueType: "char"
+      uuid: "start"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud83d"
+      valueType: "char"
+      uuid: "end"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.CharRange"
+        parameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud85f"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud83d"
+            valueType: "char"
+            uuid: "end"
+        - name: "negated"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "negated"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "charRange"
+    branches:
+    - lineNumber: 227
+      expression: "branch expression (line 227)"
+      range: "(227,1)-(227,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+- method:
+    name: "contains"
+    sourceCodeSignature: "boolean contains(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "30148ADFF7CA72FB1DF4CA56AB161849"
+  paths:
+  - testPathName: "containsWhenChGreaterThanOrEqualsToStartAndChGreaterThanEnd"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud83d"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud81f"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 246
+      expression: "(ch >= start && ch <= end) != negated"
+      range: "(246,16)-(246,52)"
+      evaluatedAs: true
+    - lineNumber: 246
+      expression: "ch >= start"
+      range: "(246,17)-(246,27)"
+      evaluatedAs: true
+    - lineNumber: 246
+      expression: "ch <= end"
+      range: "(246,32)-(246,40)"
+      evaluatedAs: false
+  - testPathName: "containsWhenChLessThanStartAndChGreaterThanEnd"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud87d"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud842"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87c"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 246
+      expression: "(ch >= start && ch <= end) != negated"
+      range: "(246,16)-(246,52)"
+      evaluatedAs: true
+    - lineNumber: 246
+      expression: "ch >= start"
+      range: "(246,17)-(246,27)"
+      evaluatedAs: false
+    - lineNumber: 246
+      expression: "ch <= end"
+      range: "(246,32)-(246,40)"
+      evaluatedAs: false
+- method:
+    name: "contains"
+    sourceCodeSignature: "boolean contains(final CharRange range)"
+    returnType: "boolean"
+    parameters:
+    - name: "range"
+      type: "org.apache.commons.lang3.CharRange"
+    instructionFingerprint: "5A606C6D3B5CB8323BC93CC197B98DC3"
+  paths:
+  - testPathName: "contains1WhenEndGreaterThanOrEqualsToRangeEnd"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "range"
+      valueUuid: "range"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "義"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud87f"
+            valueType: "char"
+            uuid: "range-start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "荽"
+            valueType: "char"
+            uuid: "range-end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "range"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 259
+      expression: "negated"
+      range: "(259,13)-(259,19)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "range.negated"
+      range: "(265,13)-(265,25)"
+      evaluatedAs: false
+    - lineNumber: 268
+      expression: "start <= range.start"
+      range: "(268,16)-(268,35)"
+      evaluatedAs: true
+    - lineNumber: 268
+      expression: "end >= range.end"
+      range: "(268,40)-(268,55)"
+      evaluatedAs: true
+  - testPathName: "contains1WhenEndLessThanRangeEnd"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "range"
+      valueUuid: "range"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "義"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud87f"
+            valueType: "char"
+            uuid: "range-start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud840"
+            valueType: "char"
+            uuid: "range-end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "range"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 259
+      expression: "negated"
+      range: "(259,13)-(259,19)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "range.negated"
+      range: "(265,13)-(265,25)"
+      evaluatedAs: false
+    - lineNumber: 268
+      expression: "start <= range.start"
+      range: "(268,16)-(268,35)"
+      evaluatedAs: true
+    - lineNumber: 268
+      expression: "end >= range.end"
+      range: "(268,40)-(268,55)"
+      evaluatedAs: false
+- method:
+    name: "iterator"
+    sourceCodeSignature: "Iterator<Character> iterator()"
+    returnType: "java.util.Iterator"
+    genericReturnType: "java.lang.Character"
+    instructionFingerprint: "C1A220D4F84906DC928EE4B176CC1BDC"
+  paths:
+  - testPathName: "iteratorTest"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "charRangeCharacterIteratorNotNull"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud85f"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud83d"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "NOT_NULL"
+      valueType: "java.util.Iterator"
+      genericValueType: "java.lang.Character"
+      uuid: "charRangeCharacterIteratorNotNull"
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "F6AF936BB54DE34D3026CE9DC14E321B"
+  paths:
+  - testPathName: "toStringWhenStartNotEqualsEnd"
+    constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isNegated():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.CharRange"
+        method: "isIn"
+        methodParameters:
+        - name: "start"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud87e"
+            valueType: "char"
+            uuid: "start"
+        - name: "end"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\ud87b"
+            valueType: "char"
+            uuid: "end"
+      valueType: "org.apache.commons.lang3.CharRange"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "^\\uECE2-\\uFBAD"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 351
+      expression: "iToString == null"
+      range: "(351,13)-(351,29)"
+      evaluatedAs: true
+    - lineNumber: 353
+      expression: "isNegated()"
+      range: "(353,17)-(353,27)"
+      evaluatedAs: true
+    - lineNumber: 357
+      expression: "start != end"
+      range: "(357,17)-(357,28)"
+      evaluatedAs: true

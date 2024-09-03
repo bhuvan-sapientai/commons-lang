@@ -1,0 +1,2073 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.SystemProperties"
+methods:
+- method:
+    name: "getAwtToolkit"
+    sourceCodeSignature: "String getAwtToolkit()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "429B217A700EA601296F79CBE3FC58B9"
+  paths:
+  - testPathName: "getAwtToolkitTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "awt.toolkit"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getBoolean"
+    sourceCodeSignature: "boolean getBoolean(final String key, final BooleanSupplier\
+      \ defaultIfAbsent)"
+    returnType: "boolean"
+    parameters:
+    - name: "key"
+      type: "java.lang.String"
+    - name: "defaultIfAbsent"
+      type: "java.util.function.BooleanSupplier"
+    instructionFingerprint: "33C0BB220BCF8500C20196645A4B5EB7"
+  paths:
+  - testPathName: "getBooleanWhenDefaultIfAbsentIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.BooleanSupplier.getAsBoolean()\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BooleanSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 277
+      expression: "str == null"
+      range: "(277,16)-(277,26)"
+      evaluatedAs: true
+    - lineNumber: 277
+      expression: "defaultIfAbsent != null"
+      range: "(277,30)-(277,52)"
+      evaluatedAs: true
+  - testPathName: "getBooleanWhenDefaultIfAbsentIsNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.BooleanSupplier.getAsBoolean()\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BooleanSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 277
+      expression: "str == null"
+      range: "(277,16)-(277,26)"
+      evaluatedAs: true
+    - lineNumber: 277
+      expression: "defaultIfAbsent != null"
+      range: "(277,30)-(277,52)"
+      evaluatedAs: false
+  - testPathName: "getBooleanWhenStrIsNullDefaultIfAbsentIsNotNullAndDefaultIfAbsentGetAsBoolean"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean1"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BooleanSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 277
+      expression: "str == null"
+      range: "(277,16)-(277,26)"
+      evaluatedAs: false
+    - lineNumber: 277
+      expression: "str == null ? defaultIfAbsent != null && defaultIfAbsent.getAsBoolean()\
+        \ : Boolean.parseBoolean(str)"
+      range: "(277,16)-(277,114)"
+      evaluatedAs: true
+- method:
+    name: "getFileEncoding"
+    sourceCodeSignature: "String getFileEncoding()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "232E16696B757CB29D5A20ABFE4B1EEA"
+  paths:
+  - testPathName: "getFileEncodingTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "file.encoding"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getFileSeparator"
+    sourceCodeSignature: "String getFileSeparator()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "6AD4B9DBDA454DC62ECAADF8E1DF7403"
+  paths:
+  - testPathName: "getFileSeparatorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "file.separator"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getInt"
+    sourceCodeSignature: "int getInt(final String key, final IntSupplier defaultIfAbsent)"
+    returnType: "int"
+    parameters:
+    - name: "key"
+      type: "java.lang.String"
+    - name: "defaultIfAbsent"
+      type: "java.util.function.IntSupplier"
+    instructionFingerprint: "2C8A9B8016A767FE19C74729F6085801"
+  paths:
+  - testPathName: "getIntWhenStrIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.IntSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 318
+      expression: "str == null"
+      range: "(318,16)-(318,26)"
+      evaluatedAs: false
+  - testPathName: "getIntWhenDefaultIfAbsentIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.IntSupplier.getAsInt() : int"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.IntSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 318
+      expression: "str == null"
+      range: "(318,16)-(318,26)"
+      evaluatedAs: true
+    - lineNumber: 318
+      expression: "defaultIfAbsent != null"
+      range: "(318,30)-(318,52)"
+      evaluatedAs: true
+  - testPathName: "getIntWhenDefaultIfAbsentIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "NULL"
+      valueType: "java.util.function.IntSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 318
+      expression: "str == null"
+      range: "(318,16)-(318,26)"
+      evaluatedAs: true
+    - lineNumber: 318
+      expression: "defaultIfAbsent != null"
+      range: "(318,30)-(318,52)"
+      evaluatedAs: false
+- method:
+    name: "getJavaAwtFonts"
+    sourceCodeSignature: "String getJavaAwtFonts()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "4EE28990D8A9E5FD39E3DBE2A271A833"
+  paths:
+  - testPathName: "getJavaAwtFontsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.awt.fonts"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaAwtGraphicsenv"
+    sourceCodeSignature: "String getJavaAwtGraphicsenv()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "D5C8C40A9876DA3CB3331D8E7E3322AE"
+  paths:
+  - testPathName: "getJavaAwtGraphicsenvTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.awt.graphicsenv"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaAwtHeadless"
+    sourceCodeSignature: "String getJavaAwtHeadless()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "71CB9889289AD3D3ADA2DC41A6CD9E8A"
+  paths:
+  - testPathName: "getJavaAwtHeadlessTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.awt.headless"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaAwtPrinterjob"
+    sourceCodeSignature: "String getJavaAwtPrinterjob()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "7699B7A3EAD6E94E1A2CAEFC0D5ADBF0"
+  paths:
+  - testPathName: "getJavaAwtPrinterjobTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.awt.printerjob"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaClassPath"
+    sourceCodeSignature: "String getJavaClassPath()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "F2DC8021B776C2E714BD02A96384CA56"
+  paths:
+  - testPathName: "getJavaClassPathTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.class.path"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaClassVersion"
+    sourceCodeSignature: "String getJavaClassVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "EB96887A02465AC20D855BC047FE678E"
+  paths:
+  - testPathName: "getJavaClassVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.class.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaCompiler"
+    sourceCodeSignature: "String getJavaCompiler()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "F701A83028220706F6F0F27328CCEF7C"
+  paths:
+  - testPathName: "getJavaCompilerTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.compiler"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaEndorsedDirs"
+    sourceCodeSignature: "String getJavaEndorsedDirs()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "5BC35F1FF54312CF5240EA4EC80D1E51"
+  paths:
+  - testPathName: "getJavaEndorsedDirsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.endorsed.dirs"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaExtDirs"
+    sourceCodeSignature: "String getJavaExtDirs()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "2F908634AD504093C64E7D45A2B8C264"
+  paths:
+  - testPathName: "getJavaExtDirsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.ext.dirs"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaHome"
+    sourceCodeSignature: "String getJavaHome()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "92D5B15A29C7950ABBC4864B5E4CCC4F"
+  paths:
+  - testPathName: "getJavaHomeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.home"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaIoTmpdir"
+    sourceCodeSignature: "String getJavaIoTmpdir()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "49100D676C3887B4833215A00EAAC263"
+  paths:
+  - testPathName: "getJavaIoTmpdirTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.io.tmpdir"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaLibraryPath"
+    sourceCodeSignature: "String getJavaLibraryPath()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "CD83563A54738A5D8105679A28FDF574"
+  paths:
+  - testPathName: "getJavaLibraryPathTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.library.path"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaLocaleProviders"
+    sourceCodeSignature: "String getJavaLocaleProviders()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "187506B0C6D0AE21A6933F2DC7064B3A"
+  paths:
+  - testPathName: "getJavaLocaleProvidersTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.locale.providers"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaRuntimeName"
+    sourceCodeSignature: "String getJavaRuntimeName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "11F013C46883FEFA206E4DCDF34892E5"
+  paths:
+  - testPathName: "getJavaRuntimeNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.runtime.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaRuntimeVersion"
+    sourceCodeSignature: "String getJavaRuntimeVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "AC91DCEFC6DB5E7F47B65A4708AC4248"
+  paths:
+  - testPathName: "getJavaRuntimeVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.runtime.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaSpecificationName"
+    sourceCodeSignature: "String getJavaSpecificationName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "D68679094DB011689D967AB5F9186517"
+  paths:
+  - testPathName: "getJavaSpecificationNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.specification.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaSpecificationVendor"
+    sourceCodeSignature: "String getJavaSpecificationVendor()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "50D412299BF39FC0FA2BE1E1E0AFC37D"
+  paths:
+  - testPathName: "getJavaSpecificationVendorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.specification.vendor"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaSpecificationVersion"
+    sourceCodeSignature: "String getJavaSpecificationVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "D5A94457E6E16048BDC070702BEEA777"
+  paths:
+  - testPathName: "getJavaSpecificationVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.specification.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaUtilPrefsPreferencesFactory"
+    sourceCodeSignature: "String getJavaUtilPrefsPreferencesFactory()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "E919829BE819EF1F10EC7C207E53957A"
+  paths:
+  - testPathName: "getJavaUtilPrefsPreferencesFactoryTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.util.prefs.PreferencesFactory"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVendor"
+    sourceCodeSignature: "String getJavaVendor()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "EEE9937D358622D389AF4C4A1BE2605E"
+  paths:
+  - testPathName: "getJavaVendorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vendor"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVendorUrl"
+    sourceCodeSignature: "String getJavaVendorUrl()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "375E2D020409F022EBCAE5EC1CDE0D6E"
+  paths:
+  - testPathName: "getJavaVendorUrlTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vendor.url"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVersion"
+    sourceCodeSignature: "String getJavaVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "352CDB9F4581C4526A5F9E2CEA032662"
+  paths:
+  - testPathName: "getJavaVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmInfo"
+    sourceCodeSignature: "String getJavaVmInfo()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "0E0555C8556D8442546E8432776FFC36"
+  paths:
+  - testPathName: "getJavaVmInfoTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.info"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmName"
+    sourceCodeSignature: "String getJavaVmName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "6B6C58FA95D6881F5E6A42019B957DAE"
+  paths:
+  - testPathName: "getJavaVmNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmSpecificationName"
+    sourceCodeSignature: "String getJavaVmSpecificationName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "CE9BFFB6904CA2DD683E3C8E7B1CE444"
+  paths:
+  - testPathName: "getJavaVmSpecificationNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.specification.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmSpecificationVendor"
+    sourceCodeSignature: "String getJavaVmSpecificationVendor()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "E9F1424BD023473A465811ABC85B004E"
+  paths:
+  - testPathName: "getJavaVmSpecificationVendorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.specification.vendor"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmSpecificationVersion"
+    sourceCodeSignature: "String getJavaVmSpecificationVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "1BAD72F5A3F04BCFCEFA5E2231069F95"
+  paths:
+  - testPathName: "getJavaVmSpecificationVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.specification.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmVendor"
+    sourceCodeSignature: "String getJavaVmVendor()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "A25868D714EC4AD510527C4D3405B6B3"
+  paths:
+  - testPathName: "getJavaVmVendorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.vendor"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getJavaVmVersion"
+    sourceCodeSignature: "String getJavaVmVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "3F16C6041D735A393D2B115E34C07397"
+  paths:
+  - testPathName: "getJavaVmVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.vm.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getLineSeparator"
+    sourceCodeSignature: "String getLineSeparator()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "EBB1C87D8BF7D0CB7A0C96C45B3292A0"
+  paths:
+  - testPathName: "getLineSeparatorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "line.separator"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getLong"
+    sourceCodeSignature: "long getLong(final String key, final LongSupplier defaultIfAbsent)"
+    returnType: "long"
+    parameters:
+    - name: "key"
+      type: "java.lang.String"
+    - name: "defaultIfAbsent"
+      type: "java.util.function.LongSupplier"
+    instructionFingerprint: "E7A5B85189F6E927373CE4B6469F4BBA"
+  paths:
+  - testPathName: "getLongWhenStrIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.LongSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+    branches:
+    - lineNumber: 694
+      expression: "str == null"
+      range: "(694,16)-(694,26)"
+      evaluatedAs: false
+  - testPathName: "getLongWhenDefaultIfAbsentIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "long1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.LongSupplier.getAsLong() :\
+        \ long"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.LongSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "long1"
+    branches:
+    - lineNumber: 694
+      expression: "str == null"
+      range: "(694,16)-(694,26)"
+      evaluatedAs: true
+    - lineNumber: 694
+      expression: "defaultIfAbsent != null"
+      range: "(694,30)-(694,52)"
+      evaluatedAs: true
+  - testPathName: "getLongWhenDefaultIfAbsentIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      valueUuid: "key"
+    - type: "INPUT"
+      name: "defaultIfAbsent"
+      valueUuid: "defaultIfAbsent"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(key):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "key1"
+      valueType: "java.lang.String"
+      uuid: "key"
+    - sapientType: "NULL"
+      valueType: "java.util.function.LongSupplier"
+      uuid: "defaultIfAbsent"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 694
+      expression: "str == null"
+      range: "(694,16)-(694,26)"
+      evaluatedAs: true
+    - lineNumber: 694
+      expression: "defaultIfAbsent != null"
+      range: "(694,30)-(694,52)"
+      evaluatedAs: false
+- method:
+    name: "getOsArch"
+    sourceCodeSignature: "String getOsArch()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "8F6A29240AD3617C2361F277FE53173D"
+  paths:
+  - testPathName: "getOsArchTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "os.arch"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getOsName"
+    sourceCodeSignature: "String getOsName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "A82D7801F10EE72F6C02A216807F5A92"
+  paths:
+  - testPathName: "getOsNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "os.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getOsVersion"
+    sourceCodeSignature: "String getOsVersion()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "8C958F65A63BC03EB27F15458A906FF2"
+  paths:
+  - testPathName: "getOsVersionTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "os.version"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getPathSeparator"
+    sourceCodeSignature: "String getPathSeparator()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "9BDEB68D5D53425802ED36B768AE3E05"
+  paths:
+  - testPathName: "getPathSeparatorTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "path.separator"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getProperty"
+    sourceCodeSignature: "String getProperty(final String property)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "property"
+      type: "java.lang.String"
+    instructionFingerprint: "68CEA51003515BBE453441E34BE1C523"
+  paths:
+  - testPathName: "getPropertyTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      valueUuid: "property"
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property,supplier):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "property1"
+      valueType: "java.lang.String"
+      uuid: "property"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.function.Suppliers"
+        method: "nul"
+        methodParameters: []
+      valueType: "java.util.function.Supplier"
+      uuid: "supplier"
+- method:
+    name: "getProperty"
+    sourceCodeSignature: "String getProperty(final String property, final Supplier<String>\
+      \ defaultValue)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "property"
+      type: "java.lang.String"
+    - name: "defaultValue"
+      type: "java.util.function.Supplier"
+      genericType: "java.lang.String"
+    instructionFingerprint: "9CEE32F4D96C8FE4BB5BDAB8796DC930"
+  paths:
+  - testPathName: "getProperty1WhenStringUtilsIsEmptyProperty"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      valueUuid: "property"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "property1"
+      valueType: "java.lang.String"
+      uuid: "property"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "object"
+    branches:
+    - lineNumber: 770
+      expression: "StringUtils.isEmpty(property)"
+      range: "(770,17)-(770,45)"
+      evaluatedAs: true
+  - testPathName: "getProperty1WhenStringUtilsNotIsEmptyProperty"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      valueUuid: "property"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "final String value = System.getProperty(property);"
+      lineNumber: 773
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "property"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 770
+      expression: "StringUtils.isEmpty(property)"
+      range: "(770,17)-(770,45)"
+      evaluatedAs: false
+  - testPathName: "getProperty1WhenCaughtSecurityException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      valueUuid: "property"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "property1"
+      valueType: "java.lang.String"
+      uuid: "property"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "object2"
+    branches:
+    - lineNumber: 770
+      expression: "StringUtils.isEmpty(property)"
+      range: "(770,17)-(770,45)"
+      evaluatedAs: true
+    - lineNumber: 775
+      expression: "catch-exception (SecurityException)"
+      range: "(775,11)-(775,47)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+  - testPathName: "getProperty1WhenStringUtilsNotIsEmptyPropertyAndCaughtSecurityException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "property"
+      valueUuid: "property"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "final String value = System.getProperty(property);"
+      lineNumber: 773
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "property"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Supplier"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "object"
+    branches:
+    - lineNumber: 770
+      expression: "StringUtils.isEmpty(property)"
+      range: "(770,17)-(770,45)"
+      evaluatedAs: false
+    - lineNumber: 775
+      expression: "catch-exception (SecurityException)"
+      range: "(775,11)-(775,47)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.SecurityException"
+- method:
+    name: "getUserCountry"
+    sourceCodeSignature: "String getUserCountry()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "DC0EEC0D5DCEA3FA7AEA3F3C2BC5B16A"
+  paths:
+  - testPathName: "getUserCountryTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.country"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getUserDir"
+    sourceCodeSignature: "String getUserDir()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "14C6C9E0E1E75CCE70332B8538ED42F7"
+  paths:
+  - testPathName: "getUserDirTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.dir"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getUserHome"
+    sourceCodeSignature: "String getUserHome()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "0C4AD156A0DB087F53B9219F6F842F14"
+  paths:
+  - testPathName: "getUserHomeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.home"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getUserLanguage"
+    sourceCodeSignature: "String getUserLanguage()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "914900A44AD954431A4E1C65101FCBC5"
+  paths:
+  - testPathName: "getUserLanguageTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.language"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getUserName"
+    sourceCodeSignature: "String getUserName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "FDEABDCA4F74B0DC87358B0D18554BD9"
+  paths:
+  - testPathName: "getUserNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.name"
+      valueType: "java.lang.String"
+      uuid: "property"
+- method:
+    name: "getUserTimezone"
+    sourceCodeSignature: "String getUserTimezone()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "723535E4361E11754F68EDAF68EE0FCA"
+  paths:
+  - testPathName: "getUserTimezoneTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "STATIC"
+      name: "SystemProperties.class"
+      valueUuid: "SystemProperties.class"
+      methodExercised:
+        expression: "getProperty(property):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemProperties"
+      uuid: "SystemProperties.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getProperty1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "user.timezone"
+      valueType: "java.lang.String"
+      uuid: "property"

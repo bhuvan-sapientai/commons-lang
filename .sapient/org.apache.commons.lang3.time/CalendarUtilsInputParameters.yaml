@@ -1,0 +1,697 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.time.CalendarUtils"
+methods:
+- method:
+    name: "getInstance"
+    sourceCodeSignature: "CalendarUtils getInstance()"
+    returnType: "org.apache.commons.lang3.time.CalendarUtils"
+    instructionFingerprint: "DF8046BEEACB67E17ADE5D369F022811"
+  paths:
+  - testPathName: "getInstanceTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "calendarUtils4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "calendarUtils4"
+- method:
+    name: "getInstance"
+    sourceCodeSignature: "CalendarUtils getInstance(final Locale locale)"
+    returnType: "org.apache.commons.lang3.time.CalendarUtils"
+    parameters:
+    - name: "locale"
+      type: "java.util.Locale"
+    instructionFingerprint: "0F95F229CBF2CA4503D323E6A7376D18"
+  paths:
+  - testPathName: "getInstance1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "locale"
+      valueUuid: "locale"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "calendarUtils4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Locale"
+        parameters:
+        - name: "language"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "language1"
+            valueType: "java.lang.String"
+            uuid: "locale-language"
+      valueType: "java.util.Locale"
+      uuid: "locale"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters:
+              - value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.util.Locale"
+                    parameters:
+                    - name: "language"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "language1"
+                        valueType: "java.lang.String"
+                        uuid: "locale-language"
+                  valueType: "java.util.Locale"
+                  uuid: "locale"
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale-language"
+            valueType: "java.util.Locale"
+            uuid: "locale"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "calendarUtils4"
+- method:
+    name: "getDayOfMonth"
+    sourceCodeSignature: "int getDayOfMonth()"
+    returnType: "int"
+    instructionFingerprint: "5F41125A421AD708A9CBC59301AC70E1"
+  paths:
+  - testPathName: "getDayOfMonthTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getDayOfYear"
+    sourceCodeSignature: "int getDayOfYear()"
+    returnType: "int"
+    instructionFingerprint: "C9CA598909FBA8270AA22950218E7C44"
+  paths:
+  - testPathName: "getDayOfYearTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 247
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getMonth"
+    sourceCodeSignature: "int getMonth()"
+    returnType: "int"
+    instructionFingerprint: "E8685C0CA2A699FDA8E6D58AC9511D05"
+  paths:
+  - testPathName: "getMonthTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 8
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getMonthDisplayNames"
+    sourceCodeSignature: "String[] getMonthDisplayNames(final int style)"
+    returnType: "java.lang.String[]"
+    parameters:
+    - name: "style"
+      type: "int"
+    instructionFingerprint: "5EC07C0BBF2B8E4E79CE1F2F3EDC164F"
+  paths:
+  - testPathName: "getMonthDisplayNamesWhenDisplayNamesIsNull"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "style"
+      valueUuid: "style"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Calendar.getDisplayNames(int,int,java.util.Locale)\
+        \ : java.util.Map<java.lang.String,java.lang.Integer>"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "style"
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+    branches:
+    - lineNumber: 122
+      expression: "displayNames == null"
+      range: "(122,13)-(122,32)"
+      evaluatedAs: true
+  - testPathName: "getMonthDisplayNamesWhenDisplayNamesIsNotNull"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "style"
+      valueUuid: "style"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "style"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "1"
+            valueType: "java.lang.String"
+            uuid: "k16"
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "2"
+            valueType: "java.lang.String"
+            uuid: "k17"
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "3"
+            valueType: "java.lang.String"
+            uuid: "k18"
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "4"
+            valueType: "java.lang.String"
+            uuid: "k19"
+          4:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "5"
+            valueType: "java.lang.String"
+            uuid: "k20"
+          5:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "6"
+            valueType: "java.lang.String"
+            uuid: "k21"
+          6:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "7"
+            valueType: "java.lang.String"
+            uuid: "k22"
+          7:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "8"
+            valueType: "java.lang.String"
+            uuid: "k23"
+          8:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "9"
+            valueType: "java.lang.String"
+            uuid: "k24"
+          9:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "10"
+            valueType: "java.lang.String"
+            uuid: "k13"
+          10:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "11"
+            valueType: "java.lang.String"
+            uuid: "k14"
+          11:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "12"
+            valueType: "java.lang.String"
+            uuid: "k15"
+          12:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem13"
+          13:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem14"
+          14:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem15"
+          15:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem16"
+          16:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem17"
+          17:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem18"
+          18:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem19"
+          19:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem20"
+          20:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem21"
+          21:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem22"
+          22:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem23"
+          23:
+            sapientType: "NULL"
+            valueType: "java.lang.String"
+            uuid: "stringArrayItem24"
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+    branches:
+    - lineNumber: 122
+      expression: "displayNames == null"
+      range: "(122,13)-(122,32)"
+      evaluatedAs: false
+- method:
+    name: "getStandaloneLongMonthNames"
+    sourceCodeSignature: "String[] getStandaloneLongMonthNames()"
+    returnType: "java.lang.String[]"
+    instructionFingerprint: "1B082C3B1FA904508F635DCCAE3FC476"
+  paths:
+  - testPathName: "getStandaloneLongMonthNamesTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getMonthDisplayNames(style):stringArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32770
+      valueType: "int"
+      uuid: "style"
+- method:
+    name: "getStandaloneShortMonthNames"
+    sourceCodeSignature: "String[] getStandaloneShortMonthNames()"
+    returnType: "java.lang.String[]"
+    instructionFingerprint: "90EA44D5CA8AFD2D5140ED6EA4E003C7"
+  paths:
+  - testPathName: "getStandaloneShortMonthNamesTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getMonthDisplayNames(style):stringArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32769
+      valueType: "int"
+      uuid: "style"
+- method:
+    name: "getYear"
+    sourceCodeSignature: "int getYear()"
+    returnType: "int"
+    instructionFingerprint: "8F3E1B2480AD53328C5D99512905600A"
+  paths:
+  - testPathName: "getYearTest"
+    constructorSignature: "<init>(java.util.Calendar,java.util.Locale) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.time.CalendarUtils"
+        parameters:
+        - name: "calendar"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.util.Calendar"
+              method: "getInstance"
+              methodParameters: []
+            valueType: "java.util.Calendar"
+            uuid: "calendar3"
+        - name: "locale"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Locale"
+              parameters:
+              - name: "language"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "language1"
+                  valueType: "java.lang.String"
+                  uuid: "locale3-language"
+            valueType: "java.util.Locale"
+            uuid: "locale3"
+      valueType: "org.apache.commons.lang3.time.CalendarUtils"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2024
+      valueType: "int"
+      uuid: "int1"

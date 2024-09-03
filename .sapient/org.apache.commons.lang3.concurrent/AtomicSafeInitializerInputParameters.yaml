@@ -1,0 +1,76 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer"
+methods:
+- method:
+    name: "builder"
+    sourceCodeSignature: "<T> Builder<AtomicSafeInitializer<T>, T> builder()"
+    returnType: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer$Builder"
+    genericReturnType: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer<java.lang.Object>,java.lang.Object"
+    instructionFingerprint: "47EC33994A0A1B8B390C6C1B32AEEC58"
+  paths:
+  - testPathName: "builderTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "atomicSafeInitializerBuilder"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer$Builder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer$Builder"
+      genericValueType: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer<java.lang.Object>,java.lang.Object"
+      uuid: "atomicSafeInitializerBuilder"
+- method:
+    name: "getTypedException"
+    sourceCodeSignature: "ConcurrentException getTypedException(Exception e)"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "e"
+      type: "java.lang.Exception"
+    instructionFingerprint: "9F480E5456D358B95DBDB7F7EFA52EA8"
+  paths:
+  - testPathName: "getTypedException1Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "e"
+      valueUuid: "e"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.AtomicSafeInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Exception"
+        parameters: []
+      valueType: "java.lang.Exception"
+      uuid: "e"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Exception"
+              parameters: []
+            valueType: "java.lang.Exception"
+            uuid: "e"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"

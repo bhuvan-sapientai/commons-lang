@@ -1,0 +1,4882 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.exception.ExceptionUtils"
+methods:
+- method:
+    name: "asRuntimeException"
+    sourceCodeSignature: "<T extends RuntimeException> T asRuntimeException(final\
+      \ Throwable throwable)"
+    returnType: "java.lang.RuntimeException"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "55E1FEB0D586EC6A931217DFD219C99E"
+  paths:
+  - testPathName: "asRuntimeExceptionThrowsThrowable"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "forEach"
+    sourceCodeSignature: "void forEach(final Throwable throwable, final Consumer<Throwable>\
+      \ consumer)"
+    returnType: "void"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "consumer"
+      type: "java.util.function.Consumer"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "D594F9751F2530D12FE2093C16F82CB6"
+  paths:
+  - testPathName: "forEachTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "consumer"
+      valueUuid: "consumer"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "stream(throwable):stream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.stream.Stream.forEach(java.util.function.Consumer<java.lang.Throwable>)\
+        \ : void"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "consumer"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.util.stream.Stream"
+        method: "empty"
+        methodParameters: []
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "getCause"
+    sourceCodeSignature: "Throwable getCause(final Throwable throwable)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "AAA7A6877FCEC426CA47661BD373FAC2"
+  paths:
+  - testPathName: "getCauseTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getCause(throwable,methodNames):throwable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "methodNames"
+- method:
+    name: "getCause"
+    sourceCodeSignature: "Throwable getCause(final Throwable throwable, String[] methodNames)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "methodNames"
+      type: "java.lang.String[]"
+    instructionFingerprint: "67E576D65557FC1E10DEFBBFBBA0AD89"
+  paths:
+  - testPathName: "getCause1WhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "methodNames"
+      valueUuid: "methodNames"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "methodNames"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 216
+      expression: "throwable == null"
+      range: "(216,13)-(216,29)"
+      evaluatedAs: true
+  - testPathName: "getCause1WhenCauseIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "methodNames"
+      valueUuid: "methodNames"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable-cause"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable-cause"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "methodNames"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable-cause"
+    branches:
+    - lineNumber: 216
+      expression: "throwable == null"
+      range: "(216,13)-(216,29)"
+      evaluatedAs: false
+    - lineNumber: 219
+      expression: "methodNames == null"
+      range: "(219,13)-(219,31)"
+      evaluatedAs: true
+    - lineNumber: 221
+      expression: "cause != null"
+      range: "(221,17)-(221,29)"
+      evaluatedAs: true
+  - testPathName: "getCause1WhenThrowableIsAssignableFromMethodGetReturnType"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "methodNames"
+      valueUuid: "methodNames"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "methodNames"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 216
+      expression: "throwable == null"
+      range: "(216,13)-(216,29)"
+      evaluatedAs: false
+    - lineNumber: 219
+      expression: "methodNames == null"
+      range: "(219,13)-(219,31)"
+      evaluatedAs: true
+    - lineNumber: 221
+      expression: "cause != null"
+      range: "(221,17)-(221,29)"
+      evaluatedAs: false
+    - lineNumber: 238
+      expression: "methodName != null"
+      range: "(238,13)-(238,30)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 246
+      expression: "method != null"
+      range: "(246,17)-(246,30)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 246
+      expression: "Throwable.class.isAssignableFrom(method.getReturnType())"
+      range: "(246,35)-(246,90)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "getCause1WhenCaughtIllegalAccessExceptionOrIllegalArgumentExceptionOrInvocationTargetException"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "methodNames"
+      valueUuid: "methodNames"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
+        \ : java.lang.reflect.Method"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.String[]"
+      uuid: "methodNames"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 216
+      expression: "throwable == null"
+      range: "(216,13)-(216,29)"
+      evaluatedAs: false
+    - lineNumber: 219
+      expression: "methodNames == null"
+      range: "(219,13)-(219,31)"
+      evaluatedAs: true
+    - lineNumber: 221
+      expression: "cause != null"
+      range: "(221,17)-(221,29)"
+      evaluatedAs: false
+    - lineNumber: 238
+      expression: "methodName != null"
+      range: "(238,13)-(238,30)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 242
+      expression: "catch-exception (NoSuchMethodException | SecurityException)"
+      range: "(242,15)-(242,76)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 246
+      expression: "method != null"
+      range: "(246,17)-(246,30)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 246
+      expression: "Throwable.class.isAssignableFrom(method.getReturnType())"
+      range: "(246,35)-(246,90)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    - lineNumber: 249
+      expression: "catch-exception (IllegalAccessException | IllegalArgumentException\
+        \ | InvocationTargetException)"
+      range: "(249,19)-(249,116)"
+      evaluatedAs: true
+      internalMethodName: "getCauseUsingMethodName"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+    catchBlockExercised:
+      idExternalInstruction: 4
+      id: 2
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+      - "java.lang.IllegalArgumentException"
+      - "java.lang.reflect.InvocationTargetException"
+- method:
+    name: "getDefaultCauseMethodNames"
+    sourceCodeSignature: "String[] getDefaultCauseMethodNames()"
+    returnType: "java.lang.String[]"
+    instructionFingerprint: "72CBF7EEEFE0C9E2E291D82C0DCFB9E3"
+  paths:
+  - testPathName: "getDefaultCauseMethodNamesTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getCause"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item0"
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getNextException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item1"
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getTargetException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item2"
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item3"
+          4:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getSourceException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item4"
+          5:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getRootCause"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item5"
+          6:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getCausedByException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item6"
+          7:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getNested"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item7"
+          8:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getLinkedException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item8"
+          9:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getNestedException"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item9"
+          10:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getLinkedCause"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item10"
+          11:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "getThrowable"
+            valueType: "java.lang.String"
+            uuid: "stringArray2-item11"
+      valueType: "java.lang.String[]"
+      uuid: "stringArray2"
+- method:
+    name: "getMessage"
+    sourceCodeSignature: "String getMessage(final Throwable th)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "th"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "ADE1D48583F8E6A0634A2376C7D0F30D"
+  paths:
+  - testPathName: "getMessageWhenThIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "th"
+      valueUuid: "th"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "th"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 283
+      expression: "th == null"
+      range: "(283,13)-(283,22)"
+      evaluatedAs: true
+  - testPathName: "getMessageWhenThIsNotNull"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "th"
+      valueUuid: "th"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string4"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.ClassUtils.getShortClassName(java.lang.Throwable,null)\
+        \ : java.lang.String"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "java.lang.String"
+            uuid: "th-message"
+      valueType: "java.lang.Throwable"
+      uuid: "th"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B: A"
+      valueType: "java.lang.String"
+      uuid: "string4"
+    branches:
+    - lineNumber: 283
+      expression: "th == null"
+      range: "(283,13)-(283,22)"
+      evaluatedAs: false
+- method:
+    name: "getRootCause"
+    sourceCodeSignature: "Throwable getRootCause(final Throwable throwable)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "0836478A2F7946567075569F1E1D9543"
+  paths:
+  - testPathName: "getRootCauseWhenListIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowableList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "list"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 309
+      expression: "list.isEmpty()"
+      range: "(309,16)-(309,29)"
+      evaluatedAs: true
+  - testPathName: "getRootCauseWhenListNotIsEmpty"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowableList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Throwable"
+            parameters: []
+          valueType: "java.lang.Throwable"
+          uuid: "throwable2"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "list"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 309
+      expression: "list.isEmpty()"
+      range: "(309,16)-(309,29)"
+      evaluatedAs: false
+- method:
+    name: "getRootCauseMessage"
+    sourceCodeSignature: "String getRootCauseMessage(final Throwable throwable)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "3916A2D74A38C64DF37B8E7823C49AA4"
+  paths:
+  - testPathName: "getRootCauseMessageWhenRootIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getRootCause(throwable):throwable2"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getMessage(throwable):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getMessage1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 325
+      expression: "root == null"
+      range: "(325,27)-(325,38)"
+      evaluatedAs: true
+  - testPathName: "getRootCauseMessageWhenRootIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getRootCause(throwable):throwable2"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getMessage(throwable2):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getMessage1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 325
+      expression: "root == null"
+      range: "(325,27)-(325,38)"
+      evaluatedAs: false
+- method:
+    name: "getRootCauseStackTrace"
+    sourceCodeSignature: "String[] getRootCauseStackTrace(final Throwable throwable)"
+    returnType: "java.lang.String[]"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "D337832B0647E3284E9AEBE45AE7A5F1"
+  paths:
+  - testPathName: "getRootCauseStackTraceTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getRootCauseStackTraceList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "objectArray"
+- method:
+    name: "getRootCauseStackTraceList"
+    sourceCodeSignature: "List<String> getRootCauseStackTraceList(final Throwable\
+      \ throwable)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.String"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "7A89EAEB12F8FDAD2E3E81B007F963B9"
+  paths:
+  - testPathName: "getRootCauseStackTraceListWhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "list"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list"
+    branches:
+    - lineNumber: 358
+      expression: "throwable == null"
+      range: "(358,13)-(358,29)"
+      evaluatedAs: true
+  - testPathName: "getRootCauseStackTraceListWhenIEqualsCountMinus1"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackFrameList(throwable2):list"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackFrameList(throwable3):list2"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "removeCommonFrames(list,list2):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayList"
+    disabled: false
+    failureReason:
+      reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable3"
+          1:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable4"
+            nameForMock: "throwable4"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list2"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable3"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: "throwable4"
+          valueType: "java.lang.String"
+          uuid: "string"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "arrayList"
+    branches:
+    - lineNumber: 358
+      expression: "throwable == null"
+      range: "(358,13)-(358,29)"
+      evaluatedAs: false
+    - lineNumber: 365
+      expression: "--i >= 0"
+      range: "(365,29)-(365,36)"
+      evaluatedAs: true
+    - lineNumber: 367
+      expression: "i != 0"
+      range: "(367,17)-(367,22)"
+      evaluatedAs: true
+    - lineNumber: 371
+      expression: "i == count - 1"
+      range: "(371,17)-(371,30)"
+      evaluatedAs: true
+- method:
+    name: "getStackFrameList"
+    sourceCodeSignature: "List<String> getStackFrameList(final Throwable throwable)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.String"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "6ED99088064D5D933B528E40E2843962"
+  paths:
+  - testPathName: "getStackFrameListWhenTokenSubstring0AtTrimIsEmpty"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackTrace(throwable):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayList"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "while (frames.hasMoreTokens()) {"
+      lineNumber: 399
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: frames - Method: hasMoreTokens"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getStackTrace1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: " at"
+          valueType: "java.lang.String"
+          uuid: "string3"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "arrayList"
+    branches:
+    - lineNumber: 399
+      expression: "frames.hasMoreTokens()"
+      range: "(399,16)-(399,37)"
+      evaluatedAs: true
+    - lineNumber: 403
+      expression: "at != NOT_FOUND"
+      range: "(403,17)-(403,31)"
+      evaluatedAs: true
+    - lineNumber: 403
+      expression: "token.substring(0, at).trim().isEmpty()"
+      range: "(403,36)-(403,74)"
+      evaluatedAs: true
+  - testPathName: "getStackFrameListWhenNotTraceStarted"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackTrace(throwable):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayList"
+    disabled: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "while (frames.hasMoreTokens()) {"
+      lineNumber: 399
+      details: "A variable could not be isolated/mocked when calling a method - Variable\
+        \ name: frames - Method: hasMoreTokens"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getStackTrace1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "arrayList"
+    branches:
+    - lineNumber: 399
+      expression: "frames.hasMoreTokens()"
+      range: "(399,16)-(399,37)"
+      evaluatedAs: true
+    - lineNumber: 403
+      expression: "at != NOT_FOUND"
+      range: "(403,17)-(403,31)"
+      evaluatedAs: true
+    - lineNumber: 403
+      expression: "token.substring(0, at).trim().isEmpty()"
+      range: "(403,36)-(403,74)"
+      evaluatedAs: false
+    - lineNumber: 406
+      expression: "traceStarted"
+      range: "(406,24)-(406,35)"
+      evaluatedAs: false
+- method:
+    name: "getStackFrames"
+    sourceCodeSignature: "String[] getStackFrames(final String stackTrace)"
+    returnType: "java.lang.String[]"
+    parameters:
+    - name: "stackTrace"
+      type: "java.lang.String"
+    instructionFingerprint: "F7255F176FC93E92140325A1186A698E"
+  paths:
+  - testPathName: "getStackFramesWhenFramesHasMoreTokens"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "stackTrace"
+      valueUuid: "stackTrace"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "stackTrace1"
+      valueType: "java.lang.String"
+      uuid: "stackTrace"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "stackTrace1"
+            valueType: "java.lang.String"
+            uuid: "objectArray-item0"
+      valueType: "java.lang.String[]"
+      uuid: "objectArray"
+    branches:
+    - lineNumber: 425
+      expression: "frames.hasMoreTokens()"
+      range: "(425,16)-(425,37)"
+      evaluatedAs: true
+- method:
+    name: "getStackFrames"
+    sourceCodeSignature: "String[] getStackFrames(final Throwable throwable)"
+    returnType: "java.lang.String[]"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "053EABB35A6C4CB7511A8FEFDE255706"
+  paths:
+  - testPathName: "getStackFrames1WhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray2"
+    branches:
+    - lineNumber: 445
+      expression: "throwable == null"
+      range: "(445,13)-(445,29)"
+      evaluatedAs: true
+  - testPathName: "getStackFrames1WhenThrowableIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackTrace(throwable):string"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getStackFrames(string):stringArray2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stringArray2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getStackTrace1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.String[]"
+      uuid: "stringArray2"
+    branches:
+    - lineNumber: 445
+      expression: "throwable == null"
+      range: "(445,13)-(445,29)"
+      evaluatedAs: false
+- method:
+    name: "getStackTrace"
+    sourceCodeSignature: "String getStackTrace(final Throwable throwable)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "A378126BDC1C6180BBEABABEAEC7B647"
+  paths:
+  - testPathName: "getStackTraceWhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 464
+      expression: "throwable == null"
+      range: "(464,13)-(464,29)"
+      evaluatedAs: true
+  - testPathName: "getStackTraceWhenThrowableIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 464
+      expression: "throwable == null"
+      range: "(464,13)-(464,29)"
+      evaluatedAs: false
+- method:
+    name: "getThrowableCount"
+    sourceCodeSignature: "int getThrowableCount(final Throwable throwable)"
+    returnType: "int"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "CE15FDD59B046BDC52E5B3C344BF5170"
+  paths:
+  - testPathName: "getThrowableCountTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowableList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "list"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+- method:
+    name: "getThrowableList"
+    sourceCodeSignature: "List<Throwable> getThrowableList(Throwable throwable)"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "B591464813F01F7C12CF0F011E427889"
+  paths:
+  - testPathName: "getThrowableListWhenListNotContainsThrowable"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "arrayList"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.Throwable"
+            uuid: "throwable-cause"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Throwable"
+            parameters:
+            - name: "cause"
+              value:
+                sapientType: "NULL"
+                valueType: "java.lang.Throwable"
+                uuid: "throwable-cause"
+          valueType: "java.lang.Throwable"
+          uuid: "throwable"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "arrayList"
+    branches:
+    - lineNumber: 513
+      expression: "throwable != null"
+      range: "(513,16)-(513,32)"
+      evaluatedAs: true
+    - lineNumber: 513
+      expression: "!list.contains(throwable)"
+      range: "(513,37)-(513,61)"
+      evaluatedAs: true
+- method:
+    name: "getThrowables"
+    sourceCodeSignature: "Throwable[] getThrowables(final Throwable throwable)"
+    returnType: "java.lang.Throwable[]"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "E89568F4FFF6EA8EC9A78B9584450519"
+  paths:
+  - testPathName: "getThrowablesTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowableList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "objectArray"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "list"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "objectArray"
+- method:
+    name: "hasCause"
+    sourceCodeSignature: "boolean hasCause(Throwable chain, final Class<? extends\
+      \ Throwable> type)"
+    returnType: "boolean"
+    parameters:
+    - name: "chain"
+      type: "java.lang.Throwable"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "? extends java.lang.Throwable"
+    instructionFingerprint: "1A539736897CCD193DD0E81DCA56CAA4"
+  paths:
+  - testPathName: "hasCauseWhenTypeIsInstanceChain"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chain"
+      valueUuid: "chain"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.UndeclaredThrowableException"
+      uuid: "chain"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 558
+      expression: "chain instanceof UndeclaredThrowableException"
+      range: "(558,13)-(558,57)"
+      evaluatedAs: true
+    - lineNumber: 561
+      expression: "type.isInstance(chain)"
+      range: "(561,16)-(561,37)"
+      evaluatedAs: true
+  - testPathName: "hasCauseWhenTypeNotIsInstanceChain"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "chain"
+      valueUuid: "chain"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInstance(java.lang.Throwable)\
+        \ : boolean"
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.UndeclaredThrowableException"
+      uuid: "chain"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 558
+      expression: "chain instanceof UndeclaredThrowableException"
+      range: "(558,13)-(558,57)"
+      evaluatedAs: true
+    - lineNumber: 561
+      expression: "type.isInstance(chain)"
+      range: "(561,16)-(561,37)"
+      evaluatedAs: false
+- method:
+    name: "indexOfThrowable"
+    sourceCodeSignature: "int indexOfThrowable(final Throwable throwable, final Class<?\
+      \ extends Throwable> clazz)"
+    returnType: "int"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "? extends java.lang.Throwable"
+    instructionFingerprint: "38A93C86062CC7AC6258DF14E55446E9"
+  paths:
+  - testPathName: "indexOfThrowableWhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowableWhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowableWhenTypeEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "fromIndex"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 593
+      expression: "i < throwables.length"
+      range: "(593,37)-(593,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 594
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(594,21)-(594,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowableWhenTypeNotEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 593
+      expression: "i < throwables.length"
+      range: "(593,37)-(593,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 594
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(594,21)-(594,57)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "indexOfThrowable"
+    sourceCodeSignature: "int indexOfThrowable(final Throwable throwable, final Class<?\
+      \ extends Throwable> clazz, final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "? extends java.lang.Throwable"
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "97340624D1377B0EE785551B679C9FD0"
+  paths:
+  - testPathName: "indexOfThrowable1WhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowable1WhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowable1WhenTypeEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 593
+      expression: "i < throwables.length"
+      range: "(593,37)-(593,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 594
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(594,21)-(594,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfThrowable1WhenTypeNotEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 593
+      expression: "i < throwables.length"
+      range: "(593,37)-(593,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 594
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(594,21)-(594,57)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "indexOfType"
+    sourceCodeSignature: "int indexOfType(final Throwable throwable, final Class<?\
+      \ extends Throwable> type)"
+    returnType: "int"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "? extends java.lang.Throwable"
+    instructionFingerprint: "CC145D7846FE48143860C573A833D6C1"
+  paths:
+  - testPathName: "indexOfTypeWhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfTypeWhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfTypeWhenTypeIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "fromIndex"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 587
+      expression: "i < throwables.length"
+      range: "(587,37)-(587,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 588
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(588,21)-(588,67)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfTypeWhenTypeNotIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 587
+      expression: "i < throwables.length"
+      range: "(587,37)-(587,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 588
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(588,21)-(588,67)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "indexOfType"
+    sourceCodeSignature: "int indexOfType(final Throwable throwable, final Class<?\
+      \ extends Throwable> type, final int fromIndex)"
+    returnType: "int"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "? extends java.lang.Throwable"
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "6CE78FD76DE43D6D37BCBE09829499DA"
+  paths:
+  - testPathName: "indexOfType1WhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfType1WhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfType1WhenTypeIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int1"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 587
+      expression: "i < throwables.length"
+      range: "(587,37)-(587,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 588
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(588,21)-(588,67)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "indexOfType1WhenTypeNotIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 576
+      expression: "throwable == null"
+      range: "(576,13)-(576,29)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 576
+      expression: "type == null"
+      range: "(576,34)-(576,45)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 579
+      expression: "fromIndex < 0"
+      range: "(579,13)-(579,25)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 583
+      expression: "fromIndex >= throwables.length"
+      range: "(583,13)-(583,42)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    - lineNumber: 586
+      expression: "subclass"
+      range: "(586,13)-(586,20)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 587
+      expression: "i < throwables.length"
+      range: "(587,37)-(587,57)"
+      evaluatedAs: true
+      internalMethodName: "indexOf"
+    - lineNumber: 588
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(588,21)-(588,67)"
+      evaluatedAs: false
+      internalMethodName: "indexOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "isChecked"
+    sourceCodeSignature: "boolean isChecked(final Throwable throwable)"
+    returnType: "boolean"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "2478E3772E812E45379892A49AE8EDE9"
+  paths:
+  - testPathName: "isCheckedWhenThrowableNotInstanceOfRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 695
+      expression: "throwable != null"
+      range: "(695,16)-(695,32)"
+      evaluatedAs: true
+    - lineNumber: 695
+      expression: "!(throwable instanceof Error)"
+      range: "(695,37)-(695,65)"
+      evaluatedAs: true
+    - lineNumber: 695
+      expression: "!(throwable instanceof RuntimeException)"
+      range: "(695,70)-(695,109)"
+      evaluatedAs: true
+  - testPathName: "isCheckedWhenThrowableInstanceOfRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 695
+      expression: "throwable != null"
+      range: "(695,16)-(695,32)"
+      evaluatedAs: true
+    - lineNumber: 695
+      expression: "!(throwable instanceof Error)"
+      range: "(695,37)-(695,65)"
+      evaluatedAs: true
+    - lineNumber: 695
+      expression: "!(throwable instanceof RuntimeException)"
+      range: "(695,70)-(695,109)"
+      evaluatedAs: false
+- method:
+    name: "isUnchecked"
+    sourceCodeSignature: "boolean isUnchecked(final Throwable throwable)"
+    returnType: "boolean"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "71D1CBCB0280BD0F97A583B7D652AD1A"
+  paths:
+  - testPathName: "isUncheckedWhenThrowableInstanceOfRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 707
+      expression: "throwable != null"
+      range: "(707,16)-(707,32)"
+      evaluatedAs: true
+    - lineNumber: 707
+      expression: "throwable instanceof Error"
+      range: "(707,38)-(707,63)"
+      evaluatedAs: false
+    - lineNumber: 707
+      expression: "throwable instanceof RuntimeException"
+      range: "(707,68)-(707,104)"
+      evaluatedAs: true
+  - testPathName: "isUncheckedWhenThrowableNotInstanceOfRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 707
+      expression: "throwable != null"
+      range: "(707,16)-(707,32)"
+      evaluatedAs: true
+    - lineNumber: 707
+      expression: "throwable instanceof Error"
+      range: "(707,38)-(707,63)"
+      evaluatedAs: false
+    - lineNumber: 707
+      expression: "throwable instanceof RuntimeException"
+      range: "(707,68)-(707,104)"
+      evaluatedAs: false
+- method:
+    name: "printRootCauseStackTrace"
+    sourceCodeSignature: "void printRootCauseStackTrace(final Throwable throwable)"
+    returnType: "void"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "F07048971F1C627AFC34862FCDBD2505"
+  paths:
+  - testPathName: "printRootCauseStackTraceTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "printRootCauseStackTrace(throwable,printStream):void"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "java.lang.System"
+        fieldName: "err"
+      valueType: "java.io.PrintStream"
+      uuid: "printStream"
+    - sapientType: "VOID"
+      uuid: "void2"
+- method:
+    name: "printRootCauseStackTrace"
+    sourceCodeSignature: "void printRootCauseStackTrace(final Throwable throwable,\
+      \ final PrintStream printStream)"
+    returnType: "void"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "printStream"
+      type: "java.io.PrintStream"
+    instructionFingerprint: "FE13F04CD74344E39BB2FDF18DDD77EF"
+  paths:
+  - testPathName: "printRootCauseStackTrace1WhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "printStream"
+      valueUuid: "printStream"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.PrintStream"
+        parameters:
+        - name: "out"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.io.ByteArrayOutputStream"
+              parameters: []
+            valueType: "java.io.OutputStream"
+            uuid: "printStream-out"
+      valueType: "java.io.PrintStream"
+      uuid: "printStream"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 753
+      expression: "throwable == null"
+      range: "(753,13)-(753,29)"
+      evaluatedAs: true
+  - testPathName: "printRootCauseStackTrace1WhenThrowableIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "printStream"
+      valueUuid: "printStream"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getRootCauseStackTraceList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.PrintStream"
+        parameters:
+        - name: "out"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.io.ByteArrayOutputStream"
+              parameters: []
+            valueType: "java.io.OutputStream"
+            uuid: "printStream-out"
+      valueType: "java.io.PrintStream"
+      uuid: "printStream"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getRootCauseStackTraceListItem1"
+          valueType: "java.lang.String"
+          uuid: "string"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list"
+    - sapientType: "VOID"
+      uuid: "void4"
+    branches:
+    - lineNumber: 753
+      expression: "throwable == null"
+      range: "(753,13)-(753,29)"
+      evaluatedAs: false
+- method:
+    name: "printRootCauseStackTrace"
+    sourceCodeSignature: "void printRootCauseStackTrace(final Throwable throwable,\
+      \ final PrintWriter printWriter)"
+    returnType: "void"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "printWriter"
+      type: "java.io.PrintWriter"
+    instructionFingerprint: "5536DF4CF536543E2638E204F81CEB94"
+  paths:
+  - testPathName: "printRootCauseStackTrace2WhenThrowableIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "printWriter"
+      valueUuid: "printWriter"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.PrintWriter"
+        parameters:
+        - name: "out"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.io.Writer"
+              method: "nullWriter"
+              methodParameters: []
+            valueType: "java.io.Writer"
+            uuid: "printWriter-out"
+      valueType: "java.io.PrintWriter"
+      uuid: "printWriter"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 782
+      expression: "throwable == null"
+      range: "(782,13)-(782,29)"
+      evaluatedAs: true
+  - testPathName: "printRootCauseStackTrace2WhenThrowableIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "printWriter"
+      valueUuid: "printWriter"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getRootCauseStackTraceList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void4"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.PrintWriter"
+        parameters:
+        - name: "out"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "java.io.Writer"
+              method: "nullWriter"
+              methodParameters: []
+            valueType: "java.io.Writer"
+            uuid: "printWriter-out"
+      valueType: "java.io.PrintWriter"
+      uuid: "printWriter"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "string"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list"
+    - sapientType: "VOID"
+      uuid: "void4"
+    branches:
+    - lineNumber: 782
+      expression: "throwable == null"
+      range: "(782,13)-(782,29)"
+      evaluatedAs: false
+- method:
+    name: "removeCommonFrames"
+    sourceCodeSignature: "void removeCommonFrames(final List<String> causeFrames,\
+      \ final List<String> wrapperFrames)"
+    returnType: "void"
+    parameters:
+    - name: "causeFrames"
+      type: "java.util.List"
+      genericType: "java.lang.String"
+    - name: "wrapperFrames"
+      type: "java.util.List"
+      genericType: "java.lang.String"
+    instructionFingerprint: "B0C9A0913A561A93C21AFB9E2CF36D0F"
+  paths:
+  - testPathName: "removeCommonFramesWhenCauseFrameEqualsWrapperFrame"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "causeFrames"
+      valueUuid: "causeFrames"
+    - type: "INPUT"
+      name: "wrapperFrames"
+      valueUuid: "wrapperFrames"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "causeFrames"
+      valueUuid: "list3"
+      originalValueUuid: "causeFrames"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: "causeFramesItem1"
+          valueType: "java.lang.String"
+          uuid: "string3"
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: ""
+          valueType: "java.lang.String"
+          uuid: "string"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "causeFrames"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: ""
+          valueType: "java.lang.String"
+          uuid: "string2"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "wrapperFrames"
+    - sapientType: "VOID"
+      uuid: "void"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: "causeFramesItem1"
+          valueType: "java.lang.String"
+          uuid: "causeFrames-item0"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "list3"
+    branches:
+    - lineNumber: 803
+      expression: "causeFrameIndex >= 0"
+      range: "(803,16)-(803,35)"
+      evaluatedAs: true
+    - lineNumber: 803
+      expression: "wrapperFrameIndex >= 0"
+      range: "(803,40)-(803,61)"
+      evaluatedAs: true
+    - lineNumber: 808
+      expression: "causeFrame.equals(wrapperFrame)"
+      range: "(808,17)-(808,47)"
+      evaluatedAs: true
+- method:
+    name: "rethrow"
+    sourceCodeSignature: "<T> T rethrow(final Throwable throwable)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "BCF69782921D2E4401839586911E2671"
+  paths:
+  - testPathName: "rethrowThrowsThrowable"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "stream"
+    sourceCodeSignature: "Stream<Throwable> stream(final Throwable throwable)"
+    returnType: "java.util.stream.Stream"
+    genericReturnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "33A5B36ED2E7A0A6B3564B30ECBF9DB3"
+  paths:
+  - testPathName: "streamTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowableList(throwable):list"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "stream"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Throwable"
+      uuid: "list"
+    - sapientType: "MOCK"
+      valueType: "java.util.stream.Stream"
+      uuid: "stream"
+- method:
+    name: "throwableOfThrowable"
+    sourceCodeSignature: "<T extends Throwable> T throwableOfThrowable(final Throwable\
+      \ throwable, final Class<T> clazz)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "14E4FF8C2187F40F3CBDBBDBBF6DC350"
+  paths:
+  - testPathName: "throwableOfThrowableWhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowableWhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowableWhenTypeEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 933
+      expression: "i < throwables.length"
+      range: "(933,37)-(933,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 934
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(934,21)-(934,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowableWhenTypeNotEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable3"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 933
+      expression: "i < throwables.length"
+      range: "(933,37)-(933,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 934
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(934,21)-(934,57)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "throwableOfThrowable"
+    sourceCodeSignature: "<T extends Throwable> T throwableOfThrowable(final Throwable\
+      \ throwable, final Class<T> clazz, final int fromIndex)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "clazz"
+      type: "java.lang.Class"
+      genericType: "java.lang.Throwable"
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "5B100E3478A7D8244C95656003BB7134"
+  paths:
+  - testPathName: "throwableOfThrowable1WhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowable1WhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowable1WhenTypeEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 933
+      expression: "i < throwables.length"
+      range: "(933,37)-(933,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 934
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(934,21)-(934,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfThrowable1WhenTypeNotEqualsIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "clazz"
+      valueUuid: "clazz"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.equals(java.lang.Class<?>) : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "clazz"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable3"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 933
+      expression: "i < throwables.length"
+      range: "(933,37)-(933,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 934
+      expression: "type.equals(throwables[i].getClass())"
+      range: "(934,21)-(934,57)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "throwableOfType"
+    sourceCodeSignature: "<T extends Throwable> T throwableOfType(final Throwable\
+      \ throwable, final Class<T> type)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "java.lang.Throwable"
+    instructionFingerprint: "E20FE91192A2DBC4F414A3D4D09AF21B"
+  paths:
+  - testPathName: "throwableOfTypeWhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfTypeWhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfTypeWhenTypeIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 927
+      expression: "i < throwables.length"
+      range: "(927,37)-(927,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 928
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(928,21)-(928,67)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfTypeWhenTypeNotIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable3"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 927
+      expression: "i < throwables.length"
+      range: "(927,37)-(927,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 928
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(928,21)-(928,67)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "throwableOfType"
+    sourceCodeSignature: "<T extends Throwable> T throwableOfType(final Throwable\
+      \ throwable, final Class<T> type, final int fromIndex)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    - name: "type"
+      type: "java.lang.Class"
+      genericType: "java.lang.Throwable"
+    - name: "fromIndex"
+      type: "int"
+    instructionFingerprint: "D903AA973E78009CE9842AFD9A5BCFF0"
+  paths:
+  - testPathName: "throwableOfType1WhenTypeIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfType1WhenFromIndexGreaterThanOrEqualsToThrowablesLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfType1WhenTypeIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "object"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 927
+      expression: "i < throwables.length"
+      range: "(927,37)-(927,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 928
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(928,21)-(928,67)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+  - testPathName: "throwableOfType1WhenTypeNotIsAssignableFromIIndexOfThrowablesGetClass"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "INPUT"
+      name: "type"
+      valueUuid: "type"
+    - type: "INPUT"
+      name: "fromIndex"
+      valueUuid: "fromIndex"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "getThrowables(throwable):throwableArray"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable3"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isAssignableFrom(java.lang.Class<?>)\
+        \ : boolean"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Throwable"
+      uuid: "type"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "fromIndex"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.Throwable[]"
+      uuid: "throwableArray"
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "throwable3"
+    branches:
+    - lineNumber: 916
+      expression: "throwable == null"
+      range: "(916,13)-(916,29)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 916
+      expression: "type == null"
+      range: "(916,34)-(916,45)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 919
+      expression: "fromIndex < 0"
+      range: "(919,13)-(919,25)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 923
+      expression: "fromIndex >= throwables.length"
+      range: "(923,13)-(923,42)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    - lineNumber: 926
+      expression: "subclass"
+      range: "(926,13)-(926,20)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 927
+      expression: "i < throwables.length"
+      range: "(927,37)-(927,57)"
+      evaluatedAs: true
+      internalMethodName: "throwableOf"
+    - lineNumber: 928
+      expression: "type.isAssignableFrom(throwables[i].getClass())"
+      range: "(928,21)-(928,67)"
+      evaluatedAs: false
+      internalMethodName: "throwableOf"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.exception.ExceptionUtils"
+- method:
+    name: "throwUnchecked"
+    sourceCodeSignature: "<T> T throwUnchecked(final T throwable)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Object"
+    instructionFingerprint: "B18D6001D2EAC6F93321BD6C46835C83"
+  paths:
+  - testPathName: "throwUncheckedWhenThrowableInstanceOfRuntimeExceptionThrowsRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "throwable"
+    branches:
+    - lineNumber: 1043
+      expression: "throwable instanceof RuntimeException"
+      range: "(1043,13)-(1043,49)"
+      evaluatedAs: true
+  - testPathName: "throwUncheckedWhenThrowableInstanceOfErrorThrowsError"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.Error"
+        parameters: []
+      valueType: "java.lang.Error"
+      uuid: "throwable"
+    branches:
+    - lineNumber: 1043
+      expression: "throwable instanceof RuntimeException"
+      range: "(1043,13)-(1043,49)"
+      evaluatedAs: false
+    - lineNumber: 1046
+      expression: "throwable instanceof Error"
+      range: "(1046,13)-(1046,38)"
+      evaluatedAs: true
+  - testPathName: "throwUncheckedWhenThrowableNotInstanceOfError"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "throwable"
+    branches:
+    - lineNumber: 1043
+      expression: "throwable instanceof RuntimeException"
+      range: "(1043,13)-(1043,49)"
+      evaluatedAs: false
+    - lineNumber: 1046
+      expression: "throwable instanceof Error"
+      range: "(1046,13)-(1046,38)"
+      evaluatedAs: false
+- method:
+    name: "throwUnchecked"
+    sourceCodeSignature: "<T extends Throwable> T throwUnchecked(final T throwable)"
+    returnType: "java.lang.Throwable"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "6C1B77B5503D90C3C88FB2E9A55A2A75"
+  paths:
+  - testPathName: "throwUnchecked1WhenIsUncheckedThrowableThrowsRuntimeException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "isUnchecked(throwable):boolean1"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "asRuntimeException(throwable):runtimeException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "runtimeException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.RuntimeException"
+        parameters: []
+      valueType: "java.lang.RuntimeException"
+      uuid: "runtimeException"
+    branches:
+    - lineNumber: 1061
+      expression: "isUnchecked(throwable)"
+      range: "(1061,13)-(1061,34)"
+      evaluatedAs: true
+  - testPathName: "throwUnchecked1WhenIsUncheckedNotThrowable"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "isUnchecked(throwable):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "throwable"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 1061
+      expression: "isUnchecked(throwable)"
+      range: "(1061,13)-(1061,34)"
+      evaluatedAs: false
+- method:
+    name: "wrapAndThrow"
+    sourceCodeSignature: "<R> R wrapAndThrow(final Throwable throwable)"
+    returnType: "java.lang.Object"
+    parameters:
+    - name: "throwable"
+      type: "java.lang.Throwable"
+    instructionFingerprint: "49C3CE78F6C476A86C6B3D7E430583DF"
+  paths:
+  - testPathName: "wrapAndThrowThrowsUndeclaredThrowableException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "throwable"
+      valueUuid: "throwable"
+    - type: "STATIC"
+      name: "ExceptionUtils.class"
+      valueUuid: "ExceptionUtils.class"
+      methodExercised:
+        expression: "throwUnchecked(throwable):throwable2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "undeclaredThrowableException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.exception.ExceptionUtils"
+      uuid: "ExceptionUtils.class"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+      valueType: "java.lang.Throwable"
+      uuid: "throwable2"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.reflect.UndeclaredThrowableException"
+        parameters:
+        - name: "undeclaredThrowable"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "throwable2"
+      valueType: "java.lang.reflect.UndeclaredThrowableException"
+      uuid: "undeclaredThrowableException"

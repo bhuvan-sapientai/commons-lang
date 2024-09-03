@@ -1,0 +1,41 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.mutable.MutableObject"
+methods:
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "138B8C594BA396643AACFCE7EC760FCE"
+  paths:
+  - testPathName: "toStringTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.mutable.MutableObject"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+            valueType: "java.lang.Object"
+            uuid: "value"
+      valueType: "org.apache.commons.lang3.mutable.MutableObject"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object@681234ac"
+      valueType: "java.lang.String"
+      uuid: "string"

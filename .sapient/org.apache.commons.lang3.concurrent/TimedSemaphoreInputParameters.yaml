@@ -1,0 +1,656 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+methods:
+- method:
+    name: "acquire"
+    sourceCodeSignature: "void acquire()"
+    returnType: "void"
+    throwsExceptions:
+    - "java.lang.InterruptedException"
+    instructionFingerprint: "7DBA0DAB3019A11F2437BC2A120CAC62"
+  paths:
+  - testPathName: "acquireWhenIsShutdownThrowsIllegalStateException"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isShutdown():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "TimedSemaphore is shut down!"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 394
+      expression: "isShutdown()"
+      range: "(394,13)-(394,24)"
+      evaluatedAs: true
+      internalMethodName: "prepareAcquire"
+  - testPathName: "acquireWhenCanPassAndCanPass"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isShutdown():boolean1"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "startTimer():scheduledFuture"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.ScheduledFuture"
+      uuid: "scheduledFuture"
+    - sapientType: "VOID"
+      uuid: "void2"
+    branches:
+    - lineNumber: 394
+      expression: "isShutdown()"
+      range: "(394,13)-(394,24)"
+      evaluatedAs: false
+      internalMethodName: "prepareAcquire"
+    - lineNumber: 398
+      expression: "task == null"
+      range: "(398,13)-(398,24)"
+      evaluatedAs: true
+      internalMethodName: "prepareAcquire"
+    - lineNumber: 265
+      expression: "getLimit() <= NO_LIMIT"
+      range: "(265,13)-(265,34)"
+      evaluatedAs: false
+      internalMethodName: "acquirePermit"
+    - lineNumber: 265
+      expression: "acquireCount < getLimit()"
+      range: "(265,39)-(265,63)"
+      evaluatedAs: true
+      internalMethodName: "acquirePermit"
+    - lineNumber: 250
+      expression: "!canPass"
+      range: "(250,17)-(250,24)"
+      evaluatedAs: false
+    - lineNumber: 253
+      expression: "!canPass"
+      range: "(253,18)-(253,25)"
+      evaluatedAs: false
+- method:
+    name: "endOfPeriod"
+    sourceCodeSignature: "void endOfPeriod()"
+    returnType: "void"
+    instructionFingerprint: "1EB769FBD32735198A561363D8826C4B"
+  paths:
+  - testPathName: "endOfPeriodTest"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void3"
+    - type: "STATE_VERIFICATION_FIELD"
+      name: "acquireCount"
+      valueUuid: "int2"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_FAILURE"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+- method:
+    name: "getAvailablePermits"
+    sourceCodeSignature: "int getAvailablePermits()"
+    returnType: "int"
+    instructionFingerprint: "CE5EDCEE551589C72E0EA20C7E13B71D"
+  paths:
+  - testPathName: "getAvailablePermitsTest"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "int2"
+- method:
+    name: "getAverageCallsPerPeriod"
+    sourceCodeSignature: "double getAverageCallsPerPeriod()"
+    returnType: "double"
+    instructionFingerprint: "588E5F22183D405FE016D4745A7417AC"
+  paths:
+  - testPathName: "getAverageCallsPerPeriodWhenPeriodCountEquals0"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 320
+      expression: "periodCount == 0"
+      range: "(320,16)-(320,31)"
+      evaluatedAs: true
+- method:
+    name: "shutdown"
+    sourceCodeSignature: "void shutdown()"
+    returnType: "void"
+    instructionFingerprint: "726676BE4030F76E2766614A5E723218"
+  paths:
+  - testPathName: "shutdownWhenTaskIsNull"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    - type: "STATE_VERIFICATION_FIELD"
+      name: "shutdown"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "VOID"
+      uuid: "void2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "int2"
+    branches:
+    - lineNumber: 423
+      expression: "!shutdown"
+      range: "(423,13)-(423,21)"
+      evaluatedAs: true
+    - lineNumber: 425
+      expression: "ownExecutor"
+      range: "(425,17)-(425,27)"
+      evaluatedAs: false
+    - lineNumber: 430
+      expression: "task != null"
+      range: "(430,17)-(430,28)"
+      evaluatedAs: false
+- method:
+    name: "startTimer"
+    sourceCodeSignature: "ScheduledFuture<?> startTimer()"
+    returnType: "java.util.concurrent.ScheduledFuture"
+    genericReturnType: "?"
+    instructionFingerprint: "793D0EEE6739CA82DA2C9865C763B317"
+  paths:
+  - testPathName: "startTimerTest"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "scheduledFuture"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.concurrent.ScheduledExecutorService.scheduleAtFixedRate(java.lang.Runnable,long,long,java.util.concurrent.TimeUnit)\
+        \ : java.util.concurrent.ScheduledFuture<?>"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.ScheduledFuture"
+      uuid: "scheduledFuture"
+- method:
+    name: "tryAcquire"
+    sourceCodeSignature: "boolean tryAcquire()"
+    returnType: "boolean"
+    instructionFingerprint: "6FE1A7010AB521D553D1E39E64EE44F4"
+  paths:
+  - testPathName: "tryAcquireWhenIsShutdownThrowsIllegalStateException"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isShutdown():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "TimedSemaphore is shut down!"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 394
+      expression: "isShutdown()"
+      range: "(394,13)-(394,24)"
+      evaluatedAs: true
+      internalMethodName: "prepareAcquire"
+  - testPathName: "tryAcquireWhenAcquireCountLessThanGetLimit"
+    constructorSignature: "<init>(java.util.concurrent.ScheduledExecutorService,long,java.util.concurrent.TimeUnit,int)\
+      \ : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isShutdown():boolean1"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "startTimer():scheduledFuture"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+        parameters:
+        - name: "service"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ScheduledExecutorService"
+            uuid: "service"
+        - name: "timePeriod"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "long"
+            uuid: "timePeriod"
+        - name: "timeUnit"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "NANOSECONDS"
+            valueType: "java.util.concurrent.TimeUnit"
+            uuid: "timeUnit"
+        - name: "limit"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "limit"
+      valueType: "org.apache.commons.lang3.concurrent.TimedSemaphore"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.ScheduledFuture"
+      uuid: "scheduledFuture"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 394
+      expression: "isShutdown()"
+      range: "(394,13)-(394,24)"
+      evaluatedAs: false
+      internalMethodName: "prepareAcquire"
+    - lineNumber: 398
+      expression: "task == null"
+      range: "(398,13)-(398,24)"
+      evaluatedAs: true
+      internalMethodName: "prepareAcquire"
+    - lineNumber: 265
+      expression: "getLimit() <= NO_LIMIT"
+      range: "(265,13)-(265,34)"
+      evaluatedAs: false
+      internalMethodName: "acquirePermit"
+    - lineNumber: 265
+      expression: "acquireCount < getLimit()"
+      range: "(265,39)-(265,63)"
+      evaluatedAs: true
+      internalMethodName: "acquirePermit"

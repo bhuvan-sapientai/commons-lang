@@ -1,0 +1,185 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.LazyInitializer"
+methods:
+- method:
+    name: "builder"
+    sourceCodeSignature: "<T> Builder<LazyInitializer<T>, T> builder()"
+    returnType: "org.apache.commons.lang3.concurrent.LazyInitializer$Builder"
+    genericReturnType: "org.apache.commons.lang3.concurrent.LazyInitializer<java.lang.Object>,java.lang.Object"
+    instructionFingerprint: "47EC33994A0A1B8B390C6C1B32AEEC58"
+  paths:
+  - testPathName: "builderTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "lazyInitializerBuilder"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.LazyInitializer$Builder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.LazyInitializer$Builder"
+      genericValueType: "org.apache.commons.lang3.concurrent.LazyInitializer<java.lang.Object>,java.lang.Object"
+      uuid: "lazyInitializerBuilder"
+- method:
+    name: "get"
+    sourceCodeSignature: "T get()"
+    returnType: "java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "7B7D4AB52C28869881701904B444E7BC"
+  paths:
+  - testPathName: "getWhenResultEqualsNO_INIT"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "initialize():object2"
+        throwsExceptions:
+        - "java.lang.Exception"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.LazyInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.LazyInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    branches:
+    - lineNumber: 139
+      expression: "result == NO_INIT"
+      range: "(139,13)-(139,29)"
+      evaluatedAs: true
+    - lineNumber: 142
+      expression: "result == NO_INIT"
+      range: "(142,21)-(142,37)"
+      evaluatedAs: true
+- method:
+    name: "getTypedException"
+    sourceCodeSignature: "ConcurrentException getTypedException(Exception e)"
+    returnType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+    parameters:
+    - name: "e"
+      type: "java.lang.Exception"
+    instructionFingerprint: "9F480E5456D358B95DBDB7F7EFA52EA8"
+  paths:
+  - testPathName: "getTypedException1Test"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "e"
+      valueUuid: "e"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.LazyInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.LazyInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Exception"
+        parameters: []
+      valueType: "java.lang.Exception"
+      uuid: "e"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Exception"
+              parameters: []
+            valueType: "java.lang.Exception"
+            uuid: "e"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+- method:
+    name: "isInitialized"
+    sourceCodeSignature: "boolean isInitialized()"
+    returnType: "boolean"
+    instructionFingerprint: "E4A4BF3A1175CE39D6DA352FD8D520F8"
+  paths:
+  - testPathName: "isInitializedWhenObjectNotEqualsNO_INIT"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.LazyInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.LazyInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 167
+      expression: "object != NO_INIT"
+      range: "(167,16)-(167,32)"
+      evaluatedAs: true
+  - testPathName: "isInitializedWhenObjectEqualsNO_INIT"
+    constructorSignature: "<init>() : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.LazyInitializer"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.LazyInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 167
+      expression: "object != NO_INIT"
+      range: "(167,16)-(167,32)"
+      evaluatedAs: false

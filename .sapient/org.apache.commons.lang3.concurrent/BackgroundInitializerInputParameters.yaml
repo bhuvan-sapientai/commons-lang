@@ -1,0 +1,719 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+methods:
+- method:
+    name: "builder"
+    sourceCodeSignature: "<T> Builder<BackgroundInitializer<T>, T> builder()"
+    returnType: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+    genericReturnType: "org.apache.commons.lang3.concurrent.BackgroundInitializer<java.lang.Object>,java.lang.Object"
+    instructionFingerprint: "47EC33994A0A1B8B390C6C1B32AEEC58"
+  paths:
+  - testPathName: "builderTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "backgroundInitializerBuilder"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+        parameters: []
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer$Builder"
+      genericValueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer<java.lang.Object>,java.lang.Object"
+      uuid: "backgroundInitializerBuilder"
+- method:
+    name: "get"
+    sourceCodeSignature: "T get()"
+    returnType: "java.lang.Object"
+    throwsExceptions:
+    - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    instructionFingerprint: "C7C88C851F7A8654063298543C059B7F"
+  paths:
+  - testPathName: "getTest"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getFuture():future"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "return getFuture().get();"
+      lineNumber: 253
+      details: "Potential harmful system call (Future.get) detected; Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.Future"
+      uuid: "future"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+  - testPathName: "getWhenCaughtExecutionException"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getFuture():future"
+    - type: "STATIC"
+      name: "ConcurrentUtils.class"
+      valueUuid: "ConcurrentUtils.class"
+      methodExercised:
+        expression: "handleCause(executionException):void"
+        throwsExceptions:
+        - "org.apache.commons.lang3.concurrent.ConcurrentException"
+    - type: "LOCAL_VARIABLE"
+      valueUuid: "future"
+      methodExercised:
+        expression: "get():object"
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "object2"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "return getFuture().get();"
+      lineNumber: 253
+      details: "Potential harmful system call (Future.get) detected; Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.Future"
+      uuid: "future"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentUtils"
+      uuid: "ConcurrentUtils.class"
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "void"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.concurrent.ExecutionException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+            valueType: "java.lang.Throwable"
+            uuid: "executionException-cause"
+      valueType: "java.util.concurrent.ExecutionException"
+      uuid: "executionException"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "NULL"
+      valueType: "java.lang.Object"
+      uuid: "object2"
+    branches:
+    - lineNumber: 254
+      expression: "catch-exception (ExecutionException)"
+      range: "(254,11)-(254,48)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.util.concurrent.ExecutionException"
+  - testPathName: "getWhenCaughtInterruptedExceptionThrowsConcurrentException"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "getFuture():future"
+    - type: "LOCAL_VARIABLE"
+      valueUuid: "future"
+      methodExercised:
+        expression: "get():object"
+        throwsExceptions:
+        - "java.lang.InterruptedException"
+        - "java.util.concurrent.ExecutionException"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "concurrentException"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "return getFuture().get();"
+      lineNumber: 253
+      details: "Potential harmful system call (Future.get) detected; Learn more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.Future"
+      uuid: "future"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+      valueType: "java.lang.Object"
+      uuid: "object"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.ConcurrentException"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.InterruptedException"
+              parameters: []
+            valueType: "java.lang.InterruptedException"
+            uuid: "interruptedException"
+      valueType: "org.apache.commons.lang3.concurrent.ConcurrentException"
+      uuid: "concurrentException"
+    branches:
+    - lineNumber: 257
+      expression: "catch-exception (InterruptedException)"
+      range: "(257,11)-(257,47)"
+      evaluatedAs: true
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 4
+      catchExceptions:
+      - "java.lang.InterruptedException"
+- method:
+    name: "getFuture"
+    sourceCodeSignature: "Future<T> getFuture()"
+    returnType: "java.util.concurrent.Future"
+    instructionFingerprint: "8B95FDEA749273C80DAAA2926D3B4C46"
+  paths:
+  - testPathName: "getFutureWhenFutureIsNullThrowsIllegalStateException"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "start() must be called first!"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 295
+      expression: "future == null"
+      range: "(295,13)-(295,26)"
+      evaluatedAs: true
+- method:
+    name: "getTaskCount"
+    sourceCodeSignature: "int getTaskCount()"
+    returnType: "int"
+    instructionFingerprint: "71692945A9DAF4E6A95D89B608A49051"
+  paths:
+  - testPathName: "getTaskCountTest"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+- method:
+    name: "getTypedException"
+    sourceCodeSignature: "Exception getTypedException(Exception e)"
+    returnType: "java.lang.Exception"
+    parameters:
+    - name: "e"
+      type: "java.lang.Exception"
+    instructionFingerprint: "B2B458D1A27363F8A42AE28E0DD4E39D"
+  paths:
+  - testPathName: "getTypedException1Test"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "e"
+      valueUuid: "e"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "exception"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Exception"
+        parameters: []
+      valueType: "java.lang.Exception"
+      uuid: "e"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Exception"
+        parameters:
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Exception"
+              parameters: []
+            valueType: "java.lang.Exception"
+            uuid: "e"
+      valueType: "java.lang.Exception"
+      uuid: "exception"
+- method:
+    name: "isInitialized"
+    sourceCodeSignature: "boolean isInitialized()"
+    returnType: "boolean"
+    instructionFingerprint: "24ACDE4048AE77E652AEDDEAAAF7E58F"
+  paths:
+  - testPathName: "isInitializedWhenFutureIsNull"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 336
+      expression: "future == null"
+      range: "(336,13)-(336,26)"
+      evaluatedAs: true
+- method:
+    name: "isStarted"
+    sourceCodeSignature: "boolean isStarted()"
+    returnType: "boolean"
+    instructionFingerprint: "2851D828C44D37E51BA21454880D58ED"
+  paths:
+  - testPathName: "isStartedWhenFutureIsNull"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 356
+      expression: "future != null"
+      range: "(356,16)-(356,29)"
+      evaluatedAs: false
+- method:
+    name: "setExternalExecutor"
+    sourceCodeSignature: "void setExternalExecutor(final ExecutorService externalExecutor)"
+    returnType: "void"
+    parameters:
+    - name: "externalExecutor"
+      type: "java.util.concurrent.ExecutorService"
+    instructionFingerprint: "4A656DA4F14A1C828A70F8B51F0A4D07"
+  paths:
+  - testPathName: "setExternalExecutorWhenIsStartedThrowsIllegalStateException"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "externalExecutor"
+      valueUuid: "exec"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalStateException"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.ExecutorService"
+      uuid: "exec"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalStateException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Cannot set ExecutorService after start()!"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalStateException"
+      uuid: "illegalStateException"
+    branches:
+    - lineNumber: 375
+      expression: "isStarted()"
+      range: "(375,13)-(375,23)"
+      evaluatedAs: true
+  - testPathName: "setExternalExecutorWhenIsStartedNot"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INPUT"
+      name: "externalExecutor"
+      valueUuid: "exec"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void"
+    - type: "STATE_VERIFICATION_FIELD"
+      name: "externalExecutor"
+      valueUuid: "exec"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "MOCK"
+      valueType: "java.util.concurrent.ExecutorService"
+      uuid: "exec"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "VOID"
+      uuid: "void"
+    branches:
+    - lineNumber: 375
+      expression: "isStarted()"
+      range: "(375,13)-(375,23)"
+      evaluatedAs: false
+- method:
+    name: "start"
+    sourceCodeSignature: "boolean start()"
+    returnType: "boolean"
+    instructionFingerprint: "ACFF03B3112DAC8D295C445B3FE1AAC8"
+  paths:
+  - testPathName: "startWhenIsStarted"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 395
+      expression: "!isStarted()"
+      range: "(395,13)-(395,24)"
+      evaluatedAs: false
+  - testPathName: "startWhenExecutorIsNull"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "future = executor.submit(createTask(tempExec));"
+      lineNumber: 407
+      details: "Potential harmful system call (ExecutorService.submit) detected; Learn\
+        \ more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "NULL"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 395
+      expression: "!isStarted()"
+      range: "(395,13)-(395,24)"
+      evaluatedAs: true
+    - lineNumber: 401
+      expression: "executor == null"
+      range: "(401,17)-(401,32)"
+      evaluatedAs: true
+  - testPathName: "startWhenExecutorIsNotNull"
+    constructorSignature: "<init>(java.util.concurrent.ExecutorService) : void"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      name: "constructor"
+      valueUuid: "target"
+    - type: "INTERNAL"
+      name: "internalMethod"
+      methodExercised:
+        expression: "isStarted():boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: true
+    failureReason:
+      reason: "METHOD_CALL_POTENTIAL_HARM_FULL_SYSTEM_CALL"
+      source: "future = executor.submit(createTask(tempExec));"
+      lineNumber: 407
+      details: "Potential harmful system call (ExecutorService.submit) detected; Learn\
+        \ more: https://github.com/Sapient-AI/docs#disabled-generated-tests"
+    disabledStatusUpdatedBy: "SYSTEM"
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+        parameters:
+        - name: "exec"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.concurrent.ExecutorService"
+            uuid: "exec"
+      valueType: "org.apache.commons.lang3.concurrent.BackgroundInitializer"
+      uuid: "target"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 395
+      expression: "!isStarted()"
+      range: "(395,13)-(395,24)"
+      evaluatedAs: true
+    - lineNumber: 401
+      expression: "executor == null"
+      range: "(401,17)-(401,32)"
+      evaluatedAs: false

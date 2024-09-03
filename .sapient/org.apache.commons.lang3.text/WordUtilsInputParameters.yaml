@@ -1,0 +1,1958 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.text.WordUtils"
+methods:
+- method:
+    name: "capitalize"
+    sourceCodeSignature: "String capitalize(final String str)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "FC1E0BA17253364891DD588C08B06FDC"
+  paths:
+  - testPathName: "capitalizeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "capitalize(str,delimiters):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_capitalize1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+- method:
+    name: "capitalize"
+    sourceCodeSignature: "String capitalize(final String str, final char... delimiters)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "delimiters"
+      type: "char[]"
+    instructionFingerprint: "20BF6E7CA6D7850142D36A96C423E061"
+  paths:
+  - testPathName: "capitalize1WhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "str"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    branches:
+    - lineNumber: 97
+      expression: "delimiters == null"
+      range: "(97,30)-(97,47)"
+      evaluatedAs: true
+    - lineNumber: 98
+      expression: "StringUtils.isEmpty(str)"
+      range: "(98,13)-(98,36)"
+      evaluatedAs: true
+  - testPathName: "capitalize1WhenIsDelimiterChDelimiters"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 97
+      expression: "delimiters == null"
+      range: "(97,30)-(97,47)"
+      evaluatedAs: true
+    - lineNumber: 98
+      expression: "StringUtils.isEmpty(str)"
+      range: "(98,13)-(98,36)"
+      evaluatedAs: false
+    - lineNumber: 98
+      expression: "delimLen == 0"
+      range: "(98,41)-(98,53)"
+      evaluatedAs: false
+    - lineNumber: 103
+      expression: "i < buffer.length"
+      range: "(103,25)-(103,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 105
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(105,17)-(105,43)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "capitalize1WhenCapitalizeNext"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 97
+      expression: "delimiters == null"
+      range: "(97,30)-(97,47)"
+      evaluatedAs: true
+    - lineNumber: 98
+      expression: "StringUtils.isEmpty(str)"
+      range: "(98,13)-(98,36)"
+      evaluatedAs: false
+    - lineNumber: 98
+      expression: "delimLen == 0"
+      range: "(98,41)-(98,53)"
+      evaluatedAs: false
+    - lineNumber: 103
+      expression: "i < buffer.length"
+      range: "(103,25)-(103,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 105
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(105,17)-(105,43)"
+      evaluatedAs: false
+    - lineNumber: 107
+      expression: "capitalizeNext"
+      range: "(107,24)-(107,37)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "capitalize1WhenIsDelimiterNotChDelimitersAndCapitalizeNext"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "delimitersItem0"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 97
+      expression: "delimiters == null"
+      range: "(97,30)-(97,47)"
+      evaluatedAs: false
+    - lineNumber: 98
+      expression: "StringUtils.isEmpty(str)"
+      range: "(98,13)-(98,36)"
+      evaluatedAs: false
+    - lineNumber: 98
+      expression: "delimLen == 0"
+      range: "(98,41)-(98,53)"
+      evaluatedAs: false
+    - lineNumber: 103
+      expression: "i < buffer.length"
+      range: "(103,25)-(103,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 105
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(105,17)-(105,43)"
+      evaluatedAs: false
+    - lineNumber: 107
+      expression: "capitalizeNext"
+      range: "(107,24)-(107,37)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+- method:
+    name: "capitalizeFully"
+    sourceCodeSignature: "String capitalizeFully(final String str)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "8FD782755EF39A2258A3B0EFD3593D4F"
+  paths:
+  - testPathName: "capitalizeFullyTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "capitalizeFully(str,delimiters):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_capitalizeFully1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+- method:
+    name: "capitalizeFully"
+    sourceCodeSignature: "String capitalizeFully(final String str, final char... delimiters)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "delimiters"
+      type: "char[]"
+    instructionFingerprint: "BC5B7675C99F54CDE3D79BB05BB91764"
+  paths:
+  - testPathName: "capitalizeFully1WhenDelimLenNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "capitalize(string,delimiters):string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_capitalize1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "a"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 165
+      expression: "delimiters == null"
+      range: "(165,30)-(165,47)"
+      evaluatedAs: true
+    - lineNumber: 166
+      expression: "StringUtils.isEmpty(str)"
+      range: "(166,13)-(166,36)"
+      evaluatedAs: false
+    - lineNumber: 166
+      expression: "delimLen == 0"
+      range: "(166,41)-(166,53)"
+      evaluatedAs: false
+  - testPathName: "capitalizeFully1WhenDelimLenEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "str"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "delimiters"
+    branches:
+    - lineNumber: 165
+      expression: "delimiters == null"
+      range: "(165,30)-(165,47)"
+      evaluatedAs: false
+    - lineNumber: 166
+      expression: "StringUtils.isEmpty(str)"
+      range: "(166,13)-(166,36)"
+      evaluatedAs: false
+    - lineNumber: 166
+      expression: "delimLen == 0"
+      range: "(166,41)-(166,53)"
+      evaluatedAs: true
+- method:
+    name: "containsAllWords"
+    sourceCodeSignature: "boolean containsAllWords(final CharSequence word, final\
+      \ CharSequence... words)"
+    returnType: "boolean"
+    parameters:
+    - name: "word"
+      type: "java.lang.CharSequence"
+    - name: "words"
+      type: "java.lang.CharSequence[]"
+    instructionFingerprint: "F6C9B6BD09BE07A27AF999A7361DCCE0"
+  paths:
+  - testPathName: "containsAllWordsWhenArrayUtilsIsEmptyWords"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "word"
+      valueUuid: "word"
+    - type: "INPUT"
+      name: "words"
+      valueUuid: "words"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "word1"
+      valueType: "java.lang.String"
+      uuid: "word"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.CharSequence[]"
+      uuid: "words"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "StringUtils.isEmpty(word)"
+      range: "(195,13)-(195,37)"
+      evaluatedAs: false
+    - lineNumber: 195
+      expression: "ArrayUtils.isEmpty(words)"
+      range: "(195,42)-(195,66)"
+      evaluatedAs: true
+  - testPathName: "containsAllWordsWhenStringUtilsIsBlankW"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "word"
+      valueUuid: "word"
+    - type: "INPUT"
+      name: "words"
+      valueUuid: "words"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.StringUtils.isEmpty(java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "word1"
+      valueType: "java.lang.String"
+      uuid: "word"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "charSequence1"
+            valueType: "java.lang.String"
+            uuid: "charSequence"
+      valueType: "java.lang.CharSequence[]"
+      uuid: "words"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "StringUtils.isEmpty(word)"
+      range: "(195,13)-(195,37)"
+      evaluatedAs: false
+    - lineNumber: 195
+      expression: "ArrayUtils.isEmpty(words)"
+      range: "(195,42)-(195,66)"
+      evaluatedAs: false
+    - lineNumber: 198
+      expression: "for-each(words)"
+      range: "(198,37)-(198,41)"
+      evaluatedAs: true
+    - lineNumber: 199
+      expression: "StringUtils.isBlank(w)"
+      range: "(199,17)-(199,38)"
+      evaluatedAs: true
+  - testPathName: "containsAllWordsWhenPMatcherWordNotMatches"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "word"
+      valueUuid: "word"
+    - type: "INPUT"
+      name: "words"
+      valueUuid: "words"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "word1"
+      valueType: "java.lang.String"
+      uuid: "word"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "charSequence1"
+            valueType: "java.lang.String"
+            uuid: "charSequence"
+            nameForMock: "charSequence"
+      valueType: "java.lang.CharSequence[]"
+      uuid: "words"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "StringUtils.isEmpty(word)"
+      range: "(195,13)-(195,37)"
+      evaluatedAs: false
+    - lineNumber: 195
+      expression: "ArrayUtils.isEmpty(words)"
+      range: "(195,42)-(195,66)"
+      evaluatedAs: false
+    - lineNumber: 198
+      expression: "for-each(words)"
+      range: "(198,37)-(198,41)"
+      evaluatedAs: true
+    - lineNumber: 199
+      expression: "StringUtils.isBlank(w)"
+      range: "(199,17)-(199,38)"
+      evaluatedAs: false
+    - lineNumber: 203
+      expression: "!p.matcher(word).matches()"
+      range: "(203,17)-(203,42)"
+      evaluatedAs: true
+  - testPathName: "containsAllWordsWhenPMatcherWordMatches"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "word"
+      valueUuid: "word"
+    - type: "INPUT"
+      name: "words"
+      valueUuid: "words"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: org.apache.commons.lang3.StringUtils.isEmpty(java.lang.CharSequence)\
+        \ : boolean"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "word1"
+      valueType: "java.lang.String"
+      uuid: "word"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "charSequence1"
+            valueType: "java.lang.String"
+            uuid: "charSequence"
+            nameForMock: "charSequence"
+      valueType: "java.lang.CharSequence[]"
+      uuid: "words"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 195
+      expression: "StringUtils.isEmpty(word)"
+      range: "(195,13)-(195,37)"
+      evaluatedAs: false
+    - lineNumber: 195
+      expression: "ArrayUtils.isEmpty(words)"
+      range: "(195,42)-(195,66)"
+      evaluatedAs: false
+    - lineNumber: 198
+      expression: "for-each(words)"
+      range: "(198,37)-(198,41)"
+      evaluatedAs: true
+    - lineNumber: 199
+      expression: "StringUtils.isBlank(w)"
+      range: "(199,17)-(199,38)"
+      evaluatedAs: false
+    - lineNumber: 203
+      expression: "!p.matcher(word).matches()"
+      range: "(203,17)-(203,42)"
+      evaluatedAs: false
+- method:
+    name: "initials"
+    sourceCodeSignature: "String initials(final String str)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "740A0A396F27B6A2A06CEFDF3FCA79D6"
+  paths:
+  - testPathName: "initialsTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "initials(str,delimiters):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_initials1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+- method:
+    name: "initials"
+    sourceCodeSignature: "String initials(final String str, final char... delimiters)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "delimiters"
+      type: "char[]"
+    instructionFingerprint: "DB3257B72D95B160E75AD59EDFB38A8F"
+  paths:
+  - testPathName: "initials1WhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "str"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "delimiters"
+    branches:
+    - lineNumber: 262
+      expression: "StringUtils.isEmpty(str)"
+      range: "(262,13)-(262,36)"
+      evaluatedAs: true
+  - testPathName: "initials1WhenDelimitersLengthEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 262
+      expression: "StringUtils.isEmpty(str)"
+      range: "(262,13)-(262,36)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "delimiters != null"
+      range: "(265,13)-(265,30)"
+      evaluatedAs: true
+    - lineNumber: 265
+      expression: "delimiters.length == 0"
+      range: "(265,35)-(265,56)"
+      evaluatedAs: true
+  - testPathName: "initials1WhenIsDelimiterChDelimiters"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "delimitersItem0"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 262
+      expression: "StringUtils.isEmpty(str)"
+      range: "(262,13)-(262,36)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "delimiters != null"
+      range: "(265,13)-(265,30)"
+      evaluatedAs: true
+    - lineNumber: 265
+      expression: "delimiters.length == 0"
+      range: "(265,35)-(265,56)"
+      evaluatedAs: false
+    - lineNumber: 272
+      expression: "i < strLen"
+      range: "(272,25)-(272,34)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 274
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(274,17)-(274,43)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "initials1WhenLastWasGap"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 262
+      expression: "StringUtils.isEmpty(str)"
+      range: "(262,13)-(262,36)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "delimiters != null"
+      range: "(265,13)-(265,30)"
+      evaluatedAs: false
+    - lineNumber: 272
+      expression: "i < strLen"
+      range: "(272,25)-(272,34)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 274
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(274,17)-(274,43)"
+      evaluatedAs: false
+    - lineNumber: 276
+      expression: "lastWasGap"
+      range: "(276,24)-(276,33)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "initials1WhenIsDelimiterNotChDelimitersAndLastWasGap"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "delimitersItem0"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 262
+      expression: "StringUtils.isEmpty(str)"
+      range: "(262,13)-(262,36)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "delimiters != null"
+      range: "(265,13)-(265,30)"
+      evaluatedAs: true
+    - lineNumber: 265
+      expression: "delimiters.length == 0"
+      range: "(265,35)-(265,56)"
+      evaluatedAs: false
+    - lineNumber: 272
+      expression: "i < strLen"
+      range: "(272,25)-(272,34)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 274
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(274,17)-(274,43)"
+      evaluatedAs: false
+    - lineNumber: 276
+      expression: "lastWasGap"
+      range: "(276,24)-(276,33)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+- method:
+    name: "swapCase"
+    sourceCodeSignature: "String swapCase(final String str)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "86ADCF99631536243F30C3744C7A6C3E"
+  paths:
+  - testPathName: "swapCaseWhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "str"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    branches:
+    - lineNumber: 320
+      expression: "StringUtils.isEmpty(str)"
+      range: "(320,13)-(320,36)"
+      evaluatedAs: true
+  - testPathName: "swapCaseWhenCharacterIsTitleCaseCh"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 320
+      expression: "StringUtils.isEmpty(str)"
+      range: "(320,13)-(320,36)"
+      evaluatedAs: false
+    - lineNumber: 327
+      expression: "i < buffer.length"
+      range: "(327,25)-(327,41)"
+      evaluatedAs: true
+    - lineNumber: 329
+      expression: "Character.isUpperCase(ch)"
+      range: "(329,17)-(329,41)"
+      evaluatedAs: false
+    - lineNumber: 329
+      expression: "Character.isTitleCase(ch)"
+      range: "(329,46)-(329,70)"
+      evaluatedAs: true
+- method:
+    name: "uncapitalize"
+    sourceCodeSignature: "String uncapitalize(final String str)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "A0E6C08FBAFB2D2BC24472D26F3C148D"
+  paths:
+  - testPathName: "uncapitalizeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "uncapitalize(str,delimiters):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_uncapitalize1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+- method:
+    name: "uncapitalize"
+    sourceCodeSignature: "String uncapitalize(final String str, final char... delimiters)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "delimiters"
+      type: "char[]"
+    instructionFingerprint: "CEF4B93CDAD66C03F301C89EE39799DC"
+  paths:
+  - testPathName: "uncapitalize1WhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "str"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    branches:
+    - lineNumber: 393
+      expression: "delimiters == null"
+      range: "(393,30)-(393,47)"
+      evaluatedAs: true
+    - lineNumber: 394
+      expression: "StringUtils.isEmpty(str)"
+      range: "(394,13)-(394,36)"
+      evaluatedAs: true
+  - testPathName: "uncapitalize1WhenIsDelimiterChDelimiters"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 393
+      expression: "delimiters == null"
+      range: "(393,30)-(393,47)"
+      evaluatedAs: true
+    - lineNumber: 394
+      expression: "StringUtils.isEmpty(str)"
+      range: "(394,13)-(394,36)"
+      evaluatedAs: false
+    - lineNumber: 394
+      expression: "delimLen == 0"
+      range: "(394,41)-(394,53)"
+      evaluatedAs: false
+    - lineNumber: 399
+      expression: "i < buffer.length"
+      range: "(399,25)-(399,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 401
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(401,17)-(401,43)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "uncapitalize1WhenUncapitalizeNext"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "b"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 393
+      expression: "delimiters == null"
+      range: "(393,30)-(393,47)"
+      evaluatedAs: true
+    - lineNumber: 394
+      expression: "StringUtils.isEmpty(str)"
+      range: "(394,13)-(394,36)"
+      evaluatedAs: false
+    - lineNumber: 394
+      expression: "delimLen == 0"
+      range: "(394,41)-(394,53)"
+      evaluatedAs: false
+    - lineNumber: 399
+      expression: "i < buffer.length"
+      range: "(399,25)-(399,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: true
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 401
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(401,17)-(401,43)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "uncapitalizeNext"
+      range: "(403,24)-(403,39)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+  - testPathName: "uncapitalize1WhenIsDelimiterNotChDelimitersAndUncapitalizeNext"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "delimiters"
+      valueUuid: "delimiters"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "A"
+            valueType: "char"
+            uuid: "delimitersItem0"
+      valueType: "char[]"
+      uuid: "delimiters"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "b"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 393
+      expression: "delimiters == null"
+      range: "(393,30)-(393,47)"
+      evaluatedAs: false
+    - lineNumber: 394
+      expression: "StringUtils.isEmpty(str)"
+      range: "(394,13)-(394,36)"
+      evaluatedAs: false
+    - lineNumber: 394
+      expression: "delimLen == 0"
+      range: "(394,41)-(394,53)"
+      evaluatedAs: false
+    - lineNumber: 399
+      expression: "i < buffer.length"
+      range: "(399,25)-(399,41)"
+      evaluatedAs: true
+    - lineNumber: 294
+      expression: "delimiters == null"
+      range: "(294,16)-(294,33)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 294
+      expression: "delimiters == null ? Character.isWhitespace(ch) : ArrayUtils.contains(delimiters,\
+        \ ch)"
+      range: "(294,16)-(294,100)"
+      evaluatedAs: false
+      internalMethodName: "isDelimiter"
+    - lineNumber: 401
+      expression: "isDelimiter(ch, delimiters)"
+      range: "(401,17)-(401,43)"
+      evaluatedAs: false
+    - lineNumber: 403
+      expression: "uncapitalizeNext"
+      range: "(403,24)-(403,39)"
+      evaluatedAs: true
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.text.WordUtils"
+- method:
+    name: "wrap"
+    sourceCodeSignature: "String wrap(final String str, final int wrapLength)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "wrapLength"
+      type: "int"
+    instructionFingerprint: "4D54CE0FCBE90957170AF615F61318AF"
+  paths:
+  - testPathName: "wrapTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "wrap(str,wrapLength,newLineStr,wrapLongWords):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_wrap1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+- method:
+    name: "wrap"
+    sourceCodeSignature: "String wrap(final String str, final int wrapLength, final\
+      \ String newLineStr, final boolean wrapLongWords)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "wrapLength"
+      type: "int"
+    - name: "newLineStr"
+      type: "java.lang.String"
+    - name: "wrapLongWords"
+      type: "boolean"
+    instructionFingerprint: "9BDD238D8D734DFBFB1E59A0D9179E1D"
+  paths:
+  - testPathName: "wrap1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "STATIC"
+      name: "WordUtils.class"
+      valueUuid: "WordUtils.class"
+      methodExercised:
+        expression: "wrap(str,wrapLength,newLineStr,wrapLongWords,wrapOn):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "newLineStr1"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.text.WordUtils"
+      uuid: "WordUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_wrap1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: " "
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+- method:
+    name: "wrap"
+    sourceCodeSignature: "String wrap(final String str, int wrapLength, String newLineStr,\
+      \ final boolean wrapLongWords, String wrapOn)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "wrapLength"
+      type: "int"
+    - name: "newLineStr"
+      type: "java.lang.String"
+    - name: "wrapLongWords"
+      type: "boolean"
+    - name: "wrapOn"
+      type: "java.lang.String"
+    instructionFingerprint: "12454B54F35862C8DF58514AE73D8873"
+  paths:
+  - testPathName: "wrap2WhenStrIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "INPUT"
+      name: "wrapOn"
+      valueUuid: "wrapOn"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "newLineStr1"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "wrapOn1"
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string"
+    branches:
+    - lineNumber: 632
+      expression: "str == null"
+      range: "(632,13)-(632,23)"
+      evaluatedAs: true
+  - testPathName: "wrap2WhenSpaceToWrapAtGreaterThanOrEqualsToOffset"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "INPUT"
+      name: "wrapOn"
+      valueUuid: "wrapOn"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string4"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.StringBuilder.append(java.lang.String,int,int)\
+        \ : java.lang.StringBuilder"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "wrapOn1"
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n"
+      valueType: "java.lang.String"
+      uuid: "string4"
+    branches:
+    - lineNumber: 632
+      expression: "str == null"
+      range: "(632,13)-(632,23)"
+      evaluatedAs: false
+    - lineNumber: 635
+      expression: "newLineStr == null"
+      range: "(635,13)-(635,30)"
+      evaluatedAs: true
+    - lineNumber: 638
+      expression: "wrapLength < 1"
+      range: "(638,13)-(638,26)"
+      evaluatedAs: true
+    - lineNumber: 641
+      expression: "StringUtils.isBlank(wrapOn)"
+      range: "(641,13)-(641,39)"
+      evaluatedAs: true
+    - lineNumber: 649
+      expression: "offset < inputLineLength"
+      range: "(649,16)-(649,39)"
+      evaluatedAs: true
+    - lineNumber: 653
+      expression: "matcher.find()"
+      range: "(653,17)-(653,30)"
+      evaluatedAs: true
+    - lineNumber: 654
+      expression: "matcher.start() == 0"
+      range: "(654,21)-(654,40)"
+      evaluatedAs: false
+    - lineNumber: 662
+      expression: "inputLineLength - offset <= wrapLength"
+      range: "(662,17)-(662,54)"
+      evaluatedAs: false
+    - lineNumber: 666
+      expression: "matcher.find()"
+      range: "(666,20)-(666,33)"
+      evaluatedAs: true
+    - lineNumber: 670
+      expression: "spaceToWrapAt >= offset"
+      range: "(670,17)-(670,39)"
+      evaluatedAs: true
+  - testPathName: "wrap2WhenWrapLongWordsAndMatcherStartEquals0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "INPUT"
+      name: "wrapOn"
+      valueUuid: "wrapOn"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string9"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.StringBuilder.append(java.lang.String,int,int)\
+        \ : java.lang.StringBuilder"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "wrapOn1"
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n"
+      valueType: "java.lang.String"
+      uuid: "string9"
+    branches:
+    - lineNumber: 632
+      expression: "str == null"
+      range: "(632,13)-(632,23)"
+      evaluatedAs: false
+    - lineNumber: 635
+      expression: "newLineStr == null"
+      range: "(635,13)-(635,30)"
+      evaluatedAs: true
+    - lineNumber: 638
+      expression: "wrapLength < 1"
+      range: "(638,13)-(638,26)"
+      evaluatedAs: true
+    - lineNumber: 641
+      expression: "StringUtils.isBlank(wrapOn)"
+      range: "(641,13)-(641,39)"
+      evaluatedAs: true
+    - lineNumber: 649
+      expression: "offset < inputLineLength"
+      range: "(649,16)-(649,39)"
+      evaluatedAs: true
+    - lineNumber: 653
+      expression: "matcher.find()"
+      range: "(653,17)-(653,30)"
+      evaluatedAs: false
+    - lineNumber: 662
+      expression: "inputLineLength - offset <= wrapLength"
+      range: "(662,17)-(662,54)"
+      evaluatedAs: false
+    - lineNumber: 666
+      expression: "matcher.find()"
+      range: "(666,20)-(666,33)"
+      evaluatedAs: false
+    - lineNumber: 670
+      expression: "spaceToWrapAt >= offset"
+      range: "(670,17)-(670,39)"
+      evaluatedAs: false
+    - lineNumber: 677
+      expression: "wrapLongWords"
+      range: "(677,17)-(677,29)"
+      evaluatedAs: true
+    - lineNumber: 654
+      expression: "matcher.start() == 0"
+      range: "(654,21)-(654,40)"
+      evaluatedAs: true
+  - testPathName: "wrap2WhenSpaceToWrapAtGreaterThanOrEqualsTo0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "INPUT"
+      name: "wrapOn"
+      valueUuid: "wrapOn"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.StringBuilder.append(java.lang.String,int,int)\
+        \ : java.lang.StringBuilder"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "wrapOn1"
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n"
+      valueType: "java.lang.String"
+      uuid: "string5"
+    branches:
+    - lineNumber: 632
+      expression: "str == null"
+      range: "(632,13)-(632,23)"
+      evaluatedAs: false
+    - lineNumber: 635
+      expression: "newLineStr == null"
+      range: "(635,13)-(635,30)"
+      evaluatedAs: true
+    - lineNumber: 638
+      expression: "wrapLength < 1"
+      range: "(638,13)-(638,26)"
+      evaluatedAs: true
+    - lineNumber: 641
+      expression: "StringUtils.isBlank(wrapOn)"
+      range: "(641,13)-(641,39)"
+      evaluatedAs: true
+    - lineNumber: 649
+      expression: "offset < inputLineLength"
+      range: "(649,16)-(649,39)"
+      evaluatedAs: true
+    - lineNumber: 653
+      expression: "matcher.find()"
+      range: "(653,17)-(653,30)"
+      evaluatedAs: true
+    - lineNumber: 654
+      expression: "matcher.start() == 0"
+      range: "(654,21)-(654,40)"
+      evaluatedAs: false
+    - lineNumber: 662
+      expression: "inputLineLength - offset <= wrapLength"
+      range: "(662,17)-(662,54)"
+      evaluatedAs: false
+    - lineNumber: 666
+      expression: "matcher.find()"
+      range: "(666,20)-(666,33)"
+      evaluatedAs: true
+    - lineNumber: 670
+      expression: "spaceToWrapAt >= offset"
+      range: "(670,17)-(670,39)"
+      evaluatedAs: false
+    - lineNumber: 677
+      expression: "wrapLongWords"
+      range: "(677,17)-(677,29)"
+      evaluatedAs: false
+    - lineNumber: 685
+      expression: "matcher.find()"
+      range: "(685,21)-(685,34)"
+      evaluatedAs: true
+    - lineNumber: 689
+      expression: "spaceToWrapAt >= 0"
+      range: "(689,21)-(689,38)"
+      evaluatedAs: true
+  - testPathName: "wrap2WhenSpaceToWrapAtLessThan0"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "wrapLength"
+      valueUuid: "wrapLength"
+    - type: "INPUT"
+      name: "newLineStr"
+      valueUuid: "newLineStr"
+    - type: "INPUT"
+      name: "wrapLongWords"
+      valueUuid: "wrapLongWords"
+    - type: "INPUT"
+      name: "wrapOn"
+      valueUuid: "wrapOn"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string5"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.StringBuilder.append(java.lang.String,int,int)\
+        \ : java.lang.StringBuilder"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "wrapLength"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "newLineStr"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "wrapLongWords"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "wrapOn1"
+      valueType: "java.lang.String"
+      uuid: "wrapOn"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "string5"
+    branches:
+    - lineNumber: 632
+      expression: "str == null"
+      range: "(632,13)-(632,23)"
+      evaluatedAs: false
+    - lineNumber: 635
+      expression: "newLineStr == null"
+      range: "(635,13)-(635,30)"
+      evaluatedAs: true
+    - lineNumber: 638
+      expression: "wrapLength < 1"
+      range: "(638,13)-(638,26)"
+      evaluatedAs: true
+    - lineNumber: 641
+      expression: "StringUtils.isBlank(wrapOn)"
+      range: "(641,13)-(641,39)"
+      evaluatedAs: true
+    - lineNumber: 649
+      expression: "offset < inputLineLength"
+      range: "(649,16)-(649,39)"
+      evaluatedAs: true
+    - lineNumber: 653
+      expression: "matcher.find()"
+      range: "(653,17)-(653,30)"
+      evaluatedAs: true
+    - lineNumber: 654
+      expression: "matcher.start() == 0"
+      range: "(654,21)-(654,40)"
+      evaluatedAs: false
+    - lineNumber: 662
+      expression: "inputLineLength - offset <= wrapLength"
+      range: "(662,17)-(662,54)"
+      evaluatedAs: false
+    - lineNumber: 666
+      expression: "matcher.find()"
+      range: "(666,20)-(666,33)"
+      evaluatedAs: true
+    - lineNumber: 670
+      expression: "spaceToWrapAt >= offset"
+      range: "(670,17)-(670,39)"
+      evaluatedAs: false
+    - lineNumber: 677
+      expression: "wrapLongWords"
+      range: "(677,17)-(677,29)"
+      evaluatedAs: false
+    - lineNumber: 685
+      expression: "matcher.find()"
+      range: "(685,21)-(685,34)"
+      evaluatedAs: true
+    - lineNumber: 689
+      expression: "spaceToWrapAt >= 0"
+      range: "(689,21)-(689,38)"
+      evaluatedAs: false

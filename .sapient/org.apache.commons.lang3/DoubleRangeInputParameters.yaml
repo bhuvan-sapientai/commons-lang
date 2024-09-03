@@ -1,0 +1,201 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.DoubleRange"
+methods:
+- method:
+    name: "of"
+    sourceCodeSignature: "DoubleRange of(final double fromInclusive, final double\
+      \ toInclusive)"
+    returnType: "org.apache.commons.lang3.DoubleRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "double"
+    - name: "toInclusive"
+      type: "double"
+    instructionFingerprint: "1ED6D18F64A233445430068530D080E0"
+  paths:
+  - testPathName: "of2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "STATIC"
+      name: "DoubleRange.class"
+      valueUuid: "DoubleRange.class"
+      methodExercised:
+        expression: "of(double,double2):doubleRange"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "doubleRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "double"
+      uuid: "toInclusive"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.DoubleRange"
+      uuid: "DoubleRange.class"
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.apache.commons.lang3.DoubleRange"
+        method: "of"
+        methodParameters:
+        - name: "fromInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "doubleRange-fromInclusive"
+        - name: "toInclusive"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "double"
+            uuid: "doubleRange-toInclusive"
+      valueType: "org.apache.commons.lang3.DoubleRange"
+      uuid: "doubleRange"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "double"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "double2"
+- method:
+    name: "of"
+    sourceCodeSignature: "DoubleRange of(final Double fromInclusive, final Double\
+      \ toInclusive)"
+    returnType: "org.apache.commons.lang3.DoubleRange"
+    parameters:
+    - name: "fromInclusive"
+      type: "java.lang.Double"
+    - name: "toInclusive"
+      type: "java.lang.Double"
+    instructionFingerprint: "34D171BB03CDA02239D1DC875BA6B100"
+  paths:
+  - testPathName: "of3WhenDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "doubleRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "java.lang.Double"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.5
+      valueType: "java.lang.Double"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.DoubleRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.5
+            valueType: "java.lang.Double"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.5
+            valueType: "java.lang.Double"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.DoubleRange"
+      uuid: "doubleRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+  - testPathName: "of3WhenDefaultBranchAndDefaultBranch"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "fromInclusive"
+      valueUuid: "fromInclusive"
+    - type: "INPUT"
+      name: "toInclusive"
+      valueUuid: "toInclusive"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "doubleRange"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "fromInclusive"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0.0
+      valueType: "java.lang.Double"
+      uuid: "toInclusive"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "org.apache.commons.lang3.DoubleRange"
+        parameters:
+        - name: "number1"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "java.lang.Double"
+            uuid: "fromInclusive"
+        - name: "number2"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0.0
+            valueType: "java.lang.Double"
+            uuid: "toInclusive"
+      valueType: "org.apache.commons.lang3.DoubleRange"
+      uuid: "doubleRange"
+    branches:
+    - lineNumber: 224
+      expression: "branch expression (line 224)"
+      range: "(224,1)-(224,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"
+    - lineNumber: 229
+      expression: "branch expression (line 229)"
+      range: "(229,1)-(229,200)"
+      evaluatedAs: false
+      internalMethodName: "<init>"

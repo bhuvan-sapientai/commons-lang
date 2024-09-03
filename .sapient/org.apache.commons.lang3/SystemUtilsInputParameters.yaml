@@ -1,0 +1,741 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.SystemUtils"
+methods:
+- method:
+    name: "getEnvironmentVariable"
+    sourceCodeSignature: "String getEnvironmentVariable(final String name, final String\
+      \ defaultValue)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "name"
+      type: "java.lang.String"
+    - name: "defaultValue"
+      type: "java.lang.String"
+    instructionFingerprint: "A78FAB14E124D088BED4FA635EBA2A7B"
+  paths:
+  - testPathName: "getEnvironmentVariableWhenValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "defaultValue1"
+      valueType: "java.lang.String"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 1896
+      expression: "value == null"
+      range: "(1896,20)-(1896,32)"
+      evaluatedAs: true
+  - testPathName: "getEnvironmentVariableWhenValueIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      valueUuid: "name"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string82"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "name"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "defaultValue1"
+      valueType: "java.lang.String"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string82"
+    branches:
+    - lineNumber: 1896
+      expression: "value == null"
+      range: "(1896,20)-(1896,32)"
+      evaluatedAs: false
+- method:
+    name: "getHostName"
+    sourceCodeSignature: "String getHostName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "271FBE4FC7496C0DE040E36A5466E208"
+  paths:
+  - testPathName: "getHostNameWhenNotIS_OS_WINDOWS"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string82"
+    disabled: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.System.getenv(java.lang.String) : java.lang.String"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string82"
+    branches:
+    - lineNumber: 1916
+      expression: "IS_OS_WINDOWS"
+      range: "(1916,16)-(1916,28)"
+      evaluatedAs: false
+- method:
+    name: "getJavaHome"
+    sourceCodeSignature: "File getJavaHome()"
+    returnType: "java.io.File"
+    instructionFingerprint: "3FBA0B9177F4382ADD5B947E4EEB63B0"
+  paths:
+  - testPathName: "getJavaHomeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "file"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.File"
+        parameters:
+        - name: "pathname"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "/Applications/IntelliJ IDEA CE 231.app/Contents/jbr/Contents/Home"
+            valueType: "java.lang.String"
+            uuid: "string82"
+      valueType: "java.io.File"
+      uuid: "file"
+- method:
+    name: "getJavaIoTmpDir"
+    sourceCodeSignature: "File getJavaIoTmpDir()"
+    returnType: "java.io.File"
+    instructionFingerprint: "8C29157864BFC19C1E10D365D75F8FCE"
+  paths:
+  - testPathName: "getJavaIoTmpDirTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "file"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.File"
+        parameters:
+        - name: "pathname"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "/var/folders/23/6wlpx0js4c9b9z51m_1txb780000gn/T/"
+            valueType: "java.lang.String"
+            uuid: "string82"
+      valueType: "java.io.File"
+      uuid: "file"
+- method:
+    name: "getUserDir"
+    sourceCodeSignature: "File getUserDir()"
+    returnType: "java.io.File"
+    instructionFingerprint: "2D422234FA22ED9D2FCB175C15DD3906"
+  paths:
+  - testPathName: "getUserDirTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "file"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.File"
+        parameters:
+        - name: "pathname"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "/"
+            valueType: "java.lang.String"
+            uuid: "string82"
+      valueType: "java.io.File"
+      uuid: "file"
+- method:
+    name: "getUserHome"
+    sourceCodeSignature: "File getUserHome()"
+    returnType: "java.io.File"
+    instructionFingerprint: "4D1C4B7EFC43D7C79983169F4F4A52FB"
+  paths:
+  - testPathName: "getUserHomeTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "file"
+    disabled: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.io.File"
+        parameters:
+        - name: "pathname"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "/Users/bhuvan"
+            valueType: "java.lang.String"
+            uuid: "string82"
+      valueType: "java.io.File"
+      uuid: "file"
+- method:
+    name: "getUserName"
+    sourceCodeSignature: "String getUserName()"
+    returnType: "java.lang.String"
+    instructionFingerprint: "14DF81DD67C5B1C2BBEE411549345FD5"
+  paths:
+  - testPathName: "getUserNameTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string82"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "bhuvan"
+      valueType: "java.lang.String"
+      uuid: "string82"
+- method:
+    name: "getUserName"
+    sourceCodeSignature: "String getUserName(final String defaultValue)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "defaultValue"
+      type: "java.lang.String"
+    instructionFingerprint: "416B79ADB226F3EBBA5E6C35ED11B519"
+  paths:
+  - testPathName: "getUserName1Test"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string82"
+    disabled: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_UNSOLVABLE"
+      source: "return System.getProperty(SystemProperties.USER_NAME, defaultValue);"
+      lineNumber: 2028
+      details: "Method java.lang.System::getProperty has a unrepeatable behavior"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "defaultValue1"
+      valueType: "java.lang.String"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "string82"
+- method:
+    name: "isJavaAwtHeadless"
+    sourceCodeSignature: "boolean isJavaAwtHeadless()"
+    returnType: "boolean"
+    instructionFingerprint: "A52F335484E3B34FDAC963AB4288CB01"
+  paths:
+  - testPathName: "isJavaAwtHeadlessTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean130"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean130"
+- method:
+    name: "isJavaVersionAtLeast"
+    sourceCodeSignature: "boolean isJavaVersionAtLeast(final JavaVersion requiredVersion)"
+    returnType: "boolean"
+    parameters:
+    - name: "requiredVersion"
+      type: "org.apache.commons.lang3.JavaVersion"
+    instructionFingerprint: "79A874321D7232BD846C39B4A86E7F7E"
+  paths:
+  - testPathName: "isJavaVersionAtLeastWhenJAVA_SPECIFICATION_VERSION_AS_ENUMAtLeastRequiredVersion"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      valueUuid: "requiredVersion"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "JAVA_0_9"
+      valueType: "org.apache.commons.lang3.JavaVersion"
+      uuid: "requiredVersion"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2050
+      expression: "JAVA_SPECIFICATION_VERSION_AS_ENUM.atLeast(requiredVersion)"
+      range: "(2050,16)-(2050,74)"
+      evaluatedAs: true
+  - testPathName: "isJavaVersionAtLeastWhenJAVA_SPECIFICATION_VERSION_AS_ENUMNotAtLeastRequiredVersion"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      valueUuid: "requiredVersion"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "JAVA_0_9"
+      valueType: "org.apache.commons.lang3.JavaVersion"
+      uuid: "requiredVersion"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2050
+      expression: "JAVA_SPECIFICATION_VERSION_AS_ENUM.atLeast(requiredVersion)"
+      range: "(2050,16)-(2050,74)"
+      evaluatedAs: false
+- method:
+    name: "isJavaVersionAtMost"
+    sourceCodeSignature: "boolean isJavaVersionAtMost(final JavaVersion requiredVersion)"
+    returnType: "boolean"
+    parameters:
+    - name: "requiredVersion"
+      type: "org.apache.commons.lang3.JavaVersion"
+    instructionFingerprint: "B248E63812A04DF2EC606ABD2238C86B"
+  paths:
+  - testPathName: "isJavaVersionAtMostWhenJAVA_SPECIFICATION_VERSION_AS_ENUMAtMostRequiredVersion"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      valueUuid: "requiredVersion"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "JAVA_0_9"
+      valueType: "org.apache.commons.lang3.JavaVersion"
+      uuid: "requiredVersion"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2065
+      expression: "JAVA_SPECIFICATION_VERSION_AS_ENUM.atMost(requiredVersion)"
+      range: "(2065,16)-(2065,73)"
+      evaluatedAs: true
+  - testPathName: "isJavaVersionAtMostWhenJAVA_SPECIFICATION_VERSION_AS_ENUMNotAtMostRequiredVersion"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "requiredVersion"
+      valueUuid: "requiredVersion"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "JAVA_0_9"
+      valueType: "org.apache.commons.lang3.JavaVersion"
+      uuid: "requiredVersion"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2065
+      expression: "JAVA_SPECIFICATION_VERSION_AS_ENUM.atMost(requiredVersion)"
+      range: "(2065,16)-(2065,73)"
+      evaluatedAs: false
+- method:
+    name: "isJavaVersionMatch"
+    sourceCodeSignature: "boolean isJavaVersionMatch(final String version, final String\
+      \ versionPrefix)"
+    returnType: "boolean"
+    parameters:
+    - name: "version"
+      type: "java.lang.String"
+    - name: "versionPrefix"
+      type: "java.lang.String"
+    instructionFingerprint: "94266174CE95B48A1F3232BF72873F94"
+  paths:
+  - testPathName: "isJavaVersionMatchWhenVersionIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "version"
+      valueUuid: "string19"
+    - type: "INPUT"
+      name: "versionPrefix"
+      valueUuid: "versionPrefix2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "17"
+      valueType: "java.lang.String"
+      uuid: "string19"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "21"
+      valueType: "java.lang.String"
+      uuid: "versionPrefix2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2080
+      expression: "version == null"
+      range: "(2080,13)-(2080,27)"
+      evaluatedAs: false
+- method:
+    name: "isOSMatch"
+    sourceCodeSignature: "boolean isOSMatch(final String osName, final String osVersion,\
+      \ final String osNamePrefix, final String osVersionPrefix)"
+    returnType: "boolean"
+    parameters:
+    - name: "osName"
+      type: "java.lang.String"
+    - name: "osVersion"
+      type: "java.lang.String"
+    - name: "osNamePrefix"
+      type: "java.lang.String"
+    - name: "osVersionPrefix"
+      type: "java.lang.String"
+    instructionFingerprint: "71B74BF6561478609E0360F47AEF66DD"
+  paths:
+  - testPathName: "isOSMatchWhenIsOSVersionMatchOsVersionOsVersionPrefix"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      valueUuid: "string33"
+    - type: "INPUT"
+      name: "osVersion"
+      valueUuid: "string34"
+    - type: "INPUT"
+      name: "osNamePrefix"
+      valueUuid: "osNamePrefix2"
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      valueUuid: "osVersionPrefix2"
+    - type: "STATIC"
+      name: "SystemUtils.class"
+      valueUuid: "SystemUtils.class"
+      methodExercised:
+        expression: "isOSNameMatch(string33,osNamePrefix2):boolean129"
+    - type: "STATIC"
+      name: "SystemUtils.class"
+      valueUuid: "SystemUtils.class"
+      methodExercised:
+        expression: "isOSVersionMatch(string34,osVersionPrefix2):boolean130"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Mac OS X"
+      valueType: "java.lang.String"
+      uuid: "string33"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "14.6.1"
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Mac OS X"
+      valueType: "java.lang.String"
+      uuid: "osNamePrefix2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "13"
+      valueType: "java.lang.String"
+      uuid: "osVersionPrefix2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemUtils"
+      uuid: "SystemUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean129"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean130"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 2099
+      expression: "osName == null"
+      range: "(2099,13)-(2099,26)"
+      evaluatedAs: false
+    - lineNumber: 2099
+      expression: "osVersion == null"
+      range: "(2099,31)-(2099,47)"
+      evaluatedAs: false
+    - lineNumber: 2102
+      expression: "isOSNameMatch(osName, osNamePrefix)"
+      range: "(2102,16)-(2102,50)"
+      evaluatedAs: true
+    - lineNumber: 2102
+      expression: "isOSVersionMatch(osVersion, osVersionPrefix)"
+      range: "(2102,55)-(2102,98)"
+      evaluatedAs: true
+  - testPathName: "isOSMatchWhenIsOSVersionMatchNotOsVersionOsVersionPrefix"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      valueUuid: "string33"
+    - type: "INPUT"
+      name: "osVersion"
+      valueUuid: "string34"
+    - type: "INPUT"
+      name: "osNamePrefix"
+      valueUuid: "osNamePrefix2"
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      valueUuid: "osVersionPrefix2"
+    - type: "STATIC"
+      name: "SystemUtils.class"
+      valueUuid: "SystemUtils.class"
+      methodExercised:
+        expression: "isOSNameMatch(string33,osNamePrefix2):boolean129"
+    - type: "STATIC"
+      name: "SystemUtils.class"
+      valueUuid: "SystemUtils.class"
+      methodExercised:
+        expression: "isOSVersionMatch(string34,osVersionPrefix2):boolean130"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Mac OS X"
+      valueType: "java.lang.String"
+      uuid: "string33"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "14.6.1"
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Mac OS X"
+      valueType: "java.lang.String"
+      uuid: "osNamePrefix2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "13"
+      valueType: "java.lang.String"
+      uuid: "osVersionPrefix2"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.SystemUtils"
+      uuid: "SystemUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean129"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean130"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 2099
+      expression: "osName == null"
+      range: "(2099,13)-(2099,26)"
+      evaluatedAs: false
+    - lineNumber: 2099
+      expression: "osVersion == null"
+      range: "(2099,31)-(2099,47)"
+      evaluatedAs: false
+    - lineNumber: 2102
+      expression: "isOSNameMatch(osName, osNamePrefix)"
+      range: "(2102,16)-(2102,50)"
+      evaluatedAs: true
+    - lineNumber: 2102
+      expression: "isOSVersionMatch(osVersion, osVersionPrefix)"
+      range: "(2102,55)-(2102,98)"
+      evaluatedAs: false
+- method:
+    name: "isOSNameMatch"
+    sourceCodeSignature: "boolean isOSNameMatch(final String osName, final String\
+      \ osNamePrefix)"
+    returnType: "boolean"
+    parameters:
+    - name: "osName"
+      type: "java.lang.String"
+    - name: "osNamePrefix"
+      type: "java.lang.String"
+    instructionFingerprint: "5E4B60D5AB59C3869E18FA1B1B4FDF11"
+  paths:
+  - testPathName: "isOSNameMatchWhenOsNameIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "osName"
+      valueUuid: "string33"
+    - type: "INPUT"
+      name: "osNamePrefix"
+      valueUuid: "osNamePrefix2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean129"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Mac OS X"
+      valueType: "java.lang.String"
+      uuid: "string33"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "z/OS"
+      valueType: "java.lang.String"
+      uuid: "osNamePrefix2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean129"
+    branches:
+    - lineNumber: 2116
+      expression: "osName == null"
+      range: "(2116,13)-(2116,26)"
+      evaluatedAs: false
+- method:
+    name: "isOSVersionMatch"
+    sourceCodeSignature: "boolean isOSVersionMatch(final String osVersion, final String\
+      \ osVersionPrefix)"
+    returnType: "boolean"
+    parameters:
+    - name: "osVersion"
+      type: "java.lang.String"
+    - name: "osVersionPrefix"
+      type: "java.lang.String"
+    instructionFingerprint: "2BC2E9E2252EB2B49E513199E32F6421"
+  paths:
+  - testPathName: "isOSVersionMatchWhenIIndexOfVersionPrefixPartsNotEqualsIIndexOfVersionParts"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "osVersion"
+      valueUuid: "string34"
+    - type: "INPUT"
+      name: "osVersionPrefix"
+      valueUuid: "osVersionPrefix2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "14.6.1"
+      valueType: "java.lang.String"
+      uuid: "string34"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "13"
+      valueType: "java.lang.String"
+      uuid: "osVersionPrefix2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 2133
+      expression: "StringUtils.isEmpty(osVersion)"
+      range: "(2133,13)-(2133,42)"
+      evaluatedAs: false
+    - lineNumber: 2140
+      expression: "i < Math.min(versionPrefixParts.length, versionParts.length)"
+      range: "(2140,25)-(2140,84)"
+      evaluatedAs: true
+    - lineNumber: 2141
+      expression: "!versionPrefixParts[i].equals(versionParts[i])"
+      range: "(2141,17)-(2141,62)"
+      evaluatedAs: true

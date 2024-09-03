@@ -1,0 +1,1537 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.CharUtils"
+methods:
+- method:
+    name: "compare"
+    sourceCodeSignature: "int compare(final char x, final char y)"
+    returnType: "int"
+    parameters:
+    - name: "x"
+      type: "char"
+    - name: "y"
+      type: "char"
+    instructionFingerprint: "599849BB3780D6CDE13459F27FA94E25"
+  paths:
+  - testPathName: "compareTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "x"
+      valueUuid: "x"
+    - type: "INPUT"
+      name: "y"
+      valueUuid: "y"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "x"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "y"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+- method:
+    name: "isAscii"
+    sourceCodeSignature: "boolean isAscii(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "D0DBDE78E7D813552513C476D64A50B2"
+  paths:
+  - testPathName: "isAsciiWhenChLessThan128"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\x04"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 96
+      expression: "ch < 128"
+      range: "(96,16)-(96,23)"
+      evaluatedAs: true
+  - testPathName: "isAsciiWhenChNotLessThan128"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 96
+      expression: "ch < 128"
+      range: "(96,16)-(96,23)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiAlpha"
+    sourceCodeSignature: "boolean isAsciiAlpha(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "44FD688AAED8B440DDFC5405E768A727"
+  paths:
+  - testPathName: "isAsciiAlphaWhenIsAsciiAlphaLowerCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlphaUpper(ch):boolean1"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlphaLower(ch):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 115
+      expression: "isAsciiAlphaUpper(ch)"
+      range: "(115,16)-(115,36)"
+      evaluatedAs: false
+    - lineNumber: 115
+      expression: "isAsciiAlphaLower(ch)"
+      range: "(115,41)-(115,61)"
+      evaluatedAs: true
+  - testPathName: "isAsciiAlphaWhenIsAsciiAlphaLowerNotCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlphaUpper(ch):boolean1"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlphaLower(ch):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 115
+      expression: "isAsciiAlphaUpper(ch)"
+      range: "(115,16)-(115,36)"
+      evaluatedAs: false
+    - lineNumber: 115
+      expression: "isAsciiAlphaLower(ch)"
+      range: "(115,41)-(115,61)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiAlphaLower"
+    sourceCodeSignature: "boolean isAsciiAlphaLower(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "779F7F5A595EEF42A49A7A99AB6A190B"
+  paths:
+  - testPathName: "isAsciiAlphaLowerWhenChLessThanOrEqualsTo_z_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "c"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 134
+      expression: "ch >= 'a'"
+      range: "(134,16)-(134,24)"
+      evaluatedAs: true
+    - lineNumber: 134
+      expression: "ch <= 'z'"
+      range: "(134,29)-(134,37)"
+      evaluatedAs: true
+  - testPathName: "isAsciiAlphaLowerWhenChGreaterThan_z_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 134
+      expression: "ch >= 'a'"
+      range: "(134,16)-(134,24)"
+      evaluatedAs: true
+    - lineNumber: 134
+      expression: "ch <= 'z'"
+      range: "(134,29)-(134,37)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiAlphanumeric"
+    sourceCodeSignature: "boolean isAsciiAlphanumeric(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "BC0D8D9F831F3C547DD5E49D53848063"
+  paths:
+  - testPathName: "isAsciiAlphanumericWhenIsAsciiNumericCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlpha(ch):boolean1"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 153
+      expression: "isAsciiAlpha(ch)"
+      range: "(153,16)-(153,31)"
+      evaluatedAs: false
+    - lineNumber: 153
+      expression: "isAsciiNumeric(ch)"
+      range: "(153,36)-(153,53)"
+      evaluatedAs: true
+  - testPathName: "isAsciiAlphanumericWhenIsAsciiNumericNotCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiAlpha(ch):boolean1"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 153
+      expression: "isAsciiAlpha(ch)"
+      range: "(153,16)-(153,31)"
+      evaluatedAs: false
+    - lineNumber: 153
+      expression: "isAsciiNumeric(ch)"
+      range: "(153,36)-(153,53)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiAlphaUpper"
+    sourceCodeSignature: "boolean isAsciiAlphaUpper(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "7F69139333634CD1FBEF9D58018DACCC"
+  paths:
+  - testPathName: "isAsciiAlphaUpperWhenChLessThanOrEqualsTo_Z_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 172
+      expression: "ch >= 'A'"
+      range: "(172,16)-(172,24)"
+      evaluatedAs: true
+    - lineNumber: 172
+      expression: "ch <= 'Z'"
+      range: "(172,29)-(172,37)"
+      evaluatedAs: true
+  - testPathName: "isAsciiAlphaUpperWhenChGreaterThan_Z_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 172
+      expression: "ch >= 'A'"
+      range: "(172,16)-(172,24)"
+      evaluatedAs: true
+    - lineNumber: 172
+      expression: "ch <= 'Z'"
+      range: "(172,29)-(172,37)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiControl"
+    sourceCodeSignature: "boolean isAsciiControl(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "C7B22219813B0D86F2C64DA1D3F6F8F6"
+  paths:
+  - testPathName: "isAsciiControlWhenChEquals127"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\x7f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 191
+      expression: "ch < 32"
+      range: "(191,16)-(191,22)"
+      evaluatedAs: false
+    - lineNumber: 191
+      expression: "ch == 127"
+      range: "(191,27)-(191,35)"
+      evaluatedAs: true
+  - testPathName: "isAsciiControlWhenChNotEquals127"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud82f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 191
+      expression: "ch < 32"
+      range: "(191,16)-(191,22)"
+      evaluatedAs: false
+    - lineNumber: 191
+      expression: "ch == 127"
+      range: "(191,27)-(191,35)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiNumeric"
+    sourceCodeSignature: "boolean isAsciiNumeric(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "C00AAC31A0098ACAE6E1F61757EE2E2C"
+  paths:
+  - testPathName: "isAsciiNumericWhenChLessThanOrEqualsTo_9_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "7"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 210
+      expression: "ch >= '0'"
+      range: "(210,16)-(210,24)"
+      evaluatedAs: true
+    - lineNumber: 210
+      expression: "ch <= '9'"
+      range: "(210,29)-(210,37)"
+      evaluatedAs: true
+  - testPathName: "isAsciiNumericWhenChGreaterThan_9_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 210
+      expression: "ch >= '0'"
+      range: "(210,16)-(210,24)"
+      evaluatedAs: true
+    - lineNumber: 210
+      expression: "ch <= '9'"
+      range: "(210,29)-(210,37)"
+      evaluatedAs: false
+- method:
+    name: "isAsciiPrintable"
+    sourceCodeSignature: "boolean isAsciiPrintable(final char ch)"
+    returnType: "boolean"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "3BF15F81E42D1275C16075DF00888E39"
+  paths:
+  - testPathName: "isAsciiPrintableWhenChLessThan127"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 229
+      expression: "ch >= 32"
+      range: "(229,16)-(229,23)"
+      evaluatedAs: true
+    - lineNumber: 229
+      expression: "ch < 127"
+      range: "(229,28)-(229,35)"
+      evaluatedAs: true
+  - testPathName: "isAsciiPrintableWhenChNotLessThan127"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud87f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 229
+      expression: "ch >= 32"
+      range: "(229,16)-(229,23)"
+      evaluatedAs: true
+    - lineNumber: 229
+      expression: "ch < 127"
+      range: "(229,28)-(229,35)"
+      evaluatedAs: false
+- method:
+    name: "toChar"
+    sourceCodeSignature: "char toChar(final Character ch)"
+    returnType: "char"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    instructionFingerprint: "74CA4526E1ED9C63AE89FF00BCB8601B"
+  paths:
+  - testPathName: "toCharTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "char2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+- method:
+    name: "toChar"
+    sourceCodeSignature: "char toChar(final Character ch, final char defaultValue)"
+    returnType: "char"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    - name: "defaultValue"
+      type: "char"
+    instructionFingerprint: "31C160F6BDCFCC1C09B9388A094EE630"
+  paths:
+  - testPathName: "toChar1WhenChIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "char2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    branches:
+    - lineNumber: 263
+      expression: "ch != null"
+      range: "(263,16)-(263,25)"
+      evaluatedAs: true
+  - testPathName: "toChar1WhenChIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 263
+      expression: "ch != null"
+      range: "(263,16)-(263,25)"
+      evaluatedAs: false
+- method:
+    name: "toChar"
+    sourceCodeSignature: "char toChar(final String str)"
+    returnType: "char"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "63BB167D575197E79FD51EA5C5049210"
+  paths:
+  - testPathName: "toChar2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "char2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "char"
+      uuid: "char2"
+- method:
+    name: "toChar"
+    sourceCodeSignature: "char toChar(final String str, final char defaultValue)"
+    returnType: "char"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "defaultValue"
+      type: "char"
+    instructionFingerprint: "05688697A29690C37F5A9858BD80D207"
+  paths:
+  - testPathName: "toChar3WhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 303
+      expression: "StringUtils.isEmpty(str)"
+      range: "(303,16)-(303,39)"
+      evaluatedAs: true
+  - testPathName: "toChar3WhenStringUtilsNotIsEmptyStr"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "char2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "defaultValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "char"
+      uuid: "char2"
+    branches:
+    - lineNumber: 303
+      expression: "StringUtils.isEmpty(str)"
+      range: "(303,16)-(303,39)"
+      evaluatedAs: false
+- method:
+    name: "toCharacterObject"
+    sourceCodeSignature: "Character toCharacterObject(final char ch)"
+    returnType: "java.lang.Character"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "E1979B24AFD1E779163719A82CDDB34B"
+  paths:
+  - testPathName: "toCharacterObjectTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "character"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.Character"
+      uuid: "character"
+- method:
+    name: "toCharacterObject"
+    sourceCodeSignature: "Character toCharacterObject(final String str)"
+    returnType: "java.lang.Character"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "5C123B6A73FE1728641C00E67A2B65E2"
+  paths:
+  - testPathName: "toCharacterObject1WhenStringUtilsIsEmptyStr"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "character"
+    disabled: false
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "java.lang.Character"
+      uuid: "character"
+    branches:
+    - lineNumber: 344
+      expression: "StringUtils.isEmpty(str)"
+      range: "(344,16)-(344,39)"
+      evaluatedAs: true
+  - testPathName: "toCharacterObject1WhenStringUtilsNotIsEmptyStr"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "character"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.Character"
+      uuid: "character"
+    branches:
+    - lineNumber: 344
+      expression: "StringUtils.isEmpty(str)"
+      range: "(344,16)-(344,39)"
+      evaluatedAs: false
+- method:
+    name: "toIntValue"
+    sourceCodeSignature: "int toIntValue(final char ch)"
+    returnType: "int"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "4CAA60C520214A32476D550140799E55"
+  paths:
+  - testPathName: "toIntValueWhenIsAsciiNumericNotChThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The character B is not in the range '0' - '9'"
+            valueType: "java.lang.String"
+            uuid: "string2"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 363
+      expression: "!isAsciiNumeric(ch)"
+      range: "(363,13)-(363,31)"
+      evaluatedAs: true
+  - testPathName: "toIntValueWhenIsAsciiNumericCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    branches:
+    - lineNumber: 363
+      expression: "!isAsciiNumeric(ch)"
+      range: "(363,13)-(363,31)"
+      evaluatedAs: false
+- method:
+    name: "toIntValue"
+    sourceCodeSignature: "int toIntValue(final char ch, final int defaultValue)"
+    returnType: "int"
+    parameters:
+    - name: "ch"
+      type: "char"
+    - name: "defaultValue"
+      type: "int"
+    instructionFingerprint: "8773ADAF7AE30F4595A5E9F7C6667CEC"
+  paths:
+  - testPathName: "toIntValue1WhenIsAsciiNumericCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "defaultValue"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean1"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    branches:
+    - lineNumber: 385
+      expression: "isAsciiNumeric(ch)"
+      range: "(385,16)-(385,33)"
+      evaluatedAs: true
+  - testPathName: "toIntValue1WhenIsAsciiNumericNotCh"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "isAsciiNumeric(ch):boolean1"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "defaultValue"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean1"
+    branches:
+    - lineNumber: 385
+      expression: "isAsciiNumeric(ch)"
+      range: "(385,16)-(385,33)"
+      evaluatedAs: false
+- method:
+    name: "toIntValue"
+    sourceCodeSignature: "int toIntValue(final Character ch)"
+    returnType: "int"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    instructionFingerprint: "1153364A5BF64265DBD1142BC4A4C2FE"
+  paths:
+  - testPathName: "toIntValue2Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "toIntValue(char2):int2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.CharUtils"
+- method:
+    name: "toIntValue"
+    sourceCodeSignature: "int toIntValue(final Character ch, final int defaultValue)"
+    returnType: "int"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    - name: "defaultValue"
+      type: "int"
+    instructionFingerprint: "2E4F52D4D191B164A601B54A355D5B48"
+  paths:
+  - testPathName: "toIntValue3WhenChIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "toIntValue(char2,defaultValue):int2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "defaultValue"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "int2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    branches:
+    - lineNumber: 426
+      expression: "ch != null"
+      range: "(426,16)-(426,25)"
+      evaluatedAs: true
+  - testPathName: "toIntValue3WhenChIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "INPUT"
+      name: "defaultValue"
+      valueUuid: "defaultValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "defaultValue"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "defaultValue"
+    branches:
+    - lineNumber: 426
+      expression: "ch != null"
+      range: "(426,16)-(426,25)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final char ch)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "6FD2EEF6F2E2473490854B97D9612A88"
+  paths:
+  - testPathName: "toStringWhenChLessThanCHAR_STRING_ARRAYLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\x04"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "null"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 444
+      expression: "ch < CHAR_STRING_ARRAY.length"
+      range: "(444,13)-(444,41)"
+      evaluatedAs: true
+  - testPathName: "toStringWhenChNotLessThanCHAR_STRING_ARRAYLength"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\ud83f"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\uD83F"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 444
+      expression: "ch < CHAR_STRING_ARRAY.length"
+      range: "(444,13)-(444,41)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Character ch)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    instructionFingerprint: "1BEFB0117F34D4DF746654F384B1DBFC"
+  paths:
+  - testPathName: "toString1WhenChIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "toString(char2):string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    branches:
+    - lineNumber: 468
+      expression: "ch != null"
+      range: "(468,16)-(468,25)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenChIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 468
+      expression: "ch != null"
+      range: "(468,16)-(468,25)"
+      evaluatedAs: false
+- method:
+    name: "unicodeEscaped"
+    sourceCodeSignature: "String unicodeEscaped(final char ch)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "ch"
+      type: "char"
+    instructionFingerprint: "73F2B2BEAC9251E8A602F95E13374840"
+  paths:
+  - testPathName: "unicodeEscapedTest"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "ch"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\\\ua00f"
+      valueType: "java.lang.String"
+      uuid: "string2"
+- method:
+    name: "unicodeEscaped"
+    sourceCodeSignature: "String unicodeEscaped(final Character ch)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "ch"
+      type: "java.lang.Character"
+    instructionFingerprint: "CF50F9BD17C7EF1ED5BF6BEEB78D04DD"
+  paths:
+  - testPathName: "unicodeEscaped1WhenChIsNotNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "STATIC"
+      name: "CharUtils.class"
+      valueUuid: "CharUtils.class"
+      methodExercised:
+        expression: "unicodeEscaped(char2):string2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.CharUtils"
+      uuid: "CharUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_unicodeEscaped1"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "char"
+      uuid: "char2"
+    branches:
+    - lineNumber: 509
+      expression: "ch != null"
+      range: "(509,16)-(509,25)"
+      evaluatedAs: true
+  - testPathName: "unicodeEscaped1WhenChIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "ch"
+      valueUuid: "ch"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Character"
+      uuid: "ch"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "string2"
+    branches:
+    - lineNumber: 509
+      expression: "ch != null"
+      range: "(509,16)-(509,25)"
+      evaluatedAs: false

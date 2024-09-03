@@ -1,0 +1,5323 @@
+---
+targetClass:
+  fullClassName: "org.apache.commons.lang3.BooleanUtils"
+methods:
+- method:
+    name: "and"
+    sourceCodeSignature: "boolean and(final boolean... array)"
+    returnType: "boolean"
+    parameters:
+    - name: "array"
+      type: "boolean[]"
+    instructionFingerprint: "9D29372958B03F202E32857D1D1CD317"
+  paths:
+  - testPathName: "andWhenNotElement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 102
+      expression: "for-each(array)"
+      range: "(102,38)-(102,42)"
+      evaluatedAs: true
+    - lineNumber: 103
+      expression: "!element"
+      range: "(103,17)-(103,24)"
+      evaluatedAs: true
+  - testPathName: "andWhenElement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 102
+      expression: "for-each(array)"
+      range: "(102,38)-(102,42)"
+      evaluatedAs: true
+    - lineNumber: 103
+      expression: "!element"
+      range: "(103,17)-(103,24)"
+      evaluatedAs: false
+- method:
+    name: "and"
+    sourceCodeSignature: "Boolean and(final Boolean... array)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "array"
+      type: "java.lang.Boolean[]"
+    instructionFingerprint: "B338B5EB17B32E4A3A2CB261BDBCBAA3"
+  paths:
+  - testPathName: "and1WhenAndArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "and(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 134
+      expression: "and(ArrayUtils.toPrimitive(array))"
+      range: "(134,16)-(134,49)"
+      evaluatedAs: true
+  - testPathName: "and1WhenAndNotArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "and(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 134
+      expression: "and(ArrayUtils.toPrimitive(array))"
+      range: "(134,16)-(134,49)"
+      evaluatedAs: false
+- method:
+    name: "booleanValues"
+    sourceCodeSignature: "Boolean[] booleanValues()"
+    returnType: "java.lang.Boolean[]"
+    instructionFingerprint: "5D137C0E7BFB58EF3FE79C00828ADE1B"
+  paths:
+  - testPathName: "booleanValuesTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "booleanArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "java.lang.Boolean"
+            uuid: "boolean"
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "java.lang.Boolean"
+            uuid: "boolean2"
+      valueType: "java.lang.Boolean[]"
+      uuid: "booleanArray2"
+- method:
+    name: "compare"
+    sourceCodeSignature: "int compare(final boolean x, final boolean y)"
+    returnType: "int"
+    parameters:
+    - name: "x"
+      type: "boolean"
+    - name: "y"
+      type: "boolean"
+    instructionFingerprint: "57A53EE68AFAEEE6524E1F7013DA1DBF"
+  paths:
+  - testPathName: "compareWhenXEqualsY"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "x"
+      valueUuid: "x"
+    - type: "INPUT"
+      name: "y"
+      valueUuid: "y"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "x"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "y"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 157
+      expression: "x == y"
+      range: "(157,13)-(157,18)"
+      evaluatedAs: true
+  - testPathName: "compareWhenX"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "x"
+      valueUuid: "x"
+    - type: "INPUT"
+      name: "y"
+      valueUuid: "y"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "x"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "y"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 157
+      expression: "x == y"
+      range: "(157,13)-(157,18)"
+      evaluatedAs: false
+    - lineNumber: 160
+      expression: "x"
+      range: "(160,16)-(160,16)"
+      evaluatedAs: true
+  - testPathName: "compareWhenNotX"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "x"
+      valueUuid: "x"
+    - type: "INPUT"
+      name: "y"
+      valueUuid: "y"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "x"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "y"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 157
+      expression: "x == y"
+      range: "(157,13)-(157,18)"
+      evaluatedAs: false
+    - lineNumber: 160
+      expression: "x"
+      range: "(160,16)-(160,16)"
+      evaluatedAs: false
+- method:
+    name: "forEach"
+    sourceCodeSignature: "void forEach(final Consumer<Boolean> action)"
+    returnType: "void"
+    parameters:
+    - name: "action"
+      type: "java.util.function.Consumer"
+      genericType: "java.lang.Boolean"
+    instructionFingerprint: "2C79DD918DFFF9ECD66B8EE859410F3D"
+  paths:
+  - testPathName: "forEachTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "action"
+      valueUuid: "action"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "void2"
+    disabled: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "action"
+    - sapientType: "VOID"
+      uuid: "void2"
+    mockedStaticClassesWithCallRealMethods:
+    - "org.apache.commons.lang3.BooleanUtils"
+- method:
+    name: "isFalse"
+    sourceCodeSignature: "boolean isFalse(final Boolean bool)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "1D9E2D707ECE2C74B7C15D48B7667F74"
+  paths:
+  - testPathName: "isFalseWhenBooleanFALSEEqualsBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 188
+      expression: "Boolean.FALSE.equals(bool)"
+      range: "(188,16)-(188,41)"
+      evaluatedAs: true
+  - testPathName: "isFalseWhenBooleanFALSENotEqualsBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 188
+      expression: "Boolean.FALSE.equals(bool)"
+      range: "(188,16)-(188,41)"
+      evaluatedAs: false
+- method:
+    name: "isNotFalse"
+    sourceCodeSignature: "boolean isNotFalse(final Boolean bool)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "ECDF3328EAC81F8815673ACD79A87F41"
+  paths:
+  - testPathName: "isNotFalseWhenIsFalseNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "isFalse(bool):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 206
+      expression: "!isFalse(bool)"
+      range: "(206,16)-(206,29)"
+      evaluatedAs: true
+  - testPathName: "isNotFalseWhenIsFalseBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "isFalse(bool):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 206
+      expression: "!isFalse(bool)"
+      range: "(206,16)-(206,29)"
+      evaluatedAs: false
+- method:
+    name: "isNotTrue"
+    sourceCodeSignature: "boolean isNotTrue(final Boolean bool)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "49F41B0E7DA5855C51B2CDB44483841B"
+  paths:
+  - testPathName: "isNotTrueWhenIsTrueNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "isTrue(bool):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 224
+      expression: "!isTrue(bool)"
+      range: "(224,16)-(224,28)"
+      evaluatedAs: true
+  - testPathName: "isNotTrueWhenIsTrueBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "isTrue(bool):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 224
+      expression: "!isTrue(bool)"
+      range: "(224,16)-(224,28)"
+      evaluatedAs: false
+- method:
+    name: "isTrue"
+    sourceCodeSignature: "boolean isTrue(final Boolean bool)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "84001067464660A277AE2415C487C03F"
+  paths:
+  - testPathName: "isTrueWhenBooleanTRUEEqualsBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 242
+      expression: "Boolean.TRUE.equals(bool)"
+      range: "(242,16)-(242,40)"
+      evaluatedAs: true
+  - testPathName: "isTrueWhenBooleanTRUENotEqualsBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 242
+      expression: "Boolean.TRUE.equals(bool)"
+      range: "(242,16)-(242,40)"
+      evaluatedAs: false
+- method:
+    name: "negate"
+    sourceCodeSignature: "Boolean negate(final Boolean bool)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "B6A3E5F326C05695D29011DE242D0B5C"
+  paths:
+  - testPathName: "negateWhenBoolIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 262
+      expression: "bool == null"
+      range: "(262,13)-(262,24)"
+      evaluatedAs: true
+  - testPathName: "negateWhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 262
+      expression: "bool == null"
+      range: "(262,13)-(262,24)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "bool.booleanValue()"
+      range: "(265,16)-(265,34)"
+      evaluatedAs: true
+  - testPathName: "negateWhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 262
+      expression: "bool == null"
+      range: "(262,13)-(262,24)"
+      evaluatedAs: false
+    - lineNumber: 265
+      expression: "bool.booleanValue()"
+      range: "(265,16)-(265,34)"
+      evaluatedAs: false
+- method:
+    name: "oneHot"
+    sourceCodeSignature: "boolean oneHot(final boolean... array)"
+    returnType: "boolean"
+    parameters:
+    - name: "array"
+      type: "boolean[]"
+    instructionFingerprint: "AC0FD68B75DD6A1743C78B704D2D9BB4"
+  paths:
+  - testPathName: "oneHotWhenNotElement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int1"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "int1"
+    branches:
+    - lineNumber: 284
+      expression: "for-each(array)"
+      range: "(284,37)-(284,41)"
+      evaluatedAs: true
+    - lineNumber: 285
+      expression: "element"
+      range: "(285,17)-(285,23)"
+      evaluatedAs: false
+  - testPathName: "oneHotWhenNotResult"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int4"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "int4"
+    branches:
+    - lineNumber: 284
+      expression: "for-each(array)"
+      range: "(284,37)-(284,41)"
+      evaluatedAs: true
+    - lineNumber: 285
+      expression: "element"
+      range: "(285,17)-(285,23)"
+      evaluatedAs: true
+    - lineNumber: 286
+      expression: "result"
+      range: "(286,21)-(286,26)"
+      evaluatedAs: false
+- method:
+    name: "oneHot"
+    sourceCodeSignature: "Boolean oneHot(final Boolean... array)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "array"
+      type: "java.lang.Boolean[]"
+    instructionFingerprint: "2E846A917D47FEC128061B33FD338164"
+  paths:
+  - testPathName: "oneHot1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "oneHot(booleanArray2):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean4"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean4"
+- method:
+    name: "or"
+    sourceCodeSignature: "boolean or(final boolean... array)"
+    returnType: "boolean"
+    parameters:
+    - name: "array"
+      type: "boolean[]"
+    instructionFingerprint: "265607CC8B2BC40270502D9C4A548A74"
+  paths:
+  - testPathName: "orWhenElement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 336
+      expression: "for-each(array)"
+      range: "(336,38)-(336,42)"
+      evaluatedAs: true
+    - lineNumber: 337
+      expression: "element"
+      range: "(337,17)-(337,23)"
+      evaluatedAs: true
+  - testPathName: "orWhenNotElement"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 336
+      expression: "for-each(array)"
+      range: "(336,38)-(336,42)"
+      evaluatedAs: true
+    - lineNumber: 337
+      expression: "element"
+      range: "(337,17)-(337,23)"
+      evaluatedAs: false
+- method:
+    name: "or"
+    sourceCodeSignature: "Boolean or(final Boolean... array)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "array"
+      type: "java.lang.Boolean[]"
+    instructionFingerprint: "55E550F2D17F8161896EC25E32490BF3"
+  paths:
+  - testPathName: "or1WhenOrArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "or(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 369
+      expression: "or(ArrayUtils.toPrimitive(array))"
+      range: "(369,16)-(369,48)"
+      evaluatedAs: true
+  - testPathName: "or1WhenOrNotArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "or(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 369
+      expression: "or(ArrayUtils.toPrimitive(array))"
+      range: "(369,16)-(369,48)"
+      evaluatedAs: false
+- method:
+    name: "primitiveValues"
+    sourceCodeSignature: "boolean[] primitiveValues()"
+    returnType: "boolean[]"
+    instructionFingerprint: "82DED9712EBDEF197343C3D44731590B"
+  paths:
+  - testPathName: "primitiveValuesTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "booleanArray2"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "booleanArray2Item1"
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "booleanArray2Item2"
+      valueType: "boolean[]"
+      uuid: "booleanArray2"
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final Boolean bool)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "58E5BE2F4B260FF53BF126DE75138F8E"
+  paths:
+  - testPathName: "toBooleanWhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 395
+      expression: "bool != null"
+      range: "(395,16)-(395,27)"
+      evaluatedAs: true
+    - lineNumber: 395
+      expression: "bool.booleanValue()"
+      range: "(395,32)-(395,50)"
+      evaluatedAs: true
+  - testPathName: "toBooleanWhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 395
+      expression: "bool != null"
+      range: "(395,16)-(395,27)"
+      evaluatedAs: true
+    - lineNumber: 395
+      expression: "bool.booleanValue()"
+      range: "(395,32)-(395,50)"
+      evaluatedAs: false
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final int value)"
+    returnType: "boolean"
+    parameters:
+    - name: "value"
+      type: "int"
+    instructionFingerprint: "53F9B9E753D0C503ECEDB627E6010292"
+  paths:
+  - testPathName: "toBoolean1WhenValueNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 413
+      expression: "value != 0"
+      range: "(413,16)-(413,25)"
+      evaluatedAs: true
+  - testPathName: "toBoolean1WhenValueEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 413
+      expression: "value != 0"
+      range: "(413,16)-(413,25)"
+      evaluatedAs: false
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final int value, final int trueValue,\
+      \ final int falseValue)"
+    returnType: "boolean"
+    parameters:
+    - name: "value"
+      type: "int"
+    - name: "trueValue"
+      type: "int"
+    - name: "falseValue"
+      type: "int"
+    instructionFingerprint: "13D1EF1BC029B21247BC17377AC213FB"
+  paths:
+  - testPathName: "toBoolean2WhenValueEqualsTrueValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 438
+      expression: "value == trueValue"
+      range: "(438,13)-(438,30)"
+      evaluatedAs: true
+  - testPathName: "toBoolean2WhenValueEqualsFalseValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 438
+      expression: "value == trueValue"
+      range: "(438,13)-(438,30)"
+      evaluatedAs: false
+    - lineNumber: 441
+      expression: "value == falseValue"
+      range: "(441,13)-(441,31)"
+      evaluatedAs: true
+  - testPathName: "toBoolean2WhenValueNotEqualsFalseValueThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The Integer did not match either specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 438
+      expression: "value == trueValue"
+      range: "(438,13)-(438,30)"
+      evaluatedAs: false
+    - lineNumber: 441
+      expression: "value == falseValue"
+      range: "(441,13)-(441,31)"
+      evaluatedAs: false
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final Integer value, final Integer trueValue,\
+      \ final Integer falseValue)"
+    returnType: "boolean"
+    parameters:
+    - name: "value"
+      type: "java.lang.Integer"
+    - name: "trueValue"
+      type: "java.lang.Integer"
+    - name: "falseValue"
+      type: "java.lang.Integer"
+    instructionFingerprint: "84244569E9833FF8530A31BC474E111A"
+  paths:
+  - testPathName: "toBoolean3WhenTrueValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 465
+      expression: "value == null"
+      range: "(465,13)-(465,25)"
+      evaluatedAs: true
+    - lineNumber: 466
+      expression: "trueValue == null"
+      range: "(466,17)-(466,33)"
+      evaluatedAs: true
+  - testPathName: "toBoolean3WhenValueEqualsTrueValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 465
+      expression: "value == null"
+      range: "(465,13)-(465,25)"
+      evaluatedAs: false
+    - lineNumber: 472
+      expression: "value.equals(trueValue)"
+      range: "(472,20)-(472,42)"
+      evaluatedAs: true
+  - testPathName: "toBoolean3WhenFalseValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 465
+      expression: "value == null"
+      range: "(465,13)-(465,25)"
+      evaluatedAs: true
+    - lineNumber: 466
+      expression: "trueValue == null"
+      range: "(466,17)-(466,33)"
+      evaluatedAs: false
+    - lineNumber: 469
+      expression: "falseValue == null"
+      range: "(469,17)-(469,34)"
+      evaluatedAs: true
+  - testPathName: "toBoolean3WhenFalseValueIsNotNullThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The Integer did not match either specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 465
+      expression: "value == null"
+      range: "(465,13)-(465,25)"
+      evaluatedAs: true
+    - lineNumber: 466
+      expression: "trueValue == null"
+      range: "(466,17)-(466,33)"
+      evaluatedAs: false
+    - lineNumber: 469
+      expression: "falseValue == null"
+      range: "(469,17)-(469,34)"
+      evaluatedAs: false
+  - testPathName: "toBoolean3WhenValueEqualsFalseValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 465
+      expression: "value == null"
+      range: "(465,13)-(465,25)"
+      evaluatedAs: false
+    - lineNumber: 472
+      expression: "value.equals(trueValue)"
+      range: "(472,20)-(472,42)"
+      evaluatedAs: false
+    - lineNumber: 474
+      expression: "value.equals(falseValue)"
+      range: "(474,20)-(474,43)"
+      evaluatedAs: true
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final String str)"
+    returnType: "boolean"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "DDA706A63DB51C32ACA66B33F21CB0B2"
+  paths:
+  - testPathName: "toBoolean4WhenToBooleanObjectStrEqualsBooleanTRUE"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toBooleanObject(str):boolean2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 510
+      expression: "toBooleanObject(str) == Boolean.TRUE"
+      range: "(510,16)-(510,51)"
+      evaluatedAs: true
+  - testPathName: "toBoolean4WhenToBooleanObjectStrNotEqualsBooleanTRUE"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toBooleanObject(str):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 510
+      expression: "toBooleanObject(str) == Boolean.TRUE"
+      range: "(510,16)-(510,51)"
+      evaluatedAs: false
+- method:
+    name: "toBoolean"
+    sourceCodeSignature: "boolean toBoolean(final String str, final String trueString,\
+      \ final String falseString)"
+    returnType: "boolean"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "trueString"
+      type: "java.lang.String"
+    - name: "falseString"
+      type: "java.lang.String"
+    instructionFingerprint: "AA21040E7444740EA35937789EBE690C"
+  paths:
+  - testPathName: "toBoolean5WhenStrEqualsTrueString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 528
+      expression: "str == trueString"
+      range: "(528,13)-(528,29)"
+      evaluatedAs: true
+  - testPathName: "toBoolean5WhenStrEqualsFalseString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "str1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 528
+      expression: "str == trueString"
+      range: "(528,13)-(528,29)"
+      evaluatedAs: false
+    - lineNumber: 531
+      expression: "str == falseString"
+      range: "(531,13)-(531,30)"
+      evaluatedAs: true
+  - testPathName: "toBoolean5WhenStrIsNotNullAndStrEqualsTrueString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 528
+      expression: "str == trueString"
+      range: "(528,13)-(528,29)"
+      evaluatedAs: false
+    - lineNumber: 531
+      expression: "str == falseString"
+      range: "(531,13)-(531,30)"
+      evaluatedAs: false
+    - lineNumber: 534
+      expression: "str != null"
+      range: "(534,13)-(534,23)"
+      evaluatedAs: true
+    - lineNumber: 535
+      expression: "str.equals(trueString)"
+      range: "(535,17)-(535,38)"
+      evaluatedAs: true
+  - testPathName: "toBoolean5WhenStrNotEqualsTrueStringAndStrEqualsFalseString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 528
+      expression: "str == trueString"
+      range: "(528,13)-(528,29)"
+      evaluatedAs: false
+    - lineNumber: 531
+      expression: "str == falseString"
+      range: "(531,13)-(531,30)"
+      evaluatedAs: false
+    - lineNumber: 534
+      expression: "str != null"
+      range: "(534,13)-(534,23)"
+      evaluatedAs: true
+    - lineNumber: 535
+      expression: "str.equals(trueString)"
+      range: "(535,17)-(535,38)"
+      evaluatedAs: false
+    - lineNumber: 538
+      expression: "str.equals(falseString)"
+      range: "(538,17)-(538,39)"
+      evaluatedAs: true
+  - testPathName: "toBoolean5WhenStrNotEqualsFalseStringThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The String did not match either specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 528
+      expression: "str == trueString"
+      range: "(528,13)-(528,29)"
+      evaluatedAs: false
+    - lineNumber: 531
+      expression: "str == falseString"
+      range: "(531,13)-(531,30)"
+      evaluatedAs: false
+    - lineNumber: 534
+      expression: "str != null"
+      range: "(534,13)-(534,23)"
+      evaluatedAs: true
+    - lineNumber: 535
+      expression: "str.equals(trueString)"
+      range: "(535,17)-(535,38)"
+      evaluatedAs: false
+    - lineNumber: 538
+      expression: "str.equals(falseString)"
+      range: "(538,17)-(538,39)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanDefaultIfNull"
+    sourceCodeSignature: "boolean toBooleanDefaultIfNull(final Boolean bool, final\
+      \ boolean valueIfNull)"
+    returnType: "boolean"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    - name: "valueIfNull"
+      type: "boolean"
+    instructionFingerprint: "0D4C408BD70B90E2B06D8D10B10B7938"
+  paths:
+  - testPathName: "toBooleanDefaultIfNullWhenValueIfNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "valueIfNull"
+      valueUuid: "valueIfNull"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "valueIfNull"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "valueIfNull"
+    branches:
+    - lineNumber: 562
+      expression: "bool == null"
+      range: "(562,13)-(562,24)"
+      evaluatedAs: true
+    - lineNumber: 563
+      expression: "valueIfNull"
+      range: "(563,20)-(563,30)"
+      evaluatedAs: true
+  - testPathName: "toBooleanDefaultIfNullWhenNotValueIfNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "valueIfNull"
+      valueUuid: "valueIfNull"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "valueIfNull"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "valueIfNull"
+    branches:
+    - lineNumber: 562
+      expression: "bool == null"
+      range: "(562,13)-(562,24)"
+      evaluatedAs: true
+    - lineNumber: 563
+      expression: "valueIfNull"
+      range: "(563,20)-(563,30)"
+      evaluatedAs: false
+  - testPathName: "toBooleanDefaultIfNullWhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "valueIfNull"
+      valueUuid: "valueIfNull"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "valueIfNull"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 562
+      expression: "bool == null"
+      range: "(562,13)-(562,24)"
+      evaluatedAs: false
+    - lineNumber: 565
+      expression: "bool.booleanValue()"
+      range: "(565,16)-(565,34)"
+      evaluatedAs: true
+  - testPathName: "toBooleanDefaultIfNullWhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "valueIfNull"
+      valueUuid: "valueIfNull"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "valueIfNull"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 562
+      expression: "bool == null"
+      range: "(562,13)-(562,24)"
+      evaluatedAs: false
+    - lineNumber: 565
+      expression: "bool.booleanValue()"
+      range: "(565,16)-(565,34)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final int value)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "value"
+      type: "int"
+    instructionFingerprint: "055A86211BA8958A008BD2512BD292DA"
+  paths:
+  - testPathName: "toBooleanObjectWhenValueEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 583
+      expression: "value == 0"
+      range: "(583,16)-(583,25)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObjectWhenValueNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 583
+      expression: "value == 0"
+      range: "(583,16)-(583,25)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final int value, final int trueValue,\
+      \ final int falseValue, final int nullValue)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "value"
+      type: "int"
+    - name: "trueValue"
+      type: "int"
+    - name: "falseValue"
+      type: "int"
+    - name: "nullValue"
+      type: "int"
+    instructionFingerprint: "D24796DF137D965D6939B24348C1CA03"
+  paths:
+  - testPathName: "toBooleanObject1WhenValueEqualsTrueValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 612
+      expression: "value == trueValue"
+      range: "(612,13)-(612,30)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject1WhenValueEqualsFalseValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 612
+      expression: "value == trueValue"
+      range: "(612,13)-(612,30)"
+      evaluatedAs: false
+    - lineNumber: 615
+      expression: "value == falseValue"
+      range: "(615,13)-(615,31)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject1WhenValueEqualsNullValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "nullValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 612
+      expression: "value == trueValue"
+      range: "(612,13)-(612,30)"
+      evaluatedAs: false
+    - lineNumber: 615
+      expression: "value == falseValue"
+      range: "(615,13)-(615,31)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "value == nullValue"
+      range: "(618,13)-(618,30)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject1WhenValueNotEqualsNullValueThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "nullValue"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The Integer did not match any specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 612
+      expression: "value == trueValue"
+      range: "(612,13)-(612,30)"
+      evaluatedAs: false
+    - lineNumber: 615
+      expression: "value == falseValue"
+      range: "(615,13)-(615,31)"
+      evaluatedAs: false
+    - lineNumber: 618
+      expression: "value == nullValue"
+      range: "(618,13)-(618,30)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final Integer value)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "value"
+      type: "java.lang.Integer"
+    instructionFingerprint: "21B1708022D7B99A0EE2DA1DCE2312BB"
+  paths:
+  - testPathName: "toBooleanObject2WhenValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 644
+      expression: "value == null"
+      range: "(644,13)-(644,25)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject2WhenValueIntValueEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 644
+      expression: "value == null"
+      range: "(644,13)-(644,25)"
+      evaluatedAs: false
+    - lineNumber: 647
+      expression: "value.intValue() == 0"
+      range: "(647,16)-(647,36)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject2WhenValueIntValueNotEquals0"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -1
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 644
+      expression: "value == null"
+      range: "(644,13)-(644,25)"
+      evaluatedAs: false
+    - lineNumber: 647
+      expression: "value.intValue() == 0"
+      range: "(647,16)-(647,36)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final Integer value, final Integer\
+      \ trueValue, final Integer falseValue, final Integer nullValue)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "value"
+      type: "java.lang.Integer"
+    - name: "trueValue"
+      type: "java.lang.Integer"
+    - name: "falseValue"
+      type: "java.lang.Integer"
+    - name: "nullValue"
+      type: "java.lang.Integer"
+    instructionFingerprint: "A71B7AA4AF5321C461F45EA22938EA96"
+  paths:
+  - testPathName: "toBooleanObject3WhenTrueValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: true
+    - lineNumber: 677
+      expression: "trueValue == null"
+      range: "(677,17)-(677,33)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenValueEqualsTrueValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: false
+    - lineNumber: 686
+      expression: "value.equals(trueValue)"
+      range: "(686,20)-(686,42)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenFalseValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: true
+    - lineNumber: 677
+      expression: "trueValue == null"
+      range: "(677,17)-(677,33)"
+      evaluatedAs: false
+    - lineNumber: 680
+      expression: "falseValue == null"
+      range: "(680,17)-(680,34)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenValueEqualsFalseValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: false
+    - lineNumber: 686
+      expression: "value.equals(trueValue)"
+      range: "(686,20)-(686,42)"
+      evaluatedAs: false
+    - lineNumber: 688
+      expression: "value.equals(falseValue)"
+      range: "(688,20)-(688,43)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenNullValueIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: true
+    - lineNumber: 677
+      expression: "trueValue == null"
+      range: "(677,17)-(677,33)"
+      evaluatedAs: false
+    - lineNumber: 680
+      expression: "falseValue == null"
+      range: "(680,17)-(680,34)"
+      evaluatedAs: false
+    - lineNumber: 683
+      expression: "nullValue == null"
+      range: "(683,17)-(683,33)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenValueEqualsNullValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean6"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean6"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: false
+    - lineNumber: 686
+      expression: "value.equals(trueValue)"
+      range: "(686,20)-(686,42)"
+      evaluatedAs: false
+    - lineNumber: 688
+      expression: "value.equals(falseValue)"
+      range: "(688,20)-(688,43)"
+      evaluatedAs: false
+    - lineNumber: 690
+      expression: "value.equals(nullValue)"
+      range: "(690,20)-(690,42)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject3WhenValueNotEqualsNullValueThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      valueUuid: "value"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "value"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The Integer did not match any specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 676
+      expression: "value == null"
+      range: "(676,13)-(676,25)"
+      evaluatedAs: false
+    - lineNumber: 686
+      expression: "value.equals(trueValue)"
+      range: "(686,20)-(686,42)"
+      evaluatedAs: false
+    - lineNumber: 688
+      expression: "value.equals(falseValue)"
+      range: "(688,20)-(688,43)"
+      evaluatedAs: false
+    - lineNumber: 690
+      expression: "value.equals(nullValue)"
+      range: "(690,20)-(690,42)"
+      evaluatedAs: false
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final String str)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    instructionFingerprint: "2FF8081189613CB81EFEA847EE0B48A8"
+  paths:
+  - testPathName: "toBooleanObject4WhenStrEqualsTRUE"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str2"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "true"
+      valueType: "java.lang.String"
+      uuid: "str2"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenStrIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh1NotEquals_n_AndCh1Equals_N_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ON"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 2"
+      range: "(761,18)-(761,18)"
+      evaluatedAs: true
+    - lineNumber: 764
+      expression: "ch0 == 'o'"
+      range: "(764,22)-(764,31)"
+      evaluatedAs: false
+    - lineNumber: 764
+      expression: "ch0 == 'O'"
+      range: "(764,36)-(764,45)"
+      evaluatedAs: true
+    - lineNumber: 764
+      expression: "ch1 == 'n'"
+      range: "(765,22)-(765,31)"
+      evaluatedAs: false
+    - lineNumber: 764
+      expression: "ch1 == 'N'"
+      range: "(765,36)-(765,45)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh0Equals_1_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "1"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 1"
+      range: "(747,18)-(747,18)"
+      evaluatedAs: true
+    - lineNumber: 749
+      expression: "ch0 == 'y'"
+      range: "(749,21)-(749,30)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 'Y'"
+      range: "(749,35)-(749,44)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 't'"
+      range: "(750,21)-(750,30)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 'T'"
+      range: "(750,35)-(750,44)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == '1'"
+      range: "(751,21)-(751,30)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh1NotEquals_o_AndCh1Equals_O_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "NO"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 2"
+      range: "(761,18)-(761,18)"
+      evaluatedAs: true
+    - lineNumber: 764
+      expression: "ch0 == 'o'"
+      range: "(764,22)-(764,31)"
+      evaluatedAs: false
+    - lineNumber: 764
+      expression: "ch0 == 'O'"
+      range: "(764,36)-(764,45)"
+      evaluatedAs: false
+    - lineNumber: 768
+      expression: "ch0 == 'n'"
+      range: "(768,22)-(768,31)"
+      evaluatedAs: false
+    - lineNumber: 768
+      expression: "ch0 == 'N'"
+      range: "(768,36)-(768,45)"
+      evaluatedAs: true
+    - lineNumber: 768
+      expression: "ch1 == 'o'"
+      range: "(769,22)-(769,31)"
+      evaluatedAs: false
+    - lineNumber: 768
+      expression: "ch1 == 'O'"
+      range: "(769,36)-(769,45)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh2NotEquals_s_AndCh2Equals_S_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "YES"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 3"
+      range: "(774,18)-(774,18)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch0 == 'y'"
+      range: "(778,22)-(778,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch0 == 'Y'"
+      range: "(778,36)-(778,45)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch1 == 'e'"
+      range: "(779,22)-(779,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch1 == 'E'"
+      range: "(779,36)-(779,45)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch2 == 's'"
+      range: "(780,22)-(780,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch2 == 'S'"
+      range: "(780,36)-(780,45)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh2NotEquals_s_AndCh2NotEquals_S_AndCh0NotEquals_o_AndCh0NotEquals_O_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "YED"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 3"
+      range: "(774,18)-(774,18)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch0 == 'y'"
+      range: "(778,22)-(778,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch0 == 'Y'"
+      range: "(778,36)-(778,45)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch1 == 'e'"
+      range: "(779,22)-(779,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch1 == 'E'"
+      range: "(779,36)-(779,45)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch2 == 's'"
+      range: "(780,22)-(780,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch2 == 'S'"
+      range: "(780,36)-(780,45)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch0 == 'o'"
+      range: "(783,22)-(783,31)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch0 == 'O'"
+      range: "(783,36)-(783,45)"
+      evaluatedAs: false
+  - testPathName: "toBooleanObject4WhenCh1Equals_F_AndCh2NotEquals_f_AndCh2Equals_F_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "OFF"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 3"
+      range: "(774,18)-(774,18)"
+      evaluatedAs: true
+    - lineNumber: 778
+      expression: "ch0 == 'y'"
+      range: "(778,22)-(778,31)"
+      evaluatedAs: false
+    - lineNumber: 778
+      expression: "ch0 == 'Y'"
+      range: "(778,36)-(778,45)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch0 == 'o'"
+      range: "(783,22)-(783,31)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch0 == 'O'"
+      range: "(783,36)-(783,45)"
+      evaluatedAs: true
+    - lineNumber: 783
+      expression: "ch1 == 'f'"
+      range: "(784,22)-(784,31)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch1 == 'F'"
+      range: "(784,36)-(784,45)"
+      evaluatedAs: true
+    - lineNumber: 783
+      expression: "ch2 == 'f'"
+      range: "(785,22)-(785,31)"
+      evaluatedAs: false
+    - lineNumber: 783
+      expression: "ch2 == 'F'"
+      range: "(785,36)-(785,45)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject4WhenCh0Equals_0_"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "0"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 740
+      expression: "str == TRUE"
+      range: "(740,13)-(740,23)"
+      evaluatedAs: false
+    - lineNumber: 743
+      expression: "str == null"
+      range: "(743,13)-(743,23)"
+      evaluatedAs: false
+    - lineNumber: 746
+      expression: "switch(str.length()) = 1"
+      range: "(747,18)-(747,18)"
+      evaluatedAs: true
+    - lineNumber: 749
+      expression: "ch0 == 'y'"
+      range: "(749,21)-(749,30)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 'Y'"
+      range: "(749,35)-(749,44)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 't'"
+      range: "(750,21)-(750,30)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == 'T'"
+      range: "(750,35)-(750,44)"
+      evaluatedAs: false
+    - lineNumber: 749
+      expression: "ch0 == '1'"
+      range: "(751,21)-(751,30)"
+      evaluatedAs: false
+    - lineNumber: 754
+      expression: "ch0 == 'n'"
+      range: "(754,21)-(754,30)"
+      evaluatedAs: false
+    - lineNumber: 754
+      expression: "ch0 == 'N'"
+      range: "(754,35)-(754,44)"
+      evaluatedAs: false
+    - lineNumber: 754
+      expression: "ch0 == 'f'"
+      range: "(755,21)-(755,30)"
+      evaluatedAs: false
+    - lineNumber: 754
+      expression: "ch0 == 'F'"
+      range: "(755,35)-(755,44)"
+      evaluatedAs: false
+    - lineNumber: 754
+      expression: "ch0 == '0'"
+      range: "(756,21)-(756,30)"
+      evaluatedAs: true
+- method:
+    name: "toBooleanObject"
+    sourceCodeSignature: "Boolean toBooleanObject(final String str, final String trueString,\
+      \ final String falseString, final String nullString)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "str"
+      type: "java.lang.String"
+    - name: "trueString"
+      type: "java.lang.String"
+    - name: "falseString"
+      type: "java.lang.String"
+    - name: "nullString"
+      type: "java.lang.String"
+    instructionFingerprint: "650C6143DEB958916038A635E661F6C7"
+  paths:
+  - testPathName: "toBooleanObject5WhenTrueStringIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: true
+    - lineNumber: 853
+      expression: "trueString == null"
+      range: "(853,17)-(853,34)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenStrEqualsTrueString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: false
+    - lineNumber: 862
+      expression: "str.equals(trueString)"
+      range: "(862,20)-(862,41)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenFalseStringIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: true
+    - lineNumber: 853
+      expression: "trueString == null"
+      range: "(853,17)-(853,34)"
+      evaluatedAs: false
+    - lineNumber: 856
+      expression: "falseString == null"
+      range: "(856,17)-(856,35)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenStrEqualsFalseString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: false
+    - lineNumber: 862
+      expression: "str.equals(trueString)"
+      range: "(862,20)-(862,41)"
+      evaluatedAs: false
+    - lineNumber: 864
+      expression: "str.equals(falseString)"
+      range: "(864,20)-(864,42)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenNullStringIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean3"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean3"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: true
+    - lineNumber: 853
+      expression: "trueString == null"
+      range: "(853,17)-(853,34)"
+      evaluatedAs: false
+    - lineNumber: 856
+      expression: "falseString == null"
+      range: "(856,17)-(856,35)"
+      evaluatedAs: false
+    - lineNumber: 859
+      expression: "nullString == null"
+      range: "(859,17)-(859,34)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenStrEqualsNullString"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean6"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "boolean6"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: false
+    - lineNumber: 862
+      expression: "str.equals(trueString)"
+      range: "(862,20)-(862,41)"
+      evaluatedAs: false
+    - lineNumber: 864
+      expression: "str.equals(falseString)"
+      range: "(864,20)-(864,42)"
+      evaluatedAs: false
+    - lineNumber: 866
+      expression: "str.equals(nullString)"
+      range: "(866,20)-(866,41)"
+      evaluatedAs: true
+  - testPathName: "toBooleanObject5WhenStrNotEqualsNullStringThrowsIllegalArgumentException"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "str"
+      valueUuid: "str"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "illegalArgumentException"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "str"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "B"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "C"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "D"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "The String did not match any specified value"
+            valueType: "java.lang.String"
+            uuid: "s"
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "illegalArgumentException"
+    branches:
+    - lineNumber: 852
+      expression: "str == null"
+      range: "(852,13)-(852,23)"
+      evaluatedAs: false
+    - lineNumber: 862
+      expression: "str.equals(trueString)"
+      range: "(862,20)-(862,41)"
+      evaluatedAs: false
+    - lineNumber: 864
+      expression: "str.equals(falseString)"
+      range: "(864,20)-(864,42)"
+      evaluatedAs: false
+    - lineNumber: 866
+      expression: "str.equals(nullString)"
+      range: "(866,20)-(866,41)"
+      evaluatedAs: false
+- method:
+    name: "toInteger"
+    sourceCodeSignature: "int toInteger(final boolean bool)"
+    returnType: "int"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    instructionFingerprint: "DB46AE7E3E54E34BF09C04C73F80FE0C"
+  paths:
+  - testPathName: "toIntegerWhenBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 886
+      expression: "bool"
+      range: "(886,16)-(886,19)"
+      evaluatedAs: true
+  - testPathName: "toIntegerWhenNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "expectedResult"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "expectedResult"
+    branches:
+    - lineNumber: 886
+      expression: "bool"
+      range: "(886,16)-(886,19)"
+      evaluatedAs: false
+- method:
+    name: "toInteger"
+    sourceCodeSignature: "int toInteger(final boolean bool, final int trueValue, final\
+      \ int falseValue)"
+    returnType: "int"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    - name: "trueValue"
+      type: "int"
+    - name: "falseValue"
+      type: "int"
+    instructionFingerprint: "D69F8FC7A3731FA4BED7476F9A1C9ADF"
+  paths:
+  - testPathName: "toInteger1WhenBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    branches:
+    - lineNumber: 903
+      expression: "bool"
+      range: "(903,16)-(903,19)"
+      evaluatedAs: true
+  - testPathName: "toInteger1WhenNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    branches:
+    - lineNumber: 903
+      expression: "bool"
+      range: "(903,16)-(903,19)"
+      evaluatedAs: false
+- method:
+    name: "toInteger"
+    sourceCodeSignature: "int toInteger(final Boolean bool, final int trueValue, final\
+      \ int falseValue, final int nullValue)"
+    returnType: "int"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    - name: "trueValue"
+      type: "int"
+    - name: "falseValue"
+      type: "int"
+    - name: "nullValue"
+      type: "int"
+    instructionFingerprint: "A52FEC6672BECFF1E095058A96D19965"
+  paths:
+  - testPathName: "toInteger2WhenBoolIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "nullValue"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 922
+      expression: "bool == null"
+      range: "(922,13)-(922,24)"
+      evaluatedAs: true
+  - testPathName: "toInteger2WhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 922
+      expression: "bool == null"
+      range: "(922,13)-(922,24)"
+      evaluatedAs: false
+    - lineNumber: 925
+      expression: "bool.booleanValue()"
+      range: "(925,16)-(925,34)"
+      evaluatedAs: true
+  - testPathName: "toInteger2WhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 922
+      expression: "bool == null"
+      range: "(922,13)-(922,24)"
+      evaluatedAs: false
+    - lineNumber: 925
+      expression: "bool.booleanValue()"
+      range: "(925,16)-(925,34)"
+      evaluatedAs: false
+- method:
+    name: "toIntegerObject"
+    sourceCodeSignature: "Integer toIntegerObject(final boolean bool)"
+    returnType: "java.lang.Integer"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    instructionFingerprint: "4015124FEFC88EB1B84BFF2A4676C422"
+  paths:
+  - testPathName: "toIntegerObjectWhenBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    branches:
+    - lineNumber: 941
+      expression: "bool"
+      range: "(941,16)-(941,19)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObjectWhenNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    branches:
+    - lineNumber: 941
+      expression: "bool"
+      range: "(941,16)-(941,19)"
+      evaluatedAs: false
+- method:
+    name: "toIntegerObject"
+    sourceCodeSignature: "Integer toIntegerObject(final boolean bool, final Integer\
+      \ trueValue, final Integer falseValue)"
+    returnType: "java.lang.Integer"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    - name: "trueValue"
+      type: "java.lang.Integer"
+    - name: "falseValue"
+      type: "java.lang.Integer"
+    instructionFingerprint: "21A0C1236FBCF36031B2E1666B4E2681"
+  paths:
+  - testPathName: "toIntegerObject1WhenBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    branches:
+    - lineNumber: 958
+      expression: "bool"
+      range: "(958,16)-(958,19)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObject1WhenNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    branches:
+    - lineNumber: 958
+      expression: "bool"
+      range: "(958,16)-(958,19)"
+      evaluatedAs: false
+- method:
+    name: "toIntegerObject"
+    sourceCodeSignature: "Integer toIntegerObject(final Boolean bool)"
+    returnType: "java.lang.Integer"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "CBF455B06498DACC6D395281C3F433D6"
+  paths:
+  - testPathName: "toIntegerObject2WhenBoolIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    branches:
+    - lineNumber: 976
+      expression: "bool == null"
+      range: "(976,13)-(976,24)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObject2WhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    branches:
+    - lineNumber: 976
+      expression: "bool == null"
+      range: "(976,13)-(976,24)"
+      evaluatedAs: false
+    - lineNumber: 979
+      expression: "bool.booleanValue()"
+      range: "(979,16)-(979,34)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObject2WhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "integer"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "integer"
+    branches:
+    - lineNumber: 976
+      expression: "bool == null"
+      range: "(976,13)-(976,24)"
+      evaluatedAs: false
+    - lineNumber: 979
+      expression: "bool.booleanValue()"
+      range: "(979,16)-(979,34)"
+      evaluatedAs: false
+- method:
+    name: "toIntegerObject"
+    sourceCodeSignature: "Integer toIntegerObject(final Boolean bool, final Integer\
+      \ trueValue, final Integer falseValue, final Integer nullValue)"
+    returnType: "java.lang.Integer"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    - name: "trueValue"
+      type: "java.lang.Integer"
+    - name: "falseValue"
+      type: "java.lang.Integer"
+    - name: "nullValue"
+      type: "java.lang.Integer"
+    instructionFingerprint: "44591507D782A81E5E696885F3278BCF"
+  paths:
+  - testPathName: "toIntegerObject3WhenBoolIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "nullValue"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 998
+      expression: "bool == null"
+      range: "(998,13)-(998,24)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObject3WhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 998
+      expression: "bool == null"
+      range: "(998,13)-(998,24)"
+      evaluatedAs: false
+    - lineNumber: 1001
+      expression: "bool.booleanValue()"
+      range: "(1001,16)-(1001,34)"
+      evaluatedAs: true
+  - testPathName: "toIntegerObject3WhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueValue"
+      valueUuid: "trueValue"
+    - type: "INPUT"
+      name: "falseValue"
+      valueUuid: "falseValue"
+    - type: "INPUT"
+      name: "nullValue"
+      valueUuid: "nullValue"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseValue"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "trueValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "falseValue"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "java.lang.Integer"
+      uuid: "nullValue"
+    branches:
+    - lineNumber: 998
+      expression: "bool == null"
+      range: "(998,13)-(998,24)"
+      evaluatedAs: false
+    - lineNumber: 1001
+      expression: "bool.booleanValue()"
+      range: "(1001,16)-(1001,34)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final boolean bool, final String trueString,\
+      \ final String falseString)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    - name: "trueString"
+      type: "java.lang.String"
+    - name: "falseString"
+      type: "java.lang.String"
+    instructionFingerprint: "089CBF91A77DE0EBACA917DC8AFCA7E0"
+  paths:
+  - testPathName: "toStringWhenBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueString"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    branches:
+    - lineNumber: 1018
+      expression: "bool"
+      range: "(1018,16)-(1018,19)"
+      evaluatedAs: true
+  - testPathName: "toStringWhenNotBool"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseString"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    branches:
+    - lineNumber: 1018
+      expression: "bool"
+      range: "(1018,16)-(1018,19)"
+      evaluatedAs: false
+- method:
+    name: "toString"
+    sourceCodeSignature: "String toString(final Boolean bool, final String trueString,\
+      \ final String falseString, final String nullString)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    - name: "trueString"
+      type: "java.lang.String"
+    - name: "falseString"
+      type: "java.lang.String"
+    - name: "nullString"
+      type: "java.lang.String"
+    instructionFingerprint: "68DA3D4088B81E7D2FD0E1845BF1B71C"
+  paths:
+  - testPathName: "toString1WhenBoolIsNull"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "nullString"
+    disabled: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    branches:
+    - lineNumber: 1037
+      expression: "bool == null"
+      range: "(1037,13)-(1037,24)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenBoolBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "trueString"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    branches:
+    - lineNumber: 1037
+      expression: "bool == null"
+      range: "(1037,13)-(1037,24)"
+      evaluatedAs: false
+    - lineNumber: 1040
+      expression: "bool.booleanValue()"
+      range: "(1040,16)-(1040,34)"
+      evaluatedAs: true
+  - testPathName: "toString1WhenBoolNotBooleanValue"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "INPUT"
+      name: "trueString"
+      valueUuid: "trueString"
+    - type: "INPUT"
+      name: "falseString"
+      valueUuid: "falseString"
+    - type: "INPUT"
+      name: "nullString"
+      valueUuid: "nullString"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "falseString"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "trueString1"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "falseString1"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "nullString1"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+    branches:
+    - lineNumber: 1037
+      expression: "bool == null"
+      range: "(1037,13)-(1037,24)"
+      evaluatedAs: false
+    - lineNumber: 1040
+      expression: "bool.booleanValue()"
+      range: "(1040,16)-(1040,34)"
+      evaluatedAs: false
+- method:
+    name: "toStringOnOff"
+    sourceCodeSignature: "String toStringOnOff(final boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    instructionFingerprint: "FFB714A20AF24D5D81459B80FF1BB2D6"
+  paths:
+  - testPathName: "toStringOnOffTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "on"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "off"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+- method:
+    name: "toStringOnOff"
+    sourceCodeSignature: "String toStringOnOff(final Boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "6ED3F71B7A357BD1022A4E82E054190A"
+  paths:
+  - testPathName: "toStringOnOff1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString,nullString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "on"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "off"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+- method:
+    name: "toStringTrueFalse"
+    sourceCodeSignature: "String toStringTrueFalse(final boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    instructionFingerprint: "BF0FCA4DE349547A5B4C5F3764D0AE3A"
+  paths:
+  - testPathName: "toStringTrueFalseTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "true"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "false"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+- method:
+    name: "toStringTrueFalse"
+    sourceCodeSignature: "String toStringTrueFalse(final Boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "801BE3CC85BE9B90046DA5F303B666EB"
+  paths:
+  - testPathName: "toStringTrueFalse1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString,nullString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "true"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "false"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+- method:
+    name: "toStringYesNo"
+    sourceCodeSignature: "String toStringYesNo(final boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "boolean"
+    instructionFingerprint: "D5D4488EFD84C8180489A6CA298767BF"
+  paths:
+  - testPathName: "toStringYesNoTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "yes"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "no"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+- method:
+    name: "toStringYesNo"
+    sourceCodeSignature: "String toStringYesNo(final Boolean bool)"
+    returnType: "java.lang.String"
+    parameters:
+    - name: "bool"
+      type: "java.lang.Boolean"
+    instructionFingerprint: "6428768E447EC4717A5500BF6647A401"
+  paths:
+  - testPathName: "toStringYesNo1Test"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "bool"
+      valueUuid: "bool"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "toString(bool,trueString,falseString,nullString):string"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "string"
+    disabled: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "bool"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_toString1"
+      valueType: "java.lang.String"
+      uuid: "string"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "yes"
+      valueType: "java.lang.String"
+      uuid: "trueString"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "no"
+      valueType: "java.lang.String"
+      uuid: "falseString"
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "nullString"
+- method:
+    name: "values"
+    sourceCodeSignature: "List<Boolean> values()"
+    returnType: "java.util.List"
+    genericReturnType: "java.lang.Boolean"
+    instructionFingerprint: "5C652200505E88D045E48493941C2809"
+  paths:
+  - testPathName: "valuesTest"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "list2"
+    disabled: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "java.lang.Boolean"
+          uuid: "boolean"
+        - sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "java.lang.Boolean"
+          uuid: "boolean2"
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Boolean"
+      uuid: "list2"
+- method:
+    name: "xor"
+    sourceCodeSignature: "boolean xor(final boolean... array)"
+    returnType: "boolean"
+    parameters:
+    - name: "array"
+      type: "boolean[]"
+    instructionFingerprint: "3763C2D7B529A979386DD56A51BC9974"
+  paths:
+  - testPathName: "xorWhenResult"
+    problemWasSolvedByProver: true
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int4"
+    disabled: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "int4"
+    branches:
+    - lineNumber: 1178
+      expression: "for-each(array)"
+      range: "(1178,38)-(1178,42)"
+      evaluatedAs: true
+    - lineNumber: 1182
+      expression: "result"
+      range: "(1182,16)-(1182,21)"
+      evaluatedAs: true
+  - testPathName: "xorWhenNotResult"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "int4"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "boolean3"
+      valueType: "boolean[]"
+      uuid: "array"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "int4"
+    branches:
+    - lineNumber: 1178
+      expression: "for-each(array)"
+      range: "(1178,38)-(1178,42)"
+      evaluatedAs: true
+    - lineNumber: 1182
+      expression: "result"
+      range: "(1182,16)-(1182,21)"
+      evaluatedAs: false
+- method:
+    name: "xor"
+    sourceCodeSignature: "Boolean xor(final Boolean... array)"
+    returnType: "java.lang.Boolean"
+    parameters:
+    - name: "array"
+      type: "java.lang.Boolean[]"
+    instructionFingerprint: "B990D474045793D481336269BE832943"
+  paths:
+  - testPathName: "xor1WhenXorArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "xor(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean2"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "boolean2"
+    branches:
+    - lineNumber: 1206
+      expression: "xor(ArrayUtils.toPrimitive(array))"
+      range: "(1206,16)-(1206,49)"
+      evaluatedAs: true
+  - testPathName: "xor1WhenXorNotArrayUtilsToPrimitiveArray"
+    problemWasSolvedByProver: false
+    inputParameters:
+    - type: "INPUT"
+      name: "array"
+      valueUuid: "array"
+    - type: "STATIC"
+      name: "BooleanUtils.class"
+      valueUuid: "BooleanUtils.class"
+      methodExercised:
+        expression: "xor(booleanArray3):boolean3"
+    - type: "RESULT"
+      name: "result"
+      valueUuid: "boolean"
+    disabled: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "java.lang.Boolean[]"
+      uuid: "array"
+    - sapientType: "MOCK"
+      valueType: "org.apache.commons.lang3.BooleanUtils"
+      uuid: "BooleanUtils.class"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "boolean3"
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      valueType: "boolean[]"
+      uuid: "booleanArray3"
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "boolean"
+    branches:
+    - lineNumber: 1206
+      expression: "xor(ArrayUtils.toPrimitive(array))"
+      range: "(1206,16)-(1206,49)"
+      evaluatedAs: false
