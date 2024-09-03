@@ -19,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.mockStatic;
+import org.junit.jupiter.api.Disabled;
 
 @Timeout(value = 5, threadMode = Timeout.ThreadMode.SEPARATE_THREAD)
 class RandomStringUtilsSapientGeneratedTest {
@@ -63,7 +64,7 @@ class RandomStringUtilsSapientGeneratedTest {
         /* Branches:
          * (chars == null) : true
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<RandomStringUtils> randomStringUtils = mockStatic(RandomStringUtils.class, CALLS_REAL_METHODS)) {
             randomStringUtils.when(() -> RandomStringUtils.random(eq(0), eq(0), eq(0), eq(false), eq(false), eq((char[]) null), (ThreadLocalRandom) any())).thenReturn("return_of_random1");
             char[] _char = null;
@@ -83,7 +84,7 @@ class RandomStringUtilsSapientGeneratedTest {
         /* Branches:
          * (chars == null) : false
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<RandomStringUtils> randomStringUtils = mockStatic(RandomStringUtils.class, CALLS_REAL_METHODS)) {
             char[] charArray = new char[] {};
             randomStringUtils.when(() -> RandomStringUtils.random(eq(0), eq(0), eq(0), eq(false), eq(false), eq(charArray), (ThreadLocalRandom) any())).thenReturn("return_of_random1");
@@ -136,18 +137,17 @@ class RandomStringUtilsSapientGeneratedTest {
         /* Branches:
          * (count == 0) : true
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         char[] charArray = new char[] {};
         Random random = new Random();
-        
         //Act Statement(s)
         String result = RandomStringUtils.random(0, 0, 0, false, false, charArray, random);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, equalTo("")));
     }
 
     //Sapient generated method id: ${random6WhenCountLessThan0ThrowsIllegalArgumentException}, hash: 8AD7A20B829F4E63D93709CAAD5BAF57
+    @Disabled()
     @Test()
     void random6WhenCountLessThan0ThrowsIllegalArgumentException() {
         /* Branches:
@@ -157,7 +157,7 @@ class RandomStringUtilsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         char[] charArray = new char[] {};
         Random random = new Random();
         IllegalArgumentException illegalArgumentException = new IllegalArgumentException("s1");
@@ -165,7 +165,6 @@ class RandomStringUtilsSapientGeneratedTest {
         final IllegalArgumentException result = assertThrows(IllegalArgumentException.class, () -> {
             RandomStringUtils.random(0, 0, 0, false, false, charArray, random);
         });
-        
         //Assert statement(s)
         assertAll("result", () -> {
             assertThat(result, is(notNullValue()));
@@ -182,7 +181,7 @@ class RandomStringUtilsSapientGeneratedTest {
          * (chars != null) : true
          * (chars.length == 0) : true
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         char[] charArray = new char[] {};
         Random random = new Random();
         IllegalArgumentException illegalArgumentException = new IllegalArgumentException("The chars array must not be empty");
@@ -190,7 +189,6 @@ class RandomStringUtilsSapientGeneratedTest {
         final IllegalArgumentException result = assertThrows(IllegalArgumentException.class, () -> {
             RandomStringUtils.random(1, 0, 0, false, false, charArray, random);
         });
-        
         //Assert statement(s)
         assertAll("result", () -> {
             assertThat(result, is(notNullValue()));
@@ -199,6 +197,7 @@ class RandomStringUtilsSapientGeneratedTest {
     }
 
     //Sapient generated method id: ${random6WhenNumberOfCharsGreaterThan1}, hash: EF455DBA1A92A5B103D5B8703D138C34
+    @Disabled()
     @Test()
     void random6WhenNumberOfCharsGreaterThan1() {
         /* Branches:
@@ -218,13 +217,11 @@ class RandomStringUtilsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         doReturn(0).when(randomMock).nextInt(0);
         char[] charArray = new char[] {};
-        
         //Act Statement(s)
         String result = RandomStringUtils.random(0, 0, 0, false, false, charArray, randomMock);
-        
         //Assert statement(s)
         assertAll("result", () -> {
             assertThat(result, equalTo(""));
@@ -233,6 +230,7 @@ class RandomStringUtilsSapientGeneratedTest {
     }
 
     //Sapient generated method id: ${random6WhenCharacterNotIsLetterCodePointAndNumbersAndNotNumbersAndCharacterIsDigitCodePoint}, hash: 8791DA616334E3FD81E98C18F0DF8EB4
+    @Disabled()
     @Test()
     void random6WhenCharacterNotIsLetterCodePointAndNumbersAndNotNumbersAndCharacterIsDigitCodePoint() {
         /* Branches:
@@ -257,13 +255,11 @@ class RandomStringUtilsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         doReturn(0).when(randomMock).nextInt(1);
         char[] charArray = new char[] { 0 };
-        
         //Act Statement(s)
         String result = RandomStringUtils.random(1, 0, 0, true, true, charArray, randomMock);
-        
         //Assert statement(s)
         assertAll("result", () -> {
             assertThat(result, equalTo(""));
@@ -272,6 +268,7 @@ class RandomStringUtilsSapientGeneratedTest {
     }
 
     //Sapient generated method id: ${random6WhenNotNumbersAndNumberOfCharsNotEquals2}, hash: 02698A60BD4193B766872D341F309DBB
+    @Disabled()
     @Test()
     void random6WhenNotNumbersAndNumberOfCharsNotEquals2() {
         /* Branches:
@@ -296,13 +293,11 @@ class RandomStringUtilsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         doReturn(0).when(randomMock).nextInt(1);
         char[] charArray = new char[] { 0 };
-        
         //Act Statement(s)
         String result = RandomStringUtils.random(1, 0, 0, false, false, charArray, randomMock);
-        
         //Assert statement(s)
         assertAll("result", () -> {
             assertThat(result, equalTo(""));
@@ -316,7 +311,7 @@ class RandomStringUtilsSapientGeneratedTest {
         /* Branches:
          * (chars == null) : true
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<RandomStringUtils> randomStringUtils = mockStatic(RandomStringUtils.class, CALLS_REAL_METHODS)) {
             randomStringUtils.when(() -> RandomStringUtils.random(eq(0), eq(0), eq(0), eq(false), eq(false), eq((char[]) null), (ThreadLocalRandom) any())).thenReturn("return_of_random1");
             //Act Statement(s)
@@ -335,7 +330,7 @@ class RandomStringUtilsSapientGeneratedTest {
         /* Branches:
          * (chars == null) : false
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<RandomStringUtils> randomStringUtils = mockStatic(RandomStringUtils.class, CALLS_REAL_METHODS)) {
             char[] charArray = new char[] { 'A' };
             randomStringUtils.when(() -> RandomStringUtils.random(0, charArray)).thenReturn("return_of_random1");

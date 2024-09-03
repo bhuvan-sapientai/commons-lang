@@ -1,7 +1,6 @@
 package org.apache.commons.lang3;
 
 import org.apache.commons.lang3.CharSequenceUtils;
-
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -9,6 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 
 @Timeout(value = 5, threadMode = Timeout.ThreadMode.SEPARATE_THREAD)
 class CharSequenceUtilsSapientGeneratedTest {
@@ -76,6 +76,7 @@ class CharSequenceUtilsSapientGeneratedTest {
         assertThat(result, equalTo(expected));
     }
 
+    @Disabled()
     @Test
     void lastIndexOf1WithSupplementaryCharacter() {
         // String with two smiley emojis

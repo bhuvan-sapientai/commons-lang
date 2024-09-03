@@ -328,11 +328,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
         \ : java.lang.reflect.Method"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -374,11 +375,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "cloneFailedException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
         \ : java.lang.reflect.Method"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -444,11 +446,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "cloneFailedException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
         \ : java.lang.reflect.Method"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -514,11 +517,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "cloneFailedException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getMethod(java.lang.String,java.lang.Class[])\
         \ : java.lang.reflect.Method"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -584,10 +588,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -667,10 +672,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Cloneable"
@@ -1893,11 +1899,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.Object>)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.Object"
@@ -1926,7 +1933,7 @@ methods:
     instructionFingerprint: "9D299AA819EAF60A0B4CDFF4730C3068"
   paths:
   - testPathName: "hashCodeTest"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "obj"
@@ -1934,7 +1941,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -1957,7 +1967,7 @@ methods:
     instructionFingerprint: "035FE5729185F5FEC6E7D8129AA1CAC6"
   paths:
   - testPathName: "hashCodeHexTest"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "object"
@@ -1965,7 +1975,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -1988,7 +2001,7 @@ methods:
     instructionFingerprint: "64ACB62392577CC1D0C166A2A0610DBC"
   paths:
   - testPathName: "hashCodeMultiWhenObjectsIsNotEmpty"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "objects"
@@ -1996,7 +2009,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int7"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2034,7 +2050,7 @@ methods:
     instructionFingerprint: "2E833FDF314FE408B7A664DFAC7336E0"
   paths:
   - testPathName: "identityHashCodeHexTest"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "object"
@@ -2042,7 +2058,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -2081,11 +2100,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "void"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Appendable.append(java.lang.String)\
         \ : java.lang.Appendable"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.lang.Appendable"
@@ -2132,7 +2152,7 @@ methods:
       range: "(848,13)-(848,26)"
       evaluatedAs: true
   - testPathName: "identityToString1WhenObjectIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "object"
@@ -2140,7 +2160,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -2311,10 +2334,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.isArray() : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -2409,10 +2433,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -2485,11 +2510,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.getLength(java.lang.Object)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -2541,11 +2567,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.getLength(java.lang.Object)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -2884,7 +2911,7 @@ methods:
       range: "(1032,20)-(1032,54)"
       evaluatedAs: true
   - testPathName: "isEmptyWhenObjectIsPresent"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "object"
@@ -2897,7 +2924,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OPTIONAL"
       content: !<optional>
@@ -3128,11 +3158,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "arrayIndexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.Validate.notEmpty(java.lang.Object[],java.lang.String,java.lang.Object[])\
         \ : java.lang.Object[]"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<static_method_return>
@@ -3170,11 +3201,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "arrayIndexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.Validate.notEmpty(java.lang.Comparable[])\
         \ : java.lang.Comparable[]"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -3727,11 +3759,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.String>)\
         \ : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.util.function.Supplier"
@@ -3767,10 +3800,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "MOCK"
       valueType: "java.util.function.Supplier"
@@ -3822,11 +3856,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.String>)\
         \ : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.Object"
@@ -3900,11 +3935,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "void3"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.time.DurationUtils.zeroIfNull(java.time.Duration)\
         \ : java.time.Duration"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>

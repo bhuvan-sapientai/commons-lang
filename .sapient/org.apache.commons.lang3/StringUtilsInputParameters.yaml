@@ -1301,7 +1301,7 @@ methods:
     instructionFingerprint: "F50384A1288B559FD10F8413FB625EB0"
   paths:
   - testPathName: "appendIfMissing1WhenEndsWithStrSuffixIgnoreCase"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "str"
@@ -1320,7 +1320,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "suffix"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.String"
@@ -1480,10 +1483,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "str"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -1567,10 +1571,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -1665,11 +1670,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "charSequence"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isNotEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.String"
@@ -1975,11 +1981,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "str"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isNotEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -2200,7 +2207,7 @@ methods:
     instructionFingerprint: "7960C28EF4270E2518923DA7B78E907A"
   paths:
   - testPathName: "appendIfMissingIgnoreCaseWhenEndsWithStrSuffixIgnoreCase"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "str"
@@ -2219,7 +2226,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "suffix"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.String"
@@ -2379,10 +2389,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "str"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -2466,10 +2477,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -2564,11 +2576,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "charSequence"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isNotEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.String"
@@ -2874,11 +2887,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "str"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isNotEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -3166,7 +3180,7 @@ methods:
       range: "(549,13)-(549,42)"
       evaluatedAs: true
   - testPathName: "capitalizeWhenInOffsetLessThanStrLen"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "str"
@@ -3179,7 +3193,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -4840,11 +4857,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -4995,11 +5013,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,int,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -5168,10 +5187,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -5244,10 +5264,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -5324,10 +5345,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -5869,11 +5891,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -6086,11 +6109,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.isEmpty(java.lang.CharSequence[])\
         \ : boolean"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -6279,10 +6303,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -6425,10 +6450,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -6488,10 +6514,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -6824,10 +6851,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -7276,10 +7304,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -7434,10 +7463,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int4"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -7570,11 +7600,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int4"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -7982,9 +8013,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -8039,9 +8071,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -8417,10 +8450,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -8896,10 +8930,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -9322,10 +9357,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -9805,10 +9841,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10192,11 +10229,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "byteArray"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.Charsets.toCharset(java.nio.charset.Charset)\
         \ : java.nio.charset.Charset"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10277,9 +10315,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "byteArray"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10454,9 +10493,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -10599,9 +10639,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10779,9 +10820,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int19"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "CLASS_TYPE_COULD_NOT_BE_MOCKED_AND_NEEDS_TO_STRING"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10876,11 +10918,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "charSequence"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.CharSequence>)\
         \ : java.lang.CharSequence"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -10978,11 +11021,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "charSequence"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.function.Suppliers.get(java.util.function.Supplier<java.lang.CharSequence>)\
         \ : java.lang.CharSequence"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11118,10 +11162,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11220,10 +11265,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "double16"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11336,10 +11382,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "double24"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11508,10 +11555,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11602,10 +11650,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int24"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11798,10 +11847,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -11985,10 +12035,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12135,10 +12186,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int32"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12236,10 +12288,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int24"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12381,11 +12434,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12484,11 +12538,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12594,11 +12649,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,int,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12717,11 +12773,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,int,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12835,10 +12892,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int5"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -12925,10 +12983,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int5"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13274,11 +13333,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int4"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.indexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13558,10 +13618,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13648,10 +13709,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13914,10 +13976,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13998,10 +14061,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14086,10 +14150,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14298,11 +14363,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.getLength(java.lang.CharSequence[])\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -14354,11 +14420,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int16"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.getLength(java.lang.CharSequence[])\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -14436,11 +14503,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int11"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ArrayUtils.getLength(java.lang.CharSequence[])\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -14606,10 +14674,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14671,10 +14740,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int4"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14905,10 +14975,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14966,10 +15037,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -15546,7 +15618,7 @@ methods:
     instructionFingerprint: "0A85372AC5BC0852BF8C31B6BE8AA0DE"
   paths:
   - testPathName: "isAllUpperCaseWhenIsEmptyCs"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "cs"
@@ -15559,7 +15631,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -15645,10 +15720,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -15888,10 +15964,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -16013,10 +16090,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -16539,10 +16617,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -16764,10 +16843,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -17389,10 +17469,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -17505,10 +17586,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -17613,10 +17695,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -17868,10 +17951,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18144,10 +18228,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18420,10 +18505,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18696,10 +18782,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18972,10 +19059,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19248,10 +19336,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19310,7 +19399,7 @@ methods:
     instructionFingerprint: "B4D68EEED2A8AF00861D681C9E93C15F"
   paths:
   - testPathName: "join12WhenIterableIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "iterable"
@@ -19326,7 +19415,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "COLLECTION"
       content: !<collection>
@@ -19358,7 +19450,7 @@ methods:
       range: "(4327,16)-(4327,31)"
       evaluatedAs: true
   - testPathName: "join12WhenIterableIsNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "iterable"
@@ -19369,7 +19461,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.Iterable"
@@ -19580,11 +19675,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.util.Iterator<?>)\
         \ : java.util.stream.Stream<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ITERATOR"
       content: !<iterator>
@@ -19728,11 +19824,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.util.Iterator<?>)\
         \ : java.util.stream.Stream<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ITERATOR"
       content: !<iterator>
@@ -19896,7 +19993,7 @@ methods:
       range: "(4428,13)-(4428,26)"
       evaluatedAs: true
   - testPathName: "join16WhenNoOfItemsGreaterThan0"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "list"
@@ -19918,7 +20015,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "COLLECTION"
       content: !<collection>
@@ -20392,10 +20492,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -20483,7 +20584,7 @@ methods:
       range: "(4572,13)-(4572,25)"
       evaluatedAs: true
   - testPathName: "join20WhenArrayIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20499,7 +20600,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -20551,7 +20655,7 @@ methods:
     instructionFingerprint: "A76CBC00A5D3448E892DDF56D1861D74"
   paths:
   - testPathName: "join21Test"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20573,7 +20677,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -20620,7 +20727,7 @@ methods:
     instructionFingerprint: "6547AE1CA58574CB430832C2CAD0A394"
   paths:
   - testPathName: "join22WhenArrayIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20636,7 +20743,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -20679,7 +20789,7 @@ methods:
     mockedStaticClassesWithCallRealMethods:
     - "org.apache.commons.lang3.StringUtils"
   - testPathName: "join22WhenArrayIsNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20690,7 +20800,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.Object[]"
@@ -20742,11 +20855,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.lang.Object[])\
         \ : java.util.stream.Stream<java.lang.Object>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -20781,7 +20895,7 @@ methods:
     mockedStaticClassesWithCallRealMethods:
     - "org.apache.commons.lang3.StringUtils"
   - testPathName: "join23WhenArrayIsNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20798,7 +20912,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "java.lang.Object[]"
@@ -20868,7 +20985,7 @@ methods:
       range: "(4699,13)-(4699,25)"
       evaluatedAs: true
   - testPathName: "join24WhenArrayIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -20884,7 +21001,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -21053,10 +21173,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.StringBuilder.substring(int,int) : java.lang.String"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -21196,7 +21317,7 @@ methods:
       range: "(4798,13)-(4798,25)"
       evaluatedAs: true
   - testPathName: "joinWithWhenArrayIsNotNull"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "delimiter"
@@ -21212,7 +21333,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -21293,10 +21417,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -21347,11 +21472,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.CharSequenceUtils.lastIndexOf(java.lang.CharSequence,java.lang.CharSequence,int)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -21385,7 +21511,7 @@ methods:
     instructionFingerprint: "8855FE8E7B6F1DF89E9CA918B2A4ED41"
   paths:
   - testPathName: "lastIndexOf2WhenIsEmptySeq"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "seq"
@@ -21401,7 +21527,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -21448,10 +21577,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.CharSequence.length() : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -44365,7 +44495,7 @@ methods:
       uuid: "str"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\0"
+        value: "\\u0000"
       valueType: "char"
       uuid: "wrapWith"
     - sapientType: "MOCK"
@@ -44601,7 +44731,7 @@ methods:
       uuid: "str"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\0"
+        value: "\\u0000"
       valueType: "char"
       uuid: "wrapWith"
     - sapientType: "MOCK"

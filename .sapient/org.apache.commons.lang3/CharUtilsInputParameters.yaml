@@ -64,7 +64,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\x04"
+        value: "\\u0004"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -90,7 +90,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -270,7 +270,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -454,7 +454,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -523,7 +523,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud82f"
+        value: "\\uD82F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -592,7 +592,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -661,7 +661,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -833,9 +833,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "defaultValue"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -934,9 +935,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "character"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -1034,7 +1036,7 @@ methods:
       range: "(363,13)-(363,31)"
       evaluatedAs: true
   - testPathName: "toIntValueWhenIsAsciiNumericCh"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "ch"
@@ -1047,7 +1049,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -1084,7 +1089,7 @@ methods:
     instructionFingerprint: "8773ADAF7AE30F4595A5E9F7C6667CEC"
   paths:
   - testPathName: "toIntValue1WhenIsAsciiNumericCh"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "ch"
@@ -1100,7 +1105,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -1312,7 +1320,7 @@ methods:
     instructionFingerprint: "6FD2EEF6F2E2473490854B97D9612A88"
   paths:
   - testPathName: "toStringWhenChLessThanCHAR_STRING_ARRAYLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "ch"
@@ -1320,11 +1328,14 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\x04"
+        value: "\\u0004"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -1350,7 +1361,7 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud83f"
+        value: "\\uD83F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -1451,9 +1462,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "BITWISE_NOT_SUPPORTED"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>

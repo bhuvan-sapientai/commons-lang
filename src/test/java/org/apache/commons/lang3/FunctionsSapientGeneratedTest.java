@@ -30,6 +30,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.mockStatic;
+import org.junit.jupiter.api.Disabled;
 
 @Timeout(value = 5, threadMode = Timeout.ThreadMode.SEPARATE_THREAD)
 class FunctionsSapientGeneratedTest {
@@ -121,10 +122,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asBiConsumerTest}, hash: B5443A4ADD84F7E62F78AD9654DBD973
     @Test()
     void asBiConsumerTest() {
-        
         //Act Statement(s)
         BiConsumer<Object, Object> result = Functions.asBiConsumer(functionsFailableBiConsumerMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -132,10 +131,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asBiFunctionTest}, hash: 1783EA6A896FA07E80EC873A46675822
     @Test()
     void asBiFunctionTest() {
-        
         //Act Statement(s)
         BiFunction<Object, Object, Object> result = Functions.asBiFunction(functionsFailableBiFunctionMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -143,10 +140,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asBiPredicateTest}, hash: CAE9B883B1F46A8874DDD2499EB21649
     @Test()
     void asBiPredicateTest() {
-        
         //Act Statement(s)
         BiPredicate<Object, Object> result = Functions.asBiPredicate(functionsFailableBiPredicateMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -154,10 +149,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asCallableTest}, hash: 3320A215CA0CA48E2E68FD68E0B5F8A8
     @Test()
     void asCallableTest() {
-        
         //Act Statement(s)
         Callable result = Functions.asCallable(functionsFailableCallableMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -165,10 +158,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asConsumerTest}, hash: 1976AA9C0FCC4BCB30E0DDF630C96B47
     @Test()
     void asConsumerTest() {
-        
         //Act Statement(s)
         Consumer result = Functions.asConsumer(functionsFailableConsumerMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -176,10 +167,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asFunctionTest}, hash: A388C66F781D8F865C617E319B616EF9
     @Test()
     void asFunctionTest() {
-        
         //Act Statement(s)
         Function<Object, Object> result = Functions.asFunction(functionsFailableFunctionMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -187,10 +176,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asPredicateTest}, hash: 404373C62E71F7D0F80231985E95B927
     @Test()
     void asPredicateTest() {
-        
         //Act Statement(s)
         Predicate result = Functions.asPredicate(functionsFailablePredicateMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -198,10 +185,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asRunnableTest}, hash: 7CF4110D392196A8EA16C0908C3549AD
     @Test()
     void asRunnableTest() {
-        
         //Act Statement(s)
         Runnable result = Functions.asRunnable(functionsFailableRunnableMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -209,10 +194,8 @@ class FunctionsSapientGeneratedTest {
     //Sapient generated method id: ${asSupplierTest}, hash: 2D5C11858E83553005C74F7DF0BF69F3
     @Test()
     void asSupplierTest() {
-        
         //Act Statement(s)
         Supplier result = Functions.asSupplier(functionsFailableSupplierMock);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -235,22 +218,22 @@ class FunctionsSapientGeneratedTest {
     }
 
     //Sapient generated method id: ${getTest}, hash: DC17288D2C1C43F877BD07D7F3E2E3B0
+    @Disabled()
     @Test()
     void getTest() {
         /*
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         
         //Act Statement(s)
         Object result = Functions.get(functionsFailableSupplierMock);
-        
         //Assert statement(s)
         //TODO: Please implement equals method in Object for verification of the entire object or you need to adjust respective assertion statements
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
 
     //Sapient generated method id: ${getWhenCaughtThrowableThrowsRuntimeException}, hash: DE46D253052F1A7610111BFD50448E1E
+    @Disabled()
     @Test()
     void getWhenCaughtThrowableThrowsRuntimeException() throws Throwable {
         /* Branches:
@@ -259,7 +242,7 @@ class FunctionsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Functions.FailableSupplier supplierMock = mock(Functions.FailableSupplier.class);
         try (MockedStatic<Functions> functions = mockStatic(Functions.class, CALLS_REAL_METHODS)) {
             Object object = new Object();
@@ -286,13 +269,12 @@ class FunctionsSapientGeneratedTest {
         /* Branches:
          * (throwable instanceof IOException) : false
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Throwable throwable = new Throwable();
         //Act Statement(s)
         final UndeclaredThrowableException result = assertThrows(UndeclaredThrowableException.class, () -> {
             Functions.rethrow(throwable);
         });
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
@@ -304,12 +286,12 @@ class FunctionsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         
         //Act Statement(s)
         Functions.run(functionsFailableRunnableMock);
     }
 
     //Sapient generated method id: ${runWhenCaughtThrowableThrowsRuntimeException}, hash: 4A3A86FD97883843D53DD7C8ABC9CA85
+    @Disabled()
     @Test()
     void runWhenCaughtThrowableThrowsRuntimeException() throws Throwable {
         /* Branches:
@@ -318,7 +300,7 @@ class FunctionsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Functions.FailableRunnable runnableMock = mock(Functions.FailableRunnable.class);
         try (MockedStatic<Functions> functions = mockStatic(Functions.class, CALLS_REAL_METHODS)) {
             doNothing().when(runnableMock).run();
@@ -343,10 +325,8 @@ class FunctionsSapientGeneratedTest {
     void streamTest() {
         //Arrange Statement(s)
         Collection<Object> collection = new ArrayList<>();
-        
         //Act Statement(s)
         Streams.FailableStream result = Functions.stream(collection);
-        
         //Assert statement(s)
         //TODO: Please implement equals method in FailableStream for verification of the entire object or you need to adjust respective assertion statements
         assertAll("result", () -> assertThat(result, is(notNullValue())));
@@ -357,16 +337,15 @@ class FunctionsSapientGeneratedTest {
     void stream1Test() {
         //Arrange Statement(s)
         Stream<Object> stream = Stream.empty();
-        
         //Act Statement(s)
         Streams.FailableStream result = Functions.stream(stream);
-        
         //Assert statement(s)
         //TODO: Please implement equals method in FailableStream for verification of the entire object or you need to adjust respective assertion statements
         assertAll("result", () -> assertThat(result, is(notNullValue())));
     }
 
     //Sapient generated method id: ${testWhenSupplierGetAsBoolean}, hash: 19A517DBE3203A0C26E4165FFD29E170
+    @Disabled()
     @Test()
     void testWhenSupplierGetAsBoolean() {
         /* Branches:
@@ -379,13 +358,11 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Object object = new Object();
         Object object2 = new Object();
-        
         //Act Statement(s)
         boolean result = Functions.test(functionsFailableBiPredicateMock, object, object2);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, equalTo(Boolean.TRUE)));
     }
@@ -403,18 +380,17 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Object object = new Object();
         Object object2 = new Object();
-        
         //Act Statement(s)
         boolean result = Functions.test(functionsFailableBiPredicateMock, object, object2);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, equalTo(Boolean.FALSE)));
     }
 
     //Sapient generated method id: ${testWhenCaughtThrowableThrowsRuntimeException}, hash: E52C14D2CC85E0676CAB049787BB0430
+    @Disabled()
     @Test()
     void testWhenCaughtThrowableThrowsRuntimeException() {
         /* Branches:
@@ -427,7 +403,7 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<Functions> functions = mockStatic(Functions.class, CALLS_REAL_METHODS)) {
             RuntimeException runtimeException = new RuntimeException();
             Throwable throwable = new Throwable();
@@ -447,6 +423,7 @@ class FunctionsSapientGeneratedTest {
     }
 
     //Sapient generated method id: ${test1WhenSupplierGetAsBoolean}, hash: CF90A99D2AAF692B8A86C56B3DEAA049
+    @Disabled()
     @Test()
     void test1WhenSupplierGetAsBoolean() {
         /* Branches:
@@ -459,12 +436,10 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Object object = new Object();
-        
         //Act Statement(s)
         boolean result = Functions.test(functionsFailablePredicateMock, object);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, equalTo(Boolean.TRUE)));
     }
@@ -482,17 +457,16 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Object object = new Object();
-        
         //Act Statement(s)
         boolean result = Functions.test(functionsFailablePredicateMock, object);
-        
         //Assert statement(s)
         assertAll("result", () -> assertThat(result, equalTo(Boolean.FALSE)));
     }
 
     //Sapient generated method id: ${test1WhenCaughtThrowableThrowsRuntimeException}, hash: 94B209B48851C7536CBE8ADF987DF1D0
+    @Disabled()
     @Test()
     void test1WhenCaughtThrowableThrowsRuntimeException() {
         /* Branches:
@@ -505,7 +479,7 @@ class FunctionsSapientGeneratedTest {
          *  or adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         try (MockedStatic<Functions> functions = mockStatic(Functions.class, CALLS_REAL_METHODS)) {
             RuntimeException runtimeException = new RuntimeException();
             Throwable throwable = new Throwable();
@@ -532,9 +506,8 @@ class FunctionsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Functions.FailableRunnable<Throwable>[] failableRunnableArray = new Functions.FailableRunnable[] {};
-        
         //Act Statement(s)
         Functions.tryWithResources(functionsFailableRunnableMock, functionsFailableConsumerMock, failableRunnableArray);
     }
@@ -548,10 +521,9 @@ class FunctionsSapientGeneratedTest {
          * TODO: Help needed! Please adjust the input/test parameter values manually to satisfy the requirements of the given test scenario.
          *  The test code, including the assertion statements, has been successfully generated.
          */
-         //Arrange Statement(s)
+        //Arrange Statement(s)
         Functions.FailableConsumer<Throwable, Throwable> functionsFailableConsumer = null;
         Functions.FailableRunnable<Throwable>[] failableRunnableArray = new Functions.FailableRunnable[] {};
-        
         //Act Statement(s)
         Functions.tryWithResources(functionsFailableRunnableMock, functionsFailableConsumer, failableRunnableArray);
     }

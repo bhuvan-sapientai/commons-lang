@@ -87,12 +87,12 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud85f"
+        value: "\\uD85F"
       valueType: "char"
       uuid: "start"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud83d"
+        value: "\\uD83D"
       valueType: "char"
       uuid: "end"
     - sapientType: "OBJECT"
@@ -103,14 +103,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud85f"
+              value: "\\uD85F"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud83d"
+              value: "\\uD83D"
             valueType: "char"
             uuid: "end"
         - name: "negated"
@@ -213,12 +213,12 @@ methods:
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud85f"
+        value: "\\uD85F"
       valueType: "char"
       uuid: "start"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud83d"
+        value: "\\uD83D"
       valueType: "char"
       uuid: "end"
     - sapientType: "OBJECT"
@@ -229,14 +229,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud85f"
+              value: "\\uD85F"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud83d"
+              value: "\\uD83D"
             valueType: "char"
             uuid: "end"
         - name: "negated"
@@ -265,7 +265,7 @@ methods:
   paths:
   - testPathName: "containsWhenChGreaterThanOrEqualsToStartAndChGreaterThanEnd"
     constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "STATIC_FACTORY_METHOD"
       name: "constructor"
@@ -276,7 +276,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<static_method_return>
@@ -287,21 +290,21 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud83d"
+              value: "\\uD83D"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud81f"
+              value: "\\uD81F"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"
       uuid: "target"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87f"
+        value: "\\uD87F"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -346,21 +349,21 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud87d"
+              value: "\\uD87D"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud842"
+              value: "\\uD842"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"
       uuid: "target"
     - sapientType: "BASIC"
       content: !<regular>
-        value: "\ud87c"
+        value: "\\uD87C"
       valueType: "char"
       uuid: "ch"
     - sapientType: "BASIC"
@@ -414,14 +417,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: ""
+              value: "\\uF4D7"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "義"
+              value: "\\u7FA9"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"
@@ -435,14 +438,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud87f"
+              value: "\\uD87F"
             valueType: "char"
             uuid: "range-start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "荽"
+              value: "\\u837D"
             valueType: "char"
             uuid: "range-end"
       valueType: "org.apache.commons.lang3.CharRange"
@@ -471,7 +474,7 @@ methods:
       evaluatedAs: true
   - testPathName: "contains1WhenEndLessThanRangeEnd"
     constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "STATIC_FACTORY_METHOD"
       name: "constructor"
@@ -482,7 +485,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<static_method_return>
@@ -493,14 +499,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: ""
+              value: "\\uF4D7"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "義"
+              value: "\\u7FA9"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"
@@ -514,14 +520,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud87f"
+              value: "\\uD87F"
             valueType: "char"
             uuid: "range-start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud840"
+              value: "\\uD840"
             valueType: "char"
             uuid: "range-end"
       valueType: "org.apache.commons.lang3.CharRange"
@@ -576,14 +582,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud85f"
+              value: "\\uD85F"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud83d"
+              value: "\\uD83D"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"
@@ -600,7 +606,7 @@ methods:
   paths:
   - testPathName: "toStringWhenStartNotEqualsEnd"
     constructorSignature: "isIn(char,char) : org.apache.commons.lang3.CharRange"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "STATIC_FACTORY_METHOD"
       name: "constructor"
@@ -612,7 +618,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<static_method_return>
@@ -623,14 +632,14 @@ methods:
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud87e"
+              value: "\\uD87E"
             valueType: "char"
             uuid: "start"
         - name: "end"
           value:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\ud87b"
+              value: "\\uD87B"
             valueType: "char"
             uuid: "end"
       valueType: "org.apache.commons.lang3.CharRange"

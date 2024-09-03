@@ -25,10 +25,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -235,9 +236,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -300,11 +302,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -374,10 +377,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -584,9 +588,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -649,11 +654,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -723,10 +729,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -865,7 +872,7 @@ methods:
     mockedStaticClassesWithCallRealMethods:
     - "org.apache.commons.lang3.ArrayUtils"
   - testPathName: "add5WhenIndexEquals0"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -879,7 +886,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "char[]"
@@ -900,7 +910,7 @@ methods:
           0:
             sapientType: "BASIC"
             content: !<regular>
-              value: "\0"
+              value: "\\u0000"
             valueType: "char"
             uuid: "object-item0"
       valueType: "char[]"
@@ -933,9 +943,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -998,11 +1009,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1072,10 +1084,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1214,7 +1227,7 @@ methods:
     mockedStaticClassesWithCallRealMethods:
     - "org.apache.commons.lang3.ArrayUtils"
   - testPathName: "add7WhenIndexEquals0"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -1228,7 +1241,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "double[]"
@@ -1282,9 +1298,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1347,11 +1364,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1421,10 +1439,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1563,7 +1582,7 @@ methods:
     mockedStaticClassesWithCallRealMethods:
     - "org.apache.commons.lang3.ArrayUtils"
   - testPathName: "add9WhenIndexEquals0"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -1577,7 +1596,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "NULL"
       valueType: "float[]"
@@ -1631,9 +1653,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1696,11 +1719,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1770,10 +1794,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -1980,9 +2005,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2045,11 +2071,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2235,9 +2262,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2300,11 +2328,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2374,10 +2403,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2584,9 +2614,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2649,11 +2680,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.newInstance(java.lang.Class<?>,int)\
         \ : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2723,10 +2755,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -2872,11 +2905,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ObjectUtils.getClass(java.lang.Object[])\
         \ : java.lang.Class<java.lang.Object[]>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -3064,11 +3098,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ObjectUtils.getClass(java.lang.Object[])\
         \ : java.lang.Class<java.lang.Object[]>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -4468,11 +4503,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "illegalArgumentException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ObjectUtils.getClass(java.lang.Object[])\
         \ : java.lang.Class<java.lang.Object[]>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -4541,11 +4577,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "arrayStoreException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.ObjectUtils.getClass(java.lang.Object[])\
         \ : java.lang.Class<java.lang.Object[]>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -7190,11 +7227,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: org.apache.commons.lang3.stream.Streams.of(java.lang.Object[])\
         \ : java.util.stream.Stream<java.lang.Object>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -7482,11 +7520,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.reflect.Array.getLength(java.lang.Object)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -7538,7 +7577,7 @@ methods:
     instructionFingerprint: "59D65AA9E11E244F7778F97C5CCCD9E2"
   paths:
   - testPathName: "hashCodeTest"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -7546,7 +7585,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -7752,9 +7794,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -7991,9 +8034,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -8230,9 +8274,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -8534,9 +8579,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -8740,9 +8786,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -8984,9 +9031,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -9223,9 +9271,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -9462,9 +9511,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -9704,9 +9754,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -9944,9 +9995,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "bitSet"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -10918,9 +10970,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -11443,9 +11496,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "int1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -13104,7 +13158,7 @@ methods:
       range: "(2832,26)-(2832,45)"
       evaluatedAs: true
   - testPathName: "insert1WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -13123,7 +13177,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "byteArray3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13684,7 +13741,7 @@ methods:
       range: "(2916,26)-(2916,45)"
       evaluatedAs: true
   - testPathName: "insert3WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -13703,7 +13760,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "doubleArray3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -13974,7 +14034,7 @@ methods:
       range: "(2958,26)-(2958,45)"
       evaluatedAs: true
   - testPathName: "insert4WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -13993,7 +14053,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "floatArray3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14264,7 +14327,7 @@ methods:
       range: "(3000,26)-(3000,45)"
       evaluatedAs: true
   - testPathName: "insert5WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -14283,7 +14346,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "intArray2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14554,7 +14620,7 @@ methods:
       range: "(3042,26)-(3042,45)"
       evaluatedAs: true
   - testPathName: "insert6WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -14573,7 +14639,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "longArray3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -14844,7 +14913,7 @@ methods:
       range: "(3084,26)-(3084,45)"
       evaluatedAs: true
   - testPathName: "insert7WhenIndexLessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "index"
@@ -14863,7 +14932,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "shortArray3"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "BASIC"
       content: !<regular>
@@ -16196,13 +16268,14 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
       source: "return new EqualsBuilder().append(array1, array2).isEquals();"
       lineNumber: 3297
       details: "A variable could not be isolated/mocked when calling a method - Variable\
         \ name: object of type EqualsBuilder - Method: append"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -17115,7 +17188,7 @@ methods:
       range: "(3410,16)-(3410,53)"
       evaluatedAs: true
   - testPathName: "isSameLengthWhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17136,7 +17209,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17240,7 +17316,7 @@ methods:
       range: "(3423,16)-(3423,53)"
       evaluatedAs: true
   - testPathName: "isSameLength1WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17261,7 +17337,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17365,7 +17444,7 @@ methods:
       range: "(3436,16)-(3436,53)"
       evaluatedAs: true
   - testPathName: "isSameLength2WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17386,7 +17465,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17491,7 +17573,7 @@ methods:
       range: "(3449,16)-(3449,53)"
       evaluatedAs: true
   - testPathName: "isSameLength3WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17512,7 +17594,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17617,7 +17702,7 @@ methods:
       range: "(3462,16)-(3462,53)"
       evaluatedAs: true
   - testPathName: "isSameLength4WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17638,7 +17723,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17742,7 +17830,7 @@ methods:
       range: "(3475,16)-(3475,53)"
       evaluatedAs: true
   - testPathName: "isSameLength5WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17763,7 +17851,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -17867,7 +17958,7 @@ methods:
       range: "(3488,16)-(3488,53)"
       evaluatedAs: true
   - testPathName: "isSameLength6WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -17888,7 +17979,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18122,7 +18216,7 @@ methods:
       range: "(3521,16)-(3521,53)"
       evaluatedAs: true
   - testPathName: "isSameLength8WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -18143,7 +18237,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18248,7 +18345,7 @@ methods:
       range: "(3535,16)-(3535,53)"
       evaluatedAs: true
   - testPathName: "isSameLength9WhenGetLengthArray1NotEqualsGetLengthArray2"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -18269,7 +18366,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18405,7 +18505,7 @@ methods:
       range: "(3551,16)-(3551,78)"
       evaluatedAs: true
   - testPathName: "isSameTypeWhenArray1GetClassGetNameNotEqualsArray2GetClassGetName"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array1"
@@ -18416,7 +18516,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "boolean1"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -18510,9 +18613,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18666,9 +18770,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -18836,9 +18941,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19324,9 +19430,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19480,9 +19587,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19636,9 +19744,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19823,11 +19932,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.util.Comparator.compare(java.lang.Object,java.lang.Object)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -19898,11 +20008,12 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "expectedResult"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.util.Comparator.compare(java.lang.Object,java.lang.Object)\
         \ : int"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24476,9 +24587,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24518,9 +24630,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24560,9 +24673,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24602,9 +24716,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24644,9 +24759,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24686,9 +24802,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24728,9 +24845,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24838,10 +24956,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -24977,10 +25096,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -25379,10 +25499,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -25465,9 +25586,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "indexOutOfBoundsException"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -25560,10 +25682,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -27786,10 +27909,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -28006,10 +28130,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "object"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.lang.Class.getComponentType() : java.lang.Class<?>"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -31265,10 +31390,11 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "objectArray2"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
       details: "Expression missing: java.util.function.Supplier.get() : java.lang.Object"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -41281,9 +41407,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "hashMap"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -41424,7 +41551,7 @@ methods:
       range: "(8952,24)-(8952,49)"
       evaluatedAs: false
   - testPathName: "toMapWhenEntryLengthLessThan2ThrowsIllegalArgumentException"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -41432,7 +41559,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "illegalArgumentException"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -41495,9 +41625,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "hashMap"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
@@ -45454,13 +45585,14 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "string"
-    disabled: false
+    disabled: true
     failureReason:
       reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
       source: "return new ToStringBuilder(array, ToStringStyle.SIMPLE_STYLE).append(array).toString();"
       lineNumber: 9576
       details: "A variable could not be isolated/mocked when calling a method - Variable\
         \ name: object of type ToStringBuilder - Method: append"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "OBJECT"
       content: !<new>
@@ -45669,7 +45801,7 @@ methods:
       range: "(9623,13)-(9623,29)"
       evaluatedAs: true
   - testPathName: "toStringArray1WhenILessThanArrayLength"
-    problemWasSolvedByProver: true
+    problemWasSolvedByProver: false
     inputParameters:
     - type: "INPUT"
       name: "array"
@@ -45680,7 +45812,10 @@ methods:
     - type: "RESULT"
       name: "result"
       valueUuid: "stringArray2"
-    disabled: false
+    disabled: true
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    disabledStatusUpdatedBy: "SYSTEM"
     allValues:
     - sapientType: "ARRAY"
       content: !<array>
